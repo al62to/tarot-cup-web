@@ -1,0 +1,6 @@
+# Zeilenenden immer LF, damit der Bau unter Windows und auf GitHub (Linux) dieselben Dateien ergibt.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.webp binary
+*.woff2 binary
