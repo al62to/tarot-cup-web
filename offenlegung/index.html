@@ -18,6 +18,7 @@ nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 18
 nav a{color:var(--tinte)}
 nav a[aria-current="page"]{color:var(--gold);text-decoration-thickness:2px}
 main{padding:36px 0 64px}
+.sprachwahl{margin:-16px 0 16px;text-align:right;font-size:15px}
 h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--tinte);line-height:1.2;font-weight:600}
 h1,h2,h3{-webkit-hyphens:auto;hyphens:auto}
 h1{font-size:clamp(26px,7vw,46px);margin:0 0 8px}
@@ -40,7 +41,7 @@ th{background:var(--grund)}
 footer{border-top:1px solid var(--rand);padding:20px 0 40px;font-size:15px}
 footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 18px}
 @media print{
-  header,footer,.fassungen{display:none}
+  header,footer,.fassungen,.sprachwahl{display:none}
   body{background:#fff;color:#000;font-size:11pt;line-height:1.45}
   main{padding:0}
   .bahn{max-width:none;padding:0}

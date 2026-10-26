@@ -18,6 +18,7 @@ nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 18
 nav a{color:var(--tinte)}
 nav a[aria-current="page"]{color:var(--gold);text-decoration-thickness:2px}
 main{padding:36px 0 64px}
+.sprachwahl{margin:-16px 0 16px;text-align:right;font-size:15px}
 h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--tinte);line-height:1.2;font-weight:600}
 h1,h2,h3{-webkit-hyphens:auto;hyphens:auto}
 h1{font-size:clamp(26px,7vw,46px);margin:0 0 8px}
@@ -40,7 +41,7 @@ th{background:var(--grund)}
 footer{border-top:1px solid var(--rand);padding:20px 0 40px;font-size:15px}
 footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 18px}
 @media print{
-  header,footer,.fassungen{display:none}
+  header,footer,.fassungen,.sprachwahl{display:none}
   body{background:#fff;color:#000;font-size:11pt;line-height:1.45}
   main{padding:0}
   .bahn{max-width:none;padding:0}
@@ -60,6 +61,8 @@ footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px
 <header><div class="bahn"><a class="marke" href="../../">Tarot Cup</a>
 <nav aria-label="Hauptnavigation"><ul><li><a href="../../datenschutz/" aria-current="page">Datenschutz</a></li><li><a href="../../nutzungsbedingungen/">Nutzungsbedingungen</a></li><li><a href="../../offenlegung/">Offenlegung</a></li></ul></nav></div></header>
 <main><div class="bahn">
+<p class="sprachwahl"><a href="../../tr/gizlilik/" hreflang="tr" lang="tr">Türkçe (Sürüm 1.1)</a></p>
+<p class="hinweis">Ältere Fassung 1.0. Gültig ist <a href="../">Fassung 1.1</a>.</p>
 <h1>Datenschutzerklärung für Tarot Cup</h1>
 <p>Version 1.0 · Stand: 26.10.2026</p>
 <p>Diese Datenschutzerklärung gilt für die App „Tarot Cup“ und für ihre Website unter <a href="https://tarot-cup.com">https://tarot-cup.com</a>. Für die App gilt sie in allen Fassungen, auch für Testfassungen. Bei Google Play hat die App den Paketnamen at.tonc.kaffeesatztarot.</p>
@@ -236,7 +239,7 @@ footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px
 <p>Version 1.0 · Stand: 26.10.2026</p>
 <section class="fassungen" aria-labelledby="fassungen-titel">
 <h2 id="fassungen-titel">Frühere und aktuelle Fassungen</h2>
-<ul><li><a href="../../datenschutz/1.0/">Fassung 1.0</a>, Stand 26.10.2026, aktuell</li></ul>
+<ul><li><a href="../../datenschutz/1.1/">Fassung 1.1</a>, Stand 26.10.2026, aktuell</li><li><a href="../../datenschutz/1.0/">Fassung 1.0</a>, Stand 26.10.2026</li></ul>
 </section>
 </div></main>
 <footer><div class="bahn"><nav aria-label="Fußzeile"><ul><li><a href="../../">Start</a></li><li><a href="../../datenschutz/" aria-current="page">Datenschutz</a></li><li><a href="../../nutzungsbedingungen/">Nutzungsbedingungen</a></li><li><a href="../../offenlegung/">Offenlegung</a></li><li><a href="mailto:aliapp@gmx.at">aliapp@gmx.at</a></li></ul></nav></div></footer>
