@@ -13,7 +13,7 @@ export const seite = {
 // und robots.txt sperrt alles (wie vor AP-W1). true: Seiten im Index, robots.txt erlaubt alles und nennt die Sitemap.
 // SUCHE_PROBE=1 baut lokal so, als wäre die Suche freigegeben (nur für die Messung mit Lighthouse, Bereich SEO); der
 // Workflow auf GitHub setzt die Variable nie.
-export const suche = { freigegeben: false || process.env.SUCHE_PROBE === '1' };
+export const suche = { freigegeben: true || process.env.SUCHE_PROBE === '1' };
 
 // Store-Eintrag. Solange "oeffentlich" aus ist, bleibt die Fläche für das Abzeichen leer (Ali, 26.10.2026: Abzeichen erst
 // mit der Produktion); der Knopf im Titelbild sagt „Bald bei Google Play“ ohne Link, /app/ nur, dass die App bald kommt.
