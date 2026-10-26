@@ -2,8 +2,12 @@
 // Tassenkarte von oben wie in der App (Entwurf SelbstLage): Rand, Mitte und Boden als Ringe, eine gestrichelte Linie
 // trennt die Seite gegenüber (links) von der Henkelseite (rechts), Henkel rechts, darunter die Untertasse. Die Namen
 // der Bereiche kommen aus der Textdatei der Seite, damit Bild und Liste dieselben Wörter tragen; ohne Liste gelten die
-// Namen der App.
-const { sprache, bereiche = [] } = Astro.props;
+// Namen der App. Jede Fläche trägt data-bereich.
+// "spiel" (Startseite, Entwurf 9.1): die Karte als Kachel zum Antippen, mit Titel, sechs Knöpfen (aria-pressed) für die
+// Bereiche und einer dunklen Anzeige mit Name und Bedeutung (aria-live); der gewählte Bereich leuchtet in Gold. Ohne
+// JavaScript stehen die Karte mit allen Beschriftungen und die Bedeutungen als Liste da, ohne Knöpfe.
+// Die Bedeutungen ("bedeutung" in den Bereichen) stammen aus der App 0.4.0 (arbeit/apw2/belege_start.md).
+const { sprache, bereiche = [], spiel = null } = Astro.props;
 const ERSATZ = {
   de: { rand: 'Rand', mitte: 'Mitte', boden: 'Boden', henkelseite: 'Henkelseite', gegenueber: 'gegenüber', untertasse: 'Untertasse' },
   tr: { rand: 'Ağız', mitte: 'Orta', boden: 'Dip', henkelseite: 'Kulp tarafı', gegenueber: 'Karşı taraf', untertasse: 'Tabak' },
@@ -14,21 +18,84 @@ const kurz = (schluessel) => (schluessel === 'gegenueber' ? ERSATZ[sprache].gege
 const label = sprache === 'de'
   ? `Tassenkarte von oben: ${name('rand')}, ${name('mitte')} und ${name('boden')}, links ${name('gegenueber')}, rechts die ${name('henkelseite')} mit dem Henkel, darunter die ${name('untertasse')}`
   : `Yukarıdan fincan haritası: ${name('rand')}, ${name('mitte')} ve ${name('boden')}; solda ${name('gegenueber')}, sağda ${name('henkelseite')} ve kulp, altta ${name('untertasse')}`;
+if (spiel && bereiche.some((bereich) => !bereich.bedeutung)) throw new Error('Tassenkarte: Für die Kachel braucht jeder Bereich eine Bedeutung');
+const erster = bereiche[0];
 ---
-<figure class="tassenkarte">
-  <svg viewBox="6 0 278 318" width="278" height="318" role="img" aria-label={label}>
-    <ellipse cx="125" cy="282" rx="86" ry="26" class="tk-tasse" />
-    <ellipse cx="125" cy="282" rx="40" ry="11" class="tk-linie" />
-    <circle cx="125" cy="125" r="112" class="tk-tasse" />
-    <circle cx="125" cy="125" r="75" class="tk-linie" />
-    <circle cx="125" cy="125" r="38" class="tk-linie" />
-    <path d="M125 13v224" class="tk-teiler" />
-    <path d="M237 104h14a21 21 0 0 1 0 42h-14" class="tk-henkel" />
-    <text x="125" y="31" text-anchor="middle" class="tk-text">{kurz('rand')}</text>
-    <text x="125" y="67" text-anchor="middle" class="tk-text">{kurz('mitte')}</text>
-    <text x="125" y="104" text-anchor="middle" class="tk-text">{kurz('boden')}</text>
-    <text x="80" y="200" text-anchor="middle" class="tk-text tk-seite">{kurz('gegenueber')}</text>
-    <text x="170" y="200" text-anchor="middle" class="tk-text tk-seite">{kurz('henkelseite')}</text>
-    <text x="125" y="286" text-anchor="middle" class="tk-text">{kurz('untertasse')}</text>
-  </svg>
-</figure>
+{spiel ? (
+  <div class="tk-kachel" data-tk-spiel>
+    <div class="tk-kopf">
+      <h3 class="tk-titel">{spiel.titel}</h3>
+      <p class="tk-hinweis nur-js">{spiel.hinweis}</p>
+    </div>
+    <figure class="tassenkarte tk-spiel">
+      <svg viewBox="6 0 278 318" width="278" height="318" role="img" aria-label={label}>
+        <ellipse cx="125" cy="282" rx="86" ry="26" class="tk-tasse" data-bereich="untertasse" />
+        <ellipse cx="125" cy="282" rx="40" ry="11" class="tk-linie" />
+        <circle cx="125" cy="125" r="112" class="tk-tasse" data-bereich="rand" />
+        <circle cx="125" cy="125" r="75" class="tk-linie tk-mitte" data-bereich="mitte" />
+        <circle cx="125" cy="125" r="38" class="tk-linie tk-boden" data-bereich="boden" />
+        <path d="M125 13A112 112 0 0 0 125 237Z" class="tk-haelfte" data-bereich="gegenueber" />
+        <path d="M125 13A112 112 0 0 1 125 237Z" class="tk-haelfte" data-bereich="henkelseite" />
+        <path d="M125 13v224" class="tk-teiler" />
+        <path d="M237 104h14a21 21 0 0 1 0 42h-14" class="tk-henkel" />
+        <text x="125" y="31" text-anchor="middle" class="tk-text">{kurz('rand')}</text>
+        <text x="125" y="67" text-anchor="middle" class="tk-text">{kurz('mitte')}</text>
+        <text x="125" y="104" text-anchor="middle" class="tk-text">{kurz('boden')}</text>
+        <text x="80" y="207" text-anchor="middle" class="tk-text tk-seite">{kurz('gegenueber')}</text>
+        <text x="170" y="207" text-anchor="middle" class="tk-text tk-seite">{kurz('henkelseite')}</text>
+        <text x="125" y="286" text-anchor="middle" class="tk-text">{kurz('untertasse')}</text>
+      </svg>
+    </figure>
+    <div class="tk-wahl nur-js" role="group" aria-label={spiel.gruppe}>
+      {bereiche.map((bereich, nummer) => (
+        <button class="tk-pille" type="button" aria-pressed={nummer === 0 ? 'true' : 'false'} data-wahl={bereich.bereich} data-name={bereich.name} data-bedeutung={bereich.bedeutung}>{bereich.name}</button>
+      ))}
+    </div>
+    <p class="tk-anzeige nur-js" aria-live="polite">
+      <span class="tk-anzeige-name" data-tk-name>{erster.name}</span>
+      <span class="tk-anzeige-bedeutung" data-tk-bedeutung>{erster.bedeutung}</span>
+    </p>
+    <dl class="tk-liste nur-ohne-js">
+      {bereiche.map((bereich) => (
+        <div><dt>{bereich.name}</dt><dd>{bereich.bedeutung}</dd></div>
+      ))}
+    </dl>
+  </div>
+) : (
+  <figure class="tassenkarte">
+    <svg viewBox="6 0 278 318" width="278" height="318" role="img" aria-label={label}>
+      <ellipse cx="125" cy="282" rx="86" ry="26" class="tk-tasse" data-bereich="untertasse" />
+      <ellipse cx="125" cy="282" rx="40" ry="11" class="tk-linie" />
+      <circle cx="125" cy="125" r="112" class="tk-tasse" data-bereich="rand" />
+      <circle cx="125" cy="125" r="75" class="tk-linie" data-bereich="mitte" />
+      <circle cx="125" cy="125" r="38" class="tk-linie" data-bereich="boden" />
+      <path d="M125 13v224" class="tk-teiler" />
+      <path d="M237 104h14a21 21 0 0 1 0 42h-14" class="tk-henkel" />
+      <text x="125" y="31" text-anchor="middle" class="tk-text">{kurz('rand')}</text>
+      <text x="125" y="67" text-anchor="middle" class="tk-text">{kurz('mitte')}</text>
+      <text x="125" y="104" text-anchor="middle" class="tk-text">{kurz('boden')}</text>
+      <text x="80" y="207" text-anchor="middle" class="tk-text tk-seite">{kurz('gegenueber')}</text>
+      <text x="170" y="207" text-anchor="middle" class="tk-text tk-seite">{kurz('henkelseite')}</text>
+      <text x="125" y="286" text-anchor="middle" class="tk-text">{kurz('untertasse')}</text>
+    </svg>
+  </figure>
+)}
+
+<script>
+  // Tassenkarte zum Antippen (nur die Kachel der Startseite): Knopf wählen, Fläche leuchtet, Anzeige zeigt Name und
+  // Bedeutung. Nichts wird gespeichert.
+  for (const kachel of document.querySelectorAll('[data-tk-spiel]')) {
+    const knoepfe = [...kachel.querySelectorAll('[data-wahl]')];
+    const name = kachel.querySelector('[data-tk-name]');
+    const bedeutung = kachel.querySelector('[data-tk-bedeutung]');
+    const flaechen = [...kachel.querySelectorAll('[data-bereich]')];
+    const waehle = (knopf) => {
+      for (const anderer of knoepfe) anderer.setAttribute('aria-pressed', String(anderer === knopf));
+      for (const flaeche of flaechen) flaeche.classList.toggle('an', flaeche.getAttribute('data-bereich') === knopf.dataset.wahl);
+      if (name) name.textContent = knopf.dataset.name ?? '';
+      if (bedeutung) bedeutung.textContent = knopf.dataset.bedeutung ?? '';
+    };
+    for (const knopf of knoepfe) knopf.addEventListener('click', () => waehle(knopf));
+    if (knoepfe[0]) waehle(knoepfe[0]);
+  }
+</script>

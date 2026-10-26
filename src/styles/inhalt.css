@@ -17,16 +17,16 @@
 .ratgeber-kopf { color: var(--nacht-text); }
 .kopf-tarot, .seite-tarot .krumen { background: var(--nacht); }
 .kopf-kaffee, .seite-kaffeesatz .krumen { background: var(--kaffee); }
-.seite-ratgeber .krumen, .seite-ratgeber .krumen a { color: #C3BECF; }
+.seite-ratgeber .krumen, .seite-ratgeber .krumen a { color: var(--nacht-rand); }
 .seite-kaffeesatz .krumen, .seite-kaffeesatz .krumen a { color: var(--kaffee-gedaempft); }
 .seite-ratgeber .krumen a:hover, .seite-ratgeber .krumen [aria-current="page"] { color: var(--nacht-text); }
 .seite-ratgeber .krumen li + li::before { border-color: var(--gold); }
 .seite-ratgeber .krumen :focus-visible, .ratgeber-kopf :focus-visible { outline-color: var(--gold); }
 .ratgeber-kopf h1 { color: var(--nacht-text); }
 .ratgeber-kopf h1::after { background: var(--gold); }
-.ratgeber-kopf .vorspann { color: #DAD4C6; }
+.ratgeber-kopf .vorspann { color: var(--hell-gedaempft); }
 .kopf-kaffee h1 { color: var(--kaffee-text); }
-.kopf-kaffee .vorspann { color: #E3D6C4; }
+.kopf-kaffee .vorspann { color: var(--hell-gedaempft); }
 .ratgeber-kopf a { color: inherit; }
 .ratgeber-kopf-innen { display: grid; }
 .ratgeber-kopf-text { padding-bottom: 8px; }
@@ -62,7 +62,7 @@
 /* Ritual Schritt für Schritt: nummerierte Schritte mit einer feinen Linie dazwischen. */
 .schritte { list-style: none; margin: 28px 0 0; padding: 0; }
 .schritt { position: relative; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 14px; padding-bottom: 28px; }
-.schritt::before { content: ""; position: absolute; left: 21px; top: 50px; bottom: 6px; width: 2px; border-radius: 2px; background: rgb(168 130 63 / 0.32); }
+.schritt::before { content: ""; position: absolute; left: 21px; top: 50px; bottom: 6px; width: 2px; border-radius: 2px; background: color-mix(in srgb, var(--gold-linie) 32%, transparent); }
 .schritt:last-child { padding-bottom: 0; }
 .schritt:last-child::before { display: none; }
 .schritt-nummer { display: grid; place-items: center; width: 44px; height: 44px; border: 1.5px solid var(--gold-linie); border-radius: 50%; background: var(--karte); font: 600 1.375rem/1 var(--serif); color: var(--tinte); }
@@ -88,8 +88,8 @@
 /* Zeichen als Raster, mit der Linienform aus der App. */
 .zeichen-liste { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); gap: 12px; margin: 24px 0 0; padding: 0; }
 .zeichen { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 16px; align-items: start; padding: 18px; background: var(--karte); border: 1px solid var(--rand); border-radius: 18px; }
-.zeichen-form { display: grid; place-items: center; width: 56px; height: 56px; border: 1px solid #E2D2B0; border-radius: 50%; background: var(--tasse); }
-.zeichen-form svg { width: 34px; height: 34px; fill: none; stroke: #6B4A33; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.zeichen-form { display: grid; place-items: center; width: 56px; height: 56px; border: 1px solid var(--zeichen-rand); border-radius: 50%; background: var(--tasse); }
+.zeichen-form svg { width: 34px; height: 34px; fill: none; stroke: var(--zeichen-strich); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .zeichen-name { margin: 2px 0 4px; font-size: 1.375rem; }
 .zeichen p { margin: 0; font-size: 0.96875rem; line-height: 1.55; }
 
@@ -115,12 +115,12 @@
 }
 .auslegung {
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; min-width: min(13rem, 100%); margin: 0; padding: 34px 22px 24px; border-radius: 18px;
-  background: radial-gradient(circle, transparent 0 52px, rgb(210 180 122 / 0.2) 52.5px 53.5px, transparent 54px 80px, rgb(210 180 122 / 0.13) 80.5px 81.5px, transparent 82px), var(--nacht);
+  background: radial-gradient(circle, transparent 0 52px, color-mix(in srgb, var(--gold) 20%, transparent) 52.5px 53.5px, transparent 54px 80px, color-mix(in srgb, var(--gold) 13%, transparent) 80.5px 81.5px, transparent 82px), var(--nacht);
 }
 .auslegung-reihe { display: flex; justify-content: center; gap: 14px; }
 .auslegung-karte { position: relative; display: block; width: 52px; height: 86px; border: 1.5px solid var(--gold); border-radius: 7px; background: var(--nacht-flaeche); box-shadow: 0 8px 16px rgb(0 0 0 / 0.35); }
-.auslegung-karte::before { content: ""; position: absolute; inset: 5px; border: 1px solid rgb(210 180 122 / 0.4); border-radius: 4px; }
-.auslegung-karte::after { content: ""; position: absolute; left: 50%; top: 50%; width: 13px; height: 13px; border: 1px solid rgb(210 180 122 / 0.65); transform: translate(-50%, -50%) rotate(45deg); }
+.auslegung-karte::before { content: ""; position: absolute; inset: 5px; border: 1px solid color-mix(in srgb, var(--gold) 40%, transparent); border-radius: 4px; }
+.auslegung-karte::after { content: ""; position: absolute; left: 50%; top: 50%; width: 13px; height: 13px; border: 1px solid color-mix(in srgb, var(--gold) 65%, transparent); transform: translate(-50%, -50%) rotate(45deg); }
 .auslegung-zahl { position: absolute; left: 50%; top: -12px; z-index: 1; display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--gold); color: var(--nacht); font: 600 0.8125rem/1 var(--sans); transform: translateX(-50%); }
 .auslegung-1 .auslegung-karte { width: 64px; height: 106px; }
 .positionen { list-style: none; margin: 0; padding: 0; counter-reset: platz; }
@@ -131,7 +131,7 @@
 /* Gute und weniger gute Fragen nebeneinander. */
 .beispiele { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: 14px; margin-top: 24px; }
 .beispiele > div { padding: 22px 22px 14px; background: var(--karte); border: 1px solid var(--rand); border-top: 3px solid var(--gold-linie); border-radius: 20px; }
-.beispiele > .beispiele-weniger { border-top-color: #B9AFA0; }
+.beispiele > .beispiele-weniger { border-top-color: var(--rand-stark); }
 .beispiele h3 { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; font-size: 1.375rem; }
 .beispiele h3 svg { flex: none; width: 24px; height: 24px; fill: none; stroke: var(--gold-dunkel); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .beispiele-weniger h3 svg { stroke: var(--gedaempft); }
@@ -151,9 +151,9 @@
    der App weich überblendet (Original 1080 x 2400: Statusleiste bis Pixel 80, Zeile 128 bis 172, nächste Zeile ab
    188). Die Statusleiste bleibt sichtbar, nichts wird abgeschnitten. */
 .geraet.oben-ausblenden .geraet-rahmen { position: relative; }
-.geraet.oben-ausblenden .geraet-rahmen::after { content: ""; position: absolute; left: calc(var(--gb) * 0.035); right: calc(var(--gb) * 0.035); top: calc(var(--gb) * 0.035 + (100% - var(--gb) * 0.07) * 0.038); height: calc((100% - var(--gb) * 0.07) * 0.04); background: linear-gradient(#F5F0E6 80%, rgb(245 240 230 / 0)); }
+.geraet.oben-ausblenden .geraet-rahmen::after { content: ""; position: absolute; left: calc(var(--gb) * 0.035); right: calc(var(--gb) * 0.035); top: calc(var(--gb) * 0.035 + (100% - var(--gb) * 0.07) * 0.038); height: calc((100% - var(--gb) * 0.07) * 0.04); background: linear-gradient(var(--creme) 80%, transparent); }
 /* Türkisch: der Rest steht tiefer (Zeile 133 bis 172, nächste Zeile ab 220); die Überblendung reicht bis 210. */
-.geraet.oben-ausblenden:lang(tr) .geraet-rahmen::after { height: calc((100% - var(--gb) * 0.07) * 0.049); background: linear-gradient(#F5F0E6 72%, rgb(245 240 230 / 0)); }
+.geraet.oben-ausblenden:lang(tr) .geraet-rahmen::after { height: calc((100% - var(--gb) * 0.07) * 0.049); background: linear-gradient(var(--creme) 72%, transparent); }
 @media (min-width: 64rem) {
   .kapitel { grid-template-columns: minmax(0, 1fr) 13.5rem; gap: 40px; align-items: start; }
   .kapitel-foto { --gb: 13.5rem; }

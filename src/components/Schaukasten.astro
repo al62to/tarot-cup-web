@@ -1,0 +1,61 @@
+---
+// Schaukasten der Startseite nach Entwurf 9.1 auf Espresso: links Überschrift und drei große Einträge 01 bis 03, rechts
+// ein Handy mit Lichtschein und den echten Bildschirmfotos der App (FOTOS_START). Am Handy stehen die Einträge oben, das
+// Handy darunter. Mit JavaScript werden die Einträge zu Knöpfen (aria-pressed), die das Bild im Handy wechseln; kein
+// Wischen, kein Karussell, nichts wird gespeichert. Ohne JavaScript sind sie reine Beschriftung, im Handy steht das
+// erste Bild.
+import Betont from './Betont.astro';
+import Handy from './Handy.astro';
+
+const { sprache, texte, alt } = Astro.props;
+const bilder = texte.eintraege.map((eintrag) => ({ name: eintrag.foto, alt: alt[eintrag.foto] }));
+const nummer = (zahl) => String(zahl + 1).padStart(2, '0');
+---
+<section class="schau flaeche-dunkel" aria-labelledby="schau-titel">
+  <div class="innen schau-raster">
+    <div class="schau-text">
+      <h2 id="schau-titel" class="start-titel"><Betont text={texte.titel} /></h2>
+      <div class="schau-wahl" data-schau data-gruppe={texte.gruppe}>
+        {texte.eintraege.map((eintrag, stelle) => (
+          <div class="schau-eintrag" data-schau-eintrag={stelle}>
+            <span class="schau-nummer" aria-hidden="true">{nummer(stelle)}</span>
+            <span class="schau-inhalt">
+              <span class="schau-titel">{eintrag.titel}</span>
+              <span class="schau-satz">{eintrag.text}</span>
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+    <div class="schau-handy">
+      <Handy art="app" sprache={sprache} bilder={bilder} kennung="schau-bild" klasse="schau-geraet" groessen="272px" />
+    </div>
+  </div>
+</section>
+
+<script>
+  // Aus den Einträgen werden Knöpfe; jeder zeigt sein Bild im Handy, die anderen Bilder tragen hidden.
+  const wahl = document.querySelector('[data-schau]');
+  const rahmen = document.getElementById('schau-bild');
+  if (wahl instanceof HTMLElement && rahmen) {
+    wahl.setAttribute('role', 'group');
+    wahl.setAttribute('aria-label', wahl.dataset.gruppe ?? '');
+    const bilder = [...rahmen.querySelectorAll('[data-bild]')];
+    const knoepfe = [...wahl.querySelectorAll('[data-schau-eintrag]')].map((eintrag) => {
+      const knopf = document.createElement('button');
+      knopf.type = 'button';
+      knopf.className = eintrag.className;
+      knopf.dataset.stelle = eintrag.getAttribute('data-schau-eintrag') ?? '0';
+      knopf.setAttribute('aria-controls', 'schau-bild');
+      knopf.append(...eintrag.childNodes);
+      eintrag.replaceWith(knopf);
+      return knopf;
+    });
+    const zeige = (knopf) => {
+      for (const anderer of knoepfe) anderer.setAttribute('aria-pressed', String(anderer === knopf));
+      for (const bild of bilder) bild.hidden = bild.getAttribute('data-bild') !== knopf.dataset.stelle;
+    };
+    for (const knopf of knoepfe) knopf.addEventListener('click', () => zeige(knopf));
+    if (knoepfe[0]) zeige(knoepfe[0]);
+  }
+</script>

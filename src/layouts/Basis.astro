@@ -1,20 +1,20 @@
 ---
 // Grundlayout aller Seiten: Kopfdaten (Titel, Beschreibung, kanonische Adresse, Robots, hreflang, Open Graph,
-// strukturierte Daten), Kopf, Brotkrumen auf Unterseiten, Inhalt, Teilen-Knopf auf Inhaltsseiten, Fuß.
+// strukturierte Daten), Kopf, Brotkrumen auf Unterseiten, Inhalt, Fuß (mit dem Teilen-Knopf auf Inhaltsseiten).
 // Alle Angaben kommen über die Adresse aus src/daten/seiten.mjs; eine Seite gibt sie nicht selbst an.
 // Keine Cookies, nichts im Speicher des Browsers, keine Anfragen an andere Anbieter. Das Skript im Kopf setzt nur die
 // Klasse "js" (Gestaltung mit JavaScript, etwa das Menü am Handy).
-import '@fontsource/cormorant-garamond/latin-500.css';
-import '@fontsource/cormorant-garamond/latin-600.css';
-import '@fontsource/cormorant-garamond/latin-ext-500.css';
-import '@fontsource/cormorant-garamond/latin-ext-600.css';
+import '../styles/schriften.css';
 import '@fontsource-variable/inter/wght.css';
 import '../styles/basis.css';
 import interLatein from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
+// Schrift der großen Titelzeile der Startseite (Cormorant 500, normal und kursiv, Bereich latin): vorab laden, damit die
+// Zeile nicht erst in der Ersatzschrift erscheint und dann springt (Lighthouse, Verschiebung des Layouts).
+import titelNormal from '@fontsource/cormorant-garamond/files/cormorant-garamond-latin-500-normal.woff2?url';
+import titelKursiv from '@fontsource/cormorant-garamond/files/cormorant-garamond-latin-500-italic.woff2?url';
 import Kopf from '../components/Kopf.astro';
 import Fuss from '../components/Fuss.astro';
 import Brotkrumen from '../components/Brotkrumen.astro';
-import Teilen from '../components/Teilen.astro';
 import { seite } from '../daten/seite.mjs';
 import { seiteVon } from '../daten/seiten.mjs';
 import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
@@ -47,7 +47,7 @@ const alleDaten = [websiteDaten(sprache), entwicklerDaten(), ...daten];
     {alternativen.map((eintrag) => <link rel="alternate" hreflang={eintrag.lang} href={eintrag.href} />)}
     {robots && <meta name="robots" content={robots} />}
     <meta name="referrer" content="no-referrer" />
-    <meta name="theme-color" content="#12162B" />
+    <meta name="theme-color" content="#1B130E" />
     <meta property="og:type" content={art} />
     <meta property="og:site_name" content={seite.name} />
     {sprache === 'de' && <meta property="og:locale" content="de_DE" />}
@@ -64,6 +64,7 @@ const alleDaten = [websiteDaten(sprache), entwicklerDaten(), ...daten];
     <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preload" href={interLatein} as="font" type="font/woff2" crossorigin />
+    {klasse === 'seite-start' && [titelNormal, titelKursiv].map((datei) => <link rel="preload" href={datei} as="font" type="font/woff2" crossorigin />)}
     {alleDaten.map((eintrag) => <script type="application/ld+json" set:html={JSON.stringify(eintrag)} />)}
   </head>
   <body class={klasse}>
@@ -72,8 +73,7 @@ const alleDaten = [websiteDaten(sprache), entwicklerDaten(), ...daten];
     {krumen && <Brotkrumen krumen={krumen} sprache={sprache} />}
     <main id="inhalt">
       <slot />
-      {teilen && <Teilen sprache={sprache} titel={titel} adresse={kanonisch} />}
     </main>
-    <Fuss angaben={angaben} />
+    <Fuss angaben={angaben} teilen={teilen ? { titel, adresse: kanonisch } : null} />
   </body>
 </html>

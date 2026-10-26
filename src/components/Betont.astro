@@ -1,0 +1,13 @@
+---
+// Überschrift oder Zeile aus den Textdaten mit Hervorhebung: *Wort* steht als <em class="betont"> (kursiv, auf hellem
+// Grund Kupfer, auf dunklem Gold; basis.css). Wie in Text.astro bricht „Tarot Cup“ nie zwischen den beiden Wörtern um
+// (Klasse marke-wort). Kein HTML aus den Daten; ausgegeben wird nur der Inhalt, das umgebende Element setzt der Aufrufer.
+import { teileAuszeichnung } from '../daten/auszeichnung.mjs';
+
+const { text } = Astro.props;
+const marke = (stueck) => stueck.split(/(Tarot Cup)/).filter(Boolean).map((teil) => (teil === 'Tarot Cup' ? { marke: true, teil } : { marke: false, teil }));
+const teile = teileAuszeichnung(text).map((stueck) => ({ ...stueck, stuecke: marke(stueck.text) }));
+---
+{teile.map((stueck) => (stueck.betont
+  ? <em class="betont">{stueck.stuecke.map((s) => (s.marke ? <span class="marke-wort">{s.teil}</span> : s.teil))}</em>
+  : stueck.stuecke.map((s) => (s.marke ? <span class="marke-wort">{s.teil}</span> : s.teil))))}

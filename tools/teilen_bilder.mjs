@@ -18,6 +18,7 @@ import { chromePfad } from './chrome.mjs';
 import { SEITEN } from '../src/daten/seiten.mjs';
 import { seite } from '../src/daten/seite.mjs';
 import { start } from '../src/daten/texte/start.mjs';
+import { ohneAuszeichnung } from '../src/daten/auszeichnung.mjs';
 import { GESPERRT, TITELKARTEN } from '../src/daten/karten.mjs';
 
 const WURZEL = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -118,7 +119,7 @@ for (const eintrag of SEITEN) {
   const name = eintrag.bild.split('/').pop().replace(/\.jpg$/, '');
   const [schluessel, sprache] = name.split(/-(?=[a-z]{2}$)/);
   const zeile = start[sprache].kopf.zeile;
-  const titel = schluessel === 'start' ? start[sprache].kopf.zeilen : [eintrag.bildAlt.replace(/\s*\|\s*Tarot Cup$/, '')];
+  const titel = schluessel === 'start' ? start[sprache].kopf.zeilen.map(ohneAuszeichnung) : [eintrag.bildAlt.replace(/\s*\|\s*Tarot Cup$/, '')];
   const vorlage = schluessel === 'tarot' ? tarotBild : schluessel === 'kaffeesatz' ? kaffeeBild : buehne;
   auftraege.set(eintrag.bild, { name, html: vorlage({ zeile, titel, sprache }) });
 }

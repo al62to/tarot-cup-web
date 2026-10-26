@@ -35,7 +35,8 @@ try {
         await seite.evaluate(async () => {
           for (let ort = 0; ort < document.body.scrollHeight; ort += 500) { window.scrollTo(0, ort); await new Promise((weiter) => setTimeout(weiter, 30)); }
         });
-        for (const wahl of ['[data-menue]', '[data-teilen-knopf]', 'details summary']) {
+        // Das Menü zuletzt: Offen deckt es am Handy die Seite ab, auch den Teilen-Knopf im Fuß.
+        for (const wahl of ['[data-teilen-knopf]', 'details summary', '[data-menue]']) {
           const element = seite.locator(wahl).first();
           if (await element.count() && await element.isVisible()) await element.click({ trial: false }).catch(() => {});
         }

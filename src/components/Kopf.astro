@@ -1,5 +1,5 @@
 ---
-// Kopf: Marke, Hauptnavigation (Tarot · Kaffeesatz · So geht's · Fragen), Sprachwahl DE/TR, Knopf „App laden“ (/app/).
+// Kopf (Entwurf 9.1: Espresso, feine goldene Linie unten): Marke, Hauptnavigation (Tarot · Kaffeesatz · So geht's · Fragen), Sprachwahl DE/TR, Knopf „App laden“ (/app/).
 // Am Handy ein schlichtes Menü zum Aufklappen (Muster FoodAsu, ohne Mega-Menü). Ohne JavaScript steht das Menü offen
 // da. Zustand nur in aria-expanded; nichts wird gespeichert.
 // Sprachwahl: immer die Gegenseite; gibt es keine, die Startseite der anderen Sprache.
@@ -22,7 +22,7 @@ const sprachen = [
   { code: andere, text: oberflaeche[andere].spracheKurz, name: oberflaeche[andere].sprache, ziel: gegenseite ?? startPfad(andere), aktuell: false },
 ].sort((a, b) => (a.code === 'de' ? -1 : b.code === 'de' ? 1 : 0));
 ---
-<header class="kopf">
+<header class="kopf flaeche-dunkel">
   <div class="innen kopf-innen" data-nav>
     <a class="marke-link" href={startPfad(sprache)} aria-label={`${T.marke ?? 'Tarot Cup'}, ${oberflaeche[sprache].krumen.start}`}><Marke /></a>
     <button class="menue-knopf" type="button" aria-expanded="false" aria-controls="hauptmenue" data-menue data-auf={T.nav.menue} data-zu={T.nav.menueZu}>

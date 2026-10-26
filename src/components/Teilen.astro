@@ -1,6 +1,6 @@
 ---
-// Teilen-Knopf auf jeder Inhaltsseite (nicht auf Rechtsseiten). Auf dem Handy öffnet er das Teilen-Menü des Geräts
-// (Web Share API). Gibt es das nicht, klappen „Link kopieren“ und einfache Links für WhatsApp und E-Mail auf. Ohne
+// Teilen-Knopf auf jeder Inhaltsseite (nicht auf Rechtsseiten), seit AP-W2 im Fuß (Fuss.astro). Auf dem Handy
+// öffnet er das Teilen-Menü des Geräts (Web Share API). Gibt es das nicht, klappen „Link kopieren“ und einfache Links für WhatsApp und E-Mail auf. Ohne
 // JavaScript stehen die Links für WhatsApp und E-Mail direkt da. Keine fremden Skripte, keine Zählpixel, nichts wird im
 // Browser gespeichert; die Links öffnen nur die Adresse mit dem Text, sie laden nichts in die Seite.
 import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
@@ -11,7 +11,7 @@ const text = `${titel} ${adresse}`;
 const whatsapp = `https://wa.me/?text=${encodeURIComponent(text)}`;
 const email = `mailto:?subject=${encodeURIComponent(titel)}&body=${encodeURIComponent(`${T.emailText} ${adresse}`)}`;
 ---
-<section class="teilen innen" aria-labelledby="teilen-titel" data-teilen data-titel={titel} data-adresse={adresse}>
+<section class="teilen" aria-labelledby="teilen-titel" data-teilen data-titel={titel} data-adresse={adresse}>
   <h2 class="teilen-titel" id="teilen-titel">{T.titel}</h2>
   <div class="teilen-feld">
   <button class="knopf knopf-rand teilen-knopf" type="button" aria-expanded="false" aria-controls="teilen-wahl" data-teilen-knopf>

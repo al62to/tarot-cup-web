@@ -32,6 +32,8 @@ export const oberflaeche = {
       bildnachweis: 'Bildnachweis und Lizenzen',
       kontakt: 'E-Mail schreiben',
       sprache: 'Sprache',
+      // Hinweis oben im Fuß, auf jeder Seite (AP-W2; vorher nur am Ende der Startseite).
+      hinweis: 'Zur Unterhaltung. Keine Vorhersage und keine Beratung.',
       zeile: 'Eine App von Ali Tonc · Zur Unterhaltung.',
     },
     krumen: { aria: 'Brotkrumen', start: 'Start' },
@@ -117,6 +119,7 @@ export const oberflaeche = {
       bildnachweis: 'Görsel kaynakları ve lisanslar',
       kontakt: 'E-posta gönder',
       sprache: 'Dil',
+      hinweis: 'Eğlence amaçlıdır. Kehanet ya da danışmanlık değildir.',
       zeile: 'Ali Tonc’un bir uygulaması · Eğlence amaçlıdır.',
     },
     krumen: { aria: 'Sayfa yolu', start: 'Ana sayfa' },

@@ -7,6 +7,7 @@ import { pathToFileURL } from 'node:url';
 import { chromium } from 'playwright-core';
 import appDaten from '../src/daten/app_daten.json' with { type: 'json' };
 import { start } from '../src/daten/texte/start.mjs';
+import { ohneAuszeichnung as oa } from '../src/daten/auszeichnung.mjs';
 import { tarot } from '../src/daten/texte/tarot.mjs';
 import { kaffeesatz } from '../src/daten/texte/kaffeesatz.mjs';
 import { sogehts } from '../src/daten/texte/sogehts.mjs';
@@ -44,17 +45,22 @@ function ratgeber(x, sprache) {
 }
 
 function startseite(x) {
+  const fuss = oberflaeche[x === start.de ? 'de' : 'tr'].fuss;
   return [
     kopf(x),
-    `<p class="klein">${e(x.kopf.zeile)}</p><h2>${x.kopf.zeilen.map(e).join('<br>')}</h2>`, p(x.kopf.text), `<p>[${e(x.kopf.bald)}]</p>`,
+    `<p class="klein">${e(x.kopf.zeile)}</p><h2>${x.kopf.zeilen.map((z) => e(oa(z))).join('<br>')}</h2>`, p(x.kopf.text), `<p>[${e(x.kopf.bald)}] [${e(x.kopf.anleitung)}]</p>`,
+    `<p><small>Karte zum Umdrehen: ${e(x.kopf.karte.tipp)} / ${e(x.kopf.karte.satz)}</small></p>`,
+    `<ul>${x.zahlen.liste.map((z) => `<li><b>${e(z.zahl)}</b> ${e(z.text)}</li>`).join('')}</ul>`,
     `<h3>${e(x.wasIst.titel)}</h3>`, p(x.wasIst.text),
-    `<h3>${e(x.koennen.titel)}</h3>`, ...x.koennen.kaesten.map((k) => `<p><b>${e(k.titel)}</b><br>${t(k.text)}</p>`),
-    `<h3>${e(x.fotos.titel)}</h3>`, `<ul>${Object.values(x.fotos.alt).map((a) => `<li><small>Bild: ${e(a)}</small></li>`).join('')}</ul>`,
-    `<h3>${e(x.tasse.titel)}</h3>`, `<ol>${x.tasse.schritte.map((s) => `<li>${t(s)}</li>`).join('')}</ol>`, `<p><u>${e(x.tasse.link.text)}</u></p>`,
-    ...x.vorteile.map((v) => `<p><b>${e(v.titel)}</b><br>${t(v.text)}</p>`),
-    `<h3>${e(x.ratgeber.titel)}</h3>`, ...x.ratgeber.eintraege.map((r) => `<p><b>${e(r.titel)}</b><br>${t(r.text)} <u>${e(r.link)}</u></p>`),
-    `<h3>${e(x.fragen.titel)}</h3><p><small>(die ersten vier Fragen der Seite Fragen)</small></p>`,
-    p(x.hinweis),
+    `<p class="klein">${e(x.tasse.zeile)}</p><h3>${e(oa(x.tasse.titel))}</h3>`, `<ol>${x.tasse.schritte.map((s) => `<li>${t(s)}</li>`).join('')}</ol>`, `<p><u>${e(x.tasse.link.text)}</u></p>`,
+    `<p><b>${e(x.tassenkarte.titel)}</b> (${e(x.tassenkarte.hinweis)})</p><ul>${x.tassenkarte.bereiche.map((b) => `<li>${e(b.name)}: ${e(b.bedeutung)}</li>`).join('')}</ul>`,
+    `<h3>${e(oa(x.schaukasten.titel))}</h3>`, ...x.schaukasten.eintraege.map((s, n) => `<p><b>0${n + 1} ${e(s.titel)}</b><br>${e(s.text)}<br><small>Bild: ${e(x.fotos.alt[s.foto])}</small></p>`),
+    `<h3>${e(oa(x.koennen.titel))}</h3>`, ...x.vorteile.map((v) => `<p><b>${e(v.titel)}</b><br>${t(v.text)}</p>`),
+    `<p><b>${e(x.koennen.ruhe.titel)}</b><br>${e(x.koennen.ruhe.text)}</p><ul>${x.koennen.ruhe.pillen.map((r) => `<li>${e(r.name)} · ${e(r.takt)}</li>`).join('')}</ul>`,
+    `<p><b>${e(x.koennen.sprachen.gross)}</b> ${e(x.koennen.sprachen.titel)}<br>${e(x.koennen.sprachen.text)}</p>`,
+    `<h3>${e(oa(x.ratgeber.titel))}</h3>`, ...x.ratgeber.eintraege.map((r) => `<p><b>${e(r.titel)}</b><br>${t(r.text)} <u>${e(r.link)}</u></p>`),
+    `<h3>${e(oa(x.fragen.titel))}</h3><p><small>(die ersten vier Fragen der Seite Fragen)</small></p>`,
+    p(fuss.hinweis),
   ].join('\n');
 }
 

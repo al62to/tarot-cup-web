@@ -1,71 +1,148 @@
 ---
-// Kopf der Startseite nach Entwurf 8.5 (design/reihe8/WebTitelbild.dc.html), Bühne 1280 x 640: links oben auf hellem
-// Grund drei Originalkarten im Fächer (Rad −12°, Magier gerade, Ass der Kelche +12°) mit goldenem Rand, feine Kreise
-// und zwei Sterne; die Diagonale mit Goldlinie; rechts unten auf Kaffeebraun die Tasse mit Dampf, Zeile, Überschrift
-// und Knopf. Alle Maße der Bühne stehen in Einheiten des Entwurfs und wachsen mit der Breite (src/styles/start.css).
-// Ab 64rem steht der Text wie im Entwurf auf der Bühne; darunter steht die Bühne ohne Text, Zeile, Überschrift und
-// Knopf folgen auf Kaffeebraun. Am Handy (unter 30rem) hat die Bühne eine eigene, höhere Aufteilung (390 x 400), damit
-// die Karten groß genug bleiben; die Diagonale bleibt. Reihenfolge wie in 7.1: Zeile, Überschrift (ein Satz je Zeile,
-// Umbruch nur, wenn ein Satz allein zu lang ist), Absatz, Knopf; reicht der Text über die Bühne hinaus, wächst die
-// Fläche nach unten mit. Ab 30rem liegen der helle Bereich und die Goldlinie über der ganzen Fensterbreite
-// (titel-grund, titel-linie), damit die Diagonale auch bei Fenstern über 1280 Pixel bis an den Rand läuft.
-// Knopf: Ist die App öffentlich, führt er zu Google Play; sonst steht „Bald bei Google Play“ als ruhiger Hinweis ohne
-// Link.
+// Titelbild der Startseite nach Entwurf 9.1 (design/reihe9/WebNeu.dc.html), dazu das Zahlenband auf demselben dunklen
+// Grund. Espresso mit leichter Körnung (eine kleine SVG-Kachel als Hintergrund, kein großes Bild) und warmem Licht.
+// Links: Zeile, große Überschrift (Hervorhebung *…* aus den Textdaten kursiv in Gold), Absatz, „Bald bei Google Play“
+// (Schalter store.oeffentlich: erst dann ein Link) und der Zweitknopf zur Anleitung.
+// Rechts: zwei gefächerte Kartenrückseiten vor langsam drehenden goldenen Ringen, davor die Karte zum Umdrehen. Mit
+// JavaScript wird sie zum Knopf: Antippen dreht sie um (3D-Drehung, bei reduzierter Bewegung ohne Drehung) und zeigt
+// eine Originalkarte aus TITELKARTEN, zuerst den Magier; nochmal antippen dreht sie zurück, danach kommt die nächste.
+// Darunter (aria-live) vorher der Tipp, danach Name und Hinweis aufs Lexikon. Keine Deutung, nichts wird gespeichert.
+// Ohne JavaScript steht die Vorderseite des Magiers als Bild da, ohne Knopf und ohne Tipp.
+import Betont from './Betont.astro';
 import Kartenbild from './Kartenbild.astro';
 import Text from './Text.astro';
-import { TITELKARTEN } from '../daten/karten.mjs';
+import { GESPERRT, TITELKARTEN } from '../daten/karten.mjs';
 import { store, storeLink } from '../daten/seite.mjs';
+import { pfadVon } from '../daten/seiten.mjs';
 import appDaten from '../daten/app_daten.json' with { type: 'json' };
 
-const { sprache, kopf } = Astro.props;
+const { sprache, kopf, zahlen } = Astro.props;
 const name = (id) => appDaten.karten.find((karte) => karte.id === id).name[sprache];
 const jahr = sprache === 'de' ? 'Druck von 1909' : '1909 baskısı';
+// Zuerst der Magier, dann die übrigen Titelkarten; gesperrte Bilder nie (Kartenbild.astro prüft das zusätzlich).
+const ERSTE = 'ta_01_magier';
+const reihe = [ERSTE, ...TITELKARTEN.filter((id) => id !== ERSTE)].filter((id) => !GESPERRT.includes(id));
+const karten = reihe.map((id) => ({ name: name(id), alt: `${name(id)}, ${jahr}`, klein: `/bilder/karten/${id}-240.webp`, gross: `/bilder/karten/${id}-480.webp` }));
 // Die Zeile steht in Großbuchstaben; „Android“ trägt lang="en", damit es auf Türkisch nicht zu „ANDROİD“ wird.
 const zeileTeile = kopf.zeile.split(/(Android)/);
-const stern = 'M0 -10 L2.5 -2.5 L10 0 L2.5 2.5 L0 10 L-2.5 2.5 L-10 0 L-2.5 -2.5 Z';
 ---
-<section class="titel" aria-labelledby="titel-ueberschrift">
-  <div class="titel-grund" aria-hidden="true"></div>
-  <div class="titel-flaeche">
-    <div class="titel-buehne">
-      <div class="titel-hell" aria-hidden="true"></div>
-      <svg class="titel-schmuck titel-breit" viewBox="0 0 1280 640" aria-hidden="true" focusable="false">
-        <g class="titel-kreise"><circle cx="331" cy="206" r="256" /><circle cx="331" cy="206" r="228" stroke-dasharray="1 7" /><circle cx="331" cy="206" r="150" /></g>
-        <g class="titel-sterne"><path d={stern} transform="translate(700 85)" /><path d={stern} transform="translate(50 420) scale(0.8)" /></g>
-      </svg>
-      <svg class="titel-schmuck titel-schmal" viewBox="0 0 390 400" aria-hidden="true" focusable="false">
-        <g class="titel-kreise"><circle cx="142" cy="108.5" r="143" /><circle cx="142" cy="108.5" r="127" stroke-dasharray="1 5" /><circle cx="142" cy="108.5" r="84" /></g>
-        <g class="titel-sterne"><path d={stern} transform="translate(338 40) scale(0.7)" /><path d={stern} transform="translate(26 312) scale(0.55)" /></g>
-      </svg>
-      {TITELKARTEN.map((id, nummer) => (
-        <Kartenbild id={id} alt={`${name(id)}, ${jahr}`} klasse={`titel-karte titel-karte-${nummer + 1}`} laden="eager" vorrang={nummer === 1} groessen="(min-width: 64rem) 180px, (min-width: 30rem) 14vw, 26vw" />
-      ))}
-      <svg class="titel-diagonale titel-schmal" viewBox="0 0 390 400" aria-hidden="true" focusable="false"><path d="M393.2 117.7 L-3.2 402.3" /></svg>
-      <svg class="titel-tasse" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
-        <path d="M42 30 Q37 23 42 16 Q47 9 42 2" class="titel-dampf" />
-        <path d="M56 30 Q51 23 56 16 Q61 9 56 2" class="titel-dampf" />
-        <path d="M22 36 H78 V48 A28 22 0 0 1 22 48 Z" fill="#F3EAD7" />
-        <ellipse cx="50" cy="36" rx="28" ry="5" fill="#5A3A26" />
-        <path d="M30 42 H70" stroke="#C9A86A" stroke-width="0.8" />
-        <path d="M78 41 H84 A8.5 8.5 0 0 1 84 58 H76" fill="none" stroke="#F3EAD7" stroke-width="4.5" stroke-linecap="round" />
-        <path d="M10 76 Q50 86 90 76" fill="none" stroke="#F3EAD7" stroke-width="4.5" stroke-linecap="round" />
-      </svg>
-    </div>
-    <div class="titel-text">
-      <p class="titel-zeile">{zeileTeile.map((teil) => (teil === 'Android' ? <span lang="en">{teil}</span> : <Text text={teil} ohne />))}</p>
-      <h1 id="titel-ueberschrift">{kopf.zeilen.map((zeile) => <span class="titel-satz">{zeile}</span>)}</h1>
-      <p class="titel-absatz">{kopf.text}</p>
-      <div class="titel-knoepfe">
-        {store.oeffentlich ? (
-          <a class="knopf knopf-gold titel-knopf" href={storeLink('kopf')} rel="noopener">{kopf.knopf}</a>
-        ) : (
-          <p class="titel-bald">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="7" y="2.75" width="10" height="18.5" rx="2.25" /><path d="M11 18.2h2" /></svg>
-            <span>{kopf.bald}</span>
-          </p>
-        )}
+<div class="titel-welt flaeche-dunkel">
+  <section class="titel" aria-labelledby="titel-ueberschrift">
+    <div class="innen titel-raster">
+      <div class="titel-text">
+        <p class="titel-zeile">{zeileTeile.map((teil) => (teil === 'Android' ? <span lang="en">{teil}</span> : <Text text={teil} ohne />))}</p>
+        <h1 id="titel-ueberschrift">{kopf.zeilen.map((zeile) => <span class="titel-satz"><Betont text={zeile} /></span>)}</h1>
+        <Text text={kopf.text} klasse="titel-absatz" />
+        <div class="titel-knoepfe">
+          {store.oeffentlich ? (
+            <a class="titel-knopf titel-knopf-hell" href={storeLink('kopf')} rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="2.5" width="12" height="19" rx="2.5" /><path d="M10.5 18.5h3" /></svg>
+              <span>{kopf.knopf}</span>
+            </a>
+          ) : (
+            <p class="titel-knopf titel-knopf-hell titel-bald">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="2.5" width="12" height="19" rx="2.5" /><path d="M10.5 18.5h3" /></svg>
+              <span>{kopf.bald}</span>
+            </p>
+          )}
+          <a class="titel-knopf titel-knopf-rand" href={pfadVon('sogehts', sprache)}>
+            <span>{kopf.anleitung}</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="titel-karten">
+        <div class="stapel">
+          <div class="stapel-schein" aria-hidden="true"></div>
+          <svg class="stapel-ringe" viewBox="0 0 420 420" aria-hidden="true" focusable="false">
+            <circle cx="210" cy="210" r="200" /><circle cx="210" cy="210" r="180" stroke-dasharray="1 8" /><path d="M210 4v18M210 398v18M4 210h18M398 210h18" />
+          </svg>
+          <div class="stapel-hinten stapel-hinten-1" aria-hidden="true"></div>
+          <div class="stapel-hinten stapel-hinten-2" aria-hidden="true"></div>
+          <div
+            class="wende"
+            data-karte
+            data-karten={JSON.stringify(karten)}
+            data-tipp={kopf.karte.tipp}
+            data-satz={kopf.karte.satz}
+            data-umdrehen={kopf.karte.umdrehen}
+            data-zurueck={kopf.karte.zurueck}
+          >
+            <span class="wende-dreh">
+              <span class="wende-seite wende-rueck" aria-hidden="true">
+                <svg viewBox="0 0 120 120" focusable="false"><circle cx="60" cy="60" r="52" /><circle cx="60" cy="60" r="44" stroke-dasharray="1 5" /><circle cx="60" cy="60" r="30" /><path d="M60 2v14M60 104v14M2 60h14M104 60h14" /><path d="M47 55h26v8a13 13 0 0 1-26 0z" /><path d="M73 57h3a4 4 0 0 1 0 8h-3" /></svg>
+              </span>
+              <span class="wende-seite wende-vorn">
+                <Kartenbild id={ERSTE} alt={karten[0].alt} klasse="wende-bild" laden="eager" groessen="(min-width: 64rem) 220px, 48vw" />
+              </span>
+            </span>
+          </div>
+        </div>
+        <p class="wende-text nur-js" aria-live="polite">
+          <span class="wende-name" data-karte-name></span>
+          <span class="wende-satz" data-karte-satz>{kopf.karte.tipp}</span>
+        </p>
       </div>
     </div>
-  </div>
-  <div class="titel-linie" aria-hidden="true"></div>
-</section>
+  </section>
+
+  <section class="zahlen" aria-label={zahlen.aria}>
+    <ul class="innen zahlen-liste">
+      {zahlen.liste.map((eintrag) => (
+        <li><span class="zahl">{eintrag.zahl}</span> <span class="zahl-text">{eintrag.text}</span></li>
+      ))}
+    </ul>
+  </section>
+</div>
+
+<script>
+  // Karte zum Umdrehen: Aus der Hülle wird ein echter Knopf (ohne JavaScript bleibt sie ein Bild). Der Zustand lebt
+  // nur in der Klasse "offen" und im aria-label; nichts wird gespeichert.
+  const huelle = document.querySelector('[data-karte]');
+  if (huelle instanceof HTMLElement) {
+    const angaben = { ...huelle.dataset };
+    const karten = JSON.parse(angaben.karten ?? '[]');
+    const knopf = document.createElement('button');
+    knopf.type = 'button';
+    knopf.className = huelle.className;
+    knopf.append(...huelle.childNodes);
+    huelle.replaceWith(knopf);
+    const dreh = knopf.querySelector('.wende-dreh');
+    const bild = knopf.querySelector('img');
+    const name = document.querySelector('[data-karte-name]');
+    const satz = document.querySelector('[data-karte-satz]');
+    const ruhig = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let nummer = 0;
+    let offen = false;
+    let wechsel = false;
+    // Nächste Karte einsetzen, sobald die Rückseite wieder vorn ist.
+    const naechste = () => {
+      if (!wechsel || !bild) return;
+      wechsel = false;
+      nummer = (nummer + 1) % karten.length;
+      const karte = karten[nummer];
+      bild.srcset = `${karte.klein} 240w, ${karte.gross} 480w`;
+      bild.src = karte.gross;
+      bild.alt = karte.alt;
+    };
+    const zeige = () => {
+      const karte = karten[nummer];
+      knopf.classList.toggle('offen', offen);
+      knopf.setAttribute('aria-label', offen ? angaben.zurueck.replace('{name}', karte.name) : angaben.umdrehen);
+      if (name) name.textContent = offen ? karte.name : '';
+      if (satz) satz.textContent = offen ? angaben.satz : angaben.tipp;
+    };
+    dreh?.addEventListener('transitionend', (ereignis) => {
+      if (ereignis.target === dreh && !offen) naechste();
+    });
+    knopf.addEventListener('click', () => {
+      if (!offen && wechsel) naechste();
+      offen = !offen;
+      if (!offen) wechsel = true;
+      zeige();
+      if (!offen && (ruhig.matches || !dreh || getComputedStyle(dreh).transitionDuration === '0s')) naechste();
+    });
+    zeige();
+  }
+</script>
