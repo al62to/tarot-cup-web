@@ -76,7 +76,8 @@ export const artikelDaten = ({ pfad, sprache, titel, beschreibung, bild, quellen
   publisher: { '@id': ENTWICKLER_ID },
   isPartOf: { '@id': WEBSITE_ID },
   about: { '@id': APP_ID },
-  ...(teile.length ? { hasPart: teile } : {}),
+  // Listen (Zeichen, Karten, Legungen) als mainEntity: hasPart erlaubt nur CreativeWork, ItemList ist keins (schema.org-Validator).
+  ...(teile.length ? { mainEntity: teile } : {}),
 });
 
 // Liste (Zeichen, Karten, Legungen) als ItemList.
