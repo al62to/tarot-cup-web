@@ -8,37 +8,63 @@
 <style>
 :root{--grund:#F5F0E6;--karte:#FFFDF8;--rand:#E4D9C3;--tinte:#1E2340;--text:#2B3050;--gold:#8A6A2F}
 *{box-sizing:border-box}
-body{margin:0;background:var(--grund);color:var(--text);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--grund);color:var(--text);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-wrap:break-word}
 header{background:var(--karte);border-bottom:1px solid var(--rand)}
 .bahn{max-width:760px;margin:0 auto;padding:0 20px}
 header .bahn{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 20px;padding-top:14px;padding-bottom:14px}
 .marke{font:600 26px/1.2 Georgia,"Times New Roman",serif;color:var(--tinte);text-decoration:none}
-nav a{color:var(--tinte);margin-left:18px}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 18px}
+nav a{color:var(--tinte)}
+nav a[aria-current="page"]{color:var(--gold);text-decoration-thickness:2px}
 main{padding:36px 0 64px}
 h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--tinte);line-height:1.2;font-weight:600}
-h1{font-size:clamp(32px,6vw,46px);margin:0 0 8px}
-h2{font-size:26px;margin:40px 0 10px}
+h1,h2,h3{-webkit-hyphens:auto;hyphens:auto}
+h1{font-size:clamp(26px,7vw,46px);margin:0 0 8px}
+h2{font-size:clamp(22px,4.5vw,26px);margin:40px 0 10px}
 h3{font-size:20px;margin:24px 0 6px}
-a{color:var(--tinte);text-underline-offset:3px}a:hover{color:var(--gold)}
-blockquote{margin:16px 0;padding:14px 20px;background:var(--karte);border:1px solid var(--rand);border-radius:14px}
-blockquote p{margin:6px 0}
-table{border-collapse:collapse;width:100%;font-size:15px;margin:14px 0}
-th,td{border:1px solid var(--rand);padding:8px 10px;text-align:left;vertical-align:top}
-th{background:var(--karte)}
-.tabelle{overflow-x:auto}
+a{color:var(--tinte);text-underline-offset:3px;overflow-wrap:anywhere}a:hover{color:var(--gold)}
+ul,ol{padding-left:24px}
+li{margin:4px 0}
+blockquote{margin:16px 0;padding:10px 20px;background:var(--karte);border:1px solid var(--rand);border-left:4px solid var(--gold);border-radius:14px}
+blockquote p{margin:10px 0}
+.tabelle{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0;border:1px solid var(--rand);border-radius:10px;background:var(--karte)}
+.tabelle table{border-collapse:collapse;width:100%;min-width:600px;font-size:15px;margin:0}
+th,td{border-bottom:1px solid var(--rand);border-right:1px solid var(--rand);padding:8px 10px;text-align:left;vertical-align:top;overflow-wrap:normal}
+th:last-child,td:last-child{border-right:0}
+tr:last-child td{border-bottom:0}
+th{background:var(--grund)}
+.fassungen{margin-top:48px;padding-top:8px;border-top:1px solid var(--rand)}
+.fassungen ul{padding-left:20px}
+.hinweis{padding:10px 16px;background:var(--karte);border:1px solid var(--rand);border-radius:10px}
 footer{border-top:1px solid var(--rand);padding:20px 0 40px;font-size:15px}
-footer a{margin-right:18px}
+footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 18px}
+@media print{
+  header,footer,.fassungen{display:none}
+  body{background:#fff;color:#000;font-size:11pt;line-height:1.45}
+  main{padding:0}
+  .bahn{max-width:none;padding:0}
+  h1,h2,h3,a,th,td{color:#000}
+  h2,h3{page-break-after:avoid;break-after:avoid}
+  blockquote{background:#fff;border:1px solid #000;border-left:3px solid #000;border-radius:0}
+  .hinweis{background:#fff;border:1px solid #000;border-radius:0}
+  .tabelle{overflow:visible;border:0;border-radius:0;background:#fff}
+  .tabelle table{min-width:0;font-size:9.5pt}
+  th,td{border:1px solid #000}
+  th{background:#fff}
+  tr{page-break-inside:avoid;break-inside:avoid}
+}
 </style>
 </head>
 <body>
 <header><div class="bahn"><a class="marke" href="./">Tarot Cup</a>
-<nav aria-label="Hauptnavigation"><a href="./datenschutz/">Datenschutz</a></nav></div></header>
+<nav aria-label="Hauptnavigation"><ul><li><a href="./datenschutz/">Datenschutz</a></li><li><a href="./nutzungsbedingungen/">Nutzungsbedingungen</a></li><li><a href="./offenlegung/">Offenlegung</a></li></ul></nav></div></header>
 <main><div class="bahn">
 <h1>Tarot Cup</h1>
 <p>Tarot Cup ist eine App für Tarot und Kaffeesatz, zur Unterhaltung. Die Deutungen sind keine Vorhersage und keine Beratung.</p>
 <p>Diese Seite ist vorerst nur eine kurze Startseite. Die Website mit dem Lexikon folgt später.</p>
 <p><a href="datenschutz/">Datenschutzerklärung</a> · Kontakt: <a href="mailto:aliapp@gmx.at">aliapp@gmx.at</a></p>
 </div></main>
-<footer><div class="bahn"><a href="./">Start</a><a href="./datenschutz/">Datenschutz</a><a href="mailto:aliapp@gmx.at">aliapp@gmx.at</a></div></footer>
+<footer><div class="bahn"><nav aria-label="Fußzeile"><ul><li><a href="./">Start</a></li><li><a href="./datenschutz/">Datenschutz</a></li><li><a href="./nutzungsbedingungen/">Nutzungsbedingungen</a></li><li><a href="./offenlegung/">Offenlegung</a></li><li><a href="mailto:aliapp@gmx.at">aliapp@gmx.at</a></li></ul></nav></div></footer>
 </body>
 </html>
