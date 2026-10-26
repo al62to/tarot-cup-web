@@ -1,0 +1,15 @@
+# Adressen von tarot-cup.com vor AP-W1 (Stand main 9b06a2d, 26.10.2026, gebaut mit web_bauen.py).
+# Jede muss nach dem Umbau erreichbar bleiben (Prüfung 5 in tools/pruefe_bau.mjs).
+/
+/datenschutz/
+/datenschutz/1.0/
+/datenschutz/1.1/
+/nutzungsbedingungen/
+/nutzungsbedingungen/1.0/
+/nutzungsbedingungen/1.1/
+/offenlegung/
+/tr/gizlilik/
+/tr/gizlilik/1.1/
+/tr/kullanim-kosullari/
+/tr/kullanim-kosullari/1.1/
+/robots.txt

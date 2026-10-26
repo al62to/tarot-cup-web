@@ -1,0 +1,80 @@
+---
+// Kopf: Marke, Hauptnavigation (Tarot · Kaffeesatz · So geht's · Fragen), Sprachwahl DE/TR, Knopf „App laden“ (/app/).
+// Am Handy ein schlichtes Menü zum Aufklappen (Muster FoodAsu, ohne Mega-Menü). Ohne JavaScript steht das Menü offen
+// da. Zustand nur in aria-expanded; nichts wird gespeichert.
+// Sprachwahl: immer die Gegenseite; gibt es keine, die Startseite der anderen Sprache.
+import Marke from './Marke.astro';
+import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
+import { pfadVon, startPfad } from '../daten/seiten.mjs';
+
+const { angaben } = Astro.props;
+const { sprache, pfad, gegenseite } = angaben;
+const T = oberflaeche[sprache];
+const andere = sprache === 'de' ? 'tr' : 'de';
+const punkte = [
+  { text: T.nav.tarot, ziel: pfadVon('tarot', sprache) },
+  { text: T.nav.kaffeesatz, ziel: pfadVon('kaffeesatz', sprache) },
+  { text: T.nav.sogehts, ziel: pfadVon('sogehts', sprache) },
+  { text: T.nav.fragen, ziel: pfadVon('fragen', sprache) },
+];
+const sprachen = [
+  { code: sprache, text: T.spracheKurz, name: T.sprache, ziel: pfad, aktuell: true },
+  { code: andere, text: oberflaeche[andere].spracheKurz, name: oberflaeche[andere].sprache, ziel: gegenseite ?? startPfad(andere), aktuell: false },
+].sort((a, b) => (a.code === 'de' ? -1 : b.code === 'de' ? 1 : 0));
+---
+<header class="kopf">
+  <div class="innen kopf-innen" data-nav>
+    <a class="marke-link" href={startPfad(sprache)} aria-label={`${T.marke ?? 'Tarot Cup'}, ${oberflaeche[sprache].krumen.start}`}><Marke /></a>
+    <button class="menue-knopf" type="button" aria-expanded="false" aria-controls="hauptmenue" data-menue data-auf={T.nav.menue} data-zu={T.nav.menueZu}>
+      <svg class="z-auf" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+      <svg class="z-zu" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" /></svg>
+      <span data-menue-text>{T.nav.menue}</span>
+    </button>
+    <div class="menue" id="hauptmenue">
+      <nav aria-label={T.nav.aria}>
+        <ul class="menue-liste">
+          {punkte.map((punkt) => (
+            <li><a href={punkt.ziel} aria-current={pfad === punkt.ziel ? 'page' : undefined}>{punkt.text}</a></li>
+          ))}
+        </ul>
+      </nav>
+      <ul class="sprachwahl" aria-label={T.nav.sprachwahl}>
+        {sprachen.map((eintrag) => (
+          <li>
+            {eintrag.aktuell ? (
+              <a href={eintrag.ziel} aria-current="true" lang={eintrag.code} title={eintrag.name}>{eintrag.text}</a>
+            ) : (
+              <a href={eintrag.ziel} hreflang={eintrag.code} lang={eintrag.code} title={eintrag.name}>{eintrag.text}</a>
+            )}
+          </li>
+        ))}
+      </ul>
+      <a class="knopf knopf-gold kopf-app" href="/app/">{T.nav.appLaden}</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Menü am Handy auf- und zuklappen; Esc und ein Klick daneben schließen es.
+  const nav = document.querySelector('[data-nav]');
+  const knopf = nav?.querySelector('[data-menue]');
+  if (nav && knopf) {
+    const text = knopf.querySelector('[data-menue-text]');
+    const setze = (offen) => {
+      knopf.setAttribute('aria-expanded', String(offen));
+      document.documentElement.classList.toggle('menue-offen', offen);
+      if (text) text.textContent = offen ? knopf.dataset.zu : knopf.dataset.auf;
+    };
+    knopf.addEventListener('click', () => setze(knopf.getAttribute('aria-expanded') !== 'true'));
+    nav.addEventListener('keydown', (ereignis) => {
+      if (ereignis.key === 'Escape' && knopf.getAttribute('aria-expanded') === 'true') {
+        setze(false);
+        knopf.focus();
+      }
+    });
+    document.addEventListener('click', (ereignis) => {
+      if (!nav.contains(ereignis.target)) setze(false);
+    });
+    window.matchMedia('(min-width: 56rem)').addEventListener('change', () => setze(false));
+  }
+</script>

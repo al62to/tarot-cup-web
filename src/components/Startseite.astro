@@ -1,0 +1,143 @@
+---
+// Startseite in einer Sprache. Kopf nach Entwurf 8.5 (Titelbild.astro), der Rest nach Entwurf 7.1 mit den Änderungen
+// aus dem Auftrag (Teil B): Was ist Tarot Cup?, Was die App kann (drei Kästen mit den Symbolen aus 7.1), Bildschirmfotos
+// im Handy-Rahmen, So liest du deine Tasse mit Tassenkarte, Band mit drei Vorteilen, zwei Kästen zu den Ratgebern,
+// häufige Fragen, Abschluss.
+// Store: Solange die App nicht öffentlich ist (store.oeffentlich), zeigt der Abschluss kein Abzeichen und keinen
+// Platzhalter, nur den Hinweis. Platz für das App-Store-Abzeichen ist im Storeknopf vorgesehen (ios.oeffentlich).
+import '../styles/start.css';
+import Basis from '../layouts/Basis.astro';
+import Text from './Text.astro';
+import Titelbild from './Titelbild.astro';
+import Handy from './Handy.astro';
+import Tassenkarte from './Tassenkarte.astro';
+import Storeknopf from './Storeknopf.astro';
+import { start } from '../daten/texte/start.mjs';
+import { fragen } from '../daten/texte/fragen.mjs';
+import { pfadVon } from '../daten/seiten.mjs';
+import { appDaten, faqDaten } from '../daten/strukturiert.mjs';
+import { FOTOS_START, fotoPfad } from '../daten/fotos.mjs';
+
+const { sprache } = Astro.props;
+const T = start[sprache];
+const auszug = T.fragen.ids.map((id) => {
+  const eintrag = fragen[sprache].liste.find((frage) => frage.id === id);
+  if (!eintrag) throw new Error(`Startseite: Frage ${id} fehlt in fragen.mjs`);
+  return eintrag;
+});
+const pfad = pfadVon('start', sprache);
+const daten = [
+  appDaten({ beschreibung: T.wasIst.text, bildschirmfotos: FOTOS_START.map((name) => fotoPfad('app', name, sprache, 720)) }),
+  faqDaten({ pfad, sprache, liste: auszug }),
+];
+// Linien-Symbole der drei Kästen aus Entwurf 7.1 (Tasse, zwei Karten, Mond).
+const SYMBOLE = [
+  '<path d="M8 14h20v8a10 10 0 0 1-20 0z"/><path d="M28 16h3a3 3 0 0 1 0 6h-3"/><path d="M6 34h26"/>',
+  '<rect x="6" y="9" width="14" height="22" rx="2" transform="rotate(-10 13 20)"/><rect x="20" y="9" width="14" height="22" rx="2" transform="rotate(10 27 20)"/>',
+  '<path d="M30 24A11 11 0 1 1 17 9a8.5 8.5 0 0 0 13 15z"/>',
+];
+const istTarot = (ziel) => ziel === pfadVon('tarot', sprache);
+---
+<Basis daten={daten} klasse="seite-start">
+  <Titelbild sprache={sprache} kopf={T.kopf} />
+
+  <section class="start-wasist start-abschnitt innen" aria-labelledby="wasist-titel">
+    <h2 id="wasist-titel"><Text text={T.wasIst.titel} ohne /></h2>
+    <Text text={T.wasIst.text} klasse="wasist-text" />
+  </section>
+
+  <section class="start-koennen start-abschnitt innen" aria-labelledby="koennen-titel">
+    <h2 id="koennen-titel">{T.koennen.titel}</h2>
+    <div class="kaesten">
+      {T.koennen.kaesten.map((kasten, nummer) => (
+        <article class:list={['kasten', `kasten-${nummer + 1}`]}>
+          <svg class="kasten-symbol" viewBox="0 0 40 40" aria-hidden="true" focusable="false" set:html={SYMBOLE[nummer] ?? ''} />
+          <h3>{kasten.titel}</h3>
+          <Text text={kasten.text} />
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="start-fotos" aria-labelledby="fotos-titel">
+    <svg class="fotos-schmuck" viewBox="0 0 900 900" aria-hidden="true" focusable="false"><circle cx="450" cy="450" r="300" /><circle cx="450" cy="450" r="340" stroke-dasharray="1 9" /><circle cx="450" cy="450" r="190" /><path d="M110 450h680M450 110v680" /></svg>
+    <div class="innen">
+      <h2 id="fotos-titel"><Text text={T.fotos.titel} ohne /></h2>
+      <div class="fotoreihe">
+        {FOTOS_START.map((name) => <Handy art="app" name={name} sprache={sprache} alt={T.fotos.alt[name]} groessen="(min-width: 48rem) 232px, 47vw" klasse={name === '03_deutung_drei_karten' ? 'ausblenden' : undefined} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="start-tasse start-abschnitt innen" aria-labelledby="tasse-titel">
+    <Tassenkarte sprache={sprache} />
+    <div class="tasse-text">
+      <h2 id="tasse-titel">{T.tasse.titel}</h2>
+      <ol class="schrittliste">{T.tasse.schritte.map((schritt) => <li><Text text={schritt} ohne /></li>)}</ol>
+      <p><a class="pfeil-link" href={T.tasse.link.ziel}>{T.tasse.link.text}</a></p>
+    </div>
+  </section>
+
+  <section class="start-vorteile" aria-label={T.vorteile.map((vorteil) => vorteil.titel).join(', ')}>
+    <div class="innen vorteile">
+      {T.vorteile.map((vorteil) => (
+        <div class="vorteil">
+          <h3>{vorteil.titel}</h3>
+          <Text text={vorteil.text} />
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="start-ratgeber start-abschnitt innen" aria-labelledby="ratgeber-titel">
+    <h2 id="ratgeber-titel">{T.ratgeber.titel}</h2>
+    <div class="ratgeber-kaesten">
+      {T.ratgeber.eintraege.map((eintrag) => (
+        <article class:list={['ratgeber-kasten', istTarot(eintrag.ziel) ? 'ist-tarot' : 'ist-kaffee']}>
+          {istTarot(eintrag.ziel) ? (
+            <svg class="ratgeber-bildchen" viewBox="0 0 400 132" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+              <g class="linien"><circle cx="200" cy="70" r="96" /><circle cx="200" cy="70" r="80" stroke-dasharray="1 6" /><circle cx="200" cy="70" r="50" /></g>
+              <g fill="#1E2340" stroke="#D2B47A" stroke-width="1.5">
+                <rect x="146" y="34" width="44" height="72" rx="5" transform="rotate(-12 168 70)" />
+                <rect x="210" y="34" width="44" height="72" rx="5" transform="rotate(12 232 70)" />
+                <rect x="178" y="26" width="44" height="72" rx="5" />
+              </g>
+              <g fill="none" stroke="#D2B47A" stroke-width="1" opacity="0.7"><circle cx="200" cy="62" r="11" /><path d="M200 46v32M184 62h32" /></g>
+            </svg>
+          ) : (
+            <svg class="ratgeber-bildchen" viewBox="0 0 400 132" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+              <g class="linien"><circle cx="70" cy="40" r="56" /><circle cx="70" cy="40" r="46" stroke-dasharray="2 5" /><circle cx="340" cy="120" r="40" /></g>
+              <g transform="translate(150 6) scale(1.2)">
+                <path d="M42 30 Q37 23 42 16 Q47 9 42 2" fill="none" stroke="#D2B47A" stroke-width="1.6" stroke-linecap="round" opacity="0.85" />
+                <path d="M56 30 Q51 23 56 16 Q61 9 56 2" fill="none" stroke="#D2B47A" stroke-width="1.6" stroke-linecap="round" opacity="0.85" />
+                <path d="M22 36 H78 V48 A28 22 0 0 1 22 48 Z" fill="#F3EAD7" />
+                <ellipse cx="50" cy="36" rx="28" ry="5" fill="#5A3A26" />
+                <path d="M78 41 H84 A8.5 8.5 0 0 1 84 58 H76" fill="none" stroke="#F3EAD7" stroke-width="4.5" stroke-linecap="round" />
+                <path d="M10 76 Q50 86 90 76" fill="none" stroke="#F3EAD7" stroke-width="4.5" stroke-linecap="round" />
+              </g>
+            </svg>
+          )}
+          <h3>{eintrag.titel}</h3>
+          <Text text={eintrag.text} />
+          <p><a class="pfeil-link" href={eintrag.ziel}>{eintrag.link}</a></p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="start-fragen start-abschnitt innen" aria-labelledby="fragen-titel">
+    <h2 id="fragen-titel">{T.fragen.titel}</h2>
+    {auszug.map((eintrag, nummer) => (
+      <details class="frage" open={nummer === 0}>
+        <summary><span><Text text={eintrag.frage} ohne /></span></summary>
+        {eintrag.antwort.map((absatz) => <Text text={absatz} />)}
+      </details>
+    ))}
+    <p><a class="pfeil-link" href={pfadVon('fragen', sprache)}>{T.fragen.alle}</a></p>
+  </section>
+
+  <section class="start-abschluss innen">
+    <Storeknopf sprache={sprache} ort="start" />
+    <p class="hinweis-unterhaltung">{T.hinweis}</p>
+  </section>
+</Basis>

@@ -1,0 +1,98 @@
+{
+ "app/01_start_tageskarte-de": {
+  "breite": 1080,
+  "hoehe": 2160
+ },
+ "app/01_start_tageskarte-tr": {
+  "breite": 1080,
+  "hoehe": 2160
+ },
+ "app/03_deutung_drei_karten-de": {
+  "breite": 1080,
+  "hoehe": 2160
+ },
+ "app/03_deutung_drei_karten-tr": {
+  "breite": 1080,
+  "hoehe": 2160
+ },
+ "app/05_kaffee_tasse-de": {
+  "breite": 1080,
+  "hoehe": 2160
+ },
+ "app/05_kaffee_tasse-tr": {
+  "breite": 1080,
+  "hoehe": 2160
+ },
+ "sogehts/01_erster_start-de": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/01_erster_start-tr": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/02_tageskarte-de": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/02_tageskarte-tr": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/03_tarot-de": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/03_tarot-tr": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/04_kaffeesatz-de": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/04_kaffeesatz-tr": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/05_lexikon-de": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/05_lexikon-tr": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/06_verlauf-de": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/06_verlauf-tr": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/07_erinnerung-de": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/07_erinnerung-tr": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/08_teilen-de": {
+  "breite": 1080,
+  "hoehe": 1620
+ },
+ "sogehts/08_teilen-tr": {
+  "breite": 1080,
+  "hoehe": 1620
+ },
+ "sogehts/09_sprache-de": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/09_sprache-tr": {
+  "breite": 1080,
+  "hoehe": 2400
+ }
+}

@@ -1,0 +1,163 @@
+/* Inhaltsseiten mit Inhaltsverzeichnis: Ratgeber Tarot und Kaffeesatz, So geht's. */
+
+/* Raster: am Laptop links das Verzeichnis (fährt mit), rechts die Lesespalte; am Handy das Verzeichnis oben. */
+.inhalt-raster { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; padding-top: 8px; }
+.lesen { min-width: 0; }
+@media (min-width: 56rem) {
+  .inhalt-raster { grid-template-columns: 15.5rem minmax(0, 46rem); gap: 56px; align-items: start; padding-top: 48px; }
+  .inhalt-raster > .toc { position: sticky; top: calc(var(--kopf-h) + 24px); max-height: calc(100vh - var(--kopf-h) - 48px); overflow-y: auto; }
+}
+.seite-sogehts .inhalt-raster { padding-top: 0; }
+/* Unter dem dunklen Kopf der Ratgeber am Handy Luft wie am Rand. */
+.seite-ratgeber .inhalt-raster { padding-top: 24px; }
+@media (min-width: 56rem) { .seite-ratgeber .inhalt-raster { padding-top: 48px; } }
+
+/* Kopf der Ratgeber: Nachtblau (Tarot) oder Kaffeebraun (Kaffeesatz) wie die Ritualmodi der App. Das Bild steht neben
+   dem Text (Laptop) oder darunter (Handy), nie hinter ihm. */
+.ratgeber-kopf { color: var(--nacht-text); }
+.kopf-tarot, .seite-tarot .krumen { background: var(--nacht); }
+.kopf-kaffee, .seite-kaffeesatz .krumen { background: var(--kaffee); }
+.seite-ratgeber .krumen, .seite-ratgeber .krumen a { color: #C3BECF; }
+.seite-kaffeesatz .krumen, .seite-kaffeesatz .krumen a { color: var(--kaffee-gedaempft); }
+.seite-ratgeber .krumen a:hover, .seite-ratgeber .krumen [aria-current="page"] { color: var(--nacht-text); }
+.seite-ratgeber .krumen li + li::before { border-color: var(--gold); }
+.seite-ratgeber .krumen :focus-visible, .ratgeber-kopf :focus-visible { outline-color: var(--gold); }
+.ratgeber-kopf h1 { color: var(--nacht-text); }
+.ratgeber-kopf h1::after { background: var(--gold); }
+.ratgeber-kopf .vorspann { color: #DAD4C6; }
+.kopf-kaffee h1 { color: var(--kaffee-text); }
+.kopf-kaffee .vorspann { color: #E3D6C4; }
+.ratgeber-kopf a { color: inherit; }
+.ratgeber-kopf-innen { display: grid; }
+.ratgeber-kopf-text { padding-bottom: 8px; }
+.kopf-bild { position: relative; overflow: hidden; height: 196px; margin-inline: calc(-1 * var(--rand-seite)); }
+.kopf-kreise { fill: none; stroke: var(--gold); stroke-width: 1; opacity: 0.2; }
+.kopf-faecher .kopf-kreise { position: absolute; left: 50%; top: 50%; width: 330px; height: 330px; transform: translate(-50%, -42%); }
+.kopf-karte { --w: 86px; position: absolute; top: var(--y); left: calc(50% + var(--x)); width: var(--w); height: calc(var(--w) * 288 / 179); max-width: none; object-fit: cover; border: 1.5px solid var(--gold); border-radius: 7px; background: var(--tasse); box-shadow: 0 12px 26px rgb(0 0 0 / 0.4); transform: rotate(var(--r, 0deg)); }
+.kopf-karte-1 { --x: -126px; --y: 34px; --r: -12deg; }
+.kopf-karte-2 { --x: -43px; --y: 18px; }
+.kopf-karte-3 { --x: 40px; --y: 34px; --r: 12deg; }
+.kopf-tasse svg { display: block; width: 210px; height: auto; margin: -10px auto 0; }
+@media (min-width: 56rem) {
+  .ratgeber-kopf-innen { grid-template-columns: minmax(0, 1fr) 26rem; align-items: center; gap: 32px; }
+  .ratgeber-kopf-text { padding-bottom: clamp(28px, 4vw, 48px); }
+  .kopf-bild { height: 340px; margin: 0; }
+  .kopf-faecher .kopf-kreise { width: 420px; height: 420px; transform: translate(-50%, -50%); }
+  .kopf-karte { --w: 130px; }
+  .kopf-karte-1 { --x: -175px; --y: 70px; }
+  .kopf-karte-2 { --x: -65px; --y: 48px; }
+  .kopf-karte-3 { --x: 45px; --y: 70px; }
+  .kopf-tasse svg { width: 320px; margin-top: 10px; }
+}
+
+/* Abschnitte der Lesespalte. */
+.abschnitt { padding-top: 48px; }
+.abschnitt:first-child { padding-top: 0; }
+.abschnitt h2 { margin-bottom: 18px; }
+.abschnitt > p { font-size: 1.0625rem; line-height: 1.7; }
+.nachsatz { margin-top: 16px; font-size: 0.9375rem; color: var(--gedaempft); }
+.abschnitt-app { margin-top: 56px; padding: 28px; background: var(--sand); border-radius: 24px; }
+.abschnitt-app > p:last-child { margin-bottom: 0; }
+
+/* Ritual Schritt für Schritt: nummerierte Schritte mit einer feinen Linie dazwischen. */
+.schritte { list-style: none; margin: 28px 0 0; padding: 0; }
+.schritt { position: relative; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 14px; padding-bottom: 28px; }
+.schritt::before { content: ""; position: absolute; left: 21px; top: 50px; bottom: 6px; width: 2px; border-radius: 2px; background: rgb(168 130 63 / 0.32); }
+.schritt:last-child { padding-bottom: 0; }
+.schritt:last-child::before { display: none; }
+.schritt-nummer { display: grid; place-items: center; width: 44px; height: 44px; border: 1.5px solid var(--gold-linie); border-radius: 50%; background: var(--karte); font: 600 1.375rem/1 var(--serif); color: var(--tinte); }
+.schritt-inhalt { padding-top: 7px; }
+.schritt-titel { margin-bottom: 6px; font-size: 1.4375rem; }
+.schritt-inhalt p { margin: 0; font-size: 1.0625rem; line-height: 1.7; }
+@media (min-width: 48rem) {
+  .schritt { grid-template-columns: 52px minmax(0, 1fr); gap: 20px; padding-bottom: 32px; }
+  .schritt::before { left: 25px; top: 58px; }
+  .schritt-nummer { width: 52px; height: 52px; font-size: 1.625rem; }
+  .schritt-inhalt { padding-top: 10px; }
+  .schritt-titel { font-size: 1.625rem; }
+}
+
+/* Bereiche der Tasse: Tassenkarte und die Bedeutungen. */
+.bereiche { display: grid; gap: 20px; margin-top: 24px; }
+.bereiche .tassenkarte { width: min(100%, 24rem); margin-inline: auto; padding: 20px; background: var(--karte); border: 1px solid var(--rand); border-radius: 24px; }
+.bereiche-liste { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 12px; margin: 0; }
+.bereich { padding: 16px 18px; background: var(--karte); border: 1px solid var(--rand); border-left: 3px solid var(--tasse-linie); border-radius: 16px; }
+.bereich dt { margin-bottom: 4px; font: 600 1.375rem/1.2 var(--serif); color: var(--tinte); }
+.bereich dd { margin: 0; font-size: 0.96875rem; line-height: 1.6; }
+
+/* Zeichen als Raster, mit der Linienform aus der App. */
+.zeichen-liste { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); gap: 12px; margin: 24px 0 0; padding: 0; }
+.zeichen { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 16px; align-items: start; padding: 18px; background: var(--karte); border: 1px solid var(--rand); border-radius: 18px; }
+.zeichen-form { display: grid; place-items: center; width: 56px; height: 56px; border: 1px solid #E2D2B0; border-radius: 50%; background: var(--tasse); }
+.zeichen-form svg { width: 34px; height: 34px; fill: none; stroke: #6B4A33; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.zeichen-name { margin: 2px 0 4px; font-size: 1.375rem; }
+.zeichen p { margin: 0; font-size: 0.96875rem; line-height: 1.55; }
+
+/* Karten mit Bild und Kurzbedeutung aufrecht und umgekehrt. */
+.karten-liste { list-style: none; display: grid; gap: 14px; margin: 24px 0 0; padding: 0; }
+.karte { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 18px; align-items: start; padding: 18px; background: var(--karte); border: 1px solid var(--rand); border-radius: 20px; }
+.karte .kartenbild { display: block; width: 100%; border: 1.5px solid var(--gold); border-radius: 8px; background: var(--tasse); box-shadow: 0 10px 20px -10px rgb(var(--schatten) / 0.45); }
+.karte-name { margin-bottom: 8px; font-size: 1.5rem; }
+.karte-text p { margin: 0 0 8px; font-size: 0.96875rem; line-height: 1.6; }
+.karte-text p:last-child { margin-bottom: 0; }
+@media (min-width: 48rem) { .karte { grid-template-columns: 128px minmax(0, 1fr); gap: 24px; padding: 20px 24px; } }
+
+/* Legungen mit Auslegebild auf Nachtblau. */
+.legungen { display: grid; gap: 18px; margin-top: 24px; }
+.legung { display: grid; gap: 18px; padding: 24px; background: var(--karte); border: 1px solid var(--rand); border-radius: 24px; }
+.legung-name { margin-bottom: 8px; font-size: 1.625rem; }
+.legung-text p { margin: 0; }
+@media (min-width: 48rem) {
+  .legung { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "text bild" "pos pos"; column-gap: 28px; align-items: start; }
+  .legung-text { grid-area: text; }
+  .legung .auslegung { grid-area: bild; }
+  .legung .positionen { grid-area: pos; }
+}
+.auslegung {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; min-width: min(13rem, 100%); margin: 0; padding: 34px 22px 24px; border-radius: 18px;
+  background: radial-gradient(circle, transparent 0 52px, rgb(210 180 122 / 0.2) 52.5px 53.5px, transparent 54px 80px, rgb(210 180 122 / 0.13) 80.5px 81.5px, transparent 82px), var(--nacht);
+}
+.auslegung-reihe { display: flex; justify-content: center; gap: 14px; }
+.auslegung-karte { position: relative; display: block; width: 52px; height: 86px; border: 1.5px solid var(--gold); border-radius: 7px; background: var(--nacht-flaeche); box-shadow: 0 8px 16px rgb(0 0 0 / 0.35); }
+.auslegung-karte::before { content: ""; position: absolute; inset: 5px; border: 1px solid rgb(210 180 122 / 0.4); border-radius: 4px; }
+.auslegung-karte::after { content: ""; position: absolute; left: 50%; top: 50%; width: 13px; height: 13px; border: 1px solid rgb(210 180 122 / 0.65); transform: translate(-50%, -50%) rotate(45deg); }
+.auslegung-zahl { position: absolute; left: 50%; top: -12px; z-index: 1; display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--gold); color: var(--nacht); font: 600 0.8125rem/1 var(--sans); transform: translateX(-50%); }
+.auslegung-1 .auslegung-karte { width: 64px; height: 106px; }
+.positionen { list-style: none; margin: 0; padding: 0; counter-reset: platz; }
+.positionen li { counter-increment: platz; position: relative; margin: 0 0 10px; padding-left: 38px; font-size: 0.96875rem; line-height: 1.6; }
+.positionen li:last-child { margin-bottom: 0; }
+.positionen li::before { content: counter(platz); position: absolute; left: 0; top: 0; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--nacht); color: var(--gold); font: 600 0.8125rem/1 var(--sans); }
+
+/* Gute und weniger gute Fragen nebeneinander. */
+.beispiele { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: 14px; margin-top: 24px; }
+.beispiele > div { padding: 22px 22px 14px; background: var(--karte); border: 1px solid var(--rand); border-top: 3px solid var(--gold-linie); border-radius: 20px; }
+.beispiele > .beispiele-weniger { border-top-color: #B9AFA0; }
+.beispiele h3 { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; font-size: 1.375rem; }
+.beispiele h3 svg { flex: none; width: 24px; height: 24px; fill: none; stroke: var(--gold-dunkel); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.beispiele-weniger h3 svg { stroke: var(--gedaempft); }
+.beispiele ul { list-style: none; margin: 0; padding: 0; }
+.beispiele li { padding: 10px 0; border-top: 1px solid var(--rand); font-size: 0.96875rem; line-height: 1.55; }
+
+/* So geht's: Kapitel mit großer Nummer und dem Foto im Handy-Rahmen daneben (am Handy darunter). */
+.kapitel { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 44px 0; border-top: 1px solid var(--rand); }
+.kapitel:first-child { padding-top: 8px; border-top: 0; }
+.kapitel-text .kapitel-nummer { margin: 0 0 6px; font: 600 3.5rem/1 var(--serif); color: var(--gold-linie); }
+.kapitel h2 { margin-bottom: 14px; font-size: clamp(1.75rem, 1.5rem + 1vw, 2.125rem); }
+.kapitel-text p { font-size: 1.0625rem; line-height: 1.7; }
+.kapitel-text p:last-child { margin-bottom: 0; }
+.kapitel-foto { --gb: 12.5rem; }
+.kapitel-foto.bildkarte { align-self: center; }
+/* Foto 06 (Verlauf): direkt unter der Statusleiste steht eine beim Scrollen angeschnittene Zeile. Sie wird im Grund
+   der App weich überblendet (Original 1080 x 2400: Statusleiste bis Pixel 80, Zeile 128 bis 172, nächste Zeile ab
+   188). Die Statusleiste bleibt sichtbar, nichts wird abgeschnitten. */
+.geraet.oben-ausblenden .geraet-rahmen { position: relative; }
+.geraet.oben-ausblenden .geraet-rahmen::after { content: ""; position: absolute; left: calc(var(--gb) * 0.035); right: calc(var(--gb) * 0.035); top: calc(var(--gb) * 0.035 + (100% - var(--gb) * 0.07) * 0.038); height: calc((100% - var(--gb) * 0.07) * 0.04); background: linear-gradient(#F5F0E6 80%, rgb(245 240 230 / 0)); }
+/* Türkisch: der Rest steht tiefer (Zeile 133 bis 172, nächste Zeile ab 220); die Überblendung reicht bis 210. */
+.geraet.oben-ausblenden:lang(tr) .geraet-rahmen::after { height: calc((100% - var(--gb) * 0.07) * 0.049); background: linear-gradient(#F5F0E6 72%, rgb(245 240 230 / 0)); }
+@media (min-width: 64rem) {
+  .kapitel { grid-template-columns: minmax(0, 1fr) 13.5rem; gap: 40px; align-items: start; }
+  .kapitel-foto { --gb: 13.5rem; }
+}
+.kapitel-abschluss { margin-top: 16px; padding: 28px; background: var(--sand); border-radius: 24px; }
+.kapitel-abschluss h2 { margin-bottom: 12px; font-size: 1.875rem; }
+.kapitel-abschluss p:last-child { margin-bottom: 0; }

@@ -1,0 +1,25 @@
+---
+// Ein Stück Fließtext aus den Textdateien. Erlaubt ist nur ein Link der Form [Linktext](/pfad/) auf eine Seite dieser
+// Website; alles andere wird als Text gesetzt (kein HTML aus den Daten). "als": Element um den Text (Standard: p),
+// "ohne": nur der Inhalt ohne Element. Der Name „Tarot Cup“ steht in einem span mit der Klasse marke-wort und bricht
+// so nie zwischen „Tarot“ und „Cup“ um.
+const { text, als = 'p', klasse, ohne = false } = Astro.props;
+if (typeof text !== 'string') throw new Error(`Text: Zeichenkette erwartet, gefunden ${typeof text}`);
+const teile = [];
+const muster = /\[([^\]]+)\]\(([^)]+)\)/g;
+let rest = 0;
+for (const treffer of text.matchAll(muster)) {
+  const [ganz, linktext, ziel] = treffer;
+  if (!/^\/[a-z0-9\-/#]*$/.test(ziel)) throw new Error(`Text: Link nur auf Seiten dieser Website erlaubt: ${ziel}`);
+  teile.push({ text: text.slice(rest, treffer.index) });
+  teile.push({ text: linktext, ziel });
+  rest = treffer.index + ganz.length;
+}
+teile.push({ text: text.slice(rest) });
+const Element = als;
+---
+{ohne ? (
+  teile.map((teil) => (teil.ziel ? <a href={teil.ziel}>{teil.text.split(/(Tarot Cup)/).map((stueck) => (stueck === 'Tarot Cup' ? <span class="marke-wort">{stueck}</span> : stueck))}</a> : teil.text.split(/(Tarot Cup)/).map((stueck) => (stueck === 'Tarot Cup' ? <span class="marke-wort">{stueck}</span> : stueck))))
+) : (
+  <Element class={klasse}>{teile.map((teil) => (teil.ziel ? <a href={teil.ziel}>{teil.text.split(/(Tarot Cup)/).map((stueck) => (stueck === 'Tarot Cup' ? <span class="marke-wort">{stueck}</span> : stueck))}</a> : teil.text.split(/(Tarot Cup)/).map((stueck) => (stueck === 'Tarot Cup' ? <span class="marke-wort">{stueck}</span> : stueck))))}</Element>
+)}

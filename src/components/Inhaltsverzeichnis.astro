@@ -1,0 +1,31 @@
+---
+// Inhaltsverzeichnis mit Sprungmarken (Ratgeber, So geht's; Muster Rechtsseite.astro von FoodAsu). Am Laptop steht es
+// links und fährt mit, am Handy steht es oben und klappt mit dem Knopf auf. Ohne JavaScript steht es immer offen.
+// "eintraege": Liste aus { kennung, titel }. Die Überschrift trägt die Kennung toc-titel (aria-labelledby).
+import Text from './Text.astro';
+
+const { titel, eintraege, klasse } = Astro.props;
+---
+<nav class:list={['toc', klasse]} aria-labelledby="toc-titel">
+  <h2 class="toc-titel" id="toc-titel">{titel}</h2>
+  <button class="toc-knopf" type="button" aria-expanded="false" aria-controls="toc-liste" data-toc-knopf>
+    <span>{titel}</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6" /></svg>
+  </button>
+  <ol class="toc-liste" id="toc-liste">
+    {eintraege.map((eintrag) => <li><a href={`#${eintrag.kennung}`}><span><Text text={eintrag.titel} ohne /></span></a></li>)}
+  </ol>
+</nav>
+
+<script>
+  // Am Handy auf- und zuklappen; ein Sprung zu einem Abschnitt klappt die Liste wieder zu.
+  const knopf = document.querySelector('[data-toc-knopf]');
+  const liste = document.getElementById('toc-liste');
+  if (knopf && liste) {
+    const setze = (offen) => knopf.setAttribute('aria-expanded', String(offen));
+    knopf.addEventListener('click', () => setze(knopf.getAttribute('aria-expanded') !== 'true'));
+    liste.addEventListener('click', (ereignis) => {
+      if (ereignis.target.closest('a')) setze(false);
+    });
+  }
+</script>

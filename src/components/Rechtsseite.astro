@@ -1,0 +1,31 @@
+---
+// Gerüst der Rechtstexte (Muster Rechtsseite.astro von FoodAsu): Datenschutzerklärung und Nutzungsbedingungen in der
+// gültigen Fassung und im Archiv. Inhalt in derselben Reihenfolge wie vor AP-W1: Link zur anderen Sprache, Hinweis auf
+// einer älteren Fassung, der Text, die Liste der Fassungen. Am Wortlaut ändert das Gerüst nichts: Der Text kommt als
+// Baustein aus src/inhalte/recht/ (deutung-unterlagen/arbeit/recht_web.py) und steht in einem Element mit
+// data-rechtstext; die Wortprüfungen des Baus nehmen genau diesen Teil aus.
+import '../styles/dokument.css';
+import Basis from '../layouts/Basis.astro';
+import { bausteinVon, fassungsliste, hinweisAeltere, sprachwahl } from '../daten/recht.mjs';
+
+const { rechtsseite } = Astro.props;
+const { text, fassung } = rechtsseite;
+const wahl = sprachwahl(rechtsseite).link;
+const hinweis = hinweisAeltere(rechtsseite);
+const liste = fassungsliste(text);
+---
+<Basis adresse={rechtsseite.adresse} klasse="seite-recht">
+  <div class="innen recht">
+    {wahl && <p class="sprachwahl-recht"><a href={wahl.ziel} hreflang={wahl.sprache}><span lang={wahl.sprache}>{wahl.text}</span></a></p>}
+    {hinweis && <p class="hinweis">{hinweis.vor}<a href={hinweis.link.ziel}>{hinweis.link.text}</a>{hinweis.nach}</p>}
+    <div class="rechtstext" data-rechtstext set:html={bausteinVon(fassung)} />
+    <section class="fassungen" aria-labelledby="fassungen-titel">
+      <h2 id="fassungen-titel">{liste.titel}</h2>
+      <ul>
+        {liste.punkte.map((punkt) => (
+          <li><a href={punkt.ziel} hreflang={punkt.sprache ?? undefined}>{punkt.name}</a>{punkt.rest}</li>
+        ))}
+      </ul>
+    </section>
+  </div>
+</Basis>

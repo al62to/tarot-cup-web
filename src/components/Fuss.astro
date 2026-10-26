@@ -1,0 +1,64 @@
+---
+// Fußzeile in drei Spalten (Muster FoodAsu): App (So geht's, Fragen, Über), Rechtliches (Datenschutz,
+// Nutzungsbedingungen, Offenlegung, Bildnachweis und Lizenzen), Kontakt (E-Mail, kodiert) und Sprache.
+// Darunter: „Eine App von Ali Tonc · Zur Unterhaltung.“ Die Offenlegung gibt es nur auf Deutsch; auf türkischen Seiten
+// heißt der Link „Offenlegung (künye)“; „Offenlegung“ trägt lang="de". Der ganze Linktext steht in einem span, weil der
+// Link ein Flex-Element ist und sonst das Leerzeichen vor „(künye)“ verschluckt.
+import Marke from './Marke.astro';
+import Text from './Text.astro';
+import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
+import { pfadVon, startPfad } from '../daten/seiten.mjs';
+import { mailtoKodiert, emailKodiert } from '../daten/seite.mjs';
+
+const { angaben } = Astro.props;
+const { sprache, pfad, gegenseite } = angaben;
+const T = oberflaeche[sprache];
+const andere = sprache === 'de' ? 'tr' : 'de';
+const datenschutz = sprache === 'de' ? '/datenschutz/' : '/tr/gizlilik/';
+const bedingungen = sprache === 'de' ? '/nutzungsbedingungen/' : '/tr/kullanim-kosullari/';
+const app = [
+  { text: T.fuss.sogehts, ziel: pfadVon('sogehts', sprache) },
+  { text: T.fuss.fragen, ziel: pfadVon('fragen', sprache) },
+  { text: T.fuss.ueber, ziel: pfadVon('ueber', sprache) },
+];
+const recht = [
+  { text: T.fuss.datenschutz, ziel: datenschutz },
+  { text: T.fuss.nutzungsbedingungen, ziel: bedingungen },
+  { text: T.fuss.offenlegung, ziel: '/offenlegung/', lang: sprache === 'de' ? undefined : 'de' },
+  { text: T.fuss.bildnachweis, ziel: pfadVon('bildnachweis', sprache) },
+];
+const kontakt = `<a href="${mailtoKodiert()}">${emailKodiert()}</a>`;
+---
+<footer class="fuss">
+  <div class="innen fuss-raster">
+    <div class="fuss-marke">
+      <a class="marke-link" href={startPfad(sprache)}><Marke /></a>
+    </div>
+    <nav class="fuss-spalte" aria-labelledby="fuss-app">
+      <h2 class="fuss-titel" id="fuss-app">{T.fuss.spalteApp}</h2>
+      <ul>{app.map((eintrag) => <li><a href={eintrag.ziel} aria-current={pfad === eintrag.ziel ? 'page' : undefined}><span><Text text={eintrag.text} ohne /></span></a></li>)}</ul>
+    </nav>
+    <nav class="fuss-spalte" aria-labelledby="fuss-recht">
+      <h2 class="fuss-titel" id="fuss-recht">{T.fuss.spalteRecht}</h2>
+      <ul>
+        {recht.map((eintrag) => (
+          <li><a href={eintrag.ziel} hreflang={eintrag.lang} aria-current={pfad === eintrag.ziel ? 'page' : undefined}>{eintrag.lang ? <span><span lang={eintrag.lang}>{eintrag.text.replace(/\s*\(.*\)$/, '')}</span>{eintrag.text.match(/\(.*\)$/) && <>{' '}{eintrag.text.match(/\(.*\)$/)[0]}</>}</span> : eintrag.text}</a></li>
+        ))}
+      </ul>
+    </nav>
+    <div class="fuss-spalte">
+      <h2 class="fuss-titel" id="fuss-kontakt">{T.fuss.spalteKontakt}</h2>
+      <ul aria-labelledby="fuss-kontakt">
+        <li set:html={kontakt} />
+      </ul>
+      <h2 class="fuss-titel" id="fuss-sprache">{T.fuss.sprache}</h2>
+      <ul class="fuss-sprachen" aria-labelledby="fuss-sprache">
+        <li><a href={sprache === 'de' ? pfad : gegenseite ?? startPfad('de')} hreflang={sprache === 'de' ? undefined : 'de'} aria-current={sprache === 'de' ? 'true' : undefined}><span lang="de">Deutsch</span></a></li>
+        <li><a href={sprache === 'tr' ? pfad : gegenseite ?? startPfad('tr')} hreflang={sprache === 'tr' ? undefined : 'tr'} aria-current={sprache === 'tr' ? 'true' : undefined}><span lang="tr">Türkçe</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="innen fuss-zeile">
+    <p>{T.fuss.zeile}</p>
+  </div>
+</footer>

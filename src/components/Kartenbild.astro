@@ -1,0 +1,22 @@
+---
+// Kartenbild von 1909 (gemeinfrei, Originalscan aus dem Code-Repo der App), als WebP in zwei Breiten
+// (tools/bilder_bauen.mjs). Karten mit nackten Figuren gibt es auf der Website nicht (Prüfung im Bau).
+// "vorrang": der Browser lädt das Bild zuerst (Karten im ersten Bildschirm, etwa im Titelbild).
+import { GESPERRT } from '../daten/karten.mjs';
+
+const { id, alt, groessen = '(min-width: 56rem) 160px, 34vw', laden = 'lazy', klasse, vorrang = false } = Astro.props;
+if (GESPERRT.includes(id)) throw new Error(`Kartenbild: ${id} zeigt nackte Figuren und ist auf der Website gesperrt`);
+const bild = (breite) => `/bilder/karten/${id}-${breite}.webp`;
+---
+<img
+  class:list={['kartenbild', klasse]}
+  src={bild(480)}
+  srcset={`${bild(240)} 240w, ${bild(480)} 480w`}
+  sizes={groessen}
+  width="480"
+  height="822"
+  alt={alt}
+  loading={laden}
+  fetchpriority={vorrang ? 'high' : undefined}
+  decoding="async"
+/>

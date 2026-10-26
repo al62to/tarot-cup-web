@@ -1,0 +1,20 @@
+---
+// Auslegebild einer Legung wie in der App: verdeckte Karten mit goldenem Rand und Nummer auf nachtblauem Tuch. Eine
+// Karte (Tageskarte, Ja oder Nein), drei in einer Reihe (Vergangenheit, Gegenwart, Zukunft), fünf für die Liebe in
+// zwei Reihen, drei oben und zwei darunter (so liegen sie in der Deutung der App, LegenSeiten.kt). Die Namen der Plätze
+// stehen in der nummerierten Liste darunter; das Bild trägt sie in seiner Beschreibung.
+const { legung, anzahl, namen = [], sprache } = Astro.props;
+const reihen = anzahl === 5 ? [[1, 2, 3], [4, 5]] : anzahl === 3 ? [[1, 2, 3]] : [[1]];
+const beschreibung = namen.length
+  ? `${sprache === 'de' ? 'Auslegebild' : 'Açılım düzeni'}: ${namen.map((name, nummer) => `${nummer + 1} ${name}`).join(', ')}`
+  : sprache === 'de' ? 'Auslegebild: eine Karte' : 'Açılım düzeni: tek kart';
+---
+<figure class:list={['auslegung', `auslegung-${legung}`, `auslegung-${reihen.flat().length}`]} role="img" aria-label={beschreibung}>
+  {reihen.map((reihe) => (
+    <div class="auslegung-reihe">
+      {reihe.map((nummer) => (
+        <span class="auslegung-karte"><span class="auslegung-zahl">{nummer}</span></span>
+      ))}
+    </div>
+  ))}
+</figure>

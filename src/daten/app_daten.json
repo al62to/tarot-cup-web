@@ -1,0 +1,2620 @@
+{
+ "_hinweis": "Erzeugt mit tools/app_daten_exportieren.py aus den Daten der App (nur Namen und Kurzbedeutungen, Website-Lexikon Variante B). Nicht von Hand ändern.",
+ "quelle": {
+  "zeichen_kaffeesatz": "1.2.0",
+  "tarot_karten": "0.7.0",
+  "tarot_legungen": "0.6.0"
+ },
+ "zeichen": [
+  {
+   "id": "kf_vogel",
+   "kategorie": "tier",
+   "name": {
+    "de": "Vogel",
+    "tr": "Kuş"
+   },
+   "kurz": {
+    "de": "Der Vogel gilt als Bote und steht für eine Nachricht, meist eine, über die man sich freuen kann.",
+    "tr": "Kuş fincanın habercisidir; çoğu zaman yüz güldüren bir haberin işaretidir."
+   }
+  },
+  {
+   "id": "kf_fisch",
+   "kategorie": "tier",
+   "name": {
+    "de": "Fisch",
+    "tr": "Balık"
+   },
+   "kurz": {
+    "de": "Der Fisch gilt als klassisches Zeichen für Kısmet, für glückliche Fügungen und eine heitere, leichte Stimmung.",
+    "tr": "Balık, fincanda en sevilen kısmet işaretlerinden biridir; güzel tesadüfleri ve ferah bir gönlü anlatır."
+   }
+  },
+  {
+   "id": "kf_schlange",
+   "kategorie": "tier",
+   "name": {
+    "de": "Schlange",
+    "tr": "Yılan"
+   },
+   "kurz": {
+    "de": "Die Schlange ist ein Zeichen der Wandlung: Sie steht dafür, eine alte Haut abzustreifen und mit wacher Klugheit neu zu beginnen.",
+    "tr": "Yılan kabuk değiştirmenin işaretidir; eskiyi geride bırakıp sakin bir akılla yeniden başlamayı anlatır."
+   }
+  },
+  {
+   "id": "kf_pferd",
+   "kategorie": "tier",
+   "name": {
+    "de": "Pferd",
+    "tr": "At"
+   },
+   "kurz": {
+    "de": "Das Pferd steht für einen Herzenswunsch, der sich erfüllen kann.",
+    "tr": "At murattır; gönlünden geçen dileğin gerçekleşebileceğine işaret eder."
+   }
+  },
+  {
+   "id": "kf_kamel",
+   "kategorie": "tier",
+   "name": {
+    "de": "Kamel",
+    "tr": "Deve"
+   },
+   "kurz": {
+    "de": "Das Kamel verkörpert Ausdauer, ruhige Kraft und ein Kısmet, das sich Zeit lässt.",
+    "tr": "Deve sebatın ve sakin gücün işaretidir; acele etmeyen bir kısmeti anlatır."
+   }
+  },
+  {
+   "id": "kf_hund",
+   "kategorie": "tier",
+   "name": {
+    "de": "Hund",
+    "tr": "Köpek"
+   },
+   "kurz": {
+    "de": "Der Hund steht für Treue und Freundschaft, für einen Menschen, auf den man zählen kann.",
+    "tr": "Köpek vefanın ve dostluğun işaretidir; sadakatin insana verdiği gücü anlatır."
+   }
+  },
+  {
+   "id": "kf_schmetterling",
+   "kategorie": "tier",
+   "name": {
+    "de": "Schmetterling",
+    "tr": "Kelebek"
+   },
+   "kurz": {
+    "de": "Der Schmetterling ist ein Bild für leichte, schöne Glücksmomente und für eine sanfte Verwandlung.",
+    "tr": "Kelebek, tüy kadar hafif mutluluk anlarının ve usulca gelen bir değişimin işaretidir."
+   }
+  },
+  {
+   "id": "kf_elefant",
+   "kategorie": "tier",
+   "name": {
+    "de": "Elefant",
+    "tr": "Fil"
+   },
+   "kurz": {
+    "de": "Der Elefant verkörpert Kraft, Beständigkeit und Weisheit, ein Glück, das auf festem Boden steht.",
+    "tr": "Fil güç, sebat ve bilgeliğin işaretidir; ayakları yere sağlam basan bir talihi anlatır."
+   }
+  },
+  {
+   "id": "kf_schildkroete",
+   "kategorie": "tier",
+   "name": {
+    "de": "Schildkröte",
+    "tr": "Kaplumbağa"
+   },
+   "kurz": {
+    "de": "Die Schildkröte steht für einen Wunsch, der langsam, aber stetig seinem Ziel entgegengeht.",
+    "tr": "Kaplumbağa, yavaş ama emin adımlarla gerçekleşmeye giden bir dileği anlatır."
+   }
+  },
+  {
+   "id": "kf_mensch",
+   "kategorie": "mensch",
+   "name": {
+    "de": "Menschenfigur",
+    "tr": "İnsan"
+   },
+   "kurz": {
+    "de": "Eine Menschengestalt kann auf eine Begegnung, auf Rückhalt oder auf ein frohes Beisammensein deuten.",
+    "tr": "İnsan şekli bir karşılaşmaya, sırtını yaslayabileceğin bir desteğe ya da neşeli bir kalabalığa işaret edebilir."
+   }
+  },
+  {
+   "id": "kf_gesicht",
+   "kategorie": "mensch",
+   "name": {
+    "de": "Gesicht",
+    "tr": "Yüz"
+   },
+   "kurz": {
+    "de": "Ein Gesicht kann auf eine Nachricht oder eine Freude deuten, und sein Ausdruck gibt dem Bild seine Farbe.",
+    "tr": "Yüz, bir haberin ya da bir sevincin işareti olabilir; ona rengini veren, ifadesidir."
+   }
+  },
+  {
+   "id": "kf_auge",
+   "kategorie": "mensch",
+   "name": {
+    "de": "Auge",
+    "tr": "Göz"
+   },
+   "kurz": {
+    "de": "Das Auge bedeutet wache Aufmerksamkeit und einen klaren Blick, mit dem du Zusammenhänge erkennen kannst.",
+    "tr": "Göz, uyanık bir dikkatin ve berrak bir bakışın işaretidir; olup biteni açık seçik görebilmeni anlatır."
+   }
+  },
+  {
+   "id": "kf_ring",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Ring",
+    "tr": "Yüzük"
+   },
+   "kurz": {
+    "de": "Der Ring steht für ein Versprechen und eine Bindung, in der Liebe wie in anderen Lebensbereichen.",
+    "tr": "Yüzük söz demektir; gönül bağını ve verilip tutulan sözü anlatır."
+   }
+  },
+  {
+   "id": "kf_schluessel",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Schlüssel",
+    "tr": "Anahtar"
+   },
+   "kurz": {
+    "de": "Der Schlüssel ist ein Zeichen des Öffnens: neue Möglichkeiten, eine Lösung und oft ein eigenes Zuhause.",
+    "tr": "Anahtar kapı açar; yeni fırsatları, bir çözümü ve çoğu zaman kendini evinde hissetmeyi anlatır."
+   }
+  },
+  {
+   "id": "kf_haus",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Haus",
+    "tr": "Ev"
+   },
+   "kurz": {
+    "de": "Das Haus bedeutet das eigene Heim: Geborgenheit, Familie und ein Zuhause, in dem man sich wohlfühlt.",
+    "tr": "Ev, yuvanın sıcaklığını, aile huzurunu ve insanın kendini evinde hissetmesini anlatır."
+   }
+  },
+  {
+   "id": "kf_tuer",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Tür",
+    "tr": "Kapı"
+   },
+   "kurz": {
+    "de": "Die Tür deutet auf eine Gelegenheit, die sich öffnen kann und zum Hindurchgehen einlädt.",
+    "tr": "Kapı, kişinin önünde aralanan yeni bir fırsatın, açılmayı bekleyen bir kısmetin işaretidir."
+   }
+  },
+  {
+   "id": "kf_leiter",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Leiter",
+    "tr": "Merdiven"
+   },
+   "kurz": {
+    "de": "Die Leiter zeigt einen Aufstieg, der Stufe um Stufe gelingen kann.",
+    "tr": "Merdiven, her basamağı tek tek çıkılan bir yükselişin, sabırla varılan bir hedefin işaretidir."
+   }
+  },
+  {
+   "id": "kf_krone",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Krone",
+    "tr": "Taç"
+   },
+   "kurz": {
+    "de": "Die Krone ist ein Zeichen für Anerkennung, Ehre und den Aufstieg zu einer geachteten Stellung.",
+    "tr": "Taç, emeğin görülüp takdir edilmesinin, söz sahibi bir konumun ve itibarın işaretidir."
+   }
+  },
+  {
+   "id": "kf_fahne",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Fahne",
+    "tr": "Bayrak"
+   },
+   "kurz": {
+    "de": "Die Fahne deutet auf eine Aufgabe in der Gemeinschaft oder eine willkommene Nachricht rund um deine Arbeit.",
+    "tr": "Bayrak, başkalarıyla birlikte yürütülebilecek ortak bir işin ya da emeğinle ilgili sevindirici bir haberin işaretidir."
+   }
+  },
+  {
+   "id": "kf_brief",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Brief",
+    "tr": "Zarf"
+   },
+   "kurz": {
+    "de": "Mit dem Brief verbindet sich eine Nachricht, die Neuigkeiten oder Klarheit bringen kann.",
+    "tr": "Zarf haberin işaretidir; sana ulaşabilecek bir mektubu ya da birkaç satırlık bir bilgiyi anlatır."
+   }
+  },
+  {
+   "id": "kf_weg",
+   "kategorie": "form",
+   "name": {
+    "de": "Weg",
+    "tr": "Yol"
+   },
+   "kurz": {
+    "de": "Der Weg steht für Bewegung, eine Reise oder einen neuen Abschnitt, der sich öffnet.",
+    "tr": "Yol, fincanda bir yolculuğun, bir hareketin ya da önde açılan yeni bir dönemin işaretidir."
+   }
+  },
+  {
+   "id": "kf_herz",
+   "kategorie": "form",
+   "name": {
+    "de": "Herz",
+    "tr": "Kalp"
+   },
+   "kurz": {
+    "de": "Das Herz steht für Liebe, Zuneigung und Verbundenheit mit Menschen, die einem nahe sind.",
+    "tr": "Kalp, sevginin, gönül yakınlığının ve içten bağlılığın işaretidir."
+   }
+  },
+  {
+   "id": "kf_kreis",
+   "kategorie": "form",
+   "name": {
+    "de": "Kreis",
+    "tr": "Daire"
+   },
+   "kurz": {
+    "de": "Der Kreis deutet auf ein Vorhaben, das sich runden und vollenden kann.",
+    "tr": "Daire, bütünlenebilecek bir işin ve yerine oturan bir düzenin işaretidir."
+   }
+  },
+  {
+   "id": "kf_dreieck",
+   "kategorie": "form",
+   "name": {
+    "de": "Dreieck",
+    "tr": "Üçgen"
+   },
+   "kurz": {
+    "de": "Das Dreieck gilt als Zeichen für Schwung, Fortschritt und eine glückliche Wendung.",
+    "tr": "Üçgen, ileriye doğru bir atılımın, güç kazanan işlerin ve hayırlı bir gelişmenin işaretidir."
+   }
+  },
+  {
+   "id": "kf_baum",
+   "kategorie": "natur",
+   "name": {
+    "de": "Baum",
+    "tr": "Ağaç"
+   },
+   "kurz": {
+    "de": "Der Baum steht für Glück, das sich ausbreitet, für festen Halt und eine Arbeit, die Früchte trägt.",
+    "tr": "Ağaç, kök salıp genişleyen kısmetin, sağlam bir dayanağın ve emeğin meyve vermesinin işaretidir."
+   }
+  },
+  {
+   "id": "kf_berg",
+   "kategorie": "natur",
+   "name": {
+    "de": "Berg",
+    "tr": "Dağ"
+   },
+   "kurz": {
+    "de": "Der Berg ist ein Bild für ein großes Ziel, für Aufstieg und Ansehen.",
+    "tr": "Dağ, büyük bir hedefin, yükselişin ve itibarın işaretidir."
+   }
+  },
+  {
+   "id": "kf_mond",
+   "kategorie": "natur",
+   "name": {
+    "de": "Mond",
+    "tr": "Ay"
+   },
+   "kurz": {
+    "de": "Der Mond ist ein Bild der Erleichterung: Sorgen können sich lichten, und es kann hell werden im Zuhause wie im Herzen.",
+    "tr": "Ay, yüreğe ve haneye doğan ferahlığın, dağılan dertlerin ve gelen huzurun işaretidir."
+   }
+  },
+  {
+   "id": "kf_sonne",
+   "kategorie": "natur",
+   "name": {
+    "de": "Sonne",
+    "tr": "Güneş"
+   },
+   "kurz": {
+    "de": "Die Sonne steht für Licht, Glück und eine helle, leichte Zeit.",
+    "tr": "Güneş, aydınlığın, mutluluğun ve ferah bir dönemin işaretidir."
+   }
+  },
+  {
+   "id": "kf_stern",
+   "kategorie": "natur",
+   "name": {
+    "de": "Stern",
+    "tr": "Yıldız"
+   },
+   "kurz": {
+    "de": "Der Stern steht für Glück, Glanz und Wünsche, die in Erfüllung gehen können.",
+    "tr": "Yıldız, parlayan talihin, yükselişin ve gerçekleşebilecek dileklerin işaretidir."
+   }
+  },
+  {
+   "id": "kf_blume",
+   "kategorie": "natur",
+   "name": {
+    "de": "Blume",
+    "tr": "Çiçek"
+   },
+   "kurz": {
+    "de": "Die Blume ist ein Zeichen für Freude, Wohlbefinden und schöne Entwicklungen, besonders in der Liebe.",
+    "tr": "Çiçek, açan kısmetin, içe yayılan ferahlığın ve güzel günlerin işaretidir."
+   }
+  },
+  {
+   "id": "kf_pfau",
+   "kategorie": "tier",
+   "name": {
+    "de": "Pfau",
+    "tr": "Tavus kuşu"
+   },
+   "kurz": {
+    "de": "Der Pfau ist ein Zeichen für Fülle, Farbenpracht und ein schönes Kısmet.",
+    "tr": "Tavus kuşu, renk renk açılan bir güzelliğin ve insanı sevindiren bir kısmetin işaretidir."
+   }
+  },
+  {
+   "id": "kf_loewe",
+   "kategorie": "tier",
+   "name": {
+    "de": "Löwe",
+    "tr": "Aslan"
+   },
+   "kurz": {
+    "de": "Der Löwe ist ein Bild ruhiger Kraft und des Mutes, dich selbst und das, was dir wichtig ist, zu schützen.",
+    "tr": "Aslan, sende saklı sakin gücü ve değer verdiklerine sahip çıkan yürekli bir duruşu anlatır."
+   }
+  },
+  {
+   "id": "kf_hase",
+   "kategorie": "tier",
+   "name": {
+    "de": "Hase",
+    "tr": "Tavşan"
+   },
+   "kurz": {
+    "de": "Flink und wach deutet der Hase auf eine Nachricht, die schnell zu dir finden kann, und auf frische Beweglichkeit.",
+    "tr": "Tavşan fincanda çabucak ulaşabilecek bir habere ve kıvrak, çevik bir hareketliliğe işaret eder."
+   }
+  },
+  {
+   "id": "kf_ente",
+   "kategorie": "tier",
+   "name": {
+    "de": "Ente",
+    "tr": "Ördek"
+   },
+   "kurz": {
+    "de": "Die Ente ist ein Zeichen für Frieden im Haus, für ein ausgeglichenes Gemüt und ein kleines, freundliches Kısmet.",
+    "tr": "Ördek, evin huzurunu, dengeli bir ruh hâlini ve küçük ama güzel bir kısmeti anlatır."
+   }
+  },
+  {
+   "id": "kf_huhn",
+   "kategorie": "tier",
+   "name": {
+    "de": "Huhn",
+    "tr": "Tavuk"
+   },
+   "kurz": {
+    "de": "Das Huhn deutet auf einen gut durchdachten Plan und auf ein Kısmet, das dich froh stimmen mag.",
+    "tr": "Tavuk, iyi düşünülmüş bir planı ve seni sevindirebilecek bir kısmeti anlatır."
+   }
+  },
+  {
+   "id": "kf_schaf",
+   "kategorie": "tier",
+   "name": {
+    "de": "Schaf",
+    "tr": "Koyun"
+   },
+   "kurz": {
+    "de": "Das Schaf erzählt von Sanftmut und Wohlwollen und davon, dass eine milde Art viel tragen kann.",
+    "tr": "Koyun yumuşak huyun ve iyi niyetin işaretidir; şefkatli bir tavrın çok şeyi taşıyabileceğini anlatır."
+   }
+  },
+  {
+   "id": "kf_esel",
+   "kategorie": "tier",
+   "name": {
+    "de": "Esel",
+    "tr": "Eşek"
+   },
+   "kurz": {
+    "de": "Der Esel ist ein Zeichen der Ausdauer und des Kısmets: Lange Erhofftes kann sich mit stetigem Gang einstellen.",
+    "tr": "Eşek dayanıklılığın ve kısmetin işaretidir; azimle sürdürülen bir yolun insanı umduğuna ulaştırabileceğini anlatır."
+   }
+  },
+  {
+   "id": "kf_biene",
+   "kategorie": "tier",
+   "name": {
+    "de": "Biene",
+    "tr": "Arı"
+   },
+   "kurz": {
+    "de": "Die Biene steht für Fleiß, der Anerkennung finden kann, und für frohe, tätige Gemeinschaft.",
+    "tr": "Arı, emeğin değer bulabileceğini ve neşeli, çalışkan bir birlikteliği anlatır."
+   }
+  },
+  {
+   "id": "kf_kuh",
+   "kategorie": "tier",
+   "name": {
+    "de": "Kuh",
+    "tr": "İnek"
+   },
+   "kurz": {
+    "de": "Ruhe, fester Halt und ein stilles Kısmet in friedlichen Tagen: Dafür steht die Kuh.",
+    "tr": "İnek huzuru, sağlam bir dayanağı ve sakin günlerin getirebileceği bir uğuru anlatır."
+   }
+  },
+  {
+   "id": "kf_seepferdchen",
+   "kategorie": "tier",
+   "name": {
+    "de": "Seepferdchen",
+    "tr": "Denizatı"
+   },
+   "kurz": {
+    "de": "Das Seepferdchen ist ein Wunschzeichen und weckt die Hoffnung, dass sich ein gehegter Wunsch erfüllen kann.",
+    "tr": "Denizatı bir dilek işaretidir; içinden geçirdiğin bir dileğin gerçeğe dönüşebileceğini anlatır."
+   }
+  },
+  {
+   "id": "kf_engel",
+   "kategorie": "mensch",
+   "name": {
+    "de": "Engel",
+    "tr": "Melek"
+   },
+   "kurz": {
+    "de": "Der Engel ist ein Bild für Schutz und Glück und deutet darauf, dass sich manches gut fügen kann.",
+    "tr": "Melek, korunmuşluk duygusunu ve yolunda giden işleri anlatabilir."
+   }
+  },
+  {
+   "id": "kf_taenzerin",
+   "kategorie": "mensch",
+   "name": {
+    "de": "Tänzerin",
+    "tr": "Dansçı"
+   },
+   "kurz": {
+    "de": "Die Tänzerin deutet auf Freude und Leichtigkeit, auf einen Schwung, der dich innerlich in Bewegung bringt.",
+    "tr": "Dansçı, fincanda neşenin ve hafiflemiş bir yüreğin işaretidir."
+   }
+  },
+  {
+   "id": "kf_hand",
+   "kategorie": "mensch",
+   "name": {
+    "de": "Hand",
+    "tr": "El"
+   },
+   "kurz": {
+    "de": "Eine offene Hand spricht von Verbundenheit und von Hilfe, die gegeben und empfangen werden kann.",
+    "tr": "Açık bir avuç, yardımlaşmayı ve içten tutulan bir dileği anlatabilir."
+   }
+  },
+  {
+   "id": "kf_fuss",
+   "kategorie": "mensch",
+   "name": {
+    "de": "Fuß",
+    "tr": "Ayak"
+   },
+   "kurz": {
+    "de": "Ein Fuß erzählt von Tatendrang und von einem Weg, der sich überraschend vor dir auftun kann.",
+    "tr": "Ayak, birden önüne çıkan bir yolu ve harekete geçme isteğini anlatabilir."
+   }
+  },
+  {
+   "id": "kf_kind",
+   "kategorie": "mensch",
+   "name": {
+    "de": "Kind",
+    "tr": "Çocuk"
+   },
+   "kurz": {
+    "de": "Das Kind steht für Anfangsgeist: unbefangene Neugier, Freude am Spiel und Lust, einen Plan frisch anzugehen.",
+    "tr": "Çocuk, merakı, oyun sevincini ve bir işe taze bir hevesle başlamayı hatırlatır."
+   }
+  },
+  {
+   "id": "kf_menschenmenge",
+   "kategorie": "mensch",
+   "name": {
+    "de": "Menschenmenge",
+    "tr": "Kalabalık"
+   },
+   "kurz": {
+    "de": "Die Menschenmenge lässt an ein Fest denken, an Geselligkeit und ein Beisammensein voller Stimmen und Musik.",
+    "tr": "Kalabalık, sesi ve neşesi bol, coşkulu bir şenliği anlatabilir."
+   }
+  },
+  {
+   "id": "kf_zahl",
+   "kategorie": "buchstabe_zahl",
+   "name": {
+    "de": "Zahl",
+    "tr": "Rakam"
+   },
+   "kurz": {
+    "de": "Die Zahl deutet auf Ordnung im Ablauf: Dinge folgen aufeinander, und jedes findet seinen Platz.",
+    "tr": "Rakam, akıştaki düzene işaret edebilir; her işin bir yeri olduğunu hatırlatır."
+   }
+  },
+  {
+   "id": "kf_buchstabe",
+   "kategorie": "buchstabe_zahl",
+   "name": {
+    "de": "Buchstabe",
+    "tr": "Harf"
+   },
+   "kurz": {
+    "de": "Der Buchstabe kann einen Anfang anzeigen: ein Wort oder einen Klang, der in dir etwas weckt.",
+    "tr": "Harf bir başlangıcın işaretidir; içinde bir şey uyandıran bir sözcüğü, bir tınıyı hatırlatır."
+   }
+  },
+  {
+   "id": "kf_katze",
+   "kategorie": "tier",
+   "name": {
+    "de": "Katze",
+    "tr": "Kedi"
+   },
+   "kurz": {
+    "de": "Die Katze steht für Eigenständigkeit und feines Gespür, für wache Sinne und die Lust, Dinge selbst zu erkunden.",
+    "tr": "Kedi, bağımsızlığa, ince sezgiye ve öğrenme merakına işaret edebilir."
+   }
+  },
+  {
+   "id": "kf_drache",
+   "kategorie": "tier",
+   "name": {
+    "de": "Drache",
+    "tr": "Ejderha"
+   },
+   "kurz": {
+    "de": "Der Drache deutet auf große Kraft und Mut, auf eine Hürde, die zur eigenen Aufgabe wird, und auf tiefe Wandlung.",
+    "tr": "Ejderha büyük bir güç ve cesaret işaretidir; karşına çıkabilecek bir engeli bir göreve, bir dönüşüme çevirmeye seni çağırır."
+   }
+  },
+  {
+   "id": "kf_anker",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Anker",
+    "tr": "Çapa"
+   },
+   "kurz": {
+    "de": "Der Anker gibt Halt: Er spricht von Beständigkeit und von einem Wunsch, der sich nach langer Mühe erfüllen kann.",
+    "tr": "Çapa sağlam bir tutunma noktasını anlatır; uzun emekle beslenen bir dilek sonunda yerini bulabilir."
+   }
+  },
+  {
+   "id": "kf_schiff",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Schiff",
+    "tr": "Gemi"
+   },
+   "kurz": {
+    "de": "Das Schiff kann etwas aus der Ferne näherbringen: eine Nachricht, einen weiten Gedanken oder ein Vorhaben, das Fahrt aufnimmt.",
+    "tr": "Gemi, uzaktan gelebilecek bir habere ya da demir almaya hazır bir plana işaret edebilir."
+   }
+  },
+  {
+   "id": "kf_hufeisen",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Hufeisen",
+    "tr": "At nalı"
+   },
+   "kurz": {
+    "de": "Das Hufeisen ist das Glückszeichen schlechthin: Es kann unverhofftes Glück und schöne Momente in deinen Alltag bringen.",
+    "tr": "At nalı uğurun en bilinen simgesidir; umulmadık bir şansa ve güzel anlara işaret edebilir."
+   }
+  },
+  {
+   "id": "kf_kerze",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Kerze",
+    "tr": "Mum"
+   },
+   "kurz": {
+    "de": "Die Kerze kann Helligkeit in eine unklare Lage bringen und Hoffnung aufglimmen lassen, wo vieles trüb wirkte.",
+    "tr": "Mum, belirsiz bir durumu aydınlatan ve umut yeşerten bir işarettir."
+   }
+  },
+  {
+   "id": "kf_hut",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Hut",
+    "tr": "Şapka"
+   },
+   "kurz": {
+    "de": "Der Hut kann auf eine neue Rolle deuten, die du dir aufsetzt, und auf Erfolg, der zu dir passt.",
+    "tr": "Şapka, üstlenebileceğin yeni bir rolün ve sana uygun düşen bir başarının işareti olabilir."
+   }
+  },
+  {
+   "id": "kf_schuh",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Schuh",
+    "tr": "Ayakkabı"
+   },
+   "kurz": {
+    "de": "Der Schuh ist ein Zeichen für Bewegung: Freude am Gehen und Vorhaben, die in Gang kommen können.",
+    "tr": "Ayakkabı harekete geçme isteğini anlatır; bir işin yürümeye başlaması için zemin hazır olabilir."
+   }
+  },
+  {
+   "id": "kf_hammer",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Hammer",
+    "tr": "Çekiç"
+   },
+   "kurz": {
+    "de": "Der Hammer spricht von Tatkraft und von der Lust, etwas Haltbares aufzubauen.",
+    "tr": "Çekiç azmin ve çalışkanlığın işaretidir; bir şeyi kendi emeğinle kurma isteğini anlatır."
+   }
+  },
+  {
+   "id": "kf_saiteninstrument",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Saiteninstrument",
+    "tr": "Saz"
+   },
+   "kurz": {
+    "de": "Das Saiteninstrument bringt Freude und Einklang zum Klingen, und Gefühle können ihren eigenen Ton finden.",
+    "tr": "Saz, neşenin ve ahengin işaretidir; içindeki duyguların bir ezgiye dönüşebileceğini anlatır."
+   }
+  },
+  {
+   "id": "kf_pokal",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Pokal",
+    "tr": "Ödül kupası"
+   },
+   "kurz": {
+    "de": "Der Pokal würdigt Erfolg: Mühe, die du hineingesteckt hast, kann Anerkennung finden und einen Anlass zum Feiern geben.",
+    "tr": "Harcadığın çaba takdir görebilir; kutlamaya değer bir başarının sevinci yaşanabilir."
+   }
+  },
+  {
+   "id": "kf_flugzeug",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Flugzeug",
+    "tr": "Uçak"
+   },
+   "kurz": {
+    "de": "Das Flugzeug bringt Tempo ins Spiel: Manches kann eine rasche, erfreuliche Wendung nehmen.",
+    "tr": "Uçak hızın ve beklenmedik değişimlerin işaretidir; işler sevindirici bir ivme kazanabilir."
+   }
+  },
+  {
+   "id": "kf_bruecke",
+   "kategorie": "natur",
+   "name": {
+    "de": "Brücke",
+    "tr": "Köprü"
+   },
+   "kurz": {
+    "de": "Die Brücke gilt als Zeichen für eine Verbindung zwischen Vorhaben und Ideen und für eine gute Gelegenheit.",
+    "tr": "Köprü, fikirleri ve işleri birbirine bağlayan sağlam bir bağın ve önüne çıkabilecek güzel bir fırsatın işaretidir."
+   }
+  },
+  {
+   "id": "kf_burg",
+   "kategorie": "natur",
+   "name": {
+    "de": "Burg",
+    "tr": "Kale"
+   },
+   "kurz": {
+    "de": "Die Burg verkörpert Schutz, festen Halt und eine Stärke, die von innen kommt.",
+    "tr": "Kale, insanın kendi içinden gelen sağlam ve korunaklı bir güce işaret eder."
+   }
+  },
+  {
+   "id": "kf_klee",
+   "kategorie": "natur",
+   "name": {
+    "de": "Klee",
+    "tr": "Yonca"
+   },
+   "kurz": {
+    "de": "Der Klee ist ein altes Glückszeichen und verbindet Freude, Zufriedenheit und warme Zuneigung.",
+    "tr": "Yonca, talihin ve içten, sıcak bir sevginin işareti sayılır."
+   }
+  },
+  {
+   "id": "kf_brunnen",
+   "kategorie": "natur",
+   "name": {
+    "de": "Brunnen",
+    "tr": "Çeşme"
+   },
+   "kurz": {
+    "de": "Der Brunnen bedeutet Erfrischung und Freude, die frei fließen und sich mit anderen teilen lassen.",
+    "tr": "Çeşme, akan suyun tazeliğini ve içi serinleten ferahlığı anlatır."
+   }
+  },
+  {
+   "id": "kf_zweig",
+   "kategorie": "natur",
+   "name": {
+    "de": "Zweig",
+    "tr": "Dal"
+   },
+   "kurz": {
+    "de": "Der Zweig deutet auf einen kleinen, frischen Anfang, aus dem mit Zuwendung viel wachsen kann.",
+    "tr": "Dal, küçük ama taze bir başlangıcı ve ilgiyle gelişebilecek yeni bir işi simgeler."
+   }
+  },
+  {
+   "id": "kf_brot",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Brot",
+    "tr": "Ekmek"
+   },
+   "kurz": {
+    "de": "Brot erzählt vom Einfachen, das nährt und stärkt, und von der Ruhe eines Hauses, in dem es warm ist.",
+    "tr": "Ekmek, insanı besleyip güçlendiren yalın şeyleri ve sıcak bir evin huzurunu anlatır."
+   }
+  },
+  {
+   "id": "kf_welle",
+   "kategorie": "natur",
+   "name": {
+    "de": "Welle",
+    "tr": "Dalga"
+   },
+   "kurz": {
+    "de": "Die Welle zeigt Bewegung im Gefühl und eine Erleichterung, die mit frischem Schwung kommt.",
+    "tr": "Dalga, duyguların hareketini ve bir yükün akıp gitmesiyle gelen ferahlığı anlatır."
+   }
+  },
+  {
+   "id": "kf_wolke",
+   "kategorie": "natur",
+   "name": {
+    "de": "Wolke",
+    "tr": "Bulut"
+   },
+   "kurz": {
+    "de": "Die Wolke steht für Wandel und Frische: Was am Himmel treibt, kann Regen für Wachsendes bringen.",
+    "tr": "Bulut, değişen hâlleri ve toprağı besleyen yağmuru anlatır; gökte duran geçip gider, ardında tazelik bırakabilir."
+   }
+  },
+  {
+   "id": "kf_feder",
+   "kategorie": "natur",
+   "name": {
+    "de": "Feder",
+    "tr": "Tüy"
+   },
+   "kurz": {
+    "de": "Die Feder spricht von Leichtigkeit: Was schwer schien, kann leichter werden, und Zaghaftes kann Mut fassen.",
+    "tr": "Tüy hafifliği anlatır; ağır gelen şey hafifleyebilir, çekingenlik yerini cesarete bırakabilir."
+   }
+  },
+  {
+   "id": "kf_mauer",
+   "kategorie": "natur",
+   "name": {
+    "de": "Mauer",
+    "tr": "Duvar"
+   },
+   "kurz": {
+    "de": "Die Mauer deutet auf eine eigene Grenze, die dir Ruhe gibt, und auf Hürden, die sich mit Mut nehmen lassen.",
+    "tr": "Duvar, kendine çizdiğin ve sana huzur veren bir sınırı, cesaretle aşılabilecek engelleri de anlatır."
+   }
+  },
+  {
+   "id": "kf_apfel",
+   "kategorie": "natur",
+   "name": {
+    "de": "Apfel",
+    "tr": "Elma"
+   },
+   "kurz": {
+    "de": "Der Apfel deutet auf Reife: Ein Vorhaben kann pflückreif sein und sich als gute Gelegenheit vor dir zeigen.",
+    "tr": "Elma olgunluğun işaretidir; zamanla kıvamına gelen bir işi ve değerlendirilmeyi bekleyen güzel bir fırsatı anlatabilir."
+   }
+  },
+  {
+   "id": "kf_trauben",
+   "kategorie": "natur",
+   "name": {
+    "de": "Traube",
+    "tr": "Üzüm"
+   },
+   "kurz": {
+    "de": "Die Traube zeigt eine Fülle aus vielen kleinen Dingen und lädt dazu ein, Freude gemeinsam zu feiern.",
+    "tr": "Üzüm, küçük güzelliklerin çoğalıp dolu dolu bir sevince dönüşmesini anlatır."
+   }
+  },
+  {
+   "id": "kf_aehre",
+   "kategorie": "natur",
+   "name": {
+    "de": "Ähre",
+    "tr": "Başak"
+   },
+   "kurz": {
+    "de": "Die Ähre ist ein Bild der Ernte: Sorgfalt und Ausdauer können volle Körner hervorbringen.",
+    "tr": "Başak hasadın işaretidir; emek verip büyüttüğün şeyin toplanmaya hazır hâle gelebileceğini anlatır."
+   }
+  },
+  {
+   "id": "kf_loeffel",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Löffel",
+    "tr": "Kaşık"
+   },
+   "kurz": {
+    "de": "Der Löffel steht für Gastlichkeit und einen gedeckten Tisch, an dem Freude geteilt werden kann.",
+    "tr": "Kaşık, kurulan sofranın, paylaşılan sevincin ve misafir ağırlamanın işaretidir."
+   }
+  },
+  {
+   "id": "kf_fenster",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Fenster",
+    "tr": "Pencere"
+   },
+   "kurz": {
+    "de": "Das Fenster öffnet den Blick nach draußen und deutet auf Klarheit und einen weiteren Horizont.",
+    "tr": "Pencere bakışı dışarıya açar; ufkun genişlemesine ve berrak bir görüşe işaret eder."
+   }
+  },
+  {
+   "id": "kf_zug",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Zug",
+    "tr": "Tren"
+   },
+   "kurz": {
+    "de": "Der Zug erzählt von Verbindung und vom Unterwegssein, von etwas, das in geordneter Folge vorankommt.",
+    "tr": "Tren, kurulan bağlantıların ve düzenli, aksamadan yol alan bir hareketin işaretidir."
+   }
+  },
+  {
+   "id": "kf_truhe",
+   "kategorie": "gegenstand",
+   "name": {
+    "de": "Truhe",
+    "tr": "Sandık"
+   },
+   "kurz": {
+    "de": "Die Truhe deutet auf etwas Verborgenes, das gut verwahrt liegt, und auf eine Überraschung, die sich öffnen kann.",
+    "tr": "Sandık, saklı duran bir şeyin ve açılınca yüz güldüren küçük bir sürprizin işaretidir."
+   }
+  },
+  {
+   "id": "kf_stein",
+   "kategorie": "natur",
+   "name": {
+    "de": "Stein",
+    "tr": "Taş"
+   },
+   "kurz": {
+    "de": "Der Stein deutet auf Festigkeit und Beständigkeit, auf etwas in dir, das ruhig an seinem Platz bleibt.",
+    "tr": "Taş, sağlamlığın, kalıcılığın ve yerinden kolay kolay oynamayan bir duruşun işaretidir."
+   }
+  },
+  {
+   "id": "kf_pfeil",
+   "kategorie": "form",
+   "name": {
+    "de": "Pfeil",
+    "tr": "Ok"
+   },
+   "kurz": {
+    "de": "Der Pfeil zeigt eine Richtung an und deutet auf Zielstrebigkeit, auf Kraft, die sich auf einen Punkt sammelt.",
+    "tr": "Ok, yönü belli bir hareketin ve tek bir hedefe toplanan kararlılığın işaretidir."
+   }
+  },
+  {
+   "id": "kf_quadrat",
+   "kategorie": "form",
+   "name": {
+    "de": "Quadrat",
+    "tr": "Kare"
+   },
+   "kurz": {
+    "de": "Das Quadrat erzählt von Ordnung und Frieden, von einem Rahmen, in dem du dich behaglich und sicher fühlen kannst.",
+    "tr": "Kare, düzenin, dengenin ve insanın kendini rahat hissettiği huzurlu bir alanın işaretidir."
+   }
+  }
+ ],
+ "karten": [
+  {
+   "id": "ta_00_narr",
+   "nummer": 0,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Der Narr",
+    "tr": "Deli"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein Neubeginn mit leichtem Gepäck, getragen von Neugier und der Lust, etwas noch nie Versuchtes zu wagen.",
+     "tr": "Hafif bir yükle, merakla ve daha önce denenmemiş bir şeye cesaret ederek atılan yeni bir başlangıç."
+    },
+    "umgekehrt": {
+     "de": "Ein Anfang, der noch zögert, oder ein Schwung, dem es gerade an Umsicht fehlt.",
+     "tr": "Henüz çekingen duran bir başlangıç ya da şu sıralar biraz özensiz kalan bir heves."
+    }
+   }
+  },
+  {
+   "id": "ta_01_magier",
+   "nummer": 1,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Der Magier",
+    "tr": "Büyücü"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Alles Nötige liegt bereit: Können, Werkzeuge und ein klarer Wille, um eine Idee in die Tat umzusetzen.",
+     "tr": "İhtiyacın olan her şey hazır: beceri, araçlar ve bir fikri hayata geçirmeye hazır, net bir irade."
+    },
+    "umgekehrt": {
+     "de": "Fähigkeiten sind vorhanden, doch die Kraft verteilt sich gerade auf zu vieles oder das Ziel ist noch unscharf.",
+     "tr": "Yetenek var, ama güç şu sıralar fazla şeye dağılıyor ya da hedef henüz bulanık."
+    }
+   }
+  },
+  {
+   "id": "ta_02_hohepriesterin",
+   "nummer": 2,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Die Hohepriesterin",
+    "tr": "Azize"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Stilles Wissen und feines Gespür: Manches erschließt sich nicht durch Handeln, sondern durch Lauschen und Abwarten.",
+     "tr": "Sessiz bir bilgi ve ince bir sezgi: Bazı şeyler hareketle değil, dinleyip beklemekle açılır."
+    },
+    "umgekehrt": {
+     "de": "Das eigene Gespür ist gerade von Lärm überdeckt, oder Wissen bleibt an der Oberfläche, wo mehr Tiefe möglich wäre.",
+     "tr": "Kendi sezgin şu sıralar gürültünün altında kalmış ya da derinleşebilecek bir bilgi yüzeyde kalıyor."
+    }
+   }
+  },
+  {
+   "id": "ta_03_herrscherin",
+   "nummer": 3,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Die Herrscherin",
+    "tr": "İmparatoriçe"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Fülle, Wärme und Wachstum: Was du mit Sorgfalt pflegst, darf sich jetzt entfalten und Früchte tragen.",
+     "tr": "Bolluk, sıcaklık ve gelişme: Özen ve emek verdiğin işler şimdi karşılığını bulabilir."
+    },
+    "umgekehrt": {
+     "de": "Die Quelle der Fürsorge wirkt gerade fast ausgeschöpft, weil viel nach außen fließt und zu wenig zu dir zurückkommt.",
+     "tr": "Şefkat kaynağı şu sıralar neredeyse tükenmiş gibi; çok şey dışarıya akıyor, sana pek az geri dönüyor."
+    }
+   }
+  },
+  {
+   "id": "ta_04_herrscher",
+   "nummer": 4,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Der Herrscher",
+    "tr": "İmparator"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ordnung und Verlässlichkeit: Mit klarer Struktur und Verantwortung entsteht ein Fundament, auf dem sich bauen lässt.",
+     "tr": "Düzen ve istikrar: Net bir yapı ve sorumlulukla üzerine bir şeyler inşa edilebilecek sağlam bir temel oluşur."
+    },
+    "umgekehrt": {
+     "de": "Struktur wird zur Enge, oder sie fehlt gerade dort, wo sie Halt geben könnte.",
+     "tr": "Yapı ya darlığa dönüşüyor ya da tam destek olabileceği yerde eksik kalıyor."
+    }
+   }
+  },
+  {
+   "id": "ta_05_hierophant",
+   "nummer": 5,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Der Hierophant",
+    "tr": "Aziz"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Gemeinsame Werte, Lernen von Erfahrenen und Rituale, die Halt geben und Menschen miteinander verbinden.",
+     "tr": "Ortak değerler, deneyimli insanlardan öğrenmek ve insanları birbirine bağlayan, dayanak veren ritüeller."
+    },
+    "umgekehrt": {
+     "de": "Überlieferte Regeln passen nicht mehr ganz, und eigene Maßstäbe möchten gefunden und geprüft werden.",
+     "tr": "Alışılmış kurallar artık tam oturmuyor; kendi doğrularını bulmak ve sınamak istiyorsun."
+    }
+   }
+  },
+  {
+   "id": "ta_06_liebende",
+   "nummer": 6,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Die Liebenden",
+    "tr": "Âşıklar"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Eine tiefe Verbindung und eine Wahl, die aus deinen eigenen Werten kommt, stehen im Mittelpunkt.",
+     "tr": "Derin bir bağ ve kendi değerlerinden doğan bir seçim öne çıkıyor."
+    },
+    "umgekehrt": {
+     "de": "Etwas in dir ist noch nicht im Einklang, und eine Entscheidung braucht Zeit, um zu reifen.",
+     "tr": "İçindeki bazı sesler henüz uyuşmuyor; bir kararın olgunlaşmak için biraz zamana ihtiyacı var."
+    }
+   }
+  },
+  {
+   "id": "ta_07_wagen",
+   "nummer": 7,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Der Wagen",
+    "tr": "Savaş Arabası"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Mit klarem Ziel und gesammeltem Willen kannst du gegensätzliche Kräfte in eine gemeinsame Richtung lenken.",
+     "tr": "Net bir hedef ve toplanmış bir iradeyle, birbirine zıt güçleri tek bir yöne çevirebilirsin."
+    },
+    "umgekehrt": {
+     "de": "Die Richtung ist gerade unklar, und ein kurzes Innehalten hilft mehr als noch mehr Druck.",
+     "tr": "Yön şu an bulanık; daha çok zorlamak yerine kısa bir duraksama sana nefes aldırır."
+    }
+   }
+  },
+  {
+   "id": "ta_08_kraft",
+   "nummer": 8,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Die Kraft",
+    "tr": "Güç"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Wahre Stärke zeigt sich hier als Sanftheit, die Mut und Ruhe vereint und wilde Gefühle zähmt, ohne sie zu brechen.",
+     "tr": "Gerçek güç burada yumuşaklık olarak görünüyor: cesaretle sükûneti birleştiren, coşkulu duyguları kırmadan yatıştıran bir güç."
+    },
+    "umgekehrt": {
+     "de": "Deine innere Stärke ist da, aber gerade leise; Zweifel oder aufgewühlte Gefühle verlangen liebevolle Aufmerksamkeit.",
+     "tr": "İçindeki güç yerinde ama şu an sessiz; kuşkular ya da dalgalı duygular şefkatli bir ilgi istiyor."
+    }
+   }
+  },
+  {
+   "id": "ta_09_eremit",
+   "nummer": 9,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Der Eremit",
+    "tr": "Ermiş"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Eine Zeit der Einkehr, in der du mit deinem eigenen Licht Antworten findest, die im Lärm verborgen bleiben.",
+     "tr": "Gürültünün içinde gizli kalan cevapları kendi ışığınla bulabileceğin bir içe dönüş zamanı."
+    },
+    "umgekehrt": {
+     "de": "Rückzug und Austausch sind gerade nicht im Gleichgewicht; entweder fehlt dir Stille, oder der Abstand ist zu groß geworden.",
+     "tr": "İçe çekilme ile paylaşma şu sıralar dengede değil; ya sessizliğe ihtiyacın var ya da mesafe fazla açıldı."
+    }
+   }
+  },
+  {
+   "id": "ta_10_rad",
+   "nummer": 10,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Das Rad des Schicksals",
+    "tr": "Kader Çarkı"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Das Leben ist in Bewegung, und ein Wendepunkt kann Dinge in eine neue, günstige Richtung drehen.",
+     "tr": "Hayat hareket hâlinde; bir dönüm noktası işleri yeni ve elverişli bir yöne çevirebilir."
+    },
+    "umgekehrt": {
+     "de": "Ein Kreislauf wiederholt sich oder stockt, und es hilft, dem Wandel nicht länger auszuweichen.",
+     "tr": "Bir döngü kendini tekrarlıyor ya da duraksıyor; değişimden kaçmamak işini kolaylaştırır."
+    }
+   }
+  },
+  {
+   "id": "ta_11_gerechtigkeit",
+   "nummer": 11,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Die Gerechtigkeit",
+    "tr": "Adalet"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Klarheit, Fairness und ein nüchterner Blick auf Ursache und Wirkung helfen dir, eine stimmige Entscheidung zu treffen.",
+     "tr": "Netlik, hakkaniyet ve neden ile sonuca açık gözle bakmak, içine sinen bir karar vermene yardım eder."
+    },
+    "umgekehrt": {
+     "de": "Etwas ist aus dem Gleichgewicht geraten, und Ehrlichkeit mit dir selbst kann die Waage wieder ausrichten.",
+     "tr": "Bir şeyin dengesi kaymış; kendine dürüst olmak teraziyi yeniden düzeltebilir."
+    }
+   }
+  },
+  {
+   "id": "ta_12_gehaengter",
+   "nummer": 12,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Der Gehängte",
+    "tr": "Asılan Adam"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein bewusstes Innehalten öffnet dir einen ungewohnten Blick auf das, was dich gerade beschäftigt.",
+     "tr": "Bilinçli bir duraklama, seni meşgul eden şeye bambaşka bir açıdan bakmanı sağlayabilir."
+    },
+    "umgekehrt": {
+     "de": "Eine Pause zieht sich hin oder wird übergangen, obwohl sie eigentlich etwas klären möchte.",
+     "tr": "Bir bekleyiş uzuyor ya da es geçiliyor; oysa aslında bir şeyi berraklaştırmak istiyor."
+    }
+   }
+  },
+  {
+   "id": "ta_13_tod",
+   "nummer": 13,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Der Tod",
+    "tr": "Ölüm"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Etwas findet zu einem natürlichen Abschluss und macht damit Platz für einen neuen Abschnitt deines Lebens.",
+     "tr": "Bir şey doğal bir kapanışa ulaşıyor ve hayatında yeni bir döneme yer açıyor."
+    },
+    "umgekehrt": {
+     "de": "Ein fälliger Übergang wird hinausgezögert, weil das Gewohnte schwer loszulassen ist.",
+     "tr": "Vakti gelmiş bir geçiş erteleniyor, çünkü alışılmış olanı bırakmak zor."
+    }
+   }
+  },
+  {
+   "id": "ta_14_maessigkeit",
+   "nummer": 14,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Die Mäßigkeit",
+    "tr": "Denge"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein ruhiges Gleichgewicht entsteht, wenn du Gegensätze behutsam miteinander verbindest und das rechte Maß findest.",
+     "tr": "Zıtlıkları özenle bir araya getirip ölçüyü bulduğunda sakin bir uyum oluşabilir."
+    },
+    "umgekehrt": {
+     "de": "Etwas ist aus dem Lot geraten, und dein Alltag sucht nach einem neuen, stimmigeren Maß.",
+     "tr": "Bir şey ayarını yitirmiş; gündelik hayatın yeniden daha uyumlu bir ölçü arıyor."
+    }
+   }
+  },
+  {
+   "id": "ta_15_teufel",
+   "nummer": 15,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Der Teufel",
+    "tr": "Şeytan"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Eine Gewohnheit oder Verstrickung hält dich fester, als dir lieb ist, doch die Ketten sind lockerer, als sie scheinen.",
+     "tr": "Bir alışkanlık ya da düğüm seni sandığından sıkı tutuyor; ama zincirler göründüğünden çok daha gevşek."
+    },
+    "umgekehrt": {
+     "de": "Du erkennst, was dich gebunden hat, und beginnst, dich behutsam davon zu lösen.",
+     "tr": "Seni bağlayan şeyi fark ediyor ve ondan yavaş yavaş çözülmeye başlıyorsun."
+    }
+   }
+  },
+  {
+   "id": "ta_16_turm",
+   "nummer": 16,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Der Turm",
+    "tr": "Kule"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Eine plötzliche Einsicht rüttelt an etwas Brüchigem und schafft Platz für ein festeres Fundament.",
+     "tr": "Ani bir kavrayış çürük temelli bir yapıyı sarsar ve daha sağlam bir zemine yer açar."
+    },
+    "umgekehrt": {
+     "de": "Ein Umbruch geschieht eher im Inneren, oder du hältst noch an etwas fest, das schon wankt.",
+     "tr": "Bir değişim daha çok içeride yaşanıyor ya da sallanmakta olan bir şeye hâlâ tutunuyorsun."
+    }
+   }
+  },
+  {
+   "id": "ta_17_stern",
+   "nummer": 17,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Der Stern",
+    "tr": "Yıldız"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Nach unruhigen Zeiten kehrt Zuversicht zurück, und du darfst wieder offen nach vorn schauen.",
+     "tr": "Zor bir dönemin ardından içine yeniden umut doluyor ve ileriye açık yüreklilikle bakabiliyorsun."
+    },
+    "umgekehrt": {
+     "de": "Die Zuversicht ist gerade etwas leiser geworden, doch sie ist nicht verloren und lässt sich wieder wecken.",
+     "tr": "Umudun sesi şu sıralar biraz kısılmış; ama kaybolmuş değil, yeniden uyandırılabilir."
+    }
+   }
+  },
+  {
+   "id": "ta_18_mond",
+   "nummer": 18,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Der Mond",
+    "tr": "Ay"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Nicht alles ist gerade klar zu erkennen, und deine Intuition kann dich sicherer führen als der Verstand allein.",
+     "tr": "Şu sıralar her şey net görünmüyor; sezgilerin sana yalnızca akıldan daha iyi yol gösterebilir."
+    },
+    "umgekehrt": {
+     "de": "Der Nebel beginnt sich zu lichten, und was dich verunsichert hat, kann nach und nach verständlicher werden.",
+     "tr": "Sis yavaş yavaş dağılmaya başlıyor; seni huzursuz eden şeyler giderek daha anlaşılır hâle gelebilir."
+    }
+   }
+  },
+  {
+   "id": "ta_19_sonne",
+   "nummer": 19,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Die Sonne",
+    "tr": "Güneş"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Freude und Klarheit treten hervor, und was du tust, darf jetzt mit Leichtigkeit gelingen.",
+     "tr": "Neşe ve berraklık öne çıkıyor; yaptıkların şu sıralar hafiflikle yolunu bulabilir."
+    },
+    "umgekehrt": {
+     "de": "Die Freude ist da, aber gerade etwas verhangen, als zögen Wolken vor ein helles Licht.",
+     "tr": "Neşe yerinde duruyor ama şu sıralar biraz perdeli, sanki parlak bir ışığın önünden bulutlar geçiyor."
+    }
+   }
+  },
+  {
+   "id": "ta_20_gericht",
+   "nummer": 20,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Das Gericht",
+    "tr": "Yargı"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein innerer Ruf weckt dich auf und lädt dich ein, mit klarem Blick neu anzufangen.",
+     "tr": "İçinden gelen bir çağrı seni uyandırıyor ve berrak bir bakışla yeniden başlamaya davet ediyor."
+    },
+    "umgekehrt": {
+     "de": "Ein innerer Ruf ist da, doch Zweifel an dir selbst halten dich noch davon ab, ihm zu folgen.",
+     "tr": "İçinde bir çağrı var, ama kendinle ilgili kuşkular onu izlemene şimdilik engel oluyor."
+    }
+   }
+  },
+  {
+   "id": "ta_21_welt",
+   "nummer": 21,
+   "arkana": "gross",
+   "farbe": null,
+   "name": {
+    "de": "Die Welt",
+    "tr": "Dünya"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein Kreis schließt sich, und du darfst spüren, wie viel du erreicht hast und wie alles zusammenpasst.",
+     "tr": "Bir döngü tamamlanıyor; ne kadar yol aldığını ve parçaların nasıl yerine oturduğunu hissedebilirsin."
+    },
+    "umgekehrt": {
+     "de": "Das Ziel ist nah, doch ein letztes Stück fehlt noch, bevor sich der Kreis schließen kann.",
+     "tr": "Hedef yakın, ama döngünün kapanabilmesi için son bir parça hâlâ eksik."
+    }
+   }
+  },
+  {
+   "id": "ta_sta_01_ass",
+   "nummer": 1,
+   "arkana": "klein",
+   "farbe": "staebe",
+   "name": {
+    "de": "Ass der Stäbe",
+    "tr": "Değnek Ası"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein frischer Antrieb regt sich in dir und kann zum Anfang von etwas Eigenem werden.",
+     "tr": "İçinde taze bir hareketlilik kıpırdıyor ve kendine ait bir işin başlangıcı olabilir."
+    },
+    "umgekehrt": {
+     "de": "Der Antrieb ist schon da, doch seine Richtung zeigt sich erst nach und nach.",
+     "tr": "İstek içinde hazır duruyor, ama nereye akmak istediği henüz tam belli değil."
+    }
+   }
+  },
+  {
+   "id": "ta_sta_02_zwei",
+   "nummer": 2,
+   "arkana": "klein",
+   "farbe": "staebe",
+   "name": {
+    "de": "Zwei der Stäbe",
+    "tr": "Değnek İkilisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Mit dem Überblick über das, was möglich ist, kannst du jetzt Pläne schmieden, die zu dir passen.",
+     "tr": "Önündeki imkânlara yukarıdan bakabildiğin bu dönemde sana uyan planlar kurabilirsin."
+    },
+    "umgekehrt": {
+     "de": "Etwas Unerwartetes rüttelt an deinen Plänen und lädt dich ein, neu zu prüfen, was dir wirklich wichtig ist.",
+     "tr": "Beklenmedik bir şey planlarını sarsabilir ve senin için gerçekten önemli olanı yeniden tartmaya çağırabilir."
+    }
+   }
+  },
+  {
+   "id": "ta_sta_03_drei",
+   "nummer": 3,
+   "arkana": "klein",
+   "farbe": "staebe",
+   "name": {
+    "de": "Drei der Stäbe",
+    "tr": "Değnek Üçlüsü"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Von einem hohen Punkt aus siehst du weit, und was du angestoßen hast, kann sich in Bewegung setzen.",
+     "tr": "Yüksek bir yerden uzağı görüyorsun ve başlattığın işler harekete geçebilir."
+    },
+    "umgekehrt": {
+     "de": "Nach einer anstrengenden Strecke kann Druck nachlassen, auch wenn manches langsamer vorangeht als geplant.",
+     "tr": "Yorucu bir dönemin ardından baskı hafifleyebilir, bazı işler planladığından ağır ilerlese de."
+    }
+   }
+  },
+  {
+   "id": "ta_sta_04_vier",
+   "nummer": 4,
+   "arkana": "klein",
+   "farbe": "staebe",
+   "name": {
+    "de": "Vier der Stäbe",
+    "tr": "Değnek Dörtlüsü"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein Abschnitt ist geschafft, und du kannst dich fühlen wie jemand, der nach einem langen Tag zu Hause ankommt.",
+     "tr": "Emeğinin meyvesini topluyorsun; uzun bir günün sonunda eve varmış gibi bir rahatlık duyabilirsin."
+    },
+    "umgekehrt": {
+     "de": "Die Freude über Erreichtes bleibt, auch wenn sie sich gerade eher leise und nach innen zeigt.",
+     "tr": "Ulaştıklarının sevinci yerinde duruyor, şu sıralar daha sessiz ve içe dönük bir biçimde olsa da."
+    }
+   }
+  },
+  {
+   "id": "ta_sta_05_fuenf",
+   "nummer": 5,
+   "arkana": "klein",
+   "farbe": "staebe",
+   "name": {
+    "de": "Fünf der Stäbe",
+    "tr": "Değnek Beşlisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Verschiedene Ansichten treffen lebhaft aufeinander, und aus dieser Reibung können frische Ideen entstehen.",
+     "tr": "Farklı görüşler canlı bir şekilde karşılaşıyor; bu hareketlilikten taze fikirler doğabilir."
+    },
+    "umgekehrt": {
+     "de": "Die Spannung lässt nach, und du kannst klären, wo du selbst stehst, statt jeder Reibung auszuweichen.",
+     "tr": "Gerilim yatışıyor; her tartışmadan kaçmak yerine kendi yerini netleştirebilirsin."
+    }
+   }
+  },
+  {
+   "id": "ta_sta_06_sechs",
+   "nummer": 6,
+   "arkana": "klein",
+   "farbe": "staebe",
+   "name": {
+    "de": "Sechs der Stäbe",
+    "tr": "Değnek Altılısı"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein Abschnitt ist gelungen, und es ist stimmig, die Anerkennung dafür anzunehmen und mit Menschen zu teilen, die dich begleitet haben.",
+     "tr": "Bir aşama başarıyla tamamlandı; bunun takdirini kabul etmek ve sana eşlik edenlerle paylaşmak yerinde olabilir."
+    },
+    "umgekehrt": {
+     "de": "Erfolg zeigt sich gerade eher leise, und du kannst prüfen, welcher Maßstab wirklich deiner ist.",
+     "tr": "Başarı şu sıralar daha sessiz bir yüz gösteriyor; hangi ölçünün gerçekten sana ait olduğunu yoklayabilirsin."
+    }
+   }
+  },
+  {
+   "id": "ta_sta_07_sieben",
+   "nummer": 7,
+   "arkana": "klein",
+   "farbe": "staebe",
+   "name": {
+    "de": "Sieben der Stäbe",
+    "tr": "Değnek Yedilisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Du stehst für das ein, was dir wichtig ist, und kannst deine Haltung bewahren, auch wenn Fragen und Einwände von allen Seiten kommen.",
+     "tr": "Senin için önemli olana sahip çıkıyorsun; dört bir yandan sorular ve itirazlar yükselse de duruşunu koruyabilirsin."
+    },
+    "umgekehrt": {
+     "de": "Der Stand fühlt sich gerade wackelig an, und es hilft, die Kräfte zu sammeln, statt jede Position zugleich halten zu wollen.",
+     "tr": "Durduğun yer şu sıralar biraz sallantılı hissettiriyor; her şeyi aynı anda savunmak yerine gücünü toplamak işine yarayabilir."
+    }
+   }
+  },
+  {
+   "id": "ta_sta_08_acht",
+   "nummer": 8,
+   "arkana": "klein",
+   "farbe": "staebe",
+   "name": {
+    "de": "Acht der Stäbe",
+    "tr": "Değnek Sekizlisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Dinge kommen in Schwung, und mit klarem Blick kannst du die Bewegung nutzen, die gerade entsteht.",
+     "tr": "İşler hızlanıyor; açık bir bakışla şu an doğan bu hareketi değerlendirebilirsin."
+    },
+    "umgekehrt": {
+     "de": "Etwas stockt oder läuft zu hastig, und es lohnt sich, die Richtung zu prüfen, bevor du weiter Fahrt aufnimmst.",
+     "tr": "Bir şey ya takılıyor ya da fazla telaşlı ilerliyor; yeniden hızlanmadan önce yönü gözden geçirmek iyi olabilir."
+    }
+   }
+  },
+  {
+   "id": "ta_sta_09_neun",
+   "nummer": 9,
+   "arkana": "klein",
+   "farbe": "staebe",
+   "name": {
+    "de": "Neun der Stäbe",
+    "tr": "Değnek Dokuzlusu"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Du hast schon viel durchgestanden und stehst noch fest; jetzt geht es darum, deine Kräfte klug einzuteilen und deine Grenzen zu kennen.",
+     "tr": "Çok şeyi göğüslemiş ve hâlâ ayakta kalmışsın; şimdi gücünü akıllıca bölüştürmek ve sınırlarını bilmek öne çıkıyor."
+    },
+    "umgekehrt": {
+     "de": "Die Wachsamkeit kostet gerade viel Kraft; eine Atempause und etwas weniger Abwehr können dir helfen, wieder gelassener zu stehen.",
+     "tr": "Hep tetikte durmak şu sıralar seni yoruyor olabilir; biraz soluklanmak ve savunmayı gevşetmek yeniden rahat durmana yardım edebilir."
+    }
+   }
+  },
+  {
+   "id": "ta_sta_10_zehn",
+   "nummer": 10,
+   "arkana": "klein",
+   "farbe": "staebe",
+   "name": {
+    "de": "Zehn der Stäbe",
+    "tr": "Değnek Onlusu"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Du trägst gerade viel auf einmal; das Ziel ist schon in Sichtweite, und du kannst überlegen, was du davon wirklich selbst tragen musst.",
+     "tr": "Şu sıralar aynı anda çok şey taşıyorsun; hedef artık görünüyor ve bunların ne kadarını gerçekten senin taşıman gerektiğini düşünebilirsin."
+    },
+    "umgekehrt": {
+     "de": "Ein Teil der Last kann von deinen Schultern gleiten, wenn du Aufgaben teilst, abgibst oder einfach liegen lässt.",
+     "tr": "İşleri paylaştıkça, devrettikçe ya da bazılarını bir kenara koydukça yükünün bir kısmı omuzlarından inebilir."
+    }
+   }
+  },
+  {
+   "id": "ta_sta_11_bube",
+   "nummer": 11,
+   "arkana": "klein",
+   "farbe": "staebe",
+   "name": {
+    "de": "Bube der Stäbe",
+    "tr": "Değnek Valesi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Entdeckerlust und Begeisterung für Neues können dich gerade ins Ausprobieren ziehen, mit einer Idee, die noch frisch und ungeschliffen ist.",
+     "tr": "Keşif hevesin ve yeniye duyduğun coşku seni şu sıralar denemeye çekebilir; henüz taze ve ham bir fikirle."
+    },
+    "umgekehrt": {
+     "de": "Deine Begeisterung springt vielleicht gerade schneller weiter, als eine Idee wachsen kann, oder wartet noch auf den richtigen Moment.",
+     "tr": "Hevesin şu sıralar bir fikir büyümeye fırsat bulmadan başka bir şeye atlıyor ya da hâlâ doğru anı bekliyor olabilir."
+    }
+   }
+  },
+  {
+   "id": "ta_sta_12_ritter",
+   "nummer": 12,
+   "arkana": "klein",
+   "farbe": "staebe",
+   "name": {
+    "de": "Ritter der Stäbe",
+    "tr": "Değnek Şövalyesi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein Vorhaben zieht dich nach vorn, und du hast den Mut, ihm mit Schwung und klarer Richtung zu folgen.",
+     "tr": "Bir hedef seni ileri çekiyor ve onun peşine hevesle, net bir yönle düşmeye cesaretin var."
+    },
+    "umgekehrt": {
+     "de": "Viel Schwung ist da, doch gerade zerstreut sich die Kraft, und ein Moment des Sammelns kann ihr wieder eine Richtung geben.",
+     "tr": "İçinde bolca hız var ama şu sıralar dağılıyor; kısa bir toparlanma ona yeniden yön verebilir."
+    }
+   }
+  },
+  {
+   "id": "ta_sta_13_koenigin",
+   "nummer": 13,
+   "arkana": "klein",
+   "farbe": "staebe",
+   "name": {
+    "de": "Königin der Stäbe",
+    "tr": "Değnek Kraliçesi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Du strahlst gerade Wärme und Selbstsicherheit aus, und deine Zuversicht kann Menschen und Vorhaben um dich herum beleben.",
+     "tr": "Şu sıralar etrafına sıcaklık ve özgüven yayıyorsun; iyimserliğin hem insanlara hem de işlerine can katabilir."
+    },
+    "umgekehrt": {
+     "de": "Deine Wärme flackert gerade zwischen zu viel Einsatz für alle und leisen Zweifeln, und ein Blick nach innen kann dich wieder sammeln.",
+     "tr": "Sıcaklığın, herkese yetişme çabasıyla sessiz kuşkular arasında bir parlayıp bir sönüyor; içine dönmek seni yeniden toparlayabilir."
+    }
+   }
+  },
+  {
+   "id": "ta_sta_14_koenig",
+   "nummer": 14,
+   "arkana": "klein",
+   "farbe": "staebe",
+   "name": {
+    "de": "König der Stäbe",
+    "tr": "Değnek Kralı"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Du siehst gerade das große Ganze deines Vorhabens und hast die Kraft, ihm mit Weitblick und Überzeugung eine Richtung zu geben.",
+     "tr": "Şu an işinin bütününü görebiliyor, ona geniş bir bakışla ve inançla yön verme gücünü içinde taşıyorsun."
+    },
+    "umgekehrt": {
+     "de": "Dein Anspruch ist gerade hoch und dein Ton womöglich strenger als nötig, und etwas Milde kann deiner Vision wieder Luft verschaffen.",
+     "tr": "Beklentilerin şu sıralar yüksek, sesin belki gerekenden sert; biraz yumuşaklık vizyonuna yeniden nefes aldırabilir."
+    }
+   }
+  },
+  {
+   "id": "ta_kel_01_ass",
+   "nummer": 1,
+   "arkana": "klein",
+   "farbe": "kelche",
+   "name": {
+    "de": "Ass der Kelche",
+    "tr": "Kadeh Ası"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Wie aus einem übervollen Becher kann jetzt Zuneigung fließen, zu dir selbst und zu den Menschen um dich.",
+     "tr": "Taşan bir kadeh gibi, içindeki sevgi şimdi hem sana hem de çevrendeki insanlara akabilir."
+    },
+    "umgekehrt": {
+     "de": "Zuneigung ist da, doch sie bleibt gerade eher bei dir und möchte zuerst dir selbst gelten.",
+     "tr": "Sevgi içinde duruyor ama şu sıralar dışarı taşmak yerine önce seni beslemek istiyor."
+    }
+   }
+  },
+  {
+   "id": "ta_kel_02_zwei",
+   "nummer": 2,
+   "arkana": "klein",
+   "farbe": "kelche",
+   "name": {
+    "de": "Zwei der Kelche",
+    "tr": "Kadeh İkilisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Begegnung auf Augenhöhe: Wo Achtung auf beiden Seiten da ist, kann eine echte Verbindung entstehen.",
+     "tr": "Eşit düzeyde bir buluşma: Saygının karşılıklı olduğu yerde içten bir bağ kurulabilir."
+    },
+    "umgekehrt": {
+     "de": "Der Gleichklang gerät ins Stocken, und es lohnt sich, zuerst bei dir selbst wieder in Einklang zu kommen.",
+     "tr": "Uyum şu sıralar aksıyor; önce kendinle yeniden ahenk bulmak sana yol gösterebilir."
+    }
+   }
+  },
+  {
+   "id": "ta_kel_03_drei",
+   "nummer": 3,
+   "arkana": "klein",
+   "farbe": "kelche",
+   "name": {
+    "de": "Drei der Kelche",
+    "tr": "Kadeh Üçlüsü"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Gemeinsam feiern, teilen und einander stützen: In guter Gesellschaft kann sich Freude vervielfachen.",
+     "tr": "Birlikte kutlamak, paylaşmak ve birbirine destek olmak: İyi bir dost çevresinde sevinç katlanarak büyüyebilir."
+    },
+    "umgekehrt": {
+     "de": "Nach viel Geselligkeit darf jetzt Zeit für dich selbst Raum bekommen, und auch ein Abschluss kann Platz schaffen.",
+     "tr": "Kalabalık günlerin ardından şimdi kendine zaman ayırma sırası; bir işi tamamlamak da yer açabilir."
+    }
+   }
+  },
+  {
+   "id": "ta_kel_04_vier",
+   "nummer": 4,
+   "arkana": "klein",
+   "farbe": "kelche",
+   "name": {
+    "de": "Vier der Kelche",
+    "tr": "Kadeh Dörtlüsü"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Der Blick ist gerade nach innen gerichtet, und manches Angebot wird übersehen, weil das Vertraute schal geworden ist.",
+     "tr": "Bakışın şu sıralar içine dönük; alışılmış olan tatsızlaşınca önüne uzatılan bazı şeyler gözden kaçabilir."
+    },
+    "umgekehrt": {
+     "de": "Die Starre löst sich, Neugier erwacht, und du bemerkst wieder, welche Anregungen um dich herum bereitliegen.",
+     "tr": "Durgunluk çözülüyor, merak uyanıyor ve çevrendeki yeni esinleri yeniden fark etmeye başlıyorsun."
+    }
+   }
+  },
+  {
+   "id": "ta_kel_05_fuenf",
+   "nummer": 5,
+   "arkana": "klein",
+   "farbe": "kelche",
+   "name": {
+    "de": "Fünf der Kelche",
+    "tr": "Kadeh Beşlisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Etwas ist anders gekommen als erhofft, doch neben dem Verschütteten stehen noch Kelche, die du sehen darfst.",
+     "tr": "Bir şey umduğun gibi gitmedi; ama dökülenlerin yanında hâlâ ayakta duran kadehler var."
+    },
+    "umgekehrt": {
+     "de": "Die Enttäuschung verliert an Gewicht, und du kannst dich wieder dem zuwenden, was dir geblieben ist.",
+     "tr": "Burukluk yavaş yavaş hafifliyor ve gözün yeniden elinde kalanlara dönebiliyor."
+    }
+   }
+  },
+  {
+   "id": "ta_kel_06_sechs",
+   "nummer": 6,
+   "arkana": "klein",
+   "farbe": "kelche",
+   "name": {
+    "de": "Sechs der Kelche",
+    "tr": "Kadeh Altılısı"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Liebe Erinnerungen und eine einfache Freundlichkeit machen gerade vieles weicher und wärmer.",
+     "tr": "Güzel anılar ve sade bir iyilik şu sıralar hayatını daha yumuşak ve sıcak kılıyor."
+    },
+    "umgekehrt": {
+     "de": "Der Blick zurück ist gerade stärker als der Blick ins Heute, und das Gestern hält dich ein wenig fest.",
+     "tr": "Şu sıralar geçmişe bakış, bugüne bakıştan ağır basıyor ve dün seni biraz tutuyor."
+    }
+   }
+  },
+  {
+   "id": "ta_kel_07_sieben",
+   "nummer": 7,
+   "arkana": "klein",
+   "farbe": "kelche",
+   "name": {
+    "de": "Sieben der Kelche",
+    "tr": "Kadeh Yedilisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Viele Möglichkeiten und Wunschbilder schweben vor dir, und es lohnt sich, in Ruhe zu prüfen, welche davon zu dir passen.",
+     "tr": "Önünde pek çok olasılık ve hayal duruyor; hangisinin sana uyduğuna sakin kafayla bakmaya değer."
+    },
+    "umgekehrt": {
+     "de": "Aus der Fülle der Bilder schält sich allmählich heraus, was du wirklich willst, und ein Plan kann Gestalt annehmen.",
+     "tr": "Hayallerin bolluğu içinde neyi gerçekten istediğin yavaş yavaş netleşiyor ve bir plan biçimlenebilir."
+    }
+   }
+  },
+  {
+   "id": "ta_kel_08_acht",
+   "nummer": 8,
+   "arkana": "klein",
+   "farbe": "kelche",
+   "name": {
+    "de": "Acht der Kelche",
+    "tr": "Kadeh Sekizlisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Etwas nährt dich nicht mehr so wie früher, und es zieht dich weiter, auf die Suche nach dem, was dich wirklich erfüllt.",
+     "tr": "Bir şey seni eskisi gibi beslemiyor; içinde, seni gerçekten dolduran şeyi arama isteği kıpırdanıyor."
+    },
+    "umgekehrt": {
+     "de": "Ein Zögern hält dich gerade an, und du darfst dir Zeit nehmen, noch einmal genau hinzuschauen, was dich nährt und hält.",
+     "tr": "Bir duraksama seni şu sıralar yerinde tutuyor; seni neyin beslediğine ve tuttuğuna bir kez daha dikkatle bakmak için zaman tanıyabilirsin."
+    }
+   }
+  },
+  {
+   "id": "ta_kel_09_neun",
+   "nummer": 9,
+   "arkana": "klein",
+   "farbe": "kelche",
+   "name": {
+    "de": "Neun der Kelche",
+    "tr": "Kadeh Dokuzlusu"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein Wunsch kann sich erfüllen, und du darfst ohne Eile genießen, was dir gelungen ist.",
+     "tr": "Bir dileğin karşılık bulabilir; elde ettiğin şeyin tadını acele etmeden çıkarabilirsin."
+    },
+    "umgekehrt": {
+     "de": "Etwas fühlt sich trotz allem noch nicht ganz rund an, und es lohnt sich, ehrlich nachzuspüren, was dir wirklich wichtig ist.",
+     "tr": "Her şey yolunda görünse de içinde küçük bir eksiklik var; neyi gerçekten istediğine dürüstçe bakmanın tam zamanı."
+    }
+   }
+  },
+  {
+   "id": "ta_kel_10_zehn",
+   "nummer": 10,
+   "arkana": "klein",
+   "farbe": "kelche",
+   "name": {
+    "de": "Zehn der Kelche",
+    "tr": "Kadeh Onlusu"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Geborgenheit und Zugehörigkeit können sich ausbreiten, als stündest du unter einem Regenbogen an einem Ort, an dem du ganz da sein darfst.",
+     "tr": "İçinde huzur ve aidiyet duygusu yayılabilir; sanki olduğun gibi var olabildiğin bir yere varmışsın gibi."
+    },
+    "umgekehrt": {
+     "de": "Die Sehnsucht nach Zugehörigkeit ist spürbar, und vielleicht hängt das Bild vom vollkommenen Glück gerade etwas zu hoch.",
+     "tr": "Bir yere ait olma özlemi şu sıralar belirgin; belki kusursuz mutluluk tablosunu biraz fazla yükseğe asmışsın."
+    }
+   }
+  },
+  {
+   "id": "ta_kel_11_bube",
+   "nummer": 11,
+   "arkana": "klein",
+   "farbe": "kelche",
+   "name": {
+    "de": "Bube der Kelche",
+    "tr": "Kadeh Valesi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Neugier im Gefühl und ein staunender Blick können dich gerade für neue Eindrücke, Einfälle und zarte Regungen öffnen.",
+     "tr": "Duygularındaki merak ve hayranlık dolu bakışın, seni şu sıralar yeni izlenimlere ve ince kıpırtılara açabilir."
+    },
+    "umgekehrt": {
+     "de": "Deine Fantasie ist lebendig, doch vielleicht verlierst du dich gerade etwas in Tagträumen oder nimmst Kleinigkeiten sehr empfindlich auf.",
+     "tr": "Hayal gücün canlı; ama belki şu sıralar biraz fazla dalıp gidiyor ya da küçük şeyleri fazlasıyla içine alıyorsun."
+    }
+   }
+  },
+  {
+   "id": "ta_kel_12_ritter",
+   "nummer": 12,
+   "arkana": "klein",
+   "farbe": "kelche",
+   "name": {
+    "de": "Ritter der Kelche",
+    "tr": "Kadeh Şövalyesi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein Gefühl will sich bewegen und gezeigt werden, und du darfst dem folgen, was dich berührt, und es mit Hingabe anbieten.",
+     "tr": "İçindeki duygu kıpırdanıyor ve dile gelmek istiyor; seni gerçekten etkileyen şeyin peşinden gönül vererek gidebilirsin."
+    },
+    "umgekehrt": {
+     "de": "Schöne Bilder tragen dich gerade weit, doch das Gefühl schwankt, und etwas Bodenhaftung kann deinen Träumen Gestalt geben.",
+     "tr": "Güzel hayaller seni uzaklara taşıyor ama hevesin bir artıp bir azalıyor; ayaklarını biraz yere basmak düşlerine biçim verebilir."
+    }
+   }
+  },
+  {
+   "id": "ta_kel_13_koenigin",
+   "nummer": 13,
+   "arkana": "klein",
+   "farbe": "kelche",
+   "name": {
+    "de": "Königin der Kelche",
+    "tr": "Kadeh Kraliçesi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Du nimmst gerade fein wahr, was in dir und um dich herum geschieht, und kannst dabei ruhig und gesammelt bleiben.",
+     "tr": "Kendinde ve çevrende olup biteni ince ince seziyorsun; üstelik bunu yaparken sakin ve toplu kalabiliyorsun."
+    },
+    "umgekehrt": {
+     "de": "Fremde Stimmungen dringen gerade tief zu dir durch, und es tut dir gut, das eigene Gefühl wieder von dem anderer zu unterscheiden.",
+     "tr": "Başkalarının ruh hâli şu sıralar sana fazlasıyla işliyor; kendi duygunu onlarınkinden ayırt etmek seni rahatlatabilir."
+    }
+   }
+  },
+  {
+   "id": "ta_kel_14_koenig",
+   "nummer": 14,
+   "arkana": "klein",
+   "farbe": "kelche",
+   "name": {
+    "de": "König der Kelche",
+    "tr": "Kadeh Kralı"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Du kannst gerade Gefühl und Überblick verbinden und mitten in bewegtem Wasser ruhig und zugewandt bleiben.",
+     "tr": "Şu sıralar duyguyla geniş bakışı bir araya getirebiliyor, dalgalı suların ortasında bile sakin ve sıcak kalabiliyorsun."
+    },
+    "umgekehrt": {
+     "de": "Gefühle werden gerade fest verschlossen gehalten, damit nichts ins Wanken gerät, doch ein wenig Weichheit kann die Ruhe sogar stärken.",
+     "tr": "Hiçbir şey sarsılmasın diye duygularını sıkıca kapalı tutuyor olabilirsin; biraz yumuşamak dinginliğini aslında güçlendirebilir."
+    }
+   }
+  },
+  {
+   "id": "ta_sch_01_ass",
+   "nummer": 1,
+   "arkana": "klein",
+   "farbe": "schwerter",
+   "name": {
+    "de": "Ass der Schwerter",
+    "tr": "Kılıç Ası"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein Gedanke bricht durch wie Licht durch Wolken, und plötzlich siehst du, worum es dir eigentlich geht.",
+     "tr": "Bulutların arasından sızan ışık gibi bir düşünce beliriyor ve asıl neyi önemsediğini birden görüyorsun."
+    },
+    "umgekehrt": {
+     "de": "Eine Idee ist schon da, aber noch unscharf; sie braucht mehr Wissen und etwas Stille, bevor sie trägt.",
+     "tr": "Bir fikir çoktan belirmiş ama henüz bulanık; sağlam durması için biraz daha bilgiye ve telaşsız bir zihne ihtiyacı var."
+    }
+   }
+  },
+  {
+   "id": "ta_sch_02_zwei",
+   "nummer": 2,
+   "arkana": "klein",
+   "farbe": "schwerter",
+   "name": {
+    "de": "Zwei der Schwerter",
+    "tr": "Kılıç İkilisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Mit verbundenen Augen hält die Gestalt zwei Schwerter in der Schwebe: ein stilles Innehalten, in dem zwei Seiten gleich schwer wiegen.",
+     "tr": "Gözleri bağlı figür iki çeliği dengede tutuyor: iki yanın eşit ağırlıkta durduğu sessiz bir duraksama."
+    },
+    "umgekehrt": {
+     "de": "Zu viele Meinungen und Eindrücke drängen heran, und es braucht Abstand, um die eigene Sicht wiederzufinden.",
+     "tr": "Çok fazla görüş ve izlenim etrafını sarıyor; kendi bakışını yeniden bulmak için biraz mesafe gerekiyor."
+    }
+   }
+  },
+  {
+   "id": "ta_sch_03_drei",
+   "nummer": 3,
+   "arkana": "klein",
+   "farbe": "schwerter",
+   "name": {
+    "de": "Drei der Schwerter",
+    "tr": "Kılıç Üçlüsü"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein schwerer Gedanke zieht wie ein Regenschauer über dich hinweg; er will gesehen werden und kann dann weiterziehen.",
+     "tr": "Ağır bir düşünce bir sağanak gibi üstünden geçiyor; görülmek istiyor, sonra da yoluna gidebilir."
+    },
+    "umgekehrt": {
+     "de": "Der Regen lässt nach, und du kannst einen bedrückenden Gedanken freundlicher ansehen und ihn allmählich ziehen lassen.",
+     "tr": "Yağmur diniyor; seni sıkan bir düşünceye daha yumuşak bakabilir ve onu usulca salıverebilirsin."
+    }
+   }
+  },
+  {
+   "id": "ta_sch_04_vier",
+   "nummer": 4,
+   "arkana": "klein",
+   "farbe": "schwerter",
+   "name": {
+    "de": "Vier der Schwerter",
+    "tr": "Kılıç Dörtlüsü"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Die Gestalt liegt still unter dem bunten Glas: eine Zeit, in der du Gedanken sinken lässt und Kraft sammelst.",
+     "tr": "Renkli camın altında figür sessizce dinleniyor: düşüncelerini durulttuğun ve güç topladığın bir zaman."
+    },
+    "umgekehrt": {
+     "de": "Nach einer stillen Zeit regt sich Unruhe, oder das Ausruhen kommt zu kurz; beides lädt ein, dein Maß zu finden.",
+     "tr": "Dinlenmenin ardından içinde bir kıpırtı başlıyor ya da dinlenme yarım kalıyor; ikisi de kendi ölçünü bulmaya çağırıyor."
+    }
+   }
+  },
+  {
+   "id": "ta_sch_05_fuenf",
+   "nummer": 5,
+   "arkana": "klein",
+   "farbe": "schwerter",
+   "name": {
+    "de": "Fünf der Schwerter",
+    "tr": "Kılıç Beşlisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Nicht jede Meinungsverschiedenheit will gewonnen werden, und manchmal kostet das Rechthaben mehr Nähe, als es dir einbringt.",
+     "tr": "Her görüş farkını kazanman gerekmez; haklı çıkmak bazen getirdiğinden fazlasını götürebilir."
+    },
+    "umgekehrt": {
+     "de": "Der Wunsch, recht zu behalten, verliert an Kraft, und es entsteht Platz für einen versöhnlicheren Ton, zuerst dir selbst gegenüber.",
+     "tr": "Haklı çıkma isteği gücünü yitiriyor; yerine, önce kendine karşı daha yumuşak bir ton yer bulabilir."
+    }
+   }
+  },
+  {
+   "id": "ta_sch_06_sechs",
+   "nummer": 6,
+   "arkana": "klein",
+   "farbe": "schwerter",
+   "name": {
+    "de": "Sechs der Schwerter",
+    "tr": "Kılıç Altılısı"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Deine Gedanken gleiten aus unruhigem Wasser in eine sanftere Strömung, und was du mitnimmst, ist leichter, als du dachtest.",
+     "tr": "Düşüncelerin dalgalı sulardan daha yavaş bir akıntıya geçiyor; yanında götürdüğün şey sandığından hafif."
+    },
+    "umgekehrt": {
+     "de": "Etwas hält das Boot noch am Ufer, vielleicht ein Gedanke, den du erst zu Ende sortieren möchtest.",
+     "tr": "Bir şey kayığı hâlâ kıyıda tutuyor; belki önce sonuna kadar toparlamak istediğin bir düşünce."
+    }
+   }
+  },
+  {
+   "id": "ta_sch_07_sieben",
+   "nummer": 7,
+   "arkana": "klein",
+   "farbe": "schwerter",
+   "name": {
+    "de": "Sieben der Schwerter",
+    "tr": "Kılıç Yedilisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein eigener Plan nimmt Gestalt an, und du wählst mit Bedacht, was du mitnimmst und was du stehen lässt.",
+     "tr": "Kendine ait bir plan şekilleniyor; neyi alıp neyi yerinde bırakmak istediğini özenle seçiyorsun."
+    },
+    "umgekehrt": {
+     "de": "Was du dir selbst vormachst, verliert an Halt, und ein guter Rat von außen oder von innen hilft dir, ehrlicher hinzuschauen.",
+     "tr": "Kendine anlattığın küçük hikâyeler gücünü yitiriyor; içten ya da dıştan gelen iyi bir öğüt, daha dürüst bakmana yardım edebilir."
+    }
+   }
+  },
+  {
+   "id": "ta_sch_08_acht",
+   "nummer": 8,
+   "arkana": "klein",
+   "farbe": "schwerter",
+   "name": {
+    "de": "Acht der Schwerter",
+    "tr": "Kılıç Sekizlisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Die Fesseln, die du spürst, sitzen lockerer, als es scheint, denn viele davon knüpfen deine eigenen Gedanken.",
+     "tr": "Hissettiğin bağlar göründüğünden gevşek; çoğunu kendi düşüncelerin bağlıyor."
+    },
+    "umgekehrt": {
+     "de": "Die Binde rutscht, die Knoten geben nach, und du siehst mehr Möglichkeiten, als du dir zugetraut hast.",
+     "tr": "Göz bağı kayıyor, düğümler gevşiyor; kendinden beklediğinden fazla olasılık görmeye başlıyorsun."
+    }
+   }
+  },
+  {
+   "id": "ta_sch_09_neun",
+   "nummer": 9,
+   "arkana": "klein",
+   "farbe": "schwerter",
+   "name": {
+    "de": "Neun der Schwerter",
+    "tr": "Kılıç Dokuzlusu"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Sorgen kreisen gerade besonders laut, vor allem in stillen Stunden, und wirken dabei oft größer, als sie bei Tageslicht sind.",
+     "tr": "Tasalar şu sıralar özellikle sessiz saatlerde yüksek sesle dönüyor ve gün ışığında olduğundan büyük görünebiliyor."
+    },
+    "umgekehrt": {
+     "de": "Die nächtlichen Gedanken verlieren an Gewicht, und bei Licht betrachtet wird vieles überschaubarer, als es sich angefühlt hat.",
+     "tr": "Gecenin ağır düşünceleri hafifliyor; aydınlıkta bakınca pek çok şey sandığından daha küçük görünüyor."
+    }
+   }
+  },
+  {
+   "id": "ta_sch_10_zehn",
+   "nummer": 10,
+   "arkana": "klein",
+   "farbe": "schwerter",
+   "name": {
+    "de": "Zehn der Schwerter",
+    "tr": "Kılıç Onlusu"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein Gedankengang ist an sein Ende gekommen, und gerade dort, wo nichts mehr weitergeht, darf der Morgen beginnen.",
+     "tr": "Bir düşünce zinciri sonuna vardı; artık ilerlemeyen yerde sabah başlayabilir."
+    },
+    "umgekehrt": {
+     "de": "Nach einem Tiefpunkt richtest du dich langsam wieder auf und merkst, dass das Schwerste hinter dir liegen kann.",
+     "tr": "Bir dip noktasının ardından yavaş yavaş doğruluyor ve en ağır kısmın geride kalmış olabileceğini fark ediyorsun."
+    }
+   }
+  },
+  {
+   "id": "ta_sch_11_bube",
+   "nummer": 11,
+   "arkana": "klein",
+   "farbe": "schwerter",
+   "name": {
+    "de": "Bube der Schwerter",
+    "tr": "Kılıç Valesi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Dein Denken ist gerade wach und neugierig und möchte verstehen, nachfragen und Neues durchdenken, mit Freude an ehrlichen Antworten.",
+     "tr": "Zihnin şu sıralar meraklı ve dinç; anlamak, sormak ve yeni şeyleri düşünüp taşınmak istiyor."
+    },
+    "umgekehrt": {
+     "de": "Die Neugier verteilt sich gerade auf so viele Fragen, dass kaum eine zu Ende gedacht wird und du manchmal unvorbereitet dastehst.",
+     "tr": "Merakın şu sıralar öyle çok soruya dağılıyor ki hiçbiri sonuna kadar düşünülmüyor ve bazen hazırlıksız kalıyorsun."
+    }
+   }
+  },
+  {
+   "id": "ta_sch_12_ritter",
+   "nummer": 12,
+   "arkana": "klein",
+   "farbe": "schwerter",
+   "name": {
+    "de": "Ritter der Schwerter",
+    "tr": "Kılıç Şövalyesi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Dein Denken ist gerade schnell und wach, und du kannst einem Ziel mit Schwung und offenen Worten entgegengehen.",
+     "tr": "Zihnin şu sıralar hızlı ve uyanık; bir hedefe hevesle ve lafı dolandırmadan yönelebilirsin."
+    },
+    "umgekehrt": {
+     "de": "Deine Gedanken eilen gerade voraus, und wenn du das Tempo etwas drosselst, finden Worte und Ziel besser zusammen.",
+     "tr": "Düşüncelerin şu sıralar senden önde koşuyor; hızını biraz düşürdüğünde sözlerinle hedefin daha iyi buluşabilir."
+    }
+   }
+  },
+  {
+   "id": "ta_sch_13_koenigin",
+   "nummer": 13,
+   "arkana": "klein",
+   "farbe": "schwerter",
+   "name": {
+    "de": "Königin der Schwerter",
+    "tr": "Kılıç Kraliçesi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Du siehst gerade weit und ehrlich auf dein Leben und kannst aussprechen, was für dich wahr ist, mit Wärme und einem Schuss Humor.",
+     "tr": "Hayatına şu sıralar geniş ve içten bir gözle bakıyor, senin için doğru olanı sıcaklıkla ve biraz da esprili bir dille söyleyebiliyorsun."
+    },
+    "umgekehrt": {
+     "de": "Dein Blick hat sich gerade zurückgezogen, vielleicht aus Gewohnheit, alles erst zu prüfen, und ein wenig Wärme für dich selbst kann ihn weiten.",
+     "tr": "Bakışın şu sıralar biraz içine çekilmiş, belki her şeyi önce tartma alışkanlığından; kendine biraz yumuşaklık tanımak onu yeniden genişletebilir."
+    }
+   }
+  },
+  {
+   "id": "ta_sch_14_koenig",
+   "nummer": 14,
+   "arkana": "klein",
+   "farbe": "schwerter",
+   "name": {
+    "de": "König der Schwerter",
+    "tr": "Kılıç Kralı"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Du kannst gerade Gedanken ordnen, Wichtiges von Nebensächlichem unterscheiden und besonnen zu einer fairen Einschätzung finden.",
+     "tr": "Şu sıralar düşüncelerini düzenleyebilir, önemliyi önemsizden ayırt edebilir ve sakin bir zihinle adil bir değerlendirmeye varabilirsin."
+    },
+    "umgekehrt": {
+     "de": "Dein Denken ist womöglich starr geworden, und etwas Nachgiebigkeit kann deinen Grundsätzen wieder Luft und Wärme geben.",
+     "tr": "Düşünce biçimin şu sıralar biraz katılaşmış olabilir; biraz esneklik ilkelerine yeniden hava ve sıcaklık katabilir."
+    }
+   }
+  },
+  {
+   "id": "ta_mue_01_ass",
+   "nummer": 1,
+   "arkana": "klein",
+   "farbe": "muenzen",
+   "name": {
+    "de": "Ass der Münzen",
+    "tr": "Pentagram Ası"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein guter Anfang liegt dir buchstäblich in der Hand: etwas Greifbares, das wachsen kann, wenn du es pflegst.",
+     "tr": "Avucuna elle tutulur bir başlangıç bırakılmış gibi; özenle bakarsan büyüyebilir."
+    },
+    "umgekehrt": {
+     "de": "Ein guter Anfang ist in Reichweite, doch er braucht noch Vorbereitung und festen Grund, bevor er tragen kann.",
+     "tr": "İyi bir başlangıç el altında, ama sağlam bir zemine oturması için biraz daha hazırlık istiyor."
+    }
+   }
+  },
+  {
+   "id": "ta_mue_02_zwei",
+   "nummer": 2,
+   "arkana": "klein",
+   "farbe": "muenzen",
+   "name": {
+    "de": "Zwei der Münzen",
+    "tr": "Pentagram İkilisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Mit Leichtigkeit hältst du mehrere Dinge in Bewegung, beweglich und mit einem Lächeln, auch wenn die Wellen ringsum höher schlagen.",
+     "tr": "Birçok işi aynı anda hafiflikle idare ediyorsun; çevrende dalgalar yükselse bile esnek ve güler yüzlü kalabilirsin."
+    },
+    "umgekehrt": {
+     "de": "Zu viele Dinge sind zugleich in der Luft, und es tut gut, ein paar davon bewusst abzulegen.",
+     "tr": "Havada aynı anda çok fazla şey var; bazılarını bilerek yere bırakmak seni rahatlatabilir."
+    }
+   }
+  },
+  {
+   "id": "ta_mue_03_drei",
+   "nummer": 3,
+   "arkana": "klein",
+   "farbe": "muenzen",
+   "name": {
+    "de": "Drei der Münzen",
+    "tr": "Pentagram Üçlüsü"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Gemeinsam entsteht etwas Gutes, wenn alle ihr Können einbringen und die Pläne aufeinander abgestimmt sind.",
+     "tr": "Herkes kendi ustalığını katıp planlar birbirine uyduğunda ortaya güzel bir eser çıkabilir."
+    },
+    "umgekehrt": {
+     "de": "Die Arbeit kommt nicht recht voran, weil Pläne und Beteiligte nicht im gleichen Takt sind.",
+     "tr": "Planlar ve işe katılanlar aynı ritimde olmadığı için iş pek ilerlemiyor."
+    }
+   }
+  },
+  {
+   "id": "ta_mue_04_vier",
+   "nummer": 4,
+   "arkana": "klein",
+   "farbe": "muenzen",
+   "name": {
+    "de": "Vier der Münzen",
+    "tr": "Pentagram Dörtlüsü"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Du hältst fest, was dir Halt gibt, und schützt das, was du dir aufgebaut hast, mit ruhiger Entschlossenheit.",
+     "tr": "Sana dayanak olanı sıkıca tutuyor, kurduğun şeyi sakin bir kararlılıkla koruyorsun."
+    },
+    "umgekehrt": {
+     "de": "Der Griff ist zu fest geworden oder lockert sich gerade, und beides lädt dich ein, neu zu spüren, was dir wirklich Halt gibt.",
+     "tr": "Tutuşun fazla sıkılaşmış ya da gevşemeye başlamış olabilir; ikisi de sana gerçekten neyin dayanak olduğunu yeniden sorduruyor."
+    }
+   }
+  },
+  {
+   "id": "ta_mue_05_fuenf",
+   "nummer": 5,
+   "arkana": "klein",
+   "farbe": "muenzen",
+   "name": {
+    "de": "Fünf der Münzen",
+    "tr": "Pentagram Beşlisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Eine harte Zeit kann dich gerade frösteln lassen, und doch ist Wärme näher, als es sich anfühlt.",
+     "tr": "Zor bir dönem içini üşütüyor olabilir; oysa sıcak bir ışık sandığından daha yakın."
+    },
+    "umgekehrt": {
+     "de": "Das Schwere beginnt zu tauen, und du kannst wieder dort ankommen, wo du dich lange draußen gefühlt hast.",
+     "tr": "Ağır gelen şey çözülmeye başlıyor; uzun süre dışarıda kaldığını hissettiğin yere yeniden varabilirsin."
+    }
+   }
+  },
+  {
+   "id": "ta_mue_06_sechs",
+   "nummer": 6,
+   "arkana": "klein",
+   "farbe": "muenzen",
+   "name": {
+    "de": "Sechs der Münzen",
+    "tr": "Pentagram Altılısı"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Geben und Nehmen finden gerade ins Gleichgewicht, und was du an Zeit, Wissen oder Aufmerksamkeit teilst, kann anderen weiterhelfen.",
+     "tr": "Alıp vermek şu sıralar dengeye oturuyor; paylaştığın zaman, bilgi ya da ilgi başkalarına destek olabilir."
+    },
+    "umgekehrt": {
+     "de": "Der Austausch ist gerade aus dem Lot geraten, und er kann sich wieder einpendeln, wenn du auch selbst etwas annimmst.",
+     "tr": "Karşılıklılık şu sıralar aksıyor; sen de bir şeyler kabul ettikçe denge yeniden kurulabilir."
+    }
+   }
+  },
+  {
+   "id": "ta_mue_07_sieben",
+   "nummer": 7,
+   "arkana": "klein",
+   "farbe": "muenzen",
+   "name": {
+    "de": "Sieben der Münzen",
+    "tr": "Pentagram Yedilisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Ein Stück Arbeit ist getan, und jetzt ist Zeit, innezuhalten und anzuschauen, was durch deine Mühe gewachsen ist.",
+     "tr": "Bir işin bir kısmı bitti; şimdi durup özeninle neyin büyüdüğüne bakma zamanı."
+    },
+    "umgekehrt": {
+     "de": "Ungeduld oder verstreute Kräfte lassen dich gerade zweifeln, ob deine Mühe Früchte trägt, und laden ein, neu zu ordnen.",
+     "tr": "Telaş ya da dağılan güç, sana emeğinin meyve verip vermediğinden şüphe ettiriyor; bu, öncelikleri yeniden sıralamaya bir davet."
+    }
+   }
+  },
+  {
+   "id": "ta_mue_08_acht",
+   "nummer": 8,
+   "arkana": "klein",
+   "farbe": "muenzen",
+   "name": {
+    "de": "Acht der Münzen",
+    "tr": "Pentagram Sekizlisi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Konzentrierte Arbeit und stetige Übung lassen dein Können wachsen, und die Sorgfalt selbst kann Freude machen.",
+     "tr": "Odaklı çalışma ve düzenli alıştırma becerini büyütüyor; özenin kendisi de keyif verebilir."
+    },
+    "umgekehrt": {
+     "de": "Der Wunsch nach Perfektion kann gerade den Blick fürs Ganze verstellen und dich fragen lassen, wofür du eigentlich übst.",
+     "tr": "Kusursuzluk isteği şu sıralar bütünü görmeni engelleyebilir; ne için çalıştığını yeniden sormak sana yol gösterebilir."
+    }
+   }
+  },
+  {
+   "id": "ta_mue_09_neun",
+   "nummer": 9,
+   "arkana": "klein",
+   "farbe": "muenzen",
+   "name": {
+    "de": "Neun der Münzen",
+    "tr": "Pentagram Dokuzlusu"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Was du mit eigener Sorgfalt angelegt hast, kann jetzt gedeihen, und du darfst dich daran in Ruhe freuen.",
+     "tr": "Kendi özeninle kurduğun düzen şimdi yeşerebilir; bunun keyfini acele etmeden çıkarabilirsin."
+    },
+    "umgekehrt": {
+     "de": "Vielleicht arbeitest du mehr, als dir guttut, und vergisst dabei, wie viel du schon aus eigener Kraft geschaffen hast.",
+     "tr": "Belki gücünün yettiğinden fazla çalışıyor ve kendi başına neler kurduğunu gözden kaçırıyorsun."
+    }
+   }
+  },
+  {
+   "id": "ta_mue_10_zehn",
+   "nummer": 10,
+   "arkana": "klein",
+   "farbe": "muenzen",
+   "name": {
+    "de": "Zehn der Münzen",
+    "tr": "Pentagram Onlusu"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Was über lange Zeit gewachsen ist, kann dir jetzt Halt und ein Gefühl von Zugehörigkeit geben.",
+     "tr": "Uzun bir sürede biçimlenen şeyler sana şimdi dayanak ve bir yere ait olma duygusu verebilir."
+    },
+    "umgekehrt": {
+     "de": "Etwas Vertrautes fühlt sich gerade zu eng oder brüchig an und möchte behutsam umgebaut werden.",
+     "tr": "Alışık olduğun bir düzen şu sıralar dar ya da kırılgan görünebilir; onu özenle yeniden kurmak mümkün."
+    }
+   }
+  },
+  {
+   "id": "ta_mue_11_bube",
+   "nummer": 11,
+   "arkana": "klein",
+   "farbe": "muenzen",
+   "name": {
+    "de": "Bube der Münzen",
+    "tr": "Pentagram Valesi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Neugier auf etwas Greifbares und die Lust, es gründlich zu lernen, können jetzt in dir wach werden.",
+     "tr": "Somut bir şeye duyduğun merak ve onu adamakıllı öğrenme isteği şimdi içinde canlanabilir."
+    },
+    "umgekehrt": {
+     "de": "Gute Vorhaben verlieren sich gerade leicht im Aufschieben, doch ein klarer erster Handgriff kann ihnen wieder Boden geben.",
+     "tr": "Güzel niyetler şu sıralar ertelemenin içinde kaybolabilir; ilk somut iş onları yeniden gerçeğe taşıyabilir."
+    }
+   }
+  },
+  {
+   "id": "ta_mue_12_ritter",
+   "nummer": 12,
+   "arkana": "klein",
+   "farbe": "muenzen",
+   "name": {
+    "de": "Ritter der Münzen",
+    "tr": "Pentagram Şövalyesi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Du kommst gerade mit ruhiger Ausdauer voran und bringst zu Ende, was du angefangen hast, auch wenn es nicht glänzt.",
+     "tr": "Sakin bir sebatla ilerliyorsun; parlak görünmese de başladığın işi sonuna kadar götürüyorsun."
+    },
+    "umgekehrt": {
+     "de": "Die Ausdauer ist zu Schwere geworden, dein Tempo stockt, und schon ein wenig Schwung kann dich wieder in Gang bringen.",
+     "tr": "Sebatın yerini ağırlık almış, tempon düşmüş; biraz canlılık seni yeniden harekete geçirebilir."
+    }
+   }
+  },
+  {
+   "id": "ta_mue_13_koenigin",
+   "nummer": 13,
+   "arkana": "klein",
+   "farbe": "muenzen",
+   "name": {
+    "de": "Königin der Münzen",
+    "tr": "Pentagram Kraliçesi"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Du kümmerst dich mit praktischer Wärme um Menschen und Dinge in deiner Nähe und findest dabei selbst Halt im Greifbaren.",
+     "tr": "Yakınındaki insanlarla ve işlerle elle tutulur bir sıcaklıkla ilgileniyor, bunu yaparken kendin de somut olanda dayanak buluyorsun."
+    },
+    "umgekehrt": {
+     "de": "Zwischen all den Pflichten für andere findest du gerade kaum Ruhe, und ein Teil deiner Fürsorge möchte bei dir selbst ankommen.",
+     "tr": "Başkaları için üstlendiğin görevler arasında şu sıralar pek dinlenemiyorsun; şefkatinin bir kısmı artık sana ulaşmak istiyor."
+    }
+   }
+  },
+  {
+   "id": "ta_mue_14_koenig",
+   "nummer": 14,
+   "arkana": "klein",
+   "farbe": "muenzen",
+   "name": {
+    "de": "König der Münzen",
+    "tr": "Pentagram Kralı"
+   },
+   "kurz": {
+    "aufrecht": {
+     "de": "Du überblickst, was du aufgebaut hast, und trägst Verantwortung mit ruhiger Hand und praktischem Geschick.",
+     "tr": "Kurduğun şeyi bir bakışta görüyor, sorumluluğu sakin bir elle ve pratik bir beceriyle taşıyorsun."
+    },
+    "umgekehrt": {
+     "de": "Das Bewährte ist zu einer festen Mauer geworden, und etwas Beweglichkeit kann wieder Luft in deinen Alltag bringen.",
+     "tr": "Denenmiş yollar kalın bir duvara dönüşmüş; biraz esneklik gündelik hayatına yeniden hava katabilir."
+    }
+   }
+  }
+ ],
+ "legungen": {
+  "drei_karten": {
+   "name": {
+    "de": "Drei Karten",
+    "tr": "Üç Kart"
+   },
+   "positionen": [
+    {
+     "id": "vergangenheit",
+     "name": {
+      "de": "Vergangenheit",
+      "tr": "Geçmiş"
+     }
+    },
+    {
+     "id": "gegenwart",
+     "name": {
+      "de": "Gegenwart",
+      "tr": "Şimdi"
+     }
+    },
+    {
+     "id": "zukunft",
+     "name": {
+      "de": "Zukunft",
+      "tr": "Gelecek"
+     }
+    }
+   ]
+  },
+  "liebe": {
+   "name": {
+    "de": "Liebe",
+    "tr": "Aşk"
+   },
+   "positionen": [
+    {
+     "id": "herz",
+     "name": {
+      "de": "Dein Herz jetzt",
+      "tr": "Kalbinin hâli"
+     }
+    },
+    {
+     "id": "brauchen",
+     "name": {
+      "de": "Was dein Herz braucht",
+      "tr": "Kalbinin ihtiyacı"
+     }
+    },
+    {
+     "id": "begegnung",
+     "name": {
+      "de": "Nähe und Begegnung",
+      "tr": "Yakınlık ve bağ"
+     }
+    },
+    {
+     "id": "rat",
+     "name": {
+      "de": "Ein Rat für dein Herz",
+      "tr": "Gönlüne bir tavsiye"
+     }
+    },
+    {
+     "id": "ausblick",
+     "name": {
+      "de": "Was wachsen kann",
+      "tr": "Filizlenebilecek olan"
+     }
+    }
+   ]
+  },
+  "ja_nein": {
+   "name": {
+    "de": "Ja oder Nein",
+    "tr": "Evet mi, Hayır mı"
+   },
+   "positionen": []
+  },
+  "tageskarte": {
+   "name": {
+    "de": "Tageskarte",
+    "tr": "Günün Kartı"
+   },
+   "positionen": []
+  }
+ }
+}

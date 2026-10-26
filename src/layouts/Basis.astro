@@ -1,0 +1,79 @@
+---
+// Grundlayout aller Seiten: Kopfdaten (Titel, Beschreibung, kanonische Adresse, Robots, hreflang, Open Graph,
+// strukturierte Daten), Kopf, Brotkrumen auf Unterseiten, Inhalt, Teilen-Knopf auf Inhaltsseiten, Fuß.
+// Alle Angaben kommen über die Adresse aus src/daten/seiten.mjs; eine Seite gibt sie nicht selbst an.
+// Keine Cookies, nichts im Speicher des Browsers, keine Anfragen an andere Anbieter. Das Skript im Kopf setzt nur die
+// Klasse "js" (Gestaltung mit JavaScript, etwa das Menü am Handy).
+import '@fontsource/cormorant-garamond/latin-500.css';
+import '@fontsource/cormorant-garamond/latin-600.css';
+import '@fontsource/cormorant-garamond/latin-ext-500.css';
+import '@fontsource/cormorant-garamond/latin-ext-600.css';
+import '@fontsource-variable/inter/wght.css';
+import '../styles/basis.css';
+import interLatein from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
+import Kopf from '../components/Kopf.astro';
+import Fuss from '../components/Fuss.astro';
+import Brotkrumen from '../components/Brotkrumen.astro';
+import Teilen from '../components/Teilen.astro';
+import { seite } from '../daten/seite.mjs';
+import { seiteVon } from '../daten/seiten.mjs';
+import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
+import { websiteDaten, entwicklerDaten } from '../daten/strukturiert.mjs';
+
+const { adresse = Astro.url.pathname, daten = [], klasse } = Astro.props;
+const angaben = seiteVon(adresse);
+const { sprache, titel, beschreibung, gegenseite, krumen, bild, bildAlt, art, imIndex, teilen } = angaben;
+const T = oberflaeche[sprache];
+const kanonisch = seite.adresse + angaben.pfad;
+const alternativen = gegenseite
+  ? [
+      { lang: sprache, href: kanonisch },
+      { lang: sprache === 'de' ? 'tr' : 'de', href: seite.adresse + gegenseite },
+      { lang: 'x-default', href: seite.adresse + (sprache === 'de' ? angaben.pfad : gegenseite) },
+    ]
+  : [];
+const robots = imIndex ? null : angaben.index ? 'noindex, nofollow' : 'noindex, follow';
+const alleDaten = [websiteDaten(sprache), entwicklerDaten(), ...daten];
+---
+<!doctype html>
+<html lang={sprache}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script is:inline>document.documentElement.classList.add('js');</script>
+    <title>{titel}</title>
+    <meta name="description" content={beschreibung} />
+    <link rel="canonical" href={kanonisch} />
+    {alternativen.map((eintrag) => <link rel="alternate" hreflang={eintrag.lang} href={eintrag.href} />)}
+    {robots && <meta name="robots" content={robots} />}
+    <meta name="referrer" content="no-referrer" />
+    <meta name="theme-color" content="#12162B" />
+    <meta property="og:type" content={art} />
+    <meta property="og:site_name" content={seite.name} />
+    {sprache === 'de' && <meta property="og:locale" content="de_DE" />}
+    {sprache === 'de' && <meta property="og:locale:alternate" content="de_AT" />}
+    <meta property="og:title" content={titel} />
+    <meta property="og:description" content={beschreibung} />
+    <meta property="og:url" content={kanonisch} />
+    <meta property="og:image" content={seite.adresse + bild} />
+    <meta property="og:image:width" content={String(seite.teilen.breite)} />
+    <meta property="og:image:height" content={String(seite.teilen.hoehe)} />
+    <meta property="og:image:alt" content={bildAlt} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preload" href={interLatein} as="font" type="font/woff2" crossorigin />
+    {alleDaten.map((eintrag) => <script type="application/ld+json" set:html={JSON.stringify(eintrag)} />)}
+  </head>
+  <body class={klasse}>
+    <a class="sprung" href="#inhalt">{T.sprung}</a>
+    <Kopf angaben={angaben} />
+    {krumen && <Brotkrumen krumen={krumen} sprache={sprache} />}
+    <main id="inhalt">
+      <slot />
+      {teilen && <Teilen sprache={sprache} titel={titel} adresse={kanonisch} />}
+    </main>
+    <Fuss angaben={angaben} />
+  </body>
+</html>

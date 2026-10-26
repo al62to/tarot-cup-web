@@ -1,0 +1,48 @@
+---
+// So geht's: eine Seite je Sprache mit neun Kapiteln, Sprungmarken und je einem Bildschirmfoto der App (Release 0.4.0
+// auf dem Emulator, aufnahmen/APW1/sogehts/), dazu Article. Gestaltung (src/styles/inhalt.css): links das
+// Inhaltsverzeichnis, rechts die Kapitel mit großer Nummer, Text und dem Foto im Handy-Rahmen daneben; am Handy steht
+// das Foto unter dem Text.
+import '../styles/inhalt.css';
+import Basis from '../layouts/Basis.astro';
+import Text from './Text.astro';
+import Handy from './Handy.astro';
+import Inhaltsverzeichnis from './Inhaltsverzeichnis.astro';
+import { sogehts } from '../daten/texte/sogehts.mjs';
+import { artikelDaten } from '../daten/strukturiert.mjs';
+import { seiteVon } from '../daten/seiten.mjs';
+
+const { sprache } = Astro.props;
+const T = sogehts[sprache];
+const angaben = seiteVon(Astro.url.pathname);
+const daten = [artikelDaten({ pfad: angaben.pfad, sprache, titel: T.titel, beschreibung: T.metaBeschreibung, bild: angaben.bild, quellen: angaben.quellen })];
+---
+<Basis daten={daten} klasse="seite-sogehts">
+  <article>
+    <header class="seitenkopf innen">
+      <h1>{T.titel}</h1>
+      <Text text={T.vorspann} klasse="vorspann" />
+    </header>
+    <div class="innen inhalt-raster">
+      <Inhaltsverzeichnis titel={T.inhaltTitel} eintraege={T.kapitel} klasse="toc-kapitel" />
+      <div class="lesen kapitel-liste">
+        {T.kapitel.map((kapitel, nummer) => (
+          <section class="kapitel" id={kapitel.kennung} aria-labelledby={`${kapitel.kennung}-titel`}>
+            <div class="kapitel-text">
+              <p class="kapitel-nummer" aria-hidden="true">{nummer + 1}</p>
+              <h2 id={`${kapitel.kennung}-titel`}><Text text={kapitel.titel} ohne /></h2>
+              {kapitel.absaetze.map((absatz) => <Text text={absatz} />)}
+            </div>
+            <Handy art="sogehts" name={kapitel.foto} sprache={sprache} alt={kapitel.alt} groessen="(min-width: 64rem) 216px, 200px" klasse={kapitel.foto === '06_verlauf' ? 'kapitel-foto oben-ausblenden' : 'kapitel-foto'} ohneRahmen={kapitel.foto === '08_teilen'} />
+          </section>
+        ))}
+        {T.abschluss && (
+          <section class="kapitel-abschluss">
+            <h2>{T.abschluss.titel}</h2>
+            <Text text={T.abschluss.text} />
+          </section>
+        )}
+      </div>
+    </div>
+  </article>
+</Basis>

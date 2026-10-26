@@ -1,0 +1,15 @@
+---
+// Rechtsseiten unter denselben Adressen wie vor AP-W1: /datenschutz/, /nutzungsbedingungen/, /tr/gizlilik/,
+// /tr/kullanim-kosullari/ und je Fassung /<text>/<fassung>/ (Verzeichnis aus src/inhalte/recht/verzeichnis.json).
+import Rechtsseite from '../components/Rechtsseite.astro';
+import { rechtsseiten } from '../daten/recht.mjs';
+
+export function getStaticPaths() {
+  return rechtsseiten().map((rechtsseite) => ({
+    params: { recht: rechtsseite.adresse.replace(/^\/|\/$/g, '') },
+    props: { rechtsseite },
+  }));
+}
+const { rechtsseite } = Astro.props;
+---
+<Rechtsseite rechtsseite={rechtsseite} />

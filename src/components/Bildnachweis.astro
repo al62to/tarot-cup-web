@@ -1,0 +1,27 @@
+---
+// Bildnachweis und Lizenzen: Kartenbilder von 1909 (wie der Bildnachweis der App), Schriften der Website, Marke
+// Google Play (nur, wenn das Abzeichen gezeigt wird).
+import '../styles/dokument.css';
+import Basis from '../layouts/Basis.astro';
+import Text from './Text.astro';
+import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
+import { store } from '../daten/seite.mjs';
+
+const { sprache } = Astro.props;
+const T = oberflaeche[sprache].bildnachweis;
+---
+<Basis klasse="seite-recht seite-bildnachweis">
+  <header class="seitenkopf innen schmal">
+    <h1>{T.titel}</h1>
+    <Text text={T.vorspann} klasse="vorspann" />
+  </header>
+  <div class="innen schmal dokument">
+    {[T.karten, T.schriften].map((teil) => (
+      <section>
+        <h2>{teil.titel}</h2>
+        {teil.absaetze.map((absatz) => <Text text={absatz} />)}
+      </section>
+    ))}
+    {store.oeffentlich && <p>{T.marken}</p>}
+  </div>
+</Basis>

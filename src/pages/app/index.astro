@@ -1,0 +1,71 @@
+---
+// Kurzlink /app/ (Muster [kurzlink] von FoodAsu, Auftrag Teil F). Ist die App öffentlich, schickt ein kleines eigenes
+// Skript Android-Geräte sofort zum Eintrag bei Google Play (Kennung utm_source=website, utm_campaign=kurzlink); am
+// Computer bleibt diese Seite mit Abzeichen und QR-Code stehen (QR beim Bau lokal erzeugt, er führt wieder auf
+// /app/). Für das iPhone ist die Weiterleitung vorgesehen (ios.oeffentlich). Solange die App nicht öffentlich ist,
+// steht hier nur „Bald bei Google Play“. Die Seite gilt für beide Sprachen; der türkische Teil trägt lang="tr".
+// noindex, nicht in Sitemap und llms.txt. Nichts wird gespeichert, nichts von anderen Anbietern geladen.
+import QRCode from 'qrcode';
+import '../../styles/dokument.css';
+import Basis from '../../layouts/Basis.astro';
+import Storeknopf from '../../components/Storeknopf.astro';
+import Text from '../../components/Text.astro';
+import { ios, seite, store, storeLink } from '../../daten/seite.mjs';
+import { oberflaeche } from '../../daten/texte/oberflaeche.mjs';
+
+const ziel = store.oeffentlich ? storeLink('kurzlink') : null;
+const qr = store.oeffentlich
+  ? await QRCode.toString(`${seite.adresse}/app/`, { type: 'svg', margin: 1, errorCorrectionLevel: 'M', color: { dark: '#12162B', light: '#FFFDF8' } })
+  : null;
+const weiter = { android: ziel, ios: ios.oeffentlich ? ios.adresse : null };
+---
+<Basis klasse="seite-app">
+  <div class="innen schmal app-seite">
+    {['de', 'tr'].map((sprache) => {
+      const T = oberflaeche[sprache].app;
+      return (
+        <section class="app-teil" lang={sprache === 'de' ? undefined : sprache}>
+          {sprache === 'de' ? <h1><Text text={T.titel} ohne /></h1> : <h2><Text text={T.titel} ohne /></h2>}
+          {store.oeffentlich ? (
+            <>
+              <Text text={T.text} />
+              <Storeknopf sprache={sprache} ort="kurzlink" />
+              <p><a href={ziel} rel="noopener">{T.weiter}</a></p>
+            </>
+          ) : (
+            <>
+              <Text text={T.bald} />
+              <Storeknopf sprache={sprache} ort="kurzlink" />
+            </>
+          )}
+          {!ios.oeffentlich && <Text text={T.iphone} klasse="app-iphone" />}
+        </section>
+      );
+    })}
+    {qr && (
+      <figure class="app-qr">
+        <Fragment set:html={qr} />
+        <figcaption>{oberflaeche.de.app.qr} · <span lang="tr">{oberflaeche.tr.app.qr}</span></figcaption>
+      </figure>
+    )}
+  </div>
+  {(weiter.android || weiter.ios) && (
+    <script type="application/json" id="app-weiter" set:html={JSON.stringify(weiter)} />
+  )}
+</Basis>
+
+<script>
+  // Weiterleitung nur, wenn die Seite ein Ziel nennt (App öffentlich). Erkennung allein am User-Agent, nichts wird
+  // gespeichert oder gesendet.
+  const daten = document.getElementById('app-weiter');
+  if (daten) {
+    try {
+      const { android, ios } = JSON.parse(daten.textContent);
+      const kennung = navigator.userAgent;
+      if (android && /Android/i.test(kennung)) window.location.replace(android);
+      else if (ios && /iPhone|iPad|iPod/i.test(kennung)) window.location.replace(ios);
+    } catch {
+      // Die Seite mit den Links bleibt stehen.
+    }
+  }
+</script>

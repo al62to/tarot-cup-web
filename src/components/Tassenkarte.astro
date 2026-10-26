@@ -1,0 +1,34 @@
+---
+// Tassenkarte von oben wie in der App (Entwurf SelbstLage): Rand, Mitte und Boden als Ringe, eine gestrichelte Linie
+// trennt die Seite gegenüber (links) von der Henkelseite (rechts), Henkel rechts, darunter die Untertasse. Die Namen
+// der Bereiche kommen aus der Textdatei der Seite, damit Bild und Liste dieselben Wörter tragen; ohne Liste gelten die
+// Namen der App.
+const { sprache, bereiche = [] } = Astro.props;
+const ERSATZ = {
+  de: { rand: 'Rand', mitte: 'Mitte', boden: 'Boden', henkelseite: 'Henkelseite', gegenueber: 'gegenüber', untertasse: 'Untertasse' },
+  tr: { rand: 'Ağız', mitte: 'Orta', boden: 'Dip', henkelseite: 'Kulp tarafı', gegenueber: 'Karşı taraf', untertasse: 'Tabak' },
+};
+const name = (schluessel) => bereiche.find((bereich) => bereich.bereich === schluessel)?.name ?? ERSATZ[sprache][schluessel];
+// Im Bild steht „gegenüber“ kurz, auch wenn die Liste „Gegenüber vom Henkel“ sagt.
+const kurz = (schluessel) => (schluessel === 'gegenueber' ? ERSATZ[sprache].gegenueber : name(schluessel));
+const label = sprache === 'de'
+  ? `Tassenkarte von oben: ${name('rand')}, ${name('mitte')} und ${name('boden')}, links ${name('gegenueber')}, rechts die ${name('henkelseite')} mit dem Henkel, darunter die ${name('untertasse')}`
+  : `Yukarıdan fincan haritası: ${name('rand')}, ${name('mitte')} ve ${name('boden')}; solda ${name('gegenueber')}, sağda ${name('henkelseite')} ve kulp, altta ${name('untertasse')}`;
+---
+<figure class="tassenkarte">
+  <svg viewBox="6 0 278 318" width="278" height="318" role="img" aria-label={label}>
+    <ellipse cx="125" cy="282" rx="86" ry="26" class="tk-tasse" />
+    <ellipse cx="125" cy="282" rx="40" ry="11" class="tk-linie" />
+    <circle cx="125" cy="125" r="112" class="tk-tasse" />
+    <circle cx="125" cy="125" r="75" class="tk-linie" />
+    <circle cx="125" cy="125" r="38" class="tk-linie" />
+    <path d="M125 13v224" class="tk-teiler" />
+    <path d="M237 104h14a21 21 0 0 1 0 42h-14" class="tk-henkel" />
+    <text x="125" y="31" text-anchor="middle" class="tk-text">{kurz('rand')}</text>
+    <text x="125" y="67" text-anchor="middle" class="tk-text">{kurz('mitte')}</text>
+    <text x="125" y="104" text-anchor="middle" class="tk-text">{kurz('boden')}</text>
+    <text x="80" y="200" text-anchor="middle" class="tk-text tk-seite">{kurz('gegenueber')}</text>
+    <text x="170" y="200" text-anchor="middle" class="tk-text tk-seite">{kurz('henkelseite')}</text>
+    <text x="125" y="286" text-anchor="middle" class="tk-text">{kurz('untertasse')}</text>
+  </svg>
+</figure>

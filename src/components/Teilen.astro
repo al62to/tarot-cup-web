@@ -1,0 +1,70 @@
+---
+// Teilen-Knopf auf jeder Inhaltsseite (nicht auf Rechtsseiten). Auf dem Handy öffnet er das Teilen-Menü des Geräts
+// (Web Share API). Gibt es das nicht, klappen „Link kopieren“ und einfache Links für WhatsApp und E-Mail auf. Ohne
+// JavaScript stehen die Links für WhatsApp und E-Mail direkt da. Keine fremden Skripte, keine Zählpixel, nichts wird im
+// Browser gespeichert; die Links öffnen nur die Adresse mit dem Text, sie laden nichts in die Seite.
+import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
+
+const { sprache, titel, adresse } = Astro.props;
+const T = oberflaeche[sprache].teilen;
+const text = `${titel} ${adresse}`;
+const whatsapp = `https://wa.me/?text=${encodeURIComponent(text)}`;
+const email = `mailto:?subject=${encodeURIComponent(titel)}&body=${encodeURIComponent(`${T.emailText} ${adresse}`)}`;
+---
+<section class="teilen innen" aria-labelledby="teilen-titel" data-teilen data-titel={titel} data-adresse={adresse}>
+  <h2 class="teilen-titel" id="teilen-titel">{T.titel}</h2>
+  <div class="teilen-feld">
+  <button class="knopf knopf-rand teilen-knopf" type="button" aria-expanded="false" aria-controls="teilen-wahl" data-teilen-knopf>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="18" cy="5" r="2.6" /><circle cx="6" cy="12" r="2.6" /><circle cx="18" cy="19" r="2.6" /><path d="M8.3 10.8l7.4-4.4M8.3 13.2l7.4 4.4" /></svg>
+    <span>{T.knopf}</span>
+  </button>
+  <ul class="teilen-wahl" id="teilen-wahl" data-teilen-wahl>
+    <li class="nur-js"><button class="knopf-schlicht" type="button" data-kopieren data-fertig={T.kopiert}>{T.kopieren}</button></li>
+    <li><a href={whatsapp} rel="noopener">{T.whatsapp}</a></li>
+    <li><a href={email}>{T.email}</a></li>
+  </ul>
+  </div>
+  <p class="teilen-meldung" role="status" aria-live="polite" data-teilen-meldung></p>
+</section>
+
+<script>
+  const block = document.querySelector('[data-teilen]');
+  const knopf = block?.querySelector('[data-teilen-knopf]');
+  const wahl = block?.querySelector('[data-teilen-wahl]');
+  if (block && knopf && wahl) {
+    const { titel, adresse } = block.dataset;
+    const meldung = block.querySelector('[data-teilen-meldung]');
+    const setze = (offen) => knopf.setAttribute('aria-expanded', String(offen));
+    // Das kleine Feld schließt sich mit Esc und mit einem Klick daneben.
+    document.addEventListener('click', (ereignis) => {
+      if (!block.contains(ereignis.target)) setze(false);
+    });
+    block.addEventListener('keydown', (ereignis) => {
+      if (ereignis.key === 'Escape' && knopf.getAttribute('aria-expanded') === 'true') {
+        setze(false);
+        knopf.focus();
+      }
+    });
+    knopf.addEventListener('click', async () => {
+      if (navigator.share) {
+        try {
+          await navigator.share({ title: titel, url: adresse });
+          return;
+        } catch (fehler) {
+          // Abgebrochen: nichts tun. Anderer Fehler: die Auswahl zeigen.
+          if (fehler?.name === 'AbortError') return;
+        }
+      }
+      setze(knopf.getAttribute('aria-expanded') !== 'true');
+    });
+    const kopieren = block.querySelector('[data-kopieren]');
+    kopieren?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(adresse);
+        if (meldung) meldung.textContent = kopieren.dataset.fertig;
+      } catch {
+        if (meldung) meldung.textContent = adresse;
+      }
+    });
+  }
+</script>

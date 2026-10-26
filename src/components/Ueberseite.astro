@@ -1,0 +1,30 @@
+---
+// Über Tarot Cup: was die App ist und was nicht, wer sie macht (Ali Tonc, ohne Arbeitgeber und Beruf), Kontakt.
+import '../styles/dokument.css';
+import Basis from '../layouts/Basis.astro';
+import Text from './Text.astro';
+import { ueber } from '../daten/texte/ueber.mjs';
+import { ueberDaten } from '../daten/strukturiert.mjs';
+import { pfadVon } from '../daten/seiten.mjs';
+import { mailtoKodiert, emailKodiert } from '../daten/seite.mjs';
+
+const { sprache } = Astro.props;
+const T = ueber[sprache];
+const daten = [ueberDaten({ pfad: pfadVon('ueber', sprache), sprache, titel: T.titel, beschreibung: T.metaBeschreibung })];
+const kontakt = `<a href="${mailtoKodiert()}">${emailKodiert()}</a>`;
+---
+<Basis daten={daten} klasse="seite-ueber">
+  <header class="seitenkopf innen schmal">
+    <h1><Text text={T.titel} ohne /></h1>
+    <Text text={T.vorspann} klasse="vorspann" />
+  </header>
+  <div class="innen schmal dokument">
+    {T.abschnitte.map((abschnitt) => (
+      <section id={abschnitt.kennung} aria-labelledby={`${abschnitt.kennung}-titel`}>
+        <h2 id={`${abschnitt.kennung}-titel`}><Text text={abschnitt.titel} ohne /></h2>
+        {abschnitt.absaetze.map((absatz) => <Text text={absatz} />)}
+      </section>
+    ))}
+    <p class="kontakt">{T.kontakt}<Fragment set:html={kontakt} /></p>
+  </div>
+</Basis>

@@ -1,0 +1,78 @@
+/* Ruhige Dokumentseiten: Fragen, Über, Bildnachweis, Rechtstexte, Offenlegung, 404 und /app/ (Muster FoodAsu und
+   Entwurf 7.x WebRecht). Eine Lesespalte, höchstens 46rem breit. */
+
+.innen.dokument { max-width: calc(46rem + 2 * var(--rand-seite)); padding-bottom: 8px; }
+.dokument section + section { margin-top: 40px; }
+.dokument h2 { margin-bottom: 14px; font-size: clamp(1.625rem, 1.4rem + 1vw, 2rem); }
+.dokument p { font-size: 1.0625rem; line-height: 1.7; }
+.dokument .seitenkopf { padding-inline: 0; }
+.kontakt { margin-top: 40px; padding: 18px 22px; background: var(--karte); border: 1px solid var(--rand); border-radius: 18px; }
+.kontakt a { overflow-wrap: anywhere; }
+
+/* Häufige Fragen; unter dem Vorspann der Weg zur E-Mail. */
+.fragen-liste { padding-bottom: 8px; }
+.fragen-kontakt { margin: 20px 0 0; }
+.fragen-kontakt a { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 18px 0 14px; border: 1px solid var(--rand-stark); border-radius: 999px; background: var(--karte); font-size: 0.9375rem; font-weight: 600; text-decoration: none; }
+.fragen-kontakt a:hover { border-color: var(--gold-linie); color: var(--tinte); }
+.fragen-kontakt svg { flex: none; width: 18px; height: 18px; fill: none; stroke: var(--gold-dunkel); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Rechtstexte: Lesespalte, Tabellen scrollen in sich, eigene Druckansicht. Am Wortlaut ändert das nichts. */
+.innen.recht { max-width: calc(46rem + 2 * var(--rand-seite)); padding-top: clamp(24px, 4vw, 48px); padding-bottom: 32px; }
+.sprachwahl-recht { display: flex; margin: 0 0 24px; }
+.sprachwahl-recht a { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 18px 0 14px; border-radius: 999px; background: var(--sand); font-size: 0.9375rem; font-weight: 500; text-decoration: none; }
+.sprachwahl-recht a::before { content: ""; flex: none; width: 16px; height: 16px; border: 1.6px solid var(--gold-dunkel); border-radius: 50%; background: linear-gradient(var(--gold-dunkel), var(--gold-dunkel)) center / 100% 1.4px no-repeat, linear-gradient(var(--gold-dunkel), var(--gold-dunkel)) center / 1.4px 100% no-repeat; }
+.sprachwahl-recht a:hover { background: var(--rand); text-decoration: underline; }
+.recht .hinweis { margin: 0 0 28px; padding: 14px 18px; background: var(--karte); border: 1px solid var(--rand); border-left: 3px solid var(--gold-linie); border-radius: 14px; font-size: 0.96875rem; }
+.rechtstext { font-size: 1.0625rem; line-height: 1.7; }
+.rechtstext h1 { margin-bottom: 12px; font-size: clamp(2.25rem, 1.6rem + 2.6vw, 3.25rem); }
+.rechtstext h1::after { content: ""; display: block; width: 72px; height: 2px; margin-top: 18px; background: var(--gold-linie); }
+.rechtstext h1 + p { font-size: 0.9375rem; color: var(--gedaempft); }
+.rechtstext h2 { margin: 44px 0 14px; font-size: clamp(1.625rem, 1.45rem + 0.8vw, 1.875rem); }
+.rechtstext h3 { margin: 28px 0 10px; font-size: 1.3125rem; }
+.rechtstext ul, .rechtstext ol { margin: 0 0 1em; padding-left: 1.4em; }
+.rechtstext li { margin-bottom: 6px; }
+.rechtstext li::marker { color: var(--gold-dunkel); }
+.rechtstext a { overflow-wrap: anywhere; }
+.rechtstext blockquote { margin: 0 0 1.2em; padding: 20px 24px 6px; background: var(--karte); border: 1px solid var(--rand); border-radius: 20px; }
+.rechtstext table { display: block; max-width: 100%; overflow-x: auto; margin: 0 0 1.2em; border-collapse: collapse; font-size: 0.9375rem; line-height: 1.5; }
+.rechtstext th, .rechtstext td { min-width: 9rem; padding: 10px 12px; border: 1px solid var(--rand); text-align: left; vertical-align: top; }
+.rechtstext th { background: var(--sand); color: var(--tinte); font-weight: 600; }
+.rechtstext td { background: var(--karte); }
+.fassungen { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--rand); }
+.fassungen h2 { margin-bottom: 8px; font-size: 1.5rem; }
+.fassungen ul { list-style: none; margin: 0; padding: 0; }
+.fassungen li { display: flex; flex-wrap: wrap; align-items: center; min-height: 44px; font-size: 0.96875rem; color: var(--gedaempft); }
+.fassungen a { display: inline-flex; align-items: center; min-height: 44px; margin-right: 0.25em; }
+
+/* Seite nicht gefunden: beide Sprachen untereinander. */
+.nichtgefunden { padding-top: clamp(40px, 7vw, 80px); text-align: center; }
+.nichtgefunden::before { content: ""; display: block; width: 64px; height: 64px; margin: 0 auto 24px; border: 1.5px solid var(--gold-linie); border-radius: 50%; background: radial-gradient(circle, transparent 0 15px, var(--gold-linie) 15.5px 16.5px, transparent 17px); }
+.nichtgefunden h1 { margin-bottom: 14px; }
+.nichtgefunden h2 { margin: 0 0 12px; font-size: 1.75rem; }
+.nichtgefunden > div { margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--rand); }
+.nichtgefunden .knopf { margin-top: 4px; }
+
+/* Kurzlink /app/: beide Sprachen als ruhige Karten, QR-Code darunter. */
+.app-seite { display: grid; gap: 16px; padding-top: clamp(32px, 5vw, 56px); text-align: center; }
+.app-teil { padding: 28px 24px 12px; background: var(--karte); border: 1px solid var(--rand); border-radius: 24px; }
+.app-teil h1, .app-teil h2 { margin-bottom: 14px; font-size: clamp(1.875rem, 1.5rem + 1.5vw, 2.5rem); }
+.app-teil .store { margin-bottom: 16px; }
+.app-iphone { font-size: 0.9375rem; color: var(--gedaempft); }
+.app-qr { margin: 8px auto 0; padding: 20px; background: var(--karte); border: 1px solid var(--rand); border-radius: 20px; }
+.app-qr svg { display: block; width: 180px; height: 180px; margin: 0 auto 10px; }
+.app-qr figcaption { font-size: 0.875rem; color: var(--gedaempft); }
+
+@media print {
+  .recht, .dokument { max-width: none; padding: 0; }
+  .sprachwahl-recht, .fassungen { display: none; }
+  .rechtstext { font-size: 11pt; line-height: 1.5; color: #000; }
+  .rechtstext h1 { font-size: 22pt; }
+  .rechtstext h1::after { display: none; }
+  .rechtstext h2 { margin-top: 18pt; font-size: 15pt; break-after: avoid; }
+  .rechtstext h3 { font-size: 12.5pt; break-after: avoid; }
+  .rechtstext blockquote, .rechtstext td, .rechtstext th { background: none; }
+  .rechtstext blockquote { border-color: #999; }
+  .rechtstext table { display: table; overflow: visible; }
+  .rechtstext a { color: #000; text-decoration: none; }
+  .rechtstext p, .rechtstext li { orphans: 3; widows: 3; }
+}

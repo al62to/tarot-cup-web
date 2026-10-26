@@ -1,0 +1,25 @@
+---
+// Ein Bildschirmfoto der App im Rahmen eines Handys (Muster Handy.astro von FoodAsu): dunkler Rand, runde Ecken,
+// Schatten. "art": app (Store-Fotos, 1 : 2) oder sogehts (Emulator, 1 : 2,22). Breite und Höhe kommen aus den echten
+// Maßen des Fotos (fotoMasse), der Rahmen folgt dem Seitenverhältnis des Bildes.
+// "ohneRahmen": Das Bild ist kein Bildschirm (etwa das Teilen-Bild der App) und steht als Karte mit Schatten da.
+import { FOTO_BREITEN, fotoMasse, fotoPfad } from '../daten/fotos.mjs';
+
+const { art, name, sprache, alt, groessen = '(min-width: 56rem) 240px, 60vw', laden = 'lazy', klasse, ohneRahmen = false } = Astro.props;
+if (!alt) throw new Error(`Handy: Alt-Text fehlt für ${art}/${name} (${sprache})`);
+const { breite, hoehe } = fotoMasse(art, name, sprache);
+---
+<div class:list={[ohneRahmen ? 'bildkarte' : 'geraet', klasse]}>
+  <div class={ohneRahmen ? 'bildkarte-rahmen' : 'geraet-rahmen'}>
+    <img
+      src={fotoPfad(art, name, sprache, 720)}
+      srcset={FOTO_BREITEN.map((b) => `${fotoPfad(art, name, sprache, b)} ${b}w`).join(', ')}
+      sizes={groessen}
+      alt={alt}
+      width={Math.round(breite / 3)}
+      height={Math.round(hoehe / 3)}
+      loading={laden}
+      decoding="async"
+    />
+  </div>
+</div>

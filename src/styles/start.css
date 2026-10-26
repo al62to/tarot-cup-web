@@ -1,0 +1,167 @@
+/* Startseite: Titelbild nach Entwurf 8.5, der Rest nach Entwurf 7.1. */
+
+/* ---------- Titelbild (8.5). Bühne 1280 x 640 in Einheiten des Entwurfs: --e ist ein Pixel des Entwurfs. ---------- */
+.titel { position: relative; isolation: isolate; container-type: inline-size; background: var(--kaffee); color: var(--kaffee-text); }
+/* Heller Bereich und Goldlinie über die ganze Fensterbreite (ab 30rem): Die Diagonale geht durch die Ecken der Bühne
+   (höchstens 1280 breit, mittig) und läuft mit derselben Neigung bis an den Rand des Fensters. */
+.titel-grund, .titel-linie { --s: min(100cqw, 1280px); --o: calc((100cqw - var(--s)) / 2); display: none; position: absolute; left: 0; right: 0; top: 0; height: calc(var(--s) / 2 + var(--o) / 2); pointer-events: none; }
+.titel-grund { z-index: 0; background: var(--grund); clip-path: polygon(0 0, calc(var(--o) + var(--s)) 0, 0 100%); }
+.titel-linie { --t: calc(3 * var(--s) / 1280); z-index: 2; background: var(--gold); clip-path: polygon(calc(var(--o) + var(--s) - 1.118 * var(--t)) 0, calc(var(--o) + var(--s) + 1.118 * var(--t)) 0, 0 calc(100% + 0.559 * var(--t)), 0 calc(100% - 0.559 * var(--t))); }
+.titel-flaeche { --e: calc(100cqw / 1280); container-type: inline-size; position: relative; z-index: 1; max-width: 1280px; margin-inline: auto; }
+.titel-buehne { position: relative; aspect-ratio: 2 / 1; overflow: hidden; background: var(--kaffee); }
+.titel-hell { position: absolute; inset: 0; background: var(--grund); clip-path: polygon(0 0, 100% 0, 0 100%); }
+.titel-schmuck, .titel-diagonale { position: absolute; inset: 0; width: 100%; height: 100%; }
+.titel-schmal { display: none; }
+.titel-kreise { fill: none; stroke: var(--gold-linie); stroke-width: 1; opacity: 0.28; }
+.titel-sterne { fill: var(--gold-linie); opacity: 0.4; }
+.titel-diagonale path { fill: none; stroke: var(--gold); stroke-width: 2.4; }
+.titel-karte {
+  --w: 179;
+  position: absolute; left: calc(var(--x) * var(--e)); top: calc(var(--y) * var(--e));
+  width: calc(var(--w) * var(--e)); height: calc(var(--w) * 288 / 179 * var(--e)); max-width: none;
+  object-fit: cover; border: max(1.5px, calc(2 * var(--e))) solid var(--gold); border-radius: calc(10 * var(--e));
+  background: var(--tasse); box-shadow: 0 calc(16 * var(--e)) calc(32 * var(--e)) rgb(30 35 64 / 0.28);
+  transform: rotate(var(--r, 0deg));
+}
+.titel-karte-1 { --x: 125; --y: 62; --r: -12deg; }
+.titel-karte-2 { --x: 244; --y: 37; }
+.titel-karte-3 { --x: 362; --y: 62; --r: 12deg; }
+.titel-tasse { position: absolute; left: calc(1000 * var(--e)); top: calc(300 * var(--e)); width: calc(260 * var(--e)); height: calc(260 * var(--e)); }
+.titel-dampf { fill: none; stroke: var(--gold); stroke-width: 1.6; stroke-linecap: round; opacity: 0.85; }
+@media (min-width: 30rem) {
+  .titel-grund, .titel-linie { display: block; }
+  .titel-buehne { background: transparent; }
+  .titel-hell { display: none; }
+}
+
+/* Text unter der Bühne (Handy und schmale Fenster). Reihenfolge wie 7.1: Zeile, Überschrift, Absatz, Knopf. */
+.titel-text { display: flex; flex-direction: column; gap: 14px; padding: 32px var(--rand-seite) 48px; }
+.titel-zeile { margin: 0; font: 600 0.8125rem/1.4 var(--sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); }
+.titel h1 { color: var(--grund); font-size: clamp(2.125rem, 1.5rem + 3vw, 2.75rem); line-height: 1.05; text-wrap: initial; }
+/* Ein Satz je Zeile; nur ein Satz, der allein zu lang ist, bricht (ausgewogen) um. */
+.titel-satz { display: block; text-wrap: balance; }
+.titel-absatz { max-width: 36rem; margin: 4px 0 0; font-size: 1.0625rem; line-height: 1.65; color: #E3D6C4; }
+.titel-knoepfe { display: flex; flex-wrap: wrap; gap: 12px; margin: 8px 0 0; }
+.titel-knopf { min-height: 50px; padding: 0 24px; font-size: 1rem; }
+/* Solange die App nicht öffentlich ist: ein ruhiger Hinweis mit Symbol, kein Knopf. */
+.titel-bald { display: inline-flex; align-items: center; gap: 10px; margin: 0; font: 500 0.9375rem/1.4 var(--sans); color: var(--kaffee-gedaempft); }
+.titel-bald svg { flex: none; width: 20px; height: 20px; fill: none; stroke: var(--gold); stroke-width: 1.8; stroke-linecap: round; }
+.titel :focus-visible { outline-color: var(--gold); }
+
+/* Handy: eigene Aufteilung 390 x 400; die Diagonale läuft von rechts (Höhe 120) nach links unten. */
+@media (max-width: 29.99rem) {
+  .titel-flaeche { --e: calc(100cqw / 390); }
+  .titel-buehne { aspect-ratio: 390 / 400; }
+  .titel-hell { clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%); }
+  .titel-breit { display: none; }
+  .titel-schmal { display: block; }
+  .titel-karte { --w: 100; }
+  .titel-karte-1 { --x: 22; --y: 44; }
+  .titel-karte-2 { --x: 92; --y: 28; }
+  .titel-karte-3 { --x: 162; --y: 44; }
+  .titel-tasse { left: calc(236 * var(--e)); top: calc(236 * var(--e)); width: calc(150 * var(--e)); height: calc(150 * var(--e)); }
+  .titel-text { padding-top: 12px; }
+}
+
+/* Laptop: der Text steht wie im Entwurf auf der Bühne (links 580, oben 392). Bühne und Text liegen in derselben
+   Rasterzelle: Ist der Text länger als die Bühne, wächst die Fläche nach unten mit. Die Schrift wächst mit der Breite
+   und mit der Schriftgröße des Browsers (rem als Untergrenze). */
+@media (min-width: 64rem) {
+  .titel-flaeche { display: grid; }
+  .titel-buehne, .titel-text { grid-area: 1 / 1; }
+  .titel-buehne { align-self: start; }
+  .titel-text { position: relative; margin: calc(392 * var(--e)) 0 0 calc(580 * var(--e)); width: calc(470 * var(--e)); gap: calc(14 * var(--e)); padding: 0 0 calc(64 * var(--e)); }
+  .titel-zeile { font-size: max(0.75rem, calc(13 * var(--e))); }
+  .titel h1 { font-size: max(2.2rem, calc(44 * var(--e))); }
+  /* Türkisch: der erste Satz ist länger; etwas kleiner, damit vor der Tasse Luft bleibt. */
+  .titel h1:lang(tr) { font-size: max(2.1rem, calc(42 * var(--e))); }
+  .titel-absatz { max-width: none; width: calc(560 * var(--e)); margin-top: calc(6 * var(--e)); font-size: max(1rem, calc(17 * var(--e))); }
+  .titel-knoepfe { margin-top: calc(8 * var(--e)); }
+  .titel-knopf { min-height: max(44px, calc(50 * var(--e))); padding: 0 calc(24 * var(--e)); font-size: max(0.9375rem, calc(16 * var(--e))); }
+  .titel-bald { font-size: max(0.9375rem, calc(15 * var(--e))); }
+}
+
+/* ---------- Abschnitte nach 7.1 ---------- */
+.start-abschnitt { padding-top: clamp(56px, 7vw, 88px); }
+.start-abschnitt > h2, .start-kopf h2 { margin-bottom: 28px; }
+
+/* Was ist Tarot Cup? */
+.innen.start-wasist { max-width: calc(48rem + 2 * var(--rand-seite)); text-align: center; }
+.start-wasist h2::after { content: ""; display: block; width: 72px; height: 2px; margin: 18px auto 0; background: var(--gold-linie); }
+.wasist-text { margin: 0; font-size: clamp(1.125rem, 1rem + 0.45vw, 1.3125rem); line-height: 1.65; color: var(--text); }
+
+/* Was die App kann: drei Kästen mit Linien-Symbolen. */
+.kaesten { display: grid; gap: 20px; }
+@media (min-width: 48rem) { .kaesten { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; } .kasten { padding: 24px; } }
+@media (min-width: 64rem) { .kaesten { gap: 20px; } .kasten { padding: 28px; } }
+.kasten { display: flex; flex-direction: column; gap: 12px; padding: 28px; background: var(--karte); border: 1px solid var(--rand); border-radius: 24px; }
+.kasten h3 { font-size: 1.625rem; }
+.kasten p { margin: 0; color: var(--text); }
+.kasten-symbol { width: 40px; height: 40px; fill: none; stroke: var(--gold-linie); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.kasten-1 .kasten-symbol { stroke: #8A5A3B; }
+
+/* So sieht Tarot Cup aus: drei Handys auf Nachtblau, am Handy als Fächer. */
+.start-fotos { position: relative; isolation: isolate; overflow: hidden; margin-top: clamp(56px, 7vw, 88px); padding: clamp(56px, 7vw, 80px) 0 clamp(64px, 8vw, 96px); background: var(--nacht); color: var(--nacht-text); }
+.start-fotos h2 { color: var(--nacht-text); text-align: center; margin-bottom: clamp(32px, 5vw, 56px); }
+.fotos-schmuck { position: absolute; left: 50%; top: 58%; z-index: -1; width: 900px; height: 900px; transform: translate(-50%, -50%); fill: none; stroke: var(--gold); stroke-width: 1; opacity: 0.16; pointer-events: none; }
+.fotoreihe { position: relative; display: flex; justify-content: center; align-items: flex-start; }
+.fotoreihe .geraet { --gb: 14.5rem; margin: 0; }
+/* Das mittlere Foto endet unten mitten in einer Zeile: dort blendet es sanft in den Grund der App aus. */
+.geraet.ausblenden .geraet-rahmen { position: relative; }
+.geraet.ausblenden .geraet-rahmen::after { content: ""; position: absolute; left: calc(var(--gb) * 0.035); right: calc(var(--gb) * 0.035); bottom: calc(var(--gb) * 0.035); height: 16%; border-radius: 0 0 calc(var(--gb) * 0.125) calc(var(--gb) * 0.125); background: linear-gradient(rgb(245 240 230 / 0), #F5F0E6 78%); }
+.fotoreihe .geraet-rahmen { box-shadow: 0 30px 60px -20px rgb(0 0 0 / 0.6), 0 0 0 1px rgb(255 255 255 / 0.1); background: #0B0E1C; }
+@media (max-width: 47.99rem) {
+  .fotoreihe { min-height: 0; }
+  /* Fächer aus drei Handys, alle Rahmen ganz im Fenster: das mittlere vorn, die äußeren dahinter am Rand der Spalte. */
+  .fotoreihe .geraet:nth-child(2) { --gb: min(47vw, 13rem); position: relative; z-index: 2; }
+  .fotoreihe .geraet:nth-child(1), .fotoreihe .geraet:nth-child(3) { --gb: min(36vw, 10rem); position: absolute; top: 10%; z-index: 1; }
+  /* Gedreht um die obere Mitte: die oberen Ecken bleiben, wo sie sind, und halten mindestens 8 Pixel Abstand zum Rand. */
+  .fotoreihe .geraet:nth-child(1) { left: max(8px, calc(50% - min(47vw, 13rem) / 2 - min(36vw, 10rem) * 0.7)); transform: rotate(-5deg); transform-origin: 50% 0; }
+  .fotoreihe .geraet:nth-child(3) { right: max(8px, calc(50% - min(47vw, 13rem) / 2 - min(36vw, 10rem) * 0.7)); transform: rotate(5deg); transform-origin: 50% 0; }
+}
+@media (min-width: 48rem) {
+  .fotoreihe { gap: clamp(24px, 4vw, 56px); }
+  .fotoreihe .geraet:nth-child(2) { margin-top: -28px; }
+  .fotoreihe .geraet:nth-child(1), .fotoreihe .geraet:nth-child(3) { margin-top: 28px; }
+}
+
+/* So liest du deine Tasse: Tassenkarte und drei Schritte. */
+.start-tasse { display: grid; gap: 32px; align-items: center; }
+.start-tasse .tassenkarte { margin: 0 auto; width: min(100%, 25rem); }
+.tasse-text h2 { margin-bottom: 20px; }
+.schrittliste { list-style: none; margin: 0 0 12px; padding: 0; counter-reset: schritt; }
+.schrittliste li { counter-increment: schritt; position: relative; min-height: 40px; margin: 0 0 16px; padding-left: 56px; font-size: 1.0625rem; line-height: 1.6; }
+.schrittliste li::before { content: counter(schritt); position: absolute; left: 0; top: -4px; display: grid; place-items: center; width: 40px; height: 40px; border: 1.5px solid var(--gold-linie); border-radius: 50%; background: var(--karte); font: 600 1.25rem/1 var(--serif); color: var(--tinte); }
+@media (min-width: 56rem) {
+  .start-tasse { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 56px; }
+}
+
+/* Drei Vorteile auf Sand. */
+.start-vorteile { margin-top: clamp(56px, 7vw, 88px); background: var(--sand); }
+.vorteile { display: grid; gap: 28px 32px; padding-top: 56px; padding-bottom: 56px; }
+@media (min-width: 48rem) { .vorteile { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.vorteil h3 { font-size: 1.5rem; }
+.vorteil h3::before { content: ""; display: block; width: 32px; height: 2px; margin-bottom: 14px; background: var(--gold-linie); }
+.vorteil p { margin: 8px 0 0; font-size: 0.9375rem; line-height: 1.6; color: var(--text); }
+
+/* Zwei Kästen zu den Ratgebern: Tarot auf Nachtblau, Kaffeesatz auf Kaffeebraun, das Bild über dem Text. */
+.ratgeber-kaesten { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 20px; }
+.ratgeber-kasten { display: flex; flex-direction: column; gap: 12px; overflow: hidden; padding: 0 28px 24px; border-radius: 24px; color: var(--nacht-text); }
+.ratgeber-kasten.ist-tarot { background: var(--nacht); }
+.ratgeber-kasten.ist-kaffee { background: var(--kaffee); color: var(--kaffee-text); }
+.ratgeber-kasten h3 { color: inherit; font-size: 1.75rem; }
+.ratgeber-kasten p { margin: 0; color: inherit; opacity: 0.92; }
+.ratgeber-kasten a { color: inherit; }
+.ratgeber-kasten .pfeil-link { margin-top: 4px; }
+.ratgeber-kasten .pfeil-link::after { border-color: var(--gold); }
+.ratgeber-kasten :focus-visible { outline-color: var(--gold); }
+.ratgeber-bildchen { display: block; width: calc(100% + 56px); height: 132px; margin: 0 -28px 4px; }
+.ratgeber-bildchen .linien { fill: none; stroke: var(--gold); stroke-width: 1; opacity: 0.28; }
+
+/* Häufige Fragen (Auszug). */
+.innen.start-fragen { max-width: calc(51.25rem + 2 * var(--rand-seite)); }
+
+/* Abschluss: Hinweis, darüber nur das Abzeichen, wenn die App öffentlich ist. */
+.start-abschluss { display: flex; flex-direction: column; align-items: center; gap: 20px; padding-top: clamp(48px, 6vw, 72px); text-align: center; }
+.start-abschluss::before { content: ""; width: 120px; height: 14px; background: linear-gradient(var(--gold-linie), var(--gold-linie)) left center / 44px 1px no-repeat, linear-gradient(var(--gold-linie), var(--gold-linie)) right center / 44px 1px no-repeat, radial-gradient(circle, var(--gold-linie) 0 3px, transparent 3.5px) center / 14px 14px no-repeat; }
+.hinweis-unterhaltung { margin: 0; font-size: 0.9375rem; color: var(--gedaempft); }

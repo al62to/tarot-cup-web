@@ -1,0 +1,217 @@
+---
+// Ratgeberseite (Tarot, Kaffeesatz) in einer Sprache: Überschrift, Vorspann, Inhaltsverzeichnis mit Sprungmarken und
+// die Abschnitte der Textdatei. Arten: Text (ohne "art"), schritte (Ritual, zugleich HowTo), bereiche (Tasse),
+// zeichen (Kurzbedeutungen aus den Daten der App), karten (Kartenbild und Kurzbedeutung aufrecht/umgekehrt),
+// legungen (Auslegebild und Positionen), beispiele (gute und weniger gute Fragen), app (Verweis auf die App).
+// Kurzbedeutungen und Namen kommen nur aus src/daten/app_daten.json (Website-Lexikon Variante B), nie aus den Texten.
+// Gestaltung (src/styles/inhalt.css): Kopf auf Nachtblau (Tarot, drei Karten im Fächer) oder Kaffeebraun (Kaffeesatz,
+// Tasse mit Dampf) wie die Ritualmodi der App; darunter links das Inhaltsverzeichnis, rechts die Lesespalte. Die
+// Zeichen tragen dieselben Linienformen wie in der App (src/gestaltung/zeichenformen.mjs).
+import '../styles/inhalt.css';
+import Basis from '../layouts/Basis.astro';
+import Text from './Text.astro';
+import Auslegung from './Auslegung.astro';
+import Kartenbild from './Kartenbild.astro';
+import Tassenkarte from './Tassenkarte.astro';
+import Inhaltsverzeichnis from './Inhaltsverzeichnis.astro';
+import appDaten from '../daten/app_daten.json' with { type: 'json' };
+import { seiteVon } from '../daten/seiten.mjs';
+import { artikelDaten, anleitungDaten, listenDaten } from '../daten/strukturiert.mjs';
+import { ZEICHENFORMEN } from '../gestaltung/zeichenformen.mjs';
+
+const { texte, sprache } = Astro.props;
+const angaben = seiteVon(Astro.url.pathname);
+const zeichenVon = (id) => {
+  const eintrag = appDaten.zeichen.find((zeichen) => zeichen.id === id);
+  if (!eintrag) throw new Error(`Ratgeber: Zeichen ${id} fehlt in app_daten.json`);
+  return eintrag;
+};
+const karteVon = (id) => {
+  const eintrag = appDaten.karten.find((karte) => karte.id === id);
+  if (!eintrag) throw new Error(`Ratgeber: Karte ${id} fehlt in app_daten.json`);
+  return eintrag;
+};
+const legungVon = (id) => {
+  const eintrag = appDaten.legungen[id];
+  if (!eintrag) throw new Error(`Ratgeber: Legung ${id} fehlt in app_daten.json`);
+  return eintrag;
+};
+const positionVon = (legung, id) => {
+  const eintrag = legung.positionen.find((position) => position.id === id);
+  if (!eintrag) throw new Error(`Ratgeber: Position ${id} fehlt in app_daten.json`);
+  return eintrag;
+};
+
+// Strukturierte Daten: Article mit ItemList der Zeichen bzw. Karten und Legungen, dazu HowTo für das Ritual.
+const listen = [];
+for (const abschnitt of texte.abschnitte) {
+  if (abschnitt.art === 'zeichen') {
+    listen.push(listenDaten({ name: abschnitt.titel, eintraege: abschnitt.ids.map((id) => ({ name: zeichenVon(id).name[sprache], beschreibung: zeichenVon(id).kurz[sprache] })) }));
+  }
+  if (abschnitt.art === 'karten') {
+    listen.push(listenDaten({ name: abschnitt.titel, eintraege: abschnitt.ids.map((id) => ({ name: karteVon(id).name[sprache], beschreibung: karteVon(id).kurz.aufrecht[sprache] })) }));
+  }
+  if (abschnitt.art === 'legungen') {
+    listen.push(listenDaten({ name: abschnitt.titel, eintraege: abschnitt.legungen.map((legung) => ({ name: legungVon(legung.id).name[sprache], beschreibung: legung.text })) }));
+  }
+}
+const ritual = texte.abschnitte.find((abschnitt) => abschnitt.art === 'schritte');
+const daten = [
+  artikelDaten({ pfad: angaben.pfad, sprache, titel: texte.titel, beschreibung: texte.metaBeschreibung, bild: angaben.bild, quellen: angaben.quellen, teile: listen }),
+  ...(ritual ? [anleitungDaten({ pfad: angaben.pfad, sprache, name: texte.howto.name, beschreibung: texte.howto.beschreibung, schritte: ritual.schritte, kennung: ritual.kennung })] : []),
+];
+// Karten im Kopf des Ratgebers Tarot (Schmuck; dieselben Bilder stehen weiter unten mit Beschreibung).
+const KOPFKARTEN = ['ta_00_narr', 'ta_02_hohepriesterin', 'ta_09_eremit'];
+const istTarot = angaben.schluessel === 'tarot';
+const TASSE = `
+  <path d="M42 30 Q37 23 42 16 Q47 9 42 2" fill="none" stroke="#D2B47A" stroke-width="1.4" stroke-linecap="round" opacity="0.85" />
+  <path d="M56 30 Q51 23 56 16 Q61 9 56 2" fill="none" stroke="#D2B47A" stroke-width="1.4" stroke-linecap="round" opacity="0.85" />
+  <path d="M22 36 H78 V48 A28 22 0 0 1 22 48 Z" fill="#F3EAD7" />
+  <ellipse cx="50" cy="36" rx="28" ry="5" fill="#5A3A26" />
+  <path d="M30 42 H70" stroke="#C9A86A" stroke-width="0.8" />
+  <path d="M78 41 H84 A8.5 8.5 0 0 1 84 58 H76" fill="none" stroke="#F3EAD7" stroke-width="4" stroke-linecap="round" />
+  <path d="M10 76 Q50 86 90 76" fill="none" stroke="#F3EAD7" stroke-width="4" stroke-linecap="round" />`;
+---
+<Basis daten={daten} klasse={`seite-ratgeber seite-${angaben.schluessel}`}>
+  <article class="ratgeber">
+    <header class:list={['ratgeber-kopf', istTarot ? 'kopf-tarot' : 'kopf-kaffee']}>
+      <div class="innen ratgeber-kopf-innen">
+        <div class="seitenkopf ratgeber-kopf-text">
+          <h1>{texte.titel}</h1>
+          <Text text={texte.vorspann} klasse="vorspann" />
+        </div>
+        {istTarot ? (
+          <div class="kopf-bild kopf-faecher" aria-hidden="true">
+            <svg class="kopf-kreise" viewBox="0 0 400 400" focusable="false"><circle cx="200" cy="200" r="190" /><circle cx="200" cy="200" r="168" stroke-dasharray="1 7" /><circle cx="200" cy="200" r="112" /><path d="M10 200h380M200 10v380" /></svg>
+            {KOPFKARTEN.map((id, nummer) => (
+              <Kartenbild id={id} alt="" klasse={`kopf-karte kopf-karte-${nummer + 1}`} laden="eager" vorrang={nummer === 1} groessen="(min-width: 56rem) 150px, 26vw" />
+            ))}
+          </div>
+        ) : (
+          <div class="kopf-bild kopf-tasse" aria-hidden="true">
+            <svg viewBox="0 0 320 300" focusable="false">
+              <g class="kopf-kreise"><circle cx="160" cy="160" r="138" /><circle cx="160" cy="160" r="122" stroke-dasharray="2 6" /><circle cx="160" cy="160" r="86" /></g>
+              <g fill="#C9915A" opacity="0.55"><circle cx="62" cy="96" r="3" /><circle cx="78" cy="84" r="1.8" /><circle cx="262" cy="232" r="2.6" /><circle cx="276" cy="216" r="1.6" /><circle cx="244" cy="250" r="1.4" /></g>
+              <g transform="translate(40 40) scale(2.4)" set:html={TASSE} />
+            </svg>
+          </div>
+        )}
+      </div>
+    </header>
+    <div class="innen inhalt-raster">
+      <Inhaltsverzeichnis titel={texte.inhaltTitel} eintraege={texte.abschnitte} />
+      <div class="lesen">
+        {texte.abschnitte.map((abschnitt) => (
+          <section class:list={['abschnitt', `abschnitt-${abschnitt.art ?? 'text'}`]} id={abschnitt.kennung} aria-labelledby={`${abschnitt.kennung}-titel`}>
+            <h2 id={`${abschnitt.kennung}-titel`}><Text text={abschnitt.titel} ohne /></h2>
+            {(abschnitt.absaetze ?? []).map((absatz) => <Text text={absatz} />)}
+
+            {abschnitt.art === 'schritte' && (
+              <ol class="schritte">
+                {abschnitt.schritte.map((schritt, nummer) => (
+                  <li class="schritt" id={`${abschnitt.kennung}-${nummer + 1}`}>
+                    <span class="schritt-nummer" aria-hidden="true">{nummer + 1}</span>
+                    <div class="schritt-inhalt">
+                      <h3 class="schritt-titel">{schritt.titel}</h3>
+                      <Text text={schritt.text} />
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            )}
+
+            {abschnitt.art === 'bereiche' && (
+              <div class="bereiche">
+                <Tassenkarte sprache={sprache} bereiche={abschnitt.bereiche} />
+                <dl class="bereiche-liste">
+                  {abschnitt.bereiche.map((bereich) => (
+                    <div class:list={['bereich', `bereich-${bereich.bereich}`]} id={`${abschnitt.kennung}-${bereich.bereich}`}>
+                      <dt>{bereich.name}</dt>
+                      <dd><Text text={bereich.text} ohne /></dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            )}
+
+            {abschnitt.art === 'zeichen' && (
+              <ul class="zeichen-liste">
+                {abschnitt.ids.map((id) => {
+                  const zeichen = zeichenVon(id);
+                  return (
+                    <li class="zeichen">
+                      <span class="zeichen-form" aria-hidden="true">
+                        <svg viewBox="0 0 28 28" focusable="false">{(ZEICHENFORMEN[id] ?? []).map((pfad) => <path d={pfad} />)}</svg>
+                      </span>
+                      <div class="zeichen-text">
+                        <h3 class="zeichen-name">{zeichen.name[sprache]}</h3>
+                        <p>{zeichen.kurz[sprache]}</p>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+
+            {abschnitt.art === 'karten' && (
+              <ul class="karten-liste">
+                {abschnitt.ids.map((id) => {
+                  const karte = karteVon(id);
+                  return (
+                    <li class="karte">
+                      <Kartenbild id={id} alt={karte.name[sprache]} sprache={sprache} groessen="(min-width: 48rem) 128px, 96px" />
+                      <div class="karte-text">
+                        <h3 class="karte-name">{karte.name[sprache]}</h3>
+                        <p><strong>{abschnitt.aufrecht}:</strong> {karte.kurz.aufrecht[sprache]}</p>
+                        <p><strong>{abschnitt.umgekehrt}:</strong> {karte.kurz.umgekehrt[sprache]}</p>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+
+            {abschnitt.art === 'legungen' && (
+              <div class="legungen">
+                {abschnitt.legungen.map((eintrag) => {
+                  const legung = legungVon(eintrag.id);
+                  return (
+                    <div class="legung" id={`${abschnitt.kennung}-${eintrag.id.replace('_', '-')}`}>
+                      <div class="legung-text">
+                        <h3 class="legung-name">{legung.name[sprache]}</h3>
+                        <Text text={eintrag.text} />
+                      </div>
+                      <Auslegung legung={eintrag.id} anzahl={Math.max(1, eintrag.positionen.length)} namen={eintrag.positionen.map((position) => positionVon(legung, position.id).name[sprache])} sprache={sprache} />
+                      {eintrag.positionen.length > 0 && (
+                        <ol class="positionen">
+                          {eintrag.positionen.map((position) => (
+                            <li><strong>{positionVon(legung, position.id).name[sprache]}:</strong> <Text text={position.text} ohne /></li>
+                          ))}
+                        </ol>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+
+            {abschnitt.art === 'beispiele' && (
+              <div class="beispiele">
+                <div class="beispiele-gut">
+                  <h3><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" /><path d="M7.5 12.5l3 3 6-6.5" /></svg><span>{abschnitt.gut.titel}</span></h3>
+                  <ul>{abschnitt.gut.liste.map((frage) => <li><Text text={frage} ohne /></li>)}</ul>
+                </div>
+                <div class="beispiele-weniger">
+                  <h3><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" /><path d="M8 12h8" /></svg><span>{abschnitt.weniger.titel}</span></h3>
+                  <ul>{abschnitt.weniger.liste.map((frage) => <li><Text text={frage} ohne /></li>)}</ul>
+                </div>
+              </div>
+            )}
+
+            {abschnitt.nachsatz && <Text text={abschnitt.nachsatz} klasse="nachsatz" />}
+          </section>
+        ))}
+      </div>
+    </div>
+  </article>
+</Basis>

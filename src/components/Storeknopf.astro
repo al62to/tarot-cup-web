@@ -1,0 +1,27 @@
+---
+// Weg zur App: Ist die App öffentlich, das offizielle Abzeichen von Google Play (lokale Datei, unverändert, Link mit
+// Kennung des Orts). Solange sie nicht öffentlich ist, rendert der Storeknopf nichts, auch keinen Platzhalter
+// (Vorgabe Ali, AP-W1: die Abzeichen kommen erst mit der Produktion). Daneben der vorgesehene Platz für das Abzeichen
+// des App Store; es erscheint erst, wenn es die App fürs iPhone gibt (Apple erlaubt es vorher nicht).
+import { ios, store, storeLink } from '../daten/seite.mjs';
+import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
+
+const { sprache, ort, klasse } = Astro.props;
+const T = oberflaeche[sprache].store;
+const abzeichen = store.abzeichen[sprache];
+const zeigen = store.oeffentlich || (ios.oeffentlich && ios.abzeichen);
+---
+{zeigen && (
+  <div class:list={['store', klasse]}>
+    {store.oeffentlich && (
+      <a class="store-abzeichen" href={storeLink(ort)} rel="noopener">
+        <img src={abzeichen.pfad} width={abzeichen.breite} height={abzeichen.hoehe} alt={T.abzeichenAlt} loading="lazy" decoding="async" />
+      </a>
+    )}
+    {ios.oeffentlich && ios.abzeichen && (
+      <a class="store-abzeichen" href={ios.adresse} rel="noopener">
+        <img src={ios.abzeichen.pfad} width={ios.abzeichen.breite} height={ios.abzeichen.hoehe} alt={ios.abzeichen.alt[sprache]} loading="lazy" decoding="async" />
+      </a>
+    )}
+  </div>
+)}

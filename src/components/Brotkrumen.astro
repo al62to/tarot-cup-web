@@ -1,0 +1,21 @@
+---
+// Brotkrumen: sichtbar und als BreadcrumbList. "krumen" ist eine Liste aus { titel, ziel }; der erste Eintrag ist die
+// Startseite der Sprache, der letzte die Seite selbst.
+import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
+import { brotkrumenDaten } from '../daten/strukturiert.mjs';
+
+const { krumen, sprache } = Astro.props;
+const T = oberflaeche[sprache];
+---
+<nav class="krumen" aria-label={T.krumen.aria}>
+  <ol class="innen">
+    {krumen.map((krume, nummer) =>
+      nummer === krumen.length - 1 ? (
+        <li aria-current="page">{krume.titel}</li>
+      ) : (
+        <li><a href={krume.ziel}>{krume.titel}</a></li>
+      )
+    )}
+  </ol>
+</nav>
+<script type="application/ld+json" set:html={JSON.stringify(brotkrumenDaten(krumen))} />

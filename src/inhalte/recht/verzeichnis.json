@@ -1,0 +1,101 @@
+{
+ "_hinweis": "Erzeugt mit deutung-unterlagen/arbeit/recht_web.py. Nicht von Hand ändern.",
+ "sprachen": {
+  "de": {
+   "name": "Deutsch",
+   "fassungen_titel": "Frühere und aktuelle Fassungen",
+   "fassung": "Fassung {nr}",
+   "stand": ", Stand {datum}",
+   "aktuell": ", aktuell",
+   "nur_in": {
+    "tr": " (nur auf Türkisch)"
+   },
+   "aeltere": "Ältere Fassung {nr}. Gültig ist {link}.",
+   "seitentitel": "{titel} Tarot Cup",
+   "seitentitel_fassung": "{titel} Tarot Cup, Fassung {nr}"
+  },
+  "tr": {
+   "name": "Türkçe",
+   "fassungen_titel": "Önceki ve güncel sürümler",
+   "fassung": "Sürüm {nr}",
+   "stand": ", tarih {datum}",
+   "aktuell": ", güncel",
+   "nur_in": {
+    "de": " (yalnızca Almanca)"
+   },
+   "aeltere": "Eski sürüm {nr}. Geçerli olan: {link}.",
+   "seitentitel": "Tarot Cup {titel}",
+   "seitentitel_fassung": "Tarot Cup {titel}, sürüm {nr}"
+  }
+ },
+ "texte": [
+  {
+   "pfad": "datenschutz",
+   "titel": "Datenschutzerklärung",
+   "sprache": "de",
+   "gegenstueck": "tr/gizlilik",
+   "fassungen": [
+    {
+     "nummer": "1.0",
+     "datum": "26.10.2026",
+     "datei": "datenschutz_1.0.html",
+     "quelle": "Datenschutzerklaerung_1.0_final.md"
+    },
+    {
+     "nummer": "1.1",
+     "datum": "26.10.2026",
+     "datei": "datenschutz_1.1.html",
+     "quelle": "Datenschutzerklaerung_1.1.md"
+    }
+   ]
+  },
+  {
+   "pfad": "nutzungsbedingungen",
+   "titel": "Nutzungsbedingungen",
+   "sprache": "de",
+   "gegenstueck": "tr/kullanim-kosullari",
+   "fassungen": [
+    {
+     "nummer": "1.0",
+     "datum": "26.10.2026",
+     "datei": "nutzungsbedingungen_1.0.html",
+     "quelle": "Nutzungsbedingungen_1.0_final.md"
+    },
+    {
+     "nummer": "1.1",
+     "datum": "26.10.2026",
+     "datei": "nutzungsbedingungen_1.1.html",
+     "quelle": "Nutzungsbedingungen_1.1.md"
+    }
+   ]
+  },
+  {
+   "pfad": "tr/gizlilik",
+   "titel": "Gizlilik Politikası",
+   "sprache": "tr",
+   "gegenstueck": "datenschutz",
+   "fassungen": [
+    {
+     "nummer": "1.1",
+     "datum": "26.10.2026",
+     "datei": "tr_gizlilik_1.1.html",
+     "quelle": "Datenschutzerklaerung_1.1_tr.md"
+    }
+   ]
+  },
+  {
+   "pfad": "tr/kullanim-kosullari",
+   "titel": "Kullanım Koşulları",
+   "sprache": "tr",
+   "gegenstueck": "nutzungsbedingungen",
+   "fassungen": [
+    {
+     "nummer": "1.1",
+     "datum": "26.10.2026",
+     "datei": "tr_kullanim-kosullari_1.1.html",
+     "quelle": "Nutzungsbedingungen_1.1_tr.md"
+    }
+   ]
+  }
+ ]
+}

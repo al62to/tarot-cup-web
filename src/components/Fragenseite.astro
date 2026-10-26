@@ -1,0 +1,32 @@
+---
+// Häufige Fragen in einer Sprache, als aufklappbare Einträge, dazu FAQPage.
+import '../styles/dokument.css';
+import Basis from '../layouts/Basis.astro';
+import Text from './Text.astro';
+import { fragen } from '../daten/texte/fragen.mjs';
+import { faqDaten } from '../daten/strukturiert.mjs';
+import { pfadVon } from '../daten/seiten.mjs';
+import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
+import { mailtoKodiert } from '../daten/seite.mjs';
+
+const { sprache } = Astro.props;
+const T = fragen[sprache];
+// Unter dem Vorspann der Weg zur E-Mail (Text aus der Fußzeile, Adresse als HTML-Entitäten wie überall).
+const kontakt = `<a href="${mailtoKodiert()}"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M4 7l8 6 8-6"/></svg><span>${oberflaeche[sprache].fuss.kontakt}</span></a>`;
+const daten = [faqDaten({ pfad: pfadVon('fragen', sprache), sprache, liste: T.liste })];
+---
+<Basis daten={daten} klasse="seite-fragen">
+  <header class="seitenkopf innen schmal">
+    <h1>{T.titel}</h1>
+    <Text text={T.vorspann} klasse="vorspann" />
+    <p class="fragen-kontakt" set:html={kontakt} />
+  </header>
+  <div class="innen schmal dokument fragen-liste">
+    {T.liste.map((eintrag) => (
+      <details class="frage" id={eintrag.id}>
+        <summary><span><Text text={eintrag.frage} ohne /></span></summary>
+        {eintrag.antwort.map((absatz) => <Text text={absatz} />)}
+      </details>
+    ))}
+  </div>
+</Basis>

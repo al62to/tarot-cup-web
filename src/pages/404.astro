@@ -1,0 +1,21 @@
+---
+// Seite nicht gefunden (GitHub Pages liefert /404.html), in beiden Sprachen; der türkische Teil trägt lang="tr".
+import '../styles/dokument.css';
+import Basis from '../layouts/Basis.astro';
+import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
+
+const de = oberflaeche.de.nichtGefunden;
+const tr = oberflaeche.tr.nichtGefunden;
+---
+<Basis adresse="/404.html" klasse="seite-404">
+  <div class="innen schmal nichtgefunden">
+    <h1>{de.titel}</h1>
+    <p>{de.text}</p>
+    <p><a class="knopf knopf-dunkel" href="/">{de.start}</a></p>
+    <div lang="tr">
+      <h2>{tr.titel}</h2>
+      <p>{tr.text}</p>
+      <p><a class="knopf knopf-rand" href="/tr/" hreflang="tr">{tr.start}</a></p>
+    </div>
+  </div>
+</Basis>

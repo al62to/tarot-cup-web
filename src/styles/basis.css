@@ -1,0 +1,257 @@
+/* Grundstil von tarot-cup.com nach Entwurf 7.1 (design/screens/web/WebStart.dc.html) und dem Stil der App
+   (design/LIESMICH.md, Richtung C hell): Farben, Schriften, Knöpfe, Fokus, Kopf mit Menü, Brotkrumen, Seitenkopf,
+   Inhaltsverzeichnis, aufklappbare Fragen, Handy-Rahmen, Teilen und Fuß. Seitenteile stehen in start.css, inhalt.css
+   und dokument.css und kommen nur auf die Seiten, die sie brauchen.
+   Gold auf hellem Grund nur für Linien und Schmuck; kleine Schrift in Gold nur im dunkleren Ton --gold-text. */
+
+:root {
+  --grund: #F5F0E6;
+  --karte: #FFFDF8;
+  --sand: #EFE6D4;
+  --rand: #E4D9C3;
+  --rand-stark: #CFC3A9;
+  --tinte: #1E2340;
+  --text: #2B3050;
+  --gedaempft: #5B5F73;
+  --nacht: #12162B;
+  --nacht-flaeche: #1E2340;
+  --nacht-text: #EDE6D6;
+  --nacht-gedaempft: #A9A6B8;
+  --gold: #D2B47A;
+  --gold-linie: #A8823F;
+  --gold-dunkel: #8A6A2F;
+  --gold-text: #7A5C26;
+  --kaffee: #2B1D16;
+  --kaffee-text: #F1E6D8;
+  --kaffee-gedaempft: #CDBBA6;
+  --tasse: #F3EAD7;
+  --tasse-linie: #C9A86A;
+  --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sans: 'Inter Variable', Inter, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --breite: 70rem;
+  --rand-seite: 16px;
+  --kopf-h: 64px;
+  --schatten: 18 22 43;
+}
+
+/* Versalziffern überall (wie in der App, AP-16). Mit !important, weil die Kurzschreibweise font die Angabe sonst
+   in jeder Regel mit font: zurücksetzt. */
+*, *::before, *::after { box-sizing: border-box; font-variant-numeric: lining-nums !important; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: calc(var(--kopf-h) + 16px); }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+body { margin: 0; background: var(--grund); color: var(--text); font: 400 1.0625rem/1.65 var(--sans); }
+img, svg { max-width: 100%; }
+img { height: auto; }
+
+/* Umbruch: lange Wörter nur mit Trennstrich (Silbentrennung nach der Sprache der Seite), nie mitten im Wort ohne
+   Strich. Überschriften trennen erst ab sehr langen Wörtern, also praktisch nur bei großer Schrift. */
+p, li, dd, dt, td, th, summary, blockquote, figcaption { hyphens: auto; -webkit-hyphens: auto; hyphenate-limit-chars: 10 4 4; }
+h1, h2, h3, h4 { hyphens: auto; -webkit-hyphens: auto; hyphenate-limit-chars: 14 6 6; text-wrap: balance; }
+p, li, dd { text-wrap: pretty; }
+/* Letzter Ausweg bei sehr großer Schrift in einem Browser ohne Silbentrennung: lieber umbrechen als die Seite
+   waagrecht scrollen lassen. Bei normaler Schrift kommt es nicht vor (Prüfung tools/aufnahmen.mjs). */
+body { overflow-wrap: break-word; }
+
+h1, h2, h3, h4 { margin: 0; font-family: var(--serif); font-weight: 600; color: var(--tinte); line-height: 1.1; letter-spacing: 0; }
+h1 { font-size: clamp(2.25rem, 1.55rem + 3vw, 3.5rem); line-height: 1.05; }
+h2 { font-size: clamp(1.875rem, 1.45rem + 1.7vw, 2.5rem); }
+h3 { font-size: 1.5rem; line-height: 1.2; }
+p { margin: 0 0 1em; }
+strong, b { font-weight: 600; color: var(--tinte); }
+
+a { color: var(--tinte); text-decoration-thickness: 1px; text-underline-offset: 0.2em; text-decoration-color: var(--gold-linie); }
+a:hover { color: var(--gold-text); text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--gold-linie); outline-offset: 3px; border-radius: 4px; }
+
+.innen { width: 100%; max-width: var(--breite); margin-inline: auto; padding-inline: var(--rand-seite); }
+@media (min-width: 48rem) { :root { --rand-seite: 24px; } }
+.innen.schmal { max-width: calc(46rem + 2 * var(--rand-seite)); }
+.unsichtbar { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+.sprung { position: absolute; left: 16px; top: -80px; z-index: 100; padding: 10px 16px; border-radius: 12px; background: var(--tinte); color: var(--grund); font-weight: 600; text-decoration: none; }
+.sprung:focus { top: 8px; color: var(--grund); }
+
+/* Knöpfe: Pille, mindestens 44 Pixel hoch. */
+.knopf { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 22px; border: 1px solid transparent; border-radius: 999px; font: 600 0.9375rem/1.2 var(--sans); text-align: center; text-decoration: none; cursor: pointer; }
+.knopf svg { flex: none; width: 18px; height: 18px; }
+.knopf-gold { background: var(--gold); color: var(--nacht); }
+.knopf-gold:hover { background: #DFC593; color: var(--nacht); text-decoration: none; }
+.knopf-dunkel { background: var(--tinte); color: var(--grund); }
+.knopf-dunkel:hover { background: var(--nacht); color: var(--grund); text-decoration: none; }
+.knopf-rand { border-color: var(--rand-stark); background: var(--karte); color: var(--tinte); }
+.knopf-rand:hover { border-color: var(--gold-linie); color: var(--tinte); text-decoration: none; }
+.knopf-schlicht { display: flex; align-items: center; width: 100%; min-height: 44px; padding: 0 14px; border: 0; border-radius: 10px; background: transparent; color: var(--tinte); font: 500 0.9375rem/1.3 var(--sans); text-align: left; cursor: pointer; }
+.pfeil-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 600; text-decoration: none; }
+.pfeil-link::after { content: ""; flex: none; width: 8px; height: 8px; border-top: 2px solid var(--gold-linie); border-right: 2px solid var(--gold-linie); transform: rotate(45deg); }
+.pfeil-link:hover { text-decoration: underline; }
+
+/* Kopf (Entwurf 7.1): Marke links, Menü rechts. Am Handy klappt das Menü unter dem Kopf auf und füllt den
+   Bildschirm (Muster FoodAsu, ohne Mega-Menü). Ohne JavaScript steht es offen unter der Marke. */
+.kopf { position: sticky; top: 0; z-index: 50; background: var(--karte); border-bottom: 1px solid var(--rand); }
+.kopf-innen { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: var(--kopf-h); }
+.marke-link { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+.marke { display: inline-flex; align-items: center; gap: 10px; color: var(--gold-linie); }
+.marke-zeichen { flex: none; }
+.marke-name { font: 600 1.5rem/1 var(--serif); color: var(--tinte); white-space: nowrap; }
+/* „Tarot Cup“ bricht nie um (Text.astro setzt den Namen in diese Klasse). */
+.marke-wort { white-space: nowrap; }
+.menue-liste, .sprachwahl { list-style: none; margin: 0; padding: 0; }
+.menue-liste a { position: relative; display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; color: var(--tinte); text-decoration: none; }
+.menue-liste a:hover { color: var(--gold-text); }
+.menue-liste a[aria-current="page"] { font-weight: 600; }
+.sprachwahl { display: inline-flex; flex: none; border-radius: 999px; overflow: hidden; box-shadow: inset 0 0 0 1px var(--rand-stark); }
+.sprachwahl a { display: inline-flex; align-items: center; justify-content: center; min-width: 48px; min-height: 44px; padding: 0 12px; color: var(--tinte); font: 600 0.8125rem/1 var(--sans); letter-spacing: 0.04em; text-decoration: none; }
+.sprachwahl a:hover { background: var(--sand); color: var(--tinte); }
+.sprachwahl a[aria-current="true"] { background: var(--tinte); color: var(--grund); }
+.menue-knopf { display: none; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px 0 12px; border: 1px solid var(--rand-stark); border-radius: 999px; background: transparent; color: var(--tinte); font: 600 0.9375rem/1 var(--sans); cursor: pointer; }
+.menue-knopf svg { width: 20px; height: 20px; }
+.menue-knopf .z-zu, .menue-knopf[aria-expanded="true"] .z-auf { display: none; }
+.menue-knopf[aria-expanded="true"] .z-zu { display: inline; }
+
+/* Umschalten nach dem Platz im Kopf, gemessen in rem (Container-Abfrage): Bei großer Schrift wechselt der Kopf früher
+   auf den Menü-Knopf, damit nichts in zwei Zeilen bricht. Das aufgeklappte Menü hängt am Kopf (absolut, unter ihm) und
+   füllt den Bildschirm. */
+.kopf { container: kopf / inline-size; }
+@container kopf (max-width: 57.99rem) {
+  .js .menue-knopf { display: inline-flex; }
+  .js .menue { display: none; position: absolute; top: 100%; left: 0; right: 0; z-index: 49; height: calc(100dvh - var(--kopf-h) - 1px); overflow-y: auto; flex-direction: column; align-items: stretch; gap: 20px; padding: 8px var(--rand-seite) 32px; background: var(--karte); border-top: 1px solid var(--rand); }
+  .js .menue-knopf[aria-expanded="true"] ~ .menue { display: flex; }
+  .js .menue-liste a { display: flex; justify-content: flex-start; width: 100%; min-height: 56px; border-bottom: 1px solid var(--rand); font: 600 1.625rem/1.15 var(--serif); }
+  .js .menue-liste a[aria-current="page"]::after { content: ""; flex: none; width: 6px; height: 6px; margin-left: 12px; border-radius: 50%; background: var(--gold-linie); }
+  .js .menue .sprachwahl { align-self: flex-start; }
+  .js .menue .kopf-app { min-height: 52px; font-size: 1rem; }
+  html:not(.js) .kopf-innen { flex-wrap: wrap; padding-bottom: 12px; }
+  html:not(.js) .menue { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; width: 100%; }
+  html:not(.js) .menue-liste { display: flex; flex-wrap: wrap; gap: 0 18px; width: 100%; }
+}
+/* Sehr wenig Platz (große Schrift am Handy): der Menü-Knopf zeigt nur das Symbol; sein Name bleibt für Bildschirmleser. */
+@container kopf (max-width: 23.99rem) {
+  .menue-knopf { padding: 0 11px; }
+  .menue-knopf [data-menue-text] { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+.js.menue-offen { overflow: hidden; }
+@media (max-width: 55.99rem) {
+  html:not(.js) .kopf { position: static; }
+}
+@container kopf (min-width: 58rem) {
+  .menue { display: flex; align-items: center; gap: 20px; }
+  .menue-liste { display: flex; align-items: center; gap: 22px; font-size: 0.9375rem; }
+  .menue-liste a { white-space: nowrap; }
+  .menue-liste a[aria-current="page"]::after { content: ""; position: absolute; left: 0; right: 0; bottom: 6px; height: 2px; background: var(--gold-linie); }
+  .kopf-app { white-space: nowrap; }
+}
+@container kopf (min-width: 58rem) and (max-width: 68rem) {
+  .menue, .menue-liste { gap: 14px; }
+  .kopf-app { padding: 0 16px; }
+}
+
+/* Brotkrumen: klein und gedämpft, Trennzeichen als goldener Winkel. */
+.krumen { font-size: 0.875rem; color: var(--gedaempft); }
+.krumen ol { list-style: none; display: flex; flex-wrap: wrap; align-items: center; margin-top: 0; margin-bottom: 0; padding-top: 4px; padding-bottom: 0; }
+.krumen li { display: inline-flex; align-items: center; min-height: 44px; }
+.krumen li + li::before { content: ""; flex: none; width: 6px; height: 6px; margin: 0 12px 0 10px; border-top: 1.5px solid var(--gold-linie); border-right: 1.5px solid var(--gold-linie); transform: rotate(45deg); }
+.krumen a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; margin: 0 -6px; color: var(--gedaempft); text-decoration: none; }
+.krumen a:hover { color: var(--tinte); text-decoration: underline; }
+.krumen [aria-current="page"] { color: var(--tinte); }
+
+main { display: block; padding-bottom: 64px; }
+
+/* Seitenkopf der Unterseiten: Überschrift mit goldener Linie, Vorspann. */
+.seitenkopf { padding-top: clamp(24px, 4vw, 48px); padding-bottom: clamp(28px, 4vw, 48px); }
+.seitenkopf h1 { max-width: 20ch; }
+.seitenkopf h1::after { content: ""; display: block; width: 72px; height: 2px; margin-top: 18px; background: var(--gold-linie); }
+.vorspann { max-width: 40rem; margin: 18px 0 0; font-size: clamp(1.125rem, 1rem + 0.4vw, 1.25rem); line-height: 1.6; color: var(--text); }
+
+/* Inhaltsverzeichnis (Ratgeber, So geht's): am Laptop links mitfahrend, am Handy oben und aufklappbar. Ohne
+   JavaScript steht es offen. */
+.toc { background: var(--karte); border: 1px solid var(--rand); border-radius: 20px; padding: 18px 20px; }
+.toc-titel { margin: 0 0 8px; font: 600 0.75rem/1.4 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-text); }
+.toc-knopf { display: none; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 52px; padding: 0 18px; border: 0; border-radius: 19px; background: transparent; color: var(--tinte); font: 600 1rem/1.2 var(--sans); text-align: left; cursor: pointer; }
+.toc-knopf svg { flex: none; width: 20px; height: 20px; fill: none; stroke: var(--gold-linie); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.toc-knopf[aria-expanded="true"] svg { transform: rotate(180deg); }
+.toc-liste { list-style: none; margin: 0; padding: 0; counter-reset: toc; font-size: 0.9375rem; line-height: 1.35; }
+.toc-liste li { counter-increment: toc; }
+.toc-liste a { display: flex; gap: 10px; min-height: 44px; padding: 8px 0; align-items: center; color: var(--tinte); text-decoration: none; }
+.toc-liste a::before { content: counter(toc); flex: none; width: 1.5em; font: 600 1.0625rem/1 var(--serif); color: var(--gold-text); }
+.toc-liste a:hover { color: var(--gold-text); text-decoration: underline; }
+.toc-liste li + li { border-top: 1px solid var(--rand); }
+@media (max-width: 55.99rem) {
+  .js .toc { padding: 0; }
+  .js .toc-titel { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .js .toc-knopf { display: flex; }
+  .js .toc-liste { display: none; padding: 0 18px 8px; }
+  .js .toc-knopf[aria-expanded="true"] + .toc-liste { display: block; }
+}
+
+/* Aufklappbare Fragen (Entwurf 7.1). */
+.frage { margin: 0 0 12px; background: var(--karte); border: 1px solid var(--rand); border-radius: 18px; }
+.frage summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 60px; padding: 14px 22px; list-style: none; color: var(--tinte); font-size: 1.0625rem; font-weight: 600; line-height: 1.4; cursor: pointer; }
+.frage summary::-webkit-details-marker { display: none; }
+.frage summary::after { content: ""; flex: none; width: 9px; height: 9px; margin: -4px 4px 0 0; border-right: 2px solid var(--gold-linie); border-bottom: 2px solid var(--gold-linie); transform: rotate(45deg); }
+.frage[open] summary::after { margin-top: 5px; transform: rotate(-135deg); }
+.frage summary:hover { color: var(--gold-text); }
+.frage summary:focus-visible { outline-offset: -3px; border-radius: 18px; }
+.frage > p { margin: 0 22px 16px; color: var(--text); }
+.frage > summary + p { margin-top: -2px; }
+
+/* Bildschirmfoto der App im Rahmen eines Handys (Muster Handy.astro von FoodAsu). Alle Maße folgen der Breite --gb. */
+.geraet { --gb: 15rem; width: var(--gb); max-width: 100%; margin-inline: auto; }
+.geraet-rahmen { padding: calc(var(--gb) * 0.035); border-radius: calc(var(--gb) * 0.16); background: var(--nacht-flaeche); box-shadow: 0 calc(var(--gb) * 0.12) calc(var(--gb) * 0.22) calc(var(--gb) * -0.08) rgb(var(--schatten) / 0.42), 0 0 0 1px rgb(255 255 255 / 0.06) inset; }
+.geraet-rahmen img { display: block; width: 100%; height: auto; border-radius: calc(var(--gb) * 0.125); background: var(--grund); }
+/* Bild, das kein Bildschirm ist (das Teilen-Bild der App): Karte mit Schatten, ohne Handy-Rahmen. */
+.bildkarte { --gb: 15rem; width: var(--gb); max-width: 100%; margin-inline: auto; }
+.bildkarte-rahmen img { display: block; width: 100%; height: auto; border-radius: 14px; box-shadow: 0 22px 44px -18px rgb(var(--schatten) / 0.45), 0 0 0 1px rgb(var(--schatten) / 0.08); }
+
+/* Teilen: dezent am Ende der Inhaltsseiten. Die Auswahl klappt als kleines Feld über dem Knopf auf. */
+.teilen { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-top: 64px; padding-top: 24px; margin-bottom: -24px; }
+.teilen::before { content: ""; flex-basis: 100%; height: 1px; margin-bottom: 16px; background: var(--rand); }
+.teilen-titel { margin: 0; font: 600 0.75rem/1.4 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-text); }
+.teilen-feld { position: relative; }
+.teilen-knopf svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.teilen-wahl { list-style: none; margin: 0; padding: 6px; }
+.teilen-wahl a { display: flex; align-items: center; min-height: 44px; padding: 0 14px; border-radius: 10px; color: var(--tinte); font-size: 0.9375rem; font-weight: 500; text-decoration: none; }
+.teilen-wahl a:hover, .teilen-wahl .knopf-schlicht:hover { background: var(--sand); color: var(--tinte); }
+.js .teilen-wahl { display: none; position: absolute; left: 0; bottom: calc(100% + 8px); z-index: 20; min-width: 15rem; background: var(--karte); border: 1px solid var(--rand); border-radius: 16px; box-shadow: 0 18px 40px -12px rgb(var(--schatten) / 0.3); }
+.js .teilen-knopf[aria-expanded="true"] + .teilen-wahl { display: block; }
+html:not(.js) .teilen-knopf, html:not(.js) .nur-js { display: none; }
+html:not(.js) .teilen-wahl { display: flex; flex-wrap: wrap; gap: 4px; padding: 0; }
+html:not(.js) .teilen-wahl a { border: 1px solid var(--rand-stark); border-radius: 999px; }
+.teilen-meldung { flex-basis: 100%; min-height: 1.5em; margin: 0; font-size: 0.875rem; color: var(--gedaempft); }
+
+/* Abzeichen des Stores (nur, solange die App öffentlich ist). */
+.store { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px; }
+.store-abzeichen { display: inline-flex; min-height: 44px; border-radius: 10px; }
+.store-abzeichen img { display: block; width: auto; height: 64px; }
+
+/* Fuß (Entwurf 7.1, drei Spalten nach FoodAsu). */
+.fuss { background: var(--nacht-flaeche); color: var(--nacht-text); padding-top: 56px; font-size: 0.9375rem; }
+/* Spalten nach Platz in rem: Bei großer Schrift stellen sie früher um, nichts ragt in die Nachbarspalte. */
+.fuss-raster { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr)); gap: 28px 24px; }
+.fuss .marke { color: var(--gold); }
+.fuss .marke-name { color: var(--nacht-text); }
+.fuss-titel { margin: 0 0 6px; font: 600 0.75rem/1.4 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+.fuss-spalte ul { list-style: none; margin: 0; padding: 0; }
+.fuss-spalte ul + .fuss-titel { margin-top: 20px; }
+.fuss-spalte a { display: inline-flex; align-items: center; min-height: 44px; padding: 4px 0; color: var(--nacht-text); line-height: 1.35; text-decoration: none; }
+.fuss-spalte a:hover { color: var(--gold); text-decoration: underline; }
+.fuss-spalte a[aria-current] { color: var(--gold); }
+.fuss a:focus-visible, .fuss-zeile a:focus-visible { outline-color: var(--gold); }
+.fuss-zeile { margin-top: 40px; padding-top: 20px; padding-bottom: 32px; border-top: 1px solid rgb(237 230 214 / 0.14); }
+.fuss-zeile p { margin: 0; color: var(--nacht-gedaempft); font-size: 0.875rem; }
+@media (min-width: 64rem) {
+  .fuss-raster { grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); }
+}
+
+@media print {
+  .kopf, .krumen, .fuss, .teilen, .sprung, .toc { display: none !important; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+}
+
+/* Tassenkarte von oben (Startseite und Ratgeber Kaffeesatz), Farben wie in der App. */
+.tassenkarte { margin: 0; }
+.tassenkarte svg { display: block; width: 100%; height: auto; }
+.tk-tasse { fill: var(--tasse); stroke: var(--tasse-linie); stroke-width: 1.4; }
+.tk-linie { fill: none; stroke: var(--tasse-linie); stroke-width: 1; stroke-dasharray: 3 4; }
+.tk-teiler { fill: none; stroke: var(--tasse-linie); stroke-width: 1; stroke-dasharray: 2 5; }
+.tk-henkel { fill: none; stroke: var(--tasse-linie); stroke-width: 6; stroke-linecap: round; }
+.tk-text { font: 500 11px var(--sans); fill: #5E4E34; }
