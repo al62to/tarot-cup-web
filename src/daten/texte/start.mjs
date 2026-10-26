@@ -48,7 +48,7 @@ export const start = {
     vorteile: [
       { titel: 'Ohne Internet', text: 'Die App hat keine Erlaubnis, ins Internet zu gehen.' },
       { titel: 'Ohne Konto', text: 'In der App kein Anmelden und keine E-Mail-Adresse.' },
-      { titel: 'Bleibt auf dem Handy', text: 'Verlauf und Notizen speichert die App auf deinem Handy. Ich habe darauf keinen Zugriff.' },
+      { titel: 'Bleibt bei dir', text: 'Verlauf und Notizen speichert die App auf deinem Handy. Ich habe darauf keinen Zugriff.' },
     ],
     ratgeber: {
       titel: 'Tarot und Kaffeesatz verstehen',
@@ -127,7 +127,7 @@ export const start = {
     vorteile: [
       { titel: 'İnternetsiz', text: 'Uygulamanın internete bağlanma izni yok.' },
       { titel: 'Üyeliksiz', text: 'Uygulamada kayıt yok, e-posta adresi de gerekmez.' },
-      { titel: 'Telefonunda kalır', text: 'Geçmişini ve notlarını uygulama telefonunda saklar. Benim bunlara erişimim yok.' },
+      { titel: 'Sende kalır', text: 'Geçmişini ve notlarını uygulama telefonunda saklar. Benim bunlara erişimim yok.' },
     ],
     ratgeber: {
       titel: 'Tarotu ve kahve falını yakından tanı',

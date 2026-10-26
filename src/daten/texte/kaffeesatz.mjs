@@ -175,7 +175,7 @@ export const kaffeesatz = {
     },
   },
   tr: {
-    metaTitel: 'Kahve falı nasıl bakılır? Adım adım | Tarot Cup',
+    metaTitel: 'Kahve falına nasıl bakılır? Adım adım | Tarot Cup',
     metaBeschreibung: 'Kahve falına nasıl bakılır? Cezveden fincanı kapatmaya kadar ritüeli, fincanın bölümlerini ve sık görülen şekilleri bu rehberde bulursun.',
     titel: 'Kahve falına nasıl bakılır?',
     vorspann: 'Kahve falı, Osmanlı kahve kültüründen bugüne uzanan bir sohbet geleneğidir. Bu sayfada cezveden fincanı açmaya kadar ritüeli, fincanın bölümlerini ve sık görülen on iki şekli bulacaksın.',
