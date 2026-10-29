@@ -1,5 +1,5 @@
 // Fotografiert die Seiten der Website (ganze Seite, je Handy 390 px und Desktop 1280 px) und setzt sie zu einem PDF
-// für die Freigabe durch Ali zusammen (Auftrag AP-W1, Teil J Nr. 5). Lange Seiten werden in Abschnitte geteilt.
+// für die Freigabe zusammen (Auftrag AP-W1, Teil J Nr. 5). Lange Seiten werden in Abschnitte geteilt.
 // Die Archivseiten der Rechtstexte fehlen (gleicher Text wie die gültige Fassung; der Vergleich steht im Bericht).
 // Aufruf: node tools/freigabe_pdf.mjs <Adresse der Vorschau> <Ziel.pdf>
 import { existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';

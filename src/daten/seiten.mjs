@@ -61,6 +61,7 @@ for (const paar of PAARE) {
       quellen: paar.quellen,
       teilen: paar.schluessel !== 'bildnachweis',
       rechtlich: paar.schluessel === 'bildnachweis',
+      index: paar.schluessel !== 'bildnachweis',
     }));
   }
 }
@@ -70,10 +71,10 @@ liste.push(eintrag({
   titel: OFFENLEGUNG.metaTitel, beschreibung: OFFENLEGUNG.metaBeschreibung,
   bild: '/bilder/teilen/start-de.jpg', bildAlt: 'Tarot Cup',
   krumen: [krume('de'), { titel: 'Offenlegung', ziel: '/offenlegung/' }],
-  prioritaet: 0.1, quellen: ['src/pages/offenlegung/index.astro'], teilen: false, rechtlich: true,
+  prioritaet: 0.1, quellen: ['src/pages/offenlegung/index.astro'], teilen: false, rechtlich: true, index: false,
 }));
 
-// Rechtsseiten aus dem Verzeichnis: gültige Fassung und Archiv. Niedrige Priorität in der Sitemap.
+// Rechtsseiten aus dem Verzeichnis: gültige Fassung und Archiv.
 for (const rechtsseite of rechtsseiten()) {
   const { text, fassung, archiv, adresse } = rechtsseite;
   const sp = text.sprache;
@@ -94,11 +95,14 @@ for (const rechtsseite of rechtsseiten()) {
     quellen: [`src/inhalte/recht/${fassung.datei}`, 'src/inhalte/recht/verzeichnis.json'],
     teilen: false,
     rechtlich: true,
+    index: false,
     recht: rechtsseite,
   }));
 }
 
-// Seiten ohne Index: Kurzlink und 404 (nicht in Sitemap und llms.txt).
+// Seiten ohne Index ("noindex, follow", nicht in Sitemap und llms.txt, robots.txt sperrt sie nicht): alle rechtlichen
+// Seiten (Offenlegung, Datenschutz, Nutzungsbedingungen mit allen Fassungen, Bildnachweis; AP-W3), Kurzlink und 404.
+// Sie bleiben erreichbar und im Fuß verlinkt.
 liste.push(eintrag({
   schluessel: 'app', pfad: '/app/', sprache: 'de', index: false,
   titel: oberflaeche.de.app.metaTitel, beschreibung: oberflaeche.de.app.metaBeschreibung,

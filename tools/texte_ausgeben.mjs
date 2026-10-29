@@ -1,5 +1,5 @@
-// Schreibt alle neuen Texte der Website (Deutsch und Türkisch nebeneinander) als HTML und PDF, für die Freigabe durch
-// Ali und für den Bericht. Inhalt wie auf den Seiten, mit den Kurzbedeutungen aus den Daten der App.
+// Schreibt alle neuen Texte der Website (Deutsch und Türkisch nebeneinander) als HTML und PDF, für die Freigabe
+// und für den Bericht. Inhalt wie auf den Seiten, mit den Kurzbedeutungen aus den Daten der App.
 // Aufruf: node tools/texte_ausgeben.mjs <Zielordner>
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';

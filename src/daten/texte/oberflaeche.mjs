@@ -34,7 +34,7 @@ export const oberflaeche = {
       sprache: 'Sprache',
       // Hinweis oben im Fuß, auf jeder Seite (AP-W2; vorher nur am Ende der Startseite).
       hinweis: 'Zur Unterhaltung. Keine Vorhersage und keine Beratung.',
-      zeile: 'Eine App von Ali Tonc · Zur Unterhaltung.',
+      zeile: 'Tarot Cup · Zur Unterhaltung.',
     },
     krumen: { aria: 'Brotkrumen', start: 'Start' },
     inhalt: 'Inhalt',
@@ -120,7 +120,7 @@ export const oberflaeche = {
       kontakt: 'E-posta gönder',
       sprache: 'Dil',
       hinweis: 'Eğlence amaçlıdır. Kehanet ya da danışmanlık değildir.',
-      zeile: 'Ali Tonc’un bir uygulaması · Eğlence amaçlıdır.',
+      zeile: 'Tarot Cup · Eğlence amaçlıdır.',
     },
     krumen: { aria: 'Sayfa yolu', start: 'Ana sayfa' },
     inhalt: 'İçindekiler',

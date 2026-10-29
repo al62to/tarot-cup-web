@@ -18,7 +18,7 @@ import Brotkrumen from '../components/Brotkrumen.astro';
 import { seite } from '../daten/seite.mjs';
 import { seiteVon } from '../daten/seiten.mjs';
 import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
-import { websiteDaten, entwicklerDaten } from '../daten/strukturiert.mjs';
+import { websiteDaten, herausgeberDaten, jsonLd } from '../daten/strukturiert.mjs';
 
 const { adresse = Astro.url.pathname, daten = [], klasse } = Astro.props;
 const angaben = seiteVon(adresse);
@@ -33,7 +33,7 @@ const alternativen = gegenseite
     ]
   : [];
 const robots = imIndex ? null : angaben.index ? 'noindex, nofollow' : 'noindex, follow';
-const alleDaten = [websiteDaten(sprache), entwicklerDaten(), ...daten];
+const alleDaten = [websiteDaten(sprache), herausgeberDaten(), ...daten];
 ---
 <!doctype html>
 <html lang={sprache}>
@@ -65,7 +65,7 @@ const alleDaten = [websiteDaten(sprache), entwicklerDaten(), ...daten];
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preload" href={interLatein} as="font" type="font/woff2" crossorigin />
     {klasse === 'seite-start' && [titelNormal, titelKursiv].map((datei) => <link rel="preload" href={datei} as="font" type="font/woff2" crossorigin />)}
-    {alleDaten.map((eintrag) => <script type="application/ld+json" set:html={JSON.stringify(eintrag)} />)}
+    {alleDaten.map((eintrag) => <script type="application/ld+json" set:html={jsonLd(eintrag)} />)}
   </head>
   <body class={klasse}>
     <a class="sprung" href="#inhalt">{T.sprung}</a>

@@ -1,6 +1,6 @@
 // sitemap.xml: alle Seiten mit Index-Anspruch (src/daten/seiten.mjs), beide Sprachen mit xhtml:link auf die Gegenseite
-// und x-default, lastmod aus Git (src/daten/stand.mjs), Priorität je Seite (Rechts- und Archivseiten niedrig).
-// Kurzlink und 404 stehen nicht darin.
+// und x-default, lastmod aus Git (src/daten/stand.mjs), Priorität je Seite.
+// Seiten ohne Index (rechtliche Seiten, Kurzlink, 404) stehen nicht darin.
 import { seite } from '../daten/seite.mjs';
 import { SEITEN, seiteVon } from '../daten/seiten.mjs';
 import { standVon } from '../daten/stand.mjs';

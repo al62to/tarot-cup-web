@@ -1,6 +1,6 @@
 // Seite „Über Tarot Cup“ (/ueber-tarot-cup/ und /tr/hakkinda/), AP-W1 Teil E. Im Mittelpunkt steht, was die App ist
-// und was nicht. Genannt wird nur Alis Name und als Wohnort Österreich; kein Arbeitgeber, kein beruflicher Hintergrund.
-// Die E-Mail-Adresse setzt die Seite hinter „kontakt“.
+// und was nicht. Kein persönlicher Name (AP-W3): wer verantwortlich ist, steht nur in der Offenlegung, auf die der
+// Abschnitt „wer“ verweist. Die E-Mail-Adresse setzt die Seite hinter „kontakt“.
 // Funktionsaussagen belegt in deutung-unterlagen/arbeit/apw1/belege_start_fragen_ueber.md.
 // Türkisch eigenständig geschrieben, nicht übersetzt. Prüfstatus: muttersprachlich ungeprüft.
 
@@ -40,7 +40,6 @@ export const ueber = {
         kennung: 'wer',
         titel: 'Wer hinter Tarot Cup steht',
         absaetze: [
-          'Ich bin Ali Tonc, lebe in Österreich und habe Tarot Cup entwickelt. Über Fragen, Hinweise und Rückmeldungen freue ich mich.',
           'Wer für diese Website verantwortlich ist, steht in der [Offenlegung](/offenlegung/).',
         ],
       },
@@ -83,7 +82,6 @@ export const ueber = {
         kennung: 'wer',
         titel: 'Tarot Cup’ın arkasında kim var?',
         absaetze: [
-          'Ben Ali Tonc. Avusturya’da yaşıyorum ve Tarot Cup’ı ben geliştirdim. Sorularını, önerilerini ve görüşlerini duymak beni sevindirir.',
           'Bu siteden kimin sorumlu olduğunu [Offenlegung (künye)](/offenlegung/) sayfasında bulabilirsin.',
         ],
       },

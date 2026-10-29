@@ -1,12 +1,12 @@
-// Strukturierte Daten (JSON-LD) an einer Stelle, Muster FoodAsu. Überall: WebSite und Person „Ali Tonc“ (ohne sameAs,
-// E5), auf Unterseiten dazu BreadcrumbList (Brotkrumen.astro). Je Seite: Startseite MobileApplication und FAQPage
+// Strukturierte Daten (JSON-LD) an einer Stelle, Muster FoodAsu. Überall: WebSite und Organization „Tarot Cup“ als
+// Herausgeber (ohne sameAs, E5; kein persönlicher Name, AP-W3), auf Unterseiten dazu BreadcrumbList (Brotkrumen.astro). Je Seite: Startseite MobileApplication und FAQPage
 // (Auszug), Ratgeber Article mit ItemList und HowTo, So geht's Article, Fragen FAQPage, Über AboutPage.
 // Nicht aufgenommen (E6 und Auftrag): offers, Preis, Bewertungen, isAccessibleForFree, softwareVersion.
 import { seite, store } from './seite.mjs';
 import { standVon } from './stand.mjs';
 
 export const WEBSITE_ID = `${seite.adresse}/#website`;
-export const ENTWICKLER_ID = `${seite.adresse}/#ali-tonc`;
+export const HERAUSGEBER_ID = `${seite.adresse}/#organisation`;
 export const APP_ID = `${seite.adresse}/#app`;
 
 const KONTEXT = 'https://schema.org';
@@ -19,16 +19,22 @@ export const websiteDaten = (sprache) => ({
   name: seite.name,
   url: `${seite.adresse}/`,
   inLanguage: sprache,
-  publisher: { '@id': ENTWICKLER_ID },
+  publisher: { '@id': HERAUSGEBER_ID },
 });
 
-export const entwicklerDaten = () => ({
+export const herausgeberDaten = () => ({
   '@context': KONTEXT,
-  '@type': 'Person',
-  '@id': ENTWICKLER_ID,
-  name: 'Ali Tonc',
-  url: absolut('/ueber-tarot-cup/'),
+  '@type': 'Organization',
+  '@id': HERAUSGEBER_ID,
+  name: seite.name,
+  url: `${seite.adresse}/`,
+  email: seite.email,
 });
+
+// JSON-LD als Text für <script type="application/ld+json">. Die E-Mail-Adresse steht darin als \u-Folge (für JSON
+// gleichwertig), damit sie wie im übrigen HTML nicht als Klartext im Quelltext steht.
+const emailEscaped = [...seite.email].map((zeichen) => `\\u${zeichen.codePointAt(0).toString(16).padStart(4, '0')}`).join('');
+export const jsonLd = (daten) => JSON.stringify(daten).replaceAll(seite.email, emailEscaped);
 
 // Die App, vollständig, nur auf der Startseite (beide Sprachen, je mit der Beschreibung der Sprache).
 export const appDaten = ({ beschreibung, bildschirmfotos }) => ({
@@ -43,7 +49,7 @@ export const appDaten = ({ beschreibung, bildschirmfotos }) => ({
   url: `${seite.adresse}/`,
   image: absolut('/bilder/app-symbol-512.png'),
   screenshot: bildschirmfotos.map(absolut),
-  author: { '@id': ENTWICKLER_ID },
+  author: { '@id': HERAUSGEBER_ID },
   ...(store.oeffentlich ? { installUrl: store.adresse } : {}),
 });
 
@@ -72,8 +78,8 @@ export const artikelDaten = ({ pfad, sprache, titel, beschreibung, bild, quellen
   mainEntityOfPage: absolut(pfad),
   image: absolut(bild),
   dateModified: standVon(quellen),
-  author: { '@id': ENTWICKLER_ID },
-  publisher: { '@id': ENTWICKLER_ID },
+  author: { '@id': HERAUSGEBER_ID },
+  publisher: { '@id': HERAUSGEBER_ID },
   isPartOf: { '@id': WEBSITE_ID },
   about: { '@id': APP_ID },
   // Listen (Zeichen, Karten, Legungen) als mainEntity: hasPart erlaubt nur CreativeWork, ItemList ist keins (schema.org-Validator).
@@ -119,7 +125,7 @@ export const ueberDaten = ({ pfad, sprache, titel, beschreibung }) => ({
   url: absolut(pfad),
   isPartOf: { '@id': WEBSITE_ID },
   about: { '@id': APP_ID },
-  mainEntity: { '@id': ENTWICKLER_ID },
+  mainEntity: { '@id': HERAUSGEBER_ID },
 });
 
 export const brotkrumenDaten = (krumen) => ({

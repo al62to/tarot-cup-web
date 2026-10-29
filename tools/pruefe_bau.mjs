@@ -207,7 +207,7 @@ export function pruefeBau(ordner, { still = false } = {}) {
         melde(datei, 'JSON-LD ungültig', fehler.message);
       }
     }
-    const pflicht = ['WebSite', 'Person'];
+    const pflicht = ['WebSite', 'Organization'];
     if (eintrag.krumen) pflicht.push('BreadcrumbList');
     const jeSeite = { start: ['MobileApplication', 'FAQPage'], tarot: ['Article', 'HowTo'], kaffeesatz: ['Article', 'HowTo'], sogehts: ['Article'], fragen: ['FAQPage'], ueber: ['AboutPage'] };
     pflicht.push(...(jeSeite[eintrag.schluessel] ?? []));

@@ -4,7 +4,7 @@
 export const llmsTexte = {
   de: {
     angaben: [
-      'Plattform: Android. Sprachen: Deutsch und Türkisch, in der App umschaltbar. Entwickler: Ali Tonc, Österreich.',
+      'Plattform: Android. Sprachen: Deutsch und Türkisch, in der App umschaltbar.',
       'Funktionen: Tageskarte, Ja oder Nein, Drei Karten und eine Legung zur Liebe mit 78 Tarotkarten; Kaffeesatz selbst lesen mit 80 Zeichen und der Tassenkarte; Lexikon, Verlauf mit eigenen Notizen, Teilen als Bild, Erinnerung an die Tageskarte.',
       'Die App läuft ohne Internet, ohne Konto und ohne Werbung. Verlauf und Notizen speichert sie auf dem Handy.',
       'Jede Legung hat ihren Rhythmus: Tageskarte und Ja oder Nein täglich, Drei Karten und die volle Kaffeesatz-Deutung alle drei Tage, Liebe einmal pro Woche. Lexikon und Verlauf sind immer offen.',
@@ -13,13 +13,12 @@ export const llmsTexte = {
     ],
     store: 'Google Play',
     seiten: 'Wichtige Seiten',
-    recht: 'Rechtliches',
     andereSprache: 'Türkisch',
     andereLink: '[llms.txt auf Türkisch](https://tarot-cup.com/tr/llms.txt)',
   },
   tr: {
     angaben: [
-      'Platform: Android. Diller: Almanca ve Türkçe, uygulama içinden değiştirilebilir. Geliştirici: Ali Tonc, Avusturya.',
+      'Platform: Android. Diller: Almanca ve Türkçe, uygulama içinden değiştirilebilir.',
       'Özellikler: 78 tarot kartıyla Günün Kartı, “Evet mi, Hayır mı”, Üç Kart ve bir aşk açılımı; 80 işaret ve fincan haritasıyla kendi kahve falına bakma; sözlük, kendi notlarınla geçmiş, görsel olarak paylaşma, günün kartı için hatırlatıcı.',
       'Uygulama internetsiz, üyeliksiz ve reklamsız çalışır. Geçmişi ve notları telefonda saklar.',
       'Her açılımın kendi ritmi vardır: Günün Kartı ve “Evet mi, Hayır mı” her gün, Üç Kart ve tam kahve falı yorumu üç günde bir, aşk açılımı haftada bir. Sözlük ve geçmiş her zaman açıktır.',
@@ -28,7 +27,6 @@ export const llmsTexte = {
     ],
     store: 'Google Play',
     seiten: 'Önemli sayfalar',
-    recht: 'Yasal bilgiler',
     andereSprache: 'Almanca',
     andereLink: '[Almanca llms.txt](https://tarot-cup.com/llms.txt)',
   },

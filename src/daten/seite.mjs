@@ -9,13 +9,13 @@ export const seite = {
   teilen: { breite: 1200, hoehe: 630 },
 };
 
-// Schalter E8 (Auftrag AP-W1): Zur Suche freigeben erst mit Alis Okay. false: jede Seite trägt "noindex, nofollow"
+// Schalter E8 (Auftrag AP-W1): Zur Suche freigeben erst nach Freigabe. false: jede Seite trägt "noindex, nofollow"
 // und robots.txt sperrt alles (wie vor AP-W1). true: Seiten im Index, robots.txt erlaubt alles und nennt die Sitemap.
 // SUCHE_PROBE=1 baut lokal so, als wäre die Suche freigegeben (nur für die Messung mit Lighthouse, Bereich SEO); der
 // Workflow auf GitHub setzt die Variable nie.
 export const suche = { freigegeben: true || process.env.SUCHE_PROBE === '1' };
 
-// Store-Eintrag. Solange "oeffentlich" aus ist, bleibt die Fläche für das Abzeichen leer (Ali, 26.10.2026: Abzeichen erst
+// Store-Eintrag. Solange "oeffentlich" aus ist, bleibt die Fläche für das Abzeichen leer (Vorgabe 26.10.2026: Abzeichen erst
 // mit der Produktion); der Knopf im Titelbild sagt „Bald bei Google Play“ ohne Link, /app/ nur, dass die App bald kommt.
 // Kein Angebot und kein Preis in den strukturierten Daten.
 export const store = {
