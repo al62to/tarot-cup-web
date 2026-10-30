@@ -6,10 +6,10 @@
 
 export const ueber = {
   de: {
-    metaTitel: 'Über Tarot Cup: die App und wer sie macht',
-    metaBeschreibung: 'Tarot Cup ist eine App für Tarot und Kaffeesatz auf Deutsch und Türkisch. Hier steht, was sie ist, was sie nicht ist und wer sie in Österreich entwickelt.',
+    metaTitel: 'Über Tarot Cup: was die App ist und was nicht',
+    metaBeschreibung: 'Tarot Cup ist eine App für Tarot und Kaffeesatz auf Deutsch und Türkisch. Hier steht, was sie ist und was sie nicht ist.',
     titel: 'Über Tarot Cup',
-    vorspann: 'Tarot Cup ist eine ruhige App für Tarot und Kaffeesatz. Hier steht, was sie ist, was sie nicht ist und wer dahintersteht.',
+    vorspann: 'Tarot Cup ist eine ruhige App für Tarot und Kaffeesatz. Hier steht, was sie ist und was sie nicht ist.',
     ogTitel: 'Über Tarot Cup',
     brotkrume: 'Über',
     abschnitte: [
@@ -48,10 +48,10 @@ export const ueber = {
   },
 
   tr: {
-    metaTitel: 'Tarot Cup hakkında: uygulama ve geliştiricisi',
-    metaBeschreibung: 'Tarot Cup, Türkçe ve Almanca bir tarot ve kahve falı uygulaması. Ne olduğunu, ne olmadığını ve onu Avusturya’da kimin geliştirdiğini burada bulursun.',
+    metaTitel: 'Tarot Cup hakkında: uygulama nedir, ne değildir',
+    metaBeschreibung: 'Tarot Cup, Türkçe ve Almanca bir tarot ve kahve falı uygulaması. Ne olduğunu ve ne olmadığını burada bulursun.',
     titel: 'Tarot Cup hakkında',
-    vorspann: 'Tarot Cup, tarot ve kahve falı için sakin bir uygulama. Bu sayfada ne olduğunu, ne olmadığını ve arkasında kimin durduğunu anlatıyorum.',
+    vorspann: 'Tarot Cup, tarot ve kahve falı için sakin bir uygulama. Bu sayfada ne olduğunu ve ne olmadığını bulursun.',
     ogTitel: 'Tarot Cup hakkında',
     brotkrume: 'Hakkında',
     abschnitte: [
