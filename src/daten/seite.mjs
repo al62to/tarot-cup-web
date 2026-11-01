@@ -3,7 +3,7 @@
 export const seite = {
   name: 'Tarot Cup',
   adresse: 'https://tarot-cup.com',
-  email: 'aliapp@gmx.at',
+  email: 'kontakt@tarot-cup.com',
   sprachen: ['de', 'tr'],
   // Bild zum Teilen: je Seite und Sprache eine Datei in public/bilder/teilen/ (1200 x 630, tools/teilen_bilder.mjs).
   teilen: { breite: 1200, hoehe: 630 },
