@@ -2,17 +2,17 @@
 // für die Freigabe zusammen (Auftrag AP-W1, Teil J Nr. 5). Lange Seiten werden in Abschnitte geteilt.
 // Die Archivseiten der Rechtstexte fehlen (gleicher Text wie die gültige Fassung; der Vergleich steht im Bericht).
 // Aufruf: node tools/freigabe_pdf.mjs <Adresse der Vorschau> <Ziel.pdf>
-import { existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
+import { mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import sharp from 'sharp';
 import { chromium } from 'playwright-core';
 import { SEITEN } from '../src/daten/seiten.mjs';
+import { chromePfad } from './chrome.mjs';
 
 const [basis, zielPdf] = process.argv.slice(2);
 if (!basis || !zielPdf) throw new Error('Aufruf: node tools/freigabe_pdf.mjs <Adresse> <Ziel.pdf>');
-const ORTE = [process.env.CHROME_PATH, 'C:/Program Files/Google/Chrome/Application/chrome.exe', 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe', '/usr/bin/google-chrome'];
-const chrome = ORTE.find((ort) => ort && existsSync(ort));
+const chrome = chromePfad();
 const arbeit = join(dirname(resolve(zielPdf)), '_freigabe_bilder');
 rmSync(arbeit, { recursive: true, force: true });
 mkdirSync(arbeit, { recursive: true });

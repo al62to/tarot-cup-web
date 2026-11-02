@@ -1,10 +1,11 @@
 // Schreibt alle neuen Texte der Website (Deutsch und Türkisch nebeneinander) als HTML und PDF, für die Freigabe
 // und für den Bericht. Inhalt wie auf den Seiten, mit den Kurzbedeutungen aus den Daten der App.
 // Aufruf: node tools/texte_ausgeben.mjs <Zielordner>
-import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { chromium } from 'playwright-core';
+import { chromePfad } from './chrome.mjs';
 import appDaten from '../src/daten/app_daten.json' with { type: 'json' };
 import { start } from '../src/daten/texte/start.mjs';
 import { ohneAuszeichnung as oa } from '../src/daten/auszeichnung.mjs';
@@ -97,8 +98,7 @@ ${SEITEN.map(([name, bau]) => `<section class="seite"><p class="titel">${e(name)
 
 const htmlDatei = join(ziel, 'APW1_texte.html');
 writeFileSync(htmlDatei, html);
-const ORTE = [process.env.CHROME_PATH, 'C:/Program Files/Google/Chrome/Application/chrome.exe', 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe', '/usr/bin/google-chrome'];
-const chrome = ORTE.find((ort) => ort && existsSync(ort));
+const chrome = chromePfad();
 const browser = await chromium.launch({ executablePath: chrome, headless: true });
 const seite = await browser.newPage();
 await seite.goto(pathToFileURL(htmlDatei).href);
