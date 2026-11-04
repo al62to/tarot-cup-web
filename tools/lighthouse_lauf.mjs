@@ -3,18 +3,17 @@
 // Lighthouse kommt über npx (keine Abhängigkeit des Projekts), Chrome ist das lokal installierte. Liegt die Leistung
 // unter 90, folgen zwei weitere Läufe; es zählt der mittlere Wert (Leistung schwankt mit der Last des Rechners).
 // Aufruf: node tools/lighthouse_lauf.mjs <Zielordner> <Adresse der Vorschau> [Pfad ...]
-// In Git Bash MSYS_NO_PATHCONV=1 davor setzen.
 import { execFileSync } from 'node:child_process';
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { chromePfad } from './chrome.mjs';
 
 const [ziel, vorschau, ...eigene] = process.argv.slice(2);
 if (!ziel || !vorschau) throw new Error('Aufruf: node tools/lighthouse_lauf.mjs <Zielordner> <Adresse> [Pfad ...]');
 const PFADE = eigene.length ? eigene : ['/', '/tr/', '/tarot/', '/tr/tarot/', '/kaffeesatz-lesen/', '/tr/kahve-fali/', '/so-gehts/', '/tr/nasil-kullanilir/'];
 const BEREICHE = ['performance', 'accessibility', 'best-practices', 'seo'];
 const MINDESTENS = 90;
-const ORTE = [process.env.CHROME_PATH, 'C:/Program Files/Google/Chrome/Application/chrome.exe', 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe', '/usr/bin/google-chrome'];
-const chrome = ORTE.find((ort) => ort && existsSync(ort));
+const chrome = chromePfad();
 mkdirSync(ziel, { recursive: true });
 
 function lauf(pfad, nummer) {
