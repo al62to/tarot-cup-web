@@ -52,6 +52,12 @@
      "datum": "02.11.2026",
      "datei": "datenschutz_1.2.html",
      "quelle": "Datenschutzerklaerung_1.2.md"
+    },
+    {
+     "nummer": "1.3",
+     "datum": "04.11.2026",
+     "datei": "datenschutz_1.3.html",
+     "quelle": "Datenschutzerklaerung_1.3.md"
     }
    ]
   },
@@ -92,6 +98,12 @@
      "datum": "02.11.2026",
      "datei": "tr_gizlilik_1.2.html",
      "quelle": "Datenschutzerklaerung_1.2_tr.md"
+    },
+    {
+     "nummer": "1.3",
+     "datum": "04.11.2026",
+     "datei": "tr_gizlilik_1.3.html",
+     "quelle": "Datenschutzerklaerung_1.3_tr.md"
     }
    ]
   },

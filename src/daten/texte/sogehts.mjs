@@ -31,7 +31,7 @@ export const sogehts = {
         kennung: 'tarot-legen',
         titel: 'Wie lege ich Tarotkarten?',
         absaetze: [
-          'Über „Tarot legen“ wählst du „Ja oder Nein“, „Drei Karten“ oder „Liebe“ und denkst still an deine Frage. Du mischst, indem du über den Stapel wischst, wählst nach „Fertig gemischt“ deine Karten im Fächer und deckst sie nach „Karten umdrehen“ einzeln auf. „Zur Gesamtdeutung“ zeigt, was sie zusammen erzählen. Danach ruht die Legung: Ja oder Nein ist am nächsten Tag wieder frei, Drei Karten nach drei Tagen, Liebe nach einer Woche, jeweils ab Mitternacht.',
+          'Über „Tarot legen“ wählst du „Ja oder Nein“, „Drei Karten“ oder „Liebe“ und denkst still an deine Frage. Du mischst, indem du über den Stapel wischst, wählst nach „Fertig gemischt“ deine Karten im Fächer und deckst sie nach „Weiter zum Aufdecken“ einzeln auf. „Zur Gesamtdeutung“ zeigt, was sie zusammen erzählen. Danach ruht die Legung: Ja oder Nein ist am nächsten Tag wieder frei, Drei Karten nach drei Tagen, Liebe nach einer Woche, jeweils ab Mitternacht.',
         ],
         foto: '03_tarot',
         alt: 'Die Legung Drei Karten mit drei aufgedeckten Karten unter Vergangenheit, Gegenwart und Zukunft und dem Knopf „Zur Gesamtdeutung“.',
@@ -127,7 +127,7 @@ export const sogehts = {
         kennung: 'tarot-acmak',
         titel: 'Tarot falı nasıl açılır?',
         absaetze: [
-          '“Tarot aç” ile “Evet mi, Hayır mı”, “Üç Kart” ya da “Aşk” açılımını seçer, niyetini içinden tutarsın; uygulama niyetini sormaz. Parmağını destenin üzerinde kaydırarak kartları karıştırır, “Karıştırdım” dedikten sonra yelpazeden kartlarını seçersin. “Kartları çevir” dedikten sonra kartlara sırayla dokunup açarsın, “Genel yoruma geç” ise hepsini birlikte yorumlar. Ardından açılım bir süre dinlenir: Evet mi, Hayır mı her gün, Üç Kart üç günde bir, Aşk haftada bir, hep gece yarısından itibaren yeniden açılır.',
+          '“Tarot aç” ile “Evet mi, Hayır mı”, “Üç Kart” ya da “Aşk” açılımını seçer, niyetini içinden tutarsın; uygulama niyetini sormaz. Parmağını destenin üzerinde kaydırarak kartları karıştırır, “Karıştırdım” dedikten sonra yelpazeden kartlarını seçersin. “Açmaya geç” dedikten sonra kartlara sırayla dokunup açarsın, “Genel yoruma geç” ise hepsini birlikte yorumlar. Ardından açılım bir süre dinlenir: Evet mi, Hayır mı her gün, Üç Kart üç günde bir, Aşk haftada bir, hep gece yarısından itibaren yeniden açılır.',
         ],
         foto: '03_tarot',
         alt: 'Üç Kart açılımı: Geçmiş, Şimdi ve Gelecek altında açılmış üç kart ve “Genel yoruma geç” düğmesi.',
