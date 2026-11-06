@@ -60,7 +60,7 @@ export const oberflaeche = {
       qr: 'Mit dem Handy scannen',
       weiter: 'Weiter zu Google Play',
       bald: 'Tarot Cup kommt bald zu Google Play. Schau gern wieder vorbei.',
-      iphone: 'Fürs iPhone gibt es Tarot Cup noch nicht.',
+      iphone: 'Tarot Cup gibt es nur für Android.',
     },
     nichtGefunden: {
       titel: 'Seite nicht gefunden',
@@ -146,7 +146,7 @@ export const oberflaeche = {
       qr: 'Telefonunla tara',
       weiter: 'Google Play’e git',
       bald: 'Tarot Cup yakında Google Play’de olacak. Ara ara uğramayı unutma.',
-      iphone: 'Tarot Cup’ın iPhone sürümü henüz yok.',
+      iphone: 'Tarot Cup yalnızca Android için var.',
     },
     nichtGefunden: {
       titel: 'Sayfa bulunamadı',

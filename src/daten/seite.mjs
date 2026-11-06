@@ -1,4 +1,4 @@
-// Angaben zur Website an einer Stelle, mit den Schaltern für Suche, Store und iPhone.
+// Angaben zur Website an einer Stelle, mit den Schaltern für Suche und Store.
 
 export const seite = {
   name: 'Tarot Cup',
@@ -29,9 +29,6 @@ export const store = {
     tr: { pfad: '/bilder/abzeichen/google-play-tr.png', breite: 646, hoehe: 250 },
   },
 };
-
-// iPhone: Platz für App Store, Abzeichen und Weiterleitung. Apple erlaubt das Abzeichen erst, wenn es die App gibt.
-export const ios = { oeffentlich: false, adresse: '', abzeichen: null };
 
 // Links zu Google Play mit Kennung der Herkunft (Muster „Google Play URL Builder“). Die Kennung enthält nichts über
 // Besucher; die Website lädt dafür nichts und speichert nichts. Feste Orte: kopf, start, kurzlink, fuss.

@@ -22,7 +22,7 @@ Dazu `sitemap.xml`, `robots.txt`, `llms.txt` und `tr/llms.txt`.
 ## Aufbau
 
 - `src/daten/seiten.mjs`: alle Seiten mit Adresse, Gegenseite, Titel, Beschreibung und Brotkrumen; Seiten, Sitemap, `llms.txt` und Prüfungen lesen nur hier.
-- `src/daten/seite.mjs`: Schalter für die Suche (`suche.freigegeben`), den Store (`store.oeffentlich`) und das iPhone (`ios`).
+- `src/daten/seite.mjs`: Schalter für die Suche (`suche.freigegeben`) und den Store (`store.oeffentlich`).
 - `src/daten/texte/`: alle Texte, Deutsch und Türkisch.
 - `src/daten/app_daten.json`: Namen und Kurzbedeutungen aus den Daten der App (`tools/app_daten_exportieren.py`).
 - `src/inhalte/recht/`: die Rechtstexte als Bausteine, Wortlaut unverändert aus den freigegebenen Fassungen.

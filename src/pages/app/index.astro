@@ -2,22 +2,23 @@
 // Kurzlink /app/ (Muster [kurzlink] von FoodAsu, Auftrag Teil F). Ist die App öffentlich, schickt ein kleines eigenes
 // Skript Android-Geräte sofort zum Eintrag bei Google Play (Kennung utm_source=website, utm_campaign=kurzlink); am
 // Computer bleibt diese Seite mit Abzeichen und QR-Code stehen (QR beim Bau lokal erzeugt, er führt wieder auf
-// /app/). Für das iPhone ist die Weiterleitung vorgesehen (ios.oeffentlich). Solange die App nicht öffentlich ist,
-// steht hier nur „Bald bei Google Play“. Die Seite gilt für beide Sprachen; der türkische Teil trägt lang="tr".
+// /app/). iPhone und iPad bleiben auf der Seite und lesen, dass es Tarot Cup nur für Android gibt. Solange die App
+// nicht öffentlich ist, steht hier nur „Bald bei Google Play“. Die Seite gilt für beide Sprachen; der türkische Teil
+// trägt lang="tr".
 // noindex, nicht in Sitemap und llms.txt. Nichts wird gespeichert, nichts von anderen Anbietern geladen.
 import QRCode from 'qrcode';
 import '../../styles/dokument.css';
 import Basis from '../../layouts/Basis.astro';
 import Storeknopf from '../../components/Storeknopf.astro';
 import Text from '../../components/Text.astro';
-import { ios, seite, store, storeLink } from '../../daten/seite.mjs';
+import { seite, store, storeLink } from '../../daten/seite.mjs';
 import { oberflaeche } from '../../daten/texte/oberflaeche.mjs';
 
 const ziel = store.oeffentlich ? storeLink('kurzlink') : null;
 const qr = store.oeffentlich
   ? await QRCode.toString(`${seite.adresse}/app/`, { type: 'svg', margin: 1, errorCorrectionLevel: 'M', color: { dark: '#12162B', light: '#FFFDF8' } })
   : null;
-const weiter = { android: ziel, ios: ios.oeffentlich ? ios.adresse : null };
+const weiter = { android: ziel };
 ---
 <Basis klasse="seite-app">
   <div class="innen schmal app-seite">
@@ -38,7 +39,7 @@ const weiter = { android: ziel, ios: ios.oeffentlich ? ios.adresse : null };
               <Storeknopf sprache={sprache} ort="kurzlink" />
             </>
           )}
-          {!ios.oeffentlich && <Text text={T.iphone} klasse="app-iphone" />}
+          <Text text={T.iphone} klasse="app-iphone" />
         </section>
       );
     })}
@@ -49,21 +50,20 @@ const weiter = { android: ziel, ios: ios.oeffentlich ? ios.adresse : null };
       </figure>
     )}
   </div>
-  {(weiter.android || weiter.ios) && (
+  {weiter.android && (
     <script type="application/json" id="app-weiter" set:html={JSON.stringify(weiter)} />
   )}
 </Basis>
 
 <script>
-  // Weiterleitung nur, wenn die Seite ein Ziel nennt (App öffentlich). Erkennung allein am User-Agent, nichts wird
-  // gespeichert oder gesendet.
+  // Weiterleitung nur für Android und nur, wenn die Seite ein Ziel nennt (App öffentlich). Erkennung allein am
+  // User-Agent, nichts wird gespeichert oder gesendet.
   const daten = document.getElementById('app-weiter');
   if (daten) {
     try {
-      const { android, ios } = JSON.parse(daten.textContent);
+      const { android } = JSON.parse(daten.textContent);
       const kennung = navigator.userAgent;
       if (android && /Android/i.test(kennung)) window.location.replace(android);
-      else if (ios && /iPhone|iPad|iPod/i.test(kennung)) window.location.replace(ios);
     } catch {
       // Die Seite mit den Links bleibt stehen.
     }

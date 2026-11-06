@@ -6,7 +6,6 @@ import { tarot } from './texte/tarot.mjs';
 
 const fest = [
   { text: 'Google Play', lang: 'en' },
-  { text: 'App Store', lang: 'en' },
   { text: 'GitHub Pages', lang: 'en' },
   { text: 'SIL Open Font License', lang: 'en' },
   { text: 'Wikimedia Commons', lang: 'en' },

@@ -79,7 +79,7 @@ export const fragen = {
       {
         id: 'iphone',
         frage: 'Gibt es die App fürs iPhone?',
-        antwort: ['Noch nicht. Tarot Cup gibt es derzeit nur für Android.'],
+        antwort: ['Nein. Tarot Cup gibt es nur für Android. Eine Fassung fürs iPhone ist nicht geplant.'],
       },
       {
         id: 'zeichen',
@@ -182,7 +182,7 @@ export const fragen = {
       {
         id: 'iphone',
         frage: 'iPhone için uygulama var mı?',
-        antwort: ['Henüz değil. Tarot Cup şimdilik yalnızca Android için var.'],
+        antwort: ['Hayır. Tarot Cup yalnızca Android için var. iPhone sürümü planlanmıyor.'],
       },
       {
         id: 'zeichen',
