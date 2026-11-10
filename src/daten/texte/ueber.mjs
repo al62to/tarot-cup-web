@@ -17,7 +17,7 @@ export const ueber = {
         kennung: 'was-sie-ist',
         titel: 'Was ist Tarot Cup?',
         absaetze: [
-          'Mit Tarot Cup legst du Tarotkarten und liest den Kaffeesatz in deiner Tasse selbst. Du ziehst deine Karten, wählst die Zeichen, die du in der Tasse erkennst, und liest, was die Tradition dazu erzählt. Die App gibt es für Android, auf Deutsch und auf Türkisch.',
+          'Mit Tarot Cup legst du Tarotkarten und liest den Kaffeesatz in deiner Tasse selbst. Du ziehst deine Karten, wählst die Zeichen, die du in der Tasse erkennst, und liest, was die Tradition dazu erzählt. Die App gibt es für Android, auf Deutsch, Türkisch, Englisch und Spanisch. Sie startet in der Sprache deines Handys; umstellen kannst du in der App.',
           'Jede Legung hat ihren eigenen Rhythmus. Dazwischen ruhen die Karten, und du hast Zeit, über eine Deutung nachzudenken.',
         ],
       },
@@ -59,7 +59,7 @@ export const ueber = {
         kennung: 'was-sie-ist',
         titel: 'Tarot Cup nedir?',
         absaetze: [
-          'Tarot Cup ile tarot kartlarını açar, fincanındaki telveyi kendin yorumlarsın. Kartlarını çeker, fincanda gördüğün işaretleri seçer ve gelenekte neye karşılık geldiklerini okursun. Uygulama Android için, Türkçe ve Almanca olarak hazır.',
+          'Tarot Cup ile tarot kartlarını açar, fincanındaki telveyi kendin yorumlarsın. Kartlarını çeker, fincanda gördüğün işaretleri seçer ve gelenekte neye karşılık geldiklerini okursun. Uygulama Android için Türkçe, Almanca, İngilizce ve İspanyolca olarak hazır. Telefonunun dilinde açılır; dili uygulamanın içinden değiştirebilirsin.',
           'Her açılımın kendi zamanı var. Aradaki günlerde kartlar dinlenir; sen de yorumun üzerine düşünmeye vakit bulursun.',
         ],
       },
