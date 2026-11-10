@@ -11,7 +11,7 @@
    "kennung": "erster-start",
    "titel": "¿Qué ocurre al iniciar por primera vez?",
    "absaetze": [
-    "La primera vez que abres la app eliges el idioma y, después de «Te damos la bienvenida», tocas «Continuar». En el paso «Antes de empezar» confirmas que tienes al menos 16 años y aceptas las Condiciones de uso con «Aceptar y continuar». Una breve introducción presenta la carta del día, los posos del café, el tarot y el Diccionario; con «Omitir» puedes saltarla. Al final, la app te pregunta si quieres que te recuerde tu carta del día por la mañana."
+    "La primera vez que abres la app, aparece en el idioma de tu teléfono; después de «Te damos la bienvenida», tocas «Continuar». En el paso «Antes de empezar» confirmas que tienes al menos 16 años y aceptas las Condiciones de uso con «Aceptar y continuar». Una breve introducción presenta la carta del día, los posos del café, el tarot y el Diccionario; con «Omitir» puedes saltarla. Al final, la app te pregunta si quieres que te recuerde tu carta del día por la mañana."
    ],
    "foto": "01_erster_start",
    "alt": "El paso «Antes de empezar» con la casilla marcada para la edad, los enlaces a la Política de privacidad y las Condiciones de uso y el botón «Aceptar y continuar»."
@@ -83,10 +83,10 @@
    "kennung": "sprache",
    "titel": "¿Cómo cambio el idioma?",
    "absaetze": [
-    "Arriba del todo en «Configuración», en «Idioma», eliges entre «Deutsch» y «Türkçe». La app cambia al instante, con independencia del idioma de tu teléfono. También las lecturas anteriores del Historial, el Diccionario, los textos legales y el recordatorio aparecen entonces en el nuevo idioma; tus notas se quedan como las escribiste."
+    "Arriba del todo en «Configuración», en «Idioma», eliges entre «Deutsch», «Türkçe», «English» y «Español». Si no eliges ninguno, la app sigue el idioma de tu teléfono y, con cualquier otro idioma del teléfono, se muestra en inglés. La app cambia al instante. También las lecturas anteriores del Historial, el Diccionario, los textos legales y el recordatorio aparecen entonces en el nuevo idioma; tus notas se quedan como las escribiste."
    ],
    "foto": "09_sprache",
-   "alt": "La parte superior de la Configuración con la sección «Idioma» y los botones «Deutsch» y «Türkçe»."
+   "alt": "La parte superior de la Configuración con la sección «Idioma» y los botones de los cuatro idiomas."
   }
  ],
  "abschluss": {

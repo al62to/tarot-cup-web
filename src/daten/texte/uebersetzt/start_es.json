@@ -31,7 +31,7 @@
     "text": "Símbolos para los posos del café, con búsqueda y categorías"
    },
    {
-    "zahl": "2",
+    "zahl": "4",
     "text": "Idiomas, alemán, turco, inglés y español"
    },
    {
@@ -146,7 +146,7 @@
   "sprachen": {
    "gross": "DE / TR / EN / ES",
    "titel": "Alemán, turco, inglés y español",
-   "text": "Toda la app en ambos idiomas."
+   "text": "Toda la app en cada uno de los cuatro idiomas."
   }
  },
  "vorteile": [

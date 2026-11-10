@@ -7,7 +7,7 @@
 export const start = {
   de: {
     metaTitel: 'Kaffeesatz lesen und Tarot legen per App | Tarot Cup',
-    metaBeschreibung: 'Mit der Android-App Tarot Cup liest du Kaffeesatz selbst mit 80 Zeichen und legst Tarot mit 78 Karten, auf Deutsch und Türkisch und ohne Internet.',
+    metaBeschreibung: 'Mit der Android-App Tarot Cup liest du Kaffeesatz selbst mit 80 Zeichen und legst Tarot mit 78 Karten, in vier Sprachen und ohne Internet.',
     ogTitel: 'Kaffeesatz lesen. Tarot legen.',
     kopf: {
       zeile: 'Tarot Cup · App für Android',
@@ -31,7 +31,7 @@ export const start = {
       liste: [
         { zahl: '78', text: 'Tarotkarten, im Lexikon aufrecht und umgekehrt' },
         { zahl: '80', text: 'Zeichen für den Kaffeesatz, mit Suche und Kategorien' },
-        { zahl: '2', text: 'Sprachen, Deutsch und Türkisch' },
+        { zahl: '4', text: 'Sprachen: Deutsch, Türkisch, Englisch und Spanisch' },
         { zahl: '0', text: 'Konten, kein Internet nötig' },
       ],
     },
@@ -88,7 +88,7 @@ export const start = {
           { name: 'Liebe', takt: 'wöchentlich' },
         ],
       },
-      sprachen: { gross: 'DE / TR', titel: 'Deutsch und Türkisch', text: 'Die ganze App in beiden Sprachen.' },
+      sprachen: { gross: 'DE / TR / EN / ES', titel: 'Deutsch, Türkisch, Englisch, Spanisch', text: 'Die ganze App in jeder der vier Sprachen.' },
     },
     // Texte unverändert aus AP-W1; "id" ordnet sie den Kacheln zu.
     vorteile: [
@@ -130,7 +130,7 @@ export const start = {
 
   tr: {
     metaTitel: 'Kahve falı ve tarot uygulaması | Tarot Cup',
-    metaBeschreibung: 'Tarot Cup bir Android uygulaması: 80 işaretle kahve falını kendin yorumla, 78 kartla tarot aç. Türkçe ve Almanca, internetsiz ve üyeliksiz.',
+    metaBeschreibung: 'Tarot Cup bir Android uygulaması: 80 işaretle kahve falını kendin yorumla, 78 kartla tarot aç. Dört dilde, internetsiz ve üyeliksiz.',
     ogTitel: 'Kahve falı ve tarot, kendi elinle',
     kopf: {
       zeile: 'Tarot Cup · Android uygulaması',
@@ -151,7 +151,7 @@ export const start = {
       liste: [
         { zahl: '78', text: 'tarot kartı, sözlükte düz ve ters anlamıyla' },
         { zahl: '80', text: 'kahve falı işareti, arama ve kategorilerle' },
-        { zahl: '2', text: 'dil: Türkçe ve Almanca' },
+        { zahl: '4', text: 'dil: Türkçe, Almanca, İngilizce ve İspanyolca' },
         { zahl: '0', text: 'üyelik adımı, internet de gerekmez' },
       ],
     },
@@ -204,7 +204,7 @@ export const start = {
           { name: 'Aşk', takt: 'haftada bir' },
         ],
       },
-      sprachen: { gross: 'TR / DE', titel: 'Türkçe ve Almanca', text: 'Uygulamanın tamamı iki dilde.' },
+      sprachen: { gross: 'TR / DE / EN / ES', titel: 'Türkçe, Almanca, İngilizce, İspanyolca', text: 'Uygulamanın tamamı dört dilde.' },
     },
     vorteile: [
       { id: 'bleibt', titel: 'Sende kalır', text: 'Geçmişini ve notlarını uygulama telefonunda saklar. Benim bunlara erişimim yok.' },

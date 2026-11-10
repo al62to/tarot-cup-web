@@ -31,7 +31,7 @@
     "text": "symbols for coffee grounds, with search and categories"
    },
    {
-    "zahl": "2",
+    "zahl": "4",
     "text": "Languages: German, Turkish, English, and Spanish"
    },
    {
@@ -146,7 +146,7 @@
   "sprachen": {
    "gross": "DE / TR / EN / ES",
    "titel": "German, Turkish, English, and Spanish",
-   "text": "The entire app in both languages."
+   "text": "The entire app in each of the four languages."
   }
  },
  "vorteile": [

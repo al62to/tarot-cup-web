@@ -23,9 +23,9 @@
   },
   {
    "id": "tuerkisch",
-   "frage": "¿Existe la aplicación en turco?",
+   "frage": "¿En qué idiomas está la app?",
    "antwort": [
-    "Sí. Tarot Cup está por completo en alemán y por completo en turco: la interfaz, las lecturas, el Diccionario y los textos legales. Eliges el idioma en el primer inicio y puedes cambiarlo después en la Configuración."
+    "Tarot Cup está por completo en español, inglés, alemán y turco: la interfaz, las lecturas, el Diccionario y los textos legales. La app empieza en el idioma de tu teléfono y puedes cambiarlo cuando quieras en la Configuración."
    ]
   },
   {
@@ -89,7 +89,7 @@
    "id": "sprache",
    "frage": "¿Puedo cambiar el idioma?",
    "antwort": [
-    "Sí. En el primer inicio eliges alemán o turco. Después puedes cambiarlo en la Configuración de la app, con independencia del idioma de tu teléfono.",
+    "Sí. La app empieza en el idioma de tu teléfono si es español, inglés, alemán o turco; si no, en inglés. Puedes cambiarlo cuando quieras en la Configuración de la app, con independencia del idioma de tu teléfono.",
     "La app muestra entonces también las lecturas anteriores del Historial en el nuevo idioma. Tus notas se quedan tal como las escribiste."
    ]
   },

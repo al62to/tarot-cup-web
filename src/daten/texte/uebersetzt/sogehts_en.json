@@ -11,7 +11,7 @@
    "kennung": "erster-start",
    "titel": "What happens at the first start?",
    "absaetze": [
-    "When you open the app for the first time, you choose the language and tap “Continue” after “Welcome”. In the “Before you begin” step, you confirm that you are at least 16 years old and accept the Terms of Use with “Accept and continue”. A short introduction presents the Card of the Day, coffee grounds, tarot, and the Dictionary; you can leave it out with “Skip”. Finally, the app asks whether it should remind you about your Card of the Day in the morning."
+    "When you open the app for the first time, it appears in your phone’s language; tap “Continue” after “Welcome”. In the “Before you begin” step, you confirm that you are at least 16 years old and accept the Terms of Use with “Accept and continue”. A short introduction presents the Card of the Day, coffee grounds, tarot, and the Dictionary; you can leave it out with “Skip”. Finally, the app asks whether it should remind you about your Card of the Day in the morning."
    ],
    "foto": "01_erster_start",
    "alt": "The “Before you begin” step with the age box checked, the links to the Privacy Policy and the Terms of Use, and the “Accept and continue” button."
@@ -83,10 +83,10 @@
    "kennung": "sprache",
    "titel": "How do I change the language?",
    "absaetze": [
-    "At the very top of “Settings”, under “Language”, you choose between “Deutsch” and “Türkçe”. The app switches right away, regardless of your phone’s language. Earlier readings in History, the Dictionary, the legal texts, and the reminder then appear in the new language too; your notes stay as you wrote them."
+    "At the very top of “Settings”, under “Language”, you choose between “Deutsch”, “Türkçe”, “English”, and “Español”. Without a choice of your own, the app follows your phone’s language and shows English for any other phone language. The app switches right away. Earlier readings in History, the Dictionary, the legal texts, and the reminder then appear in the new language too; your notes stay as you wrote them."
    ],
    "foto": "09_sprache",
-   "alt": "The top part of the settings with the “Language” section and the “Deutsch” and “Türkçe” buttons."
+   "alt": "The top part of the settings with the “Language” section and the buttons for the four languages."
   }
  ],
  "abschluss": {

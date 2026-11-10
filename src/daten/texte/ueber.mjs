@@ -7,7 +7,7 @@
 export const ueber = {
   de: {
     metaTitel: 'Über Tarot Cup: was die App ist und was nicht',
-    metaBeschreibung: 'Tarot Cup ist eine App für Tarot und Kaffeesatz auf Deutsch und Türkisch. Hier steht, was sie ist und was sie nicht ist.',
+    metaBeschreibung: 'Tarot Cup ist eine App für Tarot und Kaffeesatz auf Deutsch, Türkisch, Englisch und Spanisch. Hier steht, was sie ist und was sie nicht ist.',
     titel: 'Über Tarot Cup',
     vorspann: 'Tarot Cup ist eine ruhige App für Tarot und Kaffeesatz. Hier steht, was sie ist und was sie nicht ist.',
     ogTitel: 'Über Tarot Cup',
@@ -49,7 +49,7 @@ export const ueber = {
 
   tr: {
     metaTitel: 'Tarot Cup hakkında: uygulama nedir, ne değildir',
-    metaBeschreibung: 'Tarot Cup, Türkçe ve Almanca bir tarot ve kahve falı uygulaması. Ne olduğunu ve ne olmadığını burada bulursun.',
+    metaBeschreibung: 'Tarot Cup; Türkçe, Almanca, İngilizce ve İspanyolca bir tarot ve kahve falı uygulaması. Ne olduğunu ve ne olmadığını burada bulursun.',
     titel: 'Tarot Cup hakkında',
     vorspann: 'Tarot Cup, tarot ve kahve falı için sakin bir uygulama. Bu sayfada ne olduğunu ve ne olmadığını bulursun.',
     ogTitel: 'Tarot Cup hakkında',

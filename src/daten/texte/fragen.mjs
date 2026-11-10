@@ -31,7 +31,7 @@ export const fragen = {
         id: 'tuerkisch',
         frage: 'Gibt es die App auf Türkisch?',
         antwort: [
-          'Ja. Tarot Cup gibt es ganz auf Deutsch und ganz auf Türkisch: Bedienung, Deutungen, Lexikon und Rechtstexte. Die Sprache wählst du beim ersten Start und wechselst sie später in den Einstellungen.',
+          'Ja. Tarot Cup gibt es ganz auf Deutsch, Türkisch, Englisch und Spanisch: Bedienung, Deutungen, Lexikon und Rechtstexte. Die App startet in der Sprache deines Handys; wechseln kannst du sie jederzeit in den Einstellungen.',
         ],
       },
       {
@@ -93,7 +93,7 @@ export const fragen = {
         id: 'sprache',
         frage: 'Kann ich die Sprache wechseln?',
         antwort: [
-          'Ja. Beim ersten Start wählst du Deutsch oder Türkisch. Später wechselst du in den Einstellungen der App, unabhängig von der Sprache deines Handys.',
+          'Ja. Die App startet in der Sprache deines Handys, wenn es Deutsch, Türkisch, Englisch oder Spanisch ist, sonst auf Englisch. In den Einstellungen der App wechselst du jederzeit, unabhängig von der Sprache deines Handys.',
           'Auch frühere Deutungen im Verlauf zeigt die App dann in der neuen Sprache. Deine Notizen bleiben so, wie du sie geschrieben hast.',
         ],
       },
@@ -134,7 +134,7 @@ export const fragen = {
         id: 'tuerkisch',
         frage: 'Uygulamayı Türkçe kullanabilir miyim?',
         antwort: [
-          'Evet. Tarot Cup baştan sona Türkçe ve baştan sona Almanca kullanılabilir: menüler, yorumlar, sözlük ve hukuki metinler. Dili ilk açılışta seçer, sonra istersen Ayarlar’dan değiştirirsin.',
+          'Evet. Tarot Cup baştan sona Türkçe, Almanca, İngilizce ve İspanyolca kullanılabilir: menüler, yorumlar, sözlük ve hukuki metinler. Uygulama telefonunun dilinde açılır; dili istediğin zaman Ayarlar’dan değiştirebilirsin.',
         ],
       },
       {
@@ -196,7 +196,7 @@ export const fragen = {
         id: 'sprache',
         frage: 'Dili değiştirebilir miyim?',
         antwort: [
-          'Evet. İlk açılışta Türkçe ya da Almanca seçersin. Sonra uygulamanın Ayarlar bölümünden, telefonunun dilinden bağımsız olarak değiştirebilirsin.',
+          'Evet. Telefonun Türkçe, Almanca, İngilizce ya da İspanyolcaysa uygulama o dilde, başka bir dildeyse İngilizce açılır. Dili istediğin zaman uygulamanın Ayarlar bölümünden, telefonunun dilinden bağımsız olarak değiştirebilirsin.',
           'Geçmişteki eski yorumlar da yeni dilde görünür. Notların ise yazdığın gibi kalır.',
         ],
       },
