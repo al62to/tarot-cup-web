@@ -3,11 +3,27 @@
   "breite": 1080,
   "hoehe": 2160
  },
+ "app/01_start_tageskarte-en": {
+  "breite": 1080,
+  "hoehe": 2160
+ },
+ "app/01_start_tageskarte-es": {
+  "breite": 1080,
+  "hoehe": 2160
+ },
  "app/01_start_tageskarte-tr": {
   "breite": 1080,
   "hoehe": 2160
  },
  "app/03_deutung_drei_karten-de": {
+  "breite": 1080,
+  "hoehe": 2160
+ },
+ "app/03_deutung_drei_karten-en": {
+  "breite": 1080,
+  "hoehe": 2160
+ },
+ "app/03_deutung_drei_karten-es": {
   "breite": 1080,
   "hoehe": 2160
  },
@@ -19,11 +35,27 @@
   "breite": 1080,
   "hoehe": 2160
  },
+ "app/05_kaffee_tasse-en": {
+  "breite": 1080,
+  "hoehe": 2160
+ },
+ "app/05_kaffee_tasse-es": {
+  "breite": 1080,
+  "hoehe": 2160
+ },
  "app/05_kaffee_tasse-tr": {
   "breite": 1080,
   "hoehe": 2160
  },
  "sogehts/01_erster_start-de": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/01_erster_start-en": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/01_erster_start-es": {
   "breite": 1080,
   "hoehe": 2400
  },
@@ -35,11 +67,27 @@
   "breite": 1080,
   "hoehe": 2400
  },
+ "sogehts/02_tageskarte-en": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/02_tageskarte-es": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
  "sogehts/02_tageskarte-tr": {
   "breite": 1080,
   "hoehe": 2400
  },
  "sogehts/03_tarot-de": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/03_tarot-en": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/03_tarot-es": {
   "breite": 1080,
   "hoehe": 2400
  },
@@ -51,11 +99,27 @@
   "breite": 1080,
   "hoehe": 2400
  },
+ "sogehts/04_kaffeesatz-en": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/04_kaffeesatz-es": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
  "sogehts/04_kaffeesatz-tr": {
   "breite": 1080,
   "hoehe": 2400
  },
  "sogehts/05_lexikon-de": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/05_lexikon-en": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/05_lexikon-es": {
   "breite": 1080,
   "hoehe": 2400
  },
@@ -67,11 +131,27 @@
   "breite": 1080,
   "hoehe": 2400
  },
+ "sogehts/06_verlauf-en": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/06_verlauf-es": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
  "sogehts/06_verlauf-tr": {
   "breite": 1080,
   "hoehe": 2400
  },
  "sogehts/07_erinnerung-de": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/07_erinnerung-en": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/07_erinnerung-es": {
   "breite": 1080,
   "hoehe": 2400
  },
@@ -83,11 +163,27 @@
   "breite": 1080,
   "hoehe": 1620
  },
+ "sogehts/08_teilen-en": {
+  "breite": 1080,
+  "hoehe": 1620
+ },
+ "sogehts/08_teilen-es": {
+  "breite": 1080,
+  "hoehe": 1620
+ },
  "sogehts/08_teilen-tr": {
   "breite": 1080,
   "hoehe": 1620
  },
  "sogehts/09_sprache-de": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/09_sprache-en": {
+  "breite": 1080,
+  "hoehe": 2400
+ },
+ "sogehts/09_sprache-es": {
   "breite": 1080,
   "hoehe": 2400
  },
