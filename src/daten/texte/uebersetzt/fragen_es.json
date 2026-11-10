@@ -1,0 +1,104 @@
+{
+ "metaTitel": "Preguntas frecuentes: tarot y posos de café | Tarot Cup",
+ "metaBeschreibung": "Respuestas sobre Tarot Cup, app de tarot y lectura de posos de café: si predice el futuro, por qué una tirada descansa y si hace falta Internet.",
+ "titel": "Preguntas frecuentes",
+ "vorspann": "Aquí encontrarás respuestas a las preguntas más frecuentes sobre Tarot Cup. Si echas algo en falta, escríbeme.",
+ "ogTitel": "Preguntas frecuentes sobre Tarot Cup",
+ "brotkrume": "Preguntas",
+ "liste": [
+  {
+   "id": "zukunft",
+   "frage": "¿La app predice el futuro?",
+   "antwort": [
+    "No. Las lecturas siguen antiguas tradiciones en torno al tarot y los posos del café. Qué encaja contigo lo decides tú.",
+    "Con fines de entretenimiento. Las lecturas no son una predicción ni un asesoramiento. No predicen el futuro ni sustituyen el consejo de profesionales."
+   ]
+  },
+  {
+   "id": "foto-der-tasse",
+   "frage": "¿Necesito una foto de mi taza?",
+   "antwort": [
+    "No. La app no necesita cámara ni foto. Miras tú en tu taza, eliges entre los 80 símbolos las formas que reconoces y marcas en el mapa de la taza dónde están. De ahí surge la lectura."
+   ]
+  },
+  {
+   "id": "tuerkisch",
+   "frage": "¿Existe la aplicación en turco?",
+   "antwort": [
+    "Sí. Tarot Cup está por completo en alemán y por completo en turco: la interfaz, las lecturas, el Diccionario y los textos legales. Eliges el idioma en el primer inicio y puedes cambiarlo después en la Configuración."
+   ]
+  },
+  {
+   "id": "fragen-gespeichert",
+   "frage": "¿Se guardan mis preguntas?",
+   "antwort": [
+    "No. La app no tiene ningún campo para tu pregunta: te la guardas en silencio. No te la pide ni la guarda.",
+    "En el Historial, la app anota lo que has consultado: la fecha y la hora, el tipo de tirada, las cartas (también si salieron invertidas) o los símbolos con su ubicación en la taza; en los posos del café, además, el área de la vida y tu nota, si escribes una. Tu pregunta nunca está entre esos datos."
+   ]
+  },
+  {
+   "id": "internet",
+   "frage": "¿Necesito conexión a Internet?",
+   "antwort": [
+    "No. Tarot Cup no tiene permiso para conectarse a Internet. Las tiradas, el Diccionario y el Historial funcionan sin ninguna conexión, y también el recordatorio de la carta del día lo programa la app en tu teléfono."
+   ]
+  },
+  {
+   "id": "konto",
+   "frage": "¿Necesito una cuenta?",
+   "antwort": [
+    "No. No hay registro ni cuenta, y la app no te pide tu dirección de correo electrónico. Tampoco hay publicidad."
+   ]
+  },
+  {
+   "id": "legung-gesperrt",
+   "frage": "¿Por qué a veces está bloqueada una tirada?",
+   "antwort": [
+    "Cada tirada tiene su propio ritmo. Carta del día y Sí o no están disponibles cada día; Tres cartas y la lectura completa de los posos del café, cada tres días; la tirada Amor, una vez por semana. Entre medias, la tirada descansa.",
+    "La app te muestra cuándo vuelve a estar disponible, por ejemplo: «Mañana puedes volver a tirar las cartas.». Una tirada vuelve a estar disponible a medianoche, según la hora de tu teléfono. El Diccionario y el Historial están siempre abiertos.",
+    "En los posos del café, con uno o dos símbolos hay una lectura breve. No cuenta para el ritmo, pero está limitada a tres al día.",
+    "En raras ocasiones hay un segundo motivo: cuando hay una nueva versión de las Condiciones de uso, puedes aceptarla de inmediato o decidir más tarde. Si no la aceptas en un plazo de 30 días, no hay nuevas tiradas hasta que la aceptes. El Historial, las notas y el Diccionario siguen abiertos."
+   ]
+  },
+  {
+   "id": "notizen",
+   "frage": "¿Qué ocurre con mis notas?",
+   "antwort": [
+    "A cada lectura del Historial puedes añadir una nota, por ejemplo: ¿Qué ha resultado de ello? La app guarda las notas y el Historial en tu teléfono. No tengo acceso a ellos. En la imagen que compartes no aparecen tus notas.",
+    "Una entrada con su nota la eliminas en el Historial con «Eliminar entrada». No se puede deshacer.",
+    "Si tienes activada la copia de seguridad de tu teléfono, Android puede guardar el Historial, las notas, el idioma y la hora del recordatorio en tu cuenta de Google. Al cambiar a un teléfono nuevo, Android puede trasladarlos. El ritmo de las tiradas y la confirmación de edad no se guardan: pertenecen a cada teléfono.",
+    "Más información en la [Política de privacidad](/es/privacidad/)."
+   ]
+  },
+  {
+   "id": "iphone",
+   "frage": "¿Existe la aplicación para iPhone?",
+   "antwort": [
+    "No. Tarot Cup solo está disponible para Android. No está prevista una versión para iPhone."
+   ]
+  },
+  {
+   "id": "zeichen",
+   "frage": "¿Cuántos símbolos conoce la aplicación?",
+   "antwort": [
+    "Para los posos del café, la app conoce 80 símbolos en seis categorías: Animales, Personas y figuras, Objetos, Naturaleza y lugares, Formas, y Letras y números. Los encuentras por categorías o con la búsqueda, también por otros nombres con los que se conoce una forma.",
+    "Si ves una forma que no está entre ellos, elige «Forma que no encuentro». Una lectura admite hasta ocho símbolos. Para el tarot, la app conoce las 78 cartas."
+   ]
+  },
+  {
+   "id": "sprache",
+   "frage": "¿Puedo cambiar el idioma?",
+   "antwort": [
+    "Sí. En el primer inicio eliges alemán o turco. Después puedes cambiarlo en la Configuración de la app, con independencia del idioma de tu teléfono.",
+    "La app muestra entonces también las lecturas anteriores del Historial en el nuevo idioma. Tus notas se quedan tal como las escribiste."
+   ]
+  },
+  {
+   "id": "alter",
+   "frage": "¿A partir de qué edad se puede usar Tarot Cup?",
+   "antwort": [
+    "A partir de 16 años. En el primer inicio confirmas que tienes al menos 16 años y aceptas las [Condiciones de uso](/es/condiciones-de-uso/). Sin eso no se puede continuar."
+   ]
+  }
+ ]
+}

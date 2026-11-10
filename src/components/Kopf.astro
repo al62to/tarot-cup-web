@@ -1,26 +1,30 @@
 ---
-// Kopf (Entwurf 9.1: Espresso, feine goldene Linie unten): Marke, Hauptnavigation (Tarot · Kaffeesatz · So geht's · Fragen), Sprachwahl DE/TR, Knopf „App laden“ (/app/).
+// Kopf (Entwurf 9.1: Espresso, feine goldene Linie unten): Marke, Hauptnavigation (Tarot · Kaffeesatz · So geht's · Fragen), Sprachwahl DE/TR/EN/ES, Knopf „App laden“ (/app/).
 // Am Handy ein schlichtes Menü zum Aufklappen (Muster FoodAsu, ohne Mega-Menü). Ohne JavaScript steht das Menü offen
 // da. Zustand nur in aria-expanded; nichts wird gespeichert.
-// Sprachwahl: immer die Gegenseite; gibt es keine, die Startseite der anderen Sprache.
+// Sprachwahl: je Sprache dieselbe Seite in dieser Sprache; gibt es sie nicht, die Startseite der Sprache. Reihenfolge
+// wie in src/daten/adressen.mjs, Namen in eigener Schreibweise (title).
 import Marke from './Marke.astro';
 import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
 import { pfadVon, startPfad } from '../daten/seiten.mjs';
+import { SPRACHEN, SPRACHNAMEN, SPRACHKUERZEL } from '../daten/adressen.mjs';
 
 const { angaben } = Astro.props;
-const { sprache, pfad, gegenseite } = angaben;
+const { sprache, pfad, fassungen } = angaben;
 const T = oberflaeche[sprache];
-const andere = sprache === 'de' ? 'tr' : 'de';
 const punkte = [
   { text: T.nav.tarot, ziel: pfadVon('tarot', sprache) },
   { text: T.nav.kaffeesatz, ziel: pfadVon('kaffeesatz', sprache) },
   { text: T.nav.sogehts, ziel: pfadVon('sogehts', sprache) },
   { text: T.nav.fragen, ziel: pfadVon('fragen', sprache) },
 ];
-const sprachen = [
-  { code: sprache, text: T.spracheKurz, name: T.sprache, ziel: pfad, aktuell: true },
-  { code: andere, text: oberflaeche[andere].spracheKurz, name: oberflaeche[andere].sprache, ziel: gegenseite ?? startPfad(andere), aktuell: false },
-].sort((a, b) => (a.code === 'de' ? -1 : b.code === 'de' ? 1 : 0));
+const sprachen = SPRACHEN.map((code) => ({
+  code,
+  text: SPRACHKUERZEL[code],
+  name: SPRACHNAMEN[code],
+  ziel: code === sprache ? pfad : fassungen?.find((fassung) => fassung.sprache === code)?.pfad ?? startPfad(code),
+  aktuell: code === sprache,
+}));
 ---
 <header class="kopf flaeche-dunkel">
   <div class="innen kopf-innen" data-nav>

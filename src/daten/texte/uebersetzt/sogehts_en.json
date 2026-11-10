@@ -1,0 +1,96 @@
+{
+ "metaTitel": "How It Works: Tarot & Coffee Cup Reading App | Tarot Cup",
+ "metaBeschreibung": "The Tarot Cup guide in nine short chapters: first start, Card of the Day, drawing tarot cards, reading your own coffee cup, Dictionary, History, and more.",
+ "titel": "How it works",
+ "vorspann": "Nine short chapters with screenshots, from the first start to changing the language. Buttons and screens are named here as they are in the app.",
+ "ogTitel": "How Tarot Cup works: tarot and coffee cup reading",
+ "brotkrume": "How it works",
+ "inhaltTitel": "Chapters",
+ "kapitel": [
+  {
+   "kennung": "erster-start",
+   "titel": "What happens at the first start?",
+   "absaetze": [
+    "When you open the app for the first time, you choose the language and tap “Continue” after “Welcome”. In the “Before you begin” step, you confirm that you are at least 16 years old and accept the Terms of Use with “Accept and continue”. A short introduction presents the Card of the Day, coffee grounds, tarot, and the Dictionary; you can leave it out with “Skip”. Finally, the app asks whether it should remind you about your Card of the Day in the morning."
+   ],
+   "foto": "01_erster_start",
+   "alt": "The “Before you begin” step with the age box checked, the links to the Privacy Policy and the Terms of Use, and the “Accept and continue” button."
+  },
+  {
+   "kennung": "tageskarte",
+   "titel": "How do I get my Card of the Day?",
+   "absaetze": [
+    "At the very top of the home screen, your Card of the Day lies face down. When you tap it, it turns face up; below it are its short meaning and “Read more” for the full reading. It stays the same card all day, even if you open the app again, and from midnight a new face-down card is waiting. Every Card of the Day also appears in History."
+   ],
+   "foto": "02_tageskarte",
+   "alt": "The home screen with a revealed Card of the Day, its short meaning, and “Read more”, and below them the “Draw tarot cards” and “Read coffee grounds” tiles."
+  },
+  {
+   "kennung": "tarot-legen",
+   "titel": "How do I draw tarot cards?",
+   "absaetze": [
+    "Via “Draw tarot cards”, you choose “Yes or No”, “Three Cards”, or “Love” and quietly think of your question. You shuffle by swiping over the deck, choose your cards from the fan once “Shuffled” appears, and after “On to revealing” you turn them over one by one. “See your overall reading” shows what they tell together. After that, the spread rests: Yes or No is available again the next day, Three Cards after three days, Love after a week, each from midnight."
+   ],
+   "foto": "03_tarot",
+   "alt": "The Three Cards spread with three revealed cards under Past, Present, and Future, and the “See your overall reading” button."
+  },
+  {
+   "kennung": "kaffeesatz",
+   "titel": "How do I read coffee grounds myself?",
+   "absaetze": [
+    "When you have finished your Turkish coffee, tap “Read coffee grounds” and choose an area of life. Under “Choose symbols”, you look for up to eight of the 80 symbols and place each one on the cup map where it belongs: rim, middle, bottom, or saucer. With three or more symbols, you get the full reading, every three days; one or two symbols give a short reading, up to three times a day. How to prepare the cup the traditional way is explained in the [coffee cup reading guide](/en/coffee-cup-reading/)."
+   ],
+   "foto": "04_kaffeesatz",
+   "alt": "The cup map “Where are the symbols placed?”: the cup seen from above with the handle on the right, several symbols placed on it, and below it the “View reading” button."
+  },
+  {
+   "kennung": "lexikon",
+   "titel": "How do I find a card or symbol in the Dictionary?",
+   "absaetze": [
+    "In the “Dictionary” tab, you switch between “Tarot” and “Coffee grounds” at the top. You filter the 78 cards by “Major Arcana” and the four suits; you find the 80 symbols through the search or the categories. Every entry explains the meaning: for cards upright and reversed, for symbols also how to recognize them in the cup. The Dictionary is always available and needs no internet."
+   ],
+   "foto": "05_lexikon",
+   "alt": "The Dictionary in the “Coffee grounds” part, with a search field, categories, and a list of symbols with line drawings and short meanings."
+  },
+  {
+   "kennung": "verlauf",
+   "titel": "Where can I find previous readings and notes?",
+   "absaetze": [
+    "Every reading lands in the “History” tab automatically, the newest at the top, with its date and type. When you tap an entry, the full reading opens; in the “Your note” field, you record what came of it, and the app saves it right away. With “Delete entry”, after a confirmation, you remove an entry from the app for good. The app stores your history and notes on your phone."
+   ],
+   "foto": "06_verlauf",
+   "alt": "An open entry from History with the reading, the filled-in “Your note” field, and the buttons for sharing and deleting."
+  },
+  {
+   "kennung": "erinnerung",
+   "titel": "How do I set the reminder for the Card of the Day?",
+   "absaetze": [
+    "Under “Settings”, turn on “Card of the Day reminder” and below it set the “Time” in hours and five-minute steps. If Android asks whether the app may send notifications, allow it; without permission, the switch stays off. The reminder comes every day at about the chosen time and does not reveal the card."
+   ],
+   "foto": "07_erinnerung",
+   "alt": "The settings with “Card of the Day reminder” turned on, and the time, which you can set with minus and plus."
+  },
+  {
+   "kennung": "teilen",
+   "titel": "How do I share a reading?",
+   "absaetze": [
+    "Below a reading there is “Share as image”, also for entries in History. The app turns it into an image with the type of reading, the date, the names of the cards or symbols, a short sentence from the reading, and the name “Tarot Cup”. Your question is not on it; the app does not know it. You choose where the image goes in Android’s share menu."
+   ],
+   "foto": "08_teilen",
+   "alt": "The share image on a dark background: the type of reading and the date at the top, the names of the cards and a sentence in quotation marks in the middle, “Tarot Cup” at the bottom."
+  },
+  {
+   "kennung": "sprache",
+   "titel": "How do I change the language?",
+   "absaetze": [
+    "At the very top of “Settings”, under “Language”, you choose between “Deutsch” and “Türkçe”. The app switches right away, regardless of your phone’s language. Earlier readings in History, the Dictionary, the legal texts, and the reminder then appear in the new language too; your notes stay as you wrote them."
+   ],
+   "foto": "09_sprache",
+   "alt": "The top part of the settings with the “Language” section and the “Deutsch” and “Türkçe” buttons."
+  }
+ ],
+ "abschluss": {
+  "titel": "Any more questions?",
+  "text": "Short answers, for example whether the app needs internet or why a reading is resting right now, can be found in the [FAQ](/en/faq/)."
+ }
+}

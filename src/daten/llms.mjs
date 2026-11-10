@@ -1,10 +1,14 @@
-// Inhalt von /llms.txt (Deutsch) und /tr/llms.txt (Türkisch) nach dem Format von llmstxt.org: Überschrift, ein Absatz
-// als Zitat, kurze Angaben, was die App ist und was nicht, dann die wichtigsten Seiten mit ihrer Beschreibung. Nur Seiten
-// im Index; die rechtlichen Seiten tragen noindex und stehen nicht darin (AP-W3).
+// Inhalt von /llms.txt (Deutsch) und /<sprache>/llms.txt (Türkisch, Englisch, Spanisch) nach dem Format von
+// llmstxt.org: Überschrift, ein Absatz als Zitat, kurze Angaben, was die App ist und was nicht, dann die wichtigsten
+// Seiten mit ihrer Beschreibung. Nur Seiten im Index; die rechtlichen Seiten tragen noindex und stehen nicht darin
+// (AP-W3). Am Ende die Links zu llms.txt in den anderen Sprachen, mit dem Sprachnamen in eigener Schreibweise (AP-SPR2).
 import { seite, store } from './seite.mjs';
 import { SEITEN } from './seiten.mjs';
 import { start } from './texte/start.mjs';
 import { llmsTexte } from './texte/llms.mjs';
+import { SPRACHNAMEN, startVon } from './adressen.mjs';
+
+export const llmsPfad = (sprache) => `${startVon(sprache)}llms.txt`;
 
 export function llmsText(sprache) {
   const T = llmsTexte[sprache];
@@ -24,8 +28,8 @@ export function llmsText(sprache) {
     `## ${T.seiten}`,
     ...['start', 'tarot', 'kaffeesatz', 'sogehts', 'fragen', 'ueber'].map(link),
     '',
-    `## ${T.andereSprache}`,
-    `- ${T.andereLink}`,
+    `## ${T.weitereSprachen}`,
+    ...seite.sprachen.filter((andere) => andere !== sprache).map((andere) => `- [${SPRACHNAMEN[andere]}](${seite.adresse}${llmsPfad(andere)})`),
     '',
   ];
   return zeilen.join('\n');

@@ -7,17 +7,19 @@
 // Bereiche und einer dunklen Anzeige mit Name und Bedeutung (aria-live); der gewählte Bereich leuchtet in Gold. Ohne
 // JavaScript stehen die Karte mit allen Beschriftungen und die Bedeutungen als Liste da, ohne Knöpfe.
 // Die Bedeutungen ("bedeutung" in den Bereichen) stammen aus der App 0.4.0 (arbeit/apw2/belege_start.md).
+import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
+
 const { sprache, bereiche = [], spiel = null } = Astro.props;
+const B = oberflaeche[sprache].bilder;
 const ERSATZ = {
   de: { rand: 'Rand', mitte: 'Mitte', boden: 'Boden', henkelseite: 'Henkelseite', gegenueber: 'gegenüber', untertasse: 'Untertasse' },
   tr: { rand: 'Ağız', mitte: 'Orta', boden: 'Dip', henkelseite: 'Kulp tarafı', gegenueber: 'Karşı taraf', untertasse: 'Tabak' },
 };
-const name = (schluessel) => bereiche.find((bereich) => bereich.bereich === schluessel)?.name ?? ERSATZ[sprache][schluessel];
+// Ohne Liste gelten die Namen der App (nur de und tr; die Seiten geben die Bereiche immer mit).
+const name = (schluessel) => bereiche.find((bereich) => bereich.bereich === schluessel)?.name ?? ERSATZ[sprache]?.[schluessel];
 // Im Bild steht „gegenüber“ kurz, auch wenn die Liste „Gegenüber vom Henkel“ sagt.
-const kurz = (schluessel) => (schluessel === 'gegenueber' ? ERSATZ[sprache].gegenueber : name(schluessel));
-const label = sprache === 'de'
-  ? `Tassenkarte von oben: ${name('rand')}, ${name('mitte')} und ${name('boden')}, links ${name('gegenueber')}, rechts die ${name('henkelseite')} mit dem Henkel, darunter die ${name('untertasse')}`
-  : `Yukarıdan fincan haritası: ${name('rand')}, ${name('mitte')} ve ${name('boden')}; solda ${name('gegenueber')}, sağda ${name('henkelseite')} ve kulp, altta ${name('untertasse')}`;
+const kurz = (schluessel) => (schluessel === 'gegenueber' ? B.gegenueberKurz : name(schluessel));
+const label = B.tassenkarte.replace(/\{(\w+)\}/g, (_, schluessel) => name(schluessel));
 if (spiel && bereiche.some((bereich) => !bereich.bedeutung)) throw new Error('Tassenkarte: Für die Kachel braucht jeder Bereich eine Bedeutung');
 const erster = bereiche[0];
 ---

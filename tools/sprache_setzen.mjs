@@ -12,7 +12,7 @@ const kodiert = (text) => text.replace(/&/g, '&amp;').replace(/'/g, "(?:'|&#39;|
 const klar = (fund) => fund.replace(/&#39;|&#x27;|&apos;/g, "'").replace(/&amp;/g, '&');
 
 export function ausdruckFuer(sprache) {
-  const liste = begriffe.filter((eintrag) => !eintrag.nur || eintrag.nur === sprache);
+  const liste = begriffe.filter((eintrag) => !eintrag.nur || eintrag.nur.includes(sprache));
   if (!liste.length) return null;
   const quelle = liste.map(({ text }) => kodiert(maskiert(text))).join('|');
   return {

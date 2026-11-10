@@ -1,0 +1,204 @@
+{
+ "metaTitel": "Tarot & Coffee Cup Reading App for Android | Tarot Cup",
+ "metaBeschreibung": "Tarot Cup is an Android app for coffee cup reading with 80 symbols and tarot readings with 78 cards, in four languages and offline.",
+ "ogTitel": "Read your coffee cup. Draw tarot cards.",
+ "kopf": {
+  "zeile": "Tarot Cup · App for Android",
+  "zeilen": [
+   "Read your coffee cup *yourself*.",
+   "Draw tarot cards *at your own pace*."
+  ],
+  "text": "Choose the symbols from your cup, show on the cup map where they are, and read what they can mean. Or draw tarot cards at your own pace. The app works without internet and without an account.",
+  "knopf": "View on Google Play",
+  "bald": "Coming soon to Google Play",
+  "anleitung": "How it works",
+  "karte": {
+   "tipp": "Tap the card and turn it over.",
+   "satz": "Its meaning, upright and reversed, can be found in the app’s Dictionary.",
+   "umdrehen": "Turn card over",
+   "zurueck": "Turn card “{name}” back over"
+  }
+ },
+ "zahlen": {
+  "aria": "Tarot Cup in numbers",
+  "liste": [
+   {
+    "zahl": "78",
+    "text": "Tarot cards, upright and reversed in the Dictionary"
+   },
+   {
+    "zahl": "80",
+    "text": "symbols for coffee grounds, with search and categories"
+   },
+   {
+    "zahl": "2",
+    "text": "Languages: German, Turkish, English, and Spanish"
+   },
+   {
+    "zahl": "0",
+    "text": "accounts, no internet needed"
+   }
+  ]
+ },
+ "wasIst": {
+  "titel": "What is Tarot Cup?",
+  "text": "Tarot Cup is an Android app for drawing tarot cards and reading the coffee grounds in your cup yourself. It is available in German and in Turkish. It is meant for people aged 16 and over and works without internet and without an account. The readings follow old traditions and are meant for entertainment."
+ },
+ "tasse": {
+  "zeile": "The ritual",
+  "titel": "How to read *your cup*",
+  "schritte": [
+   "Think of your question and finish your Turkish coffee. Turn the cup upside down onto the saucer and let it cool. You keep your question to yourself; the app does not ask for it.",
+   "Turn the cup slowly and look for the shapes among the 80 symbols.",
+   "Show on the cup map where each symbol is. With three or more symbols, you get the full reading."
+  ],
+  "link": {
+   "text": "More about coffee cup reading",
+   "ziel": "/en/coffee-cup-reading/"
+  }
+ },
+ "tassenkarte": {
+  "titel": "The cup map",
+  "hinweis": "Choose an area",
+  "gruppe": "Choose an area of the cup",
+  "bereiche": [
+   {
+    "bereich": "rand",
+    "name": "Rim",
+    "bedeutung": "the near term"
+   },
+   {
+    "bereich": "mitte",
+    "name": "Middle",
+    "bedeutung": "now"
+   },
+   {
+    "bereich": "boden",
+    "name": "Bottom",
+    "bedeutung": "further ahead"
+   },
+   {
+    "bereich": "henkelseite",
+    "name": "Handle side",
+    "bedeutung": "you, your home"
+   },
+   {
+    "bereich": "gegenueber",
+    "name": "Opposite",
+    "bedeutung": "the world outside"
+   },
+   {
+    "bereich": "untertasse",
+    "name": "Saucer",
+    "bedeutung": "your wish"
+   }
+  ]
+ },
+ "schaukasten": {
+  "titel": "This is what *Tarot Cup* looks like",
+  "gruppe": "Choose a screen",
+  "eintraege": [
+   {
+    "foto": "01_start_tageskarte",
+    "titel": "Card of the Day",
+    "text": "A card for the day, refreshed each day."
+   },
+   {
+    "foto": "03_deutung_drei_karten",
+    "titel": "Three Cards",
+    "text": "Past, present, and future with a reading that connects all three."
+   },
+   {
+    "foto": "05_kaffee_tasse",
+    "titel": "Cup map",
+    "text": "Show where your symbols lie in the cup."
+   }
+  ]
+ },
+ "koennen": {
+  "titel": "What the app *can* do",
+  "ruhe": {
+   "titel": "Calm, not endless",
+   "text": "Each reading has its rhythm. In between, the cards rest.",
+   "pillen": [
+    {
+     "name": "Card of the Day",
+     "takt": "daily"
+    },
+    {
+     "name": "Yes or No",
+     "takt": "daily"
+    },
+    {
+     "name": "Three Cards",
+     "takt": "every 3 days"
+    },
+    {
+     "name": "Read it yourself",
+     "takt": "every 3 days"
+    },
+    {
+     "name": "Love",
+     "takt": "weekly"
+    }
+   ]
+  },
+  "sprachen": {
+   "gross": "DE / TR / EN / ES",
+   "titel": "German, Turkish, English, and Spanish",
+   "text": "The entire app in both languages."
+  }
+ },
+ "vorteile": [
+  {
+   "id": "bleibt",
+   "titel": "Stays with you",
+   "text": "The app stores your history and notes on your phone. I have no access to them."
+  },
+  {
+   "id": "internet",
+   "titel": "Without internet",
+   "text": "The app does not have permission to access the internet."
+  },
+  {
+   "id": "konto",
+   "titel": "No account needed",
+   "text": "No sign-up or email address required in the app."
+  }
+ ],
+ "ratgeber": {
+  "titel": "*Understanding* tarot and coffee cup reading",
+  "zeile": "Guide",
+  "eintraege": [
+   {
+    "titel": "How do you do a tarot reading?",
+    "text": "The 78 cards, upright and reversed, the app’s spreads, and the ritual step by step.",
+    "link": "To the tarot guide",
+    "ziel": "/en/tarot/"
+   },
+   {
+    "titel": "How do you read coffee grounds?",
+    "text": "From the Turkish coffee to the read cup: the ritual, the areas of the cup, and common symbols.",
+    "link": "To the coffee cup reading guide",
+    "ziel": "/en/coffee-cup-reading/"
+   }
+  ]
+ },
+ "fotos": {
+  "alt": {
+   "01_start_tageskarte": "The app’s home screen with the revealed Card of the Day, the Magician, and below it the “Draw tarot cards” and “Read coffee grounds” tiles",
+   "03_deutung_drei_karten": "The “Three Cards” spread with the Empress, Wheel of Fortune, and the Queen of Cups for Past, Present, and Future, and below it the beginning of the reading",
+   "05_kaffee_tasse": "The cup map seen from above with rim, middle, bottom, handle side, and opposite, three placed symbols, and the saucer below"
+  }
+ },
+ "fragen": {
+  "titel": "Frequently asked *questions*",
+  "ids": [
+   "zukunft",
+   "foto-der-tasse",
+   "tuerkisch",
+   "fragen-gespeichert"
+  ],
+  "alle": "All questions"
+ }
+}

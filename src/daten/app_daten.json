@@ -11,11 +11,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Vogel",
-    "tr": "Kuş"
+    "tr": "Kuş",
+    "en": "Bird",
+    "es": "Pájaro"
    },
    "kurz": {
     "de": "Der Vogel gilt als Bote und steht für eine Nachricht, meist eine, über die man sich freuen kann.",
-    "tr": "Kuş fincanın habercisidir; çoğu zaman yüz güldüren bir haberin işaretidir."
+    "tr": "Kuş fincanın habercisidir; çoğu zaman yüz güldüren bir haberin işaretidir.",
+    "en": "The bird is seen as a messenger and stands for a message, usually one that can make you glad.",
+    "es": "El pájaro se considera un mensajero y simboliza una noticia, generalmente algo que puede alegrarte."
    }
   },
   {
@@ -23,11 +27,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Fisch",
-    "tr": "Balık"
+    "tr": "Balık",
+    "en": "Fish",
+    "es": "Pez"
    },
    "kurz": {
     "de": "Der Fisch gilt als klassisches Zeichen für Kısmet, für glückliche Fügungen und eine heitere, leichte Stimmung.",
-    "tr": "Balık, fincanda en sevilen kısmet işaretlerinden biridir; güzel tesadüfleri ve ferah bir gönlü anlatır."
+    "tr": "Balık, fincanda en sevilen kısmet işaretlerinden biridir; güzel tesadüfleri ve ferah bir gönlü anlatır.",
+    "en": "The fish is a classic symbol for kismet, pointing to happy coincidences and a light, cheerful mood.",
+    "es": "El pez se considera un símbolo clásico del kısmet, de los giros afortunados y de un ánimo alegre y ligero."
    }
   },
   {
@@ -35,11 +43,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Schlange",
-    "tr": "Yılan"
+    "tr": "Yılan",
+    "en": "Snake",
+    "es": "Serpiente"
    },
    "kurz": {
     "de": "Die Schlange ist ein Zeichen der Wandlung: Sie steht dafür, eine alte Haut abzustreifen und mit wacher Klugheit neu zu beginnen.",
-    "tr": "Yılan kabuk değiştirmenin işaretidir; eskiyi geride bırakıp sakin bir akılla yeniden başlamayı anlatır."
+    "tr": "Yılan kabuk değiştirmenin işaretidir; eskiyi geride bırakıp sakin bir akılla yeniden başlamayı anlatır.",
+    "en": "The snake is a symbol of transformation: it may represent shedding an old skin and beginning anew with clear-eyed wisdom.",
+    "es": "La serpiente es un símbolo de transformación: representa mudar una piel vieja y empezar de nuevo con una inteligencia despierta."
    }
   },
   {
@@ -47,11 +59,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Pferd",
-    "tr": "At"
+    "tr": "At",
+    "en": "Horse",
+    "es": "Caballo"
    },
    "kurz": {
     "de": "Das Pferd steht für einen Herzenswunsch, der sich erfüllen kann.",
-    "tr": "At murattır; gönlünden geçen dileğin gerçekleşebileceğine işaret eder."
+    "tr": "At murattır; gönlünden geçen dileğin gerçekleşebileceğine işaret eder.",
+    "en": "The horse may represent a heartfelt wish that can come true.",
+    "es": "El caballo puede representar un deseo del corazón que tiene la posibilidad de cumplirse."
    }
   },
   {
@@ -59,11 +75,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Kamel",
-    "tr": "Deve"
+    "tr": "Deve",
+    "en": "Camel",
+    "es": "Camello"
    },
    "kurz": {
     "de": "Das Kamel verkörpert Ausdauer, ruhige Kraft und ein Kısmet, das sich Zeit lässt.",
-    "tr": "Deve sebatın ve sakin gücün işaretidir; acele etmeyen bir kısmeti anlatır."
+    "tr": "Deve sebatın ve sakin gücün işaretidir; acele etmeyen bir kısmeti anlatır.",
+    "en": "The camel embodies endurance, quiet strength, and a kismet that takes its time.",
+    "es": "El camello encarna la resistencia, una fuerza serena y un kısmet que se toma su tiempo."
    }
   },
   {
@@ -71,11 +91,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Hund",
-    "tr": "Köpek"
+    "tr": "Köpek",
+    "en": "Dog",
+    "es": "Perro"
    },
    "kurz": {
     "de": "Der Hund steht für Treue und Freundschaft, für einen Menschen, auf den man zählen kann.",
-    "tr": "Köpek vefanın ve dostluğun işaretidir; sadakatin insana verdiği gücü anlatır."
+    "tr": "Köpek vefanın ve dostluğun işaretidir; sadakatin insana verdiği gücü anlatır.",
+    "en": "The dog stands for loyalty and friendship, for someone you can count on.",
+    "es": "El perro simboliza lealtad y amistad, y representa a una persona en quien puedes confiar."
    }
   },
   {
@@ -83,11 +107,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Schmetterling",
-    "tr": "Kelebek"
+    "tr": "Kelebek",
+    "en": "Butterfly",
+    "es": "Mariposa"
    },
    "kurz": {
     "de": "Der Schmetterling ist ein Bild für leichte, schöne Glücksmomente und für eine sanfte Verwandlung.",
-    "tr": "Kelebek, tüy kadar hafif mutluluk anlarının ve usulca gelen bir değişimin işaretidir."
+    "tr": "Kelebek, tüy kadar hafif mutluluk anlarının ve usulca gelen bir değişimin işaretidir.",
+    "en": "The butterfly is a symbol of light, beautiful moments of joy and gentle transformation.",
+    "es": "La mariposa es un símbolo de momentos felices y ligeros, así como de una transformación suave."
    }
   },
   {
@@ -95,11 +123,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Elefant",
-    "tr": "Fil"
+    "tr": "Fil",
+    "en": "Elephant",
+    "es": "Elefante"
    },
    "kurz": {
     "de": "Der Elefant verkörpert Kraft, Beständigkeit und Weisheit, ein Glück, das auf festem Boden steht.",
-    "tr": "Fil güç, sebat ve bilgeliğin işaretidir; ayakları yere sağlam basan bir talihi anlatır."
+    "tr": "Fil güç, sebat ve bilgeliğin işaretidir; ayakları yere sağlam basan bir talihi anlatır.",
+    "en": "The elephant embodies strength, stability, and wisdom—a kind of luck that rests on solid ground.",
+    "es": "El elefante encarna fuerza, estabilidad y sabiduría, una dicha que se asienta sobre un firme fundamento."
    }
   },
   {
@@ -107,11 +139,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Schildkröte",
-    "tr": "Kaplumbağa"
+    "tr": "Kaplumbağa",
+    "en": "Turtle",
+    "es": "Tortuga"
    },
    "kurz": {
     "de": "Die Schildkröte steht für einen Wunsch, der langsam, aber stetig seinem Ziel entgegengeht.",
-    "tr": "Kaplumbağa, yavaş ama emin adımlarla gerçekleşmeye giden bir dileği anlatır."
+    "tr": "Kaplumbağa, yavaş ama emin adımlarla gerçekleşmeye giden bir dileği anlatır.",
+    "en": "The turtle represents a wish that moves slowly but steadily toward its goal.",
+    "es": "La tortuga representa un deseo que avanza hacia su meta con lentitud, pero con constancia."
    }
   },
   {
@@ -119,11 +155,15 @@
    "kategorie": "mensch",
    "name": {
     "de": "Menschenfigur",
-    "tr": "İnsan"
+    "tr": "İnsan",
+    "en": "Human figure",
+    "es": "Figura humana"
    },
    "kurz": {
     "de": "Eine Menschengestalt kann auf eine Begegnung, auf Rückhalt oder auf ein frohes Beisammensein deuten.",
-    "tr": "İnsan şekli bir karşılaşmaya, sırtını yaslayabileceğin bir desteğe ya da neşeli bir kalabalığa işaret edebilir."
+    "tr": "İnsan şekli bir karşılaşmaya, sırtını yaslayabileceğin bir desteğe ya da neşeli bir kalabalığa işaret edebilir.",
+    "en": "A human figure can suggest an encounter, support, or joyful togetherness.",
+    "es": "Una figura humana puede apuntar a un encuentro, a un apoyo o a una reunión alegre."
    }
   },
   {
@@ -131,11 +171,15 @@
    "kategorie": "mensch",
    "name": {
     "de": "Gesicht",
-    "tr": "Yüz"
+    "tr": "Yüz",
+    "en": "Face",
+    "es": "Rostro"
    },
    "kurz": {
     "de": "Ein Gesicht kann auf eine Nachricht oder eine Freude deuten, und sein Ausdruck gibt dem Bild seine Farbe.",
-    "tr": "Yüz, bir haberin ya da bir sevincin işareti olabilir; ona rengini veren, ifadesidir."
+    "tr": "Yüz, bir haberin ya da bir sevincin işareti olabilir; ona rengini veren, ifadesidir.",
+    "en": "A face can point to a message or a moment of joy, and its expression gives the image its tone.",
+    "es": "Un rostro puede indicar una noticia o un momento de alegría, y su expresión da tono a la imagen."
    }
   },
   {
@@ -143,11 +187,15 @@
    "kategorie": "mensch",
    "name": {
     "de": "Auge",
-    "tr": "Göz"
+    "tr": "Göz",
+    "en": "Eye",
+    "es": "Ojo"
    },
    "kurz": {
     "de": "Das Auge bedeutet wache Aufmerksamkeit und einen klaren Blick, mit dem du Zusammenhänge erkennen kannst.",
-    "tr": "Göz, uyanık bir dikkatin ve berrak bir bakışın işaretidir; olup biteni açık seçik görebilmeni anlatır."
+    "tr": "Göz, uyanık bir dikkatin ve berrak bir bakışın işaretidir; olup biteni açık seçik görebilmeni anlatır.",
+    "en": "The eye means alert attention and a clear view with which you can recognize connections.",
+    "es": "El ojo simboliza una atención despierta y una mirada clara que te permite percibir las conexiones entre las cosas."
    }
   },
   {
@@ -155,11 +203,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Ring",
-    "tr": "Yüzük"
+    "tr": "Yüzük",
+    "en": "Ring",
+    "es": "Anillo"
    },
    "kurz": {
     "de": "Der Ring steht für ein Versprechen und eine Bindung, in der Liebe wie in anderen Lebensbereichen.",
-    "tr": "Yüzük söz demektir; gönül bağını ve verilip tutulan sözü anlatır."
+    "tr": "Yüzük söz demektir; gönül bağını ve verilip tutulan sözü anlatır.",
+    "en": "The ring can represent a promise and a bond, whether in love or in other areas of life.",
+    "es": "El anillo representa una promesa y un vínculo, tanto en el amor como en otras áreas de la vida."
    }
   },
   {
@@ -167,11 +219,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Schlüssel",
-    "tr": "Anahtar"
+    "tr": "Anahtar",
+    "en": "Key",
+    "es": "Llave"
    },
    "kurz": {
     "de": "Der Schlüssel ist ein Zeichen des Öffnens: neue Möglichkeiten, eine Lösung und oft ein eigenes Zuhause.",
-    "tr": "Anahtar kapı açar; yeni fırsatları, bir çözümü ve çoğu zaman kendini evinde hissetmeyi anlatır."
+    "tr": "Anahtar kapı açar; yeni fırsatları, bir çözümü ve çoğu zaman kendini evinde hissetmeyi anlatır.",
+    "en": "The key is a symbol of opening: new possibilities, a solution, and often your own home.",
+    "es": "La llave es un símbolo de apertura: pueden surgir nuevas posibilidades, una solución y, a menudo, tu propio hogar."
    }
   },
   {
@@ -179,11 +235,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Haus",
-    "tr": "Ev"
+    "tr": "Ev",
+    "en": "House",
+    "es": "Casa"
    },
    "kurz": {
     "de": "Das Haus bedeutet das eigene Heim: Geborgenheit, Familie und ein Zuhause, in dem man sich wohlfühlt.",
-    "tr": "Ev, yuvanın sıcaklığını, aile huzurunu ve insanın kendini evinde hissetmesini anlatır."
+    "tr": "Ev, yuvanın sıcaklığını, aile huzurunu ve insanın kendini evinde hissetmesini anlatır.",
+    "en": "The house means your own home: a sense of shelter, family, and a home where you feel at ease.",
+    "es": "La casa representa el propio hogar: amparo, familia y un lugar en el que sentirse a gusto."
    }
   },
   {
@@ -191,11 +251,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Tür",
-    "tr": "Kapı"
+    "tr": "Kapı",
+    "en": "Door",
+    "es": "Puerta"
    },
    "kurz": {
     "de": "Die Tür deutet auf eine Gelegenheit, die sich öffnen kann und zum Hindurchgehen einlädt.",
-    "tr": "Kapı, kişinin önünde aralanan yeni bir fırsatın, açılmayı bekleyen bir kısmetin işaretidir."
+    "tr": "Kapı, kişinin önünde aralanan yeni bir fırsatın, açılmayı bekleyen bir kısmetin işaretidir.",
+    "en": "The door suggests an opportunity that may open and invite you to step through.",
+    "es": "La puerta sugiere una oportunidad que puede abrirse e invita a cruzar el umbral."
    }
   },
   {
@@ -203,11 +267,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Leiter",
-    "tr": "Merdiven"
+    "tr": "Merdiven",
+    "en": "Ladder",
+    "es": "Escalera de mano"
    },
    "kurz": {
     "de": "Die Leiter zeigt einen Aufstieg, der Stufe um Stufe gelingen kann.",
-    "tr": "Merdiven, her basamağı tek tek çıkılan bir yükselişin, sabırla varılan bir hedefin işaretidir."
+    "tr": "Merdiven, her basamağı tek tek çıkılan bir yükselişin, sabırla varılan bir hedefin işaretidir.",
+    "en": "The ladder suggests that an ascent can unfold step by step.",
+    "es": "La escalera de mano sugiere que un ascenso puede lograrse paso a paso."
    }
   },
   {
@@ -215,11 +283,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Krone",
-    "tr": "Taç"
+    "tr": "Taç",
+    "en": "Crown",
+    "es": "Corona"
    },
    "kurz": {
     "de": "Die Krone ist ein Zeichen für Anerkennung, Ehre und den Aufstieg zu einer geachteten Stellung.",
-    "tr": "Taç, emeğin görülüp takdir edilmesinin, söz sahibi bir konumun ve itibarın işaretidir."
+    "tr": "Taç, emeğin görülüp takdir edilmesinin, söz sahibi bir konumun ve itibarın işaretidir.",
+    "en": "The crown is a symbol of recognition, honor, and the rise to a respected position.",
+    "es": "La corona es un símbolo de reconocimiento, honor y el ascenso a una posición respetada."
    }
   },
   {
@@ -227,11 +299,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Fahne",
-    "tr": "Bayrak"
+    "tr": "Bayrak",
+    "en": "Flag",
+    "es": "Bandera"
    },
    "kurz": {
     "de": "Die Fahne deutet auf eine Aufgabe in der Gemeinschaft oder eine willkommene Nachricht rund um deine Arbeit.",
-    "tr": "Bayrak, başkalarıyla birlikte yürütülebilecek ortak bir işin ya da emeğinle ilgili sevindirici bir haberin işaretidir."
+    "tr": "Bayrak, başkalarıyla birlikte yürütülebilecek ortak bir işin ya da emeğinle ilgili sevindirici bir haberin işaretidir.",
+    "en": "The flag suggests a task within your community or a welcome message related to your work.",
+    "es": "La bandera apunta a una tarea en la comunidad o a una noticia bienvenida relacionada con tu trabajo."
    }
   },
   {
@@ -239,11 +315,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Brief",
-    "tr": "Zarf"
+    "tr": "Zarf",
+    "en": "Envelope",
+    "es": "Sobre"
    },
    "kurz": {
     "de": "Mit dem Brief verbindet sich eine Nachricht, die Neuigkeiten oder Klarheit bringen kann.",
-    "tr": "Zarf haberin işaretidir; sana ulaşabilecek bir mektubu ya da birkaç satırlık bir bilgiyi anlatır."
+    "tr": "Zarf haberin işaretidir; sana ulaşabilecek bir mektubu ya da birkaç satırlık bir bilgiyi anlatır.",
+    "en": "The envelope suggests a message that may bring news or clarity.",
+    "es": "Con el sobre se asocia un mensaje que puede traer noticias o claridad."
    }
   },
   {
@@ -251,11 +331,15 @@
    "kategorie": "form",
    "name": {
     "de": "Weg",
-    "tr": "Yol"
+    "tr": "Yol",
+    "en": "Path",
+    "es": "Camino"
    },
    "kurz": {
     "de": "Der Weg steht für Bewegung, eine Reise oder einen neuen Abschnitt, der sich öffnet.",
-    "tr": "Yol, fincanda bir yolculuğun, bir hareketin ya da önde açılan yeni bir dönemin işaretidir."
+    "tr": "Yol, fincanda bir yolculuğun, bir hareketin ya da önde açılan yeni bir dönemin işaretidir.",
+    "en": "The path can represent movement, a journey, or a new chapter that is opening up for you.",
+    "es": "El camino simboliza movimiento, un viaje o una nueva etapa que se abre ante ti."
    }
   },
   {
@@ -263,11 +347,15 @@
    "kategorie": "form",
    "name": {
     "de": "Herz",
-    "tr": "Kalp"
+    "tr": "Kalp",
+    "en": "Heart",
+    "es": "Corazón"
    },
    "kurz": {
     "de": "Das Herz steht für Liebe, Zuneigung und Verbundenheit mit Menschen, die einem nahe sind.",
-    "tr": "Kalp, sevginin, gönül yakınlığının ve içten bağlılığın işaretidir."
+    "tr": "Kalp, sevginin, gönül yakınlığının ve içten bağlılığın işaretidir.",
+    "en": "The heart stands for love, affection, and a bond with the people who are close to you.",
+    "es": "El corazón representa el amor, el afecto y el vínculo con las personas que te son cercanas."
    }
   },
   {
@@ -275,11 +363,15 @@
    "kategorie": "form",
    "name": {
     "de": "Kreis",
-    "tr": "Daire"
+    "tr": "Daire",
+    "en": "Circle",
+    "es": "Círculo"
    },
    "kurz": {
     "de": "Der Kreis deutet auf ein Vorhaben, das sich runden und vollenden kann.",
-    "tr": "Daire, bütünlenebilecek bir işin ve yerine oturan bir düzenin işaretidir."
+    "tr": "Daire, bütünlenebilecek bir işin ve yerine oturan bir düzenin işaretidir.",
+    "en": "The circle may suggest an undertaking that can come full circle and reach completion.",
+    "es": "El círculo apunta a un proyecto que puede redondearse y completarse."
    }
   },
   {
@@ -287,11 +379,15 @@
    "kategorie": "form",
    "name": {
     "de": "Dreieck",
-    "tr": "Üçgen"
+    "tr": "Üçgen",
+    "en": "Triangle",
+    "es": "Triángulo"
    },
    "kurz": {
     "de": "Das Dreieck gilt als Zeichen für Schwung, Fortschritt und eine glückliche Wendung.",
-    "tr": "Üçgen, ileriye doğru bir atılımın, güç kazanan işlerin ve hayırlı bir gelişmenin işaretidir."
+    "tr": "Üçgen, ileriye doğru bir atılımın, güç kazanan işlerin ve hayırlı bir gelişmenin işaretidir.",
+    "en": "The triangle is seen as a sign of momentum, progress, and a fortunate turn of events.",
+    "es": "El triángulo se considera un símbolo de dinamismo, progreso y un giro favorable."
    }
   },
   {
@@ -299,11 +395,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Baum",
-    "tr": "Ağaç"
+    "tr": "Ağaç",
+    "en": "Tree",
+    "es": "Árbol"
    },
    "kurz": {
     "de": "Der Baum steht für Glück, das sich ausbreitet, für festen Halt und eine Arbeit, die Früchte trägt.",
-    "tr": "Ağaç, kök salıp genişleyen kısmetin, sağlam bir dayanağın ve emeğin meyve vermesinin işaretidir."
+    "tr": "Ağaç, kök salıp genişleyen kısmetin, sağlam bir dayanağın ve emeğin meyve vermesinin işaretidir.",
+    "en": "The tree stands for good fortune that spreads, for firm support, and for work that bears fruit.",
+    "es": "El árbol simboliza la felicidad que se expande, el apoyo firme y un trabajo que da frutos."
    }
   },
   {
@@ -311,11 +411,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Berg",
-    "tr": "Dağ"
+    "tr": "Dağ",
+    "en": "Mountain",
+    "es": "Montaña"
    },
    "kurz": {
     "de": "Der Berg ist ein Bild für ein großes Ziel, für Aufstieg und Ansehen.",
-    "tr": "Dağ, büyük bir hedefin, yükselişin ve itibarın işaretidir."
+    "tr": "Dağ, büyük bir hedefin, yükselişin ve itibarın işaretidir.",
+    "en": "The mountain represents a significant goal, symbolizing ascent and recognition.",
+    "es": "La montaña es una imagen de un gran objetivo, del ascenso y del reconocimiento."
    }
   },
   {
@@ -323,11 +427,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Mond",
-    "tr": "Ay"
+    "tr": "Ay",
+    "en": "Moon",
+    "es": "Luna"
    },
    "kurz": {
     "de": "Der Mond ist ein Bild der Erleichterung: Sorgen können sich lichten, und es kann hell werden im Zuhause wie im Herzen.",
-    "tr": "Ay, yüreğe ve haneye doğan ferahlığın, dağılan dertlerin ve gelen huzurun işaretidir."
+    "tr": "Ay, yüreğe ve haneye doğan ferahlığın, dağılan dertlerin ve gelen huzurun işaretidir.",
+    "en": "The moon is an image of relief: worries can clear, and it can grow light at home as well as in the heart.",
+    "es": "La luna es una imagen de alivio: las preocupaciones pueden disiparse y puede haber claridad tanto en el hogar como en el corazón."
    }
   },
   {
@@ -335,11 +443,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Sonne",
-    "tr": "Güneş"
+    "tr": "Güneş",
+    "en": "Sun",
+    "es": "Sol"
    },
    "kurz": {
     "de": "Die Sonne steht für Licht, Glück und eine helle, leichte Zeit.",
-    "tr": "Güneş, aydınlığın, mutluluğun ve ferah bir dönemin işaretidir."
+    "tr": "Güneş, aydınlığın, mutluluğun ve ferah bir dönemin işaretidir.",
+    "en": "The sun can represent light, happiness, and a bright, easy time ahead.",
+    "es": "El sol representa luz, felicidad y un momento claro y ligero."
    }
   },
   {
@@ -347,11 +459,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Stern",
-    "tr": "Yıldız"
+    "tr": "Yıldız",
+    "en": "Star",
+    "es": "Estrella"
    },
    "kurz": {
     "de": "Der Stern steht für Glück, Glanz und Wünsche, die in Erfüllung gehen können.",
-    "tr": "Yıldız, parlayan talihin, yükselişin ve gerçekleşebilecek dileklerin işaretidir."
+    "tr": "Yıldız, parlayan talihin, yükselişin ve gerçekleşebilecek dileklerin işaretidir.",
+    "en": "The star stands for luck, radiance, and wishes that can come true.",
+    "es": "La estrella representa la suerte, el brillo y deseos que pueden cumplirse."
    }
   },
   {
@@ -359,11 +475,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Blume",
-    "tr": "Çiçek"
+    "tr": "Çiçek",
+    "en": "Flower",
+    "es": "Flor"
    },
    "kurz": {
     "de": "Die Blume ist ein Zeichen für Freude, Wohlbefinden und schöne Entwicklungen, besonders in der Liebe.",
-    "tr": "Çiçek, açan kısmetin, içe yayılan ferahlığın ve güzel günlerin işaretidir."
+    "tr": "Çiçek, açan kısmetin, içe yayılan ferahlığın ve güzel günlerin işaretidir.",
+    "en": "The flower is a symbol of joy, well-being, and beautiful developments, especially in love.",
+    "es": "La flor es un símbolo de alegría, bienestar y cambios bonitos, sobre todo en el amor."
    }
   },
   {
@@ -371,11 +491,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Pfau",
-    "tr": "Tavus kuşu"
+    "tr": "Tavus kuşu",
+    "en": "Peacock",
+    "es": "Pavo real"
    },
    "kurz": {
     "de": "Der Pfau ist ein Zeichen für Fülle, Farbenpracht und ein schönes Kısmet.",
-    "tr": "Tavus kuşu, renk renk açılan bir güzelliğin ve insanı sevindiren bir kısmetin işaretidir."
+    "tr": "Tavus kuşu, renk renk açılan bir güzelliğin ve insanı sevindiren bir kısmetin işaretidir.",
+    "en": "The peacock can be a sign of abundance, vibrant colors, and a beautiful kismet.",
+    "es": "El pavo real es un símbolo de abundancia, esplendor cromático y un hermoso kısmet."
    }
   },
   {
@@ -383,11 +507,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Löwe",
-    "tr": "Aslan"
+    "tr": "Aslan",
+    "en": "Lion",
+    "es": "León"
    },
    "kurz": {
     "de": "Der Löwe ist ein Bild ruhiger Kraft und des Mutes, dich selbst und das, was dir wichtig ist, zu schützen.",
-    "tr": "Aslan, sende saklı sakin gücü ve değer verdiklerine sahip çıkan yürekli bir duruşu anlatır."
+    "tr": "Aslan, sende saklı sakin gücü ve değer verdiklerine sahip çıkan yürekli bir duruşu anlatır.",
+    "en": "The lion is an image of quiet strength and the courage to protect yourself and what matters to you.",
+    "es": "El león es una imagen de fuerza serena y del valor para protegerte a ti y lo que te importa."
    }
   },
   {
@@ -395,11 +523,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Hase",
-    "tr": "Tavşan"
+    "tr": "Tavşan",
+    "en": "Rabbit",
+    "es": "Conejo"
    },
    "kurz": {
     "de": "Flink und wach deutet der Hase auf eine Nachricht, die schnell zu dir finden kann, und auf frische Beweglichkeit.",
-    "tr": "Tavşan fincanda çabucak ulaşabilecek bir habere ve kıvrak, çevik bir hareketliliğe işaret eder."
+    "tr": "Tavşan fincanda çabucak ulaşabilecek bir habere ve kıvrak, çevik bir hareketliliğe işaret eder.",
+    "en": "Quick and alert, the rabbit points to news that can find its way to you quickly, and to fresh agility.",
+    "es": "Ágil y despierto, el conejo apunta a una noticia que puede llegarte pronto y a una agilidad renovada."
    }
   },
   {
@@ -407,11 +539,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Ente",
-    "tr": "Ördek"
+    "tr": "Ördek",
+    "en": "Duck",
+    "es": "Pato"
    },
    "kurz": {
     "de": "Die Ente ist ein Zeichen für Frieden im Haus, für ein ausgeglichenes Gemüt und ein kleines, freundliches Kısmet.",
-    "tr": "Ördek, evin huzurunu, dengeli bir ruh hâlini ve küçük ama güzel bir kısmeti anlatır."
+    "tr": "Ördek, evin huzurunu, dengeli bir ruh hâlini ve küçük ama güzel bir kısmeti anlatır.",
+    "en": "The duck is a symbol of peace within the house, of a balanced spirit, and of a small, friendly kismet that may come your way.",
+    "es": "El pato es un símbolo de paz en casa, de un ánimo equilibrado y de un pequeño kısmet amable."
    }
   },
   {
@@ -419,11 +555,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Huhn",
-    "tr": "Tavuk"
+    "tr": "Tavuk",
+    "en": "Chicken",
+    "es": "Gallina"
    },
    "kurz": {
     "de": "Das Huhn deutet auf einen gut durchdachten Plan und auf ein Kısmet, das dich froh stimmen mag.",
-    "tr": "Tavuk, iyi düşünülmüş bir planı ve seni sevindirebilecek bir kısmeti anlatır."
+    "tr": "Tavuk, iyi düşünülmüş bir planı ve seni sevindirebilecek bir kısmeti anlatır.",
+    "en": "The chicken suggests a well-thought-out plan and a kismet that may bring you joy.",
+    "es": "La gallina sugiere un plan bien pensado y un kısmet que podría alegrarte."
    }
   },
   {
@@ -431,11 +571,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Schaf",
-    "tr": "Koyun"
+    "tr": "Koyun",
+    "en": "Sheep",
+    "es": "Oveja"
    },
    "kurz": {
     "de": "Das Schaf erzählt von Sanftmut und Wohlwollen und davon, dass eine milde Art viel tragen kann.",
-    "tr": "Koyun yumuşak huyun ve iyi niyetin işaretidir; şefkatli bir tavrın çok şeyi taşıyabileceğini anlatır."
+    "tr": "Koyun yumuşak huyun ve iyi niyetin işaretidir; şefkatli bir tavrın çok şeyi taşıyabileceğini anlatır.",
+    "en": "The sheep tells of gentleness and goodwill and of how a mild manner can bear a great deal.",
+    "es": "La oveja habla de dulzura y benevolencia, y de que una manera suave puede sostener mucho."
    }
   },
   {
@@ -443,11 +587,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Esel",
-    "tr": "Eşek"
+    "tr": "Eşek",
+    "en": "Donkey",
+    "es": "Burro"
    },
    "kurz": {
     "de": "Der Esel ist ein Zeichen der Ausdauer und des Kısmets: Lange Erhofftes kann sich mit stetigem Gang einstellen.",
-    "tr": "Eşek dayanıklılığın ve kısmetin işaretidir; azimle sürdürülen bir yolun insanı umduğuna ulaştırabileceğini anlatır."
+    "tr": "Eşek dayanıklılığın ve kısmetin işaretidir; azimle sürdürülen bir yolun insanı umduğuna ulaştırabileceğini anlatır.",
+    "en": "The donkey is a symbol of endurance and of kismet: what you have long hoped for can come with steady steps.",
+    "es": "El burro es un símbolo de perseverancia y de kısmet: lo que esperas desde hace tiempo puede llegar con paso constante."
    }
   },
   {
@@ -455,11 +603,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Biene",
-    "tr": "Arı"
+    "tr": "Arı",
+    "en": "Bee",
+    "es": "Abeja"
    },
    "kurz": {
     "de": "Die Biene steht für Fleiß, der Anerkennung finden kann, und für frohe, tätige Gemeinschaft.",
-    "tr": "Arı, emeğin değer bulabileceğini ve neşeli, çalışkan bir birlikteliği anlatır."
+    "tr": "Arı, emeğin değer bulabileceğini ve neşeli, çalışkan bir birlikteliği anlatır.",
+    "en": "The bee represents diligence that may find recognition, and a joyful, active sense of community.",
+    "es": "La abeja simboliza el esfuerzo que puede encontrar reconocimiento y la alegría de una comunidad activa."
    }
   },
   {
@@ -467,11 +619,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Kuh",
-    "tr": "İnek"
+    "tr": "İnek",
+    "en": "Cow",
+    "es": "Vaca"
    },
    "kurz": {
     "de": "Ruhe, fester Halt und ein stilles Kısmet in friedlichen Tagen: Dafür steht die Kuh.",
-    "tr": "İnek huzuru, sağlam bir dayanağı ve sakin günlerin getirebileceği bir uğuru anlatır."
+    "tr": "İnek huzuru, sağlam bir dayanağı ve sakin günlerin getirebileceği bir uğuru anlatır.",
+    "en": "The cow stands for peace, steady support, and a quiet kismet in tranquil days.",
+    "es": "La vaca representa la calma, un sostén firme y un kısmet silencioso en días de paz."
    }
   },
   {
@@ -479,11 +635,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Seepferdchen",
-    "tr": "Denizatı"
+    "tr": "Denizatı",
+    "en": "Seahorse",
+    "es": "Caballito de mar"
    },
    "kurz": {
     "de": "Das Seepferdchen ist ein Wunschzeichen und weckt die Hoffnung, dass sich ein gehegter Wunsch erfüllen kann.",
-    "tr": "Denizatı bir dilek işaretidir; içinden geçirdiğin bir dileğin gerçeğe dönüşebileceğini anlatır."
+    "tr": "Denizatı bir dilek işaretidir; içinden geçirdiğin bir dileğin gerçeğe dönüşebileceğini anlatır.",
+    "en": "The seahorse is a wish symbol and awakens the hope that a cherished wish can come true.",
+    "es": "El caballito de mar es un símbolo de deseo y despierta la esperanza de que un anhelo guardado pueda hacerse realidad."
    }
   },
   {
@@ -491,11 +651,15 @@
    "kategorie": "mensch",
    "name": {
     "de": "Engel",
-    "tr": "Melek"
+    "tr": "Melek",
+    "en": "Angel",
+    "es": "Ángel"
    },
    "kurz": {
     "de": "Der Engel ist ein Bild für Schutz und Glück und deutet darauf, dass sich manches gut fügen kann.",
-    "tr": "Melek, korunmuşluk duygusunu ve yolunda giden işleri anlatabilir."
+    "tr": "Melek, korunmuşluk duygusunu ve yolunda giden işleri anlatabilir.",
+    "en": "The angel is an image of protection and good fortune, suggesting that things may fall into place for you.",
+    "es": "El ángel es una imagen de protección y buena fortuna, y sugiere que algunas cosas pueden tomar un rumbo favorable."
    }
   },
   {
@@ -503,11 +667,15 @@
    "kategorie": "mensch",
    "name": {
     "de": "Tänzerin",
-    "tr": "Dansçı"
+    "tr": "Dansçı",
+    "en": "Dancer",
+    "es": "Bailarina"
    },
    "kurz": {
     "de": "Die Tänzerin deutet auf Freude und Leichtigkeit, auf einen Schwung, der dich innerlich in Bewegung bringt.",
-    "tr": "Dansçı, fincanda neşenin ve hafiflemiş bir yüreğin işaretidir."
+    "tr": "Dansçı, fincanda neşenin ve hafiflemiş bir yüreğin işaretidir.",
+    "en": "The dancer points to joy and lightness, to a spark that stirs you from within.",
+    "es": "La bailarina apunta a alegría y ligereza, a un impulso que te pone en movimiento por dentro."
    }
   },
   {
@@ -515,11 +683,15 @@
    "kategorie": "mensch",
    "name": {
     "de": "Hand",
-    "tr": "El"
+    "tr": "El",
+    "en": "Hand",
+    "es": "Mano"
    },
    "kurz": {
     "de": "Eine offene Hand spricht von Verbundenheit und von Hilfe, die gegeben und empfangen werden kann.",
-    "tr": "Açık bir avuç, yardımlaşmayı ve içten tutulan bir dileği anlatabilir."
+    "tr": "Açık bir avuç, yardımlaşmayı ve içten tutulan bir dileği anlatabilir.",
+    "en": "An open hand speaks of connection and the giving and receiving of help.",
+    "es": "Una mano abierta habla de conexión y de la ayuda que puede darse y recibirse."
    }
   },
   {
@@ -527,11 +699,15 @@
    "kategorie": "mensch",
    "name": {
     "de": "Fuß",
-    "tr": "Ayak"
+    "tr": "Ayak",
+    "en": "Foot",
+    "es": "Pie"
    },
    "kurz": {
     "de": "Ein Fuß erzählt von Tatendrang und von einem Weg, der sich überraschend vor dir auftun kann.",
-    "tr": "Ayak, birden önüne çıkan bir yolu ve harekete geçme isteğini anlatabilir."
+    "tr": "Ayak, birden önüne çıkan bir yolu ve harekete geçme isteğini anlatabilir.",
+    "en": "A foot speaks of eagerness to act and of a path that may open up before you in unexpected ways.",
+    "es": "Un pie habla de energía para la acción y de un camino que puede abrirse ante ti de manera inesperada."
    }
   },
   {
@@ -539,11 +715,15 @@
    "kategorie": "mensch",
    "name": {
     "de": "Kind",
-    "tr": "Çocuk"
+    "tr": "Çocuk",
+    "en": "Child",
+    "es": "Niño"
    },
    "kurz": {
     "de": "Das Kind steht für Anfangsgeist: unbefangene Neugier, Freude am Spiel und Lust, einen Plan frisch anzugehen.",
-    "tr": "Çocuk, merakı, oyun sevincini ve bir işe taze bir hevesle başlamayı hatırlatır."
+    "tr": "Çocuk, merakı, oyun sevincini ve bir işe taze bir hevesle başlamayı hatırlatır.",
+    "en": "The child represents the spirit of new beginnings: unguarded curiosity, joy in play, and the delight of approaching a plan with fresh eyes.",
+    "es": "El niño representa el espíritu del comienzo: una curiosidad despreocupada, la alegría de jugar y las ganas de abordar un plan con frescura."
    }
   },
   {
@@ -551,11 +731,15 @@
    "kategorie": "mensch",
    "name": {
     "de": "Menschenmenge",
-    "tr": "Kalabalık"
+    "tr": "Kalabalık",
+    "en": "Crowd",
+    "es": "Multitud"
    },
    "kurz": {
     "de": "Die Menschenmenge lässt an ein Fest denken, an Geselligkeit und ein Beisammensein voller Stimmen und Musik.",
-    "tr": "Kalabalık, sesi ve neşesi bol, coşkulu bir şenliği anlatabilir."
+    "tr": "Kalabalık, sesi ve neşesi bol, coşkulu bir şenliği anlatabilir.",
+    "en": "The crowd may remind you of a celebration, of sociability and togetherness filled with voices and music.",
+    "es": "La multitud hace pensar en una fiesta, en la buena compañía y en un encuentro lleno de voces y música."
    }
   },
   {
@@ -563,11 +747,15 @@
    "kategorie": "buchstabe_zahl",
    "name": {
     "de": "Zahl",
-    "tr": "Rakam"
+    "tr": "Rakam",
+    "en": "Number",
+    "es": "Número"
    },
    "kurz": {
     "de": "Die Zahl deutet auf Ordnung im Ablauf: Dinge folgen aufeinander, und jedes findet seinen Platz.",
-    "tr": "Rakam, akıştaki düzene işaret edebilir; her işin bir yeri olduğunu hatırlatır."
+    "tr": "Rakam, akıştaki düzene işaret edebilir; her işin bir yeri olduğunu hatırlatır.",
+    "en": "The number suggests order in the flow of events: things follow one another, and each finds its place.",
+    "es": "El número sugiere orden en el transcurso de los acontecimientos: las cosas se suceden y cada una encuentra su lugar."
    }
   },
   {
@@ -575,11 +763,15 @@
    "kategorie": "buchstabe_zahl",
    "name": {
     "de": "Buchstabe",
-    "tr": "Harf"
+    "tr": "Harf",
+    "en": "Letter",
+    "es": "Letra"
    },
    "kurz": {
     "de": "Der Buchstabe kann einen Anfang anzeigen: ein Wort oder einen Klang, der in dir etwas weckt.",
-    "tr": "Harf bir başlangıcın işaretidir; içinde bir şey uyandıran bir sözcüğü, bir tınıyı hatırlatır."
+    "tr": "Harf bir başlangıcın işaretidir; içinde bir şey uyandıran bir sözcüğü, bir tınıyı hatırlatır.",
+    "en": "The letter may point to a beginning: a word or a sound that stirs something within you.",
+    "es": "La letra puede señalar un comienzo: una palabra o un sonido que despierta algo en ti."
    }
   },
   {
@@ -587,11 +779,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Katze",
-    "tr": "Kedi"
+    "tr": "Kedi",
+    "en": "Cat",
+    "es": "Gato"
    },
    "kurz": {
     "de": "Die Katze steht für Eigenständigkeit und feines Gespür, für wache Sinne und die Lust, Dinge selbst zu erkunden.",
-    "tr": "Kedi, bağımsızlığa, ince sezgiye ve öğrenme merakına işaret edebilir."
+    "tr": "Kedi, bağımsızlığa, ince sezgiye ve öğrenme merakına işaret edebilir.",
+    "en": "The cat represents independence and a refined intuition, alert senses, and the desire to explore things on your own.",
+    "es": "El gato representa la independencia y una fina intuición, los sentidos despiertos y las ganas de explorar las cosas por tu cuenta."
    }
   },
   {
@@ -599,11 +795,15 @@
    "kategorie": "tier",
    "name": {
     "de": "Drache",
-    "tr": "Ejderha"
+    "tr": "Ejderha",
+    "en": "Dragon",
+    "es": "Dragón"
    },
    "kurz": {
     "de": "Der Drache deutet auf große Kraft und Mut, auf eine Hürde, die zur eigenen Aufgabe wird, und auf tiefe Wandlung.",
-    "tr": "Ejderha büyük bir güç ve cesaret işaretidir; karşına çıkabilecek bir engeli bir göreve, bir dönüşüme çevirmeye seni çağırır."
+    "tr": "Ejderha büyük bir güç ve cesaret işaretidir; karşına çıkabilecek bir engeli bir göreve, bir dönüşüme çevirmeye seni çağırır.",
+    "en": "The dragon points to great strength and courage, to a hurdle that may become your own task, and to deep transformation.",
+    "es": "El dragón sugiere una gran fuerza y valentía, un obstáculo que puede convertirse en tu propia misión, y una transformación profunda."
    }
   },
   {
@@ -611,11 +811,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Anker",
-    "tr": "Çapa"
+    "tr": "Çapa",
+    "en": "Anchor",
+    "es": "Ancla"
    },
    "kurz": {
     "de": "Der Anker gibt Halt: Er spricht von Beständigkeit und von einem Wunsch, der sich nach langer Mühe erfüllen kann.",
-    "tr": "Çapa sağlam bir tutunma noktasını anlatır; uzun emekle beslenen bir dilek sonunda yerini bulabilir."
+    "tr": "Çapa sağlam bir tutunma noktasını anlatır; uzun emekle beslenen bir dilek sonunda yerini bulabilir.",
+    "en": "The anchor gives stability: it speaks of constancy and of a wish that can come true after long effort.",
+    "es": "El ancla da sostén: habla de constancia y de un deseo que puede cumplirse tras mucho esfuerzo."
    }
   },
   {
@@ -623,11 +827,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Schiff",
-    "tr": "Gemi"
+    "tr": "Gemi",
+    "en": "Ship",
+    "es": "Barco"
    },
    "kurz": {
     "de": "Das Schiff kann etwas aus der Ferne näherbringen: eine Nachricht, einen weiten Gedanken oder ein Vorhaben, das Fahrt aufnimmt.",
-    "tr": "Gemi, uzaktan gelebilecek bir habere ya da demir almaya hazır bir plana işaret edebilir."
+    "tr": "Gemi, uzaktan gelebilecek bir habere ya da demir almaya hazır bir plana işaret edebilir.",
+    "en": "The ship can bring something closer from afar: a message, an expansive thought, or a project that picks up speed.",
+    "es": "El barco puede acercar algo desde la distancia: un mensaje, un pensamiento amplio o un proyecto que toma impulso."
    }
   },
   {
@@ -635,11 +843,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Hufeisen",
-    "tr": "At nalı"
+    "tr": "At nalı",
+    "en": "Horseshoe",
+    "es": "Herradura"
    },
    "kurz": {
     "de": "Das Hufeisen ist das Glückszeichen schlechthin: Es kann unverhofftes Glück und schöne Momente in deinen Alltag bringen.",
-    "tr": "At nalı uğurun en bilinen simgesidir; umulmadık bir şansa ve güzel anlara işaret edebilir."
+    "tr": "At nalı uğurun en bilinen simgesidir; umulmadık bir şansa ve güzel anlara işaret edebilir.",
+    "en": "The horseshoe is the quintessential symbol of good fortune. It may bring unexpected joy and beautiful moments into your daily life.",
+    "es": "La herradura es el símbolo de la suerte por excelencia: puede traer una felicidad inesperada y momentos agradables a tu vida cotidiana."
    }
   },
   {
@@ -647,11 +859,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Kerze",
-    "tr": "Mum"
+    "tr": "Mum",
+    "en": "Candle",
+    "es": "Vela"
    },
    "kurz": {
     "de": "Die Kerze kann Helligkeit in eine unklare Lage bringen und Hoffnung aufglimmen lassen, wo vieles trüb wirkte.",
-    "tr": "Mum, belirsiz bir durumu aydınlatan ve umut yeşerten bir işarettir."
+    "tr": "Mum, belirsiz bir durumu aydınlatan ve umut yeşerten bir işarettir.",
+    "en": "The candle can bring light into an unclear situation and let hope flicker up where much seemed dim.",
+    "es": "La vela puede traer claridad a una situación confusa y hacer que la esperanza brille donde mucho parecía turbio."
    }
   },
   {
@@ -659,11 +875,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Hut",
-    "tr": "Şapka"
+    "tr": "Şapka",
+    "en": "Hat",
+    "es": "Sombrero"
    },
    "kurz": {
     "de": "Der Hut kann auf eine neue Rolle deuten, die du dir aufsetzt, und auf Erfolg, der zu dir passt.",
-    "tr": "Şapka, üstlenebileceğin yeni bir rolün ve sana uygun düşen bir başarının işareti olabilir."
+    "tr": "Şapka, üstlenebileceğin yeni bir rolün ve sana uygun düşen bir başarının işareti olabilir.",
+    "en": "The hat may point to a new role you are stepping into, and to success that feels right for you.",
+    "es": "El sombrero puede indicar un nuevo rol que asumes y el éxito que se ajusta a ti."
    }
   },
   {
@@ -671,11 +891,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Schuh",
-    "tr": "Ayakkabı"
+    "tr": "Ayakkabı",
+    "en": "Shoe",
+    "es": "Zapato"
    },
    "kurz": {
     "de": "Der Schuh ist ein Zeichen für Bewegung: Freude am Gehen und Vorhaben, die in Gang kommen können.",
-    "tr": "Ayakkabı harekete geçme isteğini anlatır; bir işin yürümeye başlaması için zemin hazır olabilir."
+    "tr": "Ayakkabı harekete geçme isteğini anlatır; bir işin yürümeye başlaması için zemin hazır olabilir.",
+    "en": "The shoe is a symbol of movement: joy in walking, and plans that can get going.",
+    "es": "El zapato es un símbolo de movimiento: de la alegría de caminar y de planes que pueden ponerse en marcha."
    }
   },
   {
@@ -683,11 +907,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Hammer",
-    "tr": "Çekiç"
+    "tr": "Çekiç",
+    "en": "Hammer",
+    "es": "Martillo"
    },
    "kurz": {
     "de": "Der Hammer spricht von Tatkraft und von der Lust, etwas Haltbares aufzubauen.",
-    "tr": "Çekiç azmin ve çalışkanlığın işaretidir; bir şeyi kendi emeğinle kurma isteğini anlatır."
+    "tr": "Çekiç azmin ve çalışkanlığın işaretidir; bir şeyi kendi emeğinle kurma isteğini anlatır.",
+    "en": "The hammer speaks of drive and the desire to build something lasting.",
+    "es": "El martillo habla de energía para actuar y del deseo de construir algo sólido."
    }
   },
   {
@@ -695,11 +923,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Saiteninstrument",
-    "tr": "Saz"
+    "tr": "Saz",
+    "en": "String instrument",
+    "es": "Instrumento de cuerda"
    },
    "kurz": {
     "de": "Das Saiteninstrument bringt Freude und Einklang zum Klingen, und Gefühle können ihren eigenen Ton finden.",
-    "tr": "Saz, neşenin ve ahengin işaretidir; içindeki duyguların bir ezgiye dönüşebileceğini anlatır."
+    "tr": "Saz, neşenin ve ahengin işaretidir; içindeki duyguların bir ezgiye dönüşebileceğini anlatır.",
+    "en": "The string instrument brings joy and harmony to life, allowing your feelings to find their own voice.",
+    "es": "El instrumento de cuerda hace sonar la alegría y la armonía, y los sentimientos pueden encontrar su propio tono."
    }
   },
   {
@@ -707,11 +939,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Pokal",
-    "tr": "Ödül kupası"
+    "tr": "Ödül kupası",
+    "en": "Trophy",
+    "es": "Trofeo"
    },
    "kurz": {
     "de": "Der Pokal würdigt Erfolg: Mühe, die du hineingesteckt hast, kann Anerkennung finden und einen Anlass zum Feiern geben.",
-    "tr": "Harcadığın çaba takdir görebilir; kutlamaya değer bir başarının sevinci yaşanabilir."
+    "tr": "Harcadığın çaba takdir görebilir; kutlamaya değer bir başarının sevinci yaşanabilir.",
+    "en": "The trophy honors your success: the effort you have invested may find recognition and offer a reason to celebrate.",
+    "es": "El trofeo honra el éxito: el esfuerzo que has invertido puede encontrar reconocimiento y brindar una razón para celebrar."
    }
   },
   {
@@ -719,11 +955,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Flugzeug",
-    "tr": "Uçak"
+    "tr": "Uçak",
+    "en": "Airplane",
+    "es": "Avión"
    },
    "kurz": {
     "de": "Das Flugzeug bringt Tempo ins Spiel: Manches kann eine rasche, erfreuliche Wendung nehmen.",
-    "tr": "Uçak hızın ve beklenmedik değişimlerin işaretidir; işler sevindirici bir ivme kazanabilir."
+    "tr": "Uçak hızın ve beklenmedik değişimlerin işaretidir; işler sevindirici bir ivme kazanabilir.",
+    "en": "The airplane brings speed into the mix: things may take a quick and pleasant turn.",
+    "es": "El avión trae rapidez: algunas cosas pueden dar un giro rápido y agradable."
    }
   },
   {
@@ -731,11 +971,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Brücke",
-    "tr": "Köprü"
+    "tr": "Köprü",
+    "en": "Bridge",
+    "es": "Puente"
    },
    "kurz": {
     "de": "Die Brücke gilt als Zeichen für eine Verbindung zwischen Vorhaben und Ideen und für eine gute Gelegenheit.",
-    "tr": "Köprü, fikirleri ve işleri birbirine bağlayan sağlam bir bağın ve önüne çıkabilecek güzel bir fırsatın işaretidir."
+    "tr": "Köprü, fikirleri ve işleri birbirine bağlayan sağlam bir bağın ve önüne çıkabilecek güzel bir fırsatın işaretidir.",
+    "en": "The bridge is seen as a symbol of connection between your plans and ideas, and may indicate a favorable opportunity.",
+    "es": "El puente se considera un símbolo de unión entre proyectos e ideas y de una buena oportunidad."
    }
   },
   {
@@ -743,11 +987,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Burg",
-    "tr": "Kale"
+    "tr": "Kale",
+    "en": "Castle",
+    "es": "Castillo"
    },
    "kurz": {
     "de": "Die Burg verkörpert Schutz, festen Halt und eine Stärke, die von innen kommt.",
-    "tr": "Kale, insanın kendi içinden gelen sağlam ve korunaklı bir güce işaret eder."
+    "tr": "Kale, insanın kendi içinden gelen sağlam ve korunaklı bir güce işaret eder.",
+    "en": "The castle embodies protection, steady support, and a strength that comes from within.",
+    "es": "El castillo simboliza protección, un apoyo firme y una fuerza que nace desde dentro de ti."
    }
   },
   {
@@ -755,11 +1003,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Klee",
-    "tr": "Yonca"
+    "tr": "Yonca",
+    "en": "Clover",
+    "es": "Trébol"
    },
    "kurz": {
     "de": "Der Klee ist ein altes Glückszeichen und verbindet Freude, Zufriedenheit und warme Zuneigung.",
-    "tr": "Yonca, talihin ve içten, sıcak bir sevginin işareti sayılır."
+    "tr": "Yonca, talihin ve içten, sıcak bir sevginin işareti sayılır.",
+    "en": "The clover is an old symbol of good fortune, weaving together joy, contentment, and warm affection.",
+    "es": "El trébol es un antiguo símbolo de buena fortuna que une la alegría, la satisfacción y el cariño cálido."
    }
   },
   {
@@ -767,11 +1019,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Brunnen",
-    "tr": "Çeşme"
+    "tr": "Çeşme",
+    "en": "Fountain",
+    "es": "Fuente"
    },
    "kurz": {
     "de": "Der Brunnen bedeutet Erfrischung und Freude, die frei fließen und sich mit anderen teilen lassen.",
-    "tr": "Çeşme, akan suyun tazeliğini ve içi serinleten ferahlığı anlatır."
+    "tr": "Çeşme, akan suyun tazeliğini ve içi serinleten ferahlığı anlatır.",
+    "en": "The fountain symbolizes refreshment and joy that can flow freely and be shared with others.",
+    "es": "La fuente representa frescura y alegría que fluyen libremente y pueden compartirse con otras personas."
    }
   },
   {
@@ -779,11 +1035,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Zweig",
-    "tr": "Dal"
+    "tr": "Dal",
+    "en": "Branch",
+    "es": "Rama"
    },
    "kurz": {
     "de": "Der Zweig deutet auf einen kleinen, frischen Anfang, aus dem mit Zuwendung viel wachsen kann.",
-    "tr": "Dal, küçük ama taze bir başlangıcı ve ilgiyle gelişebilecek yeni bir işi simgeler."
+    "tr": "Dal, küçük ama taze bir başlangıcı ve ilgiyle gelişebilecek yeni bir işi simgeler.",
+    "en": "The branch suggests a small, fresh beginning from which much can grow with care and attention.",
+    "es": "La rama sugiere un pequeño y fresco comienzo, del cual puede crecer mucho con dedicación."
    }
   },
   {
@@ -791,11 +1051,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Brot",
-    "tr": "Ekmek"
+    "tr": "Ekmek",
+    "en": "Bread",
+    "es": "Pan"
    },
    "kurz": {
     "de": "Brot erzählt vom Einfachen, das nährt und stärkt, und von der Ruhe eines Hauses, in dem es warm ist.",
-    "tr": "Ekmek, insanı besleyip güçlendiren yalın şeyleri ve sıcak bir evin huzurunu anlatır."
+    "tr": "Ekmek, insanı besleyip güçlendiren yalın şeyleri ve sıcak bir evin huzurunu anlatır.",
+    "en": "Bread speaks of the simple things that nourish and strengthen, and of the quiet comfort of a home where warmth lingers.",
+    "es": "El pan habla de lo sencillo que nutre y fortalece, y de la calma de un hogar donde reina el calor."
    }
   },
   {
@@ -803,11 +1067,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Welle",
-    "tr": "Dalga"
+    "tr": "Dalga",
+    "en": "Wave",
+    "es": "Ola"
    },
    "kurz": {
     "de": "Die Welle zeigt Bewegung im Gefühl und eine Erleichterung, die mit frischem Schwung kommt.",
-    "tr": "Dalga, duyguların hareketini ve bir yükün akıp gitmesiyle gelen ferahlığı anlatır."
+    "tr": "Dalga, duyguların hareketini ve bir yükün akıp gitmesiyle gelen ferahlığı anlatır.",
+    "en": "The wave suggests movement in your feelings and a sense of relief that may come with fresh energy.",
+    "es": "La ola muestra movimiento en lo emocional y un alivio que llega con nueva energía."
    }
   },
   {
@@ -815,11 +1083,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Wolke",
-    "tr": "Bulut"
+    "tr": "Bulut",
+    "en": "Cloud",
+    "es": "Nube"
    },
    "kurz": {
     "de": "Die Wolke steht für Wandel und Frische: Was am Himmel treibt, kann Regen für Wachsendes bringen.",
-    "tr": "Bulut, değişen hâlleri ve toprağı besleyen yağmuru anlatır; gökte duran geçip gider, ardında tazelik bırakabilir."
+    "tr": "Bulut, değişen hâlleri ve toprağı besleyen yağmuru anlatır; gökte duran geçip gider, ardında tazelik bırakabilir.",
+    "en": "The cloud stands for change and freshness: what drifts across the sky may bring rain to nurture new growth.",
+    "es": "La nube simboliza cambio y frescura: lo que se mueve en el cielo puede traer lluvia para lo que está creciendo."
    }
   },
   {
@@ -827,11 +1099,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Feder",
-    "tr": "Tüy"
+    "tr": "Tüy",
+    "en": "Feather",
+    "es": "Pluma"
    },
    "kurz": {
     "de": "Die Feder spricht von Leichtigkeit: Was schwer schien, kann leichter werden, und Zaghaftes kann Mut fassen.",
-    "tr": "Tüy hafifliği anlatır; ağır gelen şey hafifleyebilir, çekingenlik yerini cesarete bırakabilir."
+    "tr": "Tüy hafifliği anlatır; ağır gelen şey hafifleyebilir, çekingenlik yerini cesarete bırakabilir.",
+    "en": "The feather speaks of lightness: what felt heavy may become lighter, and hesitation can find courage.",
+    "es": "La pluma habla de ligereza: lo que parecía pesado puede volverse más ligero, y lo tímido puede encontrar valor."
    }
   },
   {
@@ -839,11 +1115,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Mauer",
-    "tr": "Duvar"
+    "tr": "Duvar",
+    "en": "Wall",
+    "es": "Muro"
    },
    "kurz": {
     "de": "Die Mauer deutet auf eine eigene Grenze, die dir Ruhe gibt, und auf Hürden, die sich mit Mut nehmen lassen.",
-    "tr": "Duvar, kendine çizdiğin ve sana huzur veren bir sınırı, cesaretle aşılabilecek engelleri de anlatır."
+    "tr": "Duvar, kendine çizdiğin ve sana huzur veren bir sınırı, cesaretle aşılabilecek engelleri de anlatır.",
+    "en": "The wall points to a boundary of your own that gives you peace, and to hurdles that can be taken with courage.",
+    "es": "El muro sugiere un límite personal que te brinda calma, así como obstáculos que puedes superar con valentía."
    }
   },
   {
@@ -851,11 +1131,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Apfel",
-    "tr": "Elma"
+    "tr": "Elma",
+    "en": "Apple",
+    "es": "Manzana"
    },
    "kurz": {
     "de": "Der Apfel deutet auf Reife: Ein Vorhaben kann pflückreif sein und sich als gute Gelegenheit vor dir zeigen.",
-    "tr": "Elma olgunluğun işaretidir; zamanla kıvamına gelen bir işi ve değerlendirilmeyi bekleyen güzel bir fırsatı anlatabilir."
+    "tr": "Elma olgunluğun işaretidir; zamanla kıvamına gelen bir işi ve değerlendirilmeyi bekleyen güzel bir fırsatı anlatabilir.",
+    "en": "The apple points to ripeness: a project may be ripe for picking and show itself to you as a good opportunity.",
+    "es": "La manzana sugiere madurez: una iniciativa puede estar lista para cosecharse y presentarse ante ti como una buena oportunidad."
    }
   },
   {
@@ -863,11 +1147,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Traube",
-    "tr": "Üzüm"
+    "tr": "Üzüm",
+    "en": "Grapes",
+    "es": "Racimo de uvas"
    },
    "kurz": {
     "de": "Die Traube zeigt eine Fülle aus vielen kleinen Dingen und lädt dazu ein, Freude gemeinsam zu feiern.",
-    "tr": "Üzüm, küçük güzelliklerin çoğalıp dolu dolu bir sevince dönüşmesini anlatır."
+    "tr": "Üzüm, küçük güzelliklerin çoğalıp dolu dolu bir sevince dönüşmesini anlatır.",
+    "en": "The grapes show an abundance made of many small things and invite you to celebrate joy together.",
+    "es": "El racimo de uvas muestra una abundancia de pequeñas cosas y te invita a celebrar la alegría en compañía."
    }
   },
   {
@@ -875,11 +1163,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Ähre",
-    "tr": "Başak"
+    "tr": "Başak",
+    "en": "Ear of wheat",
+    "es": "Espiga"
    },
    "kurz": {
     "de": "Die Ähre ist ein Bild der Ernte: Sorgfalt und Ausdauer können volle Körner hervorbringen.",
-    "tr": "Başak hasadın işaretidir; emek verip büyüttüğün şeyin toplanmaya hazır hâle gelebileceğini anlatır."
+    "tr": "Başak hasadın işaretidir; emek verip büyüttüğün şeyin toplanmaya hazır hâle gelebileceğini anlatır.",
+    "en": "The ear of wheat is an image of the harvest: care and perseverance can bring forth full grains.",
+    "es": "La espiga es una imagen de la cosecha: el cuidado y la perseverancia pueden dar granos llenos."
    }
   },
   {
@@ -887,11 +1179,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Löffel",
-    "tr": "Kaşık"
+    "tr": "Kaşık",
+    "en": "Spoon",
+    "es": "Cuchara"
    },
    "kurz": {
     "de": "Der Löffel steht für Gastlichkeit und einen gedeckten Tisch, an dem Freude geteilt werden kann.",
-    "tr": "Kaşık, kurulan sofranın, paylaşılan sevincin ve misafir ağırlamanın işaretidir."
+    "tr": "Kaşık, kurulan sofranın, paylaşılan sevincin ve misafir ağırlamanın işaretidir.",
+    "en": "The spoon symbolizes hospitality and a table set for sharing joy with others.",
+    "es": "La cuchara simboliza la hospitalidad y una mesa servida, donde la alegría puede compartirse."
    }
   },
   {
@@ -899,11 +1195,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Fenster",
-    "tr": "Pencere"
+    "tr": "Pencere",
+    "en": "Window",
+    "es": "Ventana"
    },
    "kurz": {
     "de": "Das Fenster öffnet den Blick nach draußen und deutet auf Klarheit und einen weiteren Horizont.",
-    "tr": "Pencere bakışı dışarıya açar; ufkun genişlemesine ve berrak bir görüşe işaret eder."
+    "tr": "Pencere bakışı dışarıya açar; ufkun genişlemesine ve berrak bir görüşe işaret eder.",
+    "en": "The window opens the view outside and points to clarity and a wider horizon.",
+    "es": "La ventana abre la mirada hacia fuera y sugiere claridad y un horizonte más amplio."
    }
   },
   {
@@ -911,11 +1211,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Zug",
-    "tr": "Tren"
+    "tr": "Tren",
+    "en": "Train",
+    "es": "Tren"
    },
    "kurz": {
     "de": "Der Zug erzählt von Verbindung und vom Unterwegssein, von etwas, das in geordneter Folge vorankommt.",
-    "tr": "Tren, kurulan bağlantıların ve düzenli, aksamadan yol alan bir hareketin işaretidir."
+    "tr": "Tren, kurulan bağlantıların ve düzenli, aksamadan yol alan bir hareketin işaretidir.",
+    "en": "The train speaks of connection and being on the way, of something moving forward in an orderly sequence.",
+    "es": "El tren habla de conexión y de estar en camino, de algo que avanza paso a paso y en orden."
    }
   },
   {
@@ -923,11 +1227,15 @@
    "kategorie": "gegenstand",
    "name": {
     "de": "Truhe",
-    "tr": "Sandık"
+    "tr": "Sandık",
+    "en": "Chest",
+    "es": "Baúl"
    },
    "kurz": {
     "de": "Die Truhe deutet auf etwas Verborgenes, das gut verwahrt liegt, und auf eine Überraschung, die sich öffnen kann.",
-    "tr": "Sandık, saklı duran bir şeyin ve açılınca yüz güldüren küçük bir sürprizin işaretidir."
+    "tr": "Sandık, saklı duran bir şeyin ve açılınca yüz güldüren küçük bir sürprizin işaretidir.",
+    "en": "The chest points to something hidden, well kept safe, and to a surprise that may unfold.",
+    "es": "El baúl sugiere algo oculto, bien guardado, y una sorpresa que podría revelarse."
    }
   },
   {
@@ -935,11 +1243,15 @@
    "kategorie": "natur",
    "name": {
     "de": "Stein",
-    "tr": "Taş"
+    "tr": "Taş",
+    "en": "Stone",
+    "es": "Piedra"
    },
    "kurz": {
     "de": "Der Stein deutet auf Festigkeit und Beständigkeit, auf etwas in dir, das ruhig an seinem Platz bleibt.",
-    "tr": "Taş, sağlamlığın, kalıcılığın ve yerinden kolay kolay oynamayan bir duruşun işaretidir."
+    "tr": "Taş, sağlamlığın, kalıcılığın ve yerinden kolay kolay oynamayan bir duruşun işaretidir.",
+    "en": "The stone points to firmness and constancy, to something within you that stays calmly in its place.",
+    "es": "La piedra sugiere firmeza y constancia, algo en ti que permanece tranquilo en su lugar."
    }
   },
   {
@@ -947,11 +1259,15 @@
    "kategorie": "form",
    "name": {
     "de": "Pfeil",
-    "tr": "Ok"
+    "tr": "Ok",
+    "en": "Arrow",
+    "es": "Flecha"
    },
    "kurz": {
     "de": "Der Pfeil zeigt eine Richtung an und deutet auf Zielstrebigkeit, auf Kraft, die sich auf einen Punkt sammelt.",
-    "tr": "Ok, yönü belli bir hareketin ve tek bir hedefe toplanan kararlılığın işaretidir."
+    "tr": "Ok, yönü belli bir hareketin ve tek bir hedefe toplanan kararlılığın işaretidir.",
+    "en": "The arrow points toward a direction and suggests purposefulness, with strength gathering its focus on a single point.",
+    "es": "La flecha señala una dirección y sugiere determinación, una fuerza que se concentra en un solo punto."
    }
   },
   {
@@ -959,11 +1275,15 @@
    "kategorie": "form",
    "name": {
     "de": "Quadrat",
-    "tr": "Kare"
+    "tr": "Kare",
+    "en": "Square",
+    "es": "Cuadrado"
    },
    "kurz": {
     "de": "Das Quadrat erzählt von Ordnung und Frieden, von einem Rahmen, in dem du dich behaglich und sicher fühlen kannst.",
-    "tr": "Kare, düzenin, dengenin ve insanın kendini rahat hissettiği huzurlu bir alanın işaretidir."
+    "tr": "Kare, düzenin, dengenin ve insanın kendini rahat hissettiği huzurlu bir alanın işaretidir.",
+    "en": "The square speaks of order and peace, of a framework where you may feel comfortable and secure.",
+    "es": "El cuadrado habla de orden y paz, de un marco en el que puedes sentir comodidad y seguridad."
    }
   }
  ],
@@ -975,16 +1295,22 @@
    "farbe": null,
    "name": {
     "de": "Der Narr",
-    "tr": "Deli"
+    "tr": "Deli",
+    "en": "The Fool",
+    "es": "El Loco"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein Neubeginn mit leichtem Gepäck, getragen von Neugier und der Lust, etwas noch nie Versuchtes zu wagen.",
-     "tr": "Hafif bir yükle, merakla ve daha önce denenmemiş bir şeye cesaret ederek atılan yeni bir başlangıç."
+     "tr": "Hafif bir yükle, merakla ve daha önce denenmemiş bir şeye cesaret ederek atılan yeni bir başlangıç.",
+     "en": "A fresh start, traveling light, carried by curiosity and the wish to try something you have never tried before.",
+     "es": "Un nuevo comienzo con equipaje ligero, guiado por la curiosidad y el deseo de intentar algo que nunca has hecho antes."
     },
     "umgekehrt": {
      "de": "Ein Anfang, der noch zögert, oder ein Schwung, dem es gerade an Umsicht fehlt.",
-     "tr": "Henüz çekingen duran bir başlangıç ya da şu sıralar biraz özensiz kalan bir heves."
+     "tr": "Henüz çekingen duran bir başlangıç ya da şu sıralar biraz özensiz kalan bir heves.",
+     "en": "A beginning that is still hesitating, or momentum that lacks care right now.",
+     "es": "Un comienzo que aún duda, o un impulso que por ahora carece de prudencia."
     }
    }
   },
@@ -995,16 +1321,22 @@
    "farbe": null,
    "name": {
     "de": "Der Magier",
-    "tr": "Büyücü"
+    "tr": "Büyücü",
+    "en": "The Magician",
+    "es": "El Mago"
    },
    "kurz": {
     "aufrecht": {
      "de": "Alles Nötige liegt bereit: Können, Werkzeuge und ein klarer Wille, um eine Idee in die Tat umzusetzen.",
-     "tr": "İhtiyacın olan her şey hazır: beceri, araçlar ve bir fikri hayata geçirmeye hazır, net bir irade."
+     "tr": "İhtiyacın olan her şey hazır: beceri, araçlar ve bir fikri hayata geçirmeye hazır, net bir irade.",
+     "en": "Everything you need is already within reach: your skills, the right tools, and a clear intention to bring an idea into being.",
+     "es": "Todo lo necesario está a tu disposición: la capacidad, las herramientas y una voluntad clara para llevar una idea a la práctica."
     },
     "umgekehrt": {
      "de": "Fähigkeiten sind vorhanden, doch die Kraft verteilt sich gerade auf zu vieles oder das Ziel ist noch unscharf.",
-     "tr": "Yetenek var, ama güç şu sıralar fazla şeye dağılıyor ya da hedef henüz bulanık."
+     "tr": "Yetenek var, ama güç şu sıralar fazla şeye dağılıyor ya da hedef henüz bulanık.",
+     "en": "You have the skills, yet your energy may be spread too thin right now, or the goal might still feel a bit unclear.",
+     "es": "Tienes las habilidades necesarias, pero tu energía se dispersa en demasiadas direcciones o el objetivo aún no está claro."
     }
    }
   },
@@ -1015,16 +1347,22 @@
    "farbe": null,
    "name": {
     "de": "Die Hohepriesterin",
-    "tr": "Azize"
+    "tr": "Azize",
+    "en": "The High Priestess",
+    "es": "La Sacerdotisa"
    },
    "kurz": {
     "aufrecht": {
      "de": "Stilles Wissen und feines Gespür: Manches erschließt sich nicht durch Handeln, sondern durch Lauschen und Abwarten.",
-     "tr": "Sessiz bir bilgi ve ince bir sezgi: Bazı şeyler hareketle değil, dinleyip beklemekle açılır."
+     "tr": "Sessiz bir bilgi ve ince bir sezgi: Bazı şeyler hareketle değil, dinleyip beklemekle açılır.",
+     "en": "Quiet wisdom and subtle intuition: Some things reveal themselves not through action, but through listening and waiting.",
+     "es": "Conocimiento silencioso y un sentido fino: hay cosas que no se revelan mediante la acción, sino a través de la escucha y la espera."
     },
     "umgekehrt": {
      "de": "Das eigene Gespür ist gerade von Lärm überdeckt, oder Wissen bleibt an der Oberfläche, wo mehr Tiefe möglich wäre.",
-     "tr": "Kendi sezgin şu sıralar gürültünün altında kalmış ya da derinleşebilecek bir bilgi yüzeyde kalıyor."
+     "tr": "Kendi sezgin şu sıralar gürültünün altında kalmış ya da derinleşebilecek bir bilgi yüzeyde kalıyor.",
+     "en": "Your inner sense may be muffled by noise right now, or your knowledge might remain on the surface when there is room for more depth.",
+     "es": "Tu intuición puede estar ahora tapada por el ruido, o el conocimiento quedarse en la superficie, donde podría haber más profundidad."
     }
    }
   },
@@ -1035,16 +1373,22 @@
    "farbe": null,
    "name": {
     "de": "Die Herrscherin",
-    "tr": "İmparatoriçe"
+    "tr": "İmparatoriçe",
+    "en": "The Empress",
+    "es": "La Emperatriz"
    },
    "kurz": {
     "aufrecht": {
      "de": "Fülle, Wärme und Wachstum: Was du mit Sorgfalt pflegst, darf sich jetzt entfalten und Früchte tragen.",
-     "tr": "Bolluk, sıcaklık ve gelişme: Özen ve emek verdiğin işler şimdi karşılığını bulabilir."
+     "tr": "Bolluk, sıcaklık ve gelişme: Özen ve emek verdiğin işler şimdi karşılığını bulabilir.",
+     "en": "Abundance, warmth, and growth: What you have nurtured with care can now unfold and bear fruit.",
+     "es": "Abundancia, calidez y crecimiento: lo que cuidas con esmero puede florecer ahora y dar frutos."
     },
     "umgekehrt": {
      "de": "Die Quelle der Fürsorge wirkt gerade fast ausgeschöpft, weil viel nach außen fließt und zu wenig zu dir zurückkommt.",
-     "tr": "Şefkat kaynağı şu sıralar neredeyse tükenmiş gibi; çok şey dışarıya akıyor, sana pek az geri dönüyor."
+     "tr": "Şefkat kaynağı şu sıralar neredeyse tükenmiş gibi; çok şey dışarıya akıyor, sana pek az geri dönüyor.",
+     "en": "The source of care feels almost depleted right now, as much energy flows outward and not enough returns to you.",
+     "es": "La fuente de cuidado parece estar casi agotada en este momento, ya que mucha energía se dirige hacia el exterior y llega menos a ti."
     }
    }
   },
@@ -1055,16 +1399,22 @@
    "farbe": null,
    "name": {
     "de": "Der Herrscher",
-    "tr": "İmparator"
+    "tr": "İmparator",
+    "en": "The Emperor",
+    "es": "El Emperador"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ordnung und Verlässlichkeit: Mit klarer Struktur und Verantwortung entsteht ein Fundament, auf dem sich bauen lässt.",
-     "tr": "Düzen ve istikrar: Net bir yapı ve sorumlulukla üzerine bir şeyler inşa edilebilecek sağlam bir temel oluşur."
+     "tr": "Düzen ve istikrar: Net bir yapı ve sorumlulukla üzerine bir şeyler inşa edilebilecek sağlam bir temel oluşur.",
+     "en": "Order and reliability: With clear structure and responsibility, a foundation is formed—one you can build upon.",
+     "es": "Orden y fiabilidad: con una estructura clara y sentido de la responsabilidad, se crea un fundamento sobre el cual puedes construir."
     },
     "umgekehrt": {
      "de": "Struktur wird zur Enge, oder sie fehlt gerade dort, wo sie Halt geben könnte.",
-     "tr": "Yapı ya darlığa dönüşüyor ya da tam destek olabileceği yerde eksik kalıyor."
+     "tr": "Yapı ya darlığa dönüşüyor ya da tam destek olabileceği yerde eksik kalıyor.",
+     "en": "Structure may feel confining, or it might be absent precisely where you need support the most.",
+     "es": "La estructura puede convertirse en una restricción o faltar justo donde podría brindar sostén."
     }
    }
   },
@@ -1075,16 +1425,22 @@
    "farbe": null,
    "name": {
     "de": "Der Hierophant",
-    "tr": "Aziz"
+    "tr": "Aziz",
+    "en": "The Hierophant",
+    "es": "El Hierofante"
    },
    "kurz": {
     "aufrecht": {
      "de": "Gemeinsame Werte, Lernen von Erfahrenen und Rituale, die Halt geben und Menschen miteinander verbinden.",
-     "tr": "Ortak değerler, deneyimli insanlardan öğrenmek ve insanları birbirine bağlayan, dayanak veren ritüeller."
+     "tr": "Ortak değerler, deneyimli insanlardan öğrenmek ve insanları birbirine bağlayan, dayanak veren ritüeller.",
+     "en": "Shared values, learning from those with experience, and rituals that offer support and bring people together.",
+     "es": "Compartir valores comunes, aprender de quienes tienen más experiencia y seguir rituales que brindan sostén y unen a las personas."
     },
     "umgekehrt": {
      "de": "Überlieferte Regeln passen nicht mehr ganz, und eigene Maßstäbe möchten gefunden und geprüft werden.",
-     "tr": "Alışılmış kurallar artık tam oturmuyor; kendi doğrularını bulmak ve sınamak istiyorsun."
+     "tr": "Alışılmış kurallar artık tam oturmuyor; kendi doğrularını bulmak ve sınamak istiyorsun.",
+     "en": "The traditional rules no longer fit quite as well, and you may find yourself seeking to discover and test your own standards.",
+     "es": "Las reglas heredadas ya no encajan del todo, y es momento de buscar y poner a prueba tus propios estándares."
     }
    }
   },
@@ -1095,16 +1451,22 @@
    "farbe": null,
    "name": {
     "de": "Die Liebenden",
-    "tr": "Âşıklar"
+    "tr": "Âşıklar",
+    "en": "The Lovers",
+    "es": "Los Enamorados"
    },
    "kurz": {
     "aufrecht": {
      "de": "Eine tiefe Verbindung und eine Wahl, die aus deinen eigenen Werten kommt, stehen im Mittelpunkt.",
-     "tr": "Derin bir bağ ve kendi değerlerinden doğan bir seçim öne çıkıyor."
+     "tr": "Derin bir bağ ve kendi değerlerinden doğan bir seçim öne çıkıyor.",
+     "en": "A deep connection and a choice rooted in your own values are at the center of this moment.",
+     "es": "Una conexión profunda y una elección que surge de tus propios valores están en el centro."
     },
     "umgekehrt": {
      "de": "Etwas in dir ist noch nicht im Einklang, und eine Entscheidung braucht Zeit, um zu reifen.",
-     "tr": "İçindeki bazı sesler henüz uyuşmuyor; bir kararın olgunlaşmak için biraz zamana ihtiyacı var."
+     "tr": "İçindeki bazı sesler henüz uyuşmuyor; bir kararın olgunlaşmak için biraz zamana ihtiyacı var.",
+     "en": "Something within you is not yet in harmony, and a decision may need time to mature.",
+     "es": "Algo en ti aún no está en armonía, y una decisión necesita tiempo para madurar."
     }
    }
   },
@@ -1115,16 +1477,22 @@
    "farbe": null,
    "name": {
     "de": "Der Wagen",
-    "tr": "Savaş Arabası"
+    "tr": "Savaş Arabası",
+    "en": "The Chariot",
+    "es": "El Carro"
    },
    "kurz": {
     "aufrecht": {
      "de": "Mit klarem Ziel und gesammeltem Willen kannst du gegensätzliche Kräfte in eine gemeinsame Richtung lenken.",
-     "tr": "Net bir hedef ve toplanmış bir iradeyle, birbirine zıt güçleri tek bir yöne çevirebilirsin."
+     "tr": "Net bir hedef ve toplanmış bir iradeyle, birbirine zıt güçleri tek bir yöne çevirebilirsin.",
+     "en": "With a clear goal and focused will, you can guide opposing forces toward a shared direction.",
+     "es": "Con un objetivo claro y la voluntad concentrada, puedes guiar las fuerzas opuestas hacia una misma dirección."
     },
     "umgekehrt": {
      "de": "Die Richtung ist gerade unklar, und ein kurzes Innehalten hilft mehr als noch mehr Druck.",
-     "tr": "Yön şu an bulanık; daha çok zorlamak yerine kısa bir duraksama sana nefes aldırır."
+     "tr": "Yön şu an bulanık; daha çok zorlamak yerine kısa bir duraksama sana nefes aldırır.",
+     "en": "The path ahead may feel unclear right now, and a brief pause can offer more clarity than adding further pressure.",
+     "es": "La dirección no está clara en este momento; detenerse brevemente puede ser más beneficioso que añadir más presión."
     }
    }
   },
@@ -1135,16 +1503,22 @@
    "farbe": null,
    "name": {
     "de": "Die Kraft",
-    "tr": "Güç"
+    "tr": "Güç",
+    "en": "Strength",
+    "es": "La Fuerza"
    },
    "kurz": {
     "aufrecht": {
      "de": "Wahre Stärke zeigt sich hier als Sanftheit, die Mut und Ruhe vereint und wilde Gefühle zähmt, ohne sie zu brechen.",
-     "tr": "Gerçek güç burada yumuşaklık olarak görünüyor: cesaretle sükûneti birleştiren, coşkulu duyguları kırmadan yatıştıran bir güç."
+     "tr": "Gerçek güç burada yumuşaklık olarak görünüyor: cesaretle sükûneti birleştiren, coşkulu duyguları kırmadan yatıştıran bir güç.",
+     "en": "True strength here reveals itself as gentleness, uniting courage and calm while taming wild emotions without breaking them.",
+     "es": "La verdadera fuerza se manifiesta aquí como suavidad, que une el coraje y la calma, y domina los sentimientos más intensos sin quebrarlos."
     },
     "umgekehrt": {
      "de": "Deine innere Stärke ist da, aber gerade leise; Zweifel oder aufgewühlte Gefühle verlangen liebevolle Aufmerksamkeit.",
-     "tr": "İçindeki güç yerinde ama şu an sessiz; kuşkular ya da dalgalı duygular şefkatli bir ilgi istiyor."
+     "tr": "İçindeki güç yerinde ama şu an sessiz; kuşkular ya da dalgalı duygular şefkatli bir ilgi istiyor.",
+     "en": "Your inner strength is present, though it may be quiet at the moment. Doubts or turbulent feelings might benefit from gentle attention.",
+     "es": "Tu fuerza interior está presente, aunque en este momento se ha vuelto silenciosa. La duda o las emociones agitadas piden una atención cariñosa."
     }
    }
   },
@@ -1155,16 +1529,22 @@
    "farbe": null,
    "name": {
     "de": "Der Eremit",
-    "tr": "Ermiş"
+    "tr": "Ermiş",
+    "en": "The Hermit",
+    "es": "El Ermitaño"
    },
    "kurz": {
     "aufrecht": {
      "de": "Eine Zeit der Einkehr, in der du mit deinem eigenen Licht Antworten findest, die im Lärm verborgen bleiben.",
-     "tr": "Gürültünün içinde gizli kalan cevapları kendi ışığınla bulabileceğin bir içe dönüş zamanı."
+     "tr": "Gürültünün içinde gizli kalan cevapları kendi ışığınla bulabileceğin bir içe dönüş zamanı.",
+     "en": "A time of turning inward, when you find answers by your own light that stay hidden in the noise.",
+     "es": "Un tiempo de introspección, en el que puedes encontrar respuestas con tu propia luz, aquellas que suelen permanecer ocultas entre el ruido."
     },
     "umgekehrt": {
      "de": "Rückzug und Austausch sind gerade nicht im Gleichgewicht; entweder fehlt dir Stille, oder der Abstand ist zu groß geworden.",
-     "tr": "İçe çekilme ile paylaşma şu sıralar dengede değil; ya sessizliğe ihtiyacın var ya da mesafe fazla açıldı."
+     "tr": "İçe çekilme ile paylaşma şu sıralar dengede değil; ya sessizliğe ihtiyacın var ya da mesafe fazla açıldı.",
+     "en": "Withdrawal and exchange are currently out of balance; you may be missing some quiet moments, or the distance between you and others might have grown too wide.",
+     "es": "El retiro y el intercambio no están en equilibrio en este momento: o te falta silencio, o la distancia se ha vuelto demasiado grande."
     }
    }
   },
@@ -1175,16 +1555,22 @@
    "farbe": null,
    "name": {
     "de": "Das Rad des Schicksals",
-    "tr": "Kader Çarkı"
+    "tr": "Kader Çarkı",
+    "en": "Wheel of Fortune",
+    "es": "La Rueda de la Fortuna"
    },
    "kurz": {
     "aufrecht": {
      "de": "Das Leben ist in Bewegung, und ein Wendepunkt kann Dinge in eine neue, günstige Richtung drehen.",
-     "tr": "Hayat hareket hâlinde; bir dönüm noktası işleri yeni ve elverişli bir yöne çevirebilir."
+     "tr": "Hayat hareket hâlinde; bir dönüm noktası işleri yeni ve elverişli bir yöne çevirebilir.",
+     "en": "Life is in motion, and a turning point may shift things toward a new, favorable direction.",
+     "es": "La vida está en movimiento, y un punto de inflexión puede orientar las cosas hacia una nueva dirección favorable."
     },
     "umgekehrt": {
      "de": "Ein Kreislauf wiederholt sich oder stockt, und es hilft, dem Wandel nicht länger auszuweichen.",
-     "tr": "Bir döngü kendini tekrarlıyor ya da duraksıyor; değişimden kaçmamak işini kolaylaştırır."
+     "tr": "Bir döngü kendini tekrarlıyor ya da duraksıyor; değişimden kaçmamak işini kolaylaştırır.",
+     "en": "A cycle may repeat or stall, and it can help to stop avoiding change any longer.",
+     "es": "Un ciclo se repite o se detiene, y ayuda dejar de esquivar el cambio."
     }
    }
   },
@@ -1195,16 +1581,22 @@
    "farbe": null,
    "name": {
     "de": "Die Gerechtigkeit",
-    "tr": "Adalet"
+    "tr": "Adalet",
+    "en": "Justice",
+    "es": "La Justicia"
    },
    "kurz": {
     "aufrecht": {
      "de": "Klarheit, Fairness und ein nüchterner Blick auf Ursache und Wirkung helfen dir, eine stimmige Entscheidung zu treffen.",
-     "tr": "Netlik, hakkaniyet ve neden ile sonuca açık gözle bakmak, içine sinen bir karar vermene yardım eder."
+     "tr": "Netlik, hakkaniyet ve neden ile sonuca açık gözle bakmak, içine sinen bir karar vermene yardım eder.",
+     "en": "Clarity, fairness, and a clear-eyed view of cause and effect can help you make a decision that feels right.",
+     "es": "La claridad, la equidad y una mirada serena a las causas y sus efectos te ayudan a tomar una decisión coherente."
     },
     "umgekehrt": {
      "de": "Etwas ist aus dem Gleichgewicht geraten, und Ehrlichkeit mit dir selbst kann die Waage wieder ausrichten.",
-     "tr": "Bir şeyin dengesi kaymış; kendine dürüst olmak teraziyi yeniden düzeltebilir."
+     "tr": "Bir şeyin dengesi kaymış; kendine dürüst olmak teraziyi yeniden düzeltebilir.",
+     "en": "Something has fallen out of balance, and honesty with yourself can help restore the scales.",
+     "es": "Algo se ha desequilibrado, y la honestidad contigo puede volver a nivelar la balanza."
     }
    }
   },
@@ -1215,16 +1607,22 @@
    "farbe": null,
    "name": {
     "de": "Der Gehängte",
-    "tr": "Asılan Adam"
+    "tr": "Asılan Adam",
+    "en": "The Hanged Man",
+    "es": "El Colgado"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein bewusstes Innehalten öffnet dir einen ungewohnten Blick auf das, was dich gerade beschäftigt.",
-     "tr": "Bilinçli bir duraklama, seni meşgul eden şeye bambaşka bir açıdan bakmanı sağlayabilir."
+     "tr": "Bilinçli bir duraklama, seni meşgul eden şeye bambaşka bir açıdan bakmanı sağlayabilir.",
+     "en": "A conscious pause opens a fresh perspective on what is currently occupying your thoughts.",
+     "es": "Una pausa consciente te abre una mirada inusual sobre lo que te ocupa en este momento."
     },
     "umgekehrt": {
      "de": "Eine Pause zieht sich hin oder wird übergangen, obwohl sie eigentlich etwas klären möchte.",
-     "tr": "Bir bekleyiş uzuyor ya da es geçiliyor; oysa aslında bir şeyi berraklaştırmak istiyor."
+     "tr": "Bir bekleyiş uzuyor ya da es geçiliyor; oysa aslında bir şeyi berraklaştırmak istiyor.",
+     "en": "A pause may stretch on or be overlooked, even though it could help bring clarity.",
+     "es": "Una pausa se alarga o se pasa por alto, aunque en realidad quiere aclarar algo."
     }
    }
   },
@@ -1235,16 +1633,22 @@
    "farbe": null,
    "name": {
     "de": "Der Tod",
-    "tr": "Ölüm"
+    "tr": "Ölüm",
+    "en": "Death",
+    "es": "La Muerte"
    },
    "kurz": {
     "aufrecht": {
      "de": "Etwas findet zu einem natürlichen Abschluss und macht damit Platz für einen neuen Abschnitt deines Lebens.",
-     "tr": "Bir şey doğal bir kapanışa ulaşıyor ve hayatında yeni bir döneme yer açıyor."
+     "tr": "Bir şey doğal bir kapanışa ulaşıyor ve hayatında yeni bir döneme yer açıyor.",
+     "en": "Something is coming to its natural conclusion, making space for a new chapter in your life.",
+     "es": "Algo llega a su cierre natural y abre espacio para una nueva etapa en tu vida."
     },
     "umgekehrt": {
      "de": "Ein fälliger Übergang wird hinausgezögert, weil das Gewohnte schwer loszulassen ist.",
-     "tr": "Vakti gelmiş bir geçiş erteleniyor, çünkü alışılmış olanı bırakmak zor."
+     "tr": "Vakti gelmiş bir geçiş erteleniyor, çünkü alışılmış olanı bırakmak zor.",
+     "en": "A transition that is due may be delayed, as letting go of the familiar can feel difficult.",
+     "es": "Una transición necesaria se pospone, pues resulta difícil soltar lo conocido."
     }
    }
   },
@@ -1255,16 +1659,22 @@
    "farbe": null,
    "name": {
     "de": "Die Mäßigkeit",
-    "tr": "Denge"
+    "tr": "Denge",
+    "en": "Temperance",
+    "es": "La Templanza"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein ruhiges Gleichgewicht entsteht, wenn du Gegensätze behutsam miteinander verbindest und das rechte Maß findest.",
-     "tr": "Zıtlıkları özenle bir araya getirip ölçüyü bulduğunda sakin bir uyum oluşabilir."
+     "tr": "Zıtlıkları özenle bir araya getirip ölçüyü bulduğunda sakin bir uyum oluşabilir.",
+     "en": "A quiet balance emerges as you gently unite opposing forces and find the right measure.",
+     "es": "Un equilibrio sereno se forma al unir con delicadeza los opuestos y encontrar la medida adecuada."
     },
     "umgekehrt": {
      "de": "Etwas ist aus dem Lot geraten, und dein Alltag sucht nach einem neuen, stimmigeren Maß.",
-     "tr": "Bir şey ayarını yitirmiş; gündelik hayatın yeniden daha uyumlu bir ölçü arıyor."
+     "tr": "Bir şey ayarını yitirmiş; gündelik hayatın yeniden daha uyumlu bir ölçü arıyor.",
+     "en": "Something has slipped out of balance, and your daily life may be seeking a new, more harmonious measure.",
+     "es": "Algo se ha desequilibrado y tu rutina puede estar buscando una nueva medida que resuene con mayor armonía."
     }
    }
   },
@@ -1275,16 +1685,22 @@
    "farbe": null,
    "name": {
     "de": "Der Teufel",
-    "tr": "Şeytan"
+    "tr": "Şeytan",
+    "en": "The Devil",
+    "es": "El Diablo"
    },
    "kurz": {
     "aufrecht": {
      "de": "Eine Gewohnheit oder Verstrickung hält dich fester, als dir lieb ist, doch die Ketten sind lockerer, als sie scheinen.",
-     "tr": "Bir alışkanlık ya da düğüm seni sandığından sıkı tutuyor; ama zincirler göründüğünden çok daha gevşek."
+     "tr": "Bir alışkanlık ya da düğüm seni sandığından sıkı tutuyor; ama zincirler göründüğünden çok daha gevşek.",
+     "en": "A habit or entanglement holds you tighter than you might like, yet the chains are looser than they appear.",
+     "es": "Un hábito o un enredo te sujeta con más fuerza de lo que desearías, pero las cadenas están más flojas de lo que parecen."
     },
     "umgekehrt": {
      "de": "Du erkennst, was dich gebunden hat, und beginnst, dich behutsam davon zu lösen.",
-     "tr": "Seni bağlayan şeyi fark ediyor ve ondan yavaş yavaş çözülmeye başlıyorsun."
+     "tr": "Seni bağlayan şeyi fark ediyor ve ondan yavaş yavaş çözülmeye başlıyorsun.",
+     "en": "You see what has held you back, and you begin to gently loosen those ties.",
+     "es": "Reconoces lo que te ha atado y empiezas a soltarte con cuidado."
     }
    }
   },
@@ -1295,16 +1711,22 @@
    "farbe": null,
    "name": {
     "de": "Der Turm",
-    "tr": "Kule"
+    "tr": "Kule",
+    "en": "The Tower",
+    "es": "La Torre"
    },
    "kurz": {
     "aufrecht": {
      "de": "Eine plötzliche Einsicht rüttelt an etwas Brüchigem und schafft Platz für ein festeres Fundament.",
-     "tr": "Ani bir kavrayış çürük temelli bir yapıyı sarsar ve daha sağlam bir zemine yer açar."
+     "tr": "Ani bir kavrayış çürük temelli bir yapıyı sarsar ve daha sağlam bir zemine yer açar.",
+     "en": "A sudden insight shakes loose what is fragile and makes room for a more solid foundation.",
+     "es": "Una revelación repentina sacude lo frágil y abre espacio para una base más firme."
     },
     "umgekehrt": {
      "de": "Ein Umbruch geschieht eher im Inneren, oder du hältst noch an etwas fest, das schon wankt.",
-     "tr": "Bir değişim daha çok içeride yaşanıyor ya da sallanmakta olan bir şeye hâlâ tutunuyorsun."
+     "tr": "Bir değişim daha çok içeride yaşanıyor ya da sallanmakta olan bir şeye hâlâ tutunuyorsun.",
+     "en": "A shift is more likely to happen within you, or you may still be holding on to something that is already wavering.",
+     "es": "Un cambio profundo se gesta más en tu interior, o quizás aún te aferras a algo que ya ha comenzado a tambalearse."
     }
    }
   },
@@ -1315,16 +1737,22 @@
    "farbe": null,
    "name": {
     "de": "Der Stern",
-    "tr": "Yıldız"
+    "tr": "Yıldız",
+    "en": "The Star",
+    "es": "La Estrella"
    },
    "kurz": {
     "aufrecht": {
      "de": "Nach unruhigen Zeiten kehrt Zuversicht zurück, und du darfst wieder offen nach vorn schauen.",
-     "tr": "Zor bir dönemin ardından içine yeniden umut doluyor ve ileriye açık yüreklilikle bakabiliyorsun."
+     "tr": "Zor bir dönemin ardından içine yeniden umut doluyor ve ileriye açık yüreklilikle bakabiliyorsun.",
+     "en": "After restless times, confidence returns, and you may once again look forward with an open heart.",
+     "es": "Después de tiempos inquietos, la confianza regresa y puedes volver a mirar hacia adelante con apertura."
     },
     "umgekehrt": {
      "de": "Die Zuversicht ist gerade etwas leiser geworden, doch sie ist nicht verloren und lässt sich wieder wecken.",
-     "tr": "Umudun sesi şu sıralar biraz kısılmış; ama kaybolmuş değil, yeniden uyandırılabilir."
+     "tr": "Umudun sesi şu sıralar biraz kısılmış; ama kaybolmuş değil, yeniden uyandırılabilir.",
+     "en": "Your confidence may have grown a little quieter, but it has not been lost and can be awakened again.",
+     "es": "La confianza se ha vuelto un poco más silenciosa en este momento, pero no se ha perdido y puede despertar de nuevo."
     }
    }
   },
@@ -1335,16 +1763,22 @@
    "farbe": null,
    "name": {
     "de": "Der Mond",
-    "tr": "Ay"
+    "tr": "Ay",
+    "en": "The Moon",
+    "es": "La Luna"
    },
    "kurz": {
     "aufrecht": {
      "de": "Nicht alles ist gerade klar zu erkennen, und deine Intuition kann dich sicherer führen als der Verstand allein.",
-     "tr": "Şu sıralar her şey net görünmüyor; sezgilerin sana yalnızca akıldan daha iyi yol gösterebilir."
+     "tr": "Şu sıralar her şey net görünmüyor; sezgilerin sana yalnızca akıldan daha iyi yol gösterebilir.",
+     "en": "Not everything is clear to see right now, and your intuition can guide you more securely than logic alone.",
+     "es": "No todo es fácil de ver con claridad ahora; tu intuición puede guiarte con mayor seguridad que la razón por sí sola."
     },
     "umgekehrt": {
      "de": "Der Nebel beginnt sich zu lichten, und was dich verunsichert hat, kann nach und nach verständlicher werden.",
-     "tr": "Sis yavaş yavaş dağılmaya başlıyor; seni huzursuz eden şeyler giderek daha anlaşılır hâle gelebilir."
+     "tr": "Sis yavaş yavaş dağılmaya başlıyor; seni huzursuz eden şeyler giderek daha anlaşılır hâle gelebilir.",
+     "en": "The fog begins to lift, and what has unsettled you may gradually become clearer.",
+     "es": "La niebla comienza a disiparse, y lo que te ha generado incertidumbre puede ir volviéndose poco a poco más comprensible."
     }
    }
   },
@@ -1355,16 +1789,22 @@
    "farbe": null,
    "name": {
     "de": "Die Sonne",
-    "tr": "Güneş"
+    "tr": "Güneş",
+    "en": "The Sun",
+    "es": "El Sol"
    },
    "kurz": {
     "aufrecht": {
      "de": "Freude und Klarheit treten hervor, und was du tust, darf jetzt mit Leichtigkeit gelingen.",
-     "tr": "Neşe ve berraklık öne çıkıyor; yaptıkların şu sıralar hafiflikle yolunu bulabilir."
+     "tr": "Neşe ve berraklık öne çıkıyor; yaptıkların şu sıralar hafiflikle yolunu bulabilir.",
+     "en": "Joy and clarity emerge, and what you do may now unfold with ease.",
+     "es": "La alegría y la claridad emergen, y lo que haces puede lograrse ahora con ligereza."
     },
     "umgekehrt": {
      "de": "Die Freude ist da, aber gerade etwas verhangen, als zögen Wolken vor ein helles Licht.",
-     "tr": "Neşe yerinde duruyor ama şu sıralar biraz perdeli, sanki parlak bir ışığın önünden bulutlar geçiyor."
+     "tr": "Neşe yerinde duruyor ama şu sıralar biraz perdeli, sanki parlak bir ışığın önünden bulutlar geçiyor.",
+     "en": "Joy is present, though it may feel a bit clouded right now, as if clouds are drifting across a bright light.",
+     "es": "La alegría está presente, aunque en este momento se encuentra un poco velada, como si nubes pasaran ante una luz brillante."
     }
    }
   },
@@ -1375,16 +1815,22 @@
    "farbe": null,
    "name": {
     "de": "Das Gericht",
-    "tr": "Yargı"
+    "tr": "Yargı",
+    "en": "Judgement",
+    "es": "El Juicio"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein innerer Ruf weckt dich auf und lädt dich ein, mit klarem Blick neu anzufangen.",
-     "tr": "İçinden gelen bir çağrı seni uyandırıyor ve berrak bir bakışla yeniden başlamaya davet ediyor."
+     "tr": "İçinden gelen bir çağrı seni uyandırıyor ve berrak bir bakışla yeniden başlamaya davet ediyor.",
+     "en": "An inner call awakens you and invites you to begin anew with a clear gaze.",
+     "es": "Un llamado interior te despierta y te invita a comenzar de nuevo con claridad."
     },
     "umgekehrt": {
      "de": "Ein innerer Ruf ist da, doch Zweifel an dir selbst halten dich noch davon ab, ihm zu folgen.",
-     "tr": "İçinde bir çağrı var, ama kendinle ilgili kuşkular onu izlemene şimdilik engel oluyor."
+     "tr": "İçinde bir çağrı var, ama kendinle ilgili kuşkular onu izlemene şimdilik engel oluyor.",
+     "en": "There is an inner call, yet doubts about yourself may still keep you from following it.",
+     "es": "Hay una llamada interior, pero las dudas sobre ti aún te impiden seguirla."
     }
    }
   },
@@ -1395,16 +1841,22 @@
    "farbe": null,
    "name": {
     "de": "Die Welt",
-    "tr": "Dünya"
+    "tr": "Dünya",
+    "en": "The World",
+    "es": "El Mundo"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein Kreis schließt sich, und du darfst spüren, wie viel du erreicht hast und wie alles zusammenpasst.",
-     "tr": "Bir döngü tamamlanıyor; ne kadar yol aldığını ve parçaların nasıl yerine oturduğunu hissedebilirsin."
+     "tr": "Bir döngü tamamlanıyor; ne kadar yol aldığını ve parçaların nasıl yerine oturduğunu hissedebilirsin.",
+     "en": "A circle closes, and you may feel how much you have achieved and how everything fits together.",
+     "es": "Un círculo se cierra y puedes sentir cuánto has logrado y cómo todo encaja."
     },
     "umgekehrt": {
      "de": "Das Ziel ist nah, doch ein letztes Stück fehlt noch, bevor sich der Kreis schließen kann.",
-     "tr": "Hedef yakın, ama döngünün kapanabilmesi için son bir parça hâlâ eksik."
+     "tr": "Hedef yakın, ama döngünün kapanabilmesi için son bir parça hâlâ eksik.",
+     "en": "The goal is near, yet a final stretch remains before the circle can close.",
+     "es": "La meta está cerca, pero aún falta un último tramo antes de que el círculo pueda cerrarse."
     }
    }
   },
@@ -1415,16 +1867,22 @@
    "farbe": "staebe",
    "name": {
     "de": "Ass der Stäbe",
-    "tr": "Değnek Ası"
+    "tr": "Değnek Ası",
+    "en": "Ace of Wands",
+    "es": "As de Bastos"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein frischer Antrieb regt sich in dir und kann zum Anfang von etwas Eigenem werden.",
-     "tr": "İçinde taze bir hareketlilik kıpırdıyor ve kendine ait bir işin başlangıcı olabilir."
+     "tr": "İçinde taze bir hareketlilik kıpırdıyor ve kendine ait bir işin başlangıcı olabilir.",
+     "en": "A fresh impulse stirs within you and may become the beginning of something uniquely your own.",
+     "es": "Un impulso fresco se despierta en ti y puede convertirse en el inicio de algo propio."
     },
     "umgekehrt": {
      "de": "Der Antrieb ist schon da, doch seine Richtung zeigt sich erst nach und nach.",
-     "tr": "İstek içinde hazır duruyor, ama nereye akmak istediği henüz tam belli değil."
+     "tr": "İstek içinde hazır duruyor, ama nereye akmak istediği henüz tam belli değil.",
+     "en": "The drive is already there, but its direction is showing itself only gradually.",
+     "es": "El impulso ya está presente, pero su dirección se va mostrando poco a poco."
     }
    }
   },
@@ -1435,16 +1893,22 @@
    "farbe": "staebe",
    "name": {
     "de": "Zwei der Stäbe",
-    "tr": "Değnek İkilisi"
+    "tr": "Değnek İkilisi",
+    "en": "Two of Wands",
+    "es": "Dos de Bastos"
    },
    "kurz": {
     "aufrecht": {
      "de": "Mit dem Überblick über das, was möglich ist, kannst du jetzt Pläne schmieden, die zu dir passen.",
-     "tr": "Önündeki imkânlara yukarıdan bakabildiğin bu dönemde sana uyan planlar kurabilirsin."
+     "tr": "Önündeki imkânlara yukarıdan bakabildiğin bu dönemde sana uyan planlar kurabilirsin.",
+     "en": "With a clear view of what is possible, you may now craft plans that feel right for you.",
+     "es": "Con una visión de conjunto de lo que es posible, puedes ahora forjar planes que vayan contigo."
     },
     "umgekehrt": {
      "de": "Etwas Unerwartetes rüttelt an deinen Plänen und lädt dich ein, neu zu prüfen, was dir wirklich wichtig ist.",
-     "tr": "Beklenmedik bir şey planlarını sarsabilir ve senin için gerçekten önemli olanı yeniden tartmaya çağırabilir."
+     "tr": "Beklenmedik bir şey planlarını sarsabilir ve senin için gerçekten önemli olanı yeniden tartmaya çağırabilir.",
+     "en": "Something unexpected may shake up your plans and invite you to reconsider what truly matters to you.",
+     "es": "Algo inesperado sacude tus planes y te invita a revisar con calma qué es lo que realmente importa para ti."
     }
    }
   },
@@ -1455,16 +1919,22 @@
    "farbe": "staebe",
    "name": {
     "de": "Drei der Stäbe",
-    "tr": "Değnek Üçlüsü"
+    "tr": "Değnek Üçlüsü",
+    "en": "Three of Wands",
+    "es": "Tres de Bastos"
    },
    "kurz": {
     "aufrecht": {
      "de": "Von einem hohen Punkt aus siehst du weit, und was du angestoßen hast, kann sich in Bewegung setzen.",
-     "tr": "Yüksek bir yerden uzağı görüyorsun ve başlattığın işler harekete geçebilir."
+     "tr": "Yüksek bir yerden uzağı görüyorsun ve başlattığın işler harekete geçebilir.",
+     "en": "From a high vantage point, you see far ahead, and what you have set in motion may begin to unfold.",
+     "es": "Desde un lugar elevado ves lejos, y lo que has impulsado puede ponerse en marcha."
     },
     "umgekehrt": {
      "de": "Nach einer anstrengenden Strecke kann Druck nachlassen, auch wenn manches langsamer vorangeht als geplant.",
-     "tr": "Yorucu bir dönemin ardından baskı hafifleyebilir, bazı işler planladığından ağır ilerlese de."
+     "tr": "Yorucu bir dönemin ardından baskı hafifleyebilir, bazı işler planladığından ağır ilerlese de.",
+     "en": "After a demanding stretch of the journey, pressure may ease, even if some things unfold more slowly than you had planned.",
+     "es": "Después de un trayecto agotador, la tensión puede disminuir, aunque algunas cosas avancen más despacio de lo previsto."
     }
    }
   },
@@ -1475,16 +1945,22 @@
    "farbe": "staebe",
    "name": {
     "de": "Vier der Stäbe",
-    "tr": "Değnek Dörtlüsü"
+    "tr": "Değnek Dörtlüsü",
+    "en": "Four of Wands",
+    "es": "Cuatro de Bastos"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein Abschnitt ist geschafft, und du kannst dich fühlen wie jemand, der nach einem langen Tag zu Hause ankommt.",
-     "tr": "Emeğinin meyvesini topluyorsun; uzun bir günün sonunda eve varmış gibi bir rahatlık duyabilirsin."
+     "tr": "Emeğinin meyvesini topluyorsun; uzun bir günün sonunda eve varmış gibi bir rahatlık duyabilirsin.",
+     "en": "A stage is accomplished, and you may feel like someone arriving home after a long day.",
+     "es": "Un capítulo ha llegado a su fin y puedes sentirte como quien regresa a casa tras un largo día."
     },
     "umgekehrt": {
      "de": "Die Freude über Erreichtes bleibt, auch wenn sie sich gerade eher leise und nach innen zeigt.",
-     "tr": "Ulaştıklarının sevinci yerinde duruyor, şu sıralar daha sessiz ve içe dönük bir biçimde olsa da."
+     "tr": "Ulaştıklarının sevinci yerinde duruyor, şu sıralar daha sessiz ve içe dönük bir biçimde olsa da.",
+     "en": "The joy of what you have achieved remains with you, even if it is currently expressing itself in a quiet and inward way.",
+     "es": "La alegría por lo logrado permanece, aunque en este momento se manifieste de forma más discreta y hacia tu interior."
     }
    }
   },
@@ -1495,16 +1971,22 @@
    "farbe": "staebe",
    "name": {
     "de": "Fünf der Stäbe",
-    "tr": "Değnek Beşlisi"
+    "tr": "Değnek Beşlisi",
+    "en": "Five of Wands",
+    "es": "Cinco de Bastos"
    },
    "kurz": {
     "aufrecht": {
      "de": "Verschiedene Ansichten treffen lebhaft aufeinander, und aus dieser Reibung können frische Ideen entstehen.",
-     "tr": "Farklı görüşler canlı bir şekilde karşılaşıyor; bu hareketlilikten taze fikirler doğabilir."
+     "tr": "Farklı görüşler canlı bir şekilde karşılaşıyor; bu hareketlilikten taze fikirler doğabilir.",
+     "en": "Different perspectives come together vividly, and from this friction, fresh ideas can emerge.",
+     "es": "Diversas perspectivas se encuentran con viveza, y de esa fricción pueden surgir ideas frescas."
     },
     "umgekehrt": {
      "de": "Die Spannung lässt nach, und du kannst klären, wo du selbst stehst, statt jeder Reibung auszuweichen.",
-     "tr": "Gerilim yatışıyor; her tartışmadan kaçmak yerine kendi yerini netleştirebilirsin."
+     "tr": "Gerilim yatışıyor; her tartışmadan kaçmak yerine kendi yerini netleştirebilirsin.",
+     "en": "The tension eases, and you can clarify where you stand, rather than avoiding every friction.",
+     "es": "La tensión cede y puedes aclarar cuál es tu propia postura, en lugar de esquivar cada roce."
     }
    }
   },
@@ -1515,16 +1997,22 @@
    "farbe": "staebe",
    "name": {
     "de": "Sechs der Stäbe",
-    "tr": "Değnek Altılısı"
+    "tr": "Değnek Altılısı",
+    "en": "Six of Wands",
+    "es": "Seis de Bastos"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein Abschnitt ist gelungen, und es ist stimmig, die Anerkennung dafür anzunehmen und mit Menschen zu teilen, die dich begleitet haben.",
-     "tr": "Bir aşama başarıyla tamamlandı; bunun takdirini kabul etmek ve sana eşlik edenlerle paylaşmak yerinde olabilir."
+     "tr": "Bir aşama başarıyla tamamlandı; bunun takdirini kabul etmek ve sana eşlik edenlerle paylaşmak yerinde olabilir.",
+     "en": "A chapter has come to a successful close, and it feels right to accept the recognition for this and share it with those who have walked beside you.",
+     "es": "Una etapa ha salido bien, y está bien aceptar el reconocimiento por ello y compartirlo con quienes te han acompañado."
     },
     "umgekehrt": {
      "de": "Erfolg zeigt sich gerade eher leise, und du kannst prüfen, welcher Maßstab wirklich deiner ist.",
-     "tr": "Başarı şu sıralar daha sessiz bir yüz gösteriyor; hangi ölçünün gerçekten sana ait olduğunu yoklayabilirsin."
+     "tr": "Başarı şu sıralar daha sessiz bir yüz gösteriyor; hangi ölçünün gerçekten sana ait olduğunu yoklayabilirsin.",
+     "en": "Success may be showing itself in a quiet way right now, and you can reflect on which standard truly resonates with you.",
+     "es": "El éxito se muestra ahora de manera más discreta, y puedes comprobar qué medida es de verdad la tuya."
     }
    }
   },
@@ -1535,16 +2023,22 @@
    "farbe": "staebe",
    "name": {
     "de": "Sieben der Stäbe",
-    "tr": "Değnek Yedilisi"
+    "tr": "Değnek Yedilisi",
+    "en": "Seven of Wands",
+    "es": "Siete de Bastos"
    },
    "kurz": {
     "aufrecht": {
      "de": "Du stehst für das ein, was dir wichtig ist, und kannst deine Haltung bewahren, auch wenn Fragen und Einwände von allen Seiten kommen.",
-     "tr": "Senin için önemli olana sahip çıkıyorsun; dört bir yandan sorular ve itirazlar yükselse de duruşunu koruyabilirsin."
+     "tr": "Senin için önemli olana sahip çıkıyorsun; dört bir yandan sorular ve itirazlar yükselse de duruşunu koruyabilirsin.",
+     "en": "You stand for what matters to you and can hold your ground, even as questions and objections arise from all sides.",
+     "es": "Defiendes lo que te importa y puedes mantener tu postura, aunque lleguen preguntas y objeciones de todas partes."
     },
     "umgekehrt": {
      "de": "Der Stand fühlt sich gerade wackelig an, und es hilft, die Kräfte zu sammeln, statt jede Position zugleich halten zu wollen.",
-     "tr": "Durduğun yer şu sıralar biraz sallantılı hissettiriyor; her şeyi aynı anda savunmak yerine gücünü toplamak işine yarayabilir."
+     "tr": "Durduğun yer şu sıralar biraz sallantılı hissettiriyor; her şeyi aynı anda savunmak yerine gücünü toplamak işine yarayabilir.",
+     "en": "You may feel a bit unsteady right now. It helps to gather your strength rather than trying to hold every position at once.",
+     "es": "Ahora pisas terreno inestable, y ayuda reunir tus fuerzas en lugar de querer sostener cada posición a la vez."
     }
    }
   },
@@ -1555,16 +2049,22 @@
    "farbe": "staebe",
    "name": {
     "de": "Acht der Stäbe",
-    "tr": "Değnek Sekizlisi"
+    "tr": "Değnek Sekizlisi",
+    "en": "Eight of Wands",
+    "es": "Ocho de Bastos"
    },
    "kurz": {
     "aufrecht": {
      "de": "Dinge kommen in Schwung, und mit klarem Blick kannst du die Bewegung nutzen, die gerade entsteht.",
-     "tr": "İşler hızlanıyor; açık bir bakışla şu an doğan bu hareketi değerlendirebilirsin."
+     "tr": "İşler hızlanıyor; açık bir bakışla şu an doğan bu hareketi değerlendirebilirsin.",
+     "en": "Things are gaining momentum, and with a clear perspective, you can harness the energy that is unfolding right now.",
+     "es": "Las cosas cobran impulso y, con la mirada clara, puedes aprovechar el movimiento que está surgiendo."
     },
     "umgekehrt": {
      "de": "Etwas stockt oder läuft zu hastig, und es lohnt sich, die Richtung zu prüfen, bevor du weiter Fahrt aufnimmst.",
-     "tr": "Bir şey ya takılıyor ya da fazla telaşlı ilerliyor; yeniden hızlanmadan önce yönü gözden geçirmek iyi olabilir."
+     "tr": "Bir şey ya takılıyor ya da fazla telaşlı ilerliyor; yeniden hızlanmadan önce yönü gözden geçirmek iyi olabilir.",
+     "en": "Things may feel stuck or rush ahead too quickly. It can be wise to check your direction before you continue.",
+     "es": "Algo se atasca o va con demasiada prisa, y vale la pena revisar la dirección antes de seguir tomando velocidad."
     }
    }
   },
@@ -1575,16 +2075,22 @@
    "farbe": "staebe",
    "name": {
     "de": "Neun der Stäbe",
-    "tr": "Değnek Dokuzlusu"
+    "tr": "Değnek Dokuzlusu",
+    "en": "Nine of Wands",
+    "es": "Nueve de Bastos"
    },
    "kurz": {
     "aufrecht": {
      "de": "Du hast schon viel durchgestanden und stehst noch fest; jetzt geht es darum, deine Kräfte klug einzuteilen und deine Grenzen zu kennen.",
-     "tr": "Çok şeyi göğüslemiş ve hâlâ ayakta kalmışsın; şimdi gücünü akıllıca bölüştürmek ve sınırlarını bilmek öne çıkıyor."
+     "tr": "Çok şeyi göğüslemiş ve hâlâ ayakta kalmışsın; şimdi gücünü akıllıca bölüştürmek ve sınırlarını bilmek öne çıkıyor.",
+     "en": "You have already endured much and remain steadfast; now it is about wisely distributing your strength and knowing your boundaries.",
+     "es": "Ya has atravesado muchas pruebas y sigues firme; ahora se trata de distribuir tus fuerzas con sabiduría y conocer tus límites."
     },
     "umgekehrt": {
      "de": "Die Wachsamkeit kostet gerade viel Kraft; eine Atempause und etwas weniger Abwehr können dir helfen, wieder gelassener zu stehen.",
-     "tr": "Hep tetikte durmak şu sıralar seni yoruyor olabilir; biraz soluklanmak ve savunmayı gevşetmek yeniden rahat durmana yardım edebilir."
+     "tr": "Hep tetikte durmak şu sıralar seni yoruyor olabilir; biraz soluklanmak ve savunmayı gevşetmek yeniden rahat durmana yardım edebilir.",
+     "en": "Your vigilance is draining your energy right now. A brief pause and a little less defensiveness can help you find your calm again.",
+     "es": "La vigilancia te cuesta ahora mucha fuerza; una pausa para respirar y un poco menos de defensa pueden ayudarte a estar de nuevo con más serenidad."
     }
    }
   },
@@ -1595,16 +2101,22 @@
    "farbe": "staebe",
    "name": {
     "de": "Zehn der Stäbe",
-    "tr": "Değnek Onlusu"
+    "tr": "Değnek Onlusu",
+    "en": "Ten of Wands",
+    "es": "Diez de Bastos"
    },
    "kurz": {
     "aufrecht": {
      "de": "Du trägst gerade viel auf einmal; das Ziel ist schon in Sichtweite, und du kannst überlegen, was du davon wirklich selbst tragen musst.",
-     "tr": "Şu sıralar aynı anda çok şey taşıyorsun; hedef artık görünüyor ve bunların ne kadarını gerçekten senin taşıman gerektiğini düşünebilirsin."
+     "tr": "Şu sıralar aynı anda çok şey taşıyorsun; hedef artık görünüyor ve bunların ne kadarını gerçekten senin taşıman gerektiğini düşünebilirsin.",
+     "en": "You are carrying a lot right now. The goal is already within sight, and you might consider what you truly need to bear yourself.",
+     "es": "Ahora llevas mucho a la vez; la meta ya está a la vista, y puedes pensar qué parte de ello te toca de verdad llevar a ti."
     },
     "umgekehrt": {
      "de": "Ein Teil der Last kann von deinen Schultern gleiten, wenn du Aufgaben teilst, abgibst oder einfach liegen lässt.",
-     "tr": "İşleri paylaştıkça, devrettikçe ya da bazılarını bir kenara koydukça yükünün bir kısmı omuzlarından inebilir."
+     "tr": "İşleri paylaştıkça, devrettikçe ya da bazılarını bir kenara koydukça yükünün bir kısmı omuzlarından inebilir.",
+     "en": "A part of the burden may slip from your shoulders when you share tasks, hand them over, or simply let them go.",
+     "es": "Una parte de la carga puede deslizarse de tus hombros si compartes las tareas, las delegas o simplemente las dejas estar."
     }
    }
   },
@@ -1615,16 +2127,22 @@
    "farbe": "staebe",
    "name": {
     "de": "Bube der Stäbe",
-    "tr": "Değnek Valesi"
+    "tr": "Değnek Valesi",
+    "en": "Page of Wands",
+    "es": "Sota de Bastos"
    },
    "kurz": {
     "aufrecht": {
      "de": "Entdeckerlust und Begeisterung für Neues können dich gerade ins Ausprobieren ziehen, mit einer Idee, die noch frisch und ungeschliffen ist.",
-     "tr": "Keşif hevesin ve yeniye duyduğun coşku seni şu sıralar denemeye çekebilir; henüz taze ve ham bir fikirle."
+     "tr": "Keşif hevesin ve yeniye duyduğun coşku seni şu sıralar denemeye çekebilir; henüz taze ve ham bir fikirle.",
+     "en": "A sense of curiosity and enthusiasm for the new may draw you to explore, guided by an idea that is still fresh and unpolished.",
+     "es": "Las ganas de explorar y el entusiasmo por lo nuevo pueden llevarte ahora a experimentar, con una idea que aún está fresca y sin pulir."
     },
     "umgekehrt": {
      "de": "Deine Begeisterung springt vielleicht gerade schneller weiter, als eine Idee wachsen kann, oder wartet noch auf den richtigen Moment.",
-     "tr": "Hevesin şu sıralar bir fikir büyümeye fırsat bulmadan başka bir şeye atlıyor ya da hâlâ doğru anı bekliyor olabilir."
+     "tr": "Hevesin şu sıralar bir fikir büyümeye fırsat bulmadan başka bir şeye atlıyor ya da hâlâ doğru anı bekliyor olabilir.",
+     "en": "Your enthusiasm may be moving forward faster than an idea can take root, or it might still be waiting for the right moment to unfold.",
+     "es": "Quizá tu entusiasmo salte ahora más rápido de lo que una idea puede crecer, o aún espere el momento adecuado."
     }
    }
   },
@@ -1635,16 +2153,22 @@
    "farbe": "staebe",
    "name": {
     "de": "Ritter der Stäbe",
-    "tr": "Değnek Şövalyesi"
+    "tr": "Değnek Şövalyesi",
+    "en": "Knight of Wands",
+    "es": "Caballero de Bastos"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein Vorhaben zieht dich nach vorn, und du hast den Mut, ihm mit Schwung und klarer Richtung zu folgen.",
-     "tr": "Bir hedef seni ileri çekiyor ve onun peşine hevesle, net bir yönle düşmeye cesaretin var."
+     "tr": "Bir hedef seni ileri çekiyor ve onun peşine hevesle, net bir yönle düşmeye cesaretin var.",
+     "en": "A plan draws you forward, and you have the courage to follow it with energy and clear direction.",
+     "es": "Un proyecto te impulsa hacia adelante y tienes el valor de seguirlo con energía y dirección clara."
     },
     "umgekehrt": {
      "de": "Viel Schwung ist da, doch gerade zerstreut sich die Kraft, und ein Moment des Sammelns kann ihr wieder eine Richtung geben.",
-     "tr": "İçinde bolca hız var ama şu sıralar dağılıyor; kısa bir toparlanma ona yeniden yön verebilir."
+     "tr": "İçinde bolca hız var ama şu sıralar dağılıyor; kısa bir toparlanma ona yeniden yön verebilir.",
+     "en": "There is plenty of energy here, yet it feels scattered at the moment. A brief pause to gather your thoughts may help give that strength a clearer direction.",
+     "es": "Hay mucho impulso, pero ahora la fuerza se dispersa, y un momento de recogimiento puede volver a darle una dirección."
     }
    }
   },
@@ -1655,16 +2179,22 @@
    "farbe": "staebe",
    "name": {
     "de": "Königin der Stäbe",
-    "tr": "Değnek Kraliçesi"
+    "tr": "Değnek Kraliçesi",
+    "en": "Queen of Wands",
+    "es": "Reina de Bastos"
    },
    "kurz": {
     "aufrecht": {
      "de": "Du strahlst gerade Wärme und Selbstsicherheit aus, und deine Zuversicht kann Menschen und Vorhaben um dich herum beleben.",
-     "tr": "Şu sıralar etrafına sıcaklık ve özgüven yayıyorsun; iyimserliğin hem insanlara hem de işlerine can katabilir."
+     "tr": "Şu sıralar etrafına sıcaklık ve özgüven yayıyorsun; iyimserliğin hem insanlara hem de işlerine can katabilir.",
+     "en": "You are radiating warmth and self-assurance right now, and your confidence can bring life to the people and projects around you.",
+     "es": "Ahora irradias calidez y seguridad en ti, y tu confianza puede dar vida a las personas y los proyectos que te rodean."
     },
     "umgekehrt": {
      "de": "Deine Wärme flackert gerade zwischen zu viel Einsatz für alle und leisen Zweifeln, und ein Blick nach innen kann dich wieder sammeln.",
-     "tr": "Sıcaklığın, herkese yetişme çabasıyla sessiz kuşkular arasında bir parlayıp bir sönüyor; içine dönmek seni yeniden toparlayabilir."
+     "tr": "Sıcaklığın, herkese yetişme çabasıyla sessiz kuşkular arasında bir parlayıp bir sönüyor; içine dönmek seni yeniden toparlayabilir.",
+     "en": "Your warmth is flickering between giving too much to everyone and quiet doubts. A look inward can help you gather yourself again.",
+     "es": "Tu calidez parpadea ahora entre demasiada entrega a todos y dudas silenciosas, y una mirada hacia dentro puede ayudarte a centrarte de nuevo."
     }
    }
   },
@@ -1675,16 +2205,22 @@
    "farbe": "staebe",
    "name": {
     "de": "König der Stäbe",
-    "tr": "Değnek Kralı"
+    "tr": "Değnek Kralı",
+    "en": "King of Wands",
+    "es": "Rey de Bastos"
    },
    "kurz": {
     "aufrecht": {
      "de": "Du siehst gerade das große Ganze deines Vorhabens und hast die Kraft, ihm mit Weitblick und Überzeugung eine Richtung zu geben.",
-     "tr": "Şu an işinin bütününü görebiliyor, ona geniş bir bakışla ve inançla yön verme gücünü içinde taşıyorsun."
+     "tr": "Şu an işinin bütününü görebiliyor, ona geniş bir bakışla ve inançla yön verme gücünü içinde taşıyorsun.",
+     "en": "You see the big picture of your endeavor and have the strength to guide it with foresight and conviction.",
+     "es": "Ves el panorama completo de tu proyecto y tienes la fuerza para darle dirección con visión de futuro y convicción."
     },
     "umgekehrt": {
      "de": "Dein Anspruch ist gerade hoch und dein Ton womöglich strenger als nötig, und etwas Milde kann deiner Vision wieder Luft verschaffen.",
-     "tr": "Beklentilerin şu sıralar yüksek, sesin belki gerekenden sert; biraz yumuşaklık vizyonuna yeniden nefes aldırabilir."
+     "tr": "Beklentilerin şu sıralar yüksek, sesin belki gerekenden sert; biraz yumuşaklık vizyonuna yeniden nefes aldırabilir.",
+     "en": "Your standards may feel high right now, and your tone might come across as stricter than necessary. A touch of gentleness could help bring fresh air back to your vision.",
+     "es": "Tu exigencia es alta ahora y tu tono quizá más severo de lo necesario; un poco de suavidad puede devolverle aire a tu visión."
     }
    }
   },
@@ -1695,16 +2231,22 @@
    "farbe": "kelche",
    "name": {
     "de": "Ass der Kelche",
-    "tr": "Kadeh Ası"
+    "tr": "Kadeh Ası",
+    "en": "Ace of Cups",
+    "es": "As de Copas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Wie aus einem übervollen Becher kann jetzt Zuneigung fließen, zu dir selbst und zu den Menschen um dich.",
-     "tr": "Taşan bir kadeh gibi, içindeki sevgi şimdi hem sana hem de çevrendeki insanlara akabilir."
+     "tr": "Taşan bir kadeh gibi, içindeki sevgi şimdi hem sana hem de çevrendeki insanlara akabilir.",
+     "en": "As if from an overflowing cup, affection can flow now, toward yourself and toward the people around you.",
+     "es": "Como de una copa rebosante, ahora puede fluir el afecto, hacia ti y hacia las personas que te rodean."
     },
     "umgekehrt": {
      "de": "Zuneigung ist da, doch sie bleibt gerade eher bei dir und möchte zuerst dir selbst gelten.",
-     "tr": "Sevgi içinde duruyor ama şu sıralar dışarı taşmak yerine önce seni beslemek istiyor."
+     "tr": "Sevgi içinde duruyor ama şu sıralar dışarı taşmak yerine önce seni beslemek istiyor.",
+     "en": "Affection is there, but right now it stays more with you and wants to be for you first.",
+     "es": "Hay afecto, pero ahora se queda más bien contigo y quiere dirigirse primero a ti."
     }
    }
   },
@@ -1715,16 +2257,22 @@
    "farbe": "kelche",
    "name": {
     "de": "Zwei der Kelche",
-    "tr": "Kadeh İkilisi"
+    "tr": "Kadeh İkilisi",
+    "en": "Two of Cups",
+    "es": "Dos de Copas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Begegnung auf Augenhöhe: Wo Achtung auf beiden Seiten da ist, kann eine echte Verbindung entstehen.",
-     "tr": "Eşit düzeyde bir buluşma: Saygının karşılıklı olduğu yerde içten bir bağ kurulabilir."
+     "tr": "Eşit düzeyde bir buluşma: Saygının karşılıklı olduğu yerde içten bir bağ kurulabilir.",
+     "en": "An encounter on equal footing: where respect exists on both sides, a genuine connection can emerge.",
+     "es": "Encuentro de igual a igual: donde hay respeto mutuo, puede surgir una conexión auténtica."
     },
     "umgekehrt": {
      "de": "Der Gleichklang gerät ins Stocken, und es lohnt sich, zuerst bei dir selbst wieder in Einklang zu kommen.",
-     "tr": "Uyum şu sıralar aksıyor; önce kendinle yeniden ahenk bulmak sana yol gösterebilir."
+     "tr": "Uyum şu sıralar aksıyor; önce kendinle yeniden ahenk bulmak sana yol gösterebilir.",
+     "en": "The harmony may falter, and it can be helpful to first find your own inner balance again.",
+     "es": "La armonía se atasca, y vale la pena volver primero a estar en sintonía contigo."
     }
    }
   },
@@ -1735,16 +2283,22 @@
    "farbe": "kelche",
    "name": {
     "de": "Drei der Kelche",
-    "tr": "Kadeh Üçlüsü"
+    "tr": "Kadeh Üçlüsü",
+    "en": "Three of Cups",
+    "es": "Tres de Copas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Gemeinsam feiern, teilen und einander stützen: In guter Gesellschaft kann sich Freude vervielfachen.",
-     "tr": "Birlikte kutlamak, paylaşmak ve birbirine destek olmak: İyi bir dost çevresinde sevinç katlanarak büyüyebilir."
+     "tr": "Birlikte kutlamak, paylaşmak ve birbirine destek olmak: İyi bir dost çevresinde sevinç katlanarak büyüyebilir.",
+     "en": "Celebrating together, sharing, and supporting one another: in good company, joy can multiply.",
+     "es": "Celebrar, compartir y apoyarse mutuamente: en buena compañía, la alegría puede multiplicarse."
     },
     "umgekehrt": {
      "de": "Nach viel Geselligkeit darf jetzt Zeit für dich selbst Raum bekommen, und auch ein Abschluss kann Platz schaffen.",
-     "tr": "Kalabalık günlerin ardından şimdi kendine zaman ayırma sırası; bir işi tamamlamak da yer açabilir."
+     "tr": "Kalabalık günlerin ardından şimdi kendine zaman ayırma sırası; bir işi tamamlamak da yer açabilir.",
+     "en": "After a lot of socializing, time for yourself may now get some room, and an ending can also make space.",
+     "es": "Tras mucha vida social, ahora el tiempo para ti puede ocupar su espacio, y también un cierre puede dejar sitio."
     }
    }
   },
@@ -1755,16 +2309,22 @@
    "farbe": "kelche",
    "name": {
     "de": "Vier der Kelche",
-    "tr": "Kadeh Dörtlüsü"
+    "tr": "Kadeh Dörtlüsü",
+    "en": "Four of Cups",
+    "es": "Cuatro de Copas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Der Blick ist gerade nach innen gerichtet, und manches Angebot wird übersehen, weil das Vertraute schal geworden ist.",
-     "tr": "Bakışın şu sıralar içine dönük; alışılmış olan tatsızlaşınca önüne uzatılan bazı şeyler gözden kaçabilir."
+     "tr": "Bakışın şu sıralar içine dönük; alışılmış olan tatsızlaşınca önüne uzatılan bazı şeyler gözden kaçabilir.",
+     "en": "Your gaze is turned inward, and some opportunities may be overlooked because the familiar has lost its flavor.",
+     "es": "Tu mirada se dirige ahora hacia dentro, y quizá pases por alto algún ofrecimiento porque lo conocido se ha vuelto insípido."
     },
     "umgekehrt": {
      "de": "Die Starre löst sich, Neugier erwacht, und du bemerkst wieder, welche Anregungen um dich herum bereitliegen.",
-     "tr": "Durgunluk çözülüyor, merak uyanıyor ve çevrendeki yeni esinleri yeniden fark etmeye başlıyorsun."
+     "tr": "Durgunluk çözülüyor, merak uyanıyor ve çevrendeki yeni esinleri yeniden fark etmeye başlıyorsun.",
+     "en": "The standstill eases, curiosity awakens, and you notice again the inspiration waiting all around you.",
+     "es": "La rigidez se disuelve, la curiosidad despierta y vuelves a notar los estímulos que tienes a tu alrededor."
     }
    }
   },
@@ -1775,16 +2335,22 @@
    "farbe": "kelche",
    "name": {
     "de": "Fünf der Kelche",
-    "tr": "Kadeh Beşlisi"
+    "tr": "Kadeh Beşlisi",
+    "en": "Five of Cups",
+    "es": "Cinco de Copas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Etwas ist anders gekommen als erhofft, doch neben dem Verschütteten stehen noch Kelche, die du sehen darfst.",
-     "tr": "Bir şey umduğun gibi gitmedi; ama dökülenlerin yanında hâlâ ayakta duran kadehler var."
+     "tr": "Bir şey umduğun gibi gitmedi; ama dökülenlerin yanında hâlâ ayakta duran kadehler var.",
+     "en": "Something has turned out differently than you hoped, yet beside what was spilled, there are still cups standing that you are free to see.",
+     "es": "Algo ha salido distinto de lo que esperabas, pero junto a lo derramado todavía hay copas en pie que puedes ver."
     },
     "umgekehrt": {
      "de": "Die Enttäuschung verliert an Gewicht, und du kannst dich wieder dem zuwenden, was dir geblieben ist.",
-     "tr": "Burukluk yavaş yavaş hafifliyor ve gözün yeniden elinde kalanlara dönebiliyor."
+     "tr": "Burukluk yavaş yavaş hafifliyor ve gözün yeniden elinde kalanlara dönebiliyor.",
+     "en": "The weight of disappointment begins to lift, and you may once again turn your attention to what remains with you.",
+     "es": "La decepción pierde fuerza y puedes volver a centrarte en lo que aún te queda."
     }
    }
   },
@@ -1795,16 +2361,22 @@
    "farbe": "kelche",
    "name": {
     "de": "Sechs der Kelche",
-    "tr": "Kadeh Altılısı"
+    "tr": "Kadeh Altılısı",
+    "en": "Six of Cups",
+    "es": "Seis de Copas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Liebe Erinnerungen und eine einfache Freundlichkeit machen gerade vieles weicher und wärmer.",
-     "tr": "Güzel anılar ve sade bir iyilik şu sıralar hayatını daha yumuşak ve sıcak kılıyor."
+     "tr": "Güzel anılar ve sade bir iyilik şu sıralar hayatını daha yumuşak ve sıcak kılıyor.",
+     "en": "Fond memories and simple kindness are making many things softer and warmer right now.",
+     "es": "Los recuerdos queridos y una amabilidad sencilla hacen ahora muchas cosas más suaves y cálidas."
     },
     "umgekehrt": {
      "de": "Der Blick zurück ist gerade stärker als der Blick ins Heute, und das Gestern hält dich ein wenig fest.",
-     "tr": "Şu sıralar geçmişe bakış, bugüne bakıştan ağır basıyor ve dün seni biraz tutuyor."
+     "tr": "Şu sıralar geçmişe bakış, bugüne bakıştan ağır basıyor ve dün seni biraz tutuyor.",
+     "en": "Your gaze is drawn more strongly to the past than to the present, and yesterday may hold you back a little.",
+     "es": "La mirada hacia atrás pesa ahora más que la mirada al presente, y el ayer te retiene un poco."
     }
    }
   },
@@ -1815,16 +2387,22 @@
    "farbe": "kelche",
    "name": {
     "de": "Sieben der Kelche",
-    "tr": "Kadeh Yedilisi"
+    "tr": "Kadeh Yedilisi",
+    "en": "Seven of Cups",
+    "es": "Siete de Copas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Viele Möglichkeiten und Wunschbilder schweben vor dir, und es lohnt sich, in Ruhe zu prüfen, welche davon zu dir passen.",
-     "tr": "Önünde pek çok olasılık ve hayal duruyor; hangisinin sana uyduğuna sakin kafayla bakmaya değer."
+     "tr": "Önünde pek çok olasılık ve hayal duruyor; hangisinin sana uyduğuna sakin kafayla bakmaya değer.",
+     "en": "Many possibilities and wishful images float before you, and it is worth calmly checking which of them suit you.",
+     "es": "Muchas posibilidades e imágenes de deseo flotan ante ti, y vale la pena examinar con calma cuáles van contigo."
     },
     "umgekehrt": {
      "de": "Aus der Fülle der Bilder schält sich allmählich heraus, was du wirklich willst, und ein Plan kann Gestalt annehmen.",
-     "tr": "Hayallerin bolluğu içinde neyi gerçekten istediğin yavaş yavaş netleşiyor ve bir plan biçimlenebilir."
+     "tr": "Hayallerin bolluğu içinde neyi gerçekten istediğin yavaş yavaş netleşiyor ve bir plan biçimlenebilir.",
+     "en": "From the abundance of images, what you truly want gradually emerges, and a plan can take shape.",
+     "es": "De la abundancia de imágenes se va perfilando poco a poco lo que de verdad quieres, y un plan puede tomar forma."
     }
    }
   },
@@ -1835,16 +2413,22 @@
    "farbe": "kelche",
    "name": {
     "de": "Acht der Kelche",
-    "tr": "Kadeh Sekizlisi"
+    "tr": "Kadeh Sekizlisi",
+    "en": "Eight of Cups",
+    "es": "Ocho de Copas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Etwas nährt dich nicht mehr so wie früher, und es zieht dich weiter, auf die Suche nach dem, was dich wirklich erfüllt.",
-     "tr": "Bir şey seni eskisi gibi beslemiyor; içinde, seni gerçekten dolduran şeyi arama isteği kıpırdanıyor."
+     "tr": "Bir şey seni eskisi gibi beslemiyor; içinde, seni gerçekten dolduran şeyi arama isteği kıpırdanıyor.",
+     "en": "Something no longer nourishes you as it once did, and a quiet pull draws you onward, toward the search for what truly fulfills you.",
+     "es": "Algo ya no te nutre como antes, y sientes el impulso de continuar en busca de aquello que realmente te llena."
     },
     "umgekehrt": {
      "de": "Ein Zögern hält dich gerade an, und du darfst dir Zeit nehmen, noch einmal genau hinzuschauen, was dich nährt und hält.",
-     "tr": "Bir duraksama seni şu sıralar yerinde tutuyor; seni neyin beslediğine ve tuttuğuna bir kez daha dikkatle bakmak için zaman tanıyabilirsin."
+     "tr": "Bir duraksama seni şu sıralar yerinde tutuyor; seni neyin beslediğine ve tuttuğuna bir kez daha dikkatle bakmak için zaman tanıyabilirsin.",
+     "en": "A hesitation is making you pause right now, and you are free to take time to look closely once more at what nourishes and holds you.",
+     "es": "Una duda te detiene ahora, y puedes tomarte tiempo para mirar otra vez con atención qué te nutre y te sostiene."
     }
    }
   },
@@ -1855,16 +2439,22 @@
    "farbe": "kelche",
    "name": {
     "de": "Neun der Kelche",
-    "tr": "Kadeh Dokuzlusu"
+    "tr": "Kadeh Dokuzlusu",
+    "en": "Nine of Cups",
+    "es": "Nueve de Copas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein Wunsch kann sich erfüllen, und du darfst ohne Eile genießen, was dir gelungen ist.",
-     "tr": "Bir dileğin karşılık bulabilir; elde ettiğin şeyin tadını acele etmeden çıkarabilirsin."
+     "tr": "Bir dileğin karşılık bulabilir; elde ettiğin şeyin tadını acele etmeden çıkarabilirsin.",
+     "en": "A wish may come true, and you are free to enjoy, without hurry, what you have accomplished.",
+     "es": "Un deseo puede cumplirse, y puedes disfrutar sin prisa de lo que has logrado."
     },
     "umgekehrt": {
      "de": "Etwas fühlt sich trotz allem noch nicht ganz rund an, und es lohnt sich, ehrlich nachzuspüren, was dir wirklich wichtig ist.",
-     "tr": "Her şey yolunda görünse de içinde küçük bir eksiklik var; neyi gerçekten istediğine dürüstçe bakmanın tam zamanı."
+     "tr": "Her şey yolunda görünse de içinde küçük bir eksiklik var; neyi gerçekten istediğine dürüstçe bakmanın tam zamanı.",
+     "en": "Even though things may seem mostly in place, something might still feel a bit off. It can be helpful to look inward with honesty and discover what truly matters to you.",
+     "es": "A pesar de todo, algo todavía no termina de sentirse redondo, y vale la pena explorar con sinceridad qué es lo que de verdad te importa."
     }
    }
   },
@@ -1875,16 +2465,22 @@
    "farbe": "kelche",
    "name": {
     "de": "Zehn der Kelche",
-    "tr": "Kadeh Onlusu"
+    "tr": "Kadeh Onlusu",
+    "en": "Ten of Cups",
+    "es": "Diez de Copas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Geborgenheit und Zugehörigkeit können sich ausbreiten, als stündest du unter einem Regenbogen an einem Ort, an dem du ganz da sein darfst.",
-     "tr": "İçinde huzur ve aidiyet duygusu yayılabilir; sanki olduğun gibi var olabildiğin bir yere varmışsın gibi."
+     "tr": "İçinde huzur ve aidiyet duygusu yayılabilir; sanki olduğun gibi var olabildiğin bir yere varmışsın gibi.",
+     "en": "A sense of shelter and belonging may spread, as if you were standing beneath a rainbow in a place where you are free to be fully present.",
+     "es": "El amparo y la pertenencia pueden extenderse, como si estuvieras bajo un arcoíris en un lugar donde puedes estar del todo presente."
     },
     "umgekehrt": {
      "de": "Die Sehnsucht nach Zugehörigkeit ist spürbar, und vielleicht hängt das Bild vom vollkommenen Glück gerade etwas zu hoch.",
-     "tr": "Bir yere ait olma özlemi şu sıralar belirgin; belki kusursuz mutluluk tablosunu biraz fazla yükseğe asmışsın."
+     "tr": "Bir yere ait olma özlemi şu sıralar belirgin; belki kusursuz mutluluk tablosunu biraz fazla yükseğe asmışsın.",
+     "en": "You may feel a deep longing for belonging, and perhaps your image of perfect happiness is set a little too high.",
+     "es": "Se nota el anhelo de pertenecer, y quizá la imagen de la felicidad perfecta esté ahora un poco demasiado alta."
     }
    }
   },
@@ -1895,16 +2491,22 @@
    "farbe": "kelche",
    "name": {
     "de": "Bube der Kelche",
-    "tr": "Kadeh Valesi"
+    "tr": "Kadeh Valesi",
+    "en": "Page of Cups",
+    "es": "Sota de Copas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Neugier im Gefühl und ein staunender Blick können dich gerade für neue Eindrücke, Einfälle und zarte Regungen öffnen.",
-     "tr": "Duygularındaki merak ve hayranlık dolu bakışın, seni şu sıralar yeni izlenimlere ve ince kıpırtılara açabilir."
+     "tr": "Duygularındaki merak ve hayranlık dolu bakışın, seni şu sıralar yeni izlenimlere ve ince kıpırtılara açabilir.",
+     "en": "Curiosity in your heart and a gaze full of wonder can open you to new impressions, ideas, and tender stirrings.",
+     "es": "La curiosidad en el sentir y una mirada asombrada pueden abrirte a nuevas impresiones, ideas y delicados movimientos del corazón."
     },
     "umgekehrt": {
      "de": "Deine Fantasie ist lebendig, doch vielleicht verlierst du dich gerade etwas in Tagträumen oder nimmst Kleinigkeiten sehr empfindlich auf.",
-     "tr": "Hayal gücün canlı; ama belki şu sıralar biraz fazla dalıp gidiyor ya da küçük şeyleri fazlasıyla içine alıyorsun."
+     "tr": "Hayal gücün canlı; ama belki şu sıralar biraz fazla dalıp gidiyor ya da küçük şeyleri fazlasıyla içine alıyorsun.",
+     "en": "Your imagination is vivid, yet you might be drifting a little into daydreams or taking small things to heart more than usual.",
+     "es": "Tu imaginación está viva, pero quizás te dejas llevar un poco por los sueños despiertos o tomas las pequeñas cosas con mucha sensibilidad."
     }
    }
   },
@@ -1915,16 +2517,22 @@
    "farbe": "kelche",
    "name": {
     "de": "Ritter der Kelche",
-    "tr": "Kadeh Şövalyesi"
+    "tr": "Kadeh Şövalyesi",
+    "en": "Knight of Cups",
+    "es": "Caballero de Copas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein Gefühl will sich bewegen und gezeigt werden, und du darfst dem folgen, was dich berührt, und es mit Hingabe anbieten.",
-     "tr": "İçindeki duygu kıpırdanıyor ve dile gelmek istiyor; seni gerçekten etkileyen şeyin peşinden gönül vererek gidebilirsin."
+     "tr": "İçindeki duygu kıpırdanıyor ve dile gelmek istiyor; seni gerçekten etkileyen şeyin peşinden gönül vererek gidebilirsin.",
+     "en": "A feeling wants to move and be shown, and you may follow what touches you, offering it with devotion.",
+     "es": "Un sentimiento anhela moverse y mostrarse; puedes seguir lo que te toca el corazón y ofrecerlo con entrega."
     },
     "umgekehrt": {
      "de": "Schöne Bilder tragen dich gerade weit, doch das Gefühl schwankt, und etwas Bodenhaftung kann deinen Träumen Gestalt geben.",
-     "tr": "Güzel hayaller seni uzaklara taşıyor ama hevesin bir artıp bir azalıyor; ayaklarını biraz yere basmak düşlerine biçim verebilir."
+     "tr": "Güzel hayaller seni uzaklara taşıyor ama hevesin bir artıp bir azalıyor; ayaklarını biraz yere basmak düşlerine biçim verebilir.",
+     "en": "Beautiful images are carrying you far right now, yet your feelings waver, and a bit of grounding can give shape to your dreams.",
+     "es": "Imágenes hermosas te llevan lejos en este momento, pero la sensación fluctúa; encontrar un poco de arraigo podría dar forma a tus sueños."
     }
    }
   },
@@ -1935,16 +2543,22 @@
    "farbe": "kelche",
    "name": {
     "de": "Königin der Kelche",
-    "tr": "Kadeh Kraliçesi"
+    "tr": "Kadeh Kraliçesi",
+    "en": "Queen of Cups",
+    "es": "Reina de Copas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Du nimmst gerade fein wahr, was in dir und um dich herum geschieht, und kannst dabei ruhig und gesammelt bleiben.",
-     "tr": "Kendinde ve çevrende olup biteni ince ince seziyorsun; üstelik bunu yaparken sakin ve toplu kalabiliyorsun."
+     "tr": "Kendinde ve çevrende olup biteni ince ince seziyorsun; üstelik bunu yaparken sakin ve toplu kalabiliyorsun.",
+     "en": "You are keenly aware right now of what is happening within you and around you, and you can stay calm and collected as you do.",
+     "es": "Ahora percibes con finura lo que ocurre en ti y a tu alrededor, y puedes mantener a la vez la calma y tu centro."
     },
     "umgekehrt": {
      "de": "Fremde Stimmungen dringen gerade tief zu dir durch, und es tut dir gut, das eigene Gefühl wieder von dem anderer zu unterscheiden.",
-     "tr": "Başkalarının ruh hâli şu sıralar sana fazlasıyla işliyor; kendi duygunu onlarınkinden ayırt etmek seni rahatlatabilir."
+     "tr": "Başkalarının ruh hâli şu sıralar sana fazlasıyla işliyor; kendi duygunu onlarınkinden ayırt etmek seni rahatlatabilir.",
+     "en": "Other people’s moods are reaching deep inside you right now, and it does you good to tell your own feelings apart from those of others again.",
+     "es": "Los estados de ánimo ajenos te llegan ahora muy hondo, y te hace bien volver a distinguir tu propio sentir del de los demás."
     }
    }
   },
@@ -1955,16 +2569,22 @@
    "farbe": "kelche",
    "name": {
     "de": "König der Kelche",
-    "tr": "Kadeh Kralı"
+    "tr": "Kadeh Kralı",
+    "en": "King of Cups",
+    "es": "Rey de Copas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Du kannst gerade Gefühl und Überblick verbinden und mitten in bewegtem Wasser ruhig und zugewandt bleiben.",
-     "tr": "Şu sıralar duyguyla geniş bakışı bir araya getirebiliyor, dalgalı suların ortasında bile sakin ve sıcak kalabiliyorsun."
+     "tr": "Şu sıralar duyguyla geniş bakışı bir araya getirebiliyor, dalgalı suların ortasında bile sakin ve sıcak kalabiliyorsun.",
+     "en": "You can combine feeling and perspective right now and stay calm and warmly engaged in the middle of moving water.",
+     "es": "Ahora puedes unir sentimiento y visión de conjunto, y conservar la calma y la cercanía en medio de aguas agitadas."
     },
     "umgekehrt": {
      "de": "Gefühle werden gerade fest verschlossen gehalten, damit nichts ins Wanken gerät, doch ein wenig Weichheit kann die Ruhe sogar stärken.",
-     "tr": "Hiçbir şey sarsılmasın diye duygularını sıkıca kapalı tutuyor olabilirsin; biraz yumuşamak dinginliğini aslında güçlendirebilir."
+     "tr": "Hiçbir şey sarsılmasın diye duygularını sıkıca kapalı tutuyor olabilirsin; biraz yumuşamak dinginliğini aslında güçlendirebilir.",
+     "en": "Emotions are currently kept tightly guarded to prevent anything from wavering, yet a touch of softness may even strengthen your peace.",
+     "es": "Ahora los sentimientos se mantienen bien cerrados para que nada se tambalee, pero un poco de suavidad puede incluso fortalecer la calma."
     }
    }
   },
@@ -1975,16 +2595,22 @@
    "farbe": "schwerter",
    "name": {
     "de": "Ass der Schwerter",
-    "tr": "Kılıç Ası"
+    "tr": "Kılıç Ası",
+    "en": "Ace of Swords",
+    "es": "As de Espadas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein Gedanke bricht durch wie Licht durch Wolken, und plötzlich siehst du, worum es dir eigentlich geht.",
-     "tr": "Bulutların arasından sızan ışık gibi bir düşünce beliriyor ve asıl neyi önemsediğini birden görüyorsun."
+     "tr": "Bulutların arasından sızan ışık gibi bir düşünce beliriyor ve asıl neyi önemsediğini birden görüyorsun.",
+     "en": "A thought breaks through like light piercing the clouds, and suddenly you see what truly matters to you.",
+     "es": "Un pensamiento se abre paso como la luz entre las nubes, y de pronto ves lo que de verdad te importa."
     },
     "umgekehrt": {
      "de": "Eine Idee ist schon da, aber noch unscharf; sie braucht mehr Wissen und etwas Stille, bevor sie trägt.",
-     "tr": "Bir fikir çoktan belirmiş ama henüz bulanık; sağlam durması için biraz daha bilgiye ve telaşsız bir zihne ihtiyacı var."
+     "tr": "Bir fikir çoktan belirmiş ama henüz bulanık; sağlam durması için biraz daha bilgiye ve telaşsız bir zihne ihtiyacı var.",
+     "en": "An idea is already present, though still a bit unclear. It may need more knowledge and some quiet before it can truly take root.",
+     "es": "Ya tienes una idea en mente, aunque aún no está del todo clara; necesita más conocimiento y un poco de silencio antes de que pueda tomar forma."
     }
    }
   },
@@ -1995,16 +2621,22 @@
    "farbe": "schwerter",
    "name": {
     "de": "Zwei der Schwerter",
-    "tr": "Kılıç İkilisi"
+    "tr": "Kılıç İkilisi",
+    "en": "Two of Swords",
+    "es": "Dos de Espadas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Mit verbundenen Augen hält die Gestalt zwei Schwerter in der Schwebe: ein stilles Innehalten, in dem zwei Seiten gleich schwer wiegen.",
-     "tr": "Gözleri bağlı figür iki çeliği dengede tutuyor: iki yanın eşit ağırlıkta durduğu sessiz bir duraksama."
+     "tr": "Gözleri bağlı figür iki çeliği dengede tutuyor: iki yanın eşit ağırlıkta durduğu sessiz bir duraksama.",
+     "en": "Blindfolded, the figure holds two swords in suspension: a quiet pause in which two sides weigh the same.",
+     "es": "Con los ojos vendados, la figura sostiene dos espadas en equilibrio: una pausa callada en la que los dos lados pesan lo mismo."
     },
     "umgekehrt": {
      "de": "Zu viele Meinungen und Eindrücke drängen heran, und es braucht Abstand, um die eigene Sicht wiederzufinden.",
-     "tr": "Çok fazla görüş ve izlenim etrafını sarıyor; kendi bakışını yeniden bulmak için biraz mesafe gerekiyor."
+     "tr": "Çok fazla görüş ve izlenim etrafını sarıyor; kendi bakışını yeniden bulmak için biraz mesafe gerekiyor.",
+     "en": "Too many opinions and impressions press in, and you may need some distance to rediscover your own perspective.",
+     "es": "Parece que hay demasiadas opiniones e impresiones empujando por entrar; puede ser necesario tomar un poco de distancia para volver a encontrar tu propia perspectiva."
     }
    }
   },
@@ -2015,16 +2647,22 @@
    "farbe": "schwerter",
    "name": {
     "de": "Drei der Schwerter",
-    "tr": "Kılıç Üçlüsü"
+    "tr": "Kılıç Üçlüsü",
+    "en": "Three of Swords",
+    "es": "Tres de Espadas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein schwerer Gedanke zieht wie ein Regenschauer über dich hinweg; er will gesehen werden und kann dann weiterziehen.",
-     "tr": "Ağır bir düşünce bir sağanak gibi üstünden geçiyor; görülmek istiyor, sonra da yoluna gidebilir."
+     "tr": "Ağır bir düşünce bir sağanak gibi üstünden geçiyor; görülmek istiyor, sonra da yoluna gidebilir.",
+     "en": "A heavy thought sweeps over you like a sudden rain shower; it needs to be seen so that it can move on.",
+     "es": "Un pensamiento pesado pasa sobre ti como un chaparrón; quiere que lo veas, y después puede seguir su camino."
     },
     "umgekehrt": {
      "de": "Der Regen lässt nach, und du kannst einen bedrückenden Gedanken freundlicher ansehen und ihn allmählich ziehen lassen.",
-     "tr": "Yağmur diniyor; seni sıkan bir düşünceye daha yumuşak bakabilir ve onu usulca salıverebilirsin."
+     "tr": "Yağmur diniyor; seni sıkan bir düşünceye daha yumuşak bakabilir ve onu usulca salıverebilirsin.",
+     "en": "The rain begins to ease, and you may find it possible to look at a heavy thought with greater kindness, allowing it to gradually lift from your mind.",
+     "es": "La lluvia amaina y puedes mirar con más dulzura ese pensamiento que te oprime, dejándolo ir poco a poco."
     }
    }
   },
@@ -2035,16 +2673,22 @@
    "farbe": "schwerter",
    "name": {
     "de": "Vier der Schwerter",
-    "tr": "Kılıç Dörtlüsü"
+    "tr": "Kılıç Dörtlüsü",
+    "en": "Four of Swords",
+    "es": "Cuatro de Espadas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Die Gestalt liegt still unter dem bunten Glas: eine Zeit, in der du Gedanken sinken lässt und Kraft sammelst.",
-     "tr": "Renkli camın altında figür sessizce dinleniyor: düşüncelerini durulttuğun ve güç topladığın bir zaman."
+     "tr": "Renkli camın altında figür sessizce dinleniyor: düşüncelerini durulttuğun ve güç topladığın bir zaman.",
+     "en": "The figure lies still beneath the stained glass: a time when you can let your thoughts settle and gather strength.",
+     "es": "La figura yace en silencio bajo el vidrio multicolor: un tiempo para dejar que los pensamientos se asienten y reunir fuerzas."
     },
     "umgekehrt": {
      "de": "Nach einer stillen Zeit regt sich Unruhe, oder das Ausruhen kommt zu kurz; beides lädt ein, dein Maß zu finden.",
-     "tr": "Dinlenmenin ardından içinde bir kıpırtı başlıyor ya da dinlenme yarım kalıyor; ikisi de kendi ölçünü bulmaya çağırıyor."
+     "tr": "Dinlenmenin ardından içinde bir kıpırtı başlıyor ya da dinlenme yarım kalıyor; ikisi de kendi ölçünü bulmaya çağırıyor.",
+     "en": "After a period of quiet, restlessness may stir, or your time for rest might have been too brief; either way, this invites you to find your own balance.",
+     "es": "Después de un tiempo de calma se despierta la inquietud, o el descanso se queda corto; las dos cosas te invitan a encontrar tu medida."
     }
    }
   },
@@ -2055,16 +2699,22 @@
    "farbe": "schwerter",
    "name": {
     "de": "Fünf der Schwerter",
-    "tr": "Kılıç Beşlisi"
+    "tr": "Kılıç Beşlisi",
+    "en": "Five of Swords",
+    "es": "Cinco de Espadas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Nicht jede Meinungsverschiedenheit will gewonnen werden, und manchmal kostet das Rechthaben mehr Nähe, als es dir einbringt.",
-     "tr": "Her görüş farkını kazanman gerekmez; haklı çıkmak bazen getirdiğinden fazlasını götürebilir."
+     "tr": "Her görüş farkını kazanman gerekmez; haklı çıkmak bazen getirdiğinden fazlasını götürebilir.",
+     "en": "Not every disagreement needs to be won, and sometimes holding onto being right can cost you more closeness than it brings you.",
+     "es": "No todas las discrepancias deben ganarse; a veces, tener la razón aleja más de lo que acerca."
     },
     "umgekehrt": {
      "de": "Der Wunsch, recht zu behalten, verliert an Kraft, und es entsteht Platz für einen versöhnlicheren Ton, zuerst dir selbst gegenüber.",
-     "tr": "Haklı çıkma isteği gücünü yitiriyor; yerine, önce kendine karşı daha yumuşak bir ton yer bulabilir."
+     "tr": "Haklı çıkma isteği gücünü yitiriyor; yerine, önce kendine karşı daha yumuşak bir ton yer bulabilir.",
+     "en": "The desire to be right loses its grip, making room for a more conciliatory tone—first within yourself.",
+     "es": "El deseo de tener la razón pierde fuerza, y se abre espacio para un tono más conciliador, primero contigo."
     }
    }
   },
@@ -2075,16 +2725,22 @@
    "farbe": "schwerter",
    "name": {
     "de": "Sechs der Schwerter",
-    "tr": "Kılıç Altılısı"
+    "tr": "Kılıç Altılısı",
+    "en": "Six of Swords",
+    "es": "Seis de Espadas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Deine Gedanken gleiten aus unruhigem Wasser in eine sanftere Strömung, und was du mitnimmst, ist leichter, als du dachtest.",
-     "tr": "Düşüncelerin dalgalı sulardan daha yavaş bir akıntıya geçiyor; yanında götürdüğün şey sandığından hafif."
+     "tr": "Düşüncelerin dalgalı sulardan daha yavaş bir akıntıya geçiyor; yanında götürdüğün şey sandığından hafif.",
+     "en": "Your thoughts glide from restless waters into a gentler current, and what you carry with you is lighter than you thought.",
+     "es": "Tus pensamientos se deslizan desde aguas agitadas hacia una corriente más serena, y lo que te llevas contigo es más ligero de lo que imaginabas."
     },
     "umgekehrt": {
      "de": "Etwas hält das Boot noch am Ufer, vielleicht ein Gedanke, den du erst zu Ende sortieren möchtest.",
-     "tr": "Bir şey kayığı hâlâ kıyıda tutuyor; belki önce sonuna kadar toparlamak istediğin bir düşünce."
+     "tr": "Bir şey kayığı hâlâ kıyıda tutuyor; belki önce sonuna kadar toparlamak istediğin bir düşünce.",
+     "en": "Something still holds the boat at the shore, perhaps a thought you wish to sort through completely first.",
+     "es": "Algo todavía retiene la barca en la orilla, quizá un pensamiento que primero quieres terminar de ordenar."
     }
    }
   },
@@ -2095,16 +2751,22 @@
    "farbe": "schwerter",
    "name": {
     "de": "Sieben der Schwerter",
-    "tr": "Kılıç Yedilisi"
+    "tr": "Kılıç Yedilisi",
+    "en": "Seven of Swords",
+    "es": "Siete de Espadas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein eigener Plan nimmt Gestalt an, und du wählst mit Bedacht, was du mitnimmst und was du stehen lässt.",
-     "tr": "Kendine ait bir plan şekilleniyor; neyi alıp neyi yerinde bırakmak istediğini özenle seçiyorsun."
+     "tr": "Kendine ait bir plan şekilleniyor; neyi alıp neyi yerinde bırakmak istediğini özenle seçiyorsun.",
+     "en": "A personal plan begins to take shape, and you choose carefully what to carry forward and what to leave behind.",
+     "es": "Un plan propio toma forma, y eliges con cuidado qué llevas contigo y qué dejas atrás."
     },
     "umgekehrt": {
      "de": "Was du dir selbst vormachst, verliert an Halt, und ein guter Rat von außen oder von innen hilft dir, ehrlicher hinzuschauen.",
-     "tr": "Kendine anlattığın küçük hikâyeler gücünü yitiriyor; içten ya da dıştan gelen iyi bir öğüt, daha dürüst bakmana yardım edebilir."
+     "tr": "Kendine anlattığın küçük hikâyeler gücünü yitiriyor; içten ya da dıştan gelen iyi bir öğüt, daha dürüst bakmana yardım edebilir.",
+     "en": "What you have been telling yourself begins to lose its footing, and a good piece of advice—whether from within or without—can help you look at the situation with greater honesty.",
+     "es": "Lo que te haces creer pierde sostén, y un buen consejo, de fuera o de dentro, te ayuda a mirar con más sinceridad."
     }
    }
   },
@@ -2115,16 +2777,22 @@
    "farbe": "schwerter",
    "name": {
     "de": "Acht der Schwerter",
-    "tr": "Kılıç Sekizlisi"
+    "tr": "Kılıç Sekizlisi",
+    "en": "Eight of Swords",
+    "es": "Ocho de Espadas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Die Fesseln, die du spürst, sitzen lockerer, als es scheint, denn viele davon knüpfen deine eigenen Gedanken.",
-     "tr": "Hissettiğin bağlar göründüğünden gevşek; çoğunu kendi düşüncelerin bağlıyor."
+     "tr": "Hissettiğin bağlar göründüğünden gevşek; çoğunu kendi düşüncelerin bağlıyor.",
+     "en": "The bonds you feel sit more loosely than it seems, for many of them are tied by your own thoughts.",
+     "es": "Las ataduras que sientes están más flojas de lo que parece, porque muchas las anudan tus propios pensamientos."
     },
     "umgekehrt": {
      "de": "Die Binde rutscht, die Knoten geben nach, und du siehst mehr Möglichkeiten, als du dir zugetraut hast.",
-     "tr": "Göz bağı kayıyor, düğümler gevşiyor; kendinden beklediğinden fazla olasılık görmeye başlıyorsun."
+     "tr": "Göz bağı kayıyor, düğümler gevşiyor; kendinden beklediğinden fazla olasılık görmeye başlıyorsun.",
+     "en": "The blindfold slips, the knots loosen, and you see more possibilities than you had given yourself credit for.",
+     "es": "La venda se desliza, los nudos ceden y descubres más posibilidades de las que imaginabas."
     }
    }
   },
@@ -2135,16 +2803,22 @@
    "farbe": "schwerter",
    "name": {
     "de": "Neun der Schwerter",
-    "tr": "Kılıç Dokuzlusu"
+    "tr": "Kılıç Dokuzlusu",
+    "en": "Nine of Swords",
+    "es": "Nueve de Espadas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Sorgen kreisen gerade besonders laut, vor allem in stillen Stunden, und wirken dabei oft größer, als sie bei Tageslicht sind.",
-     "tr": "Tasalar şu sıralar özellikle sessiz saatlerde yüksek sesle dönüyor ve gün ışığında olduğundan büyük görünebiliyor."
+     "tr": "Tasalar şu sıralar özellikle sessiz saatlerde yüksek sesle dönüyor ve gün ışığında olduğundan büyük görünebiliyor.",
+     "en": "Worries may circle especially loudly right now, particularly during quiet hours, and often seem larger than they are when viewed in the light of day.",
+     "es": "Las preocupaciones giran ahora con mayor intensidad, especialmente en las horas de silencio, y suelen parecer más grandes de lo que son a la luz del día."
     },
     "umgekehrt": {
      "de": "Die nächtlichen Gedanken verlieren an Gewicht, und bei Licht betrachtet wird vieles überschaubarer, als es sich angefühlt hat.",
-     "tr": "Gecenin ağır düşünceleri hafifliyor; aydınlıkta bakınca pek çok şey sandığından daha küçük görünüyor."
+     "tr": "Gecenin ağır düşünceleri hafifliyor; aydınlıkta bakınca pek çok şey sandığından daha küçük görünüyor.",
+     "en": "The weight of your nighttime thoughts begins to lift. When viewed in the light of day, many things may seem more manageable than they felt before.",
+     "es": "Los pensamientos nocturnos pierden peso y, a la luz del día, muchas cosas se vuelven más manejables de lo que parecieron en su momento."
     }
    }
   },
@@ -2155,16 +2829,22 @@
    "farbe": "schwerter",
    "name": {
     "de": "Zehn der Schwerter",
-    "tr": "Kılıç Onlusu"
+    "tr": "Kılıç Onlusu",
+    "en": "Ten of Swords",
+    "es": "Diez de Espadas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein Gedankengang ist an sein Ende gekommen, und gerade dort, wo nichts mehr weitergeht, darf der Morgen beginnen.",
-     "tr": "Bir düşünce zinciri sonuna vardı; artık ilerlemeyen yerde sabah başlayabilir."
+     "tr": "Bir düşünce zinciri sonuna vardı; artık ilerlemeyen yerde sabah başlayabilir.",
+     "en": "A line of thought has reached its end, and it is precisely there, where nothing more can move forward, that the morning may begin.",
+     "es": "Un ciclo de pensamiento ha llegado a su fin, y justo allí, donde parecía no haber más camino, puede comenzar la mañana."
     },
     "umgekehrt": {
      "de": "Nach einem Tiefpunkt richtest du dich langsam wieder auf und merkst, dass das Schwerste hinter dir liegen kann.",
-     "tr": "Bir dip noktasının ardından yavaş yavaş doğruluyor ve en ağır kısmın geride kalmış olabileceğini fark ediyorsun."
+     "tr": "Bir dip noktasının ardından yavaş yavaş doğruluyor ve en ağır kısmın geride kalmış olabileceğini fark ediyorsun.",
+     "en": "After a low point, you are slowly getting back up and noticing that the hardest part may be behind you.",
+     "es": "Tras un momento de gran dificultad, te levantas poco a poco y puedes darte cuenta de que lo más pesado ya queda atrás."
     }
    }
   },
@@ -2175,16 +2855,22 @@
    "farbe": "schwerter",
    "name": {
     "de": "Bube der Schwerter",
-    "tr": "Kılıç Valesi"
+    "tr": "Kılıç Valesi",
+    "en": "Page of Swords",
+    "es": "Sota de Espadas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Dein Denken ist gerade wach und neugierig und möchte verstehen, nachfragen und Neues durchdenken, mit Freude an ehrlichen Antworten.",
-     "tr": "Zihnin şu sıralar meraklı ve dinç; anlamak, sormak ve yeni şeyleri düşünüp taşınmak istiyor."
+     "tr": "Zihnin şu sıralar meraklı ve dinç; anlamak, sormak ve yeni şeyleri düşünüp taşınmak istiyor.",
+     "en": "Your mind is awake and curious right now, eager to understand, ask questions, and think new things through, and you take pleasure in honest answers.",
+     "es": "Tu mente está despierta y curiosa; puede que sientas el deseo de comprender, preguntar y explorar nuevas ideas, con la satisfacción que ofrecen las respuestas sinceras."
     },
     "umgekehrt": {
      "de": "Die Neugier verteilt sich gerade auf so viele Fragen, dass kaum eine zu Ende gedacht wird und du manchmal unvorbereitet dastehst.",
-     "tr": "Merakın şu sıralar öyle çok soruya dağılıyor ki hiçbiri sonuna kadar düşünülmüyor ve bazen hazırlıksız kalıyorsun."
+     "tr": "Merakın şu sıralar öyle çok soruya dağılıyor ki hiçbiri sonuna kadar düşünülmüyor ve bazen hazırlıksız kalıyorsun.",
+     "en": "Your curiosity is scattered across so many questions that few are fully explored, leaving you sometimes feeling unprepared.",
+     "es": "La curiosidad se dispersa en tantas preguntas que apenas alguna llega a su fin, y a veces te encuentras sin preparación."
     }
    }
   },
@@ -2195,16 +2881,22 @@
    "farbe": "schwerter",
    "name": {
     "de": "Ritter der Schwerter",
-    "tr": "Kılıç Şövalyesi"
+    "tr": "Kılıç Şövalyesi",
+    "en": "Knight of Swords",
+    "es": "Caballero de Espadas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Dein Denken ist gerade schnell und wach, und du kannst einem Ziel mit Schwung und offenen Worten entgegengehen.",
-     "tr": "Zihnin şu sıralar hızlı ve uyanık; bir hedefe hevesle ve lafı dolandırmadan yönelebilirsin."
+     "tr": "Zihnin şu sıralar hızlı ve uyanık; bir hedefe hevesle ve lafı dolandırmadan yönelebilirsin.",
+     "en": "Your mind is quick and alert right now, and you can move toward a goal with energy and frank words.",
+     "es": "Tu mente está ágil y lúcida en este momento; puedes avanzar hacia tu meta con energía y claridad al expresarte."
     },
     "umgekehrt": {
      "de": "Deine Gedanken eilen gerade voraus, und wenn du das Tempo etwas drosselst, finden Worte und Ziel besser zusammen.",
-     "tr": "Düşüncelerin şu sıralar senden önde koşuyor; hızını biraz düşürdüğünde sözlerinle hedefin daha iyi buluşabilir."
+     "tr": "Düşüncelerin şu sıralar senden önde koşuyor; hızını biraz düşürdüğünde sözlerinle hedefin daha iyi buluşabilir.",
+     "en": "Your thoughts are racing ahead. If you slow down just a little, your words and your purpose may come together more clearly.",
+     "es": "Tus pensamientos van ahora por delante, y si bajas un poco el ritmo, las palabras y la meta encajan mejor."
     }
    }
   },
@@ -2215,16 +2907,22 @@
    "farbe": "schwerter",
    "name": {
     "de": "Königin der Schwerter",
-    "tr": "Kılıç Kraliçesi"
+    "tr": "Kılıç Kraliçesi",
+    "en": "Queen of Swords",
+    "es": "Reina de Espadas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Du siehst gerade weit und ehrlich auf dein Leben und kannst aussprechen, was für dich wahr ist, mit Wärme und einem Schuss Humor.",
-     "tr": "Hayatına şu sıralar geniş ve içten bir gözle bakıyor, senin için doğru olanı sıcaklıkla ve biraz da esprili bir dille söyleyebiliyorsun."
+     "tr": "Hayatına şu sıralar geniş ve içten bir gözle bakıyor, senin için doğru olanı sıcaklıkla ve biraz da esprili bir dille söyleyebiliyorsun.",
+     "en": "You are looking at your life broadly and honestly right now, and you can say what is true for you, with warmth and a touch of humor.",
+     "es": "Ahora miras tu vida con amplitud y sinceridad, y puedes decir lo que para ti es verdad, con calidez y una pizca de humor."
     },
     "umgekehrt": {
      "de": "Dein Blick hat sich gerade zurückgezogen, vielleicht aus Gewohnheit, alles erst zu prüfen, und ein wenig Wärme für dich selbst kann ihn weiten.",
-     "tr": "Bakışın şu sıralar biraz içine çekilmiş, belki her şeyi önce tartma alışkanlığından; kendine biraz yumuşaklık tanımak onu yeniden genişletebilir."
+     "tr": "Bakışın şu sıralar biraz içine çekilmiş, belki her şeyi önce tartma alışkanlığından; kendine biraz yumuşaklık tanımak onu yeniden genişletebilir.",
+     "en": "Your gaze has withdrawn for now, perhaps out of a habit of examining everything first, and a little warmth for yourself can widen it.",
+     "es": "Tu mirada se ha retirado ahora, quizá por la costumbre de examinarlo todo primero, y un poco de calidez para ti puede ensancharla."
     }
    }
   },
@@ -2235,16 +2933,22 @@
    "farbe": "schwerter",
    "name": {
     "de": "König der Schwerter",
-    "tr": "Kılıç Kralı"
+    "tr": "Kılıç Kralı",
+    "en": "King of Swords",
+    "es": "Rey de Espadas"
    },
    "kurz": {
     "aufrecht": {
      "de": "Du kannst gerade Gedanken ordnen, Wichtiges von Nebensächlichem unterscheiden und besonnen zu einer fairen Einschätzung finden.",
-     "tr": "Şu sıralar düşüncelerini düzenleyebilir, önemliyi önemsizden ayırt edebilir ve sakin bir zihinle adil bir değerlendirmeye varabilirsin."
+     "tr": "Şu sıralar düşüncelerini düzenleyebilir, önemliyi önemsizden ayırt edebilir ve sakin bir zihinle adil bir değerlendirmeye varabilirsin.",
+     "en": "You can bring order to your thoughts, distinguish what matters from what does not, and arrive at a fair assessment with calm clarity.",
+     "es": "Puedes ordenar tus pensamientos, distinguir lo importante de lo secundario y llegar a una evaluación justa con serenidad."
     },
     "umgekehrt": {
      "de": "Dein Denken ist womöglich starr geworden, und etwas Nachgiebigkeit kann deinen Grundsätzen wieder Luft und Wärme geben.",
-     "tr": "Düşünce biçimin şu sıralar biraz katılaşmış olabilir; biraz esneklik ilkelerine yeniden hava ve sıcaklık katabilir."
+     "tr": "Düşünce biçimin şu sıralar biraz katılaşmış olabilir; biraz esneklik ilkelerine yeniden hava ve sıcaklık katabilir.",
+     "en": "Your thinking may have become rigid, and a little flexibility can breathe life and warmth back into your principles.",
+     "es": "Tu pensamiento puede haberse vuelto rígido, y un poco de flexibilidad podría devolver aire y calidez a tus principios."
     }
    }
   },
@@ -2255,16 +2959,22 @@
    "farbe": "muenzen",
    "name": {
     "de": "Ass der Münzen",
-    "tr": "Pentagram Ası"
+    "tr": "Pentagram Ası",
+    "en": "Ace of Pentacles",
+    "es": "As de Oros"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein guter Anfang liegt dir buchstäblich in der Hand: etwas Greifbares, das wachsen kann, wenn du es pflegst.",
-     "tr": "Avucuna elle tutulur bir başlangıç bırakılmış gibi; özenle bakarsan büyüyebilir."
+     "tr": "Avucuna elle tutulur bir başlangıç bırakılmış gibi; özenle bakarsan büyüyebilir.",
+     "en": "A good beginning lies literally in your hand: something tangible that can grow as you nurture it.",
+     "es": "Un buen comienzo está literalmente en tu mano: algo tangible que puede crecer si lo cuidas."
     },
     "umgekehrt": {
      "de": "Ein guter Anfang ist in Reichweite, doch er braucht noch Vorbereitung und festen Grund, bevor er tragen kann.",
-     "tr": "İyi bir başlangıç el altında, ama sağlam bir zemine oturması için biraz daha hazırlık istiyor."
+     "tr": "İyi bir başlangıç el altında, ama sağlam bir zemine oturması için biraz daha hazırlık istiyor.",
+     "en": "A good beginning is within reach, but it still needs preparation and a solid foundation before it can take root.",
+     "es": "Un buen comienzo está al alcance de tu mano, pero aún necesita preparación y una base firme antes de poder dar frutos."
     }
    }
   },
@@ -2275,16 +2985,22 @@
    "farbe": "muenzen",
    "name": {
     "de": "Zwei der Münzen",
-    "tr": "Pentagram İkilisi"
+    "tr": "Pentagram İkilisi",
+    "en": "Two of Pentacles",
+    "es": "Dos de Oros"
    },
    "kurz": {
     "aufrecht": {
      "de": "Mit Leichtigkeit hältst du mehrere Dinge in Bewegung, beweglich und mit einem Lächeln, auch wenn die Wellen ringsum höher schlagen.",
-     "tr": "Birçok işi aynı anda hafiflikle idare ediyorsun; çevrende dalgalar yükselse bile esnek ve güler yüzlü kalabilirsin."
+     "tr": "Birçok işi aynı anda hafiflikle idare ediyorsun; çevrende dalgalar yükselse bile esnek ve güler yüzlü kalabilirsin.",
+     "en": "You hold several things in motion with ease, flexible and smiling, even as the waves around you rise higher.",
+     "es": "Con ligereza mantienes varias cosas en movimiento, flexible y con una sonrisa, incluso si las olas a tu alrededor se elevan más."
     },
     "umgekehrt": {
      "de": "Zu viele Dinge sind zugleich in der Luft, und es tut gut, ein paar davon bewusst abzulegen.",
-     "tr": "Havada aynı anda çok fazla şey var; bazılarını bilerek yere bırakmak seni rahatlatabilir."
+     "tr": "Havada aynı anda çok fazla şey var; bazılarını bilerek yere bırakmak seni rahatlatabilir.",
+     "en": "Too many things are swirling around at once, and it feels good to consciously set a few of them aside.",
+     "es": "Demasiadas cosas están al mismo tiempo en el aire; puede resultar reconfortante dejar conscientemente algunas de ellas atrás."
     }
    }
   },
@@ -2295,16 +3011,22 @@
    "farbe": "muenzen",
    "name": {
     "de": "Drei der Münzen",
-    "tr": "Pentagram Üçlüsü"
+    "tr": "Pentagram Üçlüsü",
+    "en": "Three of Pentacles",
+    "es": "Tres de Oros"
    },
    "kurz": {
     "aufrecht": {
      "de": "Gemeinsam entsteht etwas Gutes, wenn alle ihr Können einbringen und die Pläne aufeinander abgestimmt sind.",
-     "tr": "Herkes kendi ustalığını katıp planlar birbirine uyduğunda ortaya güzel bir eser çıkabilir."
+     "tr": "Herkes kendi ustalığını katıp planlar birbirine uyduğunda ortaya güzel bir eser çıkabilir.",
+     "en": "When everyone brings their skills to the table and plans are aligned, something good can emerge together.",
+     "es": "Cuando todos aportan su talento y los planes están bien coordinados, se puede crear algo valioso en conjunto."
     },
     "umgekehrt": {
      "de": "Die Arbeit kommt nicht recht voran, weil Pläne und Beteiligte nicht im gleichen Takt sind.",
-     "tr": "Planlar ve işe katılanlar aynı ritimde olmadığı için iş pek ilerlemiyor."
+     "tr": "Planlar ve işe katılanlar aynı ritimde olmadığı için iş pek ilerlemiyor.",
+     "en": "Your work may feel stuck because plans and people aren’t quite in sync.",
+     "es": "El trabajo no termina de avanzar porque los planes y las personas implicadas no van al mismo ritmo."
     }
    }
   },
@@ -2315,16 +3037,22 @@
    "farbe": "muenzen",
    "name": {
     "de": "Vier der Münzen",
-    "tr": "Pentagram Dörtlüsü"
+    "tr": "Pentagram Dörtlüsü",
+    "en": "Four of Pentacles",
+    "es": "Cuatro de Oros"
    },
    "kurz": {
     "aufrecht": {
      "de": "Du hältst fest, was dir Halt gibt, und schützt das, was du dir aufgebaut hast, mit ruhiger Entschlossenheit.",
-     "tr": "Sana dayanak olanı sıkıca tutuyor, kurduğun şeyi sakin bir kararlılıkla koruyorsun."
+     "tr": "Sana dayanak olanı sıkıca tutuyor, kurduğun şeyi sakin bir kararlılıkla koruyorsun.",
+     "en": "You hold on to what gives you stability and protect what you have built with calm determination.",
+     "es": "Sujetas con firmeza lo que te da estabilidad y proteges lo que has construido con calma y determinación."
     },
     "umgekehrt": {
      "de": "Der Griff ist zu fest geworden oder lockert sich gerade, und beides lädt dich ein, neu zu spüren, was dir wirklich Halt gibt.",
-     "tr": "Tutuşun fazla sıkılaşmış ya da gevşemeye başlamış olabilir; ikisi de sana gerçekten neyin dayanak olduğunu yeniden sorduruyor."
+     "tr": "Tutuşun fazla sıkılaşmış ya da gevşemeye başlamış olabilir; ikisi de sana gerçekten neyin dayanak olduğunu yeniden sorduruyor.",
+     "en": "The grip has become too tight or is loosening right now, and both invite you to rediscover what truly holds you steady.",
+     "es": "El agarre se ha vuelto demasiado firme o se está aflojando; en ambos casos, te invita a redescubrir aquello que realmente te sostiene."
     }
    }
   },
@@ -2335,16 +3063,22 @@
    "farbe": "muenzen",
    "name": {
     "de": "Fünf der Münzen",
-    "tr": "Pentagram Beşlisi"
+    "tr": "Pentagram Beşlisi",
+    "en": "Five of Pentacles",
+    "es": "Cinco de Oros"
    },
    "kurz": {
     "aufrecht": {
      "de": "Eine harte Zeit kann dich gerade frösteln lassen, und doch ist Wärme näher, als es sich anfühlt.",
-     "tr": "Zor bir dönem içini üşütüyor olabilir; oysa sıcak bir ışık sandığından daha yakın."
+     "tr": "Zor bir dönem içini üşütüyor olabilir; oysa sıcak bir ışık sandığından daha yakın.",
+     "en": "A difficult time may leave you feeling chilled, yet warmth is closer than it seems.",
+     "es": "Un momento difícil puede hacerte sentir un ligero escalofrío, pero la calidez está más cerca de lo que parece."
     },
     "umgekehrt": {
      "de": "Das Schwere beginnt zu tauen, und du kannst wieder dort ankommen, wo du dich lange draußen gefühlt hast.",
-     "tr": "Ağır gelen şey çözülmeye başlıyor; uzun süre dışarıda kaldığını hissettiğin yere yeniden varabilirsin."
+     "tr": "Ağır gelen şey çözülmeye başlıyor; uzun süre dışarıda kaldığını hissettiğin yere yeniden varabilirsin.",
+     "en": "What is heavy begins to thaw, and you can arrive again where you have long felt left outside.",
+     "es": "Lo pesado empieza a deshelarse, y puedes volver a llegar allí donde durante mucho tiempo te sentiste fuera."
     }
    }
   },
@@ -2355,16 +3089,22 @@
    "farbe": "muenzen",
    "name": {
     "de": "Sechs der Münzen",
-    "tr": "Pentagram Altılısı"
+    "tr": "Pentagram Altılısı",
+    "en": "Six of Pentacles",
+    "es": "Seis de Oros"
    },
    "kurz": {
     "aufrecht": {
      "de": "Geben und Nehmen finden gerade ins Gleichgewicht, und was du an Zeit, Wissen oder Aufmerksamkeit teilst, kann anderen weiterhelfen.",
-     "tr": "Alıp vermek şu sıralar dengeye oturuyor; paylaştığın zaman, bilgi ya da ilgi başkalarına destek olabilir."
+     "tr": "Alıp vermek şu sıralar dengeye oturuyor; paylaştığın zaman, bilgi ya da ilgi başkalarına destek olabilir.",
+     "en": "Giving and receiving are finding their balance right now. What you share in terms of time, knowledge, or attention can help others along the way.",
+     "es": "El dar y el recibir están en equilibrio ahora mismo, y lo que compartes de tiempo, conocimiento o atención puede ayudar a otros."
     },
     "umgekehrt": {
      "de": "Der Austausch ist gerade aus dem Lot geraten, und er kann sich wieder einpendeln, wenn du auch selbst etwas annimmst.",
-     "tr": "Karşılıklılık şu sıralar aksıyor; sen de bir şeyler kabul ettikçe denge yeniden kurulabilir."
+     "tr": "Karşılıklılık şu sıralar aksıyor; sen de bir şeyler kabul ettikçe denge yeniden kurulabilir.",
+     "en": "The balance of giving and receiving has shifted out of alignment, but it can settle back into harmony when you allow yourself to accept as well.",
+     "es": "El intercambio se ha descompensado, y puede volver a equilibrarse si también tú aceptas algo."
     }
    }
   },
@@ -2375,16 +3115,22 @@
    "farbe": "muenzen",
    "name": {
     "de": "Sieben der Münzen",
-    "tr": "Pentagram Yedilisi"
+    "tr": "Pentagram Yedilisi",
+    "en": "Seven of Pentacles",
+    "es": "Siete de Oros"
    },
    "kurz": {
     "aufrecht": {
      "de": "Ein Stück Arbeit ist getan, und jetzt ist Zeit, innezuhalten und anzuschauen, was durch deine Mühe gewachsen ist.",
-     "tr": "Bir işin bir kısmı bitti; şimdi durup özeninle neyin büyüdüğüne bakma zamanı."
+     "tr": "Bir işin bir kısmı bitti; şimdi durup özeninle neyin büyüdüğüne bakma zamanı.",
+     "en": "A piece of work is done, and now it’s time to pause and look at what has grown through your effort.",
+     "es": "Una parte del trabajo está hecha, y ahora es momento de detenerse y observar lo que ha florecido gracias a tu esfuerzo."
     },
     "umgekehrt": {
      "de": "Ungeduld oder verstreute Kräfte lassen dich gerade zweifeln, ob deine Mühe Früchte trägt, und laden ein, neu zu ordnen.",
-     "tr": "Telaş ya da dağılan güç, sana emeğinin meyve verip vermediğinden şüphe ettiriyor; bu, öncelikleri yeniden sıralamaya bir davet."
+     "tr": "Telaş ya da dağılan güç, sana emeğinin meyve verip vermediğinden şüphe ettiriyor; bu, öncelikleri yeniden sıralamaya bir davet.",
+     "en": "Impatience or scattered energies may lead you to question whether your efforts are bearing fruit, inviting you to find new clarity and order.",
+     "es": "La impaciencia o las fuerzas dispersas pueden hacerte dudar en este momento de si tu esfuerzo está dando frutos, invitándote a reorganizar tus prioridades."
     }
    }
   },
@@ -2395,16 +3141,22 @@
    "farbe": "muenzen",
    "name": {
     "de": "Acht der Münzen",
-    "tr": "Pentagram Sekizlisi"
+    "tr": "Pentagram Sekizlisi",
+    "en": "Eight of Pentacles",
+    "es": "Ocho de Oros"
    },
    "kurz": {
     "aufrecht": {
      "de": "Konzentrierte Arbeit und stetige Übung lassen dein Können wachsen, und die Sorgfalt selbst kann Freude machen.",
-     "tr": "Odaklı çalışma ve düzenli alıştırma becerini büyütüyor; özenin kendisi de keyif verebilir."
+     "tr": "Odaklı çalışma ve düzenli alıştırma becerini büyütüyor; özenin kendisi de keyif verebilir.",
+     "en": "Focused work and steady practice let your skill grow, and the care itself can be a joy.",
+     "es": "El trabajo concentrado y la práctica constante hacen que tu habilidad crezca, y el cuidado en cada detalle puede llegar a ser una fuente de alegría."
     },
     "umgekehrt": {
      "de": "Der Wunsch nach Perfektion kann gerade den Blick fürs Ganze verstellen und dich fragen lassen, wofür du eigentlich übst.",
-     "tr": "Kusursuzluk isteği şu sıralar bütünü görmeni engelleyebilir; ne için çalıştığını yeniden sormak sana yol gösterebilir."
+     "tr": "Kusursuzluk isteği şu sıralar bütünü görmeni engelleyebilir; ne için çalıştığını yeniden sormak sana yol gösterebilir.",
+     "en": "The wish for perfection may be blocking your view of the whole right now and making you wonder what you are actually practicing for.",
+     "es": "El deseo de perfección puede nublar la visión del conjunto y llevarte a preguntarte para qué estás practicando realmente."
     }
    }
   },
@@ -2415,16 +3167,22 @@
    "farbe": "muenzen",
    "name": {
     "de": "Neun der Münzen",
-    "tr": "Pentagram Dokuzlusu"
+    "tr": "Pentagram Dokuzlusu",
+    "en": "Nine of Pentacles",
+    "es": "Nueve de Oros"
    },
    "kurz": {
     "aufrecht": {
      "de": "Was du mit eigener Sorgfalt angelegt hast, kann jetzt gedeihen, und du darfst dich daran in Ruhe freuen.",
-     "tr": "Kendi özeninle kurduğun düzen şimdi yeşerebilir; bunun keyfini acele etmeden çıkarabilirsin."
+     "tr": "Kendi özeninle kurduğun düzen şimdi yeşerebilir; bunun keyfini acele etmeden çıkarabilirsin.",
+     "en": "What you have cultivated with your own care can now flourish, and you may take quiet pleasure in it.",
+     "es": "Lo que has cultivado con tu propio cuidado puede florecer ahora, y puedes disfrutarlo con tranquilidad."
     },
     "umgekehrt": {
      "de": "Vielleicht arbeitest du mehr, als dir guttut, und vergisst dabei, wie viel du schon aus eigener Kraft geschaffen hast.",
-     "tr": "Belki gücünün yettiğinden fazla çalışıyor ve kendi başına neler kurduğunu gözden kaçırıyorsun."
+     "tr": "Belki gücünün yettiğinden fazla çalışıyor ve kendi başına neler kurduğunu gözden kaçırıyorsun.",
+     "en": "You might be working harder than is good for you, forgetting how much you have already created on your own.",
+     "es": "Es posible que estés trabajando más de lo que te conviene y, en el proceso, olvides la cantidad de cosas que ya has logrado por tu propia fuerza."
     }
    }
   },
@@ -2435,16 +3193,22 @@
    "farbe": "muenzen",
    "name": {
     "de": "Zehn der Münzen",
-    "tr": "Pentagram Onlusu"
+    "tr": "Pentagram Onlusu",
+    "en": "Ten of Pentacles",
+    "es": "Diez de Oros"
    },
    "kurz": {
     "aufrecht": {
      "de": "Was über lange Zeit gewachsen ist, kann dir jetzt Halt und ein Gefühl von Zugehörigkeit geben.",
-     "tr": "Uzun bir sürede biçimlenen şeyler sana şimdi dayanak ve bir yere ait olma duygusu verebilir."
+     "tr": "Uzun bir sürede biçimlenen şeyler sana şimdi dayanak ve bir yere ait olma duygusu verebilir.",
+     "en": "What has grown over a long time can now give you stability and a sense of belonging.",
+     "es": "Lo que ha crecido durante mucho tiempo puede darte ahora estabilidad y la sensación de pertenencia."
     },
     "umgekehrt": {
      "de": "Etwas Vertrautes fühlt sich gerade zu eng oder brüchig an und möchte behutsam umgebaut werden.",
-     "tr": "Alışık olduğun bir düzen şu sıralar dar ya da kırılgan görünebilir; onu özenle yeniden kurmak mümkün."
+     "tr": "Alışık olduğun bir düzen şu sıralar dar ya da kırılgan görünebilir; onu özenle yeniden kurmak mümkün.",
+     "en": "Something familiar may feel too tight or fragile right now, inviting you to gently reshape it.",
+     "es": "Algo que te resulta familiar puede sentirse ahora demasiado estrecho o frágil, invitándote a transformarlo con delicadeza."
     }
    }
   },
@@ -2455,16 +3219,22 @@
    "farbe": "muenzen",
    "name": {
     "de": "Bube der Münzen",
-    "tr": "Pentagram Valesi"
+    "tr": "Pentagram Valesi",
+    "en": "Page of Pentacles",
+    "es": "Sota de Oros"
    },
    "kurz": {
     "aufrecht": {
      "de": "Neugier auf etwas Greifbares und die Lust, es gründlich zu lernen, können jetzt in dir wach werden.",
-     "tr": "Somut bir şeye duyduğun merak ve onu adamakıllı öğrenme isteği şimdi içinde canlanabilir."
+     "tr": "Somut bir şeye duyduğun merak ve onu adamakıllı öğrenme isteği şimdi içinde canlanabilir.",
+     "en": "Curiosity about something tangible and the wish to learn it thoroughly may awaken in you now.",
+     "es": "Puede despertar en ti el interés por algo tangible y el deseo de aprenderlo a fondo."
     },
     "umgekehrt": {
      "de": "Gute Vorhaben verlieren sich gerade leicht im Aufschieben, doch ein klarer erster Handgriff kann ihnen wieder Boden geben.",
-     "tr": "Güzel niyetler şu sıralar ertelemenin içinde kaybolabilir; ilk somut iş onları yeniden gerçeğe taşıyabilir."
+     "tr": "Güzel niyetler şu sıralar ertelemenin içinde kaybolabilir; ilk somut iş onları yeniden gerçeğe taşıyabilir.",
+     "en": "Good plans easily get lost in putting things off right now, but a clear first step can give them ground again.",
+     "es": "Los buenos propósitos se pierden ahora fácilmente en el aplazamiento, pero un primer paso claro puede devolverles suelo firme."
     }
    }
   },
@@ -2475,16 +3245,22 @@
    "farbe": "muenzen",
    "name": {
     "de": "Ritter der Münzen",
-    "tr": "Pentagram Şövalyesi"
+    "tr": "Pentagram Şövalyesi",
+    "en": "Knight of Pentacles",
+    "es": "Caballero de Oros"
    },
    "kurz": {
     "aufrecht": {
      "de": "Du kommst gerade mit ruhiger Ausdauer voran und bringst zu Ende, was du angefangen hast, auch wenn es nicht glänzt.",
-     "tr": "Sakin bir sebatla ilerliyorsun; parlak görünmese de başladığın işi sonuna kadar götürüyorsun."
+     "tr": "Sakin bir sebatla ilerliyorsun; parlak görünmese de başladığın işi sonuna kadar götürüyorsun.",
+     "en": "You are moving forward with quiet perseverance, bringing to completion what you have started, even if it does not shine.",
+     "es": "Avanzas con calma y perseverancia, llevando a buen término lo que has iniciado, aunque el proceso no sea brillante."
     },
     "umgekehrt": {
      "de": "Die Ausdauer ist zu Schwere geworden, dein Tempo stockt, und schon ein wenig Schwung kann dich wieder in Gang bringen.",
-     "tr": "Sebatın yerini ağırlık almış, tempon düşmüş; biraz canlılık seni yeniden harekete geçirebilir."
+     "tr": "Sebatın yerini ağırlık almış, tempon düşmüş; biraz canlılık seni yeniden harekete geçirebilir.",
+     "en": "Perseverance has turned into heaviness, your pace is faltering, and even a little momentum can get you going again.",
+     "es": "Tu perseverancia se ha vuelto demasiado pesada; tu ritmo se detiene, y un pequeño impulso puede ayudarte a retomar el camino."
     }
    }
   },
@@ -2495,16 +3271,22 @@
    "farbe": "muenzen",
    "name": {
     "de": "Königin der Münzen",
-    "tr": "Pentagram Kraliçesi"
+    "tr": "Pentagram Kraliçesi",
+    "en": "Queen of Pentacles",
+    "es": "Reina de Oros"
    },
    "kurz": {
     "aufrecht": {
      "de": "Du kümmerst dich mit praktischer Wärme um Menschen und Dinge in deiner Nähe und findest dabei selbst Halt im Greifbaren.",
-     "tr": "Yakınındaki insanlarla ve işlerle elle tutulur bir sıcaklıkla ilgileniyor, bunu yaparken kendin de somut olanda dayanak buluyorsun."
+     "tr": "Yakınındaki insanlarla ve işlerle elle tutulur bir sıcaklıkla ilgileniyor, bunu yaparken kendin de somut olanda dayanak buluyorsun.",
+     "en": "You care for the people and things close to you with practical warmth, finding your own grounding in what is tangible.",
+     "es": "Cuidas con calidez práctica a las personas y las cosas que te rodean, y encuentras así sostén en lo tangible."
     },
     "umgekehrt": {
      "de": "Zwischen all den Pflichten für andere findest du gerade kaum Ruhe, und ein Teil deiner Fürsorge möchte bei dir selbst ankommen.",
-     "tr": "Başkaları için üstlendiğin görevler arasında şu sıralar pek dinlenemiyorsun; şefkatinin bir kısmı artık sana ulaşmak istiyor."
+     "tr": "Başkaları için üstlendiğin görevler arasında şu sıralar pek dinlenemiyorsun; şefkatinin bir kısmı artık sana ulaşmak istiyor.",
+     "en": "Amidst all the duties you carry for others, you may find little room for rest right now. A part of your care might long to turn inward and reach you first.",
+     "es": "Entre todas las responsabilidades con los demás, apenas encuentras un momento de calma; una parte de tu cuidado necesita llegar también a ti."
     }
    }
   },
@@ -2515,16 +3297,22 @@
    "farbe": "muenzen",
    "name": {
     "de": "König der Münzen",
-    "tr": "Pentagram Kralı"
+    "tr": "Pentagram Kralı",
+    "en": "King of Pentacles",
+    "es": "Rey de Oros"
    },
    "kurz": {
     "aufrecht": {
      "de": "Du überblickst, was du aufgebaut hast, und trägst Verantwortung mit ruhiger Hand und praktischem Geschick.",
-     "tr": "Kurduğun şeyi bir bakışta görüyor, sorumluluğu sakin bir elle ve pratik bir beceriyle taşıyorsun."
+     "tr": "Kurduğun şeyi bir bakışta görüyor, sorumluluğu sakin bir elle ve pratik bir beceriyle taşıyorsun.",
+     "en": "You see clearly what you have built, and you carry responsibility with a calm hand and practical skill.",
+     "es": "Tienes claridad sobre lo que has construido y asumes la responsabilidad con una mano serena y habilidad práctica."
     },
     "umgekehrt": {
      "de": "Das Bewährte ist zu einer festen Mauer geworden, und etwas Beweglichkeit kann wieder Luft in deinen Alltag bringen.",
-     "tr": "Denenmiş yollar kalın bir duvara dönüşmüş; biraz esneklik gündelik hayatına yeniden hava katabilir."
+     "tr": "Denenmiş yollar kalın bir duvara dönüşmüş; biraz esneklik gündelik hayatına yeniden hava katabilir.",
+     "en": "What has proven reliable has become a solid wall; allowing some flexibility may bring fresh air back into your daily life.",
+     "es": "Lo que ha demostrado su valor se ha convertido en un muro sólido; algo de flexibilidad podría volver a dar aire a tu día a día."
     }
    }
   }
@@ -2533,28 +3321,36 @@
   "drei_karten": {
    "name": {
     "de": "Drei Karten",
-    "tr": "Üç Kart"
+    "tr": "Üç Kart",
+    "en": "Three Cards",
+    "es": "Tres cartas"
    },
    "positionen": [
     {
      "id": "vergangenheit",
      "name": {
       "de": "Vergangenheit",
-      "tr": "Geçmiş"
+      "tr": "Geçmiş",
+      "en": "Past",
+      "es": "Pasado"
      }
     },
     {
      "id": "gegenwart",
      "name": {
       "de": "Gegenwart",
-      "tr": "Şimdi"
+      "tr": "Şimdi",
+      "en": "Present",
+      "es": "Presente"
      }
     },
     {
      "id": "zukunft",
      "name": {
       "de": "Zukunft",
-      "tr": "Gelecek"
+      "tr": "Gelecek",
+      "en": "Future",
+      "es": "Futuro"
      }
     }
    ]
@@ -2562,42 +3358,54 @@
   "liebe": {
    "name": {
     "de": "Liebe",
-    "tr": "Aşk"
+    "tr": "Aşk",
+    "en": "Love",
+    "es": "Amor"
    },
    "positionen": [
     {
      "id": "herz",
      "name": {
       "de": "Dein Herz jetzt",
-      "tr": "Kalbinin hâli"
+      "tr": "Kalbinin hâli",
+      "en": "Your heart now",
+      "es": "Tu corazón ahora"
      }
     },
     {
      "id": "brauchen",
      "name": {
       "de": "Was dein Herz braucht",
-      "tr": "Kalbinin ihtiyacı"
+      "tr": "Kalbinin ihtiyacı",
+      "en": "What your heart needs",
+      "es": "Lo que tu corazón necesita"
      }
     },
     {
      "id": "begegnung",
      "name": {
       "de": "Nähe und Begegnung",
-      "tr": "Yakınlık ve bağ"
+      "tr": "Yakınlık ve bağ",
+      "en": "Closeness and connection",
+      "es": "Cercanía y encuentro"
      }
     },
     {
      "id": "rat",
      "name": {
       "de": "Ein Rat für dein Herz",
-      "tr": "Gönlüne bir tavsiye"
+      "tr": "Gönlüne bir tavsiye",
+      "en": "Advice for your heart",
+      "es": "Un consejo para tu corazón"
      }
     },
     {
      "id": "ausblick",
      "name": {
       "de": "Was wachsen kann",
-      "tr": "Filizlenebilecek olan"
+      "tr": "Filizlenebilecek olan",
+      "en": "What can grow",
+      "es": "Lo que puede crecer"
      }
     }
    ]
@@ -2605,14 +3413,18 @@
   "ja_nein": {
    "name": {
     "de": "Ja oder Nein",
-    "tr": "Evet mi, Hayır mı"
+    "tr": "Evet mi, Hayır mı",
+    "en": "Yes or No",
+    "es": "Sí o no"
    },
    "positionen": []
   },
   "tageskarte": {
    "name": {
     "de": "Tageskarte",
-    "tr": "Günün Kartı"
+    "tr": "Günün Kartı",
+    "en": "Card of the Day",
+    "es": "Carta del día"
    },
    "positionen": []
   }

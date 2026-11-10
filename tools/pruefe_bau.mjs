@@ -6,8 +6,20 @@
 //  3. Aussagen zu KI (außer im Wortlaut der Rechtstexte).
 //  4. Laden von einer fremden Domain (Links sind erlaubt).
 //  5. Eine Adresse aus der Liste vor dem Umbau fehlt (tools/adressen_vor_apw1.txt).
-//  6. Seite ohne title, description, canonical, lang oder Gegenseite in hreflang (ausgenommen Seiten nur auf Deutsch);
-//     jede Seite im Bau steht in src/daten/seiten.mjs und umgekehrt; Robots passt zum Schalter E8.
+//  6. Seite ohne title, description, genau eine canonical, lang, og:locale oder ohne alle Sprachfassungen in hreflang
+//     (ausgenommen Seiten nur auf Deutsch); hreflang im Bau gegenseitig und vollständig, x-default auf Englisch (sonst
+//     Deutsch); jede Seite im Bau steht in src/daten/seiten.mjs und umgekehrt; Robots passt zum Schalter E8.
+//  8. Interne Links (AP-SPR2): jedes Ziel liegt im Bau, jede Sprungmarke gibt es auf der Zielseite; ein Link ohne
+//     hreflang führt nicht in eine andere Sprache, wenn es die Zielseite auch in der Sprache der Seite gibt (Seiten nur
+//     in einer Sprache wie /offenlegung/ und /app/ sind von überall erlaubt), ein Link mit hreflang führt auf eine
+//     Seite dieser Sprache. Links im Wortlaut der Rechtstexte zählen nur für die Erreichbarkeit.
+// Entwurf der Übersetzung: Mit UEBERSETZUNG_ENTWURF=1 sind die Regeln 2, 3 und 9 auf englischen und spanischen Seiten
+// nur Warnungen (solange die Texte aus deutung-unterlagen/uebersetzung/ noch durchgesehen werden). Ohne die Variable,
+// also auch im Workflow auf GitHub, brechen sie ab.
+//  9. Keine deutschen Reste auf englischen und spanischen Seiten (Umlaute, ß, häufige deutsche Wörter) außerhalb von
+//     Elementen mit lang (AP-SPR2). Auch im Wortlaut der Rechtstexte.
+// 10. JSON-LD gegen einen Auszug aus schema.org (src/daten/schema_auszug.mjs): bekannter Typ, nur Eigenschaften des
+//     Typs (samt Obertypen), inLanguage passt zur Seite.
 //  7. Kartenbild mit nackten Figuren (src/daten/karten.mjs, GESPERRT).
 // Dazu: nichts im Speicher des Browsers und keine Cookies (Skripte), keine Emojis, gültige strukturierte Daten mit den
 // Pflichttypen je Seite, türkische Wörter auf deutschen Seiten mit lang="tr".
@@ -18,6 +30,8 @@ import { SEITEN } from '../src/daten/seiten.mjs';
 import { seite, store, suche } from '../src/daten/seite.mjs';
 import { GESPERRT } from '../src/daten/karten.mjs';
 import { begriffe } from '../src/daten/sprachen.mjs';
+import { OG_LOCALE, STANDARD_SPRACHE } from '../src/daten/adressen.mjs';
+import { pruefeSchema } from '../src/daten/schema_auszug.mjs';
 
 const WURZEL = join(dirname(fileURLToPath(import.meta.url)), '..');
 const TEXT = /\.(html|txt|xml|js|mjs|css|json|svg|webmanifest)$/i;
@@ -61,17 +75,30 @@ const R = (quelle, schalter = 'gu') => new RegExp(`(?<![\\p{L}\\p{N}])(?:${quell
 
 export const MUSTER = {
   riderWaite: /r\W{0,2}i\W{0,2}d\W{0,2}e\W{0,2}r[\s\-–—_./]*w\W{0,2}a\W{0,2}i\W{0,2}t\W{0,2}e|waite/giu,
-  preis: R('gratis|kostenlos\\p{L}*|umsonst|free|ücretsiz\\p{L}*|bedava\\p{L}*|preis\\p{L}*|fiyat\\p{L}*|euro|offers|price\\p{L}*', 'giu'),
-  // KI und AI nur in Großbuchstaben als ganzes Wort; die anderen ohne Rücksicht auf die Schreibung.
-  kiGross: R('KI|AI'),
-  ki: R('künstliche\\p{L}*\\s+intelligenz\\p{L}*|yapay\\s+zek[aâ]\\p{L}*|artificial\\s+intelligence', 'giu'),
+  // Spanisch dazu seit AP-SPR2: gratuit…, precio…
+  preis: R('gratis|kostenlos\\p{L}*|umsonst|free|ücretsiz\\p{L}*|bedava\\p{L}*|preis\\p{L}*|fiyat\\p{L}*|euro|(?<=")offers(?=")|price\\p{L}*|gratuit\\p{L}*|precio\\p{L}*', 'giu'),
+  // KI, AI und IA nur in Großbuchstaben als ganzes Wort; die anderen ohne Rücksicht auf die Schreibung.
+  kiGross: R('KI|AI|IA'),
+  ki: R('künstliche\\p{L}*\\s+intelligenz\\p{L}*|yapay\\s+zek[aâ]\\p{L}*|artificial\\s+intelligence|inteligencia\\s+artificial', 'giu'),
+  // Deutsche Reste auf englischen und spanischen Seiten (9): Umlaute und ß, dazu häufige deutsche Wörter, die es im
+  // Englischen und Spanischen so nicht gibt.
+  deutsch: /[äöüÄÖÜß]|(?<![\p{L}\p{N}])(?:und|oder|nicht|nur|auch|sich|ist|sind|wird|werden|eine[mnrs]?|einen|der|dem|mit|für|auf|bei|zum|zur|vom|wie|wenn|dein|deine[mnrs]?|Seite|Karte|Karten|Tasse|Zeichen|Kaffeesatz|Deutung|Legung|Satz|Bedeutung)(?![\p{L}\p{N}])/gu,
   speicher: /localStorage|sessionStorage|indexedDB|document\.cookie|navigator\.storage|caches\.open/g,
   emoji: /\p{Extended_Pictographic}/gu,
 };
 
 export function pruefeBau(ordner, { still = false } = {}) {
   const befunde = [];
-  const melde = (datei, regel, fund) => befunde.push(`${relative(ordner, datei).split(sep).join('/')}: [${regel}] ${fund}`);
+  const warnungen = [];
+  const entwurf = process.env.UEBERSETZUNG_ENTWURF === '1';
+  // Seiten mit englischem oder spanischem Text: alles unter en/ und es/, dazu Kurzlink und 404 (Teile je Sprache).
+  const mitUebersetzung = (name) => /^(en|es)\//.test(name) || ['app/index.html', '404.html'].includes(name);
+  const melde = (datei, regel, fund) => {
+    const name = relative(ordner, datei).split(sep).join('/');
+    const zeile = `${name}: [${regel}] ${fund}`;
+    if (entwurf && /^[239] /.test(regel) && mitUebersetzung(name)) warnungen.push(zeile);
+    else befunde.push(zeile);
+  };
   const dateien = alleDateien(ordner);
   const htmlDateien = dateien.filter((datei) => datei.endsWith('.html'));
 
@@ -159,6 +186,8 @@ export function pruefeBau(ordner, { still = false } = {}) {
 
   // 6: Kopfdaten jeder Seite gegen src/daten/seiten.mjs.
   const bekannt = new Set();
+  const hreflangImBau = new Map();
+  let jsonLdAnzahl = 0;
   for (const eintrag of SEITEN) {
     const datei = dateiZu(eintrag.pfad);
     bekannt.add(datei);
@@ -172,35 +201,51 @@ export function pruefeBau(ordner, { still = false } = {}) {
     const titel = kopf.match(/<title>([^<]*)<\/title>/)?.[1];
     const beschreibung = kopf.match(/<meta name="description" content="([^"]*)"/)?.[1];
     const kanonisch = kopf.match(/<link rel="canonical" href="([^"]*)"/)?.[1];
+    const kanonischAnzahl = (html.match(/<link rel="canonical"/g) ?? []).length;
+    const ogLocale = kopf.match(/<meta property="og:locale" content="([^"]*)"/)?.[1];
     const robots = kopf.match(/<meta name="robots" content="([^"]*)"/)?.[1];
-    const alternativen = Object.fromEntries([...kopf.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]*)"/g)].map((m) => [m[1], m[2]]));
+    const alternativListe = [...kopf.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]*)"/g)].map((m) => [m[1], m[2]]);
+    const alternativen = Object.fromEntries(alternativListe);
+    if (alternativListe.length !== Object.keys(alternativen).length) melde(datei, '6 hreflang doppelt', eintrag.pfad);
+    hreflangImBau.set(seite.adresse + eintrag.pfad, { datei, alternativen });
     const dekodiert = (text) => text?.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
     if (!titel) melde(datei, '6 title fehlt', eintrag.pfad);
     else if (dekodiert(titel) !== eintrag.titel) melde(datei, '6 title weicht ab', `${dekodiert(titel)} ≠ ${eintrag.titel}`);
     if (!beschreibung) melde(datei, '6 description fehlt', eintrag.pfad);
     else if (dekodiert(beschreibung) !== eintrag.beschreibung) melde(datei, '6 description weicht ab', eintrag.pfad);
     if (kanonisch !== seite.adresse + eintrag.pfad) melde(datei, '6 canonical', `${kanonisch} ≠ ${seite.adresse + eintrag.pfad}`);
+    if (kanonischAnzahl !== 1) melde(datei, '6 canonical nicht genau einmal', `${kanonischAnzahl}×`);
     if (lang !== eintrag.sprache) melde(datei, '6 lang', `${lang} ≠ ${eintrag.sprache}`);
-    if (eintrag.gegenseite) {
-      const andere = eintrag.sprache === 'de' ? 'tr' : 'de';
-      if (alternativen[eintrag.sprache] !== seite.adresse + eintrag.pfad) melde(datei, '6 hreflang eigene Sprache', eintrag.pfad);
-      if (alternativen[andere] !== seite.adresse + eintrag.gegenseite) melde(datei, '6 hreflang Gegenseite fehlt', `${andere} → ${eintrag.gegenseite}`);
-      if (!alternativen['x-default']) melde(datei, '6 hreflang x-default fehlt', eintrag.pfad);
+    if (ogLocale !== OG_LOCALE[eintrag.sprache]) melde(datei, '6 og:locale', `${ogLocale} ≠ ${OG_LOCALE[eintrag.sprache]}`);
+    if (eintrag.fassungen) {
+      // Genau die Sprachfassungen aus src/daten/seiten.mjs, nur Sprachcodes, dazu x-default.
+      const soll = Object.fromEntries(eintrag.fassungen.map((fassung) => [fassung.sprache, seite.adresse + fassung.pfad]));
+      const standard = eintrag.fassungen.find((fassung) => fassung.sprache === STANDARD_SPRACHE) ?? eintrag.fassungen.find((fassung) => fassung.sprache === 'de');
+      soll['x-default'] = seite.adresse + standard.pfad;
+      for (const [sprache, ziel] of Object.entries(soll)) {
+        if (alternativen[sprache] !== ziel) melde(datei, '6 hreflang fehlt oder falsch', `${sprache} → ${alternativen[sprache] ?? 'fehlt'} (soll ${ziel})`);
+      }
+      for (const sprache of Object.keys(alternativen)) {
+        if (!(sprache in soll)) melde(datei, '6 hreflang zu viel', sprache);
+        if (sprache !== 'x-default' && !/^[a-z]{2}$/.test(sprache)) melde(datei, '6 hreflang nicht nur Sprachcode', sprache);
+      }
     } else if (eintrag.sprache !== 'de') {
-      melde(datei, '6 Seite ohne Gegenseite', `nur deutsche Seiten dürfen ohne Gegenseite sein (${eintrag.pfad})`);
+      melde(datei, '6 Seite ohne Sprachfassungen', `nur deutsche Seiten dürfen ohne andere Fassung sein (${eintrag.pfad})`);
     } else if (Object.keys(alternativen).length) {
-      melde(datei, '6 hreflang ohne Gegenseite', eintrag.pfad);
+      melde(datei, '6 hreflang ohne Sprachfassungen', eintrag.pfad);
     }
     // Schalter E8: ohne Freigabe trägt jede Seite noindex; mit Freigabe nur die Seiten ohne Index.
     if (eintrag.imIndex && robots) melde(datei, 'E8 robots', `Seite im Index trägt ${robots}`);
     if (!eintrag.imIndex && !/noindex/.test(robots ?? '')) melde(datei, 'E8 robots', 'noindex fehlt');
 
-    // Strukturierte Daten: gültiges JSON, Pflichttypen.
+    // Strukturierte Daten: gültiges JSON, Pflichttypen, Auszug aus schema.org (10).
     const typen = [];
     for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
       try {
         const daten = JSON.parse(m[1]);
         typen.push(daten['@type']);
+        jsonLdAnzahl++;
+        for (const fund of pruefeSchema(daten, eintrag.sprache)) melde(datei, '10 JSON-LD schema.org', fund);
         const text = JSON.stringify(daten);
         if (/"(offers|price|priceCurrency|aggregateRating|review|isAccessibleForFree|sameAs)"/.test(text)) melde(datei, 'JSON-LD verbotenes Feld', text.match(/"(offers|price|priceCurrency|aggregateRating|review|isAccessibleForFree|sameAs)"/)[1]);
       } catch (fehler) {
@@ -215,11 +260,94 @@ export function pruefeBau(ordner, { still = false } = {}) {
   }
   for (const datei of htmlDateien) if (!bekannt.has(datei)) melde(datei, '6 Seite nicht in src/daten/seiten.mjs', relative(ordner, datei));
 
-  // Türkische Wörter auf deutschen Seiten tragen lang="tr" (gesetzt von tools/sprache_setzen.mjs).
-  const tuerkisch = begriffe.filter((eintrag) => eintrag.nur === 'de');
+  // 6: hreflang im Bau gegenseitig: Nennt A die Seite B, nennt B dieselben Fassungen (also auch A).
+  let hreflangPaare = 0;
+  for (const [adresse, { datei, alternativen }] of hreflangImBau) {
+    for (const [sprache, ziel] of Object.entries(alternativen)) {
+      if (sprache === 'x-default' || ziel === adresse) continue;
+      hreflangPaare++;
+      const andere = hreflangImBau.get(ziel);
+      if (!andere) {
+        melde(datei, '6 hreflang Ziel nicht im Bau', ziel);
+        continue;
+      }
+      const gleich = JSON.stringify(Object.entries(andere.alternativen).sort()) === JSON.stringify(Object.entries(alternativen).sort());
+      if (!gleich) melde(datei, '6 hreflang nicht gegenseitig', `${adresse} ↔ ${ziel}`);
+    }
+  }
+
+  // 8: interne Links und Sprache der Linkziele.
+  const seiteZuDatei = new Map(SEITEN.map((eintrag) => [dateiZu(eintrag.pfad), eintrag]));
+  const FUER_ALLE = new Set(['app', '404']);
+  const ankerVon = new Map();
+  const anker = (datei) => {
+    if (!ankerVon.has(datei)) ankerVon.set(datei, new Set([...readFileSync(datei, 'utf8').matchAll(/\sid="([^"]+)"/g)].map((m) => m[1])));
+    return ankerVon.get(datei);
+  };
+  let interneLinks = 0;
+  for (const datei of htmlDateien) {
+    const eigene = seiteZuDatei.get(datei);
+    const html = readFileSync(datei, 'utf8');
+    // Stellen der Links außerhalb des Wortlauts der Rechtstexte (nur für sie gilt die Sprachregel).
+    const sprachpruefung = new Set();
+    {
+      const rechtstext = [];
+      for (const start of [...html.matchAll(/<div\b[^>]*\sdata-rechtstext\b[^>]*>/g)].map((m) => m.index)) {
+        const ende = start + (html.length - ohneRechtstext(html.slice(start)).length);
+        rechtstext.push([start, ende]);
+      }
+      for (const m of html.matchAll(/<a\b/g)) if (!rechtstext.some(([von, bis]) => m.index >= von && m.index < bis)) sprachpruefung.add(m.index);
+    }
+    for (const m of html.matchAll(/<a\b[^>]*\shref="([^"]*)"[^>]*>/g)) {
+      let ziel = m[1].replace(/&amp;/g, '&');
+      if (ziel.startsWith(`${seite.adresse}/`)) ziel = ziel.slice(seite.adresse.length);
+      if (!ziel.startsWith('/') && !ziel.startsWith('#')) continue;
+      interneLinks++;
+      const [pfad, marke] = ziel.split('#');
+      const zielDatei = pfad ? dateiZu(decodeURI(pfad)) : datei;
+      if (!existsSync(zielDatei)) {
+        melde(datei, '8 Link ins Leere', ziel);
+        continue;
+      }
+      if (marke && zielDatei.endsWith('.html') && !anker(zielDatei).has(marke)) melde(datei, '8 Sprungmarke fehlt', ziel);
+      const zielSeite = seiteZuDatei.get(zielDatei);
+      if (!eigene || !zielSeite) continue;
+      const hreflang = m[0].match(/\shreflang="([^"]+)"/)?.[1];
+      if (!sprachpruefung.has(m.index)) continue;
+      if (hreflang && zielSeite.sprache !== hreflang && !FUER_ALLE.has(zielSeite.schluessel)) melde(datei, '8 hreflang des Links passt nicht', `${ziel} ist ${zielSeite.sprache}, nicht ${hreflang}`);
+      const gibtEigene = zielSeite.fassungen?.some((fassung) => fassung.sprache === eigene.sprache);
+      if (!hreflang && !FUER_ALLE.has(eigene.schluessel) && zielSeite.sprache !== eigene.sprache && gibtEigene) {
+        melde(datei, '8 Link in andere Sprache ohne hreflang', `${ziel} (${zielSeite.sprache}) auf ${eigene.sprache}`);
+      }
+    }
+  }
+
+  // 9: deutsche Reste auf englischen und spanischen Seiten, sichtbarer Text und Attribute alt, title, aria-label,
+  // content von description und og:*, außerhalb von Elementen mit lang.
+  let restSeiten = 0;
   for (const datei of htmlDateien) {
     const html = readFileSync(datei, 'utf8');
-    if (!/<html[^>]*\slang="de"/.test(html)) continue;
+    const lang = html.match(/<html[^>]*\slang="([a-z-]+)"/)?.[1];
+    if (!['en', 'es'].includes(lang)) continue;
+    restSeiten++;
+    const ohneFremd = html
+      .replace(/<(script|style)\b[\s\S]*?<\/\1>/g, ' ')
+      .replace(/<(\w+)\b[^>]*\slang="(?!en"|es")[^"]*"[^>]*>[\s\S]*?<\/\1>/g, ' ');
+    const attribute = [...ohneFremd.matchAll(/\s(?:alt|title|aria-label|content)="([^"]*)"/g)].map((m) => m[1]).join(' \n ');
+    const sichtbar = `${ohneFremd.replace(/<[^>]+>/g, ' ')} \n ${attribute}`
+      .replace(/&#(\d+);/g, (_, zahl) => String.fromCodePoint(Number(zahl)))
+      .replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"');
+    // Fremde Wörter aus src/daten/sprachen.mjs (etwa „Türkçe“ in einem Alt-Text) sind kein Rest.
+    const bereinigt = begriffe.filter((eintrag) => !eintrag.nur || eintrag.nur.includes(lang)).reduce((text, { text: wort }) => text.split(wort).join(' '), sichtbar);
+    for (const fund of bereinigt.matchAll(MUSTER.deutsch)) melde(datei, '9 deutscher Rest', `„${fund[0]}“ in „${umgebung(bereinigt, fund.index)}“`);
+  }
+
+  // Fremde Wörter auf deutschen, englischen und spanischen Seiten tragen lang (gesetzt von tools/sprache_setzen.mjs).
+  for (const datei of htmlDateien) {
+    const html = readFileSync(datei, 'utf8');
+    const seitenSprache = html.match(/<html[^>]*\slang="([a-z]{2})"/)?.[1];
+    if (!['de', 'en', 'es'].includes(seitenSprache)) continue;
+    const tuerkisch = begriffe.filter((eintrag) => eintrag.nur?.includes(seitenSprache) && eintrag.lang !== seitenSprache);
     // Sichtbarer Text außerhalb von Elementen mit lang, ohne Skripte, Stile, title.
     const rest = html
       .replace(/<(script|style|title)\b[\s\S]*?<\/\1>/g, ' ')
@@ -227,15 +355,20 @@ export function pruefeBau(ordner, { still = false } = {}) {
       .replace(/<[^>]+>/g, ' ');
     for (const { text } of tuerkisch) {
       const stelle = rest.indexOf(text);
-      if (stelle >= 0) melde(datei, 'lang="tr" fehlt', `„${text}“`);
+      if (stelle >= 0) melde(datei, 'lang fehlt', `„${text}“`);
     }
   }
 
   if (befunde.length) {
     throw new Error(`Prüfung nach dem Bau: ${befunde.length} Befund(e)\n  ${befunde.join('\n  ')}`);
   }
-  const ergebnis = { dateien: dateien.length, seiten: htmlDateien.length, adressenVorher: vorher.length };
-  if (!still) console.log(`Prüfung nach dem Bau: ${ergebnis.dateien} Dateien, ${ergebnis.seiten} Seiten, ${ergebnis.adressenVorher} Adressen von vorher, kein Befund`);
+  const ersatzfotos = htmlDateien.filter((datei) => /<html[^>]*\slang="(en|es)"/.test(readFileSync(datei, 'utf8')) && /\/bilder\/(?:app|sogehts)\/[^"]*-de-\d+\.webp/.test(readFileSync(datei, 'utf8'))).map((datei) => relative(ordner, datei).split(sep).join('/'));
+  if (warnungen.length) console.warn(`Prüfung nach dem Bau, Entwurf der Übersetzung (UEBERSETZUNG_ENTWURF=1): ${warnungen.length} Warnung(en)\n  ${warnungen.join('\n  ')}`);
+  const ergebnis = { warnungen: warnungen.length, dateien: dateien.length, seiten: htmlDateien.length, adressenVorher: vorher.length, hreflangPaare, interneLinks, jsonLd: jsonLdAnzahl, restSeiten, ersatzfotos };
+  if (!still) {
+    console.log(`Prüfung nach dem Bau: ${ergebnis.dateien} Dateien, ${ergebnis.seiten} Seiten, ${ergebnis.adressenVorher} Adressen von vorher, ${hreflangPaare} hreflang-Verbindungen gegenseitig, ${interneLinks} interne Links, ${jsonLdAnzahl} JSON-LD-Blöcke, ${restSeiten} Seiten en/es auf deutsche Reste geprüft, kein Befund`);
+    if (ersatzfotos.length) console.warn(`Warnung: ${ersatzfotos.length} Seite(n) en/es mit deutschen Ersatzfotos (src/daten/fotos.mjs): ${ersatzfotos.join(', ')}`);
+  }
   return ergebnis;
 }
 

@@ -1,21 +1,25 @@
 ---
-// Seite nicht gefunden (GitHub Pages liefert /404.html), in beiden Sprachen; der türkische Teil trägt lang="tr".
+// Seite nicht gefunden (GitHub Pages liefert für alle Sprachen dieselbe /404.html): zuerst Deutsch, dann Türkisch,
+// Englisch und Spanisch (AP-SPR2), jeder weitere Teil mit lang und einem Link zur Startseite seiner Sprache.
 import '../styles/dokument.css';
 import Basis from '../layouts/Basis.astro';
 import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
+import { SPRACHEN, startVon } from '../daten/adressen.mjs';
 
 const de = oberflaeche.de.nichtGefunden;
-const tr = oberflaeche.tr.nichtGefunden;
+const weitere = SPRACHEN.filter((sprache) => sprache !== 'de').map((sprache) => ({ sprache, T: oberflaeche[sprache].nichtGefunden }));
 ---
 <Basis adresse="/404.html" klasse="seite-404">
   <div class="innen schmal nichtgefunden">
     <h1>{de.titel}</h1>
     <p>{de.text}</p>
     <p><a class="knopf knopf-dunkel" href="/">{de.start}</a></p>
-    <div lang="tr">
-      <h2>{tr.titel}</h2>
-      <p>{tr.text}</p>
-      <p><a class="knopf knopf-rand" href="/tr/" hreflang="tr">{tr.start}</a></p>
-    </div>
+    {weitere.map(({ sprache, T }) => (
+      <div lang={sprache}>
+        <h2>{T.titel}</h2>
+        <p>{T.text}</p>
+        <p><a class="knopf knopf-rand" href={startVon(sprache)} hreflang={sprache}>{T.start}</a></p>
+      </div>
+    ))}
   </div>
 </Basis>

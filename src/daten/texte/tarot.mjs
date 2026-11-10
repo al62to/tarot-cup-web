@@ -321,3 +321,9 @@ export const tarot = {
     },
   },
 };
+
+// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+import tarotEn from './uebersetzt/tarot_en.json' with { type: 'json' };
+import tarotEs from './uebersetzt/tarot_es.json' with { type: 'json' };
+tarot.en = tarotEn;
+tarot.es = tarotEs;

@@ -18,7 +18,7 @@
 
 /* Rechtstexte: Lesespalte, Tabellen scrollen in sich, eigene Druckansicht. Am Wortlaut ändert das nichts. */
 .innen.recht { max-width: calc(46rem + 2 * var(--rand-seite)); padding-top: clamp(24px, 4vw, 48px); padding-bottom: 32px; }
-.sprachwahl-recht { display: flex; margin: 0 0 24px; }
+.sprachwahl-recht { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; }
 .sprachwahl-recht a { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 18px 0 14px; border-radius: 999px; background: var(--sand); font-size: 0.9375rem; font-weight: 500; text-decoration: none; }
 .sprachwahl-recht a::before { content: ""; flex: none; width: 16px; height: 16px; border: 1.6px solid var(--gold-dunkel); border-radius: 50%; background: linear-gradient(var(--gold-dunkel), var(--gold-dunkel)) center / 100% 1.4px no-repeat, linear-gradient(var(--gold-dunkel), var(--gold-dunkel)) center / 1.4px 100% no-repeat; }
 .sprachwahl-recht a:hover { background: var(--rand); text-decoration: underline; }

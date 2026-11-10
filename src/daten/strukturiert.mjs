@@ -36,7 +36,7 @@ export const herausgeberDaten = () => ({
 const emailEscaped = [...seite.email].map((zeichen) => `\\u${zeichen.codePointAt(0).toString(16).padStart(4, '0')}`).join('');
 export const jsonLd = (daten) => JSON.stringify(daten).replaceAll(seite.email, emailEscaped);
 
-// Die App, vollständig, nur auf der Startseite (beide Sprachen, je mit der Beschreibung der Sprache).
+// Die App, vollständig, nur auf der Startseite (jede Sprache, je mit der Beschreibung der Sprache).
 export const appDaten = ({ beschreibung, bildschirmfotos }) => ({
   '@context': KONTEXT,
   '@type': 'MobileApplication',
@@ -44,7 +44,8 @@ export const appDaten = ({ beschreibung, bildschirmfotos }) => ({
   name: seite.name,
   operatingSystem: 'Android',
   applicationCategory: 'LifestyleApplication',
-  inLanguage: ['de', 'tr'],
+  // Sprachen der App und der Website (AP-SPR2: de, tr, en, es).
+  inLanguage: seite.sprachen,
   description: beschreibung,
   url: `${seite.adresse}/`,
   image: absolut('/bilder/app-symbol-512.png'),

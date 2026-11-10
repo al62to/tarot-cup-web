@@ -3,8 +3,9 @@
 // Skript Android-Geräte sofort zum Eintrag bei Google Play (Kennung utm_source=website, utm_campaign=kurzlink); am
 // Computer bleibt diese Seite mit Abzeichen und QR-Code stehen (QR beim Bau lokal erzeugt, er führt wieder auf
 // /app/). iPhone und iPad bleiben auf der Seite und lesen, dass es Tarot Cup nur für Android gibt. Solange die App
-// nicht öffentlich ist, steht hier nur „Bald bei Google Play“. Die Seite gilt für beide Sprachen; der türkische Teil
-// trägt lang="tr".
+// nicht öffentlich ist, steht hier nur „Bald bei Google Play“. Die Seite gilt für alle Sprachen (Deutsch, Türkisch,
+// Englisch, Spanisch, AP-SPR2); jeder Teil außer dem deutschen trägt lang, das Abzeichen und der Link je Teil die
+// Sprache des Teils. Die Weiterleitung für Android nimmt den Link ohne Sprache (Google Play wählt die Sprache des Geräts).
 // noindex, nicht in Sitemap und llms.txt. Nichts wird gespeichert, nichts von anderen Anbietern geladen.
 import QRCode from 'qrcode';
 import '../../styles/dokument.css';
@@ -13,6 +14,7 @@ import Storeknopf from '../../components/Storeknopf.astro';
 import Text from '../../components/Text.astro';
 import { seite, store, storeLink } from '../../daten/seite.mjs';
 import { oberflaeche } from '../../daten/texte/oberflaeche.mjs';
+import { SPRACHEN } from '../../daten/adressen.mjs';
 
 const ziel = store.oeffentlich ? storeLink('kurzlink') : null;
 const qr = store.oeffentlich
@@ -22,7 +24,7 @@ const weiter = { android: ziel };
 ---
 <Basis klasse="seite-app">
   <div class="innen schmal app-seite">
-    {['de', 'tr'].map((sprache) => {
+    {SPRACHEN.map((sprache) => {
       const T = oberflaeche[sprache].app;
       return (
         <section class="app-teil" lang={sprache === 'de' ? undefined : sprache}>
@@ -31,7 +33,7 @@ const weiter = { android: ziel };
             <>
               <Text text={T.text} />
               <Storeknopf sprache={sprache} ort="kurzlink" />
-              <p><a href={ziel} rel="noopener">{T.weiter}</a></p>
+              <p><a href={storeLink('kurzlink', sprache)} rel="noopener">{T.weiter}</a></p>
             </>
           ) : (
             <>
@@ -46,7 +48,7 @@ const weiter = { android: ziel };
     {qr && (
       <figure class="app-qr">
         <Fragment set:html={qr} />
-        <figcaption>{oberflaeche.de.app.qr} · <span lang="tr">{oberflaeche.tr.app.qr}</span></figcaption>
+        <figcaption>{oberflaeche.de.app.qr}{SPRACHEN.filter((sprache) => sprache !== 'de').map((sprache) => <> · <span lang={sprache}>{oberflaeche[sprache].app.qr}</span></>)}</figcaption>
       </figure>
     )}
   </div>

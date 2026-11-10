@@ -12,12 +12,22 @@ import Teilen from './Teilen.astro';
 import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
 import { pfadVon, startPfad } from '../daten/seiten.mjs';
 import { mailtoKodiert, emailKodiert } from '../daten/seite.mjs';
+import { ADRESSEN, SPRACHEN, SPRACHNAMEN } from '../daten/adressen.mjs';
 
 const { angaben, teilen = null } = Astro.props;
-const { sprache, pfad, gegenseite } = angaben;
+const { sprache, pfad, fassungen } = angaben;
 const T = oberflaeche[sprache];
-const datenschutz = sprache === 'de' ? '/datenschutz/' : '/tr/gizlilik/';
-const bedingungen = sprache === 'de' ? '/nutzungsbedingungen/' : '/tr/kullanim-kosullari/';
+const datenschutz = ADRESSEN.datenschutz[sprache];
+const bedingungen = ADRESSEN.nutzungsbedingungen[sprache];
+// Sprachen: dieselbe Seite in jeder Sprache, sonst deren Startseite (wie im Kopf).
+const sprachen = SPRACHEN.map((code) => ({
+  code,
+  name: SPRACHNAMEN[code],
+  ziel: code === sprache ? pfad : fassungen?.find((fassung) => fassung.sprache === code)?.pfad ?? startPfad(code),
+  aktuell: code === sprache,
+}));
+// „Offenlegung“ gibt es nur auf Deutsch; das deutsche Wort im Linktext trägt lang="de" (Türkisch „Offenlegung (künye)“).
+const offenlegungDe = sprache !== 'de' && T.fuss.offenlegung.includes('Offenlegung');
 const app = [
   { text: T.fuss.sogehts, ziel: pfadVon('sogehts', sprache) },
   { text: T.fuss.fragen, ziel: pfadVon('fragen', sprache) },
@@ -26,7 +36,7 @@ const app = [
 const recht = [
   { text: T.fuss.datenschutz, ziel: datenschutz },
   { text: T.fuss.nutzungsbedingungen, ziel: bedingungen },
-  { text: T.fuss.offenlegung, ziel: '/offenlegung/', lang: sprache === 'de' ? undefined : 'de' },
+  { text: T.fuss.offenlegung, ziel: '/offenlegung/', lang: offenlegungDe ? 'de' : undefined, hreflang: sprache === 'de' ? undefined : 'de' },
   { text: T.fuss.bildnachweis, ziel: pfadVon('bildnachweis', sprache) },
 ];
 const kontakt = `<a href="${mailtoKodiert()}">${emailKodiert()}</a>`;
@@ -47,7 +57,7 @@ const kontakt = `<a href="${mailtoKodiert()}">${emailKodiert()}</a>`;
           <h2 class="fuss-titel" id="fuss-recht">{T.fuss.spalteRecht}</h2>
           <ul>
             {recht.map((eintrag) => (
-              <li><a href={eintrag.ziel} hreflang={eintrag.lang} aria-current={pfad === eintrag.ziel ? 'page' : undefined}>{eintrag.lang ? <span><span lang={eintrag.lang}>{eintrag.text.replace(/\s*\(.*\)$/, '')}</span>{eintrag.text.match(/\(.*\)$/) && <>{' '}{eintrag.text.match(/\(.*\)$/)[0]}</>}</span> : eintrag.text}</a></li>
+              <li><a href={eintrag.ziel} hreflang={eintrag.hreflang} aria-current={pfad === eintrag.ziel ? 'page' : undefined}>{eintrag.lang ? <span><span lang={eintrag.lang}>{eintrag.text.replace(/\s*\(.*\)$/, '')}</span>{eintrag.text.match(/\(.*\)$/) && <>{' '}{eintrag.text.match(/\(.*\)$/)[0]}</>}</span> : eintrag.text}</a></li>
             ))}
           </ul>
         </nav>
@@ -58,8 +68,9 @@ const kontakt = `<a href="${mailtoKodiert()}">${emailKodiert()}</a>`;
           </ul>
           <h2 class="fuss-titel" id="fuss-sprache">{T.fuss.sprache}</h2>
           <ul class="fuss-sprachen" aria-labelledby="fuss-sprache">
-            <li><a href={sprache === 'de' ? pfad : gegenseite ?? startPfad('de')} hreflang={sprache === 'de' ? undefined : 'de'} aria-current={sprache === 'de' ? 'true' : undefined}><span lang="de">Deutsch</span></a></li>
-            <li><a href={sprache === 'tr' ? pfad : gegenseite ?? startPfad('tr')} hreflang={sprache === 'tr' ? undefined : 'tr'} aria-current={sprache === 'tr' ? 'true' : undefined}><span lang="tr">Türkçe</span></a></li>
+            {sprachen.map((eintrag) => (
+              <li><a href={eintrag.ziel} hreflang={eintrag.aktuell ? undefined : eintrag.code} aria-current={eintrag.aktuell ? 'true' : undefined}><span lang={eintrag.code}>{eintrag.name}</span></a></li>
+            ))}
           </ul>
         </div>
       </div>

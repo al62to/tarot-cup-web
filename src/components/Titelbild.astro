@@ -15,10 +15,11 @@ import { GESPERRT, TITELKARTEN } from '../daten/karten.mjs';
 import { store, storeLink } from '../daten/seite.mjs';
 import { pfadVon } from '../daten/seiten.mjs';
 import appDaten from '../daten/app_daten.json' with { type: 'json' };
+import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
 
 const { sprache, kopf, zahlen } = Astro.props;
 const name = (id) => appDaten.karten.find((karte) => karte.id === id).name[sprache];
-const jahr = sprache === 'de' ? 'Druck von 1909' : '1909 baskısı';
+const jahr = oberflaeche[sprache].bilder.druck1909;
 // Zuerst der Magier, dann die übrigen Titelkarten; gesperrte Bilder nie (Kartenbild.astro prüft das zusätzlich).
 const ERSTE = 'ta_01_magier';
 const reihe = [ERSTE, ...TITELKARTEN.filter((id) => id !== ERSTE)].filter((id) => !GESPERRT.includes(id));
@@ -35,7 +36,7 @@ const zeileTeile = kopf.zeile.split(/(Android)/);
         <Text text={kopf.text} klasse="titel-absatz" />
         <div class="titel-knoepfe">
           {store.oeffentlich ? (
-            <a class="titel-knopf titel-knopf-hell" href={storeLink('kopf')} rel="noopener">
+            <a class="titel-knopf titel-knopf-hell" href={storeLink('kopf', sprache)} rel="noopener">
               <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="2.5" width="12" height="19" rx="2.5" /><path d="M10.5 18.5h3" /></svg>
               <span>{kopf.knopf}</span>
             </a>

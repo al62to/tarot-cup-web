@@ -17,12 +17,12 @@ import sys
 from pathlib import Path
 
 ZIEL = Path(__file__).resolve().parent.parent / "src" / "daten" / "app_daten.json"
-SPRACHEN = ("de", "tr")
+SPRACHEN = ("de", "tr", "en", "es")  # en und es seit AP-SPR2 (Daten der App, Zweig sprachen-en-es)
 
 
-def zweisprachig(wert: object, wo: str) -> dict[str, str]:
+def mehrsprachig(wert: object, wo: str) -> dict[str, str]:
     if not isinstance(wert, dict):
-        raise SystemExit(f"{wo}: erwartet ein Objekt mit de und tr")
+        raise SystemExit(f"{wo}: erwartet ein Objekt mit {', '.join(SPRACHEN)}")
     aus = {}
     for sprache in SPRACHEN:
         text = wert.get(sprache)
@@ -54,8 +54,8 @@ def main(argv: list[str] | None = None) -> None:
         zeichen.append({
             "id": z["id"],
             "kategorie": z["kategorie"],
-            "name": zweisprachig(z["name"], f"{wo}.name"),
-            "kurz": zweisprachig(z["kurzbedeutung"], f"{wo}.kurzbedeutung"),
+            "name": mehrsprachig(z["name"], f"{wo}.name"),
+            "kurz": mehrsprachig(z["kurzbedeutung"], f"{wo}.kurzbedeutung"),
         })
 
     karten = []
@@ -66,9 +66,9 @@ def main(argv: list[str] | None = None) -> None:
             "nummer": k["nummer"],
             "arkana": k["arkana"],
             "farbe": k["farbe"],
-            "name": zweisprachig(k["name"], f"{wo}.name"),
+            "name": mehrsprachig(k["name"], f"{wo}.name"),
             "kurz": {
-                richtung: zweisprachig(k["kurzbedeutung"][richtung], f"{wo}.kurzbedeutung.{richtung}")
+                richtung: mehrsprachig(k["kurzbedeutung"][richtung], f"{wo}.kurzbedeutung.{richtung}")
                 for richtung in ("aufrecht", "umgekehrt")
             },
         })
@@ -76,9 +76,9 @@ def main(argv: list[str] | None = None) -> None:
     legungen = {}
     for kennung, legung in legungen_quelle["legungen"].items():
         legungen[kennung] = {
-            "name": zweisprachig(legung["name"], f"legung {kennung}.name"),
+            "name": mehrsprachig(legung["name"], f"legung {kennung}.name"),
             "positionen": [
-                {"id": p["id"], "name": zweisprachig(p["name"], f"legung {kennung}.{p['id']}")}
+                {"id": p["id"], "name": mehrsprachig(p["name"], f"legung {kennung}.{p['id']}")}
                 for p in legung.get("positionen", [])
             ],
         }

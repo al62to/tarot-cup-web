@@ -1,0 +1,233 @@
+{
+ "metaTitel": "Tarot Reading: Ritual, Spreads & Card Meanings | Tarot Cup",
+ "metaBeschreibung": "Learn how to do a tarot reading step by step, from your question to reading the cards, plus four tarot spreads and eight well-known cards explained.",
+ "titel": "Tarot reading",
+ "vorspann": "How to do a tarot reading, from the first question to the last card turned over. Plus the app’s four spreads and some well-known cards with their meaning in the tradition.",
+ "ogTitel": "How to do a tarot reading, step by step",
+ "brotkrume": "Tarot",
+ "inhaltTitel": "Contents",
+ "abschnitte": [
+  {
+   "kennung": "was-ist-tarot",
+   "titel": "What is tarot?",
+   "absaetze": [
+    "Tarot is a deck of 78 picture cards. It began in northern Italy in the 15th century as a card game; only much later did people begin to interpret the pictures. Today, people mostly use tarot to think calmly about a question. That is not a prediction, more a conversation with pictures.",
+    "The 22 Major Arcana are numbered from 0 to 21, from the Fool to the World. In the tradition, they stand for the big themes and turning points of a life, such as setting out, turning inward, or balance. The word arcana comes from Latin and means something like secrets.",
+    "The 56 Minor Arcana are divided into four suits, much like an ordinary deck of cards. Each suit has an Ace, the number cards from Two to Ten, and four court cards: Page, Knight, Queen, and King. The court cards are often read as people or as attitudes you can take on yourself.",
+    "Each suit has its own domain. Wands stand for drive, ideas, and momentum, Cups for feelings, friendship, and love. Swords cover thoughts, words, and decisions, Pentacles the tangible: work, everyday life, and what you build with your own hands.",
+    "In Tarot Cup, you see the card images from 1909. They are in the public domain and among the best-known tarot images of all; many later decks have taken up their motifs."
+   ]
+  },
+  {
+   "kennung": "aufrecht-und-umgekehrt",
+   "titel": "Upright and reversed: What does a reversed card mean?",
+   "absaetze": [
+    "A card can lie upright or upside down; then it is called reversed. In many modern readings, a reversed card is not a bad sign. It speaks of the same theme as when upright, only more quietly, more turned inward, or as if it has just stalled a little.",
+    "An example: upright, a card might speak of momentum. Reversed, it can mean that this momentum is still a while away. So it is more of an invitation to look more closely.",
+    "Some readers prefer to work without reversals, interpreting every card as upright; both approaches are part of the tradition. In the app, each card may fall either upright or reversed, with roughly equal likelihood. Even cards with serious names are traditionally read as images of change, upheaval, or connection, rather than as threats."
+   ]
+  },
+  {
+   "kennung": "ritual-schritt-fuer-schritt",
+   "art": "schritte",
+   "titel": "How do you do a tarot reading? The ritual step by step",
+   "absaetze": [
+    "You do not need much for a spread: a deck, a quiet place, and a few minutes. This is how it goes in the tradition, whether with cards on the table or on your phone."
+   ],
+   "schritte": [
+    {
+     "titel": "Find your calm",
+     "text": "Find a moment where you are not disturbed. Set aside what is occupying your mind right now, and take a few slow breaths in and out."
+    },
+    {
+     "titel": "Find your question",
+     "text": "Think about what you really want to know and phrase it openly, for example with “What”, “How”, or “What should I watch for”. An open question gives you more room when reading than a simple yes or no."
+    },
+    {
+     "titel": "Hold on to your question",
+     "text": "You can write it down, say it softly, or simply keep it in mind. In Turkish, this is called niyet tutmak: making an intention and carrying it in your heart."
+    },
+    {
+     "titel": "Shuffle",
+     "text": "Shuffle the cards for as long as it feels right to you, and think of your question while you do. Some pass the cards from hand to hand, others let two halves riffle into each other."
+    },
+    {
+     "titel": "Cut the deck",
+     "text": "Place the deck face down in front of you, cut it once, and put the bottom half on top. In the tradition, people often cut with the left hand, because it is seen as the hand of the heart."
+    },
+    {
+     "titel": "Draw cards",
+     "text": "Spread the cards face down in a fan and draw as many as the spread calls for. Do not think it over for long; reach for the card your eye lingers on."
+    },
+    {
+     "titel": "Lay out the cards",
+     "text": "Place the cards you drew face down in their positions, in the order of the spread. Each position has its own meaning, for example Past, Present, and Future."
+    },
+    {
+     "titel": "Reveal",
+     "text": "Turn the cards over one after the other, sideways, so that top and bottom stay as they were. First look at the picture: what do you notice, what feeling comes up?"
+    },
+    {
+     "titel": "Read and let it resonate",
+     "text": "First read each card on its own, then all of them together like a little story. Note down what touched you, and after a few days look at how you think about it now."
+    }
+   ],
+   "nachsatz": "In the app, you swipe over the deck to shuffle, choose the cards from the fan with a tap, and turn them over one after the other. Your gestures while shuffling feed into the randomness."
+  },
+  {
+   "kennung": "gute-fragen",
+   "art": "beispiele",
+   "titel": "Which questions are suitable for tarot?",
+   "absaetze": [
+    "A good question for tarot is open, concerns you yourself, and leaves room for reflection. Questions that only want a yes or no about other people, or ask for an exact time, fit less well. In the tradition, the cards show moods and possibilities, not dates and not other people’s thoughts.",
+    "Often, a less helpful question can be reshaped. For example, “Will Sarah call me by Friday?” might become “How can I nurture my connection with Sarah?” This keeps the focus on what you can do yourself."
+   ],
+   "gut": {
+    "titel": "Good questions",
+    "liste": [
+     "What helps me settle into my new team?",
+     "How can I ease the tension between my sister and me?",
+     "What can I pay attention to this week?",
+     "What do I need to rediscover joy in my hobby?"
+    ]
+   },
+   "weniger": {
+    "titel": "Less helpful questions",
+    "liste": [
+     "Does Jonas secretly love me?",
+     "When will I finally meet someone?",
+     "Will Sarah call me by Friday?",
+     "What does my neighbor really think of me?"
+    ]
+   }
+  },
+  {
+   "kennung": "braeuche",
+   "titel": "Tarot customs: what does the tradition say?",
+   "absaetze": [
+    "Around tarot, many small customs have developed; they are part of the joy in the ritual.",
+    "In the tradition, it is said that you should wrap the cards in a silk or linen cloth and keep them in a quiet place. When laying out the cards, some spread a cloth of their own on the table, light a candle, or put a favorite stone next to them.",
+    "It is also said that your first deck should be a gift. If you get a new deck, the old custom is to put it under your pillow for one night, or to look at each card once in peace to get to know it.",
+    "Many do not let others shuffle their cards. And after a spread, you shuffle the deck thoroughly, so that it is open again for the next question; so the tradition tells it.",
+    "Whether you find such customs appealing is up to you. More important than any cloth is a quiet moment for yourself."
+   ]
+  },
+  {
+   "kennung": "legungen",
+   "art": "legungen",
+   "titel": "Which tarot spreads are available in Tarot Cup?",
+   "absaetze": [
+    "A spread determines how many cards you draw and what each position represents. Tarot Cup offers four spreads, ranging from a single card to five cards. The layout shows where each card is placed.",
+    "In the app, the Card of the Day and the Yes or No card are available every day, Three Cards every three days, and the Love spread once a week. A new spread becomes possible at midnight each time. The calm rhythm is intentional: it leaves time to think about a spread."
+   ],
+   "legungen": [
+    {
+     "id": "tageskarte",
+     "text": "One card as a companion for the day, without any question. You reveal it with a tap, and it stays the same until midnight. Yesterday’s card does not come up again right away the next day.",
+     "positionen": []
+    },
+    {
+     "id": "ja_nein",
+     "text": "One card for a question you keep quietly to yourself. The answer is a leaning, not a verdict: rather yes, rather no, or still open.",
+     "positionen": []
+    },
+    {
+     "id": "drei_karten",
+     "text": "Three cards side by side, read from left to right in the tradition. They show how a matter has grown and where it may be leaning.",
+     "positionen": [
+      {
+       "id": "vergangenheit",
+       "text": "What lies behind you and has shaped your situation up to today."
+      },
+      {
+       "id": "gegenwart",
+       "text": "Where you stand now and what carries the most weight at the moment."
+      },
+      {
+       "id": "zukunft",
+       "text": "Where things may be heading if they carry on like this: a possible path, not a fixed fate."
+      }
+     ]
+    },
+    {
+     "id": "liebe",
+     "text": "Five cards about feelings, closeness, and relationships. You can think of a particular relationship or simply of how your heart is doing. The positions look mainly at you and at what you yourself can contribute.",
+     "positionen": [
+      {
+       "id": "herz",
+       "text": "How things are going for you in matters of the heart, with everything that belongs to it."
+      },
+      {
+       "id": "brauchen",
+       "text": "What would do you good, so that you feel held and seen."
+      },
+      {
+       "id": "begegnung",
+       "text": "How you come close to others and what goes back and forth between you."
+      },
+      {
+       "id": "rat",
+       "text": "A thought or attitude you can bring into your relationships."
+      },
+      {
+       "id": "ausblick",
+       "text": "What may gently develop if you give it time and space."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kennung": "bekannte-karten",
+   "art": "karten",
+   "titel": "What do well-known tarot cards mean?",
+   "absaetze": [
+    "Here are eight cards from the deck: four Major Arcana and one card each from the four suits, with their meaning in the tradition, upright and reversed. Each card has many layers; the short meaning is a beginning, not a final judgment."
+   ],
+   "ids": [
+    "ta_00_narr",
+    "ta_01_magier",
+    "ta_02_hohepriesterin",
+    "ta_09_eremit",
+    "ta_sta_08_acht",
+    "ta_kel_01_ass",
+    "ta_sch_02_zwei",
+    "ta_mue_03_drei"
+   ],
+   "aufrecht": "Upright",
+   "umgekehrt": "Reversed"
+  },
+  {
+   "kennung": "tarot-app",
+   "art": "app",
+   "titel": "Can you do a tarot reading on your phone?",
+   "absaetze": [
+    "With Tarot Cup, you lay out the cards on your Android phone in German or Turkish. You shuffle with your finger, choose from the fan, and reveal one card at a time. Two keywords appear under each card, followed by a reading of the entire spread at the end.",
+    "Your question stays with you: the app does not ask for it and does not store it. Your spreads end up in History on your phone, and you can write a note of your own about them.",
+    "How the app works step by step is explained under [How it works](/en/how-it-works/)."
+   ]
+  }
+ ],
+ "howto": {
+  "name": "How to do a tarot reading: the ritual step by step",
+  "beschreibung": "How to prepare and do a tarot spread in the tradition, from the calm before shuffling to reading the revealed cards."
+ },
+ "tuerkischeBegriffe": [
+  "niyet tutmak"
+ ],
+ "suchbegriffe": {
+  "haupt": [
+   "tarot reading"
+  ],
+  "neben": [
+   "how to read tarot cards",
+   "tarot card meanings",
+   "tarot spreads",
+   "reversed tarot card meaning",
+   "daily tarot card",
+   "yes or no tarot",
+   "three card tarot spread",
+   "love tarot reading"
+  ]
+ }
+}

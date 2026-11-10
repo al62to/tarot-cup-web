@@ -39,22 +39,44 @@ export function bausteinVon(fassung) {
   }
 }
 
-// Alle Rechtsseiten: die gültige Fassung unter /<pfad>/ und jede Fassung im Archiv unter /<pfad>/<nummer>/.
+// Alle Rechtsseiten: die gültige Fassung unter /<pfad>/ und jede Fassung im Archiv unter /<pfad>/<nummer>/. Texte mit
+// "archiv": false (Englisch, Spanisch, AP-SPR2) haben nur die gültige Fassung.
 export function rechtsseiten() {
   const seiten = [];
   for (const text of TEXTE) {
     for (const fassung of text.fassungen) {
-      seiten.push({ text, fassung, archiv: true, adresse: `/${text.pfad}/${fassung.nummer}/` });
+      if (text.archiv !== false) seiten.push({ text, fassung, archiv: true, adresse: `/${text.pfad}/${fassung.nummer}/` });
       if (fassung === neuesteVon(text)) seiten.push({ text, fassung, archiv: false, adresse: `/${text.pfad}/` });
     }
   }
   return seiten;
 }
 
+// Alle Sprachfassungen einer Rechtsseite für hreflang (sie selbst eingeschlossen): gültige Seite zu den gültigen Seiten
+// desselben Texts in allen Sprachen, Archivseite zu den Archivseiten mit derselben Nummer. Gibt es keine andere
+// Fassung, null.
+export function sprachfassungen({ text, fassung, archiv }) {
+  const liste = [];
+  for (const anderer of TEXTE.filter((eintrag) => eintrag.gruppe === text.gruppe)) {
+    if (!archiv) liste.push({ sprache: anderer.sprache, pfad: `/${anderer.pfad}/` });
+    else if (anderer.archiv !== false && anderer.fassungen.some((eintrag) => eintrag.nummer === fassung.nummer)) {
+      liste.push({ sprache: anderer.sprache, pfad: `/${anderer.pfad}/${fassung.nummer}/` });
+    }
+  }
+  return liste.length > 1 ? liste : null;
+}
+
 // Link zur anderen Sprache und Gegenseite für hreflang. Gültige Seite zu gültiger Seite, Archiv zu Archiv. Gibt es die
 // Fassung in der anderen Sprache nicht, führt der Link auf deren gültige Fassung, mit Nummer, und es gibt keine
 // Gegenseite (der Inhalt ist nicht derselbe).
+// Texte ohne Gegenstück (Englisch, Spanisch) verlinken oben auf die rechtlich maßgeblichen Fassungen auf Deutsch und
+// Türkisch ("links").
 export function sprachwahl({ text, fassung, archiv }) {
+  if (!text.gegenstueck && text.archiv === false) {
+    const links = TEXTE.filter((eintrag) => eintrag.gruppe === text.gruppe && eintrag.gegenstueck)
+      .map((eintrag) => ({ ziel: `/${eintrag.pfad}/`, text: SPRACHEN[eintrag.sprache].name, sprache: eintrag.sprache }));
+    return { link: null, links, gegenseite: null };
+  }
   const gegen = gegenstueckVon(text);
   if (!gegen) return { link: null, gegenseite: null };
   const ziel = SPRACHEN[gegen.sprache];
@@ -77,8 +99,10 @@ export function hinweisAeltere({ text, fassung }) {
   return { vor, nach, link: { ziel: `/${text.pfad}/`, text: formatiere(sp.fassung, { nr: neueste.nummer }) } };
 }
 
-// Liste aller Fassungen, neueste zuerst. Fassungen, die es nur im Gegenstück gibt, stehen mit Hinweis dabei.
+// Liste aller Fassungen, neueste zuerst. Fassungen, die es nur im Gegenstück gibt, stehen mit Hinweis dabei. Texte
+// ohne Archiv (Englisch, Spanisch) haben keine Liste (null).
 export function fassungsliste(text) {
+  if (text.archiv === false) return null;
   const sp = SPRACHEN[text.sprache];
   const gegen = gegenstueckVon(text);
   const eigene = new Set(text.fassungen.map((eintrag) => eintrag.nummer));
@@ -116,6 +140,11 @@ const BESCHREIBUNG = {
   nutzungsbedingungen: 'Die Nutzungsbedingungen von Tarot Cup erklären, was die App ist und was nicht, was du beim Nutzen beachten solltest und welche Regeln gelten.',
   'tr/gizlilik': 'Tarot Cup uygulamasının ve tarot-cup.com sitesinin gizlilik politikası, neyin saklandığını, kimin sorumlu olduğunu ve hangi haklara sahip olduğunu anlatır.',
   'tr/kullanim-kosullari': 'Tarot Cup’ın kullanım koşulları, uygulamanın ne olduğunu ve ne olmadığını, kullanırken nelere dikkat etmen gerektiğini ve geçerli kuralları anlatır.',
+  // AP-SPR2: von der Website-Sitzung geschrieben, noch nicht durchgesehen.
+  'en/privacy': 'The Tarot Cup privacy policy explains, for the app and the website, what is stored, who is responsible, and what rights you have.',
+  'en/terms': 'The Tarot Cup terms of use explain what the app is and what it is not, what to keep in mind when using it, and which rules apply.',
+  'es/privacidad': 'La política de privacidad de Tarot Cup explica, para la app y el sitio web, qué se guarda, quién es responsable y qué derechos tienes.',
+  'es/condiciones-de-uso': 'Las condiciones de uso de Tarot Cup explican qué es la app y qué no es, qué debes tener en cuenta al usarla y qué reglas se aplican.',
 };
 const BESCHREIBUNG_ARCHIV = {
   de: 'Fassung {nr} vom {datum} der {titel} von Tarot Cup, unverändert aufbewahrt im Archiv aller früheren Fassungen und der aktuellen.',

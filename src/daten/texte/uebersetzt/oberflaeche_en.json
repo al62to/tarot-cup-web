@@ -1,0 +1,95 @@
+{
+ "sprache": "English",
+ "spracheKurz": "EN",
+ "sprung": "Skip to content",
+ "nav": {
+  "aria": "Main navigation",
+  "tarot": "Tarot",
+  "kaffeesatz": "Coffee cup reading",
+  "sogehts": "How it works",
+  "fragen": "FAQ",
+  "appLaden": "Get the app",
+  "menue": "Menu",
+  "menueZu": "Close",
+  "sprachwahl": "Choose language"
+ },
+ "fuss": {
+  "spalteApp": "App",
+  "spalteRecht": "Legal",
+  "spalteKontakt": "Contact",
+  "sogehts": "How it works",
+  "fragen": "FAQ",
+  "ueber": "About Tarot Cup",
+  "datenschutz": "Privacy",
+  "nutzungsbedingungen": "Terms of Use",
+  "offenlegung": "Legal notice",
+  "bildnachweis": "Image credits and licenses",
+  "kontakt": "Send an email",
+  "sprache": "Language",
+  "hinweis": "For entertainment. No predictions or advice.",
+  "zeile": "Tarot Cup · For entertainment."
+ },
+ "krumen": {
+  "aria": "Breadcrumb",
+  "start": "Home"
+ },
+ "inhalt": "Contents",
+ "teilen": {
+  "knopf": "Share page",
+  "titel": "Share",
+  "kopieren": "Copy link",
+  "kopiert": "Link copied",
+  "whatsapp": "Via WhatsApp",
+  "email": "Via email",
+  "emailText": "This might interest you:"
+ },
+ "store": {
+  "bald": "Coming soon on Google Play",
+  "ansehen": "View on Google Play",
+  "abzeichenAlt": "Get it on Google Play"
+ },
+ "app": {
+  "metaTitel": "Get Tarot Cup: Tarot & Coffee Cup Reading App for Android",
+  "metaBeschreibung": "This link takes you to Tarot Cup, the tarot and coffee cup reading app, on Google Play. On a computer, scan the code with your phone. For Android.",
+  "titel": "Tarot Cup for Android",
+  "text": "Tarot Cup is available for Android on Google Play. If you are on a computer, scan the code with your phone.",
+  "qr": "Scan with your phone",
+  "weiter": "Continue to Google Play",
+  "bald": "Tarot Cup is coming to Google Play soon. Feel free to check back.",
+  "iphone": "Tarot Cup is available only for Android."
+ },
+ "nichtGefunden": {
+  "titel": "Page not found",
+  "text": "This page does not exist or no longer exists. You can continue on the home page.",
+  "start": "Back to the home page"
+ },
+ "bilder": {
+  "druck1909": "1909 print",
+  "auslegebild": "Spread layout",
+  "eineKarte": "one card",
+  "gegenueberKurz": "opposite",
+  "tassenkarte": "Cup map from above: {rand}, {mitte} and {boden}; on the left {gegenueber}, on the right the {henkelseite} with the handle, below it the {untertasse}"
+ },
+ "bildnachweis": {
+  "metaTitel": "Image credits and licenses | Tarot Cup",
+  "metaBeschreibung": "Where the 1909 card images in Tarot Cup and on this website come from, and under which license the website fonts are published.",
+  "titel": "Image credits and licenses",
+  "brotkrume": "Image credits",
+  "vorspann": "Here you can find out where the card images come from and which fonts this website uses.",
+  "karten": {
+   "titel": "Card images from 1909",
+   "absaetze": [
+    "The card images in the app and on this website were drawn by Pamela Colman Smith. They were published in 1909 and are in the public domain.",
+    "They are based on scans of the original print from Wikimedia Commons. In the app, the images are only cropped to the picture area. For this website, they have been reduced in size, cropped to a uniform format of 480 × 822 pixels, and saved as WebP. Otherwise they are unchanged."
+   ]
+  },
+  "schriften": {
+   "titel": "Fonts used on this website",
+   "absaetze": [
+    "The website uses two fonts: Cormorant Garamond by Christian Thalmann and Inter by Rasmus Andersson. Both are under the SIL Open Font License, Version 1.1.",
+    "The font files are hosted directly on this website and are not loaded from external servers."
+   ]
+  },
+  "marken": "Google Play and the Google Play logo are trademarks of Google LLC."
+ }
+}

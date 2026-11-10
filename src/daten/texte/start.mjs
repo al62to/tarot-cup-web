@@ -243,3 +243,9 @@ export const start = {
     },
   },
 };
+
+// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+import startEn from './uebersetzt/start_en.json' with { type: 'json' };
+import startEs from './uebersetzt/start_es.json' with { type: 'json' };
+start.en = startEn;
+start.es = startEs;

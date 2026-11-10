@@ -193,3 +193,9 @@ export const sogehts = {
     },
   },
 };
+
+// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+import sogehtsEn from './uebersetzt/sogehts_en.json' with { type: 'json' };
+import sogehtsEs from './uebersetzt/sogehts_es.json' with { type: 'json' };
+sogehts.en = sogehtsEn;
+sogehts.es = sogehtsEs;

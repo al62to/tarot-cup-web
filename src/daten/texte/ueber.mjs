@@ -89,3 +89,9 @@ export const ueber = {
     kontakt: 'Bana yaz: ',
   },
 };
+
+// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+import ueberEn from './uebersetzt/ueber_en.json' with { type: 'json' };
+import ueberEs from './uebersetzt/ueber_es.json' with { type: 'json' };
+ueber.en = ueberEn;
+ueber.es = ueberEs;

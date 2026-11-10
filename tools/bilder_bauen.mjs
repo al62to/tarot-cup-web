@@ -1,7 +1,9 @@
 // Baut die Bilder der Website nach public/bilder/ (WebP, Metadaten entfernt). Quellen liegen außerhalb dieses Repos:
 //   Kartenbilder 1909:    ../deutung/app/bilder_original/<id>.jpg (gemeinfrei, unverändert; nur verkleinert)
-//   Store-Fotos (AP-16):  ../aufnahmen/AP16/store/<sprache>/<name>.png
-//   So geht's (AP-W1):    ../aufnahmen/APW1/sogehts/<sprache>/<name>.png
+//   Store-Fotos:          ../aufnahmen/<ordner>/store/<sprache>/<name>.png (de, tr: AP16; en, es: SPR2, AP-SPR2 Teil B)
+//   So geht's:            ../aufnahmen/<ordner>/sogehts/<sprache>/<name>.png (de, tr: APW1; en, es: SPR2)
+//   Die Ordner für en und es stehen in QUELLORDNER; liegen die Fotos woanders, dort ändern. Sprachen wählen mit
+//   SPRACHEN=en,es (ohne: alle Sprachen, deren Quellen vorhanden sind).
 //   App-Symbol:           ../deutung-unterlagen/store/grafiken/app_symbol_512.png
 // Gebaut werden nur Karten, die die Website zeigt (Titelbild und Ratgeber Tarot); Karten mit nackten Figuren nie.
 // Aufruf (aus tarot-cup-web): node tools/bilder_bauen.mjs [karten|app|sogehts|symbol ...]
@@ -26,6 +28,11 @@ async function merke(art, name, sprache, quelle) {
   masse[`${art}/${name}-${sprache}`] = { breite: width, hoehe: height };
 }
 const soll = (teil) => !teile.length || teile.includes(teil);
+const QUELLORDNER = { app: { de: 'AP16', tr: 'AP16', en: 'SPR2', es: 'SPR2' }, sogehts: { de: 'APW1', tr: 'APW1', en: 'SPR2', es: 'SPR2' } };
+const UNTERORDNER = { app: 'store', sogehts: 'sogehts' };
+const quelleFoto = (art, sprache, name) => join(PROJEKT, 'aufnahmen', QUELLORDNER[art][sprache], UNTERORDNER[art], sprache, `${name}.png`);
+const sprachenFuer = (art) => (process.env.SPRACHEN ? process.env.SPRACHEN.split(',') : Object.keys(QUELLORDNER[art]))
+  .filter((sprache) => process.env.SPRACHEN || existsSync(join(PROJEKT, 'aufnahmen', QUELLORDNER[art][sprache], UNTERORDNER[art], sprache)));
 
 async function webp(quelle, ziel, breite, qualitaet = 80) {
   if (!existsSync(quelle)) throw new Error(`Quelle fehlt: ${quelle}`);
@@ -52,24 +59,24 @@ if (soll('karten')) {
 }
 
 if (soll('app')) {
-  for (const sprache of ['de', 'tr']) {
+  for (const sprache of sprachenFuer('app')) {
     for (const name of FOTOS_START) {
       for (const breite of FOTO_BREITEN) {
-        await webp(join(PROJEKT, 'aufnahmen', 'AP16', 'store', sprache, `${name}.png`), join(ZIEL, 'app', `${name}-${sprache}-${breite}.webp`), breite);
+        await webp(quelleFoto('app', sprache, name), join(ZIEL, 'app', `${name}-${sprache}-${breite}.webp`), breite);
       }
-      await merke('app', name, sprache, join(PROJEKT, 'aufnahmen', 'AP16', 'store', sprache, `${name}.png`));
+      await merke('app', name, sprache, quelleFoto('app', sprache, name));
     }
     console.log('Store-Fotos', sprache);
   }
 }
 
 if (soll('sogehts')) {
-  for (const sprache of ['de', 'tr']) {
+  for (const sprache of sprachenFuer('sogehts')) {
     for (const kapitel of sogehts[sprache].kapitel) {
       for (const breite of FOTO_BREITEN) {
-        await webp(join(PROJEKT, 'aufnahmen', 'APW1', 'sogehts', sprache, `${kapitel.foto}.png`), join(ZIEL, 'sogehts', `${kapitel.foto}-${sprache}-${breite}.webp`), breite);
+        await webp(quelleFoto('sogehts', sprache, kapitel.foto), join(ZIEL, 'sogehts', `${kapitel.foto}-${sprache}-${breite}.webp`), breite);
       }
-      await merke('sogehts', kapitel.foto, sprache, join(PROJEKT, 'aufnahmen', 'APW1', 'sogehts', sprache, `${kapitel.foto}.png`));
+      await merke('sogehts', kapitel.foto, sprache, quelleFoto('sogehts', sprache, kapitel.foto));
     }
     console.log("So geht's", sprache);
   }

@@ -8,7 +8,8 @@
 //  - Ratgeber Kaffeesatz: Kaffeebraun, Tassenkarte von oben und die Tasse mit Dampf.
 // Nur lokale Dateien (Schriften aus node_modules, Kartenbilder aus public/bilder/karten), keine Anfrage ins Netz. Chrome
 // ist das lokal installierte (tools/chrome.mjs), es wird nichts heruntergeladen. JPEG über sharp, ohne Metadaten, unter
-// 200 KB (sonst bricht das Werkzeug ab). Aufruf (aus tarot-cup-web): node tools/teilen_bilder.mjs
+// 200 KB (sonst bricht das Werkzeug ab). Aufruf (aus tarot-cup-web): node tools/teilen_bilder.mjs [sprache ...]
+// (ohne Angabe alle Sprachen; zum Beispiel "en es", damit die Bilder der übrigen Sprachen unberührt bleiben).
 import { mkdirSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -114,7 +115,9 @@ h1 { font-size: 60px; color: #F1E6D8; }
 
 // Ein Bild je Datei; die Seite, die das Bild zuerst nennt, gibt Art und Titel vor (Startseite vor Offenlegung).
 const auftraege = new Map();
+const nurSprachen = process.argv.slice(2);
 for (const eintrag of SEITEN) {
+  if (nurSprachen.length && !nurSprachen.includes(eintrag.bild?.match(/-([a-z]{2})\.jpg$/)?.[1])) continue;
   if (!eintrag.bild?.startsWith('/bilder/teilen/') || auftraege.has(eintrag.bild)) continue;
   const name = eintrag.bild.split('/').pop().replace(/\.jpg$/, '');
   const [schluessel, sprache] = name.split(/-(?=[a-z]{2}$)/);

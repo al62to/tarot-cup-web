@@ -17,21 +17,28 @@ import Fuss from '../components/Fuss.astro';
 import Brotkrumen from '../components/Brotkrumen.astro';
 import { seite } from '../daten/seite.mjs';
 import { seiteVon } from '../daten/seiten.mjs';
+import { OG_LOCALE, OG_LOCALE_ZUSATZ, STANDARD_SPRACHE } from '../daten/adressen.mjs';
 import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
 import { websiteDaten, herausgeberDaten, jsonLd } from '../daten/strukturiert.mjs';
 
 const { adresse = Astro.url.pathname, daten = [], klasse } = Astro.props;
 const angaben = seiteVon(adresse);
-const { sprache, titel, beschreibung, gegenseite, krumen, bild, bildAlt, art, imIndex, teilen } = angaben;
+const { sprache, titel, beschreibung, fassungen, krumen, bild, bildAlt, art, imIndex, teilen } = angaben;
 const T = oberflaeche[sprache];
 const kanonisch = seite.adresse + angaben.pfad;
-const alternativen = gegenseite
+// hreflang (AP-SPR2): alle Sprachfassungen der Seite, die Seite selbst zuerst, nur Sprachcodes. x-default zeigt auf die
+// englische Fassung; gibt es keine (Archiv der Rechtstexte, nur de und tr), auf die deutsche wie bisher.
+const standard = fassungen?.find((fassung) => fassung.sprache === STANDARD_SPRACHE) ?? fassungen?.find((fassung) => fassung.sprache === 'de');
+const alternativen = fassungen
   ? [
       { lang: sprache, href: kanonisch },
-      { lang: sprache === 'de' ? 'tr' : 'de', href: seite.adresse + gegenseite },
-      { lang: 'x-default', href: seite.adresse + (sprache === 'de' ? angaben.pfad : gegenseite) },
+      ...fassungen.filter((fassung) => fassung.sprache !== sprache).map((fassung) => ({ lang: fassung.sprache, href: seite.adresse + fassung.pfad })),
+      { lang: 'x-default', href: seite.adresse + standard.pfad },
     ]
   : [];
+// Open Graph: Sprache der Seite und die Sprachen der übrigen Fassungen (Deutsch dazu de_AT wie bisher).
+const ogLocale = OG_LOCALE[sprache];
+const ogAlternativ = [...(OG_LOCALE_ZUSATZ[sprache] ?? []), ...(fassungen ?? []).filter((fassung) => fassung.sprache !== sprache).map((fassung) => OG_LOCALE[fassung.sprache])];
 const robots = imIndex ? null : angaben.index ? 'noindex, nofollow' : 'noindex, follow';
 const alleDaten = [websiteDaten(sprache), herausgeberDaten(), ...daten];
 ---
@@ -50,8 +57,8 @@ const alleDaten = [websiteDaten(sprache), herausgeberDaten(), ...daten];
     <meta name="theme-color" content="#1B130E" />
     <meta property="og:type" content={art} />
     <meta property="og:site_name" content={seite.name} />
-    {sprache === 'de' && <meta property="og:locale" content="de_DE" />}
-    {sprache === 'de' && <meta property="og:locale:alternate" content="de_AT" />}
+    <meta property="og:locale" content={ogLocale} />
+    {ogAlternativ.map((locale) => <meta property="og:locale:alternate" content={locale} />)}
     <meta property="og:title" content={titel} />
     <meta property="og:description" content={beschreibung} />
     <meta property="og:url" content={kanonisch} />

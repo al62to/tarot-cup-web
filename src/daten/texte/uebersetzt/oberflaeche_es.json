@@ -1,0 +1,95 @@
+{
+ "sprache": "Español",
+ "spracheKurz": "ES",
+ "sprung": "Saltar al contenido",
+ "nav": {
+  "aria": "Navegación principal",
+  "tarot": "Tarot",
+  "kaffeesatz": "Posos de café",
+  "sogehts": "Cómo funciona",
+  "fragen": "Preguntas",
+  "appLaden": "Descargar la app",
+  "menue": "Menú",
+  "menueZu": "Cerrar",
+  "sprachwahl": "Seleccionar idioma"
+ },
+ "fuss": {
+  "spalteApp": "App",
+  "spalteRecht": "Información legal",
+  "spalteKontakt": "Contacto",
+  "sogehts": "Cómo funciona",
+  "fragen": "Preguntas",
+  "ueber": "Acerca de Tarot Cup",
+  "datenschutz": "Privacidad",
+  "nutzungsbedingungen": "Condiciones de uso",
+  "offenlegung": "Aviso legal",
+  "bildnachweis": "Créditos de las imágenes y licencias",
+  "kontakt": "Enviar correo electrónico",
+  "sprache": "Idioma",
+  "hinweis": "Con fines de entretenimiento. No se trata de predicciones ni de asesoramiento.",
+  "zeile": "Tarot Cup · Con fines de entretenimiento."
+ },
+ "krumen": {
+  "aria": "Navegación por migas de pan",
+  "start": "Inicio"
+ },
+ "inhalt": "Contenido",
+ "teilen": {
+  "knopf": "Compartir página",
+  "titel": "Compartir",
+  "kopieren": "Copiar enlace",
+  "kopiert": "Enlace copiado",
+  "whatsapp": "Por WhatsApp",
+  "email": "Por correo electrónico",
+  "emailText": "Esto podría interesarte:"
+ },
+ "store": {
+  "bald": "Próximamente en Google Play",
+  "ansehen": "Ver en Google Play",
+  "abzeichenAlt": "Ahora en Google Play"
+ },
+ "app": {
+  "metaTitel": "Descargar Tarot Cup: app de tarot y café para Android",
+  "metaBeschreibung": "Este enlace te lleva a Tarot Cup, la app de tarot y lectura de posos de café, en Google Play. Desde otro dispositivo, escanea el código con tu teléfono.",
+  "titel": "Tarot Cup para Android",
+  "text": "Tarot Cup está disponible para Android en Google Play. Si navegas desde otro dispositivo, escanea el código con tu teléfono.",
+  "qr": "Escanea con el teléfono",
+  "weiter": "Continuar a Google Play",
+  "bald": "Tarot Cup llegará pronto a Google Play. Puedes volver cuando quieras.",
+  "iphone": "Tarot Cup está disponible solo para Android."
+ },
+ "nichtGefunden": {
+  "titel": "Página no encontrada",
+  "text": "Esta página no existe o ya no existe. Desde la página principal puedes seguir.",
+  "start": "Ir a la página principal"
+ },
+ "bilder": {
+  "druck1909": "impresión de 1909",
+  "auslegebild": "Disposición de la tirada",
+  "eineKarte": "una carta",
+  "gegenueberKurz": "lado opuesto",
+  "tassenkarte": "Mapa de la taza visto desde arriba: {rand}, {mitte} y {boden}; a la izquierda, {gegenueber}; a la derecha, {henkelseite} con el asa; debajo, {untertasse}"
+ },
+ "bildnachweis": {
+  "metaTitel": "Créditos de las imágenes y licencias | Tarot Cup",
+  "metaBeschreibung": "Origen de las imágenes de las cartas de tarot de 1909 en Tarot Cup y en este sitio web, y licencia de las fuentes tipográficas del sitio.",
+  "titel": "Créditos de las imágenes y licencias",
+  "brotkrume": "Créditos de las imágenes",
+  "vorspann": "Aquí se indica el origen de las imágenes de las cartas y las fuentes que utiliza este sitio web.",
+  "karten": {
+   "titel": "Imágenes de las cartas de 1909",
+   "absaetze": [
+    "Las imágenes de las cartas de la app y de este sitio web las dibujó Pamela Colman Smith. Se publicaron en 1909 y son de dominio público.",
+    "Se basan en escaneos de la impresión original de Wikimedia Commons. En la app, las imágenes solo se han recortado a la zona de la ilustración. Para este sitio web se han reducido, recortado a un formato uniforme de 480 × 822 píxeles y guardado como WebP. Por lo demás, no se han modificado."
+   ]
+  },
+  "schriften": {
+   "titel": "Fuentes de este sitio web",
+   "absaetze": [
+    "El sitio web utiliza dos fuentes tipográficas: Cormorant Garamond, de Christian Thalmann, e Inter, de Rasmus Andersson. Ambas están bajo la SIL Open Font License, versión 1.1.",
+    "Los archivos de fuentes se encuentran en este sitio web y no se cargan desde servidores externos."
+   ]
+  },
+  "marken": "Google Play y el logotipo de Google Play son marcas de Google LLC."
+ }
+}

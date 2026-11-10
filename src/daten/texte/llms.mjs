@@ -13,6 +13,9 @@ export const llmsTexte = {
     ],
     store: 'Google Play',
     seiten: 'Wichtige Seiten',
+    // Überschrift über den Links zu llms.txt in den anderen Sprachen (AP-SPR2; andereSprache und andereLink nutzt
+    // llms.txt seitdem nicht mehr).
+    weitereSprachen: 'Andere Sprachen',
     andereSprache: 'Türkisch',
     andereLink: '[llms.txt auf Türkisch](https://tarot-cup.com/tr/llms.txt)',
   },
@@ -27,7 +30,14 @@ export const llmsTexte = {
     ],
     store: 'Google Play',
     seiten: 'Önemli sayfalar',
+    weitereSprachen: 'Diğer diller',
     andereSprache: 'Almanca',
     andereLink: '[Almanca llms.txt](https://tarot-cup.com/llms.txt)',
   },
 };
+
+// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+import llmsTexteEn from './uebersetzt/llms_en.json' with { type: 'json' };
+import llmsTexteEs from './uebersetzt/llms_es.json' with { type: 'json' };
+llmsTexte.en = llmsTexteEn;
+llmsTexte.es = llmsTexteEs;

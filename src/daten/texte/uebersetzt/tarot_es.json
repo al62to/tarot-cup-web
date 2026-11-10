@@ -1,0 +1,233 @@
+{
+ "metaTitel": "Lectura de tarot: ritual, tiradas y cartas | Tarot Cup",
+ "metaBeschreibung": "Cómo hacer una lectura de tarot paso a paso, de la pregunta a la interpretación. Con cuatro tiradas, como el tarot sí o no, y ocho cartas conocidas.",
+ "titel": "Tirar las cartas del tarot",
+ "vorspann": "Cómo se tiran las cartas del tarot, desde la primera pregunta hasta la última carta descubierta. Además, las cuatro tiradas de la app y algunas cartas conocidas con su significado en la tradición.",
+ "ogTitel": "Lectura de tarot paso a paso",
+ "brotkrume": "Tarot",
+ "inhaltTitel": "Contenido",
+ "abschnitte": [
+  {
+   "kennung": "was-ist-tarot",
+   "titel": "¿Qué es el tarot?",
+   "absaetze": [
+    "El tarot es una baraja de 78 cartas con imágenes. Nació en el siglo XV en el norte de Italia como juego de cartas; mucho más tarde se empezaron a interpretar las imágenes. Hoy se tira el tarot sobre todo para pensar con calma en una pregunta. No es una predicción, sino más bien una conversación con imágenes.",
+    "Los 22 Arcanos Mayores están numerados del 0 al 21, desde «El Loco» hasta «El Mundo». En la tradición representan los grandes temas y momentos decisivos de una vida, como la partida, el recogimiento o el equilibrio. La palabra «arcano» viene del latín y significa algo así como «secreto».",
+    "Los 56 Arcanos Menores se dividen en cuatro palos, como una baraja común. Cada palo tiene un as, las cartas numéricas del dos al diez y cuatro figuras de la corte: Sota, Caballero, Reina y Rey. Las figuras de la corte se leen a menudo como personas o como actitudes que una misma persona puede adoptar.",
+    "Cada palo tiene su propio campo. Los Bastos representan la acción, las ideas y el impulso; las Copas, los sentimientos, la amistad y el amor. Las Espadas se relacionan con los pensamientos, las palabras y las decisiones, mientras que los Oros abarcan lo tangible: el trabajo, la vida cotidiana y aquello que construyes con tus propias manos.",
+    "En Tarot Cup ves las imágenes de las cartas de 1909. Son de dominio público y están entre las imágenes de tarot más conocidas; muchas barajas posteriores han retomado sus motivos."
+   ]
+  },
+  {
+   "kennung": "aufrecht-und-umgekehrt",
+   "titel": "Al derecho e invertida: ¿qué significa una carta invertida?",
+   "absaetze": [
+    "Una carta puede salir al derecho o cabeza abajo; entonces se dice que está invertida. En muchas lecturas actuales, una carta invertida no es una mala señal. Habla del mismo tema que al derecho, solo que más bajo, más hacia dentro o algo estancado en este momento.",
+    "Un ejemplo: al derecho, una carta quizá hable de impulso. Invertida, puede significar que ese impulso todavía se hace esperar. Así, invita más bien a mirar con más atención.",
+    "Algunas personas tiran las cartas sin ninguna inversión y leen cada carta al derecho; ambas prácticas forman parte de la tradición. En la app, cada carta puede caer al derecho o invertida, con una frecuencia aproximadamente igual para ambos casos. Incluso las cartas con nombres serios se leen en la tradición como imágenes de cambio, transformación o unión, no como amenaza."
+   ]
+  },
+  {
+   "kennung": "ritual-schritt-fuer-schritt",
+   "art": "schritte",
+   "titel": "¿Cómo se tiran las cartas del tarot? El ritual paso a paso",
+   "absaetze": [
+    "Para una tirada no necesitas mucho: una baraja, un lugar tranquilo y unos minutos. Así se hace en la tradición, ya sea con cartas sobre la mesa o en el teléfono."
+   ],
+   "schritte": [
+    {
+     "titel": "Encontrar la calma",
+     "text": "Busca un momento en el que nadie te moleste. Deja a un lado lo que te ocupa ahora y respira despacio unas cuantas veces."
+    },
+    {
+     "titel": "Encontrar la pregunta",
+     "text": "Piensa en lo que de verdad quieres saber y formúlalo de forma abierta, por ejemplo con «¿Qué…?», «¿Cómo…?» o «¿En qué…?». Una pregunta abierta te deja más espacio al leer que un simple sí o no."
+    },
+    {
+     "titel": "Fijar la pregunta",
+     "text": "Puedes anotarla, decirla en voz baja o simplemente tenerla presente. En turco se dice niyet tutmak: fijar una intención y llevarla en el corazón."
+    },
+    {
+     "titel": "Barajar",
+     "text": "Baraja las cartas el tiempo que te parezca bien y piensa mientras tanto en tu pregunta. Algunas personas pasan las cartas de una mano a otra; otras intercalan dos mitades."
+    },
+    {
+     "titel": "Cortar",
+     "text": "Pon la baraja boca abajo delante de ti, divídela una vez y coloca la mitad de abajo encima. En la tradición se corta a menudo con la mano izquierda, porque se considera la mano del corazón."
+    },
+    {
+     "titel": "Sacar las cartas",
+     "text": "Extiende las cartas boca abajo en abanico y saca tantas como pida la tirada. No le des muchas vueltas: toma la carta en la que se detenga tu mirada."
+    },
+    {
+     "titel": "Extender las cartas",
+     "text": "Coloca las cartas sacadas boca abajo en sus posiciones, en el orden de la tirada. Cada posición tiene un significado propio, por ejemplo Pasado, Presente y Futuro."
+    },
+    {
+     "titel": "Descubrir",
+     "text": "Da la vuelta a las cartas una tras otra por el lado, para que no cambie lo que queda arriba y lo que queda abajo. Mira primero la imagen: ¿qué te llama la atención, qué sensación aparece?"
+    },
+    {
+     "titel": "Leer y dejar que el mensaje se asiente",
+     "text": "Lee primero cada carta por separado y después todas juntas, como una pequeña historia. Anota lo que te haya conmovido y, pasados unos días, mira qué piensas hoy de ello."
+    }
+   ],
+   "nachsatz": "En la app barajas deslizando el dedo sobre la baraja, eliges las cartas del abanico con un toque y las descubres una tras otra. Tus gestos al barajar entran en el azar."
+  },
+  {
+   "kennung": "gute-fragen",
+   "art": "beispiele",
+   "titel": "¿Qué preguntas son adecuadas para el tarot?",
+   "absaetze": [
+    "Una buena pregunta para el tarot es abierta, tiene que ver contigo y deja espacio para pensar. Encajan peor las preguntas que solo quieren un sí o un no sobre otras personas o que preguntan por un momento exacto. En la tradición, las cartas muestran estados de ánimo y posibilidades, no fechas ni los pensamientos de otras personas.",
+    "A menudo, una pregunta menos buena se puede reformular. Por ejemplo, «¿Me llamará Sarah antes del viernes?» se convierte en «¿Cómo puedo cuidar el contacto con Sarah?». Así, la pregunta se queda en lo que puedes hacer tú."
+   ],
+   "gut": {
+    "titel": "Buenas preguntas",
+    "liste": [
+     "¿Qué me ayuda a integrarme en mi nuevo equipo?",
+     "¿Cómo puedo relajar el ambiente entre mi hermana y yo?",
+     "¿En qué puedo fijarme esta semana?",
+     "¿Qué necesito para volver a disfrutar de mi hobby?"
+    ]
+   },
+   "weniger": {
+    "titel": "Preguntas menos adecuadas",
+    "liste": [
+     "¿Me ama Jonas en secreto?",
+     "¿Cuándo conoceré finalmente a alguien?",
+     "¿Me llamará Sarah antes del viernes?",
+     "¿Qué piensa realmente mi vecina sobre mí?"
+    ]
+   }
+  },
+  {
+   "kennung": "braeuche",
+   "titel": "Costumbres al tirar el tarot: ¿qué cuenta la tradición?",
+   "absaetze": [
+    "Alrededor del tarot han surgido muchas pequeñas costumbres; forman parte del gusto por el ritual.",
+    "En la tradición se dice que hay que envolver las cartas en un paño de seda o de lino y guardarlas en un lugar tranquilo. Algunas personas extienden un paño propio sobre la mesa al tirar las cartas, encienden una vela o ponen al lado una piedra favorita.",
+    "También se dice que la primera baraja debería ser un regalo. Quien recibe una baraja nueva la pone, según una antigua costumbre, una noche bajo la almohada o mira con calma cada carta una vez para conocerla.",
+    "Muchas personas no dejan que otras barajen sus cartas. Y después de una tirada se baraja bien la baraja, para que vuelva a quedar abierta a la siguiente pregunta; así lo cuenta la tradición.",
+    "Si te gustan estas costumbres lo decides tú. Más importante que cualquier paño es un momento tranquilo para ti."
+   ]
+  },
+  {
+   "kennung": "legungen",
+   "art": "legungen",
+   "titel": "¿Qué tiradas de tarot hay en Tarot Cup?",
+   "absaetze": [
+    "Una tirada determina cuántas cartas se sacan y qué representa cada posición. Tarot Cup ofrece cuatro tipos de tiradas, desde una sola carta hasta cinco. El diseño de la tirada muestra dónde se coloca cada carta.",
+    "En la app, la carta del día y la carta de Sí o no están disponibles cada día, Tres cartas cada tres días y la tirada Amor una vez por semana. Una nueva tirada es posible siempre a partir de medianoche. El ritmo tranquilo es intencionado: así queda tiempo para pensar en una tirada."
+   ],
+   "legungen": [
+    {
+     "id": "tageskarte",
+     "text": "Una carta que te acompaña durante el día, sin ninguna pregunta. La descubres con un toque y sigue siendo la misma hasta medianoche. La carta de ayer no se repite enseguida al día siguiente.",
+     "positionen": []
+    },
+    {
+     "id": "ja_nein",
+     "text": "Una carta para una pregunta que guardas en silencio. La respuesta es una tendencia, no un veredicto: más bien sí, más bien no o todavía sin decidir.",
+     "positionen": []
+    },
+    {
+     "id": "drei_karten",
+     "text": "Tres cartas una al lado de otra, que en la tradición se leen de izquierda a derecha. Muestran cómo ha crecido un asunto y hacia dónde puede inclinarse.",
+     "positionen": [
+      {
+       "id": "vergangenheit",
+       "text": "Lo que ha quedado atrás y ha moldeado tu situación hasta hoy."
+      },
+      {
+       "id": "gegenwart",
+       "text": "Dónde te encuentras ahora y qué tiene más peso en este momento."
+      },
+      {
+       "id": "zukunft",
+       "text": "Hacia dónde pueden inclinarse las cosas si siguen así: un camino posible, no un destino fijo."
+      }
+     ]
+    },
+    {
+     "id": "liebe",
+     "text": "Cinco cartas en torno a los sentimientos, la cercanía y las relaciones. Puedes pensar en una relación concreta o simplemente en cómo está tu corazón. Las posiciones miran sobre todo a ti y a lo que puedes aportar tú.",
+     "positionen": [
+      {
+       "id": "herz",
+       "text": "Cómo te va en asuntos del corazón, con todo lo que ello implica."
+      },
+      {
+       "id": "brauchen",
+       "text": "Lo que te haría bien para sentir que te sostienen y te ven."
+      },
+      {
+       "id": "begegnung",
+       "text": "Cómo te acercas a los demás y qué fluye entre ustedes."
+      },
+      {
+       "id": "rat",
+       "text": "Un pensamiento o una actitud que puedes llevar a tus relaciones."
+      },
+      {
+       "id": "ausblick",
+       "text": "Lo que puede desarrollarse con delicadeza si le das tiempo y espacio."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kennung": "bekannte-karten",
+   "art": "karten",
+   "titel": "¿Qué significan las cartas conocidas del tarot?",
+   "absaetze": [
+    "Aquí tienes ocho cartas de la baraja: cuatro Arcanos Mayores y una carta de cada uno de los cuatro palos, con su significado en la tradición, al derecho e invertidas. Cada carta tiene muchas capas; el significado breve es un comienzo, no un juicio definitivo."
+   ],
+   "ids": [
+    "ta_00_narr",
+    "ta_01_magier",
+    "ta_02_hohepriesterin",
+    "ta_09_eremit",
+    "ta_sta_08_acht",
+    "ta_kel_01_ass",
+    "ta_sch_02_zwei",
+    "ta_mue_03_drei"
+   ],
+   "aufrecht": "Al derecho",
+   "umgekehrt": "Invertida"
+  },
+  {
+   "kennung": "tarot-app",
+   "art": "app",
+   "titel": "¿Se puede tirar el tarot también en el teléfono?",
+   "absaetze": [
+    "Con Tarot Cup tiras las cartas en tu teléfono Android, en alemán o en turco. Barajas con el dedo, eliges del abanico y descubres una carta tras otra. Debajo de cada carta aparecen dos palabras clave, y al final llega una lectura de toda la tirada.",
+    "Tu pregunta permanece contigo: la aplicación no la solicita ni la almacena. Tus tiradas se guardan en el Historial de tu teléfono, y puedes añadir una nota personal al respecto.",
+    "Cómo funciona la app paso a paso lo encuentras en [Cómo funciona](/es/como-funciona/)."
+   ]
+  }
+ ],
+ "howto": {
+  "name": "Cómo tirar las cartas del tarot: el ritual paso a paso",
+  "beschreibung": "Cómo se prepara y se hace una tirada de tarot según la tradición, desde la calma antes de barajar hasta la lectura de las cartas descubiertas."
+ },
+ "tuerkischeBegriffe": [
+  "niyet tutmak"
+ ],
+ "suchbegriffe": {
+  "haupt": [
+   "lectura de tarot"
+  ],
+  "neben": [
+   "aprender a tirar las cartas del tarot",
+   "significado de las cartas del tarot",
+   "tiradas de tarot",
+   "carta de tarot invertida",
+   "tarot del día",
+   "tarot sí o no",
+   "tirada de tres cartas",
+   "tarot del amor"
+  ]
+ }
+}

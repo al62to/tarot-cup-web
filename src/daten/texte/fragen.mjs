@@ -210,3 +210,9 @@ export const fragen = {
     ],
   },
 };
+
+// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+import fragenEn from './uebersetzt/fragen_en.json' with { type: 'json' };
+import fragenEs from './uebersetzt/fragen_es.json' with { type: 'json' };
+fragen.en = fragenEn;
+fragen.es = fragenEs;

@@ -67,6 +67,15 @@ export const oberflaeche = {
       text: 'Diese Seite gibt es nicht oder nicht mehr. Auf der Startseite geht es weiter.',
       start: 'Zur Startseite',
     },
+    // Beschreibungen der Bilder (Alt-Text und aria-label), vorher fest in Titelbild, Tassenkarte und Auslegung (AP-SPR2).
+    // {rand} usw.: Namen der Bereiche aus der Textdatei der Seite.
+    bilder: {
+      druck1909: 'Druck von 1909',
+      auslegebild: 'Auslegebild',
+      eineKarte: 'eine Karte',
+      gegenueberKurz: 'gegenüber',
+      tassenkarte: 'Tassenkarte von oben: {rand}, {mitte} und {boden}, links {gegenueber}, rechts die {henkelseite} mit dem Henkel, darunter die {untertasse}',
+    },
     bildnachweis: {
       metaTitel: 'Bildnachweis und Lizenzen | Tarot Cup',
       metaBeschreibung: 'Hier steht, woher die Kartenbilder von 1909 in Tarot Cup und auf dieser Website stammen und unter welcher Lizenz die Schriften der Website stehen.',
@@ -153,6 +162,13 @@ export const oberflaeche = {
       text: 'Aradığın sayfa yok ya da artık burada değil. Ana sayfadan devam edebilirsin.',
       start: 'Ana sayfaya dön',
     },
+    bilder: {
+      druck1909: '1909 baskısı',
+      auslegebild: 'Açılım düzeni',
+      eineKarte: 'tek kart',
+      gegenueberKurz: 'Karşı taraf',
+      tassenkarte: 'Yukarıdan fincan haritası: {rand}, {mitte} ve {boden}; solda {gegenueber}, sağda {henkelseite} ve kulp, altta {untertasse}',
+    },
     bildnachweis: {
       metaTitel: 'Görsel kaynakları ve lisanslar | Tarot Cup',
       metaBeschreibung: 'Tarot Cup’ta ve bu sitede kullanılan 1909 tarihli kart resimlerinin kaynağı ve sitedeki yazı tiplerinin hangi lisansla kullanıldığı bu sayfada anlatılıyor.',
@@ -177,3 +193,9 @@ export const oberflaeche = {
     },
   },
 };
+
+// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+import oberflaecheEn from './uebersetzt/oberflaeche_en.json' with { type: 'json' };
+import oberflaecheEs from './uebersetzt/oberflaeche_es.json' with { type: 'json' };
+oberflaeche.en = oberflaecheEn;
+oberflaeche.es = oberflaecheEs;

@@ -342,3 +342,9 @@ export const kaffeesatz = {
     },
   },
 };
+
+// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+import kaffeesatzEn from './uebersetzt/kaffeesatz_en.json' with { type: 'json' };
+import kaffeesatzEs from './uebersetzt/kaffeesatz_es.json' with { type: 'json' };
+kaffeesatz.en = kaffeesatzEn;
+kaffeesatz.es = kaffeesatzEs;

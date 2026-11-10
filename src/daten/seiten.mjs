@@ -1,7 +1,10 @@
-// Alle Seiten der Website an einer Stelle: Adresse je Sprache, Gegenseite (hreflang), Titel, Beschreibung, Bild zum
-// Teilen, Brotkrumen, Index und Priorität für sitemap.xml. Seiten, Sitemap, llms.txt und die Prüfungen nach dem Bau
-// lesen nur hier. Eine Seite ohne Eintrag bricht den Bau ab.
+// Alle Seiten der Website an einer Stelle: Adresse je Sprache, Sprachfassungen (hreflang), Titel, Beschreibung, Bild
+// zum Teilen, Brotkrumen, Index und Priorität für sitemap.xml. Seiten, Sitemap, llms.txt und die Prüfungen nach dem Bau
+// lesen nur hier. Eine Seite ohne Eintrag bricht den Bau ab. Die Adressen selbst stehen in src/daten/adressen.mjs.
+// "fassungen": alle Sprachfassungen derselben Seite, die Seite selbst eingeschlossen ({ sprache, pfad }); null, wenn
+// es die Seite nur in einer Sprache gibt (AP-SPR2; vorher "gegenseite" für genau eine andere Sprache).
 import { seite, suche } from './seite.mjs';
+import { ADRESSEN, startVon } from './adressen.mjs';
 import { oberflaeche } from './texte/oberflaeche.mjs';
 import { start } from './texte/start.mjs';
 import { tarot } from './texte/tarot.mjs';
@@ -9,23 +12,27 @@ import { kaffeesatz } from './texte/kaffeesatz.mjs';
 import { sogehts } from './texte/sogehts.mjs';
 import { fragen } from './texte/fragen.mjs';
 import { ueber } from './texte/ueber.mjs';
-import { SPRACHEN, rechtsseiten, seitentitel, beschreibung as rechtBeschreibung, sprachwahl, textVon } from './recht.mjs';
+import { SPRACHEN, rechtsseiten, seitentitel, beschreibung as rechtBeschreibung, sprachfassungen, textVon } from './recht.mjs';
 
-// Inhaltsseiten in beiden Sprachen. "texte": Modul mit metaTitel, metaBeschreibung, brotkrume je Sprache.
-// "quellen": Dateien, deren letzter Commit den Tag der letzten Änderung ergibt (src/daten/stand.mjs).
+// Inhaltsseiten in allen Sprachen. "texte": Modul mit metaTitel, metaBeschreibung, brotkrume je Sprache.
+// "quellen": Dateien, deren letzter Commit den Tag der letzten Änderung ergibt (src/daten/stand.mjs); "datei": Name
+// der Textdatei, deren Übersetzung (src/daten/texte/uebersetzt/<datei>_<sprache>.json) für en und es mitzählt.
 const PAARE = [
-  { schluessel: 'start', de: '/', tr: '/tr/', texte: start, prioritaet: 1.0, quellen: ['src/daten/texte/start.mjs', 'src/pages/index.astro', 'src/components/Startseite.astro'] },
-  { schluessel: 'tarot', de: '/tarot/', tr: '/tr/tarot/', texte: tarot, prioritaet: 0.9, quellen: ['src/daten/texte/tarot.mjs', 'src/daten/app_daten.json', 'src/components/Ratgeber.astro'] },
-  { schluessel: 'kaffeesatz', de: '/kaffeesatz-lesen/', tr: '/tr/kahve-fali/', texte: kaffeesatz, prioritaet: 0.9, quellen: ['src/daten/texte/kaffeesatz.mjs', 'src/daten/app_daten.json', 'src/components/Ratgeber.astro'] },
-  { schluessel: 'sogehts', de: '/so-gehts/', tr: '/tr/nasil-kullanilir/', texte: sogehts, prioritaet: 0.7, quellen: ['src/daten/texte/sogehts.mjs', 'src/components/Anleitung.astro'] },
-  { schluessel: 'fragen', de: '/fragen/', tr: '/tr/sorular/', texte: fragen, prioritaet: 0.7, quellen: ['src/daten/texte/fragen.mjs', 'src/components/Fragenseite.astro'] },
-  { schluessel: 'ueber', de: '/ueber-tarot-cup/', tr: '/tr/hakkinda/', texte: ueber, prioritaet: 0.5, quellen: ['src/daten/texte/ueber.mjs', 'src/components/Ueberseite.astro'] },
+  { schluessel: 'start', datei: 'start', texte: start, prioritaet: 1.0, quellen: ['src/daten/texte/start.mjs', 'src/components/Startseite.astro'] },
+  { schluessel: 'tarot', datei: 'tarot', texte: tarot, prioritaet: 0.9, quellen: ['src/daten/texte/tarot.mjs', 'src/daten/app_daten.json', 'src/components/Ratgeber.astro'] },
+  { schluessel: 'kaffeesatz', datei: 'kaffeesatz', texte: kaffeesatz, prioritaet: 0.9, quellen: ['src/daten/texte/kaffeesatz.mjs', 'src/daten/app_daten.json', 'src/components/Ratgeber.astro'] },
+  { schluessel: 'sogehts', datei: 'sogehts', texte: sogehts, prioritaet: 0.7, quellen: ['src/daten/texte/sogehts.mjs', 'src/components/Anleitung.astro'] },
+  { schluessel: 'fragen', datei: 'fragen', texte: fragen, prioritaet: 0.7, quellen: ['src/daten/texte/fragen.mjs', 'src/components/Fragenseite.astro'] },
+  { schluessel: 'ueber', datei: 'ueber', texte: ueber, prioritaet: 0.5, quellen: ['src/daten/texte/ueber.mjs', 'src/components/Ueberseite.astro'] },
   {
-    schluessel: 'bildnachweis', de: '/bildnachweis-und-lizenzen/', tr: '/tr/gorsel-kaynaklari-ve-lisanslar/', prioritaet: 0.2,
-    texte: { de: oberflaeche.de.bildnachweis, tr: oberflaeche.tr.bildnachweis },
+    schluessel: 'bildnachweis', datei: 'oberflaeche', prioritaet: 0.2,
+    texte: Object.fromEntries(seite.sprachen.map((sprache) => [sprache, oberflaeche[sprache].bildnachweis])),
     quellen: ['src/daten/texte/oberflaeche.mjs', 'src/components/Bildnachweis.astro'],
   },
 ];
+
+// Seite der Startseite je Sprache (bisher src/pages/index.astro und tr/index.astro, AP-SPR2 eine Datei für alle).
+const SEITENDATEI = { de: '', tr: 'tr/', en: 'en/', es: 'es/' };
 
 // Feste deutsche Texte der Seiten, die es nur auf Deutsch gibt.
 const OFFENLEGUNG = {
@@ -33,11 +40,16 @@ const OFFENLEGUNG = {
   metaBeschreibung: 'Die Offenlegung nach dem österreichischen Mediengesetz nennt Medieninhaber und Blattlinie von tarot-cup.com, der Website zur App Tarot Cup.',
 };
 
-const startVon = (sprache) => (sprache === 'de' ? '/' : '/tr/');
 const krume = (sprache) => ({ titel: oberflaeche[sprache].krumen.start, ziel: startVon(sprache) });
 
 function eintrag(werte) {
-  return { index: true, art: 'website', gegenseite: null, krumen: null, ...werte };
+  return { index: true, art: 'website', fassungen: null, krumen: null, ...werte };
+}
+
+// Sprachfassungen einer Inhaltsseite aus src/daten/adressen.mjs.
+function fassungenVon(schluessel) {
+  const liste = seite.sprachen.filter((sprache) => ADRESSEN[schluessel][sprache]).map((sprache) => ({ sprache, pfad: ADRESSEN[schluessel][sprache] }));
+  return liste.length > 1 ? liste : null;
 }
 
 const liste = [];
@@ -45,20 +57,26 @@ for (const paar of PAARE) {
   for (const sprache of seite.sprachen) {
     const texte = paar.texte[sprache];
     if (!texte) throw new Error(`Seiten: Texte fehlen für ${paar.schluessel} (${sprache})`);
-    const andere = sprache === 'de' ? 'tr' : 'de';
+    const pfad = ADRESSEN[paar.schluessel][sprache];
+    if (!pfad) throw new Error(`Seiten: Adresse fehlt für ${paar.schluessel} (${sprache}) in src/daten/adressen.mjs`);
+    const quellen = [
+      ...paar.quellen,
+      ...(paar.schluessel === 'start' ? [`src/pages/${SEITENDATEI[sprache]}index.astro`] : []),
+      ...(['de', 'tr'].includes(sprache) ? [] : [`src/daten/texte/uebersetzt/${paar.datei}_${sprache}.json`]),
+    ];
     liste.push(eintrag({
       schluessel: paar.schluessel,
-      pfad: paar[sprache],
+      pfad,
       sprache,
-      gegenseite: paar[andere],
+      fassungen: fassungenVon(paar.schluessel),
       titel: texte.metaTitel,
       beschreibung: texte.metaBeschreibung,
       bild: `/bilder/teilen/${paar.schluessel}-${sprache}.jpg`,
       bildAlt: texte.ogTitel ?? texte.metaTitel,
       art: paar.schluessel === 'start' ? 'website' : 'article',
-      krumen: paar.schluessel === 'start' ? null : [krume(sprache), { titel: texte.brotkrume, ziel: paar[sprache] }],
+      krumen: paar.schluessel === 'start' ? null : [krume(sprache), { titel: texte.brotkrume, ziel: pfad }],
       prioritaet: paar.prioritaet,
-      quellen: paar.quellen,
+      quellen,
       teilen: paar.schluessel !== 'bildnachweis',
       rechtlich: paar.schluessel === 'bildnachweis',
       index: paar.schluessel !== 'bildnachweis',
@@ -83,7 +101,7 @@ for (const rechtsseite of rechtsseiten()) {
     schluessel: `recht:${text.pfad}${archiv ? `:${fassung.nummer}` : ''}`,
     pfad: adresse,
     sprache: sp,
-    gegenseite: sprachwahl(rechtsseite).gegenseite,
+    fassungen: sprachfassungen(rechtsseite),
     titel: seitentitel(rechtsseite),
     beschreibung: rechtBeschreibung(rechtsseite),
     bild: `/bilder/teilen/start-${sp}.jpg`,
@@ -124,9 +142,19 @@ for (const eintrag of SEITEN) {
   if (nachPfad.has(eintrag.pfad)) throw new Error(`Seiten: Adresse doppelt: ${eintrag.pfad}`);
   nachPfad.set(eintrag.pfad, eintrag);
 }
+// Sprachfassungen: jede genannte Seite gibt es, sie trägt die genannte Sprache, die Seite nennt sich selbst, und jede
+// genannte Seite nennt genau dieselben Fassungen (gegenseitig).
+const kennung = (fassungen) => (fassungen ?? []).map((fassung) => `${fassung.sprache}=${fassung.pfad}`).sort().join(' ');
 for (const eintrag of SEITEN) {
-  if (eintrag.gegenseite && !nachPfad.has(eintrag.gegenseite)) throw new Error(`Seiten: Gegenseite fehlt: ${eintrag.pfad} → ${eintrag.gegenseite}`);
-  if (eintrag.gegenseite && nachPfad.get(eintrag.gegenseite).gegenseite !== eintrag.pfad) throw new Error(`Seiten: Gegenseite nicht wechselseitig: ${eintrag.pfad}`);
+  if (!eintrag.fassungen) continue;
+  if (!eintrag.fassungen.some((fassung) => fassung.pfad === eintrag.pfad && fassung.sprache === eintrag.sprache)) throw new Error(`Seiten: ${eintrag.pfad} nennt sich nicht selbst unter seinen Sprachfassungen`);
+  if (new Set(eintrag.fassungen.map((fassung) => fassung.sprache)).size !== eintrag.fassungen.length) throw new Error(`Seiten: Sprache doppelt bei ${eintrag.pfad}`);
+  for (const fassung of eintrag.fassungen) {
+    const andere = nachPfad.get(fassung.pfad);
+    if (!andere) throw new Error(`Seiten: Sprachfassung fehlt: ${eintrag.pfad} → ${fassung.pfad}`);
+    if (andere.sprache !== fassung.sprache) throw new Error(`Seiten: Sprache von ${fassung.pfad} ist ${andere.sprache}, nicht ${fassung.sprache}`);
+    if (kennung(andere.fassungen) !== kennung(eintrag.fassungen)) throw new Error(`Seiten: Sprachfassungen nicht gegenseitig: ${eintrag.pfad} / ${fassung.pfad}`);
+  }
 }
 
 export function seiteVon(pfad) {
