@@ -33,7 +33,7 @@ export const ueber = {
         kennung: 'bei-dir',
         titel: 'Was bei dir bleibt',
         absaetze: [
-          'Kein Konto, keine Werbung, kein Internet. Verlauf und Notizen speichert die App auf deinem Handy. Ich habe darauf keinen Zugriff.',
+          'Kein Konto, kein Internet. Verlauf und Notizen speichert die App auf deinem Handy. Ich habe darauf keinen Zugriff.',
         ],
       },
       {
@@ -75,7 +75,7 @@ export const ueber = {
         kennung: 'bei-dir',
         titel: 'Senin olan sende kalır',
         absaetze: [
-          'Üyelik yok, reklam yok, internet yok. Geçmişini ve notlarını uygulama telefonunda saklar. Benim bunlara erişimim yok.',
+          'Üyelik yok, internet yok. Geçmişini ve notlarını uygulama telefonunda saklar. Benim bunlara erişimim yok.',
         ],
       },
       {

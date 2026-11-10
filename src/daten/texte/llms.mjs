@@ -6,7 +6,7 @@ export const llmsTexte = {
     angaben: [
       'Plattform: Android. Sprachen: Deutsch, Türkisch, Englisch und Spanisch, in der App umschaltbar.',
       'Funktionen: Tageskarte, Ja oder Nein, Drei Karten und eine Legung zur Liebe mit 78 Tarotkarten; Kaffeesatz selbst lesen mit 80 Zeichen und der Tassenkarte; Lexikon, Verlauf mit eigenen Notizen, Teilen als Bild, Erinnerung an die Tageskarte.',
-      'Die App läuft ohne Internet, ohne Konto und ohne Werbung. Verlauf und Notizen speichert sie auf dem Handy.',
+      'Die App läuft ohne Internet und ohne Konto. Verlauf und Notizen speichert sie auf dem Handy.',
       'Jede Legung hat ihren Rhythmus: Tageskarte und Ja oder Nein täglich, Drei Karten und die volle Kaffeesatz-Deutung alle drei Tage, Liebe einmal pro Woche. Lexikon und Verlauf sind immer offen.',
       'Zur Unterhaltung: Die Deutungen folgen alten Traditionen und sind keine Vorhersage und keine Beratung.',
       'Tarot Cup gibt es nur für Android. Eine Fassung fürs iPhone ist nicht geplant.',
@@ -23,7 +23,7 @@ export const llmsTexte = {
     angaben: [
       'Platform: Android. Diller: Türkçe, Almanca, İngilizce ve İspanyolca, uygulama içinden değiştirilebilir.',
       'Özellikler: 78 tarot kartıyla Günün Kartı, “Evet mi, Hayır mı”, Üç Kart ve bir aşk açılımı; 80 işaret ve fincan haritasıyla kendi kahve falına bakma; sözlük, kendi notlarınla geçmiş, görsel olarak paylaşma, günün kartı için hatırlatıcı.',
-      'Uygulama internetsiz, üyeliksiz ve reklamsız çalışır. Geçmişi ve notları telefonda saklar.',
+      'Uygulama internetsiz ve üyeliksiz çalışır. Geçmişi ve notları telefonda saklar.',
       'Her açılımın kendi ritmi vardır: Günün Kartı ve “Evet mi, Hayır mı” her gün, Üç Kart ve tam kahve falı yorumu üç günde bir, aşk açılımı haftada bir. Sözlük ve geçmiş her zaman açıktır.',
       'Eğlence amaçlıdır: Yorumlar eski geleneklere dayanır; kehanet ya da danışmanlık değildir.',
       'Tarot Cup yalnızca Android için var. iPhone sürümü planlanmıyor.',

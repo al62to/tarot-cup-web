@@ -53,7 +53,7 @@ export const fragen = {
         id: 'konto',
         frage: 'Brauche ich ein Konto?',
         antwort: [
-          'Nein. Es gibt kein Anmelden und kein Konto, und die App fragt nicht nach deiner E-Mail-Adresse. Werbung gibt es auch keine.',
+          'Nein. Es gibt kein Anmelden und kein Konto, und die App fragt nicht nach deiner E-Mail-Adresse.',
         ],
       },
       {
@@ -156,7 +156,7 @@ export const fragen = {
         id: 'konto',
         frage: 'Üye olmam gerekiyor mu?',
         antwort: [
-          'Hayır. Kayıt ya da hesap yok; uygulama e-posta adresini sormaz ve reklam göstermez.',
+          'Hayır. Kayıt ya da hesap yok; uygulama e-posta adresini de sormaz.',
         ],
       },
       {
