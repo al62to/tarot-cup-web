@@ -2,8 +2,9 @@
 // Grundlayout aller Seiten: Kopfdaten (Titel, Beschreibung, kanonische Adresse, Robots, hreflang, Open Graph,
 // strukturierte Daten), Kopf, Brotkrumen auf Unterseiten, Inhalt, Fuß (mit dem Teilen-Knopf auf Inhaltsseiten).
 // Alle Angaben kommen über die Adresse aus src/daten/seiten.mjs; eine Seite gibt sie nicht selbst an.
-// Keine Cookies, nichts im Speicher des Browsers, keine Anfragen an andere Anbieter. Das Skript im Kopf setzt nur die
-// Klasse "js" (Gestaltung mit JavaScript, etwa das Menü am Handy).
+// Keine Cookies, keine Anfragen an andere Anbieter. Das Skript im Kopf setzt die Klasse "js" (Gestaltung mit
+// JavaScript, etwa das Menü am Handy) und schaltet die Sprach-Hinweisleiste (Auftrag W5, components/Sprachhinweis.astro)
+// ein. Gespeichert wird im Browser nur, für welche Sprache die Leiste geschlossen wurde (localStorage, ein Schlüssel).
 import '../styles/schriften.css';
 import '@fontsource-variable/inter/wght.css';
 import '../styles/basis.css';
@@ -15,6 +16,7 @@ import titelKursiv from '@fontsource/cormorant-garamond/files/cormorant-garamond
 import Kopf from '../components/Kopf.astro';
 import Fuss from '../components/Fuss.astro';
 import Brotkrumen from '../components/Brotkrumen.astro';
+import Sprachhinweis from '../components/Sprachhinweis.astro';
 import { seite } from '../daten/seite.mjs';
 import { seiteVon } from '../daten/seiten.mjs';
 import { OG_LOCALE, OG_LOCALE_ZUSATZ, STANDARD_SPRACHE } from '../daten/adressen.mjs';
@@ -41,13 +43,39 @@ const ogLocale = OG_LOCALE[sprache];
 const ogAlternativ = [...(OG_LOCALE_ZUSATZ[sprache] ?? []), ...(fassungen ?? []).filter((fassung) => fassung.sprache !== sprache).map((fassung) => OG_LOCALE[fassung.sprache])];
 const robots = imIndex ? null : angaben.index ? 'noindex, nofollow' : 'noindex, follow';
 const alleDaten = [websiteDaten(sprache), herausgeberDaten(), ...daten];
+// Sprach-Hinweisleiste: die übrigen Sprachfassungen der Seite (dieselben wie in hreflang). Ohne Fassungen keine Leiste.
+const hinweisZiele = (fassungen ?? []).filter((fassung) => fassung.sprache !== sprache);
 ---
 <!doctype html>
-<html lang={sprache}>
+<html lang={sprache} data-fassungen={hinweisZiele.map((ziel) => ziel.sprache).join(' ') || undefined}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script is:inline>document.documentElement.classList.add('js');</script>
+    <script is:inline>
+      (function () {
+        var d = document.documentElement;
+        d.classList.add('js');
+        // Sprach-Hinweisleiste: erste Browsersprache, wenn es die Seite in ihr gibt und sie nicht die Sprache der Seite
+        // ist. Der Schlüssel steht auch in src/daten/sprachhinweis.mjs und tools/pruefe_bau.mjs.
+        var fassungen = (d.getAttribute('data-fassungen') || '').split(' ');
+        var erste = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+        var l = String(erste).toLowerCase().split('-')[0];
+        if (!l || l === d.lang || fassungen.indexOf(l) < 0) return;
+        var zu = null;
+        try { zu = localStorage.getItem('tarotcup-sprachhinweis'); } catch (e) {}
+        if (zu === l) return;
+        d.setAttribute('data-sprachhinweis', l);
+        document.addEventListener('click', function (ereignis) {
+          var knopf = ereignis.target && ereignis.target.closest ? ereignis.target.closest('[data-sprachhinweis-zu]') : null;
+          if (!knopf) return;
+          var hatteFokus = document.activeElement === knopf;
+          try { localStorage.setItem('tarotcup-sprachhinweis', l); } catch (e) {}
+          d.removeAttribute('data-sprachhinweis');
+          var marke = document.querySelector('.marke-link');
+          if (hatteFokus && marke) marke.focus();
+        });
+      })();
+    </script>
     <title>{titel}</title>
     <meta name="description" content={beschreibung} />
     <link rel="canonical" href={kanonisch} />
@@ -76,6 +104,7 @@ const alleDaten = [websiteDaten(sprache), herausgeberDaten(), ...daten];
   </head>
   <body class={klasse}>
     <a class="sprung" href="#inhalt">{T.sprung}</a>
+    <Sprachhinweis ziele={hinweisZiele} />
     <Kopf angaben={angaben} />
     {krumen && <Brotkrumen krumen={krumen} sprache={sprache} />}
     <main id="inhalt">

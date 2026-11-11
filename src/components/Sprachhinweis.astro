@@ -1,0 +1,26 @@
+---
+// Sprach-Hinweisleiste (Auftrag W5): ganz oben, über dem Kopf. Im Bau steht je andere Sprachfassung der Seite eine
+// Leiste in dieser Sprache, alle verborgen. Das Skript im Kopf von Basis.astro setzt vor dem ersten Zeichnen
+// data-sprachhinweis auf <html>, wenn die erste Browsersprache (navigator.languages) eine dieser Sprachen ist und die
+// Leiste für sie nicht geschlossen wurde; dann zeigt basis.css genau diese Leiste. So steht sie von Anfang an im Fluss
+// der Seite, der Inhalt springt beim Laden nicht. Keine Weiterleitung. Ohne JavaScript keine Leiste.
+// Texte und lang je Leiste in ihrer Sprache; Sätze in <span lang>, damit die Prüfung der Sprachnamen (Türkçe,
+// English, …) sie als gekennzeichnet erkennt.
+import { SPRACHHINWEIS } from '../daten/sprachhinweis.mjs';
+
+const { ziele = [] } = Astro.props;
+---
+{ziele.map(({ sprache, pfad }) => {
+  const T = SPRACHHINWEIS[sprache];
+  return (
+    <div class="sprachhinweis" lang={sprache} data-fuer={sprache} role="region" aria-label={T.region}>
+      <p class="sprachhinweis-text">
+        <span lang={sprache}>{T.satz}</span>
+        <a href={pfad} hreflang={sprache}><span lang={sprache}>{T.link}</span></a>
+      </p>
+      <button class="sprachhinweis-zu" type="button" aria-label={T.zu} data-sprachhinweis-zu>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 7l10 10M17 7L7 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+      </button>
+    </div>
+  );
+})}

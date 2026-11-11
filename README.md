@@ -37,4 +37,8 @@ npm ci
 npm run build
 ```
 
-Die Seiten laden nichts von anderen Anbietern, setzen keine Cookies und speichern nichts im Browser.
+Die Seiten laden nichts von anderen Anbietern und setzen keine Cookies. Im Browser gespeichert wird nur ein Eintrag: für welche Sprache die Sprach-Hinweisleiste geschlossen wurde (`localStorage`, Schlüssel `tarotcup-sprachhinweis`).
+
+## Sprach-Hinweisleiste
+
+Ist die erste Browsersprache (`navigator.languages`) Deutsch, Türkisch, Englisch oder Spanisch, nicht die Sprache der Seite und gibt es die Seite in dieser Sprache, steht oben eine schmale Leiste in der Browsersprache mit Link auf dieselbe Seite in dieser Sprache (aus den hreflang-Fassungen in `src/daten/seiten.mjs`) und einem Knopf zum Schließen. Keine Weiterleitung. Das Skript im Kopf (`src/layouts/Basis.astro`) entscheidet vor dem ersten Zeichnen, die Leisten selbst stehen fertig im HTML (`src/components/Sprachhinweis.astro`, Texte in `src/daten/sprachhinweis.mjs`), deshalb springt beim Laden nichts. `tools/pruefe_bau.mjs` lässt im Speicher des Browsers nur genau diesen Schlüssel zu.

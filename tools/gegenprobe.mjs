@@ -37,6 +37,7 @@ const FAELLE = [
   { nr: 6, name: 'title fehlt', erwartet: '[6 title fehlt]', tun: (o) => { const p = join(o, 'fragen/index.html'); writeFileSync(p, readFileSync(p, 'utf8').replace(/<title>[^<]*<\/title>/, '')); } },
   { nr: 7, name: 'Kartenbild Der Stern', erwartet: '[7 gesperrtes Kartenbild]', tun: (o) => ersetze(o, 'tarot/index.html', '</main>', '<img src="/bilder/karten/ta_17_stern-240.webp" alt="Der Stern"></main>') },
   { nr: 'Zusatz', name: 'localStorage im Skript', erwartet: '[Speicher/Cookie im Skript]', tun: (o) => ersetze(o, 'index.html', '</body>', '<script>localStorage.setItem("x","1")</script></body>') },
+  { nr: 'Zusatz', name: 'anderer Schlüssel neben der Sprach-Hinweisleiste', erwartet: '[Speicher/Cookie im Skript]', tun: (o) => ersetze(o, 'index.html', "localStorage.getItem('tarotcup-sprachhinweis')", "localStorage.getItem('tarotcup-anderes')") },
   { nr: 'Zusatz', name: 'Emoji', erwartet: '[Emoji]', tun: (o) => ersetze(o, 'fragen/index.html', '</h1>', ' \u{1F52E}</h1>') },
   { nr: 8, name: 'Link ins Leere', erwartet: '[8 Link ins Leere]', tun: (o) => ersetze(o, 'en/about/index.html', '</main>', '<a href="/en/gibt-es-nicht/">x</a></main>') },
   { nr: 8, name: 'Sprungmarke fehlt', erwartet: '[8 Sprungmarke fehlt]', tun: (o) => ersetze(o, 'es/preguntas/index.html', '</main>', '<a href="/es/tarot/#gibt-es-nicht">x</a></main>') },

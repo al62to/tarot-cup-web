@@ -21,7 +21,8 @@
 // 10. JSON-LD gegen einen Auszug aus schema.org (src/daten/schema_auszug.mjs): bekannter Typ, nur Eigenschaften des
 //     Typs (samt Obertypen), inLanguage passt zur Seite.
 //  7. Kartenbild mit nackten Figuren (src/daten/karten.mjs, GESPERRT).
-// Dazu: nichts im Speicher des Browsers und keine Cookies (Skripte), keine Emojis, gültige strukturierte Daten mit den
+// Dazu: nichts im Speicher des Browsers und keine Cookies (Skripte; erlaubt ist nur der eine Schlüssel der
+// Sprach-Hinweisleiste, MUSTER.speicherErlaubt, Auftrag W5), keine Emojis, gültige strukturierte Daten mit den
 // Pflichttypen je Seite, türkische Wörter auf deutschen Seiten mit lang="tr".
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { dirname, join, relative, sep } from 'node:path';
@@ -84,6 +85,8 @@ export const MUSTER = {
   // Englischen und Spanischen so nicht gibt.
   deutsch: /[äöüÄÖÜß]|(?<![\p{L}\p{N}])(?:und|oder|nicht|nur|auch|sich|ist|sind|wird|werden|eine[mnrs]?|einen|der|dem|mit|für|auf|bei|zum|zur|vom|wie|wenn|dein|deine[mnrs]?|Seite|Karte|Karten|Tasse|Zeichen|Kaffeesatz|Deutung|Legung|Satz|Bedeutung)(?![\p{L}\p{N}])/gu,
   speicher: /localStorage|sessionStorage|indexedDB|document\.cookie|navigator\.storage|caches\.open/g,
+  // Sprach-Hinweisleiste (W5): lesen und schreiben genau dieses Schlüssels, wörtlich wie in src/layouts/Basis.astro.
+  speicherErlaubt: /localStorage\.(?:getItem\('tarotcup-sprachhinweis'\)|setItem\('tarotcup-sprachhinweis', l\))/g,
   emoji: /\p{Extended_Pictographic}/gu,
 };
 
@@ -121,7 +124,7 @@ export function pruefeBau(ordner, { still = false } = {}) {
     // Skripte: nichts im Speicher des Browsers, keine Cookies.
     if (/\.(m?js|html)$/.test(datei)) {
       const skripte = datei.endsWith('.html') ? [...inhalt.matchAll(/<script\b(?![^>]*application\/(?:ld\+)?json)[^>]*>([\s\S]*?)<\/script>/g)].map((m) => m[1]).join('\n') : inhalt;
-      for (const fund of skripte.matchAll(MUSTER.speicher)) melde(datei, 'Speicher/Cookie im Skript', fund[0]);
+      for (const fund of skripte.replace(MUSTER.speicherErlaubt, '').matchAll(MUSTER.speicher)) melde(datei, 'Speicher/Cookie im Skript', fund[0]);
     }
     if (!/\.(html|txt|xml)$/.test(datei)) continue;
     const ohne = datei.endsWith('.html') ? ohneRechtstext(inhalt) : inhalt;

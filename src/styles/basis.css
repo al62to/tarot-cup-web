@@ -110,6 +110,23 @@ html:not(.js) .nur-js { display: none !important; }
 .sprung { position: absolute; left: 16px; top: -80px; z-index: 100; padding: 10px 16px; border-radius: 12px; background: var(--tinte); color: var(--grund); font-weight: 600; text-decoration: none; }
 .sprung:focus { top: 8px; color: var(--grund); }
 
+/* Sprach-Hinweisleiste (Auftrag W5, components/Sprachhinweis.astro): schmal über dem Kopf, im Ton des Kopfs (Kaffee,
+   feine goldene Linie), Link in hellem Gold. Verborgen, bis das Skript im Kopf data-sprachhinweis auf <html> setzt;
+   das geschieht vor dem ersten Zeichnen, die Leiste steht also von Anfang an im Fluss. Bei offenem Menü am Handy
+   ausgeblendet, damit das Menü den ganzen Bildschirm unter dem Kopf füllt. */
+.sprachhinweis { display: none; --fokus: var(--gold); align-items: center; gap: 4px 8px; min-height: 44px; padding-block: 0; padding-inline: max(var(--rand-seite), calc((100% - var(--breite)) / 2 + var(--rand-seite))) max(4px, calc((100% - var(--breite)) / 2 + var(--rand-seite) - 12px)); background: var(--kaffee); color: var(--kaffee-text); border-bottom: 1px solid var(--gold-fein); font: 400 0.875rem/1.4 var(--sans); }
+html[data-sprachhinweis="de"] .sprachhinweis[data-fuer="de"],
+html[data-sprachhinweis="tr"] .sprachhinweis[data-fuer="tr"],
+html[data-sprachhinweis="en"] .sprachhinweis[data-fuer="en"],
+html[data-sprachhinweis="es"] .sprachhinweis[data-fuer="es"] { display: flex; }
+.menue-offen .sprachhinweis { display: none !important; }
+.sprachhinweis-text { flex: 1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 14px; margin: 0; }
+.sprachhinweis-text a { color: var(--gold-hell); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.sprachhinweis-text a:hover { color: var(--creme); }
+.sprachhinweis-zu { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 999px; background: transparent; color: var(--kaffee-gedaempft); cursor: pointer; }
+.sprachhinweis-zu:hover { color: var(--creme); background: var(--gold-fein); }
+.sprachhinweis-zu svg { width: 20px; height: 20px; }
+
 /* Knöpfe: Pille, mindestens 44 Pixel hoch. */
 .knopf { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 22px; border: 1px solid transparent; border-radius: 999px; font: 600 0.9375rem/1.2 var(--sans); text-align: center; text-decoration: none; cursor: pointer; }
 .knopf svg { flex: none; width: 18px; height: 18px; }
@@ -290,7 +307,7 @@ html:not(.js) .teilen-wahl a:hover { background: var(--gold-fein); color: var(--
 .teilen-meldung { flex-basis: 100%; min-height: 1.5em; margin: 0; font-size: 0.875rem; color: var(--hell-gedaempft); }
 
 @media print {
-  .kopf, .krumen, .fuss, .teilen, .sprung, .toc { display: none !important; }
+  .kopf, .krumen, .fuss, .teilen, .sprung, .toc, .sprachhinweis { display: none !important; }
   body { background: #fff; color: #000; font-size: 11pt; }
 }
 
