@@ -7,6 +7,7 @@
 // Rechts: zwei gefächerte Kartenrückseiten vor langsam drehenden goldenen Ringen, davor die Karte zum Umdrehen. Mit
 // JavaScript wird sie zum Knopf: Antippen dreht sie um (3D-Drehung, bei reduzierter Bewegung ohne Drehung) und zeigt
 // eine Originalkarte aus TITELKARTEN, zuerst den Magier; nochmal antippen dreht sie zurück, danach kommt die nächste.
+// Die nächste Karte wird vorgeladen und erst getauscht, wenn sie dekodiert ist (kein Aufblitzen, AP-W6).
 // Darunter (aria-live) vorher der Tipp, danach Name und Hinweis aufs Lexikon. Keine Deutung, nichts wird gespeichert.
 // Ohne JavaScript steht die Vorderseite des Magiers als Bild da, ohne Knopf und ohne Tipp.
 import Betont from './Betont.astro';
@@ -116,15 +117,50 @@ const zeileTeile = kopf.zeile.split(/(Android)/);
     let nummer = 0;
     let offen = false;
     let wechsel = false;
-    // Nächste Karte einsetzen, sobald die Rückseite wieder vorn ist.
+    let tausch = null;
+    let wartet = false;
+    const warte = (ms) => new Promise((weiter) => setTimeout(weiter, ms));
+    const quellen = (karte) => `${karte.klein} 240w, ${karte.gross} 480w`;
+    // Vorladen: Ist eine Karte aufgedeckt, lädt und dekodiert ein unsichtbares Bild die eine nächste Karte (gleiche
+    // srcset und sizes wie das echte Bild, also dieselbe Datei). Nie mehr als diese eine. Kann der Browser decode()
+    // nicht, wird still wie bisher getauscht.
+    let vorrat = null;
+    const vorladen = () => {
+      const folgende = (nummer + 1) % karten.length;
+      if (!bild || karten.length < 2 || vorrat?.nummer === folgende) return;
+      const karte = karten[folgende];
+      const probe = new Image();
+      probe.decoding = 'async';
+      probe.sizes = bild.sizes;
+      probe.srcset = quellen(karte);
+      probe.src = karte.gross;
+      let fertig = Promise.resolve();
+      try { fertig = probe.decode().catch(() => {}); } catch { /* alter Browser: ohne Warten tauschen */ }
+      vorrat = { nummer: folgende, fertig, probe };
+    };
+    // Nächste Karte einsetzen, sobald die Rückseite wieder vorn ist: erst wenn das Vorladen fertig ist, höchstens
+    // etwa 300 ms darauf warten. Danach noch kurz warten, bis das echte Bild dekodiert ist, damit beim Umdrehen nie die
+    // alte Karte oder ein leeres Bild aufblitzt (höchstens 2,5 Sekunden, damit der Knopf nie hängt).
     const naechste = () => {
-      if (!wechsel || !bild) return;
+      if (!wechsel || !bild) return tausch;
       wechsel = false;
-      nummer = (nummer + 1) % karten.length;
-      const karte = karten[nummer];
-      bild.srcset = `${karte.klein} 240w, ${karte.gross} 480w`;
-      bild.src = karte.gross;
-      bild.alt = karte.alt;
+      const lauf = (async () => {
+        vorladen();
+        // Wurde während des Zurückdrehens getippt, erst warten, bis die Rückseite ganz vorn ist.
+        const laeuft = dreh?.getAnimations?.() ?? [];
+        await Promise.race([Promise.all(laeuft.map((animation) => animation.finished.catch(() => {}))), warte(1000)]);
+        await Promise.race([vorrat?.fertig ?? Promise.resolve(), warte(300)]);
+        nummer = (nummer + 1) % karten.length;
+        const karte = karten[nummer];
+        bild.srcset = quellen(karte);
+        bild.src = karte.gross;
+        bild.alt = karte.alt;
+        vorrat = null;
+        try { await Promise.race([bild.decode().catch(() => {}), warte(2500)]); } catch { /* wie bisher */ }
+      })();
+      tausch = lauf;
+      lauf.then(() => { if (tausch === lauf) tausch = null; });
+      return lauf;
     };
     const zeige = () => {
       const karte = karten[nummer];
@@ -136,11 +172,20 @@ const zeileTeile = kopf.zeile.split(/(Android)/);
     dreh?.addEventListener('transitionend', (ereignis) => {
       if (ereignis.target === dreh && !offen) naechste();
     });
-    knopf.addEventListener('click', () => {
-      if (!offen && wechsel) naechste();
+    knopf.addEventListener('click', async () => {
+      if (wartet) return;
+      // Erst umdrehen, wenn der Tausch erledigt ist.
+      if (!offen && (wechsel || tausch)) {
+        wartet = true;
+        knopf.setAttribute('aria-busy', 'true');
+        await naechste();
+        knopf.removeAttribute('aria-busy');
+        wartet = false;
+      }
       offen = !offen;
       if (!offen) wechsel = true;
       zeige();
+      if (offen) vorladen();
       if (!offen && (ruhig.matches || !dreh || getComputedStyle(dreh).transitionDuration === '0s')) naechste();
     });
     zeige();
