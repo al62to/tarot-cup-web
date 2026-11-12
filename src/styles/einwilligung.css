@@ -95,7 +95,8 @@
 #cc-main .cm__btn-group:first-child .cm__btn,
 #cc-main .pm__footer .pm__btn-group:first-child .pm__btn { margin: 0; width: 100%; }
 @media (min-width: 641px) {
-  #cc-main .cm--bar .cm__btns { min-width: 24rem; }
+  #cc-main .cm--bar .cm__btns { min-width: 26rem; }
+  #cc-main .cm .cm__btn { padding-left: 1rem; padding-right: 1rem; white-space: nowrap; }
 }
 /* CookieConsent stellt auf schmalen Schirmen alle Knöpfe mit !important untereinander; die erste Gruppe bleibt hier
    zweispaltig. */
@@ -104,5 +105,5 @@
   #cc-main .cm__btn-group:first-child .cm__btn + .cm__btn { margin: 0 !important; }
   #cc-main .cm__title { font-size: 1.3125rem; }
   #cc-main .cm__desc { font-size: 0.875rem; line-height: 1.5; }
-  #cc-main .cm__btn { padding-left: 0.75rem; padding-right: 0.75rem; }
+  #cc-main .cm .cm__btn { padding-left: 0.75rem; padding-right: 0.75rem; }
 }
