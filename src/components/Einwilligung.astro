@@ -9,8 +9,9 @@
 //  - „Alle akzeptieren“ oder Statistik in den Einstellungen an: erst jetzt wird der Google Tag Manager eingefügt und
 //    das Ereignis GTM_EREIGNIS gesendet, das im Container das Google-Tag auslöst. Auf jeder weiteren Seite genauso,
 //    solange die Zustimmung gilt (onConsent bei jedem Laden).
-//  - Widerruf (Statistik aus): CookieConsent löscht _ga und _ga_* (autoClear) und lädt die Seite neu; danach wird der
-//    Tag Manager nicht mehr geladen.
+//  - Widerruf (Statistik aus): Google Analytics wird auf der offenen Seite abgeschaltet (window['ga-disable-<Mess-ID>']),
+//    damit es _ga_* beim Verlassen der Seite nicht neu schreibt; CookieConsent löscht _ga und _ga_* (autoClear), hier
+//    wird zur Sicherheit noch einmal gelöscht, dann lädt die Seite neu; danach wird der Tag Manager nicht mehr geladen.
 //  - Klick auf ein Abzeichen von Google Play: nur mit Zustimmung das Ereignis store_klick mit sprache und ort.
 // Stile von CookieConsent und die eigenen Farben kommen als Text im Skript (?inline) und werden erst im Browser
 // eingesetzt, damit nicht jede Seite 30 KB Stile im Kopf trägt (Stile sind sonst eingebettet, astro.config.mjs).
@@ -19,7 +20,7 @@
   import * as CookieConsent from 'vanilla-cookieconsent';
   import stileBibliothek from 'vanilla-cookieconsent/dist/cookieconsent.css?inline';
   import stileEigen from '../styles/einwilligung.css?inline';
-  import { EINWILLIGUNG, GTM_ID, GTM_EREIGNIS, GTM_ADRESSE, STORE_ORT, GA_COOKIES } from '../daten/einwilligung.mjs';
+  import { EINWILLIGUNG, GTM_ID, GTM_EREIGNIS, GTM_ADRESSE, MESS_ID, STORE_ORT, GA_COOKIES } from '../daten/einwilligung.mjs';
   import { ADRESSEN } from '../daten/adressen.mjs';
 
   const stil = document.createElement('style');
@@ -42,6 +43,13 @@
   }
 
   const nachWahl = () => { if (statistikAn()) tagManagerLaden(); };
+  const nachAenderung = () => {
+    if (statistikAn()) { tagManagerLaden(); return; }
+    if (!fenster.tarotcupGtm) return;
+    (window as unknown as Record<string, boolean>)['ga-disable-' + MESS_ID] = true;
+    CookieConsent.eraseCookies(GA_COOKIES);
+    CookieConsent.eraseCookies(GA_COOKIES, '/', '.' + location.hostname);
+  };
 
   // Klicks auf die Abzeichen von Google Play (Storeknopf.astro: data-store-ort, hreflang = Sprache des Abzeichens).
   document.addEventListener('click', (ereignis) => {
@@ -92,7 +100,7 @@
       statistik: { enabled: false, readOnly: false, autoClear: { cookies: [{ name: GA_COOKIES }], reloadPage: true } },
     },
     onConsent: nachWahl,
-    onChange: nachWahl,
+    onChange: nachAenderung,
     language: { default: seitenSprache, translations: uebersetzungen },
   });
 </script>

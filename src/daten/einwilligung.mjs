@@ -13,6 +13,8 @@
 export const GTM_ID = 'GTM-KHHHQ4ZK';
 export const GTM_EREIGNIS = 'einwilligung_statistik';
 export const GTM_ADRESSE = 'https://www.googletagmanager.com/gtm.js?id=';
+// Mess-ID des Web-Datenstroms; nur für den Abschalter von Google Analytics beim Widerruf (window['ga-disable-…']).
+export const MESS_ID = 'G-DZT3YDP3Q8';
 
 // Orte der Abzeichen von Google Play (Storeknopf) als Wert des Parameters ort beim Ereignis store_klick.
 export const STORE_ORT = { kopf: 'titelbild', fuss: 'fusszeile', kurzlink: 'app_seite' };
