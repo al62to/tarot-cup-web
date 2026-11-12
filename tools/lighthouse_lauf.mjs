@@ -2,6 +2,8 @@
 // Nr. 2: Startseite, beide Ratgeber und So geht's, je Deutsch und Türkisch. Ziel: alle vier Bereiche mindestens 90.
 // Lighthouse kommt über npx (keine Abhängigkeit des Projekts), Chrome ist das lokal installierte. Liegt die Leistung
 // unter 90, folgen zwei weitere Läufe; es zählt der mittlere Wert (Leistung schwankt mit der Last des Rechners).
+// Seit W7 mit --disable-blink-features=AutomationControlled: Sonst hält sich CookieConsent vor dem kopflosen Chrome
+// versteckt (navigator.webdriver), und gemessen würde die Seite ohne den Hinweis zur Einwilligung.
 // Aufruf: node tools/lighthouse_lauf.mjs <Zielordner> <Adresse der Vorschau> [Pfad ...]
 import { execFileSync } from 'node:child_process';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
@@ -19,7 +21,7 @@ mkdirSync(ziel, { recursive: true });
 function lauf(pfad, nummer) {
   const datei = join(ziel, `${pfad.replace(/^\/|\/$/g, '').replace(/\//g, '_') || 'start'}-${nummer}.json`);
   execFileSync('npx', ['--yes', 'lighthouse', vorschau + pfad, '--quiet', '--output=json', `--output-path=${datei}`,
-    `--only-categories=${BEREICHE.join(',')}`, '--chrome-flags=--headless=new'],
+    `--only-categories=${BEREICHE.join(',')}`, '"--chrome-flags=--headless=new --disable-blink-features=AutomationControlled"'],
   { stdio: ['ignore', 'ignore', 'inherit'], shell: true, env: { ...process.env, CHROME_PATH: chrome } });
   const daten = JSON.parse(readFileSync(datei, 'utf8'));
   return Object.fromEntries(BEREICHE.map((bereich) => [bereich, Math.round((daten.categories[bereich]?.score ?? 0) * 100)]));

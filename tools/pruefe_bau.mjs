@@ -21,8 +21,14 @@
 // 10. JSON-LD gegen einen Auszug aus schema.org (src/daten/schema_auszug.mjs): bekannter Typ, nur Eigenschaften des
 //     Typs (samt Obertypen), inLanguage passt zur Seite.
 //  7. Kartenbild mit nackten Figuren (src/daten/karten.mjs, GESPERRT).
+// 11. Einwilligung (Auftrag W7): Google Tag Manager und Google Analytics nur im einen gebündelten Skript der Einwilligung
+//     (Erkennung: es enthält die Adresse des Tag Manager mit GTM_ID, das Cookie „cc_cookie“ und GTM_EREIGNIS), nirgends
+//     sonst (kein HTML, kein anderes Skript, keine Mess-ID G-… im Bau). Jede Seite bindet dieses Skript ein und hat in
+//     der Fußzeile den Link „Cookie-Einstellungen“ (data-cc="show-preferencesModal") mit dem Text der Sprache der Seite
+//     (src/daten/einwilligung.mjs). Dieses eine Skript darf Cookies setzen und löschen (cc_cookie, _ga beim Widerruf);
+//     für alle übrigen Skripte gilt die Regel unten weiter.
 // Dazu: nichts im Speicher des Browsers und keine Cookies (Skripte; erlaubt ist nur der eine Schlüssel der
-// Sprach-Hinweisleiste, MUSTER.speicherErlaubt, Auftrag W5), keine Emojis, gültige strukturierte Daten mit den
+// Sprach-Hinweisleiste, MUSTER.speicherErlaubt, Auftrag W5, und das Skript der Einwilligung, Regel 11), keine Emojis, gültige strukturierte Daten mit den
 // Pflichttypen je Seite, türkische Wörter auf deutschen Seiten mit lang="tr".
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { dirname, join, relative, sep } from 'node:path';
@@ -30,6 +36,7 @@ import { fileURLToPath } from 'node:url';
 import { SEITEN } from '../src/daten/seiten.mjs';
 import { seite, store, suche } from '../src/daten/seite.mjs';
 import { ANGEBOT } from '../src/daten/strukturiert.mjs';
+import { EINWILLIGUNG, GTM_ADRESSE, GTM_ID, GTM_EREIGNIS } from '../src/daten/einwilligung.mjs';
 
 // Das eine erlaubte Angebot der App in JSON-LD (AP-21: Preis 0, nur mit öffentlichem Store). Genau diese Zeichenfolge
 // nimmt die Prüfung auf Preis und Gratis aus; jede andere Form von offers oder price bleibt ein Befund.
@@ -110,6 +117,30 @@ export function pruefeBau(ordner, { still = false } = {}) {
   const dateien = alleDateien(ordner);
   const htmlDateien = dateien.filter((datei) => datei.endsWith('.html'));
 
+  // 11: das eine Skript der Einwilligung finden.
+  const einwilligungSkripte = dateien.filter((datei) => /\.m?js$/.test(datei)).filter((datei) => {
+    const inhalt = readFileSync(datei, 'utf8');
+    return inhalt.includes(GTM_ADRESSE) && inhalt.includes(GTM_ID) && inhalt.includes('cc_cookie') && inhalt.includes(GTM_EREIGNIS);
+  });
+  if (einwilligungSkripte.length !== 1) melde(ordner, '11 Einwilligung', `genau ein Skript der Einwilligung erwartet, gefunden: ${einwilligungSkripte.length}`);
+  const einwilligungSkript = einwilligungSkripte[0];
+  const einwilligungPfad = einwilligungSkript ? `/${relative(ordner, einwilligungSkript).split(sep).join('/')}` : null;
+  for (const datei of dateien.filter((kandidat) => TEXT.test(kandidat) && kandidat !== einwilligungSkript)) {
+    const inhalt = readFileSync(datei, 'utf8');
+    for (const fund of inhalt.matchAll(/googletagmanager|google-analytics|gtag\/js|GTM-[A-Z0-9]{6,}|(?<![\w-])G-[A-Z0-9]{8,12}(?![\w-])/g)) melde(datei, '11 Google außerhalb der Einwilligung', `„${fund[0]}“ in „${umgebung(inhalt, fund.index)}“`);
+  }
+  for (const datei of htmlDateien) {
+    const html = readFileSync(datei, 'utf8');
+    // Nur echte Seiten (mit Fuß); Weiterleitungen ohne Fuß haben keinen Hinweis.
+    if (!html.includes('<footer')) continue;
+    if (einwilligungPfad && !html.includes(`src="${einwilligungPfad}"`)) melde(datei, '11 Einwilligung', `Skript ${einwilligungPfad} nicht eingebunden`);
+    const sprache = html.match(/<html[^>]*\slang="([^"]+)"/)?.[1];
+    const text = (EINWILLIGUNG[sprache] ?? EINWILLIGUNG.de).fusslink;
+    const link = html.match(/<a\b[^>]*\sdata-cc="show-preferencesModal"[^>]*>([^<]*)<\/a>/);
+    if (!link) melde(datei, '11 Einwilligung', 'Link „Cookie-Einstellungen“ fehlt in der Fußzeile');
+    else if (link[1] !== text) melde(datei, '11 Einwilligung', `Link „${link[1]}“ statt „${text}“`);
+  }
+
   // 1 und 7: Dateinamen.
   for (const datei of dateien) {
     const name = relative(ordner, datei);
@@ -127,7 +158,7 @@ export function pruefeBau(ordner, { still = false } = {}) {
       if (stelle >= 0) melde(datei, '7 gesperrtes Kartenbild', `${id} in „${umgebung(inhalt, stelle)}“`);
     }
     // Skripte: nichts im Speicher des Browsers, keine Cookies.
-    if (/\.(m?js|html)$/.test(datei)) {
+    if (/\.(m?js|html)$/.test(datei) && datei !== einwilligungSkript) {
       const skripte = datei.endsWith('.html') ? [...inhalt.matchAll(/<script\b(?![^>]*application\/(?:ld\+)?json)[^>]*>([\s\S]*?)<\/script>/g)].map((m) => m[1]).join('\n') : inhalt;
       for (const fund of skripte.replace(MUSTER.speicherErlaubt, '').matchAll(MUSTER.speicher)) melde(datei, 'Speicher/Cookie im Skript', fund[0]);
     }
@@ -376,7 +407,7 @@ export function pruefeBau(ordner, { still = false } = {}) {
   }
   const ersatzfotos = htmlDateien.filter((datei) => /<html[^>]*\slang="(en|es)"/.test(readFileSync(datei, 'utf8')) && /\/bilder\/(?:app|sogehts)\/[^"]*-de-\d+\.webp/.test(readFileSync(datei, 'utf8'))).map((datei) => relative(ordner, datei).split(sep).join('/'));
   if (warnungen.length) console.warn(`Prüfung nach dem Bau, Entwurf der Übersetzung (UEBERSETZUNG_ENTWURF=1): ${warnungen.length} Warnung(en)\n  ${warnungen.join('\n  ')}`);
-  const ergebnis = { warnungen: warnungen.length, dateien: dateien.length, seiten: htmlDateien.length, adressenVorher: vorher.length, hreflangPaare, interneLinks, jsonLd: jsonLdAnzahl, restSeiten, ersatzfotos };
+  const ergebnis = { einwilligung: einwilligungPfad, warnungen: warnungen.length, dateien: dateien.length, seiten: htmlDateien.length, adressenVorher: vorher.length, hreflangPaare, interneLinks, jsonLd: jsonLdAnzahl, restSeiten, ersatzfotos };
   if (!still) {
     console.log(`Prüfung nach dem Bau: ${ergebnis.dateien} Dateien, ${ergebnis.seiten} Seiten, ${ergebnis.adressenVorher} Adressen von vorher, ${hreflangPaare} hreflang-Verbindungen gegenseitig, ${interneLinks} interne Links, ${jsonLdAnzahl} JSON-LD-Blöcke, ${restSeiten} Seiten en/es auf deutsche Reste geprüft, kein Befund`);
     if (ersatzfotos.length) console.warn(`Warnung: ${ersatzfotos.length} Seite(n) en/es mit deutschen Ersatzfotos (src/daten/fotos.mjs): ${ersatzfotos.join(', ')}`);
