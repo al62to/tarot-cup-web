@@ -2,7 +2,8 @@
 // Grundlayout aller Seiten: Kopfdaten (Titel, Beschreibung, kanonische Adresse, Robots, hreflang, Open Graph,
 // strukturierte Daten), Kopf, Brotkrumen auf Unterseiten, Inhalt, Fuß (mit dem Teilen-Knopf auf Inhaltsseiten).
 // Alle Angaben kommen über die Adresse aus src/daten/seiten.mjs; eine Seite gibt sie nicht selbst an.
-// Keine Cookies, keine Anfragen an andere Anbieter. Das Skript im Kopf setzt die Klasse "js" (Gestaltung mit
+// Cookies und Anfragen an Google nur nach Zustimmung (W7, components/Einwilligung.astro): vorher keine Cookies und
+// keine Anfragen an andere Anbieter, nach „Ablehnen“ nur das Cookie cc_cookie. Das Skript im Kopf setzt die Klasse "js" (Gestaltung mit
 // JavaScript, etwa das Menü am Handy) und schaltet die Sprach-Hinweisleiste (Auftrag W5, components/Sprachhinweis.astro)
 // ein. Gespeichert wird im Browser nur, für welche Sprache die Leiste geschlossen wurde (localStorage, ein Schlüssel).
 import '../styles/schriften.css';
@@ -17,6 +18,7 @@ import Kopf from '../components/Kopf.astro';
 import Fuss from '../components/Fuss.astro';
 import Brotkrumen from '../components/Brotkrumen.astro';
 import Sprachhinweis from '../components/Sprachhinweis.astro';
+import Einwilligung from '../components/Einwilligung.astro';
 import { seite } from '../daten/seite.mjs';
 import { seiteVon } from '../daten/seiten.mjs';
 import { OG_LOCALE, OG_LOCALE_ZUSATZ, STANDARD_SPRACHE } from '../daten/adressen.mjs';
@@ -111,5 +113,6 @@ const hinweisZiele = (fassungen ?? []).filter((fassung) => fassung.sprache !== s
       <slot />
     </main>
     <Fuss angaben={angaben} teilen={teilen ? { titel, adresse: kanonisch } : null} />
+    <Einwilligung />
   </body>
 </html>

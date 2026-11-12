@@ -14,7 +14,7 @@ const abzeichen = store.abzeichen[sprache];
 ---
 {store.oeffentlich && (
   <div class:list={['store', klasse]} style={`--abzeichen-hoehe: ${hoehe}px`}>
-    <a class="store-abzeichen" href={storeLink(ort, sprache)} rel="noopener" hreflang={sprache}>
+    <a class="store-abzeichen" href={storeLink(ort, sprache)} rel="noopener" hreflang={sprache} data-store-ort={ort}>
       <img src={abzeichen.pfad} width={abzeichen.breite} height={abzeichen.hoehe} alt={T.abzeichenAlt} loading={ort === 'kopf' ? 'eager' : 'lazy'} decoding="async" />
     </a>
   </div>

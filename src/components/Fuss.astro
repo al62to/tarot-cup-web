@@ -2,7 +2,7 @@
 // Fuß nach Entwurf 9.1 auf Espresso. Oben links der Hinweis „Zur Unterhaltung …“ (auf jeder Seite einmal) und auf
 // Inhaltsseiten der Teilen-Knopf (Teilen.astro, "teilen" kommt aus Basis.astro). Rechts die Spalten App (So geht's,
 // Fragen, Über), Rechtliches (Datenschutz, Nutzungsbedingungen, Offenlegung, Bildnachweis und Lizenzen), Kontakt
-// (E-Mail, kodiert) und Sprache. Darunter der große Schriftzug „Tarot Cup“ als Schmuck (aria-hidden), ganz unten
+// (E-Mail, kodiert) und Sprache. Unter Rechtliches zuletzt „Cookie-Einstellungen“ (W7). Darunter der große Schriftzug „Tarot Cup“ als Schmuck (aria-hidden), ganz unten
 // „Tarot Cup · Zur Unterhaltung.“ Unter dem Hinweis das Abzeichen von Google Play (Storeknopf, nur mit öffentlichem
 // Store; Abstand 14 px zu den Nachbarn, mehr als ein Viertel der Höhe von 48 px).
 // Die Offenlegung gibt es nur auf Deutsch; auf türkischen Seiten heißt der Link „Offenlegung (künye)“; „Offenlegung“
@@ -15,6 +15,7 @@ import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
 import { pfadVon, startPfad } from '../daten/seiten.mjs';
 import { mailtoKodiert, emailKodiert } from '../daten/seite.mjs';
 import { ADRESSEN, SPRACHEN, SPRACHNAMEN } from '../daten/adressen.mjs';
+import { EINWILLIGUNG } from '../daten/einwilligung.mjs';
 
 const { angaben, teilen = null } = Astro.props;
 const { sprache, pfad, fassungen } = angaben;
@@ -41,6 +42,9 @@ const recht = [
   { text: T.fuss.offenlegung, ziel: '/offenlegung/', lang: offenlegungDe ? 'de' : undefined, hreflang: sprache === 'de' ? undefined : 'de' },
   { text: T.fuss.bildnachweis, ziel: pfadVon('bildnachweis', sprache) },
 ];
+// „Cookie-Einstellungen“ (W7, Datenschutzerklärung 1.4, Abschnitt 11): öffnet mit JavaScript die Einstellungen von
+// CookieConsent (data-cc, components/Einwilligung.astro); ohne JavaScript führt der Link zur Datenschutzerklärung.
+const cookieEinstellungen = { text: EINWILLIGUNG[sprache]?.fusslink ?? EINWILLIGUNG.de.fusslink, ziel: datenschutz };
 const kontakt = `<a href="${mailtoKodiert()}">${emailKodiert()}</a>`;
 ---
 <footer class="fuss flaeche-dunkel">
@@ -62,6 +66,7 @@ const kontakt = `<a href="${mailtoKodiert()}">${emailKodiert()}</a>`;
             {recht.map((eintrag) => (
               <li><a href={eintrag.ziel} hreflang={eintrag.hreflang} aria-current={pfad === eintrag.ziel ? 'page' : undefined}>{eintrag.lang ? <span><span lang={eintrag.lang}>{eintrag.text.replace(/\s*\(.*\)$/, '')}</span>{eintrag.text.match(/\(.*\)$/) && <>{' '}{eintrag.text.match(/\(.*\)$/)[0]}</>}</span> : eintrag.text}</a></li>
             ))}
+            <li><a href={cookieEinstellungen.ziel} data-cc="show-preferencesModal">{cookieEinstellungen.text}</a></li>
           </ul>
         </nav>
         <div class="fuss-spalte">

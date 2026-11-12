@@ -1,0 +1,98 @@
+---
+// Hinweis zur Einwilligung (Auftrag W7). Kein eigenes HTML: CookieConsent (vanilla-cookieconsent v3, aus npm, beim Bau
+// gebündelt, nichts von einem CDN) baut Banner und Einstellungen im Browser. Texte je Sprache in
+// src/daten/einwilligung.mjs, die Sprache folgt <html lang>.
+// Ablauf:
+//  - Vor jeder Wahl: Banner unten, ohne Abdunkeln und ohne Verschieben des Inhalts (fest positioniert); keine Anfrage
+//    an Google, kein Cookie.
+//  - „Ablehnen“: nur „cc_cookie“ (6 Monate), sonst nichts.
+//  - „Alle akzeptieren“ oder Statistik in den Einstellungen an: erst jetzt wird der Google Tag Manager eingefügt und
+//    das Ereignis GTM_EREIGNIS gesendet, das im Container das Google-Tag auslöst. Auf jeder weiteren Seite genauso,
+//    solange die Zustimmung gilt (onConsent bei jedem Laden).
+//  - Widerruf (Statistik aus): CookieConsent löscht _ga und _ga_* (autoClear) und lädt die Seite neu; danach wird der
+//    Tag Manager nicht mehr geladen.
+//  - Klick auf ein Abzeichen von Google Play: nur mit Zustimmung das Ereignis store_klick mit sprache und ort.
+// Stile von CookieConsent und die eigenen Farben kommen als Text im Skript (?inline) und werden erst im Browser
+// eingesetzt, damit nicht jede Seite 30 KB Stile im Kopf trägt (Stile sind sonst eingebettet, astro.config.mjs).
+---
+<script>
+  import * as CookieConsent from 'vanilla-cookieconsent';
+  import stileBibliothek from 'vanilla-cookieconsent/dist/cookieconsent.css?inline';
+  import stileEigen from '../styles/einwilligung.css?inline';
+  import { EINWILLIGUNG, GTM_ID, GTM_EREIGNIS, GTM_ADRESSE, STORE_ORT, GA_COOKIES } from '../daten/einwilligung.mjs';
+  import { ADRESSEN } from '../daten/adressen.mjs';
+
+  const stil = document.createElement('style');
+  stil.textContent = stileBibliothek + stileEigen;
+  document.head.appendChild(stil);
+
+  const fenster = window as unknown as { dataLayer?: unknown[]; tarotcupGtm?: boolean };
+  const statistikAn = () => CookieConsent.acceptedCategory('statistik');
+
+  function tagManagerLaden() {
+    if (fenster.tarotcupGtm) return;
+    fenster.tarotcupGtm = true;
+    const schicht = (fenster.dataLayer = fenster.dataLayer || []);
+    schicht.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+    const skript = document.createElement('script');
+    skript.async = true;
+    skript.src = GTM_ADRESSE + GTM_ID;
+    document.head.appendChild(skript);
+    schicht.push({ event: GTM_EREIGNIS });
+  }
+
+  const nachWahl = () => { if (statistikAn()) tagManagerLaden(); };
+
+  // Klicks auf die Abzeichen von Google Play (Storeknopf.astro: data-store-ort, hreflang = Sprache des Abzeichens).
+  document.addEventListener('click', (ereignis) => {
+    const ziel = ereignis.target as Element | null;
+    const link = ziel && ziel.closest ? ziel.closest('a[data-store-ort]') : null;
+    if (!link || !statistikAn() || !fenster.dataLayer) return;
+    const ort = STORE_ORT[link.getAttribute('data-store-ort') as keyof typeof STORE_ORT];
+    fenster.dataLayer.push({ event: 'store_klick', sprache: link.getAttribute('hreflang') || document.documentElement.lang, ort });
+  }, true);
+
+  const sprachen = Object.keys(EINWILLIGUNG);
+  const seitenSprache = sprachen.includes(document.documentElement.lang) ? document.documentElement.lang : 'de';
+  const uebersetzungen = Object.fromEntries(sprachen.map((sprache) => {
+    const T = EINWILLIGUNG[sprache as keyof typeof EINWILLIGUNG];
+    const link = (text: string) => text.replaceAll('{datenschutz}', ADRESSEN.datenschutz[sprache as keyof typeof ADRESSEN.datenschutz]);
+    return [sprache, {
+      consentModal: {
+        title: T.titel,
+        description: link(T.text),
+        acceptAllBtn: T.alle,
+        acceptNecessaryBtn: T.ablehnen,
+        showPreferencesBtn: T.einstellungen,
+      },
+      preferencesModal: {
+        title: T.einstellungenTitel,
+        acceptAllBtn: T.alle,
+        acceptNecessaryBtn: T.ablehnen,
+        savePreferencesBtn: T.speichern,
+        closeIconLabel: T.schliessen,
+        sections: [
+          { title: T.wahlTitel, description: link(T.wahlText) },
+          { title: T.notwendig, description: T.notwendigText, linkedCategory: 'notwendig' },
+          { title: T.statistik, description: T.statistikText, linkedCategory: 'statistik' },
+        ],
+      },
+    }];
+  }));
+
+  CookieConsent.run({
+    cookie: { name: 'cc_cookie', expiresAfterDays: 182 },
+    guiOptions: {
+      consentModal: { layout: 'bar inline', position: 'bottom', equalWeightButtons: true, flipButtons: false },
+      preferencesModal: { layout: 'box', equalWeightButtons: true, flipButtons: false },
+    },
+    disablePageInteraction: false,
+    categories: {
+      notwendig: { enabled: true, readOnly: true },
+      statistik: { enabled: false, readOnly: false, autoClear: { cookies: [{ name: GA_COOKIES }], reloadPage: true } },
+    },
+    onConsent: nachWahl,
+    onChange: nachWahl,
+    language: { default: seitenSprache, translations: uebersetzungen },
+  });
+</script>

@@ -37,7 +37,11 @@ npm ci
 npm run build
 ```
 
-Die Seiten laden nichts von anderen Anbietern und setzen keine Cookies. Im Browser gespeichert wird nur ein Eintrag: für welche Sprache die Sprach-Hinweisleiste geschlossen wurde (`localStorage`, Schlüssel `tarotcup-sprachhinweis`).
+Ohne Zustimmung laden die Seiten nichts von anderen Anbietern und setzen keine Cookies. Im Browser gespeichert wird dann nur ein Eintrag: für welche Sprache die Sprach-Hinweisleiste geschlossen wurde (`localStorage`, Schlüssel `tarotcup-sprachhinweis`).
+
+## Einwilligung und Statistik (W7)
+
+Hinweis zur Einwilligung mit CookieConsent (`vanilla-cookieconsent` v3 aus npm, beim Bau gebündelt), Aufbau wie in der Datenschutzerklärung 1.4, Abschnitt 11: „Alle akzeptieren“ und „Ablehnen“ gleichwertig, dazu „Einstellungen“ mit „Notwendig“ (`cc_cookie`, 6 Monate) und „Statistik“. Erst mit Statistik lädt `src/components/Einwilligung.astro` den Google Tag Manager (`GTM-KHHHQ4ZK`) und sendet das Ereignis `einwilligung_statistik`, das im Container das Google-Tag der GA4-Property „Tarot Cup“ auslöst (Web-Datenstrom, Mess-ID `G-DZT3YDP3Q8`). Klicks auf ein Abzeichen von Google Play senden dann `store_klick` mit `sprache` und `ort` (`titelbild`, `fusszeile`, `app_seite`). Widerruf über „Cookie-Einstellungen“ in der Fußzeile: `_ga`-Cookies werden gelöscht, die Seite lädt neu. Texte je Sprache in `src/daten/einwilligung.mjs` (neue Sprache = neuer Eintrag), Stile in `src/styles/einwilligung.css`. `tools/pruefe_bau.mjs` (Regel 11) lässt Google nur in diesem einen Skript zu, `tools/browser_pruefen.mjs` prüft vor der Wahl, nach „Ablehnen“, nach „Alle akzeptieren“ und nach dem Widerruf.
 
 ## Sprach-Hinweisleiste
 

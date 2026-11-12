@@ -1,0 +1,108 @@
+/* Hinweis zur Einwilligung (CookieConsent, Auftrag W7) im Stil der Website: Espresso, Gold, Inter und Cormorant.
+   „Alle akzeptieren“ und „Ablehnen“ gleich groß und gleich gefärbt (gold), „Einstellungen“ als Rahmenknopf.
+   Wird als Text im Skript geladen (components/Einwilligung.astro), nicht in den Kopf jeder Seite eingebettet.
+   Kontraste: Creme auf Espresso 16,5 : 1, Espresso auf Gold 9,4 : 1, Kaffee gedämpft auf Espresso 10 : 1. */
+#cc-main {
+  --cc-font-family: var(--sans);
+  --cc-modal-border-radius: 14px;
+  --cc-btn-border-radius: 999px;
+  --cc-bg: var(--espresso);
+  --cc-primary-color: var(--kaffee-text);
+  --cc-secondary-color: var(--kaffee-gedaempft);
+  --cc-link-color: var(--gold);
+  --cc-btn-primary-bg: var(--gold);
+  --cc-btn-primary-color: var(--espresso);
+  --cc-btn-primary-border-color: var(--gold);
+  --cc-btn-primary-hover-bg: var(--gold-hell);
+  --cc-btn-primary-hover-color: var(--espresso);
+  --cc-btn-primary-hover-border-color: var(--gold-hell);
+  --cc-btn-secondary-bg: transparent;
+  --cc-btn-secondary-color: var(--kaffee-text);
+  --cc-btn-secondary-border-color: var(--gold-mittel);
+  --cc-btn-secondary-hover-bg: var(--kaffee);
+  --cc-btn-secondary-hover-color: var(--gold-hell);
+  --cc-btn-secondary-hover-border-color: var(--gold);
+  --cc-separator-border-color: var(--gold-fein);
+  --cc-toggle-on-bg: var(--gold);
+  --cc-toggle-off-bg: #6B5A4C;
+  --cc-toggle-on-knob-bg: var(--espresso);
+  --cc-toggle-off-knob-bg: var(--kaffee-text);
+  --cc-toggle-enabled-icon-color: var(--gold);
+  --cc-toggle-disabled-icon-color: var(--kaffee-text);
+  --cc-toggle-readonly-bg: var(--braun-leise);
+  --cc-toggle-readonly-knob-bg: var(--kaffee-text);
+  --cc-toggle-readonly-knob-icon-color: var(--braun-leise);
+  --cc-section-category-border: var(--gold-fein);
+  --cc-cookie-category-block-bg: var(--kaffee);
+  --cc-cookie-category-block-border: var(--gold-fein);
+  --cc-cookie-category-block-hover-bg: #34241B;
+  --cc-cookie-category-block-hover-border: var(--gold-mittel);
+  --cc-cookie-category-expanded-block-bg: transparent;
+  --cc-cookie-category-expanded-block-hover-bg: var(--kaffee);
+  --cc-overlay-bg: rgba(18, 12, 9, 0.6);
+  --cc-webkit-scrollbar-bg: var(--kaffee);
+  --cc-webkit-scrollbar-hover-bg: var(--gold-linie);
+  --cc-footer-bg: var(--kaffee);
+  --cc-footer-color: var(--kaffee-gedaempft);
+  --cc-footer-border-color: var(--gold-fein);
+}
+
+#cc-main .cm,
+#cc-main .pm { border: 1px solid var(--gold-fein); }
+#cc-main .cm--bar { border-width: 1px 0 0; box-shadow: 0 -8px 28px rgba(0, 0, 0, 0.28); }
+
+#cc-main .cm__title,
+#cc-main .pm__title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.15;
+  color: var(--creme);
+}
+#cc-main .cm__desc,
+#cc-main .pm__section-desc { font-size: 0.9375rem; line-height: 1.55; }
+#cc-main .cm__desc a,
+#cc-main .pm__section-desc a { color: var(--gold); text-decoration: underline; text-underline-offset: 2px; }
+#cc-main .cm__desc a:hover,
+#cc-main .pm__section-desc a:hover { color: var(--gold-hell); }
+
+/* Knöpfe mindestens 44 px hoch, Schrift wie die übrigen Knöpfe der Website. */
+#cc-main .cm__btn,
+#cc-main .pm__btn {
+  min-height: 44px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  letter-spacing: 0.01em;
+}
+
+/* Deutlicher Fokus in Gold auf dunklem Grund. */
+#cc-main :focus-visible,
+#cc-main .section__toggle:focus-visible + .toggle__icon {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+/* „Alle akzeptieren“ und „Ablehnen“ genau gleich breit (zwei gleiche Spalten), auch in den Einstellungen; auf dem Handy
+   nebeneinander, damit der Hinweis weniger von der Seite verdeckt. */
+#cc-main .cm__btn-group:first-child,
+#cc-main .pm__footer .pm__btn-group:first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 8px;
+}
+#cc-main .cm__btn-group:first-child .cm__btn,
+#cc-main .pm__footer .pm__btn-group:first-child .pm__btn { margin: 0; width: 100%; }
+@media (min-width: 641px) {
+  #cc-main .cm--bar .cm__btns { min-width: 24rem; }
+}
+/* CookieConsent stellt auf schmalen Schirmen alle Knöpfe mit !important untereinander; die erste Gruppe bleibt hier
+   zweispaltig. */
+@media (max-width: 640px) {
+  #cc-main .cm__btn-group:first-child { display: grid !important; }
+  #cc-main .cm__btn-group:first-child .cm__btn + .cm__btn { margin: 0 !important; }
+  #cc-main .cm__title { font-size: 1.3125rem; }
+  #cc-main .cm__desc { font-size: 0.875rem; line-height: 1.5; }
+  #cc-main .cm__btn { padding-left: 0.75rem; padding-right: 0.75rem; }
+}
