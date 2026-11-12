@@ -1,13 +1,15 @@
 ---
-// Kopf (Entwurf 9.1: Espresso, feine goldene Linie unten): Marke, Hauptnavigation (Tarot · Kaffeesatz · So geht's · Fragen), Sprachwahl DE/TR/EN/ES, Knopf „App laden“ (/app/).
+// Kopf (Entwurf 9.1: Espresso, feine goldene Linie unten): Marke, Hauptnavigation (Tarot · Kaffeesatz · So geht's · Fragen), Sprachwahl (Weltkugel mit Liste), Knopf „App laden“ (/app/).
 // Am Handy ein schlichtes Menü zum Aufklappen (Muster FoodAsu, ohne Mega-Menü). Ohne JavaScript steht das Menü offen
 // da. Zustand nur in aria-expanded; nichts wird gespeichert.
-// Sprachwahl: je Sprache dieselbe Seite in dieser Sprache; gibt es sie nicht, die Startseite der Sprache. Reihenfolge
-// wie in src/daten/adressen.mjs, Namen in eigener Schreibweise (title).
+// Sprachwahl (AP-W6): Knopf mit Weltkugel und dem Eigennamen der aktuellen Sprache, darunter die Liste aller Sprachen
+// in eigener Schreibweise. Je Sprache dieselbe Seite in dieser Sprache; gibt es sie nicht, die Startseite der Sprache.
+// Liste und Reihenfolge nur aus SPRACHEN in src/daten/adressen.mjs. Grundlage ist <details>/<summary>, ohne JavaScript
+// also bedienbar; mit JavaScript wird daraus ein Knopf mit aria-expanded und aria-controls.
 import Marke from './Marke.astro';
 import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
 import { pfadVon, startPfad } from '../daten/seiten.mjs';
-import { SPRACHEN, SPRACHNAMEN, SPRACHKUERZEL } from '../daten/adressen.mjs';
+import { SPRACHEN, SPRACHNAMEN } from '../daten/adressen.mjs';
 
 const { angaben } = Astro.props;
 const { sprache, pfad, fassungen } = angaben;
@@ -20,11 +22,11 @@ const punkte = [
 ];
 const sprachen = SPRACHEN.map((code) => ({
   code,
-  text: SPRACHKUERZEL[code],
   name: SPRACHNAMEN[code],
   ziel: code === sprache ? pfad : fassungen?.find((fassung) => fassung.sprache === code)?.pfad ?? startPfad(code),
   aktuell: code === sprache,
 }));
+const aktuell = sprachen.find((eintrag) => eintrag.aktuell);
 ---
 <header class="kopf flaeche-dunkel">
   <div class="innen kopf-innen" data-nav>
@@ -42,17 +44,25 @@ const sprachen = SPRACHEN.map((code) => ({
           ))}
         </ul>
       </nav>
-      <ul class="sprachwahl" aria-label={T.nav.sprachwahl}>
-        {sprachen.map((eintrag) => (
-          <li>
-            {eintrag.aktuell ? (
-              <a href={eintrag.ziel} aria-current="true" lang={eintrag.code} title={eintrag.name}>{eintrag.text}</a>
-            ) : (
-              <a href={eintrag.ziel} hreflang={eintrag.code} lang={eintrag.code} title={eintrag.name}>{eintrag.text}</a>
-            )}
-          </li>
-        ))}
-      </ul>
+      <details class="sprachwahl" data-sprachwahl>
+        <summary class="sprachwahl-knopf">
+          <svg class="sprachwahl-kugel" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M4.6 7.5h14.8M4.6 16.5h14.8M12 3c2.4 2.5 3.6 5.5 3.6 9s-1.2 6.5-3.6 9c-2.4-2.5-3.6-5.5-3.6-9S9.6 5.5 12 3z" /></svg>
+          <span class="unsichtbar">{T.nav.sprachwahl}: </span>
+          <span lang={aktuell.code}>{aktuell.name}</span>
+          <svg class="sprachwahl-pfeil" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.5 4.5 6 8l3.5-3.5" /></svg>
+        </summary>
+        <ul class="sprachwahl-liste" id="sprachliste" aria-label={T.nav.sprachwahl}>
+          {sprachen.map((eintrag) => (
+            <li>
+              {eintrag.aktuell ? (
+                <a href={eintrag.ziel} aria-current="true" lang={eintrag.code}>{eintrag.name}</a>
+              ) : (
+                <a href={eintrag.ziel} hreflang={eintrag.code} lang={eintrag.code}>{eintrag.name}</a>
+              )}
+            </li>
+          ))}
+        </ul>
+      </details>
       <a class="knopf knopf-gold kopf-app" href="/app/">{T.nav.appLaden}</a>
     </div>
   </div>
@@ -80,5 +90,59 @@ const sprachen = SPRACHEN.map((code) => ({
       if (!nav.contains(ereignis.target)) setze(false);
     });
     window.matchMedia('(min-width: 56rem)').addEventListener('change', () => setze(false));
+  }
+
+  // Sprachwahl: aus <details>/<summary> wird ein Knopf mit aria-expanded und aria-controls, die Liste darunter
+  // bleibt dieselbe (echte Links mit hreflang und lang). Esc, ein Klick daneben und das Verlassen mit der Tastatur
+  // schließen sie; mit Esc kehrt der Fokus zum Knopf zurück. Pfeiltasten wandern durch die Liste.
+  const wahl = document.querySelector('[data-sprachwahl]');
+  const zusammenfassung = wahl?.querySelector('summary');
+  const liste = wahl?.querySelector('.sprachwahl-liste');
+  if (wahl && zusammenfassung && liste) {
+    const huelle = document.createElement('div');
+    huelle.className = wahl.className;
+    const sprachknopf = document.createElement('button');
+    sprachknopf.type = 'button';
+    sprachknopf.className = zusammenfassung.className;
+    sprachknopf.append(...zusammenfassung.childNodes);
+    sprachknopf.setAttribute('aria-expanded', 'false');
+    sprachknopf.setAttribute('aria-controls', liste.id);
+    liste.hidden = true;
+    huelle.append(sprachknopf, liste);
+    wahl.replaceWith(huelle);
+    const links = () => [...liste.querySelectorAll('a')];
+    const offen = () => sprachknopf.getAttribute('aria-expanded') === 'true';
+    const stelle = (auf, fokus) => {
+      sprachknopf.setAttribute('aria-expanded', String(auf));
+      liste.hidden = !auf;
+      if (fokus === 'knopf') sprachknopf.focus();
+      if (fokus === 'erste') (liste.querySelector('[aria-current]') ?? links()[0])?.focus();
+    };
+    sprachknopf.addEventListener('click', () => stelle(!offen()));
+    huelle.addEventListener('keydown', (ereignis) => {
+      if (ereignis.key === 'Escape' && offen()) {
+        ereignis.stopPropagation();
+        stelle(false, 'knopf');
+        return;
+      }
+      if (!['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(ereignis.key)) return;
+      const alle = links();
+      const jetzt = alle.indexOf(document.activeElement);
+      if (jetzt < 0) {
+        if (ereignis.target !== sprachknopf || !['ArrowDown', 'ArrowUp'].includes(ereignis.key)) return;
+        ereignis.preventDefault();
+        stelle(true, 'erste');
+        return;
+      }
+      ereignis.preventDefault();
+      const ziel = { ArrowDown: jetzt + 1, ArrowUp: jetzt - 1, Home: 0, End: alle.length - 1 }[ereignis.key];
+      alle[(ziel + alle.length) % alle.length].focus();
+    });
+    huelle.addEventListener('focusout', (ereignis) => {
+      if (offen() && !huelle.contains(ereignis.relatedTarget)) stelle(false);
+    });
+    document.addEventListener('click', (ereignis) => {
+      if (offen() && !huelle.contains(ereignis.target)) stelle(false);
+    });
   }
 </script>

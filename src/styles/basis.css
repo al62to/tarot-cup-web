@@ -152,15 +152,27 @@ html[data-sprachhinweis="es"] .sprachhinweis[data-fuer="es"] { display: flex; }
 .marke-name { font: 600 1.5rem/1 var(--serif); color: var(--creme); white-space: nowrap; }
 /* „Tarot Cup“ bricht nie um (Text.astro und Betont.astro setzen den Namen in diese Klasse). */
 .marke-wort { white-space: nowrap; }
-.menue-liste, .sprachwahl { list-style: none; margin: 0; padding: 0; }
+.menue-liste { list-style: none; margin: 0; padding: 0; }
 .menue-liste a { position: relative; display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; color: var(--hell-gedaempft); text-decoration: none; }
 .menue-liste a:hover { color: var(--gold); }
 .menue-liste a[aria-current="page"] { color: var(--creme); font-weight: 600; }
-.sprachwahl { display: inline-flex; flex: none; border-radius: 999px; overflow: hidden; box-shadow: inset 0 0 0 1px var(--gold-mittel); }
-.sprachwahl a { display: inline-flex; align-items: center; justify-content: center; min-width: 48px; min-height: 44px; padding: 0 12px; color: var(--hell-gedaempft); font: 600 0.8125rem/1 var(--sans); letter-spacing: 0.04em; text-decoration: none; }
-.sprachwahl a:hover { background: var(--gold-fein); color: var(--creme); }
-.sprachwahl a[aria-current="true"] { background: var(--gold); color: var(--espresso); }
-.sprachwahl a:focus-visible { outline-offset: -3px; border-radius: 999px; }
+/* Sprachwahl (AP-W6): Knopf mit Weltkugel und Eigenname der Sprache, darunter die Liste (über dem Inhalt, der Kopf
+   verschiebt sich nicht). Grundlage <details>/<summary>; mit JavaScript ein Knopf mit derselben Gestalt. */
+.sprachwahl { position: relative; flex: none; }
+.sprachwahl-knopf { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin: 0; padding: 0 14px 0 12px; border: 0; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--gold-mittel); background: transparent; color: var(--hell-gedaempft); font: 600 0.875rem/1 var(--sans); list-style: none; white-space: nowrap; cursor: pointer; }
+.sprachwahl-knopf::-webkit-details-marker { display: none; }
+.sprachwahl-knopf:hover { background: var(--gold-fein); color: var(--creme); }
+.sprachwahl-knopf svg { flex: none; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.sprachwahl-kugel { width: 18px; height: 18px; stroke: var(--gold); stroke-width: 1.4; }
+.sprachwahl-pfeil { width: 12px; height: 12px; stroke: currentColor; stroke-width: 1.8; }
+.sprachwahl[open] .sprachwahl-pfeil, .sprachwahl-knopf[aria-expanded="true"] .sprachwahl-pfeil { transform: rotate(180deg); }
+.sprachwahl-liste { position: absolute; top: calc(100% + 8px); right: 0; z-index: 60; width: max-content; min-width: 100%; max-width: calc(100vw - 2 * var(--rand-seite)); margin: 0; padding: 6px; list-style: none; border: 1px solid var(--gold-mittel); border-radius: 14px; background: var(--kaffee); box-shadow: 0 16px 40px rgb(0 0 0 / 0.45); }
+.sprachwahl-liste[hidden] { display: none; }
+.sprachwahl-liste a { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 44px; padding: 0 14px; border-radius: 9px; color: var(--hell-gedaempft); font: 500 0.9375rem/1.2 var(--sans); text-decoration: none; }
+.sprachwahl-liste a:hover { background: var(--gold-fein); color: var(--creme); }
+.sprachwahl-liste a[aria-current="true"] { color: var(--gold); font-weight: 600; }
+.sprachwahl-liste a[aria-current="true"]::after { content: ""; flex: none; width: 10px; height: 5px; margin-top: -3px; border-left: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); }
+.sprachwahl-liste a:focus-visible { outline-offset: -3px; }
 .menue-knopf { display: none; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px 0 12px; border: 1px solid var(--gold-mittel); border-radius: 999px; background: transparent; color: var(--creme); font: 600 0.9375rem/1 var(--sans); cursor: pointer; }
 .menue-knopf svg { width: 20px; height: 20px; }
 .menue-knopf .z-zu, .menue-knopf[aria-expanded="true"] .z-auf { display: none; }
@@ -178,6 +190,7 @@ html[data-sprachhinweis="es"] .sprachhinweis[data-fuer="es"] { display: flex; }
   .js .menue-liste a[aria-current="page"] { color: var(--gold); }
   .js .menue-liste a[aria-current="page"]::after { content: ""; flex: none; width: 6px; height: 6px; margin-left: 12px; border-radius: 50%; background: var(--gold); }
   .js .menue .sprachwahl { align-self: flex-start; }
+  .sprachwahl-liste { left: 0; right: auto; }
   .js .menue .kopf-app { min-height: 52px; font-size: 1rem; }
   html:not(.js) .kopf-innen { flex-wrap: wrap; padding-bottom: 12px; }
   html:not(.js) .menue { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; width: 100%; }

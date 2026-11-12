@@ -362,6 +362,8 @@ export function pruefeBau(ordner, { still = false } = {}) {
     const rest = html
       .replace(/<(script|style|title)\b[\s\S]*?<\/\1>/g, ' ')
       .replace(/<span lang="[^"]+">[^<]*<\/span>/g, ' ')
+      // Links der Sprachwahl tragen lang selbst (AP-W6).
+      .replace(/<a\b[^>]*\slang="[^"]+"[^>]*>[^<]*<\/a>/g, ' ')
       .replace(/<[^>]+>/g, ' ');
     for (const { text } of tuerkisch) {
       const stelle = rest.indexOf(text);
