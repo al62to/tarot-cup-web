@@ -29,6 +29,11 @@ import { dirname, join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SEITEN } from '../src/daten/seiten.mjs';
 import { seite, store, suche } from '../src/daten/seite.mjs';
+import { ANGEBOT } from '../src/daten/strukturiert.mjs';
+
+// Das eine erlaubte Angebot der App in JSON-LD (AP-21: Preis 0, nur mit öffentlichem Store). Genau diese Zeichenfolge
+// nimmt die Prüfung auf Preis und Gratis aus; jede andere Form von offers oder price bleibt ein Befund.
+const ANGEBOT_TEXT = store.oeffentlich ? `"offers":${JSON.stringify(ANGEBOT)}` : null;
 import { GESPERRT } from '../src/daten/karten.mjs';
 import { begriffe } from '../src/daten/sprachen.mjs';
 import { OG_LOCALE, STANDARD_SPRACHE } from '../src/daten/adressen.mjs';
@@ -129,7 +134,8 @@ export function pruefeBau(ordner, { still = false } = {}) {
     if (!/\.(html|txt|xml)$/.test(datei)) continue;
     const ohne = datei.endsWith('.html') ? ohneRechtstext(inhalt) : inhalt;
     // E-Mail-Adresse als HTML-Entitäten zählt nicht als Text.
-    for (const fund of ohne.matchAll(MUSTER.preis)) melde(datei, '2 Preis/Gratis', `„${fund[0]}“ in „${umgebung(ohne, fund.index)}“`);
+    const ohneAngebot = ANGEBOT_TEXT ? ohne.replaceAll(ANGEBOT_TEXT, '') : ohne;
+    for (const fund of ohneAngebot.matchAll(MUSTER.preis)) melde(datei, '2 Preis/Gratis', `„${fund[0]}“ in „${umgebung(ohneAngebot, fund.index)}“`);
     for (const fund of ohne.matchAll(MUSTER.kiGross)) melde(datei, '3 KI', `„${fund[0]}“ in „${umgebung(ohne, fund.index)}“`);
     for (const fund of ohne.matchAll(MUSTER.ki)) melde(datei, '3 KI', `„${fund[0]}“ in „${umgebung(ohne, fund.index)}“`);
     for (const fund of inhalt.matchAll(MUSTER.emoji)) melde(datei, 'Emoji', `„${fund[0]}“ in „${umgebung(inhalt, fund.index)}“`);
@@ -249,7 +255,8 @@ export function pruefeBau(ordner, { still = false } = {}) {
         typen.push(daten['@type']);
         jsonLdAnzahl++;
         for (const fund of pruefeSchema(daten, eintrag.sprache)) melde(datei, '10 JSON-LD schema.org', fund);
-        const text = JSON.stringify(daten);
+        let text = JSON.stringify(daten);
+        if (ANGEBOT_TEXT && daten['@type'] === 'MobileApplication') text = text.replace(ANGEBOT_TEXT, '');
         if (/"(offers|price|priceCurrency|aggregateRating|review|isAccessibleForFree|sameAs)"/.test(text)) melde(datei, 'JSON-LD verbotenes Feld', text.match(/"(offers|price|priceCurrency|aggregateRating|review|isAccessibleForFree|sameAs)"/)[1]);
       } catch (fehler) {
         melde(datei, 'JSON-LD ungültig', fehler.message);

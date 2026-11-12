@@ -1,18 +1,21 @@
 ---
 // Weg zur App: Ist die App öffentlich, das offizielle Abzeichen von Google Play (lokale Datei, unverändert, Link mit
-// Kennung des Orts). Solange sie nicht öffentlich ist, rendert der Storeknopf nichts, auch keinen Platzhalter
-// (Vorgabe AP-W1: die Abzeichen kommen erst mit der Produktion).
+// Kennung des Orts und hl der Sprache). Solange sie nicht öffentlich ist, rendert der Storeknopf nichts, auch keinen
+// Platzhalter. Vorgaben von Google (Partner Marketing Hub): Höhe mindestens 28 px, freier Raum rundum mindestens ein
+// Viertel der Höhe; "hoehe" setzt beides (Stile .store in src/styles/basis.css). Orte: Titelbild der Startseite (kopf),
+// Fußzeile jeder Seite (fuss), /app/ (kurzlink).
 import { store, storeLink } from '../daten/seite.mjs';
 import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
 
-const { sprache, ort, klasse } = Astro.props;
+const { sprache, ort, klasse, hoehe = 64 } = Astro.props;
+if (hoehe < 28) throw new Error(`Abzeichen von Google Play kleiner als 28 px: ${hoehe}`);
 const T = oberflaeche[sprache].store;
 const abzeichen = store.abzeichen[sprache];
 ---
 {store.oeffentlich && (
-  <div class:list={['store', klasse]}>
-    <a class="store-abzeichen" href={storeLink(ort, sprache)} rel="noopener">
-      <img src={abzeichen.pfad} width={abzeichen.breite} height={abzeichen.hoehe} alt={T.abzeichenAlt} loading="lazy" decoding="async" />
+  <div class:list={['store', klasse]} style={`--abzeichen-hoehe: ${hoehe}px`}>
+    <a class="store-abzeichen" href={storeLink(ort, sprache)} rel="noopener" hreflang={sprache}>
+      <img src={abzeichen.pfad} width={abzeichen.breite} height={abzeichen.hoehe} alt={T.abzeichenAlt} loading={ort === 'kopf' ? 'eager' : 'lazy'} decoding="async" />
     </a>
   </div>
 )}

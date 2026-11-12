@@ -145,7 +145,7 @@ export const oberflaeche = {
     store: {
       bald: 'Yakında Google Play’de',
       ansehen: 'Google Play’de incele',
-      abzeichenAlt: 'Google Play’den alın',
+      abzeichenAlt: 'Google Play’den indirin',
     },
     app: {
       metaTitel: 'Tarot Cup’ı indir: Android uygulaması',

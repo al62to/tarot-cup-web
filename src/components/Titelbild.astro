@@ -1,8 +1,9 @@
 ---
 // Titelbild der Startseite nach Entwurf 9.1 (design/reihe9/WebNeu.dc.html), dazu das Zahlenband auf demselben dunklen
 // Grund. Espresso mit leichter Körnung (eine kleine SVG-Kachel als Hintergrund, kein großes Bild) und warmem Licht.
-// Links: Zeile, große Überschrift (Hervorhebung *…* aus den Textdaten kursiv in Gold), Absatz, „Bald bei Google Play“
-// (Schalter store.oeffentlich: erst dann ein Link) und der Zweitknopf zur Anleitung.
+// Links: Zeile, große Überschrift (Hervorhebung *…* aus den Textdaten kursiv in Gold), Absatz, das offizielle Abzeichen
+// von Google Play (Schalter store.oeffentlich, seit AP-21; vorher „Bald bei Google Play“ ohne Link) und der Zweitknopf
+// zur Anleitung.
 // Rechts: zwei gefächerte Kartenrückseiten vor langsam drehenden goldenen Ringen, davor die Karte zum Umdrehen. Mit
 // JavaScript wird sie zum Knopf: Antippen dreht sie um (3D-Drehung, bei reduzierter Bewegung ohne Drehung) und zeigt
 // eine Originalkarte aus TITELKARTEN, zuerst den Magier; nochmal antippen dreht sie zurück, danach kommt die nächste.
@@ -12,7 +13,8 @@ import Betont from './Betont.astro';
 import Kartenbild from './Kartenbild.astro';
 import Text from './Text.astro';
 import { GESPERRT, TITELKARTEN } from '../daten/karten.mjs';
-import { store, storeLink } from '../daten/seite.mjs';
+import Storeknopf from './Storeknopf.astro';
+import { store } from '../daten/seite.mjs';
 import { pfadVon } from '../daten/seiten.mjs';
 import appDaten from '../daten/app_daten.json' with { type: 'json' };
 import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
@@ -36,10 +38,7 @@ const zeileTeile = kopf.zeile.split(/(Android)/);
         <Text text={kopf.text} klasse="titel-absatz" />
         <div class="titel-knoepfe">
           {store.oeffentlich ? (
-            <a class="titel-knopf titel-knopf-hell" href={storeLink('kopf', sprache)} rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="2.5" width="12" height="19" rx="2.5" /><path d="M10.5 18.5h3" /></svg>
-              <span>{kopf.knopf}</span>
-            </a>
+            <Storeknopf sprache={sprache} ort="kopf" klasse="titel-store" hoehe={56} />
           ) : (
             <p class="titel-knopf titel-knopf-hell titel-bald">
               <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="2.5" width="12" height="19" rx="2.5" /><path d="M10.5 18.5h3" /></svg>

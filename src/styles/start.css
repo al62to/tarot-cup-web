@@ -26,7 +26,9 @@
 /* Ein Satz je Zeile; nur ein Satz, der allein zu lang ist, bricht (ausgewogen) um. */
 .titel-satz { display: block; text-wrap: balance; }
 .titel-absatz { max-width: 34rem; margin: 0; font-size: 1.125rem; line-height: 1.65; color: var(--hell-gedaempft); }
-.titel-knoepfe { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 4px; }
+.titel-knoepfe { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 16px; margin-top: 4px; }
+/* Abzeichen im Titelbild: 56 px hoch wie der Zweitknopf, freier Raum 14 px (ein Viertel) über den Abstand der Knöpfe. */
+.titel-store { justify-content: flex-start; margin-block: 0; }
 .titel-knopf { display: inline-flex; align-items: center; gap: 10px; min-height: 56px; margin: 0; padding: 0 22px; border: 1px solid transparent; border-radius: 14px; font: 600 0.9375rem/1.2 var(--sans); text-decoration: none; }
 .titel-knopf svg { flex: none; width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 /* Solange die App nicht öffentlich ist: dieselbe helle Fläche, aber ohne Link (ein Absatz, kein Knopf). */

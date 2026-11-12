@@ -16,30 +16,33 @@ export const seite = {
 // Workflow auf GitHub setzt die Variable nie.
 export const suche = { freigegeben: true || process.env.SUCHE_PROBE === '1' };
 
-// Store-Eintrag. Solange "oeffentlich" aus ist, bleibt die Fläche für das Abzeichen leer (Vorgabe 26.10.2026: Abzeichen erst
-// mit der Produktion); der Knopf im Titelbild sagt „Bald bei Google Play“ ohne Link, /app/ nur, dass die App bald kommt.
-// Kein Angebot und kein Preis in den strukturierten Daten.
+// Store-Eintrag. Seit AP-21 (12.11.2026, Tarot Cup 0.5.0 in der Produktion) öffentlich: offizielles Abzeichen je Sprache im
+// Titelbild der Startseite, in der Fußzeile jeder Seite und auf /app/. Ist "oeffentlich" aus, bleibt die Fläche leer und
+// der Knopf im Titelbild sagt „Bald bei Google Play“ ohne Link. In den strukturierten Daten der App nur installUrl und
+// ein Angebot mit Preis 0 (AP-21), sonst kein Preis.
 export const store = {
-  oeffentlich: false,
+  oeffentlich: true,
   adresse: 'https://play.google.com/store/apps/details?id=at.tonc.kaffeesatztarot',
-  // Offizielle Abzeichen von Google, unverändert, als lokale Dateien (public/bilder/abzeichen/). Die Dateien kommen erst
-  // mit der Produktion (Quelle: Google Partner Marketing Hub, „Get it on Google Play Badges“, Deutsch, Türkisch,
-  // Englisch und Spanisch; die Maße von en und es beim Ablegen der Dateien prüfen).
+  // Offizielle Abzeichen von Google, unverändert, als lokale Dateien (public/bilder/abzeichen/). Quelle: Google Partner
+  // Marketing Hub, Google Play, „Lockups, icons, & badges“, Ordner „Get it on Google Play Badges / Digital / png“
+  // (Dateien GetItOnGooglePlay_Badge_Web_color_German, _Turkish, _English, _Spanish.png, Stand 14.11.2025), geladen am
+  // 12.11.2026 (AP-21). Die Dateien haben keinen eingebauten Rand; Vorgaben von Google: Höhe mindestens 28 px, freier Raum
+  // rundum mindestens ein Viertel der Höhe, ruhiger Hintergrund, nichts verändern (Stile in src/styles/basis.css).
   // Ist "oeffentlich" an und eine Datei fehlt, bricht der Bau ab (tools/pruefe_bau.mjs).
   abzeichen: {
-    de: { pfad: '/bilder/abzeichen/google-play-de.png', breite: 646, hoehe: 250 },
-    tr: { pfad: '/bilder/abzeichen/google-play-tr.png', breite: 646, hoehe: 250 },
-    en: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 646, hoehe: 250 },
-    es: { pfad: '/bilder/abzeichen/google-play-es.png', breite: 646, hoehe: 250 },
+    de: { pfad: '/bilder/abzeichen/google-play-de.png', breite: 478, hoehe: 142 },
+    tr: { pfad: '/bilder/abzeichen/google-play-tr.png', breite: 478, hoehe: 142 },
+    en: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
+    es: { pfad: '/bilder/abzeichen/google-play-es.png', breite: 478, hoehe: 142 },
   },
 };
 
 // Links zu Google Play mit Kennung der Herkunft (Muster „Google Play URL Builder“). Die Kennung enthält nichts über
 // Besucher; die Website lädt dafür nichts und speichert nichts. Feste Orte: kopf, start, kurzlink, fuss.
-// Englisch und Spanisch (AP-SPR2) mit hl=en bzw. hl=es, damit Google Play den Eintrag in der Sprache der Seite zeigt;
-// Deutsch und Türkisch wie bisher ohne hl.
+// Jede Sprache mit hl=<sprache> (AP-21), damit Google Play den Eintrag in der Sprache der Seite zeigt. Ohne Sprache
+// (Weiterleitung auf /app/) ohne hl, dann zeigt Google Play die Sprache des Geräts.
 export const STORE_ORTE = ['kopf', 'start', 'kurzlink', 'fuss'];
-const STORE_HL = { en: 'en', es: 'es' };
+const STORE_HL = { de: 'de', tr: 'tr', en: 'en', es: 'es' };
 export function storeLink(ort, sprache) {
   if (!STORE_ORTE.includes(ort)) throw new Error(`Unbekannter Ort für den Link zu Google Play: ${ort}`);
   const hl = STORE_HL[sprache] ? `&hl=${STORE_HL[sprache]}` : '';

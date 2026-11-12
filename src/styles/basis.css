@@ -262,10 +262,13 @@ main { display: block; padding-bottom: 64px; }
 .bildkarte { --gb: 15rem; width: var(--gb); max-width: 100%; margin-inline: auto; }
 .bildkarte-rahmen img { display: block; width: 100%; height: auto; border-radius: 14px; box-shadow: 0 22px 44px -18px rgb(var(--schatten) / 0.45), 0 0 0 1px rgb(var(--schatten) / 0.08); }
 
-/* Abzeichen des Stores (nur, solange die App öffentlich ist). */
-.store { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px; }
+/* Abzeichen des Stores (nur, solange die App öffentlich ist). Vorgabe von Google: freier Raum rundum mindestens ein
+   Viertel der Höhe (--abzeichen-hoehe aus Storeknopf.astro); die Datei selbst hat keinen Rand. */
+.store { --abzeichen-hoehe: 64px; --abzeichen-raum: calc(var(--abzeichen-hoehe) / 4); display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--abzeichen-raum); margin-block: var(--abzeichen-raum); }
 .store-abzeichen { display: inline-flex; min-height: 44px; border-radius: 10px; }
-.store-abzeichen img { display: block; width: auto; height: 64px; }
+.store-abzeichen img { display: block; width: auto; height: var(--abzeichen-hoehe); }
+/* Fußzeile: Abzeichen links unter dem Hinweis. */
+.fuss-store { justify-content: flex-start; margin-block: 0; }
 
 /* Fuß (Entwurf 9.1): Espresso. Oben links der Hinweis und der Teilen-Knopf, rechts die Spalten App, Rechtliches,
    Kontakt und Sprache; darunter der große Schriftzug als Schmuck, ganz unten die Zeile. */

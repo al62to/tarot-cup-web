@@ -29,6 +29,7 @@ const TYPEN = {
   Question: { ober: 'Comment', eigen: ['acceptedAnswer', 'suggestedAnswer', 'answerCount'] },
   Answer: { ober: 'Comment', eigen: [] },
   Intangible: { ober: 'Thing', eigen: [] },
+  Offer: { ober: 'Intangible', eigen: ['price', 'priceCurrency', 'availability', 'category'] },
   ItemList: { ober: 'Intangible', eigen: ['itemListElement', 'numberOfItems', 'itemListOrder'] },
   BreadcrumbList: { ober: 'ItemList', eigen: [] },
   ListItem: { ober: 'Intangible', eigen: ['item', 'position', 'nextItem', 'previousItem'] },

@@ -3,12 +3,14 @@
 // Inhaltsseiten der Teilen-Knopf (Teilen.astro, "teilen" kommt aus Basis.astro). Rechts die Spalten App (So geht's,
 // Fragen, Über), Rechtliches (Datenschutz, Nutzungsbedingungen, Offenlegung, Bildnachweis und Lizenzen), Kontakt
 // (E-Mail, kodiert) und Sprache. Darunter der große Schriftzug „Tarot Cup“ als Schmuck (aria-hidden), ganz unten
-// „Tarot Cup · Zur Unterhaltung.“
+// „Tarot Cup · Zur Unterhaltung.“ Unter dem Hinweis das Abzeichen von Google Play (Storeknopf, nur mit öffentlichem
+// Store; Abstand 14 px zu den Nachbarn, mehr als ein Viertel der Höhe von 48 px).
 // Die Offenlegung gibt es nur auf Deutsch; auf türkischen Seiten heißt der Link „Offenlegung (künye)“; „Offenlegung“
 // trägt lang="de". Der ganze Linktext steht in einem span, weil der Link ein Flex-Element ist und sonst das Leerzeichen
 // vor „(künye)“ verschluckt.
 import Text from './Text.astro';
 import Teilen from './Teilen.astro';
+import Storeknopf from './Storeknopf.astro';
 import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
 import { pfadVon, startPfad } from '../daten/seiten.mjs';
 import { mailtoKodiert, emailKodiert } from '../daten/seite.mjs';
@@ -46,6 +48,7 @@ const kontakt = `<a href="${mailtoKodiert()}">${emailKodiert()}</a>`;
     <div class="fuss-oben">
       <div class="fuss-start">
         <p class="fuss-hinweis">{T.fuss.hinweis}</p>
+        <Storeknopf sprache={sprache} ort="fuss" klasse="fuss-store" hoehe={48} />
         {teilen && <Teilen sprache={sprache} titel={teilen.titel} adresse={teilen.adresse} />}
       </div>
       <div class="fuss-spalten">

@@ -1,13 +1,16 @@
 // Strukturierte Daten (JSON-LD) an einer Stelle, Muster FoodAsu. Überall: WebSite und Organization „Tarot Cup“ als
 // Herausgeber (ohne sameAs, E5; kein persönlicher Name, AP-W3), auf Unterseiten dazu BreadcrumbList (Brotkrumen.astro). Je Seite: Startseite MobileApplication und FAQPage
 // (Auszug), Ratgeber Article mit ItemList und HowTo, So geht's Article, Fragen FAQPage, Über AboutPage.
-// Nicht aufgenommen (E6 und Auftrag): offers, Preis, Bewertungen, isAccessibleForFree, softwareVersion.
+// Nicht aufgenommen (E6 und Auftrag): Bewertungen, isAccessibleForFree, softwareVersion. Seit AP-21 mit öffentlichem Store:
+// installUrl und genau ein Angebot mit Preis 0 (ANGEBOT, tools/pruefe_bau.mjs lässt nur diese Form zu).
 import { seite, store } from './seite.mjs';
 import { standVon } from './stand.mjs';
 
 export const WEBSITE_ID = `${seite.adresse}/#website`;
 export const HERAUSGEBER_ID = `${seite.adresse}/#organisation`;
 export const APP_ID = `${seite.adresse}/#app`;
+// Angebot der App (AP-21): Preis 0, Währung Euro. Genau diese Form erlaubt die Prüfung im Bau.
+export const ANGEBOT = { '@type': 'Offer', price: '0', priceCurrency: 'EUR' };
 
 const KONTEXT = 'https://schema.org';
 const absolut = (pfad) => seite.adresse + pfad;
@@ -51,7 +54,7 @@ export const appDaten = ({ beschreibung, bildschirmfotos }) => ({
   image: absolut('/bilder/app-symbol-512.png'),
   screenshot: bildschirmfotos.map(absolut),
   author: { '@id': HERAUSGEBER_ID },
-  ...(store.oeffentlich ? { installUrl: store.adresse } : {}),
+  ...(store.oeffentlich ? { installUrl: store.adresse, offers: ANGEBOT } : {}),
 });
 
 // Fragen und Antworten als Klartext (Links im Text werden zu ihrem Linktext).
