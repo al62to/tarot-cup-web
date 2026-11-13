@@ -34,15 +34,17 @@ export const store = {
     tr: { pfad: '/bilder/abzeichen/google-play-tr.png', breite: 478, hoehe: 142 },
     en: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
     es: { pfad: '/bilder/abzeichen/google-play-es.png', breite: 478, hoehe: 142 },
-    // AP-23: Bis die offiziellen Abzeichen der acht neuen Sprachen geladen sind, das englische Abzeichen.
-    bs: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
-    hr: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
-    sr: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
-    ro: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
-    pt: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
-    fr: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
-    id: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
-    hi: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
+    // AP-23 (13.11.2026): offizielle Abzeichen der acht neuen Sprachen aus demselben Ordner (_Bosnian, _Croatian, _Serbian,
+    // _Romanian, _Portuguese-Brazil, _French, _Indonesian, _Hindi, Stand 14.11.2025). Für Serbisch bietet Google nur ein
+    // kyrillisches Abzeichen an; es bleibt unverändert, obwohl die Seiten lateinisch geschrieben sind.
+    bs: { pfad: '/bilder/abzeichen/google-play-bs.png', breite: 478, hoehe: 142 },
+    hr: { pfad: '/bilder/abzeichen/google-play-hr.png', breite: 478, hoehe: 142 },
+    sr: { pfad: '/bilder/abzeichen/google-play-sr.png', breite: 478, hoehe: 142 },
+    ro: { pfad: '/bilder/abzeichen/google-play-ro.png', breite: 478, hoehe: 142 },
+    pt: { pfad: '/bilder/abzeichen/google-play-pt.png', breite: 478, hoehe: 142 },
+    fr: { pfad: '/bilder/abzeichen/google-play-fr.png', breite: 478, hoehe: 142 },
+    id: { pfad: '/bilder/abzeichen/google-play-id.png', breite: 478, hoehe: 142 },
+    hi: { pfad: '/bilder/abzeichen/google-play-hi.png', breite: 478, hoehe: 142 },
   },
 };
 
