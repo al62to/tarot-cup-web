@@ -46,6 +46,11 @@
   --tasse-satz: #5A3A26;
   --zeichen-rand: #E2D2B0;
   --zeichen-strich: #6B4A33;
+  /* Traum-Stil der App (AP-T2): Nachtblau, Lavendel für Linien von Mond und Sternen, Text hell mit Lavendel-Hauch. */
+  --traum-nacht: #15122B;
+  --lavendel: #B8A6E8;
+  --lavendel-hell: #DCD3F2;
+  --lavendel-fein: color-mix(in srgb, var(--lavendel) 22%, transparent);
   /* Rollen. */
   --grund: var(--creme);
   --karte: var(--papier);

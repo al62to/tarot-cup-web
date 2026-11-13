@@ -49,10 +49,11 @@ export const store = {
 };
 
 // Links zu Google Play mit Kennung der Herkunft (Muster „Google Play URL Builder“). Die Kennung enthält nichts über
-// Besucher; die Website lädt dafür nichts und speichert nichts. Feste Orte: kopf, start, kurzlink, fuss.
+// Besucher; die Website lädt dafür nichts und speichert nichts. Feste Orte: kopf, start, kurzlink, fuss, traum
+// (Abschnitt Traumdeutung der Startseite, AP-T2).
 // Jede Sprache mit hl=<sprache> (AP-21), damit Google Play den Eintrag in der Sprache der Seite zeigt. Ohne Sprache
 // (Weiterleitung auf /app/) ohne hl, dann zeigt Google Play die Sprache des Geräts.
-export const STORE_ORTE = ['kopf', 'start', 'kurzlink', 'fuss'];
+export const STORE_ORTE = ['kopf', 'start', 'kurzlink', 'fuss', 'traum'];
 const STORE_HL = {
   de: 'de', tr: 'tr', en: 'en', es: 'es', bs: 'bs', hr: 'hr', sr: 'sr', ro: 'ro', pt: 'pt-BR', fr: 'fr', id: 'id', hi: 'hi',
 };

@@ -17,7 +17,7 @@ export const GTM_ADRESSE = 'https://www.googletagmanager.com/gtm.js?id=';
 export const MESS_ID = 'G-DZT3YDP3Q8';
 
 // Orte der Abzeichen von Google Play (Storeknopf) als Wert des Parameters ort beim Ereignis store_klick.
-export const STORE_ORT = { kopf: 'titelbild', fuss: 'fusszeile', kurzlink: 'app_seite' };
+export const STORE_ORT = { kopf: 'titelbild', fuss: 'fusszeile', kurzlink: 'app_seite', traum: 'traumdeutung' };
 
 // Cookies von Google Analytics, die beim Widerruf gelöscht werden (_ga und _ga_<Kennung>).
 export const GA_COOKIES = /^_ga(_.*)?$/;

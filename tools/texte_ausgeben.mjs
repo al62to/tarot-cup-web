@@ -59,6 +59,7 @@ function startseite(x) {
     `<h3>${e(oa(x.koennen.titel))}</h3>`, ...x.vorteile.map((v) => `<p><b>${e(v.titel)}</b><br>${t(v.text)}</p>`),
     `<p><b>${e(x.koennen.ruhe.titel)}</b><br>${e(x.koennen.ruhe.text)}</p><ul>${x.koennen.ruhe.pillen.map((r) => `<li>${e(r.name)} · ${e(r.takt)}</li>`).join('')}</ul>`,
     `<p><b>${e(x.koennen.sprachen.gross)}</b> ${e(x.koennen.sprachen.titel)}<br>${e(x.koennen.sprachen.text)}</p>`,
+    `<h3>${e(x.traum.titel)}</h3>`, p(x.traum.text), `<p>[Google Play]</p>`,
     `<h3>${e(oa(x.ratgeber.titel))}</h3>`, ...x.ratgeber.eintraege.map((r) => `<p><b>${e(r.titel)}</b><br>${t(r.text)} <u>${e(r.link)}</u></p>`),
     `<h3>${e(oa(x.fragen.titel))}</h3><p><small>(die ersten vier Fragen der Seite Fragen)</small></p>`,
     p(fuss.hinweis),

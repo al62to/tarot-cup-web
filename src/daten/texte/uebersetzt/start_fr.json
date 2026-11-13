@@ -166,6 +166,10 @@
    "text": "Dans l’application, ni connexion ni adresse e-mail."
   }
  ],
+ "traum": {
+  "titel": "Interprète ton rêve",
+  "text": "Quelle impression t’a laissée ton rêve, et qu’y as-tu vu ? Dans l’application Tarot Cup, tu choisis cette impression, un domaine de la vie et jusqu’à cinq des 124 symboles de rêve, comme un chat, l’eau ou un pont. Il en résulte une lecture qui raconte ce que la tradition dit de chaque symbole et se termine par un conseil."
+ },
  "ratgeber": {
   "titel": "*Comprendre* le tarot et le marc de café",
   "zeile": "Guide",

@@ -4,6 +4,9 @@
 // der Tassenkarte zum Antippen, der Schaukasten mit einem Handy (Schaukasten.astro), „Was die App kann“ als
 // Kachelraster, zwei Ratgeber-Kacheln (Bild oben in eigenem Bereich, Text darunter, nie überlappend) und häufige
 // Fragen mit Trennlinien. Der Hinweis „Zur Unterhaltung …“ steht seit AP-W2 im Fuß jeder Seite.
+// Nach „Was die App kann“ (AP-T2): eine Kachel zur Traumdeutung im Traum-Stil der App (Nachtblau, Linien von Mond und
+// Sternen in Lavendel in einem eigenen Bildbereich, nie unter dem Text) mit dem Abzeichen von Google Play (Ort „traum“);
+// solange die App nicht öffentlich ist, wie im Titelbild „Bald bei Google Play“ ohne Link.
 // Hervorhebungen (*…*) in Überschriften kommen aus den Textdaten (Betont.astro).
 import '../styles/start.css';
 import Basis from '../layouts/Basis.astro';
@@ -13,6 +16,8 @@ import Schaukasten from './Schaukasten.astro';
 import Tassenkarte from './Tassenkarte.astro';
 import Text from './Text.astro';
 import Titelbild from './Titelbild.astro';
+import Storeknopf from './Storeknopf.astro';
+import { store } from '../daten/seite.mjs';
 import { start } from '../daten/texte/start.mjs';
 import { fragen } from '../daten/texte/fragen.mjs';
 import { pfadVon } from '../daten/seiten.mjs';
@@ -99,6 +104,34 @@ const SYMBOL = {
           <Text text={T.koennen.sprachen.text} />
         </div>
       </article>
+    </div>
+  </section>
+
+  <section class="traum innen" aria-labelledby="traum-titel">
+    <div class="traum-kachel flaeche-dunkel">
+      <div class="traum-bild" aria-hidden="true">
+        <svg class="traum-himmel" viewBox="0 0 240 200" focusable="false">
+          <circle cx="120" cy="100" r="84" class="traum-bahn" />
+          <circle cx="120" cy="100" r="64" class="traum-bahn traum-bahn-fein" />
+          <path d="M136 52a50 50 0 1 0 0 96a40 40 0 1 1 0-96z" class="traum-mond" />
+          <path d="M184 46l3 10l10 3l-10 3l-3 10l-3-10l-10-3l10-3z" class="traum-stern" />
+          <path d="M58 140l2 6l6 2l-6 2l-2 6l-2-6l-6-2l6-2z" class="traum-stern" />
+          <path d="M196 132l1.6 5l5 1.6l-5 1.6l-1.6 5l-1.6-5l-5-1.6l5-1.6z" class="traum-stern" />
+          <circle cx="44" cy="62" r="1.8" class="traum-punkt" />
+          <circle cx="212" cy="96" r="1.4" class="traum-punkt" />
+          <circle cx="150" cy="176" r="1.6" class="traum-punkt" />
+          <circle cx="86" cy="30" r="1.2" class="traum-punkt" />
+        </svg>
+      </div>
+      <div class="traum-text">
+        <h2 id="traum-titel" class="traum-titel">{T.traum.titel}</h2>
+        <Text text={T.traum.text} klasse="traum-absatz" />
+        {store.oeffentlich ? (
+          <Storeknopf sprache={sprache} ort="traum" klasse="traum-store" hoehe={56} />
+        ) : (
+          <p class="titel-knopf traum-bald">{T.kopf.bald}</p>
+        )}
+      </div>
     </div>
   </section>
 

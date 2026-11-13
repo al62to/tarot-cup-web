@@ -162,6 +162,36 @@ button.schau-eintrag:hover { border-color: var(--gold-mittel); }
 .bento-kachel .bento-sprachen { font: 500 4rem/0.9 var(--serif); white-space: nowrap; }
 .bento-sprachen span { color: var(--kupfer-hell); }
 
+/* ---------- Traumdeutung: eine Kachel im Traum-Stil der App (AP-T2). Mond und Sterne als feine Linien in Lavendel in
+   einem eigenen Bildbereich (am Handy oben, breit links), nie unter dem Text; ein einziges kleines SVG ohne Filter und
+   ohne Bewegung, damit das Scrollen ruhig bleibt. Kontraste auf Nachtblau: Titel 16:1, Absatz 12,7:1. ---------- */
+.traum { padding-top: clamp(24px, 3vw, 40px); padding-bottom: clamp(8px, 2vw, 16px); }
+.traum-kachel { display: flex; flex-wrap: wrap; overflow: hidden; border-radius: 28px; background: var(--traum-nacht); color: var(--creme); }
+.traum-bild {
+  flex: 1 1 15rem; min-width: 0; min-height: 180px; display: flex; align-items: center; justify-content: center; padding: 24px;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--lavendel) 16%, transparent), transparent);
+}
+.traum-himmel { width: 100%; max-width: 240px; height: auto; fill: none; stroke: var(--lavendel); stroke-linecap: round; stroke-linejoin: round; }
+.traum-bahn { stroke-width: 0.6; opacity: 0.45; }
+.traum-bahn-fein { stroke-dasharray: 1 5; opacity: 0.6; }
+.traum-mond { stroke-width: 1.4; fill: var(--lavendel-fein); }
+.traum-stern { stroke-width: 1; fill: var(--lavendel); fill-opacity: 0.35; }
+.traum-punkt { stroke: none; fill: var(--lavendel); opacity: 0.8; }
+.traum-text { flex: 999 1 26rem; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 18px; padding: clamp(28px, 4vw, 48px) clamp(24px, 4vw, 56px) clamp(32px, 4vw, 48px); }
+/* Bei großer Schrift höchstens 12vw, damit kein Wort ohne Trennstrich bricht (wie .start-titel) und der Titel am
+   Handy nicht kleiner als der Absatz wird. */
+.traum-titel { font: 500 min(clamp(2.25rem, 1.5rem + 2vw, 3.25rem), 12vw)/1.05 var(--serif); color: var(--creme); }
+.traum-absatz { max-width: 40rem; margin: 0; font-size: 1.0625rem; line-height: 1.7; color: var(--lavendel-hell); }
+.traum-store { justify-content: flex-start; margin-block: 4px 0; }
+.traum-bald { background: var(--lavendel-fein); color: var(--creme); }
+@media (min-width: 48rem) {
+  .traum-bild { border-right: 1px solid var(--lavendel-fein); }
+}
+@media (max-width: 47.99rem) {
+  .traum-bild { flex-basis: 100%; min-height: 0; padding: 20px 24px 0; }
+  .traum-himmel { max-width: 180px; }
+}
+
 /* ---------- Ratgeber: zwei Kacheln, die ganze Kachel ist der Link; Bild oben in eigenem Bereich, Text darunter ---------- */
 .ratgeber-teil { display: flex; flex-direction: column; gap: 32px; padding-top: clamp(40px, 5vw, 56px); padding-bottom: clamp(64px, 8vw, 96px); }
 .rk-raster { display: flex; flex-wrap: wrap; gap: 16px; }

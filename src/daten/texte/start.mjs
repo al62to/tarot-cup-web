@@ -97,6 +97,12 @@ export const start = {
       { id: 'internet', titel: 'Ohne Internet', text: 'Die App hat keine Erlaubnis, ins Internet zu gehen.' },
       { id: 'konto', titel: 'Ohne Konto', text: 'In der App kein Anmelden und keine E-Mail-Adresse.' },
     ],
+    // Abschnitt Traumdeutung mit dem Weg zur App (AP-T2 Teil 3). Wortlaut fertig und geprüft aus
+    // deutung-unterlagen/arbeit/apt2/store_web_texte.json (web_titel, web_text), nicht umformulieren.
+    traum: {
+      titel: 'Deinen Traum deuten',
+      text: 'Wie hat sich dein Traum angefühlt, und was kam darin vor? In der App Tarot Cup wählst du das Gefühl, einen Lebensbereich und bis zu fünf von 124 Traumsymbolen, etwa Katze, Wasser oder Brücke. Daraus entsteht eine Deutung, die erzählt, was die Überlieferung zu jedem Symbol sagt, und dir zum Schluss einen Rat mitgibt.',
+    },
     ratgeber: {
       titel: 'Tarot und Kaffeesatz *verstehen*',
       zeile: 'Ratgeber',
@@ -212,6 +218,10 @@ export const start = {
       { id: 'internet', titel: 'İnternetsiz', text: 'Uygulamanın internete bağlanma izni yok.' },
       { id: 'konto', titel: 'Üyeliksiz', text: 'Uygulamada kayıt yok, e-posta adresi de gerekmez.' },
     ],
+    traum: {
+      titel: 'Rüyanı sembolleriyle yorumla',
+      text: 'Rüyan sende nasıl bir his bıraktı, içinde neler vardı? Tarot Cup uygulamasında bu hissi, bir hayat alanını ve 124 rüya sembolünden en fazla beşini seçersin: kedi, su ya da köprü gibi. Karşına her sembolün gelenekte neye yorulduğunu anlatan ve sonunda küçük bir tavsiye de veren bir yorum çıkar.',
+    },
     ratgeber: {
       titel: 'Tarotu ve kahve falını *yakından* tanı',
       zeile: 'Rehber',
