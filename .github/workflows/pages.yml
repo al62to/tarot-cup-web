@@ -35,6 +35,24 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - run: npm run build
       - run: npm run pruefen
+      # IndexNow (AP-T2): Adressen, deren lastmod am Tag des vorigen Stands von main oder später liegt (beim ersten
+      # Lauf oder von Hand gestartet: alle). Gemeldet wird erst nach dem Veröffentlichen (Aufgabe indexnow).
+      - if: github.ref == 'refs/heads/main'
+        env:
+          VORHER: ${{ github.event.before }}
+        run: |
+          if [ -n "$VORHER" ] && [ "$VORHER" != "0000000000000000000000000000000000000000" ] && git cat-file -e "$VORHER^{commit}" 2>/dev/null; then
+            SEIT=$(git log -1 --format=%cs "$VORHER")
+          else
+            SEIT=alle
+          fi
+          node tools/indexnow.mjs liste dist "$SEIT" indexnow_adressen.txt
+      - if: github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: indexnow
+          path: indexnow_adressen.txt
+          retention-days: 3
       - if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
@@ -53,3 +71,19 @@ jobs:
     steps:
       - id: seite
         uses: actions/deploy-pages@v4
+
+  # Meldet die geänderten Adressen an IndexNow, erst wenn die Seite veröffentlicht ist. Ein Fehler hier lässt die
+  # veröffentlichte Seite unberührt.
+  indexnow:
+    if: github.ref == 'refs/heads/main'
+    needs: veroeffentlichen
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: actions/download-artifact@v4
+        with:
+          name: indexnow
+      - run: node tools/indexnow.mjs senden indexnow_adressen.txt
