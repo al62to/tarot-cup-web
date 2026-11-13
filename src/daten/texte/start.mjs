@@ -7,7 +7,7 @@
 export const start = {
   de: {
     metaTitel: 'Kaffeesatz lesen und Tarot legen per App | Tarot Cup',
-    metaBeschreibung: 'Mit der Android-App Tarot Cup liest du Kaffeesatz selbst mit 80 Zeichen und legst Tarot mit 78 Karten, in vier Sprachen und ohne Internet.',
+    metaBeschreibung: 'Mit der Android-App Tarot Cup liest du Kaffeesatz selbst mit 80 Zeichen und legst Tarot mit 78 Karten, in zwölf Sprachen und ohne Internet.',
     ogTitel: 'Kaffeesatz lesen. Tarot legen.',
     kopf: {
       zeile: 'Tarot Cup · App für Android',
@@ -31,13 +31,13 @@ export const start = {
       liste: [
         { zahl: '78', text: 'Tarotkarten, im Lexikon aufrecht und umgekehrt' },
         { zahl: '80', text: 'Zeichen für den Kaffeesatz, mit Suche und Kategorien' },
-        { zahl: '4', text: 'Sprachen: Deutsch, Türkisch, Englisch und Spanisch' },
+        { zahl: '12', text: 'Sprachen, von Deutsch und Türkisch bis Französisch und Hindi' },
         { zahl: '0', text: 'Konten, kein Internet nötig' },
       ],
     },
     wasIst: {
       titel: 'Was ist Tarot Cup?',
-      text: 'Tarot Cup ist eine App für Android, mit der du Tarotkarten legst und den Kaffeesatz in deiner Tasse selbst liest. Es gibt sie auf Deutsch, Türkisch, Englisch und Spanisch; sie startet in der Sprache deines Handys, und umstellen kannst du in der App. Sie ist für Menschen ab 16 Jahren gedacht und läuft ohne Internet und ohne Konto. Die Deutungen folgen alten Traditionen und sind zur Unterhaltung gedacht.',
+      text: 'Tarot Cup ist eine App für Android, mit der du Tarotkarten legst und den Kaffeesatz in deiner Tasse selbst liest. Es gibt sie in zwölf Sprachen; sie startet in der Sprache deines Handys, und umstellen kannst du in der App. Sie ist für Menschen ab 16 Jahren gedacht und läuft ohne Internet und ohne Konto. Die Deutungen folgen alten Traditionen und sind zur Unterhaltung gedacht.',
     },
     tasse: {
       zeile: 'Das Ritual',
@@ -88,7 +88,8 @@ export const start = {
           { name: 'Liebe', takt: 'wöchentlich' },
         ],
       },
-      sprachen: { gross: 'DE / TR / EN / ES', titel: 'Deutsch, Türkisch, Englisch, Spanisch', text: 'Die ganze App in jeder der vier Sprachen.' },
+      // AP-23: zwölf Sprachen; die große Zeile zeigt zwei Schriften (lateinisch und Devanagari), gleich in allen Sprachen
+      sprachen: { gross: 'A / अ', titel: 'Zwölf Sprachen', text: 'Deutsch, Türkisch, Englisch, Spanisch, Bosnisch, Kroatisch, Serbisch, Rumänisch, Portugiesisch, Französisch, Indonesisch und Hindi: die ganze App in jeder Sprache.' },
     },
     // Texte unverändert aus AP-W1; "id" ordnet sie den Kacheln zu.
     vorteile: [
@@ -130,7 +131,7 @@ export const start = {
 
   tr: {
     metaTitel: 'Kahve falı ve tarot uygulaması | Tarot Cup',
-    metaBeschreibung: 'Tarot Cup bir Android uygulaması: 80 işaretle kahve falını kendin yorumla, 78 kartla tarot aç. Dört dilde, internetsiz ve üyeliksiz.',
+    metaBeschreibung: 'Tarot Cup Android uygulamasıyla kahve falını 80 işaretle kendin yorumlar, 78 kartla tarot açarsın; on iki dilde ve internet olmadan.',
     ogTitel: 'Kahve falı ve tarot, kendi elinle',
     kopf: {
       zeile: 'Tarot Cup · Android uygulaması',
@@ -151,13 +152,13 @@ export const start = {
       liste: [
         { zahl: '78', text: 'tarot kartı, sözlükte düz ve ters anlamıyla' },
         { zahl: '80', text: 'kahve falı işareti, arama ve kategorilerle' },
-        { zahl: '4', text: 'dil: Türkçe, Almanca, İngilizce ve İspanyolca' },
+        { zahl: '4', text: 'Dil, Almanca ve Türkçeden Fransızca ve Hintçeye kadar' },
         { zahl: '0', text: 'üyelik adımı, internet de gerekmez' },
       ],
     },
     wasIst: {
       titel: 'Tarot Cup nedir?',
-      text: 'Tarot Cup, tarot kartı açmak ve fincanındaki telveyi kendin yorumlamak için hazırlanmış bir Android uygulaması. Türkçe, Almanca, İngilizce ve İspanyolca kullanılabilir; telefonunun dilinde açılır, dili uygulamanın içinden değiştirebilirsin. 16 yaşını doldurmuş herkes için; internet ve üyelik gerektirmez. Yorumlar eski geleneklere dayanır ve eğlence amaçlıdır.',
+      text: 'Tarot Cup, tarot kartları açtığın ve fincanındaki kahve telvesini kendin okuduğun bir Android uygulamasıdır. On iki dilde sunulur; telefonunun dilinde açılır ve dili uygulama içinden değiştirebilirsin. 16 yaş ve üzeri kişiler için tasarlanmıştır, internet ve hesap olmadan çalışır. Yorumlar eski geleneklere dayanır ve eğlence amaçlıdır.',
     },
     tasse: {
       zeile: 'Ritüel',
@@ -204,7 +205,7 @@ export const start = {
           { name: 'Aşk', takt: 'haftada bir' },
         ],
       },
-      sprachen: { gross: 'TR / DE / EN / ES', titel: 'Türkçe, Almanca, İngilizce, İspanyolca', text: 'Uygulamanın tamamı dört dilde.' },
+      sprachen: { gross: 'A / अ', titel: 'On iki dil', text: 'Almanca, Türkçe, İngilizce, İspanyolca, Boşnakça, Hırvatça, Sırpça, Rumence, Portekizce, Fransızca, Endonezce ve Hintçe: uygulamanın tamamı her dilde.' },
     },
     vorteile: [
       { id: 'bleibt', titel: 'Sende kalır', text: 'Geçmişini ve notlarını uygulama telefonunda saklar. Benim bunlara erişimim yok.' },
@@ -244,8 +245,24 @@ export const start = {
   },
 };
 
-// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+// Übersetzungen (en, es seit AP-SPR2; bs, hr, sr, ro, pt, fr, id, hi seit AP-23): erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
 import startEn from './uebersetzt/start_en.json' with { type: 'json' };
 import startEs from './uebersetzt/start_es.json' with { type: 'json' };
+import startBs from './uebersetzt/start_bs.json' with { type: 'json' };
+import startHr from './uebersetzt/start_hr.json' with { type: 'json' };
+import startSr from './uebersetzt/start_sr.json' with { type: 'json' };
+import startRo from './uebersetzt/start_ro.json' with { type: 'json' };
+import startPt from './uebersetzt/start_pt.json' with { type: 'json' };
+import startFr from './uebersetzt/start_fr.json' with { type: 'json' };
+import startId from './uebersetzt/start_id.json' with { type: 'json' };
+import startHi from './uebersetzt/start_hi.json' with { type: 'json' };
 start.en = startEn;
 start.es = startEs;
+start.bs = startBs;
+start.hr = startHr;
+start.sr = startSr;
+start.ro = startRo;
+start.pt = startPt;
+start.fr = startFr;
+start.id = startId;
+start.hi = startHi;

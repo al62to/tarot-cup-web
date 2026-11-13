@@ -1,204 +1,204 @@
 {
- "metaTitel": "Lectura de posos de café y tarot en la app | Tarot Cup",
- "metaBeschreibung": "Con Tarot Cup para Android lees los posos del café con 80 símbolos y tiras el tarot con 78 cartas, en cuatro idiomas y sin Internet.",
- "ogTitel": "Lee los posos del café. Tira las cartas.",
- "kopf": {
-  "zeile": "Tarot Cup · App para Android",
-  "zeilen": [
-   "Lee los posos del café *por tu cuenta*.",
-   "Tira las cartas *con calma*."
-  ],
-  "text": "Elige los símbolos de tu taza, marca en el mapa de la taza dónde están y lee lo que pueden significar. O tira las cartas del tarot con calma. La app funciona sin Internet y sin cuenta.",
-  "knopf": "Ver en Google Play",
-  "bald": "Próximamente en Google Play",
-  "anleitung": "Cómo funciona",
-  "karte": {
-   "tipp": "Toca la carta y dale la vuelta.",
-   "satz": "Su significado, con la carta al derecho e invertida, está en el Diccionario de la app.",
-   "umdrehen": "Dar la vuelta a la carta",
-   "zurueck": "Volver a dar la vuelta a la carta «{name}»"
-  }
- },
- "zahlen": {
-  "aria": "Tarot Cup en cifras",
-  "liste": [
-   {
-    "zahl": "78",
-    "text": "Cartas de tarot, al derecho e invertidas en el Diccionario"
-   },
-   {
-    "zahl": "80",
-    "text": "Símbolos para los posos del café, con búsqueda y categorías"
-   },
-   {
-    "zahl": "4",
-    "text": "Idiomas, alemán, turco, inglés y español"
-   },
-   {
-    "zahl": "0",
-    "text": "Cuentas, no se necesita Internet"
-   }
-  ]
- },
- "wasIst": {
-  "titel": "¿Qué es Tarot Cup?",
-  "text": "Tarot Cup es una app para Android con la que tiras cartas de tarot y lees tú los posos del café de tu taza. Está disponible en español, inglés, alemán y turco; empieza en el idioma de tu teléfono y puedes cambiarlo en la app. Está pensada para personas a partir de 16 años y funciona sin Internet y sin cuenta. Las lecturas siguen antiguas tradiciones y tienen fines de entretenimiento."
- },
- "tasse": {
-  "zeile": "El ritual",
-  "titel": "Así lees *tu taza*",
-  "schritte": [
-   "Piensa en tu pregunta y termina tu café turco. Pon la taza boca abajo sobre el platillo y deja que se enfríe. Tu pregunta te la guardas; la app no te la pide.",
-   "Gira la taza con calma y busca las formas entre los 80 símbolos.",
-   "Marca en el mapa de la taza dónde está cada símbolo. Con tres o más símbolos hay una lectura completa."
-  ],
-  "link": {
-   "text": "Más sobre la lectura de los posos del café",
-   "ziel": "/es/lectura-de-posos-de-cafe/"
-  }
- },
- "tassenkarte": {
-  "titel": "El mapa de la taza",
-  "hinweis": "Elige una zona",
-  "gruppe": "Elige una zona de la taza",
-  "bereiche": [
-   {
-    "bereich": "rand",
-    "name": "Borde",
-    "bedeutung": "lo cercano"
-   },
-   {
-    "bereich": "mitte",
-    "name": "Zona media",
-    "bedeutung": "ahora"
-   },
-   {
-    "bereich": "boden",
-    "name": "Fondo",
-    "bedeutung": "lo más lejano"
-   },
-   {
-    "bereich": "henkelseite",
-    "name": "Lado del asa",
-    "bedeutung": "tú, tu hogar"
-   },
-   {
-    "bereich": "gegenueber",
-    "name": "Lado opuesto",
-    "bedeutung": "el mundo exterior"
-   },
-   {
-    "bereich": "untertasse",
-    "name": "Platillo",
-    "bedeutung": "tu deseo"
-   }
-  ]
- },
- "schaukasten": {
-  "titel": "Así se ve *Tarot Cup*",
-  "gruppe": "Selecciona una pantalla",
-  "eintraege": [
-   {
-    "foto": "01_start_tageskarte",
-    "titel": "Carta del día",
-    "text": "Una carta para el día, renovada cada día."
-   },
-   {
-    "foto": "03_deutung_drei_karten",
-    "titel": "Tres cartas",
-    "text": "Pasado, Presente y Futuro, con una lectura que une las tres."
-   },
-   {
-    "foto": "05_kaffee_tasse",
-    "titel": "Mapa de la taza",
-    "text": "Muestra dónde se encuentran tus símbolos en la taza."
-   }
-  ]
- },
- "koennen": {
-  "titel": "Lo que la app *puede hacer*",
-  "ruhe": {
-   "titel": "Con calma, no sin fin",
-   "text": "Cada tirada tiene su ritmo. Entre medias, las cartas descansan.",
-   "pillen": [
-    {
-     "name": "Carta del día",
-     "takt": "cada día"
-    },
-    {
-     "name": "Sí o no",
-     "takt": "cada día"
-    },
-    {
-     "name": "Tres cartas",
-     "takt": "cada 3 días"
-    },
-    {
-     "name": "Leer por tu cuenta",
-     "takt": "cada 3 días"
-    },
-    {
-     "name": "Amor",
-     "takt": "una vez por semana"
+  "metaTitel": "Lectura de posos de café y tarot en la app | Tarot Cup",
+  "metaBeschreibung": "Con Tarot Cup para Android lees los posos del café con 80 símbolos y tiras el tarot con 78 cartas, en doce idiomas y sin Internet.",
+  "ogTitel": "Lee los posos del café. Tira las cartas.",
+  "kopf": {
+    "zeile": "Tarot Cup · App para Android",
+    "zeilen": [
+      "Lee los posos del café *por tu cuenta*.",
+      "Tira las cartas *con calma*."
+    ],
+    "text": "Elige los símbolos de tu taza, marca en el mapa de la taza dónde están y lee lo que pueden significar. O tira las cartas del tarot con calma. La app funciona sin Internet y sin cuenta.",
+    "knopf": "Ver en Google Play",
+    "bald": "Próximamente en Google Play",
+    "anleitung": "Cómo funciona",
+    "karte": {
+      "tipp": "Toca la carta y dale la vuelta.",
+      "satz": "Su significado, con la carta al derecho e invertida, está en el Diccionario de la app.",
+      "umdrehen": "Dar la vuelta a la carta",
+      "zurueck": "Volver a dar la vuelta a la carta «{name}»"
     }
-   ]
   },
-  "sprachen": {
-   "gross": "DE / TR / EN / ES",
-   "titel": "Alemán, turco, inglés y español",
-   "text": "Toda la app en cada uno de los cuatro idiomas."
-  }
- },
- "vorteile": [
-  {
-   "id": "bleibt",
-   "titel": "Permanece contigo",
-   "text": "La app guarda el Historial y las notas en tu teléfono. No tengo acceso a ellos."
+  "zahlen": {
+    "aria": "Tarot Cup en cifras",
+    "liste": [
+      {
+        "zahl": "78",
+        "text": "Cartas de tarot, al derecho e invertidas en el Diccionario"
+      },
+      {
+        "zahl": "80",
+        "text": "Símbolos para los posos del café, con búsqueda y categorías"
+      },
+      {
+        "zahl": "4",
+        "text": "Idiomas, desde el alemán y el turco hasta el francés y el hindi"
+      },
+      {
+        "zahl": "0",
+        "text": "Cuentas, no se necesita Internet"
+      }
+    ]
   },
-  {
-   "id": "internet",
-   "titel": "Sin conexión a Internet",
-   "text": "La aplicación no tiene permiso para acceder a Internet."
+  "wasIst": {
+    "titel": "¿Qué es Tarot Cup?",
+    "text": "Tarot Cup es una app para Android con la que tiras cartas de tarot y lees tú los posos del café de tu taza. Está disponible en doce idiomas; empieza en el idioma de tu teléfono y puedes cambiarlo en la app. Está pensada para personas a partir de 16 años y funciona sin Internet y sin cuenta. Las lecturas siguen antiguas tradiciones y tienen fines de entretenimiento."
   },
-  {
-   "id": "konto",
-   "titel": "Sin cuenta",
-   "text": "No es necesario registrarse ni proporcionar una dirección de correo electrónico en la aplicación."
-  }
- ],
- "ratgeber": {
-  "titel": "*Comprender* el tarot y los posos del café",
-  "zeile": "Guía",
-  "eintraege": [
-   {
-    "titel": "¿Cómo se tiran las cartas del tarot?",
-    "text": "Las 78 cartas, al derecho e invertidas, las tiradas de la app y el ritual paso a paso.",
-    "link": "Ir a la guía del tarot",
-    "ziel": "/es/tarot/"
-   },
-   {
-    "titel": "¿Cómo se leen los posos del café?",
-    "text": "Del café turco a la taza leída: el ritual, las zonas de la taza y los símbolos frecuentes.",
-    "link": "Ir a la guía de los posos del café",
-    "ziel": "/es/lectura-de-posos-de-cafe/"
-   }
-  ]
- },
- "fotos": {
-  "alt": {
-   "01_start_tageskarte": "Pantalla de inicio de la app con la carta del día «El Mago» descubierta y, debajo, las tarjetas «Tirar las cartas» y «Leer los posos del café»",
-   "03_deutung_drei_karten": "Tirada «Tres cartas» con «La Emperatriz», «La Rueda de la Fortuna» y «Reina de Copas» para Pasado, Presente y Futuro; debajo, el comienzo de la lectura",
-   "05_kaffee_tasse": "Mapa de la taza visto desde arriba, con el borde, la zona media, el fondo, el lado del asa y el lado opuesto, tres símbolos colocados y el platillo debajo."
-  }
- },
- "fragen": {
-  "titel": "Preguntas *frecuentes*",
-  "ids": [
-   "zukunft",
-   "foto-der-tasse",
-   "tuerkisch",
-   "fragen-gespeichert"
+  "tasse": {
+    "zeile": "El ritual",
+    "titel": "Así lees *tu taza*",
+    "schritte": [
+      "Piensa en tu pregunta y termina tu café turco. Pon la taza boca abajo sobre el platillo y deja que se enfríe. Tu pregunta te la guardas; la app no te la pide.",
+      "Gira la taza con calma y busca las formas entre los 80 símbolos.",
+      "Marca en el mapa de la taza dónde está cada símbolo. Con tres o más símbolos hay una lectura completa."
+    ],
+    "link": {
+      "text": "Más sobre la lectura de los posos del café",
+      "ziel": "/es/lectura-de-posos-de-cafe/"
+    }
+  },
+  "tassenkarte": {
+    "titel": "El mapa de la taza",
+    "hinweis": "Elige una zona",
+    "gruppe": "Elige una zona de la taza",
+    "bereiche": [
+      {
+        "bereich": "rand",
+        "name": "Borde",
+        "bedeutung": "lo cercano"
+      },
+      {
+        "bereich": "mitte",
+        "name": "Zona media",
+        "bedeutung": "ahora"
+      },
+      {
+        "bereich": "boden",
+        "name": "Fondo",
+        "bedeutung": "lo más lejano"
+      },
+      {
+        "bereich": "henkelseite",
+        "name": "Lado del asa",
+        "bedeutung": "tú, tu hogar"
+      },
+      {
+        "bereich": "gegenueber",
+        "name": "Lado opuesto",
+        "bedeutung": "el mundo exterior"
+      },
+      {
+        "bereich": "untertasse",
+        "name": "Platillo",
+        "bedeutung": "tu deseo"
+      }
+    ]
+  },
+  "schaukasten": {
+    "titel": "Así se ve *Tarot Cup*",
+    "gruppe": "Selecciona una pantalla",
+    "eintraege": [
+      {
+        "foto": "01_start_tageskarte",
+        "titel": "Carta del día",
+        "text": "Una carta para el día, renovada cada día."
+      },
+      {
+        "foto": "03_deutung_drei_karten",
+        "titel": "Tres cartas",
+        "text": "Pasado, Presente y Futuro, con una lectura que une las tres."
+      },
+      {
+        "foto": "05_kaffee_tasse",
+        "titel": "Mapa de la taza",
+        "text": "Muestra dónde se encuentran tus símbolos en la taza."
+      }
+    ]
+  },
+  "koennen": {
+    "titel": "Lo que la app *puede hacer*",
+    "ruhe": {
+      "titel": "Con calma, no sin fin",
+      "text": "Cada tirada tiene su ritmo. Entre medias, las cartas descansan.",
+      "pillen": [
+        {
+          "name": "Carta del día",
+          "takt": "cada día"
+        },
+        {
+          "name": "Sí o no",
+          "takt": "cada día"
+        },
+        {
+          "name": "Tres cartas",
+          "takt": "cada 3 días"
+        },
+        {
+          "name": "Leer por tu cuenta",
+          "takt": "cada 3 días"
+        },
+        {
+          "name": "Amor",
+          "takt": "una vez por semana"
+        }
+      ]
+    },
+    "sprachen": {
+      "gross": "A / अ",
+      "titel": "Doce idiomas",
+      "text": "Alemán, turco, inglés, español, bosnio, croata, serbio, rumano, portugués, francés, indonesio e hindi: toda la app en cada idioma."
+    }
+  },
+  "vorteile": [
+    {
+      "id": "bleibt",
+      "titel": "Permanece contigo",
+      "text": "La app guarda el Historial y las notas en tu teléfono. No tengo acceso a ellos."
+    },
+    {
+      "id": "internet",
+      "titel": "Sin conexión a Internet",
+      "text": "La aplicación no tiene permiso para acceder a Internet."
+    },
+    {
+      "id": "konto",
+      "titel": "Sin cuenta",
+      "text": "No es necesario registrarse ni proporcionar una dirección de correo electrónico en la aplicación."
+    }
   ],
-  "alle": "Todas las preguntas"
- }
+  "ratgeber": {
+    "titel": "*Comprender* el tarot y los posos del café",
+    "zeile": "Guía",
+    "eintraege": [
+      {
+        "titel": "¿Cómo se tiran las cartas del tarot?",
+        "text": "Las 78 cartas, al derecho e invertidas, las tiradas de la app y el ritual paso a paso.",
+        "link": "Ir a la guía del tarot",
+        "ziel": "/es/tarot/"
+      },
+      {
+        "titel": "¿Cómo se leen los posos del café?",
+        "text": "Del café turco a la taza leída: el ritual, las zonas de la taza y los símbolos frecuentes.",
+        "link": "Ir a la guía de los posos del café",
+        "ziel": "/es/lectura-de-posos-de-cafe/"
+      }
+    ]
+  },
+  "fotos": {
+    "alt": {
+      "01_start_tageskarte": "Pantalla de inicio de la app con la carta del día «El Mago» descubierta y, debajo, las tarjetas «Tirar las cartas» y «Leer los posos del café»",
+      "03_deutung_drei_karten": "Tirada «Tres cartas» con «La Emperatriz», «La Rueda de la Fortuna» y «Reina de Copas» para Pasado, Presente y Futuro; debajo, el comienzo de la lectura",
+      "05_kaffee_tasse": "Mapa de la taza visto desde arriba, con el borde, la zona media, el fondo, el lado del asa y el lado opuesto, tres símbolos colocados y el platillo debajo."
+    }
+  },
+  "fragen": {
+    "titel": "Preguntas *frecuentes*",
+    "ids": [
+      "zukunft",
+      "foto-der-tasse",
+      "tuerkisch",
+      "fragen-gespeichert"
+    ],
+    "alle": "Todas las preguntas"
+  }
 }

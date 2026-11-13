@@ -1,0 +1,95 @@
+{
+ "sprache": "Srpski",
+ "spracheKurz": "SR",
+ "sprung": "Pređi na sadržaj",
+ "nav": {
+  "aria": "Glavna navigacija",
+  "tarot": "Tarot",
+  "kaffeesatz": "Talog kafe",
+  "sogehts": "Kako funkcioniše",
+  "fragen": "Pitanja",
+  "appLaden": "Preuzmi aplikaciju",
+  "menue": "Meni",
+  "menueZu": "Zatvori",
+  "sprachwahl": "Izaberi jezik"
+ },
+ "fuss": {
+  "spalteApp": "Aplikacija",
+  "spalteRecht": "Pravne informacije",
+  "spalteKontakt": "Kontakt",
+  "sogehts": "Kako funkcioniše",
+  "fragen": "Pitanja",
+  "ueber": "O Tarot Cup",
+  "datenschutz": "Privatnost",
+  "nutzungsbedingungen": "Uslovi korišćenja",
+  "offenlegung": "Impresum",
+  "bildnachweis": "Izvori slika i licence",
+  "kontakt": "Pošalji e-mail",
+  "sprache": "Jezik",
+  "hinweis": "Za zabavu. Bez predviđanja i savetovanja.",
+  "zeile": "Tarot Cup · Za zabavu."
+ },
+ "krumen": {
+  "aria": "Putanja navigacije",
+  "start": "Početna"
+ },
+ "inhalt": "Sadržaj",
+ "teilen": {
+  "knopf": "Podeli stranicu",
+  "titel": "Podeli",
+  "kopieren": "Kopiraj link",
+  "kopiert": "Link kopiran",
+  "whatsapp": "Preko WhatsApp-a",
+  "email": "Preko e-maila",
+  "emailText": "Ovo bi te moglo zanimati:"
+ },
+ "store": {
+  "bald": "Uskoro na Google Play-u",
+  "ansehen": "Pogledaj na Google Play-u",
+  "abzeichenAlt": "Sada na Google Play-u"
+ },
+ "app": {
+  "metaTitel": "Preuzmi Tarot Cup: aplikacija za Android",
+  "metaBeschreibung": "Ovaj link te vodi do aplikacije Tarot Cup na Google Play-u. Na računaru za to skeniraš kod svojim telefonom. Tarot Cup je dostupan za Android.",
+  "titel": "Tarot Cup za Android",
+  "text": "Tarot Cup dostupan je za Android na Google Play-u. Ako si na računaru, skeniraj kod svojim telefonom.",
+  "qr": "Skeniraj telefonom",
+  "weiter": "Dalje na Google Play",
+  "bald": "Tarot Cup će uskoro stići na Google Play. Slobodno se vrati.",
+  "iphone": "Tarot Cup je dostupan samo za Android."
+ },
+ "nichtGefunden": {
+  "titel": "Stranica nije pronađena",
+  "text": "Ova stranica ne postoji ili je više nema. Na početnoj stranici možeš da nastaviš.",
+  "start": "Na početnu stranicu"
+ },
+ "bilder": {
+  "druck1909": "Otisak iz 1909.",
+  "auslegebild": "Prikaz rasporeda",
+  "eineKarte": "jedna karta",
+  "gegenueberKurz": "nasuprot",
+  "tassenkarte": "Crtež šoljice odozgo: {rand}, {mitte} i {boden}, levo {gegenueber}, desno {henkelseite} sa drškom, ispod {untertasse}"
+ },
+ "bildnachweis": {
+  "metaTitel": "Izvori slika i licence | Tarot Cup",
+  "metaBeschreibung": "Ovde piše odakle potiču slike karata iz 1909. godine u aplikaciji Tarot Cup i na ovoj veb stranici i pod kojom licencom stoje fontovi ove veb stranice.",
+  "titel": "Izvori slika i licence",
+  "brotkrume": "Izvori slika",
+  "vorspann": "Ovde piše odakle potiču slike karata i koje fontove ova veb stranica koristi.",
+  "karten": {
+   "titel": "Slike karata iz 1909.",
+   "absaetze": [
+    "Slike karata u aplikaciji i na ovoj veb stranici nacrtala je Pamela Colman Smith. Objavljene su 1909. godine i u javnom su vlasništvu.",
+    "Osnova su skenovi originalne štampe sa sajta Wikimedia Commons. U aplikaciji su slike isečene samo na deo sa slikom. Za ovu veb stranicu su smanjene, isečene na jedinstveni format od 480 × 822 piksela i sačuvane u formatu WebP. Inače su nepromenjene."
+   ]
+  },
+  "schriften": {
+   "titel": "Fontovi ove veb stranice",
+   "absaetze": [
+    "Ova veb stranica koristi dva fonta: Cormorant Garamond autora Christiana Thalmanna i Inter autora Rasmusa Anderssona. Oba su pod licencom SIL Open Font License, verzija 1.1.",
+    "Datoteke fontova nalaze se na ovoj veb stranici i ne učitavaju se sa tuđih servera."
+   ]
+  },
+  "marken": "Google Play i logotip Google Play-a su zaštitni znaci kompanije Google LLC."
+ }
+}

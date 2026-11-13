@@ -1,0 +1,96 @@
+{
+ "metaTitel": "Comment ça marche : guide de l’application | Tarot Cup",
+ "metaBeschreibung": "Le guide présente Tarot Cup en neuf courts chapitres : premier lancement, carte du jour, tirage de tarot, lecture du marc de café par toi-même, dictionnaire, historique et plus encore.",
+ "titel": "Comment ça marche",
+ "vorspann": "Neuf courts chapitres avec captures d’écran, du premier lancement au changement de langue. Les boutons et les écrans portent ici le même nom que dans l’application.",
+ "ogTitel": "Comment ça marche : Tarot Cup",
+ "brotkrume": "Comment ça marche",
+ "inhaltTitel": "Chapitres",
+ "kapitel": [
+  {
+   "kennung": "erster-start",
+   "titel": "Que se passe-t-il au premier lancement ?",
+   "absaetze": [
+    "À la première ouverture, l’application s’affiche dans la langue de ton téléphone ; après « Bienvenue », tu touches « Continuer ». À l’étape « Avant de commencer », tu confirmes que tu as au moins 16 ans et tu acceptes les conditions d’utilisation avec « Accepter et continuer ». Une courte introduction présente la carte du jour, le marc de café, le tarot et le dictionnaire ; avec « Passer », tu peux la sauter. Pour finir, l’application demande si elle doit te rappeler ta carte du jour le matin."
+   ],
+   "foto": "01_erster_start",
+   "alt": "L’étape « Avant de commencer » avec la case cochée pour l’âge, les liens vers la politique de confidentialité et les conditions d’utilisation, et le bouton « Accepter et continuer »."
+  },
+  {
+   "kennung": "tageskarte",
+   "titel": "Comment obtenir ma carte du jour ?",
+   "absaetze": [
+    "Tout en haut de la page d’accueil, ta carte du jour est posée face cachée. Si tu la touches, elle se retourne ; en dessous figurent son sens en bref et « Lire la suite » pour la lecture entière. Toute la journée, c’est la même carte, même si tu rouvres l’application, et dès minuit une nouvelle carte face cachée t’attend. Chaque carte du jour figure aussi dans l’historique."
+   ],
+   "foto": "02_tageskarte",
+   "alt": "La page d’accueil avec une carte du jour retournée, son sens en bref et « Lire la suite », puis les tuiles « Tirer les cartes » et « Lire le marc de café »."
+  },
+  {
+   "kennung": "tarot-legen",
+   "titel": "Comment tirer les cartes de tarot ?",
+   "absaetze": [
+    "Avec « Tirer les cartes », tu choisis « Oui ou non », « Trois cartes » ou « Amour » et tu penses en silence à ta question. Tu mélanges en faisant glisser le doigt sur le paquet, après « Cartes mélangées » tu choisis tes cartes dans l’éventail, puis tu les retournes une à une après « Continuer pour retourner ». « Vers la lecture d’ensemble » montre ce qu’elles racontent ensemble. Ensuite, le tirage se repose : « Oui ou non » est de nouveau disponible le lendemain, « Trois cartes » après trois jours, « Amour » après une semaine, chaque fois dès minuit."
+   ],
+   "foto": "03_tarot",
+   "alt": "Le tirage Trois cartes avec trois cartes retournées sous Passé, Présent et Futur, et le bouton « Vers la lecture d’ensemble »."
+  },
+  {
+   "kennung": "kaffeesatz",
+   "titel": "Comment lire le marc de café par moi-même ?",
+   "absaetze": [
+    "Une fois ton café turc bu, tu touches « Lire le marc de café » et tu choisis un domaine de la vie. Sous « Choisir les symboles », tu cherches jusqu’à huit des 80 symboles et tu places chacun à son emplacement sur le plan de la tasse : près du bord, à mi-hauteur, au fond ou dans la soucoupe. À partir de trois symboles, tu obtiens la lecture complète, tous les trois jours ; un ou deux symboles donnent une lecture courte, jusqu’à trois fois par jour. Pour savoir comment préparer la tasse selon la coutume ancienne, consulte le [guide du marc de café](/fr/lire-le-marc-de-cafe/)."
+   ],
+   "foto": "04_kaffeesatz",
+   "alt": "Le plan de la tasse « Où se place chaque symbole ? » : la tasse vue du dessus avec l’anse à droite, plusieurs symboles placés dessus et, en dessous, le bouton « Voir la lecture »."
+  },
+  {
+   "kennung": "lexikon",
+   "titel": "Comment trouver une carte ou un symbole dans le dictionnaire ?",
+   "absaetze": [
+    "Dans l’onglet « Dictionnaire », tu passes en haut de « Tarot » à « Marc de café ». Les 78 cartes se filtrent par « Arcanes majeurs » et par les quatre couleurs, les 80 symboles se trouvent grâce à la recherche ou aux catégories. Chaque entrée explique le sens : pour les cartes, à l’endroit et renversées ; pour les symboles, aussi à quoi les reconnaître dans la tasse. Le dictionnaire est toujours disponible et n’a pas besoin d’internet."
+   ],
+   "foto": "05_lexikon",
+   "alt": "Le dictionnaire, partie « Marc de café », avec champ de recherche, catégories et une liste de symboles avec leur tracé et leur sens en bref."
+  },
+  {
+   "kennung": "verlauf",
+   "titel": "Où retrouver mes lectures passées et mes notes ?",
+   "absaetze": [
+    "Chaque tirage arrive tout seul dans l’onglet « Historique », le plus récent en haut, avec la date et le type. Si tu touches une entrée, la lecture entière s’ouvre ; dans le champ « Ta note », tu consignes ce qu’il en est advenu, et l’application l’enregistre aussitôt. Avec « Supprimer l’entrée », tu retires définitivement une entrée de l’application, après une demande de confirmation. L’application enregistre l’historique et les notes sur ton téléphone."
+   ],
+   "foto": "06_verlauf",
+   "alt": "Une entrée ouverte de l’historique avec la lecture, le champ « Ta note » rempli et les boutons de partage et de suppression."
+  },
+  {
+   "kennung": "erinnerung",
+   "titel": "Comment régler le rappel de la carte du jour ?",
+   "absaetze": [
+    "Dans « Paramètres », tu actives « Rappel de la carte du jour » et tu règles en dessous l’« Heure », par heures et par pas de cinq minutes. Si Android demande si l’application peut envoyer des notifications, tu l’autorises ; sans autorisation, l’interrupteur reste désactivé. Le rappel arrive chaque jour à peu près à l’heure choisie et ne dévoile pas la carte."
+   ],
+   "foto": "07_erinnerung",
+   "alt": "Les paramètres avec « Rappel de la carte du jour » activé et l’heure, qui se règle avec moins et plus."
+  },
+  {
+   "kennung": "teilen",
+   "titel": "Comment partager une lecture ?",
+   "absaetze": [
+    "Sous une lecture figure « Partager en image », y compris pour les entrées de l’historique. L’application en fait une image avec le tirage, la date, les noms des cartes ou des symboles, une courte phrase de la lecture et le nom « Tarot Cup ». Ta question n’y figure pas, l’application ne la connaît pas. Tu choisis où va l’image dans le menu de partage d’Android."
+   ],
+   "foto": "08_teilen",
+   "alt": "L’image de partage sur fond sombre : en haut le tirage et la date, au milieu les noms des cartes et une phrase entre guillemets, en bas « Tarot Cup »."
+  },
+  {
+   "kennung": "sprache",
+   "titel": "Comment changer de langue ?",
+   "absaetze": [
+    "Tout en haut de « Paramètres », tu choisis sous « Langue » entre « Deutsch », « Türkçe », « English » et « Español ». Sans choix de ta part, l’application suit la langue de ton téléphone ; pour toute autre langue du téléphone, elle s’affiche en anglais. L’application change aussitôt. Les lectures passées de l’historique, le dictionnaire, les textes juridiques et le rappel apparaissent alors aussi dans la nouvelle langue ; tes notes restent telles que tu les as écrites."
+   ],
+   "foto": "09_sprache",
+   "alt": "La partie haute des paramètres avec la section « Langue » et les boutons des langues."
+  }
+ ],
+ "abschluss": {
+  "titel": "Encore des questions ?",
+  "text": "Tu trouveras de courtes réponses, par exemple pour savoir si l’application a besoin d’internet ou pourquoi un tirage se repose en ce moment, dans les [Questions fréquentes](/fr/questions/)."
+ }
+}

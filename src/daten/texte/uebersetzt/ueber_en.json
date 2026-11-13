@@ -1,41 +1,41 @@
 {
- "metaTitel": "About Tarot Cup: the Tarot & Coffee Cup Reading App",
- "metaBeschreibung": "Tarot Cup is a tarot and coffee cup reading app in German, Turkish, English, and Spanish. Here you can find out what it is and what it is not.",
- "titel": "About Tarot Cup",
- "vorspann": "Tarot Cup is a calm app for tarot and coffee cup reading. Here you can find out what it is and what it is not.",
- "ogTitel": "About Tarot Cup",
- "brotkrume": "About",
- "abschnitte": [
-  {
-   "kennung": "was-sie-ist",
-   "titel": "What is Tarot Cup?",
-   "absaetze": [
-    "With Tarot Cup, you draw tarot cards and read the coffee grounds in your cup yourself. You draw your cards, choose the symbols you recognize in the cup, and read what the tradition says about them. The app is available for Android in English, Spanish, German, and Turkish. It starts in your phone’s language, and you can switch languages in the app.",
-    "Each reading has its own rhythm. In between, the cards rest, and you have time to think about a reading."
-   ]
-  },
-  {
-   "kennung": "was-sie-nicht-ist",
-   "titel": "What Tarot Cup is not",
-   "absaetze": [
-    "Tarot Cup is not fortune-telling in the psychic sense. The readings are not a prediction and not advice, and they do not replace advice from professionals. They retell what old customs around cards and coffee see in pictures and symbols.",
-    "The app is meant for entertainment, with respect for the tradition. You decide what of it fits you."
-   ]
-  },
-  {
-   "kennung": "bei-dir",
-   "titel": "What remains with you",
-   "absaetze": [
-    "No account, no internet. The app stores your history and notes on your phone. I have no access to them."
-   ]
-  },
-  {
-   "kennung": "wer",
-   "titel": "Who is behind Tarot Cup",
-   "absaetze": [
-    "The person responsible for this website is listed in the [Legal notice](/offenlegung/)."
-   ]
-  }
- ],
- "kontakt": "Write to me: "
+  "metaTitel": "About Tarot Cup: the Tarot & Coffee Cup Reading App",
+  "metaBeschreibung": "Tarot Cup is a tarot and coffee cup reading app in twelve languages. Here you can find out what it is and what it is not.",
+  "titel": "About Tarot Cup",
+  "vorspann": "Tarot Cup is a calm app for tarot and coffee cup reading. Here you can find out what it is and what it is not.",
+  "ogTitel": "About Tarot Cup",
+  "brotkrume": "About",
+  "abschnitte": [
+    {
+      "kennung": "was-sie-ist",
+      "titel": "What is Tarot Cup?",
+      "absaetze": [
+        "With Tarot Cup, you draw tarot cards and read the coffee grounds in your cup yourself. You draw your cards, choose the symbols you recognize in the cup, and read what the tradition says about them. The app is available for Android in twelve languages. It starts in your phone’s language, and you can switch languages in the app.",
+        "Each reading has its own rhythm. In between, the cards rest, and you have time to think about a reading."
+      ]
+    },
+    {
+      "kennung": "was-sie-nicht-ist",
+      "titel": "What Tarot Cup is not",
+      "absaetze": [
+        "Tarot Cup is not fortune-telling in the psychic sense. The readings are not a prediction and not advice, and they do not replace advice from professionals. They retell what old customs around cards and coffee see in pictures and symbols.",
+        "The app is meant for entertainment, with respect for the tradition. You decide what of it fits you."
+      ]
+    },
+    {
+      "kennung": "bei-dir",
+      "titel": "What remains with you",
+      "absaetze": [
+        "No account, no internet. The app stores your history and notes on your phone. I have no access to them."
+      ]
+    },
+    {
+      "kennung": "wer",
+      "titel": "Who is behind Tarot Cup",
+      "absaetze": [
+        "The person responsible for this website is listed in the [Legal notice](/offenlegung/)."
+      ]
+    }
+  ],
+  "kontakt": "Write to me: "
 }

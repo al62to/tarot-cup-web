@@ -1,0 +1,204 @@
+{
+ "metaTitel": "Lire le marc de café et tirer le tarot avec l’application | Tarot Cup",
+ "metaBeschreibung": "Avec l’application Android Tarot Cup, tu lis le marc de café par toi-même avec 80 symboles et tu tires le tarot avec 78 cartes, en douze langues et sans internet.",
+ "ogTitel": "Lire le marc de café. Tirer le tarot.",
+ "kopf": {
+  "zeile": "Tarot Cup · application pour Android",
+  "zeilen": [
+   "Lire le marc de café *par toi-même*.",
+   "Tirer le tarot *en toute sérénité*."
+  ],
+  "text": "Choisis les symboles de ta tasse, indique sur le plan de la tasse où ils se trouvent et lis ce qu’ils peuvent signifier. Ou tire des cartes de tarot en prenant ton temps. L’application fonctionne sans internet et sans compte.",
+  "knopf": "Voir sur Google Play",
+  "bald": "Bientôt sur Google Play",
+  "anleitung": "Comment ça marche",
+  "karte": {
+   "tipp": "Touche la carte et retourne-la.",
+   "satz": "Sa signification, à l’endroit comme renversée, figure dans le Dictionnaire de l’application.",
+   "umdrehen": "Retourner la carte",
+   "zurueck": "Retourner à nouveau la carte « {name} »"
+  }
+ },
+ "zahlen": {
+  "aria": "Tarot Cup en chiffres",
+  "liste": [
+   {
+    "zahl": "78",
+    "text": "cartes de tarot, à l’endroit et renversées dans le Dictionnaire"
+   },
+   {
+    "zahl": "80",
+    "text": "symboles pour le marc de café, avec recherche et catégories"
+   },
+   {
+    "zahl": "12",
+    "text": "langues, de l’allemand et du turc au français et à l’hindi"
+   },
+   {
+    "zahl": "0",
+    "text": "compte, pas besoin d’internet"
+   }
+  ]
+ },
+ "wasIst": {
+  "titel": "Qu’est-ce que Tarot Cup ?",
+  "text": "Tarot Cup est une application pour Android qui te permet de tirer des cartes de tarot et de lire toi-même le marc de café de ta tasse. Elle existe en douze langues ; elle démarre dans la langue de ton téléphone, et tu peux changer de langue dans l’application. Elle s’adresse aux personnes à partir de 16 ans et fonctionne sans internet et sans compte. Les lectures s’inspirent de traditions anciennes et sont destinées au divertissement."
+ },
+ "tasse": {
+  "zeile": "Le rituel",
+  "titel": "Voici comment lire *ta tasse*",
+  "schritte": [
+   "Pense à ta question et bois ton café turc jusqu’au bout. Retourne la tasse sur la soucoupe et laisse-la refroidir. Tu gardes ta question pour toi, l’application ne la demande pas.",
+   "Tourne la tasse sans te presser et cherche les formes parmi les 80 symboles.",
+   "Indique sur le plan de la tasse où se trouve chaque symbole. À partir de trois symboles, tu obtiens la lecture complète."
+  ],
+  "link": {
+   "text": "En savoir plus sur la lecture du marc de café",
+   "ziel": "/fr/lire-le-marc-de-cafe/"
+  }
+ },
+ "tassenkarte": {
+  "titel": "Le plan de la tasse",
+  "hinweis": "Choisis une zone",
+  "gruppe": "Choisir une zone de la tasse",
+  "bereiche": [
+   {
+    "bereich": "rand",
+    "name": "Bord",
+    "bedeutung": "ce qui est proche"
+   },
+   {
+    "bereich": "mitte",
+    "name": "Mi-hauteur",
+    "bedeutung": "maintenant"
+   },
+   {
+    "bereich": "boden",
+    "name": "Fond",
+    "bedeutung": "ce qui est plus lointain"
+   },
+   {
+    "bereich": "henkelseite",
+    "name": "Côté de l’anse",
+    "bedeutung": "toi, ton foyer"
+   },
+   {
+    "bereich": "gegenueber",
+    "name": "Côté opposé",
+    "bedeutung": "le monde extérieur"
+   },
+   {
+    "bereich": "untertasse",
+    "name": "Soucoupe",
+    "bedeutung": "ton vœu"
+   }
+  ]
+ },
+ "schaukasten": {
+  "titel": "Voici à quoi ressemble *Tarot Cup*",
+  "gruppe": "Choisir un écran",
+  "eintraege": [
+   {
+    "foto": "01_start_tageskarte",
+    "titel": "Carte du jour",
+    "text": "Une carte pour la journée, nouvelle chaque jour."
+   },
+   {
+    "foto": "03_deutung_drei_karten",
+    "titel": "Trois cartes",
+    "text": "Passé, présent et futur, avec une lecture qui relie les trois."
+   },
+   {
+    "foto": "05_kaffee_tasse",
+    "titel": "Plan de la tasse",
+    "text": "Indique où se trouvent tes symboles dans la tasse."
+   }
+  ]
+ },
+ "koennen": {
+  "titel": "Ce que l’application *sait faire*",
+  "ruhe": {
+   "titel": "Du calme, pas à l’infini",
+   "text": "Chaque tirage a son rythme. Entre-temps, les cartes se reposent.",
+   "pillen": [
+    {
+     "name": "Carte du jour",
+     "takt": "chaque jour"
+    },
+    {
+     "name": "Oui ou non",
+     "takt": "chaque jour"
+    },
+    {
+     "name": "Trois cartes",
+     "takt": "tous les 3 jours"
+    },
+    {
+     "name": "Lire par toi-même",
+     "takt": "tous les 3 jours"
+    },
+    {
+     "name": "Amour",
+     "takt": "chaque semaine"
+    }
+   ]
+  },
+  "sprachen": {
+   "gross": "A / अ",
+   "titel": "Douze langues",
+   "text": "Allemand, turc, anglais, espagnol, bosnien, croate, serbe, roumain, portugais, français, indonésien et hindi : toute l’application dans chacune de ces langues."
+  }
+ },
+ "vorteile": [
+  {
+   "id": "bleibt",
+   "titel": "Tout reste chez toi",
+   "text": "L’application enregistre l’historique et les notes sur ton téléphone. Je n’y ai pas accès."
+  },
+  {
+   "id": "internet",
+   "titel": "Sans internet",
+   "text": "L’application n’a pas l’autorisation d’accéder à internet."
+  },
+  {
+   "id": "konto",
+   "titel": "Sans compte",
+   "text": "Dans l’application, ni connexion ni adresse e-mail."
+  }
+ ],
+ "ratgeber": {
+  "titel": "*Comprendre* le tarot et le marc de café",
+  "zeile": "Guide",
+  "eintraege": [
+   {
+    "titel": "Comment tirer le tarot ?",
+    "text": "Les 78 cartes, à l’endroit et renversées, les tirages de l’application et le rituel pas à pas.",
+    "link": "Vers le guide du tarot",
+    "ziel": "/fr/tarot/"
+   },
+   {
+    "titel": "Comment lire le marc de café ?",
+    "text": "Du café turc jusqu’à la lecture de la tasse : le rituel, les zones de la tasse et les symboles fréquents.",
+    "link": "Vers le guide du marc de café",
+    "ziel": "/fr/lire-le-marc-de-cafe/"
+   }
+  ]
+ },
+ "fotos": {
+  "alt": {
+   "01_start_tageskarte": "Page d’accueil de l’application avec la carte du jour « Le Magicien » retournée, en dessous les tuiles « Tirer les cartes » et « Lire le marc de café »",
+   "03_deutung_drei_karten": "Tirage « Trois cartes » avec « L’Impératrice », « La Roue de Fortune » et « Reine de Coupes » pour le passé, le présent et le futur, en dessous le début de la lecture",
+   "05_kaffee_tasse": "Plan de la tasse vu de dessus avec bord, mi-hauteur, fond, côté de l’anse et côté opposé, trois symboles placés et la soucoupe en dessous"
+  }
+ },
+ "fragen": {
+  "titel": "Questions *fréquentes*",
+  "ids": [
+   "zukunft",
+   "foto-der-tasse",
+   "tuerkisch",
+   "fragen-gespeichert"
+  ],
+  "alle": "Toutes les questions"
+ }
+}

@@ -88,8 +88,8 @@ const R = (quelle, schalter = 'gu') => new RegExp(`(?<![\\p{L}\\p{N}])(?:${quell
 
 export const MUSTER = {
   riderWaite: /r\W{0,2}i\W{0,2}d\W{0,2}e\W{0,2}r[\s\-–—_./]*w\W{0,2}a\W{0,2}i\W{0,2}t\W{0,2}e|waite/giu,
-  // Spanisch dazu seit AP-SPR2: gratuit…, precio…
-  preis: R('gratis|kostenlos\\p{L}*|umsonst|free|ücretsiz\\p{L}*|bedava\\p{L}*|preis\\p{L}*|fiyat\\p{L}*|euro|(?<=")offers(?=")|price\\p{L}*|gratuit\\p{L}*|precio\\p{L}*', 'giu'),
+  // Spanisch dazu seit AP-SPR2: gratuit…, precio…; AP-23: pt, fr, ro, bs/hr, hi („price“ nur als englisches Wort, nicht in ro „pricepere“)
+  preis: R('gratis|kostenlos\\p{L}*|umsonst|free|ücretsiz\\p{L}*|bedava\\p{L}*|preis\\p{L}*|fiyat\\p{L}*|euro|(?<=")offers(?=")|price(?:s|d|less)?(?!\\p{L})|gratuit\\p{L}*|precio\\p{L}*|preço\\p{L}*|grátis|prix(?!\\p{L})|preț\\p{L}*|besplatn\\p{L}*|cijen\\p{L}*|मुफ़्त|मुफ्त', 'giu'),
   // KI, AI und IA nur in Großbuchstaben als ganzes Wort; die anderen ohne Rücksicht auf die Schreibung.
   kiGross: R('KI|AI|IA'),
   ki: R('künstliche\\p{L}*\\s+intelligenz\\p{L}*|yapay\\s+zek[aâ]\\p{L}*|artificial\\s+intelligence|inteligencia\\s+artificial', 'giu'),
@@ -107,7 +107,7 @@ export function pruefeBau(ordner, { still = false } = {}) {
   const warnungen = [];
   const entwurf = process.env.UEBERSETZUNG_ENTWURF === '1';
   // Seiten mit englischem oder spanischem Text: alles unter en/ und es/, dazu Kurzlink und 404 (Teile je Sprache).
-  const mitUebersetzung = (name) => /^(en|es)\//.test(name) || ['app/index.html', '404.html'].includes(name);
+  const mitUebersetzung = (name) => /^(en|es|bs|hr|sr|ro|pt|fr|id|hi)\//.test(name) || ['app/index.html', '404.html'].includes(name);
   const melde = (datei, regel, fund) => {
     const name = relative(ordner, datei).split(sep).join('/');
     const zeile = `${name}: [${regel}] ${fund}`;
@@ -369,25 +369,27 @@ export function pruefeBau(ordner, { still = false } = {}) {
   for (const datei of htmlDateien) {
     const html = readFileSync(datei, 'utf8');
     const lang = html.match(/<html[^>]*\slang="([a-z-]+)"/)?.[1];
-    if (!['en', 'es'].includes(lang)) continue;
+    if (!['en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'].includes(lang)) continue;
     restSeiten++;
     const ohneFremd = html
       .replace(/<(script|style)\b[\s\S]*?<\/\1>/g, ' ')
-      .replace(/<(\w+)\b[^>]*\slang="(?!en"|es")[^"]*"[^>]*>[\s\S]*?<\/\1>/g, ' ');
+      .replace(new RegExp(`<(\\w+)\\b[^>]*\\slang="(?!${lang}")[^"]*"[^>]*>[\\s\\S]*?<\\/\\1>`, 'g'), ' ');
     const attribute = [...ohneFremd.matchAll(/\s(?:alt|title|aria-label|content)="([^"]*)"/g)].map((m) => m[1]).join(' \n ');
     const sichtbar = `${ohneFremd.replace(/<[^>]+>/g, ' ')} \n ${attribute}`
       .replace(/&#(\d+);/g, (_, zahl) => String.fromCodePoint(Number(zahl)))
       .replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"');
     // Fremde Wörter aus src/daten/sprachen.mjs (etwa „Türkçe“ in einem Alt-Text) sind kein Rest.
     const bereinigt = begriffe.filter((eintrag) => !eintrag.nur || eintrag.nur.includes(lang)).reduce((text, { text: wort }) => text.split(wort).join(' '), sichtbar);
-    for (const fund of bereinigt.matchAll(MUSTER.deutsch)) melde(datei, '9 deutscher Rest', `„${fund[0]}“ in „${umgebung(bereinigt, fund.index)}“`);
+    // AP-23: echte Wörter der Sprache, die wie deutsche aussehen (bs/hr/sr „Karte“ = Karten, pt „der“ = geben)
+    const eigen = { bs: ['Karte'], hr: ['Karte'], sr: ['Karte'], pt: ['der'] }[lang] ?? [];
+    for (const fund of [...bereinigt.matchAll(MUSTER.deutsch)].filter((f) => !eigen.includes(f[0]))) melde(datei, '9 deutscher Rest', `„${fund[0]}“ in „${umgebung(bereinigt, fund.index)}“`);
   }
 
   // Fremde Wörter auf deutschen, englischen und spanischen Seiten tragen lang (gesetzt von tools/sprache_setzen.mjs).
   for (const datei of htmlDateien) {
     const html = readFileSync(datei, 'utf8');
     const seitenSprache = html.match(/<html[^>]*\slang="([a-z]{2})"/)?.[1];
-    if (!['de', 'en', 'es'].includes(seitenSprache)) continue;
+    if (seitenSprache === 'tr' || !seitenSprache) continue;
     const tuerkisch = begriffe.filter((eintrag) => eintrag.nur?.includes(seitenSprache) && eintrag.lang !== seitenSprache);
     // Sichtbarer Text außerhalb von Elementen mit lang, ohne Skripte, Stile, title.
     const rest = html
@@ -405,7 +407,7 @@ export function pruefeBau(ordner, { still = false } = {}) {
   if (befunde.length) {
     throw new Error(`Prüfung nach dem Bau: ${befunde.length} Befund(e)\n  ${befunde.join('\n  ')}`);
   }
-  const ersatzfotos = htmlDateien.filter((datei) => /<html[^>]*\slang="(en|es)"/.test(readFileSync(datei, 'utf8')) && /\/bilder\/(?:app|sogehts)\/[^"]*-de-\d+\.webp/.test(readFileSync(datei, 'utf8'))).map((datei) => relative(ordner, datei).split(sep).join('/'));
+  const ersatzfotos = htmlDateien.filter((datei) => /<html[^>]*\slang="(en|es|bs|hr|sr|ro|pt|fr|id|hi)"/.test(readFileSync(datei, 'utf8')) && /\/bilder\/(?:app|sogehts)\/[^"]*-de-\d+\.webp/.test(readFileSync(datei, 'utf8'))).map((datei) => relative(ordner, datei).split(sep).join('/'));
   if (warnungen.length) console.warn(`Prüfung nach dem Bau, Entwurf der Übersetzung (UEBERSETZUNG_ENTWURF=1): ${warnungen.length} Warnung(en)\n  ${warnungen.join('\n  ')}`);
   const ergebnis = { einwilligung: einwilligungPfad, warnungen: warnungen.length, dateien: dateien.length, seiten: htmlDateien.length, adressenVorher: vorher.length, hreflangPaare, interneLinks, jsonLd: jsonLdAnzahl, restSeiten, ersatzfotos };
   if (!still) {

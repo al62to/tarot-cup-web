@@ -7,7 +7,7 @@
 export const ueber = {
   de: {
     metaTitel: 'Über Tarot Cup: was die App ist und was nicht',
-    metaBeschreibung: 'Tarot Cup ist eine App für Tarot und Kaffeesatz auf Deutsch, Türkisch, Englisch und Spanisch. Hier steht, was sie ist und was sie nicht ist.',
+    metaBeschreibung: 'Tarot Cup ist eine App für Tarot und Kaffeesatz in zwölf Sprachen. Hier steht, was sie ist und was sie nicht ist.',
     titel: 'Über Tarot Cup',
     vorspann: 'Tarot Cup ist eine ruhige App für Tarot und Kaffeesatz. Hier steht, was sie ist und was sie nicht ist.',
     ogTitel: 'Über Tarot Cup',
@@ -17,7 +17,7 @@ export const ueber = {
         kennung: 'was-sie-ist',
         titel: 'Was ist Tarot Cup?',
         absaetze: [
-          'Mit Tarot Cup legst du Tarotkarten und liest den Kaffeesatz in deiner Tasse selbst. Du ziehst deine Karten, wählst die Zeichen, die du in der Tasse erkennst, und liest, was die Tradition dazu erzählt. Die App gibt es für Android, auf Deutsch, Türkisch, Englisch und Spanisch. Sie startet in der Sprache deines Handys; umstellen kannst du in der App.',
+          'Mit Tarot Cup legst du Tarotkarten und liest den Kaffeesatz in deiner Tasse selbst. Du ziehst deine Karten, wählst die Zeichen, die du in der Tasse erkennst, und liest, was die Tradition dazu erzählt. Die App gibt es für Android, in zwölf Sprachen. Sie startet in der Sprache deines Handys; umstellen kannst du in der App.',
           'Jede Legung hat ihren eigenen Rhythmus. Dazwischen ruhen die Karten, und du hast Zeit, über eine Deutung nachzudenken.',
         ],
       },
@@ -49,7 +49,7 @@ export const ueber = {
 
   tr: {
     metaTitel: 'Tarot Cup hakkında: uygulama nedir, ne değildir',
-    metaBeschreibung: 'Tarot Cup; Türkçe, Almanca, İngilizce ve İspanyolca bir tarot ve kahve falı uygulaması. Ne olduğunu ve ne olmadığını burada bulursun.',
+    metaBeschreibung: 'Tarot Cup, on iki dilde bir tarot ve kahve falı uygulamasıdır. Burada ne olduğunu ve ne olmadığını okuyabilirsin.',
     titel: 'Tarot Cup hakkında',
     vorspann: 'Tarot Cup, tarot ve kahve falı için sakin bir uygulama. Bu sayfada ne olduğunu ve ne olmadığını bulursun.',
     ogTitel: 'Tarot Cup hakkında',
@@ -59,7 +59,7 @@ export const ueber = {
         kennung: 'was-sie-ist',
         titel: 'Tarot Cup nedir?',
         absaetze: [
-          'Tarot Cup ile tarot kartlarını açar, fincanındaki telveyi kendin yorumlarsın. Kartlarını çeker, fincanda gördüğün işaretleri seçer ve gelenekte neye karşılık geldiklerini okursun. Uygulama Android için Türkçe, Almanca, İngilizce ve İspanyolca olarak hazır. Telefonunun dilinde açılır; dili uygulamanın içinden değiştirebilirsin.',
+          'Tarot Cup ile tarot kartları açar ve fincanındaki kahve telvesini kendin okursun. Kartlarını çeker, fincanda gördüğün işaretleri seçer ve geleneğin bunlar hakkında anlattıklarını okursun. Uygulama Android için, on iki dilde sunulur. Telefonunun dilinde açılır; dili uygulama içinden değiştirebilirsin.',
           'Her açılımın kendi zamanı var. Aradaki günlerde kartlar dinlenir; sen de yorumun üzerine düşünmeye vakit bulursun.',
         ],
       },
@@ -90,8 +90,24 @@ export const ueber = {
   },
 };
 
-// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+// Übersetzungen (en, es seit AP-SPR2; bs, hr, sr, ro, pt, fr, id, hi seit AP-23): erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
 import ueberEn from './uebersetzt/ueber_en.json' with { type: 'json' };
 import ueberEs from './uebersetzt/ueber_es.json' with { type: 'json' };
+import ueberBs from './uebersetzt/ueber_bs.json' with { type: 'json' };
+import ueberHr from './uebersetzt/ueber_hr.json' with { type: 'json' };
+import ueberSr from './uebersetzt/ueber_sr.json' with { type: 'json' };
+import ueberRo from './uebersetzt/ueber_ro.json' with { type: 'json' };
+import ueberPt from './uebersetzt/ueber_pt.json' with { type: 'json' };
+import ueberFr from './uebersetzt/ueber_fr.json' with { type: 'json' };
+import ueberId from './uebersetzt/ueber_id.json' with { type: 'json' };
+import ueberHi from './uebersetzt/ueber_hi.json' with { type: 'json' };
 ueber.en = ueberEn;
 ueber.es = ueberEs;
+ueber.bs = ueberBs;
+ueber.hr = ueberHr;
+ueber.sr = ueberSr;
+ueber.ro = ueberRo;
+ueber.pt = ueberPt;
+ueber.fr = ueberFr;
+ueber.id = ueberId;
+ueber.hi = ueberHi;

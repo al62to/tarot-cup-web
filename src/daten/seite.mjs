@@ -34,6 +34,15 @@ export const store = {
     tr: { pfad: '/bilder/abzeichen/google-play-tr.png', breite: 478, hoehe: 142 },
     en: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
     es: { pfad: '/bilder/abzeichen/google-play-es.png', breite: 478, hoehe: 142 },
+    // AP-23: Bis die offiziellen Abzeichen der acht neuen Sprachen geladen sind, das englische Abzeichen.
+    bs: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
+    hr: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
+    sr: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
+    ro: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
+    pt: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
+    fr: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
+    id: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
+    hi: { pfad: '/bilder/abzeichen/google-play-en.png', breite: 478, hoehe: 142 },
   },
 };
 
@@ -42,7 +51,9 @@ export const store = {
 // Jede Sprache mit hl=<sprache> (AP-21), damit Google Play den Eintrag in der Sprache der Seite zeigt. Ohne Sprache
 // (Weiterleitung auf /app/) ohne hl, dann zeigt Google Play die Sprache des Geräts.
 export const STORE_ORTE = ['kopf', 'start', 'kurzlink', 'fuss'];
-const STORE_HL = { de: 'de', tr: 'tr', en: 'en', es: 'es' };
+const STORE_HL = {
+  de: 'de', tr: 'tr', en: 'en', es: 'es', bs: 'bs', hr: 'hr', sr: 'sr', ro: 'ro', pt: 'pt-BR', fr: 'fr', id: 'id', hi: 'hi',
+};
 export function storeLink(ort, sprache) {
   if (!STORE_ORTE.includes(ort)) throw new Error(`Unbekannter Ort für den Link zu Google Play: ${ort}`);
   const hl = STORE_HL[sprache] ? `&hl=${STORE_HL[sprache]}` : '';

@@ -1,0 +1,104 @@
+{
+ "metaTitel": "Pitanja i odgovori o aplikaciji | Tarot Cup",
+ "metaBeschreibung": "Ovde možeš pronaći odgovore o aplikaciji Tarot Cup: da li predviđa budućnost, zašto raspored ponekad odmara i da li ti je potreban internet ili nalog.",
+ "titel": "Česta pitanja",
+ "vorspann": "Ovde ćeš pronaći odgovore na pitanja koja se o aplikaciji Tarot Cup najčešće postavljaju. Ako ti nešto nedostaje, napiši mi.",
+ "ogTitel": "Česta pitanja o aplikaciji Tarot Cup",
+ "brotkrume": "Pitanja",
+ "liste": [
+  {
+   "id": "zukunft",
+   "frage": "Da li aplikacija predviđa budućnost?",
+   "antwort": [
+    "Ne. Tumačenja prate stare tradicije vezane za tarot i talog kafe. Šta od toga odgovara tebi, odlučuješ ti.",
+    "Za zabavu. Tumačenja nisu predviđanje ni savetovanje. Ona ne predviđaju budućnost i ne zamenjuju savet stručnjaka."
+   ]
+  },
+  {
+   "id": "foto-der-tasse",
+   "frage": "Da li mi je potrebna fotografija moje šoljice?",
+   "antwort": [
+    "Ne. Aplikacija ne zahteva ni kameru ni fotografiju. Ti gledaš u svoju šoljicu, biraš među 80 znakova oblike koje prepoznaješ i na crtežu šoljice označavaš gde se nalaze. Iz toga nastaje tumačenje."
+   ]
+  },
+  {
+   "id": "tuerkisch",
+   "frage": "Da li postoji aplikacija na turskom jeziku?",
+   "antwort": [
+    "Da. Tarot Cup je potpuno na turskom, sa upravljanjem, tumačenjima, Leksikonom i pravnim tekstovima, kao i na svih dvanaest jezika aplikacije. Aplikacija se pokreće na jeziku tvog telefona; jezik možeš da promeniš u bilo kom trenutku u Podešavanjima."
+   ]
+  },
+  {
+   "id": "fragen-gespeichert",
+   "frage": "Da li se moja pitanja čuvaju?",
+   "antwort": [
+    "Ne. Aplikacija nema polje za tvoje pitanje; zadržavaš ga tiho za sebe. Ona ne pita za njega i ne čuva ga.",
+    "U istoriji aplikacija beleži šta je položeno: datum i vreme, vrstu rasporeda, karte (i da li su bile obrnute) ili znake sa njihovim mestom u šoljici, kod gledanja u šolju oblast života i tvoju belešku, ako je napišeš. Tvoje pitanje nikada nije među tim podacima."
+   ]
+  },
+  {
+   "id": "internet",
+   "frage": "Da li mi je potreban internet?",
+   "antwort": [
+    "Ne. Tarot Cup nema dozvolu da pristupi internetu. Rasporedi, Leksikon i Istorija rade potpuno bez internet veze, a podsetnik na kartu dana aplikacija zakazuje na tvom telefonu."
+   ]
+  },
+  {
+   "id": "konto",
+   "frage": "Da li mi je potreban nalog?",
+   "antwort": [
+    "Ne. Ne moraš se prijavljivati i nema naloga, a aplikacija ne traži tvoju e-mail adresu."
+   ]
+  },
+  {
+   "id": "legung-gesperrt",
+   "frage": "Zašto je ponekad raspored zaključan?",
+   "antwort": [
+    "Svaki raspored ima svoj ritam. Karta dana i Da ili ne mogu svakog dana, Tri karte i Potpuno tumačenje pri gledanju u šolju svaka tri dana, a raspored za ljubav jednom nedeljno. Između toga raspored odmara.",
+    "Aplikacija ti pokazuje kada je ponovo dostupna, na primer „Sutra ponovo možeš da položiš karte.“ Raspored postaje dostupan u ponoć, prema satu tvog telefona. Leksikon i Istorija su uvek otvoreni.",
+    "Kod taloga kafe postoji kratko tumačenje sa jednim ili dva znaka. Ono se ne računa u ritam, ali je ograničeno na tri dnevno.",
+    "Retko postoji još jedan razlog: kod nove verzije uslova korišćenja možeš odmah da prihvatiš ili da odlučiš kasnije. Ako ih ne prihvatiš u roku od 30 dana, novi rasporedi ponovo postaju dostupni tek nakon prihvatanja. Istorija, beleške i Leksikon ostaju otvoreni."
+   ]
+  },
+  {
+   "id": "notizen",
+   "frage": "Šta se dešava sa mojim beleškama?",
+   "antwort": [
+    "Svako tumačenje u istoriji možeš dopuniti beleškom, na primer: Šta je iz toga proizašlo? Beleške i istorija se čuvaju na tvom telefonu. Nemam pristup tim podacima. Na slici koju deliš nema tvojih beleški.",
+    "Unos zajedno sa beleškom brišeš u Istoriji pomoću „Obriši unos“. To se ne može poništiti.",
+    "Ako je sigurnosna kopija tvog telefona uključena, Android sme da sačuva istoriju, beleške, jezik i vreme podsetnika u tvom Google nalogu. Prilikom prelaska na novi telefon, Android može da ih prenese. Ritam rasporeda i potvrda starosti se ne čuvaju; oni pripadaju svakom pojedinačnom telefonu.",
+    "Više o tome možeš pročitati u [Politici privatnosti](/sr/privatnost/)."
+   ]
+  },
+  {
+   "id": "iphone",
+   "frage": "Da li postoji aplikacija za iPhone?",
+   "antwort": [
+    "Ne. Tarot Cup je dostupan samo za Android. Verzija za iPhone nije planirana."
+   ]
+  },
+  {
+   "id": "zeichen",
+   "frage": "Koliko znakova aplikacija prepoznaje?",
+   "antwort": [
+    "Za gledanje u šolju aplikacija poznaje 80 znakova u šest kategorija: Životinje, Ljudi i likovi, Predmeti, Priroda i mesta, Oblici te Slova i brojevi. Možeš ih pronaći preko kategorija ili pretrage, i pod drugim nazivima pod kojima je neki oblik poznat.",
+    "Vidiš li oblik koji nije među njima, biraš „oblik koji ne pronalaziš“. Jedno tumačenje obuhvata do osam znakova. Za tarot aplikacija poznaje svih 78 karata."
+   ]
+  },
+  {
+   "id": "sprache",
+   "frage": "Mogu li promeniti jezik?",
+   "antwort": [
+    "Da. Aplikacija se pokreće na jeziku tvog telefona ako je to jedan od njenih dvanaest jezika (nemački, turski, engleski, španski, bosanski, hrvatski, srpski, rumunski, portugalski, francuski, indonežanski i hindi), a inače na engleskom. U Podešavanjima aplikacije jezik možeš promeniti u bilo kom trenutku, nezavisno od jezika tvog telefona.",
+    "Aplikacija i ranija tumačenja u istoriji prikazuje na novom jeziku. Tvoje beleške ostaju onakve kakve su zapisane."
+   ]
+  },
+  {
+   "id": "alter",
+   "frage": "Od kojeg uzrasta je Tarot Cup?",
+   "antwort": [
+    "Od 16 godina. Prilikom prvog pokretanja potvrđuješ da imaš najmanje 16 godina i prihvataš [Uslove korišćenja](/sr/uslovi-koriscenja/). Pre toga ne možeš dalje."
+   ]
+  }
+ ]
+}

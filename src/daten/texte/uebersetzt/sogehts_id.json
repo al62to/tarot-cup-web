@@ -1,0 +1,96 @@
+{
+ "metaTitel": "Panduan: Cara Kerja Aplikasi | Tarot Cup",
+ "metaBeschreibung": "Panduan ini menjelaskan Tarot Cup dalam sembilan bab singkat: pertama kali dibuka, kartu hari ini, membentangkan tarot, membaca ampas kopi sendiri, kamus, riwayat, dan lainnya.",
+ "titel": "Cara kerja",
+ "vorspann": "Sembilan bab singkat dengan tangkapan layar, dari pertama kali dibuka sampai mengganti bahasa. Nama tombol dan layar di sini sama dengan yang ada di aplikasi.",
+ "ogTitel": "Cara kerja: Tarot Cup",
+ "brotkrume": "Cara kerja",
+ "inhaltTitel": "Bab",
+ "kapitel": [
+  {
+   "kennung": "erster-start",
+   "titel": "Apa yang terjadi saat aplikasi pertama kali dibuka?",
+   "absaetze": [
+    "Saat pertama kali dibuka, aplikasi tampil dalam bahasa ponselmu; setelah “Selamat datang”, kamu mengetuk “Lanjutkan”. Di langkah “Sebelum mulai”, kamu menyatakan bahwa kamu berusia minimal 16 tahun, lalu menerima Ketentuan Penggunaan dengan “Terima dan lanjutkan”. Pengenalan singkat memperkenalkan kartu hari ini, ampas kopi, tarot, dan kamus; dengan “Lewati” kamu bisa melewatkannya. Terakhir, aplikasi bertanya apakah ia boleh mengingatkanmu pada kartu hari ini setiap pagi."
+   ],
+   "foto": "01_erster_start",
+   "alt": "Langkah “Sebelum mulai” dengan kotak usia yang sudah dicentang, tautan ke Kebijakan Privasi dan Ketentuan Penggunaan, serta tombol “Terima dan lanjutkan”."
+  },
+  {
+   "kennung": "tageskarte",
+   "titel": "Bagaimana saya mendapatkan kartu hari ini?",
+   "absaetze": [
+    "Di bagian paling atas Beranda, kartumu untuk hari ini tergeletak tertutup. Ketuk kartunya, maka kartu terbuka; di bawahnya ada arti singkat dan “Baca selengkapnya” untuk seluruh pembacaannya. Sepanjang hari kartunya tetap sama, juga saat kamu membuka aplikasi kembali, dan mulai tengah malam sudah menunggu kartu baru yang tertutup. Setiap kartu hari ini juga tersimpan di Riwayat."
+   ],
+   "foto": "02_tageskarte",
+   "alt": "Beranda dengan kartu hari ini yang sudah terbuka, arti singkatnya, dan “Baca selengkapnya”, di bawahnya ubin “Bentangkan kartu tarot” dan “Baca ampas kopi”."
+  },
+  {
+   "kennung": "tarot-legen",
+   "titel": "Bagaimana cara membentangkan kartu tarot?",
+   "absaetze": [
+    "Lewat “Bentangkan kartu tarot” kamu memilih “Ya atau tidak”, “Tiga kartu”, atau “Cinta”, lalu memikirkan pertanyaanmu dalam hati. Kamu mengocok dengan menggeser jari di atas tumpukan, memilih kartumu di kipas setelah “Kartu sudah dikocok”, dan membukanya satu per satu setelah “Lanjutkan ke pembukaan kartu”. “Ke pembacaan menyeluruh” menunjukkan apa yang mereka ceritakan bersama. Setelah itu bentangannya beristirahat: “Ya atau tidak” tersedia lagi keesokan harinya, “Tiga kartu” setelah tiga hari, “Cinta” setelah seminggu, masing-masing mulai tengah malam."
+   ],
+   "foto": "03_tarot",
+   "alt": "Bentangan Tiga kartu dengan tiga kartu terbuka di bawah Masa lalu, Masa kini, dan Masa depan, serta tombol “Ke pembacaan menyeluruh”."
+  },
+  {
+   "kennung": "kaffeesatz",
+   "titel": "Bagaimana cara membaca ampas kopi sendiri?",
+   "absaetze": [
+    "Setelah kamu menghabiskan kopi Turkimu, ketuk “Baca ampas kopi” dan pilih bidang kehidupan. Di “Pilih simbol”, kamu mencari hingga delapan dari 80 simbol, lalu menempatkan masing-masing pada tempatnya di peta cangkir: tepi, bagian tengah, dasar, atau tatakan. Mulai tiga simbol tersedia pembacaan lengkap, setiap tiga hari; satu atau dua simbol menghasilkan pembacaan singkat, hingga tiga kali sehari. Cara menyiapkan cangkir menurut kebiasaan lama ada di [Panduan ampas kopi](/id/membaca-ampas-kopi/)."
+   ],
+   "foto": "04_kaffeesatz",
+   "alt": "Peta cangkir “Di mana letak tiap simbol?”: cangkir dilihat dari atas dengan gagang di sebelah kanan, beberapa simbol sudah ditempatkan, di bawahnya tombol “Lihat pembacaan”."
+  },
+  {
+   "kennung": "lexikon",
+   "titel": "Bagaimana cara menemukan kartu atau simbol di kamus?",
+   "absaetze": [
+    "Di tab “Kamus”, kamu berpindah di bagian atas antara “Tarot” dan “Ampas kopi”. Ke-78 kartu bisa kamu saring menurut “Arkana Mayor” dan empat jenis kartu, sedangkan 80 simbol bisa kamu temukan lewat pencarian atau kategori. Setiap entri menjelaskan artinya: pada kartu dalam posisi tegak dan terbalik, pada simbol juga cara mengenalinya di dalam cangkir. Kamus selalu tersedia dan tidak butuh internet."
+   ],
+   "foto": "05_lexikon",
+   "alt": "Kamus di bagian “Ampas kopi” dengan kolom pencarian, kategori, dan daftar simbol dengan gambar garis serta arti singkat."
+  },
+  {
+   "kennung": "verlauf",
+   "titel": "Di mana saya menemukan pembacaan dan catatan sebelumnya?",
+   "absaetze": [
+    "Setiap bentangan otomatis masuk ke tab “Riwayat”, yang terbaru di atas, lengkap dengan tanggal dan jenisnya. Ketuk satu entri, maka seluruh pembacaannya terbuka; di kolom “Catatanmu” kamu mencatat apa yang terjadi kemudian, dan aplikasi langsung menyimpannya. Dengan “Hapus entri” kamu menghapus entri dari aplikasi secara permanen setelah konfirmasi. Riwayat dan catatan disimpan aplikasi di ponselmu."
+   ],
+   "foto": "06_verlauf",
+   "alt": "Satu entri Riwayat yang terbuka dengan pembacaan, kolom “Catatanmu” yang sudah terisi, serta tombol untuk membagikan dan menghapus."
+  },
+  {
+   "kennung": "erinnerung",
+   "titel": "Bagaimana saya mengatur pengingat kartu hari ini?",
+   "absaetze": [
+    "Di “Setelan” kamu mengaktifkan “Pengingat kartu hari ini” dan mengatur “Waktu” di bawahnya per jam dan dalam kelipatan lima menit. Jika Android menanyakan apakah aplikasi boleh mengirim pemberitahuan, izinkan; tanpa izin, sakelarnya tetap mati. Pengingat datang setiap hari kira-kira pada waktu yang dipilih dan tidak mengungkap kartunya."
+   ],
+   "foto": "07_erinnerung",
+   "alt": "Setelan dengan “Pengingat kartu hari ini” yang aktif dan waktu yang bisa diatur dengan tombol minus dan plus."
+  },
+  {
+   "kennung": "teilen",
+   "titel": "Bagaimana cara membagikan pembacaan?",
+   "absaetze": [
+    "Di bawah setiap pembacaan ada “Bagikan sebagai gambar”, juga pada entri di Riwayat. Aplikasi membuat gambar berisi bentangan, tanggal, nama kartu atau simbol, satu kalimat singkat dari pembacaan, dan nama “Tarot Cup”. Pertanyaanmu tidak tercantum karena aplikasi tidak mengetahuinya. Tujuan gambar kamu pilih di menu Bagikan Android."
+   ],
+   "foto": "08_teilen",
+   "alt": "Gambar untuk dibagikan di latar gelap: di atas bentangan dan tanggal, di tengah nama kartu dan satu kalimat dalam tanda kutip, di bawah “Tarot Cup”."
+  },
+  {
+   "kennung": "sprache",
+   "titel": "Bagaimana cara mengganti bahasa?",
+   "absaetze": [
+    "Di bagian paling atas “Setelan”, di bawah “Bahasa” kamu memilih antara “Deutsch”, “Türkçe”, “English”, dan “Español”. Jika kamu tidak memilih sendiri, aplikasi mengikuti bahasa ponselmu; untuk bahasa ponsel lainnya, aplikasi menampilkan bahasa Inggris. Aplikasi langsung berganti. Pembacaan lama di Riwayat, kamus, teks hukum, dan pengingat juga tampil dalam bahasa baru; catatanmu tetap seperti yang kamu tulis."
+   ],
+   "foto": "09_sprache",
+   "alt": "Bagian atas Setelan dengan bagian “Bahasa” dan tombol untuk pilihan bahasa."
+  }
+ ],
+ "abschluss": {
+  "titel": "Masih ada pertanyaan?",
+  "text": "Jawaban singkat, misalnya apakah aplikasi butuh internet atau mengapa suatu bentangan sedang beristirahat, ada di [Pertanyaan yang sering diajukan](/id/pertanyaan/)."
+ }
+}

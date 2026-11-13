@@ -1,0 +1,95 @@
+{
+ "sprache": "Bahasa Indonesia",
+ "spracheKurz": "ID",
+ "sprung": "Langsung ke konten",
+ "nav": {
+  "aria": "Navigasi utama",
+  "tarot": "Tarot",
+  "kaffeesatz": "Ampas kopi",
+  "sogehts": "Cara kerja",
+  "fragen": "Pertanyaan",
+  "appLaden": "Unduh aplikasi",
+  "menue": "Menu",
+  "menueZu": "Tutup",
+  "sprachwahl": "Pilih bahasa"
+ },
+ "fuss": {
+  "spalteApp": "Aplikasi",
+  "spalteRecht": "Informasi hukum",
+  "spalteKontakt": "Kontak",
+  "sogehts": "Cara kerja",
+  "fragen": "Pertanyaan",
+  "ueber": "Tentang Tarot Cup",
+  "datenschutz": "Kebijakan Privasi",
+  "nutzungsbedingungen": "Ketentuan Penggunaan",
+  "offenlegung": "Identitas penerbit",
+  "bildnachweis": "Sumber gambar dan lisensi",
+  "kontakt": "Kirim email",
+  "sprache": "Bahasa",
+  "hinweis": "Untuk hiburan. Bukan prediksi dan bukan konsultasi.",
+  "zeile": "Tarot Cup · Untuk hiburan."
+ },
+ "krumen": {
+  "aria": "Jejak navigasi",
+  "start": "Beranda"
+ },
+ "inhalt": "Daftar isi",
+ "teilen": {
+  "knopf": "Bagikan halaman",
+  "titel": "Bagikan",
+  "kopieren": "Salin tautan",
+  "kopiert": "Tautan disalin",
+  "whatsapp": "Lewat WhatsApp",
+  "email": "Lewat email",
+  "emailText": "Ini mungkin menarik untukmu:"
+ },
+ "store": {
+  "bald": "Segera hadir di Google Play",
+  "ansehen": "Lihat di Google Play",
+  "abzeichenAlt": "Tersedia di Google Play"
+ },
+ "app": {
+  "metaTitel": "Unduh Tarot Cup: aplikasi untuk Android",
+  "metaBeschreibung": "Tautan ini membawamu ke Tarot Cup di Google Play. Di komputer, pindai kodenya dengan ponselmu. Tarot Cup tersedia untuk Android.",
+  "titel": "Tarot Cup untuk Android",
+  "text": "Tarot Cup tersedia untuk Android di Google Play. Kalau kamu sedang di komputer, pindai kodenya dengan ponselmu.",
+  "qr": "Pindai dengan ponsel",
+  "weiter": "Lanjutkan ke Google Play",
+  "bald": "Tarot Cup segera hadir di Google Play. Silakan mampir lagi nanti.",
+  "iphone": "Tarot Cup hanya tersedia untuk Android."
+ },
+ "nichtGefunden": {
+  "titel": "Halaman tidak ditemukan",
+  "text": "Halaman ini tidak ada atau sudah tidak ada lagi. Kamu bisa melanjutkan dari beranda.",
+  "start": "Ke beranda"
+ },
+ "bilder": {
+  "druck1909": "Cetakan tahun 1909",
+  "auslegebild": "Gambar bentangan",
+  "eineKarte": "satu kartu",
+  "gegenueberKurz": "sisi seberang",
+  "tassenkarte": "Peta cangkir dari atas: {rand}, {mitte}, dan {boden}, di kiri {gegenueber}, di kanan {henkelseite} dengan gagangnya, di bawahnya {untertasse}"
+ },
+ "bildnachweis": {
+  "metaTitel": "Sumber gambar dan lisensi | Tarot Cup",
+  "metaBeschreibung": "Di sini tertera asal gambar kartu tahun 1909 di Tarot Cup dan di situs web ini, serta lisensi fon yang dipakai situs web ini.",
+  "titel": "Sumber gambar dan lisensi",
+  "brotkrume": "Sumber gambar",
+  "vorspann": "Di sini tertera dari mana gambar kartu berasal dan fon apa yang dipakai situs web ini.",
+  "karten": {
+   "titel": "Gambar kartu tahun 1909",
+   "absaetze": [
+    "Gambar kartu di aplikasi dan di situs web ini digambar oleh Pamela Colman Smith. Gambar-gambar itu terbit pada tahun 1909 dan sudah menjadi milik umum (domain publik).",
+    "Dasarnya adalah pindaian cetakan asli dari Wikimedia Commons. Di aplikasi, gambar hanya dipotong pada bagian gambarnya. Untuk situs web ini, gambar diperkecil, dipotong ke format seragam 480 × 822 piksel, dan disimpan sebagai WebP. Selain itu, gambar tidak diubah."
+   ]
+  },
+  "schriften": {
+   "titel": "Fon situs web ini",
+   "absaetze": [
+    "Situs web ini memakai dua fon: Cormorant Garamond karya Christian Thalmann dan Inter karya Rasmus Andersson. Keduanya berlisensi SIL Open Font License, Versi 1.1.",
+    "Berkas fon disimpan di situs web ini sendiri dan tidak dimuat dari server pihak lain."
+   ]
+  },
+  "marken": "Google Play dan logo Google Play adalah merek dagang Google LLC."
+ }
+}

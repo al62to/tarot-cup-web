@@ -1,0 +1,41 @@
+{
+ "metaTitel": "À propos de Tarot Cup : ce que l’application est, et ce qu’elle n’est pas",
+ "metaBeschreibung": "Tarot Cup est une application de tarot et de marc de café, en douze langues. Voici ce qu’elle est, et ce qu’elle n’est pas.",
+ "titel": "À propos de Tarot Cup",
+ "vorspann": "Tarot Cup est une application paisible pour le tarot et le marc de café. Voici ce qu’elle est, et ce qu’elle n’est pas.",
+ "ogTitel": "À propos de Tarot Cup",
+ "brotkrume": "À propos",
+ "abschnitte": [
+  {
+   "kennung": "was-sie-ist",
+   "titel": "Qu’est-ce que Tarot Cup ?",
+   "absaetze": [
+    "Avec Tarot Cup, tu fais des tirages de tarot et tu lis toi-même le marc de café de ta tasse. Tu tires tes cartes, tu choisis les symboles que tu reconnais dans la tasse et tu lis ce que la tradition en raconte. L’application existe pour Android, en douze langues. Elle démarre dans la langue de ton téléphone ; tu peux changer de langue dans l’application.",
+    "Chaque tirage a son propre rythme. Entre deux, les cartes se reposent, et tu as le temps de réfléchir à une lecture."
+   ]
+  },
+  {
+   "kennung": "was-sie-nicht-ist",
+   "titel": "Ce que Tarot Cup n’est pas",
+   "absaetze": [
+    "Tarot Cup, ce n’est pas de la voyance. Les lectures ne prédisent pas l’avenir et ne sont pas des conseils, et elles ne remplacent pas l’avis de professionnels. Elles racontent ce que d’anciennes traditions autour des cartes et du café voient dans les images et les symboles.",
+    "L’application est pensée comme un divertissement, avec respect pour la tradition. Tu décides de ce qui te correspond."
+   ]
+  },
+  {
+   "kennung": "bei-dir",
+   "titel": "Ce qui reste chez toi",
+   "absaetze": [
+    "Ni compte, ni connexion internet. L’application enregistre l’historique et les notes sur ton téléphone. Je n’y ai pas accès."
+   ]
+  },
+  {
+   "kennung": "wer",
+   "titel": "Qui est derrière Tarot Cup",
+   "absaetze": [
+    "Les [Mentions légales](/offenlegung/) indiquent qui est responsable de ce site."
+   ]
+  }
+ ],
+ "kontakt": "Écris-moi : "
+}

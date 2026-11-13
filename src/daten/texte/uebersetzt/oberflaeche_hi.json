@@ -1,0 +1,95 @@
+{
+ "sprache": "हिन्दी",
+ "spracheKurz": "HI",
+ "sprung": "मुख्य सामग्री पर जाएं",
+ "nav": {
+  "aria": "मुख्य नेविगेशन",
+  "tarot": "टैरो",
+  "kaffeesatz": "कॉफ़ी की तलछट",
+  "sogehts": "कैसे काम करता है",
+  "fragen": "सवाल",
+  "appLaden": "ऐप डाउनलोड करें",
+  "menue": "मेनू",
+  "menueZu": "बंद करें",
+  "sprachwahl": "भाषा चुनें"
+ },
+ "fuss": {
+  "spalteApp": "ऐप",
+  "spalteRecht": "कानूनी जानकारी",
+  "spalteKontakt": "संपर्क",
+  "sogehts": "कैसे काम करता है",
+  "fragen": "सवाल",
+  "ueber": "Tarot Cup के बारे में",
+  "datenschutz": "निजता",
+  "nutzungsbedingungen": "उपयोग की शर्तें",
+  "offenlegung": "कानूनी सूचना",
+  "bildnachweis": "तस्वीरों का श्रेय और लाइसेंस",
+  "kontakt": "ईमेल भेजें",
+  "sprache": "भाषा",
+  "hinweis": "मनोरंजन के लिए। यह न भविष्यवाणी है, न सलाह।",
+  "zeile": "Tarot Cup · मनोरंजन के लिए।"
+ },
+ "krumen": {
+  "aria": "ब्रेडक्रंब",
+  "start": "होम"
+ },
+ "inhalt": "विषय सूची",
+ "teilen": {
+  "knopf": "पेज शेयर करें",
+  "titel": "शेयर करें",
+  "kopieren": "लिंक कॉपी करें",
+  "kopiert": "लिंक कॉपी हो गया",
+  "whatsapp": "व्हाट्सऐप से",
+  "email": "ईमेल से",
+  "emailText": "यह आपको दिलचस्प लग सकता है:"
+ },
+ "store": {
+  "bald": "जल्द ही Google Play पर",
+  "ansehen": "Google Play पर देखें",
+  "abzeichenAlt": "अब Google Play पर उपलब्ध"
+ },
+ "app": {
+  "metaTitel": "Tarot Cup डाउनलोड करें: एंड्रॉइड ऐप",
+  "metaBeschreibung": "यह लिंक आपको Google Play पर Tarot Cup तक पहुंचाता है। कंप्यूटर पर इसके लिए अपने फ़ोन से कोड स्कैन करें। Tarot Cup एंड्रॉइड के लिए उपलब्ध है।",
+  "titel": "एंड्रॉइड के लिए Tarot Cup",
+  "text": "Tarot Cup एंड्रॉइड के लिए Google Play पर उपलब्ध है। अगर आप कंप्यूटर पर हैं, तो अपने फ़ोन से कोड स्कैन करें।",
+  "qr": "फ़ोन से स्कैन करें",
+  "weiter": "Google Play पर जाएं",
+  "bald": "Tarot Cup जल्द ही Google Play पर आ रहा है। बाद में फिर आएं।",
+  "iphone": "Tarot Cup सिर्फ़ एंड्रॉइड के लिए है।"
+ },
+ "nichtGefunden": {
+  "titel": "पेज नहीं मिला",
+  "text": "यह पेज नहीं है या अब नहीं रहा। आगे के लिए होम पेज पर जाएं।",
+  "start": "होम पेज पर जाएं"
+ },
+ "bilder": {
+  "druck1909": "1909 का प्रिंट",
+  "auslegebild": "स्प्रेड की तस्वीर",
+  "eineKarte": "एक कार्ड",
+  "gegenueberKurz": "सामने",
+  "tassenkarte": "ऊपर से कप का नक्शा: {rand}, {mitte} और {boden}, बाईं ओर {gegenueber}, दाईं ओर {henkelseite}, जहां हैंडल है, नीचे {untertasse}"
+ },
+ "bildnachweis": {
+  "metaTitel": "तस्वीरों का श्रेय और लाइसेंस | Tarot Cup",
+  "metaBeschreibung": "यहां बताया गया है कि Tarot Cup और इस वेबसाइट के 1909 के कार्ड की तस्वीरें कहां से ली गई हैं, और वेबसाइट के फ़ॉन्ट किस लाइसेंस के तहत हैं।",
+  "titel": "तस्वीरों का श्रेय और लाइसेंस",
+  "brotkrume": "तस्वीरों का श्रेय",
+  "vorspann": "यहां बताया गया है कि कार्ड की तस्वीरें कहां से आई हैं और इस वेबसाइट पर कौन-से फ़ॉन्ट इस्तेमाल हुए हैं।",
+  "karten": {
+   "titel": "1909 की कार्ड तस्वीरें",
+   "absaetze": [
+    "ऐप और इस वेबसाइट पर कार्ड की तस्वीरें Pamela Colman Smith ने बनाई थीं। ये 1909 में प्रकाशित हुईं और सार्वजनिक डोमेन में हैं।",
+    "ये तस्वीरें मूल छपाई के स्कैन पर आधारित हैं, जो Wikimedia Commons से लिए गए हैं। ऐप में तस्वीरों को सिर्फ़ चित्र वाले हिस्से तक काटा गया है। इस वेबसाइट के लिए इन्हें छोटा किया गया है, 480 × 822 पिक्सेल के एक जैसे आकार में काटा गया है और WebP में सहेजा गया है। इसके अलावा ये जस की तस हैं।"
+   ]
+  },
+  "schriften": {
+   "titel": "इस वेबसाइट के फ़ॉन्ट",
+   "absaetze": [
+    "वेबसाइट दो फ़ॉन्ट इस्तेमाल करती है: Christian Thalmann का Cormorant Garamond और Rasmus Andersson का Inter। दोनों SIL Open Font License, वर्शन 1.1 के तहत हैं।",
+    "फ़ॉन्ट फ़ाइलें इसी वेबसाइट पर रखी हैं और बाहरी सर्वरों से लोड नहीं होतीं।"
+   ]
+  },
+  "marken": "Google Play और Google Play का लोगो Google LLC के ट्रेडमार्क हैं।"
+ }
+}

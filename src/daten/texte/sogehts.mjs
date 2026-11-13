@@ -88,7 +88,7 @@ export const sogehts = {
           'Ganz oben in den „Einstellungen“ wählst du unter „Sprache“ zwischen „Deutsch“, „Türkçe“, „English“ und „Español“. Ohne eigene Wahl folgt die App der Sprache deines Handys, bei jeder anderen Handysprache zeigt sie Englisch. Die App wechselt sofort. Auch frühere Deutungen im Verlauf, das Lexikon, die Rechtstexte und die Erinnerung erscheinen dann in der neuen Sprache; deine Notizen bleiben, wie du sie geschrieben hast.',
         ],
         foto: '09_sprache',
-        alt: 'Der obere Teil der Einstellungen mit dem Abschnitt „Sprache“ und den Knöpfen für die vier Sprachen.',
+        alt: 'Der obere Teil der Einstellungen mit dem Abschnitt „Sprache“ und den Knöpfen für die Sprachen.',
       },
     ],
     abschluss: {
@@ -184,7 +184,7 @@ export const sogehts = {
           '“Ayarlar” sayfasının en üstündeki “Dil” bölümünde “Deutsch”, “Türkçe”, “English” ve “Español” arasında seçim yaparsın. Kendin seçmezsen uygulama telefonunun dilini kullanır; telefonun başka bir dildeyse İngilizce açılır. Uygulama hemen seçtiğin dile geçer. Geçmiş’teki eski yorumlar, sözlük, hukuki metinler ve hatırlatma da yeni dilde görünür; notların ise yazdığın gibi kalır.',
         ],
         foto: '09_sprache',
-        alt: '“Ayarlar” sayfasının üst kısmı: “Dil” bölümü ve dört dilin düğmeleri.',
+        alt: 'Ayarların üst kısmı: „Dil“ bölümü ve dil düğmeleri.',
       },
     ],
     abschluss: {
@@ -194,8 +194,24 @@ export const sogehts = {
   },
 };
 
-// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+// Übersetzungen (en, es seit AP-SPR2; bs, hr, sr, ro, pt, fr, id, hi seit AP-23): erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
 import sogehtsEn from './uebersetzt/sogehts_en.json' with { type: 'json' };
 import sogehtsEs from './uebersetzt/sogehts_es.json' with { type: 'json' };
+import sogehtsBs from './uebersetzt/sogehts_bs.json' with { type: 'json' };
+import sogehtsHr from './uebersetzt/sogehts_hr.json' with { type: 'json' };
+import sogehtsSr from './uebersetzt/sogehts_sr.json' with { type: 'json' };
+import sogehtsRo from './uebersetzt/sogehts_ro.json' with { type: 'json' };
+import sogehtsPt from './uebersetzt/sogehts_pt.json' with { type: 'json' };
+import sogehtsFr from './uebersetzt/sogehts_fr.json' with { type: 'json' };
+import sogehtsId from './uebersetzt/sogehts_id.json' with { type: 'json' };
+import sogehtsHi from './uebersetzt/sogehts_hi.json' with { type: 'json' };
 sogehts.en = sogehtsEn;
 sogehts.es = sogehtsEs;
+sogehts.bs = sogehtsBs;
+sogehts.hr = sogehtsHr;
+sogehts.sr = sogehtsSr;
+sogehts.ro = sogehtsRo;
+sogehts.pt = sogehtsPt;
+sogehts.fr = sogehtsFr;
+sogehts.id = sogehtsId;
+sogehts.hi = sogehtsHi;

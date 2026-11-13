@@ -11,7 +11,8 @@ import masse from './fotos_masse.json' with { type: 'json' };
 // die Fotos der Anleitung fehlen noch). Bis sie da sind, zeigen diese Seiten die deutschen Fotos; der Bau meldet jede
 // Seite mit Ersatzfotos als Warnung (tools/pruefe_bau.mjs). Sobald die Fotos da sind: node tools/bilder_bauen.mjs app
 // sogehts (Quellen dort). Für Deutsch und Türkisch gibt es keinen Ersatz.
-export const FOTO_ERSATZ = { en: 'de', es: 'de' };
+// AP-23: Die acht neuen Sprachen zeigen vorerst die englischen Fotos (Auftrag: eigene Fotos je Sprache später).
+export const FOTO_ERSATZ = { en: 'de', es: 'de', bs: 'en', hr: 'en', sr: 'en', ro: 'en', pt: 'en', fr: 'en', id: 'en', hi: 'en' };
 const fotoSprache = (art, name, sprache) => (masse[`${art}/${name}-${sprache}`] || !FOTO_ERSATZ[sprache] ? sprache : FOTO_ERSATZ[sprache]);
 
 export function fotoMasse(art, name, sprache) {

@@ -1,0 +1,204 @@
+{
+ "metaTitel": "Leia a borra de café e faça uma tiragem de tarô pelo aplicativo | Tarot Cup",
+ "metaBeschreibung": "Com o app Tarot Cup para Android, você lê a borra de café por conta própria com 80 símbolos e faz tiragens de tarô com 78 cartas, em doze idiomas e sem internet.",
+ "ogTitel": "Leitura da borra de café. Tiragem de tarô.",
+ "kopf": {
+  "zeile": "Tarot Cup · Aplicativo para Android",
+  "zeilen": [
+   "Leia a borra de café *por conta própria*.",
+   "Faça tiragens de tarô *com calma*."
+  ],
+  "text": "Escolha os símbolos da sua xícara, indique no mapa da xícara onde eles estão e leia o que podem significar. Ou faça uma tiragem de tarô com calma. O app funciona sem internet e sem conta.",
+  "knopf": "Veja no Google Play",
+  "bald": "Em breve no Google Play",
+  "anleitung": "Como funciona",
+  "karte": {
+   "tipp": "Toque na carta e vire-a.",
+   "satz": "Seu significado, na posição normal e invertida, está no Dicionário do aplicativo.",
+   "umdrehen": "Virar a carta",
+   "zurueck": "Virar novamente a carta “{name}”"
+  }
+ },
+ "zahlen": {
+  "aria": "Tarot Cup em números",
+  "liste": [
+   {
+    "zahl": "78",
+    "text": "Cartas de tarô, no Dicionário, na posição normal e invertida"
+   },
+   {
+    "zahl": "80",
+    "text": "Símbolos para a borra de café, com busca e categorias"
+   },
+   {
+    "zahl": "12",
+    "text": "Idiomas, do alemão e do turco ao francês e ao hindi"
+   },
+   {
+    "zahl": "0",
+    "text": "Contas, sem necessidade de internet"
+   }
+  ]
+ },
+ "wasIst": {
+  "titel": "O que é o Tarot Cup?",
+  "text": "O Tarot Cup é um aplicativo para Android com o qual você faz tiragens de tarô e lê por conta própria a borra de café da sua xícara. Está disponível em doze idiomas; abre no idioma do seu celular, e você pode mudar o idioma no app. É voltado a pessoas a partir de 16 anos e funciona sem internet e sem conta. As interpretações seguem tradições antigas e são feitas para entretenimento."
+ },
+ "tasse": {
+  "zeile": "O ritual",
+  "titel": "Como ler *sua xícara*",
+  "schritte": [
+   "Pense na sua pergunta e beba o café turco. Vire a xícara sobre o pires e deixe-a esfriar. Sua pergunta fica só com você; o app não pergunta por ela.",
+   "Gire a xícara com calma e procure as formas entre os 80 símbolos.",
+   "Mostre no mapa da xícara onde cada símbolo está. Com três ou mais símbolos, há a leitura completa."
+  ],
+  "link": {
+   "text": "Mais sobre a leitura da borra de café",
+   "ziel": "/pt/leitura-da-borra-de-cafe/"
+  }
+ },
+ "tassenkarte": {
+  "titel": "O mapa da xícara",
+  "hinweis": "Escolha uma área",
+  "gruppe": "Selecione a área da xícara",
+  "bereiche": [
+   {
+    "bereich": "rand",
+    "name": "Borda",
+    "bedeutung": "Tempo próximo"
+   },
+   {
+    "bereich": "mitte",
+    "name": "Meio",
+    "bedeutung": "Agora"
+   },
+   {
+    "bereich": "boden",
+    "name": "Fundo",
+    "bedeutung": "Tempo mais distante"
+   },
+   {
+    "bereich": "henkelseite",
+    "name": "Lado da asa",
+    "bedeutung": "Você, seu lar"
+   },
+   {
+    "bereich": "gegenueber",
+    "name": "Lado oposto",
+    "bedeutung": "Fora"
+   },
+   {
+    "bereich": "untertasse",
+    "name": "Pires",
+    "bedeutung": "Seu desejo"
+   }
+  ]
+ },
+ "schaukasten": {
+  "titel": "Assim é o *Tarot Cup*",
+  "gruppe": "Escolha a tela",
+  "eintraege": [
+   {
+    "foto": "01_start_tageskarte",
+    "titel": "Carta do Dia",
+    "text": "Uma carta para o dia, renovada diariamente."
+   },
+   {
+    "foto": "03_deutung_drei_karten",
+    "titel": "Três Cartas",
+    "text": "Passado, presente e futuro com uma leitura que conecta os três."
+   },
+   {
+    "foto": "05_kaffee_tasse",
+    "titel": "Mapa da xícara",
+    "text": "Mostre onde seus símbolos estão na xícara."
+   }
+  ]
+ },
+ "koennen": {
+  "titel": "O que o app *faz*",
+  "ruhe": {
+   "titel": "Com calma, não sem fim",
+   "text": "Cada tiragem tem seu ritmo. Entre uma e outra, as cartas descansam.",
+   "pillen": [
+    {
+     "name": "Carta do Dia",
+     "takt": "diariamente"
+    },
+    {
+     "name": "Sim ou Não",
+     "takt": "diariamente"
+    },
+    {
+     "name": "Três Cartas",
+     "takt": "a cada 3 dias"
+    },
+    {
+     "name": "Ler por conta própria",
+     "takt": "a cada 3 dias"
+    },
+    {
+     "name": "Amor",
+     "takt": "semanalmente"
+    }
+   ]
+  },
+  "sprachen": {
+   "gross": "A / अ",
+   "titel": "Doze idiomas",
+   "text": "Alemão, turco, inglês, espanhol, bósnio, croata, sérvio, romeno, português, francês, indonésio e hindi: o app inteiro em cada idioma."
+  }
+ },
+ "vorteile": [
+  {
+   "id": "bleibt",
+   "titel": "Fica com você",
+   "text": "O histórico e as anotações ficam salvos no seu celular. Não tenho acesso a eles."
+  },
+  {
+   "id": "internet",
+   "titel": "Sem internet",
+   "text": "O aplicativo não tem permissão para acessar a internet."
+  },
+  {
+   "id": "konto",
+   "titel": "Sem conta",
+   "text": "No aplicativo, não é necessário se cadastrar nem informar um endereço de e-mail."
+  }
+ ],
+ "ratgeber": {
+  "titel": "*Entender* o tarô e a borra de café",
+  "zeile": "Guia",
+  "eintraege": [
+   {
+    "titel": "Como fazer uma tiragem de tarô?",
+    "text": "As 78 cartas, na posição normal e invertida, as tiragens do aplicativo e o ritual passo a passo.",
+    "link": "Ir para o guia do tarô",
+    "ziel": "/pt/tarot/"
+   },
+   {
+    "titel": "Como ler a borra de café?",
+    "text": "Do café turco à xícara lida: o ritual, as áreas da xícara e os símbolos mais frequentes.",
+    "link": "Ir para o guia da borra de café",
+    "ziel": "/pt/leitura-da-borra-de-cafe/"
+   }
+  ]
+ },
+ "fotos": {
+  "alt": {
+   "01_start_tageskarte": "Tela inicial do aplicativo com a Carta do Dia revelada, “O Mago”, e abaixo os cartões “Fazer uma tiragem de tarô” e “Ler a borra de café”",
+   "03_deutung_drei_karten": "Tiragem “Três Cartas” com “A Imperatriz”, “A Roda da Fortuna” e “Rainha de Copas” para passado, presente e futuro, incluindo o início da leitura",
+   "05_kaffee_tasse": "Mapa da xícara visto de cima com borda, meio, fundo, lado da asa e lado oposto, três símbolos marcados e o pires embaixo"
+  }
+ },
+ "fragen": {
+  "titel": "Perguntas *frequentes*",
+  "ids": [
+   "zukunft",
+   "foto-der-tasse",
+   "tuerkisch",
+   "fragen-gespeichert"
+  ],
+  "alle": "Todas as perguntas"
+ }
+}

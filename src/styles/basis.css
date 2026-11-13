@@ -168,6 +168,12 @@ html[data-sprachhinweis="es"] .sprachhinweis[data-fuer="es"] { display: flex; }
 .sprachwahl[open] .sprachwahl-pfeil, .sprachwahl-knopf[aria-expanded="true"] .sprachwahl-pfeil { transform: rotate(180deg); }
 .sprachwahl-liste { position: absolute; top: calc(100% + 8px); right: 0; z-index: 60; width: max-content; min-width: 100%; max-width: calc(100vw - 2 * var(--rand-seite)); margin: 0; padding: 6px; list-style: none; border: 1px solid var(--gold-mittel); border-radius: 14px; background: var(--kaffee); box-shadow: 0 16px 40px rgb(0 0 0 / 0.45); }
 .sprachwahl-liste[hidden] { display: none; }
+/* AP-23: Mit zwölf Sprachen ist die Liste rund 540 px hoch. Sie scrollt deshalb in sich, wenn das Fenster niedrig ist,
+   und steht ab Desktop-Breite in zwei Spalten (geprüft bei 1280 x 600 und 390 px Breite). */
+.sprachwahl-liste { max-height: calc(100dvh - 96px); overflow-y: auto; overscroll-behavior: contain; }
+@media (min-width: 56rem) {
+  .sprachwahl-liste:not([hidden]) { display: grid; grid-template-columns: repeat(2, minmax(max-content, 1fr)); column-gap: 4px; }
+}
 .sprachwahl-liste a { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 44px; padding: 0 14px; border-radius: 9px; color: var(--hell-gedaempft); font: 500 0.9375rem/1.2 var(--sans); text-decoration: none; }
 .sprachwahl-liste a:hover { background: var(--gold-fein); color: var(--creme); }
 .sprachwahl-liste a[aria-current="true"] { color: var(--gold); font-weight: 600; }

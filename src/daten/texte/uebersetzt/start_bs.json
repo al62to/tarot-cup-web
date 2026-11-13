@@ -1,0 +1,204 @@
+{
+ "metaTitel": "Gledanje u šoljicu i postavljanje tarota putem aplikacije | Tarot Cup",
+ "metaBeschreibung": "Uz Android aplikaciju Tarot Cup samostalno čitaš talog kahve s 80 znakova i postavljaš tarot sa 78 karata, na dvanaest jezika i bez interneta.",
+ "ogTitel": "Gledaj u šoljicu. Položi karte.",
+ "kopf": {
+  "zeile": "Tarot Cup · Aplikacija za Android",
+  "zeilen": [
+   "*Samostalno* čitaj talog kahve.",
+   "Položi tarot *u miru*."
+  ],
+  "text": "Odaberi znakove iz svoje šoljice, pokaži na crtežu šoljice gdje se nalaze i pročitaj šta mogu značiti. Ili u miru položi tarot karte. Aplikacija radi bez interneta i bez korisničkog računa.",
+  "knopf": "Pogledaj na Google Playju",
+  "bald": "Uskoro na Google Playju",
+  "anleitung": "Kako funkcioniše",
+  "karte": {
+   "tipp": "Dodirni kartu i okreni je.",
+   "satz": "Njezino značenje, uspravno i obrnuto, nalazi se u leksikonu aplikacije.",
+   "umdrehen": "Okreni kartu",
+   "zurueck": "Ponovo okreni kartu „{name}“"
+  }
+ },
+ "zahlen": {
+  "aria": "Tarot Cup u brojkama",
+  "liste": [
+   {
+    "zahl": "78",
+    "text": "Tarot karte, u leksikonu uspravno i obrnuto"
+   },
+   {
+    "zahl": "80",
+    "text": "Znakovi za talog kahve, s pretragom i kategorijama"
+   },
+   {
+    "zahl": "12",
+    "text": "jezika, od njemačkog i turskog do francuskog i hindi jezika"
+   },
+   {
+    "zahl": "0",
+    "text": "korisničkih računa, internet nije potreban"
+   }
+  ]
+ },
+ "wasIst": {
+  "titel": "Šta je Tarot Cup?",
+  "text": "Tarot Cup je aplikacija za Android pomoću koje postavljaš tarot karte i samostalno čitaš talog kahve u svojoj šoljici. Dostupna je na dvanaest jezika; pokreće se na jeziku tvog mobitela, a jezik možeš promijeniti u aplikaciji. Namijenjena je ljudima od 16 godina naviše i radi bez interneta i bez korisničkog računa. Tumačenja slijede stare tradicije i služe za zabavu."
+ },
+ "tasse": {
+  "zeile": "Ritual",
+  "titel": "Kako čitaš *svoju šoljicu*",
+  "schritte": [
+   "Misli na svoje pitanje i popij tursku kahvu. Preokreni šoljicu na tacnu i ostavi je da se ohladi. Tvoje pitanje zadrži za sebe, aplikacija te o tome ne pita.",
+   "Okreni šoljicu u miru i potraži oblike među 80 znakova.",
+   "Pokaži na crtežu šoljice gdje se svaki znak nalazi. Sa tri ili više znakova dobijaš potpuno tumačenje."
+  ],
+  "link": {
+   "text": "Više o gledanju u šoljicu",
+   "ziel": "/bs/gledanje-u-soljicu/"
+  }
+ },
+ "tassenkarte": {
+  "titel": "Crtež šoljice",
+  "hinweis": "Odaberi područje",
+  "gruppe": "Odaberi područje šoljice",
+  "bereiche": [
+   {
+    "bereich": "rand",
+    "name": "Ivica",
+    "bedeutung": "bliži period"
+   },
+   {
+    "bereich": "mitte",
+    "name": "Sredina",
+    "bedeutung": "sada"
+   },
+   {
+    "bereich": "boden",
+    "name": "Dno",
+    "bedeutung": "dalji period"
+   },
+   {
+    "bereich": "henkelseite",
+    "name": "Strana drške",
+    "bedeutung": "ti, tvoj dom"
+   },
+   {
+    "bereich": "gegenueber",
+    "name": "Nasuprot",
+    "bedeutung": "napolju"
+   },
+   {
+    "bereich": "untertasse",
+    "name": "Tacna",
+    "bedeutung": "tvoja želja"
+   }
+  ]
+ },
+ "schaukasten": {
+  "titel": "Kako izgleda *Tarot Cup*",
+  "gruppe": "Odaberi ekran",
+  "eintraege": [
+   {
+    "foto": "01_start_tageskarte",
+    "titel": "Karta dana",
+    "text": "Jedna karta za dan, svaki dan nova."
+   },
+   {
+    "foto": "03_deutung_drei_karten",
+    "titel": "Tri karte",
+    "text": "Prošlost, sadašnjost i budućnost s tumačenjem koje povezuje sve tri."
+   },
+   {
+    "foto": "05_kaffee_tasse",
+    "titel": "Crtež šoljice",
+    "text": "Pokaži gdje se tvoji znakovi nalaze u šoljici."
+   }
+  ]
+ },
+ "koennen": {
+  "titel": "Šta aplikacija *može*",
+  "ruhe": {
+   "titel": "S mirom, a ne bez kraja",
+   "text": "Svaki raspored ima svoj ritam. Između toga se karte odmaraju.",
+   "pillen": [
+    {
+     "name": "Karta dana",
+     "takt": "svaki dan"
+    },
+    {
+     "name": "Da ili ne",
+     "takt": "svaki dan"
+    },
+    {
+     "name": "Tri karte",
+     "takt": "svaka 3 dana"
+    },
+    {
+     "name": "Samostalno čitanje",
+     "takt": "svaka 3 dana"
+    },
+    {
+     "name": "Ljubav",
+     "takt": "sedmično"
+    }
+   ]
+  },
+  "sprachen": {
+   "gross": "A / अ",
+   "titel": "Dvanaest jezika",
+   "text": "Njemački, turski, engleski, španski, bosanski, hrvatski, srpski, rumunski, portugalski, francuski, indonezijski i hindi: cijela aplikacija na svakom jeziku."
+  }
+ },
+ "vorteile": [
+  {
+   "id": "bleibt",
+   "titel": "Ostaje s tobom",
+   "text": "Historiju i bilješke aplikacija sprema na tvom mobitelu. Nemam pristup tim podacima."
+  },
+  {
+   "id": "internet",
+   "titel": "Bez interneta",
+   "text": "Aplikacija nema dozvolu za pristup internetu."
+  },
+  {
+   "id": "konto",
+   "titel": "Bez korisničkog računa",
+   "text": "U aplikaciji nema prijave ni e-mail adrese."
+  }
+ ],
+ "ratgeber": {
+  "titel": "Tarot i talog kahve *razumjeti*",
+  "zeile": "Vodič",
+  "eintraege": [
+   {
+    "titel": "Kako postaviti tarot?",
+    "text": "78 karata, uspravno i obrnuto, rasporedi aplikacije i ritual korak po korak.",
+    "link": "Na vodič za tarot",
+    "ziel": "/bs/tarot/"
+   },
+   {
+    "titel": "Kako čitati talog kahve?",
+    "text": "Od turske kahve do pročitane šoljice: ritual, područja šoljice i česti znakovi.",
+    "link": "Na vodič za talog kahve",
+    "ziel": "/bs/gledanje-u-soljicu/"
+   }
+  ]
+ },
+ "fotos": {
+  "alt": {
+   "01_start_tageskarte": "Početna stranica aplikacije s otkrivenom kartom dana „Mag“, ispod nje pločice „Položi karte“ i „Gledanje u šoljicu“",
+   "03_deutung_drei_karten": "Raspored „Tri karte“ s kartama „Carica“, „Kolo sreće“ i „Kraljica pehara“ za prošlost, sadašnjost i budućnost, ispod kojeg se nalazi početak tumačenja.",
+   "05_kaffee_tasse": "Crtež šoljice odozgo s ivicom, sredinom, dnom, stranom drške i nasuprot, tri postavljena znaka i tacnom ispod"
+  }
+ },
+ "fragen": {
+  "titel": "Česta *pitanja*",
+  "ids": [
+   "zukunft",
+   "foto-der-tasse",
+   "tuerkisch",
+   "fragen-gespeichert"
+  ],
+  "alle": "Sva pitanja"
+ }
+}

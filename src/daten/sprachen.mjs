@@ -11,18 +11,29 @@ const fest = [
   { text: 'SIL Open Font License', lang: 'en' },
   { text: 'Wikimedia Commons', lang: 'en' },
   // Sprachnamen in der jeweils anderen Sprache.
-  { text: 'Türkçe', lang: 'tr', nur: ['de', 'en', 'es'] },
-  { text: 'Deutsch', lang: 'de', nur: ['tr', 'en', 'es'] },
-  { text: 'English', lang: 'en', nur: ['de', 'tr', 'es'] },
-  { text: 'Español', lang: 'es', nur: ['de', 'tr', 'en'] },
-  { text: 'Offenlegung', lang: 'de', nur: ['tr', 'en', 'es'] },
+  { text: 'Türkçe', lang: 'tr', nur: ['de', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
+  { text: 'Deutsch', lang: 'de', nur: ['tr', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
+  { text: 'English', lang: 'en', nur: ['de', 'tr', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
+  { text: 'Español', lang: 'es', nur: ['de', 'tr', 'en', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
+  { text: 'Bosanski', lang: 'bs', nur: ['de', 'tr', 'en', 'es', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
+  { text: 'Hrvatski', lang: 'hr', nur: ['de', 'tr', 'en', 'es', 'bs', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
+  { text: 'Srpski', lang: 'sr', nur: ['de', 'tr', 'en', 'es', 'bs', 'hr', 'ro', 'pt', 'fr', 'id', 'hi'] },
+  { text: 'Română', lang: 'ro', nur: ['de', 'tr', 'en', 'es', 'bs', 'hr', 'sr', 'pt', 'fr', 'id', 'hi'] },
+  { text: 'Português', lang: 'pt', nur: ['de', 'tr', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'fr', 'id', 'hi'] },
+  { text: 'Français', lang: 'fr', nur: ['de', 'tr', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'id', 'hi'] },
+  { text: 'Bahasa Indonesia', lang: 'id', nur: ['de', 'tr', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'hi'] },
+  { text: 'हिन्दी', lang: 'hi', nur: ['de', 'tr', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id'] },
+  { text: 'Offenlegung', lang: 'de', nur: ['tr', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
   // Deutsche Namen im Wortlaut der englischen und spanischen Rechtstexte (Behörde, Anschrift; AP-SPR2).
-  { text: 'Datenschutzbehörde', lang: 'de', nur: ['en', 'es'] },
-  { text: 'Bundesstraße', lang: 'de', nur: ['en', 'es'] },
-  { text: 'Höchst', lang: 'de', nur: ['en', 'es'] },
+  { text: 'Datenschutzbehörde', lang: 'de', nur: ['en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
+  { text: 'Bundesstraße', lang: 'de', nur: ['en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
+  { text: 'kısmet', lang: 'tr', nur: ['de', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
+  { text: 'Kısmet', lang: 'tr', nur: ['de', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
+  { text: 'Österreich', lang: 'de', nur: ['tr', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
+  { text: 'Höchst', lang: 'de', nur: ['en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
 ];
 
-const tuerkisch = ['de', 'en', 'es'].flatMap((sprache) =>
+const tuerkisch = ['de', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'].flatMap((sprache) =>
   [...(kaffeesatz[sprache]?.tuerkischeBegriffe ?? []), ...(tarot[sprache]?.tuerkischeBegriffe ?? [])].map((text) => ({ text, lang: 'tr', nur: [sprache] })));
 
 // Gleiche Begriffe zusammenfassen (Sprachen der Seiten vereinigt); längere Begriffe zuerst, damit ein ganzer Satz vor

@@ -1,0 +1,41 @@
+{
+ "metaTitel": "O aplikaciji Tarot Cup: što jest, a što nije",
+ "metaBeschreibung": "Tarot Cup je aplikacija za tarot i talog kave na dvanaest jezika. Ovdje piše što ona jest, a što nije.",
+ "titel": "O aplikaciji Tarot Cup",
+ "vorspann": "Tarot Cup je mirna aplikacija za tarot i talog kave. Ovdje piše što ona jest, a što nije.",
+ "ogTitel": "O aplikaciji Tarot Cup",
+ "brotkrume": "O aplikaciji",
+ "abschnitte": [
+  {
+   "kennung": "was-sie-ist",
+   "titel": "Što je Tarot Cup?",
+   "absaetze": [
+    "S aplikacijom Tarot Cup samostalno polažeš tarot karte i čitaš talog kave u svojoj šalici. Izvlačiš svoje karte, biraš znakove koje prepoznaješ u šalici i čitaš što ti o njima govori tradicija. Aplikacija je dostupna za Android, na njemačkom, turskom, engleskom i španjolskom jeziku. Pokreće se na jeziku svog mobitela, a jezik možeš promijeniti u aplikaciji.",
+    "Svaki raspored ima svoj ritam. U međuvremenu se karte odmaraju, a ti imaš vremena razmisliti o tumačenju."
+   ]
+  },
+  {
+   "kennung": "was-sie-nicht-ist",
+   "titel": "Što Tarot Cup nije",
+   "absaetze": [
+    "Tarot Cup nije vidovnjaštvo. Tumačenja nisu predviđanje niti savjet i ne zamjenjuju savjet stručnjaka. Prepričavaju što stari običaji vezani uz karte i kavu vide u slikama i znakovima.",
+    "Aplikacija služi za zabavu i nastala je s poštovanjem prema tradiciji. Što od toga odgovara tebi, odlučuješ ti."
+   ]
+  },
+  {
+   "kennung": "bei-dir",
+   "titel": "Što ostaje kod tebe",
+   "absaetze": [
+    "Bez računa, bez interneta. Povijest i bilješke aplikacija sprema na tvom mobitelu. Nemam pristup tome."
+   ]
+  },
+  {
+   "kennung": "wer",
+   "titel": "Tko stoji iza aplikacije Tarot Cup",
+   "absaetze": [
+    "Tko je odgovoran za ovu web-stranicu, navedeno je u [Impresumu (Offenlegung)](/offenlegung/)."
+   ]
+  }
+ ],
+ "kontakt": "Napiši mi: "
+}

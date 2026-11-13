@@ -1,0 +1,204 @@
+{
+ "metaTitel": "Baca ampas kopi dan bentangkan tarot lewat aplikasi | Tarot Cup",
+ "metaBeschreibung": "Dengan aplikasi Android Tarot Cup, kamu membaca ampas kopi sendiri dengan 80 simbol dan membentangkan tarot dengan 78 kartu, dalam dua belas bahasa, tanpa internet.",
+ "ogTitel": "Baca ampas kopi. Bentangkan tarot.",
+ "kopf": {
+  "zeile": "Tarot Cup · Aplikasi untuk Android",
+  "zeilen": [
+   "Baca ampas kopi *sendiri*.",
+   "Bentangkan tarot *dengan tenang*."
+  ],
+  "text": "Pilih simbol dari cangkirmu, tunjukkan letaknya di peta cangkir, lalu baca apa yang mungkin dimaksudkannya. Atau bentangkan kartu tarot dengan tenang. Aplikasi ini berjalan tanpa internet dan tanpa akun.",
+  "knopf": "Lihat di Google Play",
+  "bald": "Segera hadir di Google Play",
+  "anleitung": "Cara kerja",
+  "karte": {
+   "tipp": "Ketuk kartu lalu balikkan.",
+   "satz": "Makna kartu ini, tegak dan terbalik, ada di Kamus aplikasi.",
+   "umdrehen": "Balikkan kartu",
+   "zurueck": "Balikkan kembali kartu “{name}”"
+  }
+ },
+ "zahlen": {
+  "aria": "Tarot Cup dalam angka",
+  "liste": [
+   {
+    "zahl": "78",
+    "text": "kartu tarot, tegak dan terbalik di Kamus"
+   },
+   {
+    "zahl": "80",
+    "text": "simbol untuk ampas kopi, dengan pencarian dan kategori"
+   },
+   {
+    "zahl": "12",
+    "text": "bahasa, dari Jerman dan Turki hingga Prancis dan Hindi"
+   },
+   {
+    "zahl": "0",
+    "text": "akun, tanpa perlu internet"
+   }
+  ]
+ },
+ "wasIst": {
+  "titel": "Apa itu Tarot Cup?",
+  "text": "Tarot Cup adalah aplikasi untuk Android yang memungkinkanmu membentangkan kartu tarot dan membaca sendiri ampas kopi di cangkirmu. Aplikasi ini hadir dalam dua belas bahasa; aplikasi terbuka dalam bahasa ponselmu, dan kamu bisa menggantinya di dalam aplikasi. Aplikasi ini ditujukan bagi orang berusia 16 tahun ke atas dan berjalan tanpa internet dan tanpa akun. Pembacaannya mengikuti tradisi lama dan ditujukan untuk hiburan."
+ },
+ "tasse": {
+  "zeile": "Ritualnya",
+  "titel": "Begini cara membaca *cangkirmu*",
+  "schritte": [
+   "Pikirkan pertanyaanmu, lalu habiskan kopi Turkinya. Telungkupkan cangkir di atas tatakan dan biarkan dingin. Pertanyaanmu kamu simpan sendiri, aplikasi tidak menanyakannya.",
+   "Putar cangkir dengan tenang dan cari bentuknya di antara 80 simbol.",
+   "Tunjukkan di peta cangkir letak setiap simbol. Dengan tiga simbol atau lebih, kamu mendapat pembacaan lengkap."
+  ],
+  "link": {
+   "text": "Selengkapnya tentang membaca ampas kopi",
+   "ziel": "/id/membaca-ampas-kopi/"
+  }
+ },
+ "tassenkarte": {
+  "titel": "Peta cangkir",
+  "hinweis": "Pilih satu bagian",
+  "gruppe": "Pilih bagian cangkir",
+  "bereiche": [
+   {
+    "bereich": "rand",
+    "name": "Tepi",
+    "bedeutung": "waktu dekat"
+   },
+   {
+    "bereich": "mitte",
+    "name": "Bagian tengah",
+    "bedeutung": "saat ini"
+   },
+   {
+    "bereich": "boden",
+    "name": "Dasar",
+    "bedeutung": "waktu yang lebih jauh"
+   },
+   {
+    "bereich": "henkelseite",
+    "name": "Sisi gagang",
+    "bedeutung": "kamu, rumahmu"
+   },
+   {
+    "bereich": "gegenueber",
+    "name": "Sisi seberang",
+    "bedeutung": "dunia luar"
+   },
+   {
+    "bereich": "untertasse",
+    "name": "Tatakan",
+    "bedeutung": "keinginanmu"
+   }
+  ]
+ },
+ "schaukasten": {
+  "titel": "Beginilah tampilan *Tarot Cup*",
+  "gruppe": "Pilih layar",
+  "eintraege": [
+   {
+    "foto": "01_start_tageskarte",
+    "titel": "Kartu hari ini",
+    "text": "Satu kartu untuk hari ini, baru setiap hari."
+   },
+   {
+    "foto": "03_deutung_drei_karten",
+    "titel": "Tiga kartu",
+    "text": "Masa lalu, masa kini, dan masa depan, dengan satu pembacaan yang menghubungkan ketiganya."
+   },
+   {
+    "foto": "05_kaffee_tasse",
+    "titel": "Peta cangkir",
+    "text": "Tunjukkan letak simbolmu di dalam cangkir."
+   }
+  ]
+ },
+ "koennen": {
+  "titel": "Yang *bisa* dilakukan aplikasi",
+  "ruhe": {
+   "titel": "Tenang, bukan tanpa henti",
+   "text": "Setiap bentangan punya ritmenya sendiri. Di sela-selanya, kartu beristirahat.",
+   "pillen": [
+    {
+     "name": "Kartu hari ini",
+     "takt": "setiap hari"
+    },
+    {
+     "name": "Ya atau tidak",
+     "takt": "setiap hari"
+    },
+    {
+     "name": "Tiga kartu",
+     "takt": "setiap 3 hari"
+    },
+    {
+     "name": "Baca sendiri",
+     "takt": "setiap 3 hari"
+    },
+    {
+     "name": "Cinta",
+     "takt": "setiap minggu"
+    }
+   ]
+  },
+  "sprachen": {
+   "gross": "A / अ",
+   "titel": "Dua belas bahasa",
+   "text": "Jerman, Turki, Inggris, Spanyol, Bosnia, Kroasia, Serbia, Rumania, Portugis, Prancis, Indonesia, dan Hindi: seluruh aplikasi tersedia lengkap dalam setiap bahasa."
+  }
+ },
+ "vorteile": [
+  {
+   "id": "bleibt",
+   "titel": "Tetap bersamamu",
+   "text": "Riwayat dan catatan disimpan aplikasi di ponselmu. Saya tidak punya akses ke sana."
+  },
+  {
+   "id": "internet",
+   "titel": "Tanpa internet",
+   "text": "Aplikasi ini tidak memiliki izin untuk terhubung ke internet."
+  },
+  {
+   "id": "konto",
+   "titel": "Tanpa akun",
+   "text": "Di aplikasi tidak ada proses masuk dan tidak perlu alamat email."
+  }
+ ],
+ "ratgeber": {
+  "titel": "*Pahami* tarot dan ampas kopi",
+  "zeile": "Panduan",
+  "eintraege": [
+   {
+    "titel": "Bagaimana cara membentangkan tarot?",
+    "text": "78 kartu, tegak dan terbalik, bentangan dalam aplikasi, dan ritualnya langkah demi langkah.",
+    "link": "Ke panduan tarot",
+    "ziel": "/id/tarot/"
+   },
+   {
+    "titel": "Bagaimana cara membaca ampas kopi?",
+    "text": "Dari kopi Turki hingga cangkir yang dibaca: ritualnya, bagian-bagian cangkir, dan simbol yang sering muncul.",
+    "link": "Ke panduan ampas kopi",
+    "ziel": "/id/membaca-ampas-kopi/"
+   }
+  ]
+ },
+ "fotos": {
+  "alt": {
+   "01_start_tageskarte": "Beranda aplikasi dengan kartu hari ini “Penyihir” yang sudah dibuka, di bawahnya kotak “Bentangkan kartu tarot” dan “Baca ampas kopi”",
+   "03_deutung_drei_karten": "Bentangan “Tiga kartu” dengan “Maharani”, “Roda Keberuntungan”, dan “Ratu Piala” untuk masa lalu, masa kini, dan masa depan, di bawahnya awal pembacaan",
+   "05_kaffee_tasse": "Peta cangkir dari atas dengan tepi, bagian tengah, dasar, sisi gagang, dan sisi seberang, tiga simbol yang sudah ditempatkan, dan tatakan di bawahnya"
+  }
+ },
+ "fragen": {
+  "titel": "*Pertanyaan* yang sering diajukan",
+  "ids": [
+   "zukunft",
+   "foto-der-tasse",
+   "tuerkisch",
+   "fragen-gespeichert"
+  ],
+  "alle": "Semua pertanyaan"
+ }
+}

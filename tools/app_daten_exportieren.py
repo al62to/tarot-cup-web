@@ -17,7 +17,7 @@ import sys
 from pathlib import Path
 
 ZIEL = Path(__file__).resolve().parent.parent / "src" / "daten" / "app_daten.json"
-SPRACHEN = ("de", "tr", "en", "es")  # en und es seit AP-SPR2 (Daten der App, Zweig sprachen-en-es)
+SPRACHEN = ("de", "tr", "en", "es", "bs", "hr", "sr", "ro", "pt", "fr", "id", "hi")  # en, es seit AP-SPR2; 8 weitere seit AP-23
 
 
 def mehrsprachig(wert: object, wo: str) -> dict[str, str]:

@@ -1,0 +1,104 @@
+{
+ "metaTitel": "Tanya Jawab tentang Aplikasi | Tarot Cup",
+ "metaBeschreibung": "Temukan jawaban seputar Tarot Cup: apakah aplikasi ini memprediksi masa depan, mengapa sebuah bentangan sedang beristirahat, dan apakah kamu memerlukan internet atau akun.",
+ "titel": "Pertanyaan yang sering diajukan",
+ "vorspann": "Di sini kamu bisa menemukan jawaban atas pertanyaan yang paling sering diajukan tentang Tarot Cup. Kalau ada yang belum terjawab, tulis saja kepada saya.",
+ "ogTitel": "Pertanyaan yang sering diajukan tentang Tarot Cup",
+ "brotkrume": "Pertanyaan",
+ "liste": [
+  {
+   "id": "zukunft",
+   "frage": "Apakah aplikasi ini memprediksi masa depan?",
+   "antwort": [
+    "Tidak. Pembacaan mengikuti tradisi lama seputar tarot dan ampas kopi. Mana yang cocok denganmu, kamu sendiri yang menentukan.",
+    "Untuk hiburan. Pembacaan ini bukan prediksi dan bukan konsultasi. Pembacaan tidak memprediksi masa depan dan tidak menggantikan saran dari para ahli."
+   ]
+  },
+  {
+   "id": "foto-der-tasse",
+   "frage": "Apakah saya perlu foto cangkir saya?",
+   "antwort": [
+    "Tidak. Aplikasi ini tidak memerlukan kamera maupun foto. Kamu melihat sendiri ke dalam cangkirmu, memilih bentuk yang kamu kenali dari 80 simbol, lalu menunjukkan letaknya di peta cangkir. Dari situlah pembacaan tersusun."
+   ]
+  },
+  {
+   "id": "tuerkisch",
+   "frage": "Apakah aplikasi ini bisa digunakan dalam bahasa Turki?",
+   "antwort": [
+    "Ya. Tarot Cup tersedia sepenuhnya dalam bahasa Turki, dengan tampilan dan menu, pembacaan, Kamus, serta teks hukum, seperti dalam kedua belas bahasa aplikasi ini. Aplikasi terbuka dalam bahasa ponselmu, dan bisa kamu ganti kapan saja di Setelan."
+   ]
+  },
+  {
+   "id": "fragen-gespeichert",
+   "frage": "Apakah pertanyaan saya disimpan?",
+   "antwort": [
+    "Tidak. Aplikasi ini tidak memiliki kolom untuk pertanyaanmu; kamu menyimpannya sendiri dalam hati. Aplikasi tidak menanyakannya dan tidak menyimpannya.",
+    "Di Riwayat, aplikasi mencatat apa yang telah kamu bentangkan: tanggal dan waktu, jenis bentangan, kartu (termasuk apakah kartu itu terbalik), atau simbol beserta letaknya di cangkir; pada ampas kopi juga bidang kehidupan dan catatanmu bila kamu menulisnya. Pertanyaanmu tidak pernah ikut tercatat."
+   ]
+  },
+  {
+   "id": "internet",
+   "frage": "Apakah saya memerlukan internet?",
+   "antwort": [
+    "Tidak. Tarot Cup tidak memiliki izin untuk mengakses internet. Bentangan, Kamus, dan Riwayat berfungsi sepenuhnya tanpa koneksi, dan pengingat kartu hari ini pun dijadwalkan oleh aplikasi di ponselmu."
+   ]
+  },
+  {
+   "id": "konto",
+   "frage": "Apakah saya memerlukan akun?",
+   "antwort": [
+    "Tidak. Tidak ada proses masuk maupun akun, dan aplikasi tidak menanyakan alamat email."
+   ]
+  },
+  {
+   "id": "legung-gesperrt",
+   "frage": "Mengapa sebuah bentangan kadang terkunci?",
+   "antwort": [
+    "Setiap bentangan punya ritmenya sendiri. Kartu hari ini dan Ya atau tidak tersedia setiap hari, Tiga kartu dan pembacaan lengkap pada ampas kopi setiap tiga hari, bentangan Cinta seminggu sekali. Di antaranya, bentangan itu beristirahat.",
+    "Aplikasi menunjukkan kapan bentangan itu bisa dipakai lagi, misalnya “Besok kamu bisa membentangkan kartu lagi.” Sebuah bentangan tersedia kembali pada tengah malam menurut jam ponselmu. Kamus dan Riwayat selalu terbuka.",
+    "Pada ampas kopi, dengan satu atau dua simbol tersedia pembacaan singkat. Pembacaan ini tidak dihitung dalam ritme, tetapi dibatasi tiga kali sehari.",
+    "Jarang ada alasan kedua: ketika ada versi baru Ketentuan Penggunaan, kamu bisa langsung menerimanya atau memutuskan nanti. Jika kamu tidak menerimanya dalam 30 hari, kamu baru bisa membentangkan kartu lagi setelah menerimanya. Riwayat, catatan, dan Kamus tetap terbuka."
+   ]
+  },
+  {
+   "id": "notizen",
+   "frage": "Apa yang terjadi pada catatan saya?",
+   "antwort": [
+    "Pada setiap pembacaan di Riwayat, kamu bisa menulis catatan, misalnya: apa yang kemudian terjadi? Catatan dan Riwayat disimpan oleh aplikasi di ponselmu. Saya tidak punya akses ke sana. Pada gambar yang kamu bagikan, catatanmu tidak ikut tampil.",
+    "Satu entri beserta catatannya kamu hapus di Riwayat dengan “Hapus entri”. Tindakan ini tidak dapat dibatalkan.",
+    "Jika pencadangan ponselmu aktif, Android dapat mencadangkan Riwayat, catatan, bahasa, dan waktu pengingat ke akun Google milikmu. Saat pindah ke ponsel baru, Android bisa ikut membawanya. Ritme bentangan dan konfirmasi usia tidak dicadangkan; keduanya milik ponsel yang bersangkutan.",
+    "Keterangan lebih lanjut ada di [Kebijakan Privasi](/id/privasi/)."
+   ]
+  },
+  {
+   "id": "iphone",
+   "frage": "Apakah aplikasi ini ada untuk iPhone?",
+   "antwort": [
+    "Tidak. Tarot Cup hanya tersedia untuk Android. Versi untuk iPhone tidak direncanakan."
+   ]
+  },
+  {
+   "id": "zeichen",
+   "frage": "Berapa banyak simbol yang dikenal aplikasi ini?",
+   "antwort": [
+    "Untuk ampas kopi, aplikasi mengenal 80 simbol dalam enam kategori: Hewan, Manusia dan sosok, Benda, Alam dan tempat, Bentuk, serta Huruf dan angka. Kamu bisa menemukannya lewat kategori atau pencarian, juga dengan nama lain yang dikenal untuk suatu bentuk.",
+    "Jika kamu melihat bentuk yang tidak ada di sana, pilih “Bentuk yang tidak saya temukan”. Satu pembacaan dapat memuat hingga delapan simbol. Untuk tarot, aplikasi mengenal semua 78 kartu."
+   ]
+  },
+  {
+   "id": "sprache",
+   "frage": "Bisakah saya mengganti bahasa?",
+   "antwort": [
+    "Bisa. Aplikasi terbuka dalam bahasa ponselmu jika bahasanya salah satu dari dua belas bahasa aplikasi (Jerman, Turki, Inggris, Spanyol, Bosnia, Kroasia, Serbia, Rumania, Portugis, Prancis, Indonesia, dan Hindi); jika tidak, dalam bahasa Inggris. Di Setelan aplikasi kamu bisa menggantinya kapan saja, terlepas dari bahasa ponselmu.",
+    "Pembacaan sebelumnya di Riwayat juga akan ditampilkan aplikasi dalam bahasa yang baru. Catatanmu tetap seperti yang kamu tulis."
+   ]
+  },
+  {
+   "id": "alter",
+   "frage": "Mulai usia berapa Tarot Cup dapat dipakai?",
+   "antwort": [
+    "Mulai usia 16 tahun. Saat pertama kali membuka aplikasi, kamu menyatakan bahwa usiamu minimal 16 tahun dan menerima [Ketentuan Penggunaan](/id/ketentuan-penggunaan/). Sebelum itu, kamu tidak bisa melanjutkan."
+   ]
+  }
+ ]
+}

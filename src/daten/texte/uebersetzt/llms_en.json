@@ -1,15 +1,15 @@
 {
- "angaben": [
-  "Platform: Android. Languages: German, Turkish, English, and Spanish, switchable within the app.",
-  "Features: Card of the Day, Yes or No, Three Cards, and a Love spread with 78 tarot cards; read coffee grounds yourself with 80 symbols and the cup map; Dictionary, History with your own notes, Share as image, reminder for the Card of the Day.",
-  "The app works without internet and without an account. It stores history and notes on the phone.",
-  "Each reading has its rhythm: Card of the Day and Yes or No daily, Three Cards and the full coffee grounds reading every three days, Love once a week. The Dictionary and History are always open.",
-  "For entertainment: the readings follow old traditions and are neither a prediction nor advice.",
-  "Tarot Cup is available only for Android. A version for iPhone is not planned."
- ],
- "store": "Google Play",
- "seiten": "Key pages",
- "weitereSprachen": "Other languages",
- "andereSprache": "Turkish",
- "andereLink": "[llms.txt in Turkish](https://tarot-cup.com/tr/llms.txt)"
+  "angaben": [
+    "Platform: Android. Languages: German, Turkish, English, Spanish, Bosnian, Croatian, Serbian, Romanian, Portuguese, French, Indonesian, and Hindi, switchable within the app.",
+    "Features: Card of the Day, Yes or No, Three Cards, and a Love spread with 78 tarot cards; read coffee grounds yourself with 80 symbols and the cup map; Dictionary, History with your own notes, Share as image, reminder for the Card of the Day.",
+    "The app works without internet and without an account. It stores history and notes on the phone.",
+    "Each reading has its rhythm: Card of the Day and Yes or No daily, Three Cards and the full coffee grounds reading every three days, Love once a week. The Dictionary and History are always open.",
+    "For entertainment: the readings follow old traditions and are neither a prediction nor advice.",
+    "Tarot Cup is available only for Android. A version for iPhone is not planned."
+  ],
+  "store": "Google Play",
+  "seiten": "Key pages",
+  "weitereSprachen": "Other languages",
+  "andereSprache": "Turkish",
+  "andereLink": "[llms.txt in Turkish](https://tarot-cup.com/tr/llms.txt)"
 }

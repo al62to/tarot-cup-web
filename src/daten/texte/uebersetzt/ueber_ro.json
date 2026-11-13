@@ -1,0 +1,41 @@
+{
+ "metaTitel": "Despre Tarot Cup: ce este aplicația și ce nu este",
+ "metaBeschreibung": "Tarot Cup este o aplicație pentru tarot și zaț de cafea în 12 limbi. Aici poți afla ce este și ce nu este aceasta.",
+ "titel": "Despre Tarot Cup",
+ "vorspann": "Tarot Cup este o aplicație liniștită pentru tarot și zaț de cafea. Aici se spune ce este și ce nu este.",
+ "ogTitel": "Despre Tarot Cup",
+ "brotkrume": "Despre",
+ "abschnitte": [
+  {
+   "kennung": "was-sie-ist",
+   "titel": "Ce este Tarot Cup?",
+   "absaetze": [
+    "Cu Tarot Cup tragi cărți de tarot și citești zațul de cafea din propria ta ceașcă. Îți tragi cărțile, alegi simbolurile pe care le recunoști în ceașcă și citești ce spune tradiția despre ele. Aplicația există pentru Android, în 12 limbi. Pornește în limba telefonului tău; limba o poți schimba în aplicație.",
+    "Fiecare tragere are propriul ei ritm. Între ele, cărțile se odihnesc, iar tu ai timp să te gândești la o interpretare."
+   ]
+  },
+  {
+   "kennung": "was-sie-nicht-ist",
+   "titel": "Ce nu este Tarot Cup",
+   "absaetze": [
+    "Tarot Cup nu este clarviziune. Interpretările nu sunt predicții și nu constituie consultanță, iar ele nu înlocuiesc sfatul specialiștilor. Ele redau ceea ce vechile obiceiuri legate de cărți și cafea văd în imagini și simboluri.",
+    "Aplicația este gândită pentru divertisment, cu respect față de tradiție. Tu decizi ce dintre acestea ți se potrivește."
+   ]
+  },
+  {
+   "kennung": "bei-dir",
+   "titel": "Ce rămâne la tine",
+   "absaetze": [
+    "Fără cont, fără internet. Istoricul și notele sunt salvate de aplicație pe telefonul tău. Nu am acces la ele."
+   ]
+  },
+  {
+   "kennung": "wer",
+   "titel": "Cine stă în spatele Tarot Cup",
+   "absaetze": [
+    "Cine este responsabil pentru acest site web se poate vedea în [informațiile despre editor](/offenlegung/)."
+   ]
+  }
+ ],
+ "kontakt": "Scrie-mi: "
+}

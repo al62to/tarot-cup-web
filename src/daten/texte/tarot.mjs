@@ -144,7 +144,7 @@ export const tarot = {
         art: 'app',
         titel: 'Kann man Tarot auch auf dem Handy legen?',
         absaetze: [
-          'Mit Tarot Cup legst du die Karten auf deinem Android-Handy, auf Deutsch, Türkisch, Englisch oder Spanisch. Du mischst mit dem Finger, wählst aus dem Fächer und deckst eine Karte nach der anderen auf. Unter jeder Karte stehen dabei zwei Stichworte, am Ende folgt eine Deutung der ganzen Legung.',
+          'Mit Tarot Cup legst du die Karten auf deinem Android-Handy, in einer von zwölf Sprachen. Du mischst mit dem Finger, wählst aus dem Fächer und deckst eine Karte nach der anderen auf. Unter jeder Karte stehen dabei zwei Stichworte, am Ende folgt eine Deutung der ganzen Legung.',
           'Deine Frage bleibt bei dir: Die App fragt nicht danach und speichert sie nicht. Deine Legungen landen im Verlauf auf deinem Handy, und du kannst dir eine eigene Notiz dazu schreiben.',
           'Wie die App Schritt für Schritt funktioniert, steht unter [So geht’s](/so-gehts/).',
         ],
@@ -304,7 +304,7 @@ export const tarot = {
         art: 'app',
         titel: 'Tarot telefonda nasıl açılır?',
         absaetze: [
-          'Tarot Cup ile kartları Android telefonunda Türkçe, Almanca, İngilizce ya da İspanyolca açabilirsin. Desteyi parmağınla karıştırır, yelpazeden kartlarını seçer ve onları birer birer çevirirsin. Her kartın altında iki anahtar kelime belirir; sonunda açılımın tamamına dair bir yorum gelir.',
+          'Tarot Cup ile kartları Android telefonunda, on iki dilden birinde açarsın. Kartları parmağınla karıştırır, yelpazeden seçer ve birer birer açarsın. Her kartın altında iki anahtar kelime yer alır, sonunda ise açılımın tamamına dair bir yorum gelir.',
           'Sorun sende kalır: Uygulama onu sormaz ve kaydetmez. Açtığın kartlar telefonundaki Geçmiş bölümünde durur; istersen yanına kendi notunu yazarsın.',
           'Uygulamanın adım adım nasıl kullanıldığını [Nasıl kullanılır](/tr/nasil-kullanilir/) sayfasında bulabilirsin.',
         ],
@@ -322,8 +322,24 @@ export const tarot = {
   },
 };
 
-// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+// Übersetzungen (en, es seit AP-SPR2; bs, hr, sr, ro, pt, fr, id, hi seit AP-23): erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
 import tarotEn from './uebersetzt/tarot_en.json' with { type: 'json' };
 import tarotEs from './uebersetzt/tarot_es.json' with { type: 'json' };
+import tarotBs from './uebersetzt/tarot_bs.json' with { type: 'json' };
+import tarotHr from './uebersetzt/tarot_hr.json' with { type: 'json' };
+import tarotSr from './uebersetzt/tarot_sr.json' with { type: 'json' };
+import tarotRo from './uebersetzt/tarot_ro.json' with { type: 'json' };
+import tarotPt from './uebersetzt/tarot_pt.json' with { type: 'json' };
+import tarotFr from './uebersetzt/tarot_fr.json' with { type: 'json' };
+import tarotId from './uebersetzt/tarot_id.json' with { type: 'json' };
+import tarotHi from './uebersetzt/tarot_hi.json' with { type: 'json' };
 tarot.en = tarotEn;
 tarot.es = tarotEs;
+tarot.bs = tarotBs;
+tarot.hr = tarotHr;
+tarot.sr = tarotSr;
+tarot.ro = tarotRo;
+tarot.pt = tarotPt;
+tarot.fr = tarotFr;
+tarot.id = tarotId;
+tarot.hi = tarotHi;

@@ -1,0 +1,233 @@
+{
+ "metaTitel": "Položi tarot: ritual, rasporedi i karte | Tarot Cup",
+ "metaBeschreibung": "Ova stranica korak po korak objašnjava kako položiti tarot, od pitanja do tumačenja. Uz to dolaze četiri rasporeda i osam poznatih karata.",
+ "titel": "Položi tarot",
+ "vorspann": "Kako se polaže tarot, od prvog pitanja do posljednje otkrivene karte. Uz to četiri rasporeda aplikacije i nekoliko poznatih karata s njihovim značenjem u tradiciji.",
+ "ogTitel": "Korak po korak položi tarot",
+ "brotkrume": "Tarot",
+ "inhaltTitel": "Sadržaj",
+ "abschnitte": [
+  {
+   "kennung": "was-ist-tarot",
+   "titel": "Što je tarot?",
+   "absaetze": [
+    "Tarot je igra od 78 karata sa slikama. Nastao je u 15. stoljeću u sjevernoj Italiji kao kartaška igra; tek mnogo kasnije slike su se počele tumačiti. Danas se tarot polaže ponajprije kako bi se u miru razmislilo o nekom pitanju. To nije predviđanje, nego više razgovor sa slikama.",
+    "22 karte Velike arkane numerirane su od 0 do 21, od karte „Luda” do karte „Svijet”. U tradiciji one simboliziraju velike životne teme i prekretnice, poput početka putovanja, povratka sebi ili ravnoteže. Riječ arkana potječe iz latinskog i otprilike znači tajne.",
+    "56 karata Male arkane podijeljeno je u četiri boje, slično kao u običnom špilu karata. Svaka boja ima asa, brojčane karte od dvojke do desetke i četiri dvorske karte: Paž, Vitez, Kraljica i Kralj. Dvorske karte često se tumače kao ljudi ili stavovi koje možeš zauzeti.",
+    "Svaka boja ima svoje polje. Štapovi simboliziraju poduzetnost, ideje i zamah, Pehari osjećaje, prijateljstvo i ljubav. Mačevima pripadaju misli, riječi i odluke, a Novčićima ono opipljivo: posao, svakodnevica i ono što se gradi vlastitim rukama.",
+    "U aplikaciji Tarot Cup vidiš slike karata iz 1909. godine. Slike su u javnoj domeni i ubrajaju se među najpoznatije slike tarota uopće; mnogi kasniji špilovi preuzeli su njihove motive."
+   ]
+  },
+  {
+   "kennung": "aufrecht-und-umgekehrt",
+   "titel": "Uspravno i obrnuto: što znači obrnuta karta?",
+   "absaetze": [
+    "Karta može ležati uspravno ili biti okrenuta naglavce; tada je obrnuta. U mnogim današnjim tumačenjima obrnuta karta nije loš znak. Ona govori o istoj temi kao i uspravna, samo tiše, više okrenuta prema unutra ili je upravo malo zastala.",
+    "Primjer: Uspravna karta možda govori o zamahu. Obrnuta može značiti da taj zamah još kasni. Zato te prije poziva da pogledaš pažljivije.",
+    "Neki polažu posve bez obrnutih karata i svaku čitaju uspravno; oboje pripada tradiciji. U aplikaciji svaka karta može pasti uspravno ili obrnuto, otprilike jednako često. I karte s ozbiljnim imenima u tradiciji se čitaju kao slike promjene, preokreta ili povezanosti, a ne kao prijetnja."
+   ]
+  },
+  {
+   "kennung": "ritual-schritt-fuer-schritt",
+   "art": "schritte",
+   "titel": "Kako položiti tarot? Ritual korak po korak",
+   "absaetze": [
+    "Za raspored ti nije potrebno mnogo: špil karata, mirno mjesto i nekoliko minuta vremena. Tako se odvija u tradiciji, bilo s kartama na stolu ili na mobitelu."
+   ],
+   "schritte": [
+    {
+     "titel": "Smiri se",
+     "text": "Pronađi trenutak u kojem te nitko neće ometati. Ostavi po strani ono što te trenutačno zaokuplja i polako nekoliko puta udahni i izdahni."
+    },
+    {
+     "titel": "Pronađi pitanje",
+     "text": "Razmisli što zaista želiš znati i postavi pitanje otvoreno, na primjer riječima „Što”, „Kako” ili „Na što”. Otvoreno pitanje ostavlja ti više prostora pri čitanju nego puki „da” ili „ne”."
+    },
+    {
+     "titel": "Zapiši pitanje",
+     "text": "Možeš ga zapisati, tiho izgovoriti ili jednostavno zadržati u mislima. Na turskom se za to kaže niyet tutmak: postaviti namjeru i nositi je u srcu."
+    },
+    {
+     "titel": "Promiješaj",
+     "text": "Promiješaj karte dok god ti se to čini ispravno i pritom misli na svoje pitanje. Neki prebacuju karte iz ruke u ruku, drugi puštaju da se dvije polovice prelijevaju jedna u drugu."
+    },
+    {
+     "titel": "Podijeli špil",
+     "text": "Stavi špil neotkrivenih karata ispred sebe, podijeli ga jednom i donju polovicu položi na vrh. U tradiciji se često dijeli lijevom rukom, jer se smatra rukom srca."
+    },
+    {
+     "titel": "Izvuci karte",
+     "text": "Raširi neotkrivene karte u lepezu i izvuci onoliko karata koliko raspored zahtijeva. Ne razmišljaj dugo, nego posegni za kartom na kojoj ti se zadrži pogled."
+    },
+    {
+     "titel": "Rasporedi",
+     "text": "Postavi izvučene karte neotkrivene na njihova mjesta, redoslijedom rasporeda. Svako mjesto ima vlastito značenje, na primjer Prošlost, Sadašnjost i Budućnost."
+    },
+    {
+     "titel": "Otkrij",
+     "text": "Okreni jednu po jednu kartu sa strane, kako bi gore i dolje ostali kakvi jesu. Najprije pogledaj sliku: što ti pada u oči, koji se osjećaj javlja?"
+    },
+    {
+     "titel": "Pročitaj i dopusti da odjekne",
+     "text": "Pročitaj najprije svaku kartu zasebno, a zatim sve zajedno kao malu priču. Zapiši što te je dirnulo i nakon nekoliko dana pogledaj kako o tome razmišljaš danas."
+    }
+   ],
+   "nachsatz": "U aplikaciji miješaš prevlačenjem prsta preko špila, karte iz lepeze biraš dodirom i otkrivaš ih jednu po jednu. Tvoji pokreti pri miješanju ulaze u igru slučajnosti."
+  },
+  {
+   "kennung": "gute-fragen",
+   "art": "beispiele",
+   "titel": "Koja su pitanja prikladna za tarot?",
+   "absaetze": [
+    "Dobro pitanje za tarot je otvoreno, odnosi se na tebe i ostavlja prostor za razmišljanje. Manje dobro odgovaraju pitanja koja o drugim ljudima žele samo „da” ili „ne” ili traže točan trenutak. U tradiciji karte pokazuju raspoloženja i mogućnosti, a ne datume ni tuđe misli.",
+    "Manje dobro pitanje često se može preoblikovati. Iz „Hoće li me Sarah nazvati do petka?” nastaje, na primjer, „Kako mogu njegovati kontakt sa Sarom?”. Tako pitanje ostaje kod onoga što je u tvojim rukama."
+   ],
+   "gut": {
+    "titel": "Dobra pitanja",
+    "liste": [
+     "Što mi pomaže da se uklopim u novi tim?",
+     "Kako mogu opustiti atmosferu između mene i moje sestre?",
+     "Na što mogu obratiti pozornost ovaj tjedan?",
+     "Što mi je potrebno da ponovno pronađem radost u svom hobiju?"
+    ]
+   },
+   "weniger": {
+    "titel": "Manje dobra pitanja",
+    "liste": [
+     "Voli li me Jonas potajno?",
+     "Kada ću konačno upoznati nekoga?",
+     "Hoće li me Sarah nazvati do petka?",
+     "Što moja susjeda zapravo misli o meni?"
+    ]
+   }
+  },
+  {
+   "kennung": "braeuche",
+   "titel": "Običaji pri polaganju tarota: što kaže tradicija?",
+   "absaetze": [
+    "Oko tarota razvilo se mnogo malih običaja; oni su dio užitka u ritualu.",
+    "U tradiciji se kaže da bi karte trebalo zamotati u svilenu ili lanenu tkaninu i čuvati na mirnom mjestu. Neki pri polaganju prostru vlastitu tkaninu po stolu, zapale svijeću ili uz karte stave omiljeni kamen.",
+    "Kaže se i da bi prvi špil trebao biti dar. Tko dobije novi špil, po starom običaju ga jednu noć drži ispod jastuka ili jednom u miru razgleda svaku kartu radi upoznavanja.",
+    "Mnogi ne dopuštaju drugima da miješaju njihove karte. A nakon rasporeda špil se temeljito promiješa kako bi opet bio otvoren za sljedeće pitanje, tako kaže tradicija.",
+    "Sviđaju li ti se takvi običaji, ovisi samo o tebi. Važniji od svake tkanine je miran trenutak za tebe."
+   ]
+  },
+  {
+   "kennung": "legungen",
+   "art": "legungen",
+   "titel": "Koji rasporedi tarota postoje u aplikaciji Tarot Cup?",
+   "absaetze": [
+    "Raspored određuje koliko karata izvlačiš i što svako mjesto predstavlja. Aplikacija Tarot Cup nudi četiri rasporeda, od jedne karte do pet karata. Slika rasporeda pokazuje gdje leži koja karta.",
+    "U aplikaciji su Karta dana i karta Da ili ne dostupne svaki dan, Tri karte svaka tri dana, a raspored Ljubav jednom tjedno. Novi raspored postaje moguć u ponoć. Miran ritam je namjeran: tako ostaje vremena za razmišljanje o jednom rasporedu."
+   ],
+   "legungen": [
+    {
+     "id": "tageskarte",
+     "text": "Jedna karta kao pratitelj za dan, potpuno bez pitanja. Otkrivaš je jednim dodirom, a ostaje ista do ponoći. Karta od jučer se ne vraća odmah idući dan.",
+     "positionen": []
+    },
+    {
+     "id": "ja_nein",
+     "text": "Karta na pitanje koje tiho čuvaš za sebe. Odgovor je sklonost, a ne presuda: prije da, prije ne ili još otvoreno.",
+     "positionen": []
+    },
+    {
+     "id": "drei_karten",
+     "text": "Tri karte postavljene jedna do druge, čitane u tradiciji s lijeva na desno. One pokazuju kako se nešto razvijalo i kamo bi se moglo okrenuti.",
+     "positionen": [
+      {
+       "id": "vergangenheit",
+       "text": "Što je iza tebe i što je oblikovalo situaciju do danas."
+      },
+      {
+       "id": "gegenwart",
+       "text": "Gdje se trenutno nalaziš i što ima najveću težinu u ovom trenutku."
+      },
+      {
+       "id": "zukunft",
+       "text": "Kamo se stvari mogu okrenuti ako tako nastave teći: jedan mogući put, a ne čvrsta sudbina."
+      }
+     ]
+    },
+    {
+     "id": "liebe",
+     "text": "Pet karata o osjećajima, bliskosti i odnosima. Možeš misliti na određenu vezu ili jednostavno na to kako je tvome srcu. Mjesta se ponajprije odnose na tebe i na ono čime možeš pridonijeti.",
+     "positionen": [
+      {
+       "id": "herz",
+       "text": "Kako ti je trenutačno u stvarima srca, sa svime što tome pripada."
+      },
+      {
+       "id": "brauchen",
+       "text": "Što bi ti dobro došlo da osjećaš podršku i da te netko stvarno vidi."
+      },
+      {
+       "id": "begegnung",
+       "text": "Kako se približavaš drugima i što se među vama događa."
+      },
+      {
+       "id": "rat",
+       "text": "Jedna misao ili stav koje možeš ponijeti u svoje odnose."
+      },
+      {
+       "id": "ausblick",
+       "text": "Što se može nježno razvijati ako mu daš vrijeme i prostor."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kennung": "bekannte-karten",
+   "art": "karten",
+   "titel": "Što znače poznate tarot karte?",
+   "absaetze": [
+    "Ovdje je osam karata iz špila: četiri karte Velike arkane i po jedna karta iz svake od četiri boje, s njihovim značenjem u tradiciji, uspravno i obrnuto. Svaka karta ima mnogo slojeva; kratko značenje je početak, a ne gotova presuda."
+   ],
+   "ids": [
+    "ta_00_narr",
+    "ta_01_magier",
+    "ta_02_hohepriesterin",
+    "ta_09_eremit",
+    "ta_sta_08_acht",
+    "ta_kel_01_ass",
+    "ta_sch_02_zwei",
+    "ta_mue_03_drei"
+   ],
+   "aufrecht": "Uspravna",
+   "umgekehrt": "Obrnuta"
+  },
+  {
+   "kennung": "tarot-app",
+   "art": "app",
+   "titel": "Može li se tarot položiti i na mobitelu?",
+   "absaetze": [
+    "S aplikacijom Tarot Cup polažeš karte na svom Android mobitelu, na jednom od dvanaest jezika. Miješaš prstom, biraš iz lepeze i otkrivaš jednu po jednu kartu. Ispod svake karte stoje dvije ključne riječi, a na kraju slijedi tumačenje cijelog rasporeda.",
+    "Tvoje pitanje ostaje kod tebe: aplikacija ga ne pita i ne sprema. Tvoji rasporedi završavaju u povijesti na tvom mobitelu, a uz njih možeš napisati vlastitu bilješku.",
+    "Kako aplikacija radi korak po korak, pročitaj na stranici [Kako funkcionira](/hr/kako-funkcionira/)."
+   ]
+  }
+ ],
+ "howto": {
+  "name": "Polaganje tarota: ritual korak po korak",
+  "beschreibung": "Kako se u tradiciji priprema i provodi raspored tarota, od mira prije miješanja do čitanja otkrivenih karata."
+ },
+ "tuerkischeBegriffe": [
+  "niyet tutmak"
+ ],
+ "suchbegriffe": {
+  "haupt": [
+   "Polaganje tarota"
+  ],
+  "neben": [
+   "Učenje polaganja tarota",
+   "Značenje tarot karata",
+   "Sustavi polaganja tarota",
+   "Tarot obrnuta karta",
+   "Tarot karta dana",
+   "Tarot da ili ne",
+   "Raspored od tri karte",
+   "Ljubavni tarot"
+  ]
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "metaTitel": "Sobre o Tarot Cup: o que o app é e o que não é",
+ "metaBeschreibung": "O Tarot Cup é um app de tarô e de borra de café em doze idiomas. Aqui você vê o que ele é e o que não é.",
+ "titel": "Sobre o Tarot Cup",
+ "vorspann": "O Tarot Cup é um app tranquilo para tarô e borra de café. Aqui você vê o que ele é e o que não é.",
+ "ogTitel": "Sobre o Tarot Cup",
+ "brotkrume": "Sobre",
+ "abschnitte": [
+  {
+   "kennung": "was-sie-ist",
+   "titel": "O que é o Tarot Cup?",
+   "absaetze": [
+    "Com o Tarot Cup, você tira cartas de tarô e lê por conta própria a borra de café na sua xícara. Você escolhe suas cartas, seleciona os símbolos que reconhece na xícara e descobre o que a tradição conta sobre eles. O app existe para Android, em doze idiomas. Ele abre no idioma do seu celular; você pode mudar o idioma no app.",
+    "Cada tiragem tem seu próprio ritmo. Entre uma e outra, as cartas descansam, e você tem tempo para refletir sobre a leitura."
+   ]
+  },
+  {
+   "kennung": "was-sie-nicht-ist",
+   "titel": "O que o Tarot Cup não é",
+   "absaetze": [
+    "O Tarot Cup não é clarividência. As leituras não são previsões nem aconselhamento, e não substituem o conselho de profissionais. Elas contam o que antigos costumes em torno das cartas e do café enxergam em imagens e símbolos.",
+    "O app foi pensado para entretenimento, com respeito à tradição. O que combina com você, você decide."
+   ]
+  },
+  {
+   "kennung": "bei-dir",
+   "titel": "O que fica com você",
+   "absaetze": [
+    "Sem conta, sem internet. O histórico e as anotações ficam salvos no seu celular. Eu não tenho acesso a eles."
+   ]
+  },
+  {
+   "kennung": "wer",
+   "titel": "Quem está por trás do Tarot Cup",
+   "absaetze": [
+    "Quem é responsável por este site consta nas [Informações legais](/offenlegung/)."
+   ]
+  }
+ ],
+ "kontakt": "Escreva para mim: "
+}

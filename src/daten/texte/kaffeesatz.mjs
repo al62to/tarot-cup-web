@@ -343,8 +343,24 @@ export const kaffeesatz = {
   },
 };
 
-// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+// Übersetzungen (en, es seit AP-SPR2; bs, hr, sr, ro, pt, fr, id, hi seit AP-23): erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
 import kaffeesatzEn from './uebersetzt/kaffeesatz_en.json' with { type: 'json' };
 import kaffeesatzEs from './uebersetzt/kaffeesatz_es.json' with { type: 'json' };
+import kaffeesatzBs from './uebersetzt/kaffeesatz_bs.json' with { type: 'json' };
+import kaffeesatzHr from './uebersetzt/kaffeesatz_hr.json' with { type: 'json' };
+import kaffeesatzSr from './uebersetzt/kaffeesatz_sr.json' with { type: 'json' };
+import kaffeesatzRo from './uebersetzt/kaffeesatz_ro.json' with { type: 'json' };
+import kaffeesatzPt from './uebersetzt/kaffeesatz_pt.json' with { type: 'json' };
+import kaffeesatzFr from './uebersetzt/kaffeesatz_fr.json' with { type: 'json' };
+import kaffeesatzId from './uebersetzt/kaffeesatz_id.json' with { type: 'json' };
+import kaffeesatzHi from './uebersetzt/kaffeesatz_hi.json' with { type: 'json' };
 kaffeesatz.en = kaffeesatzEn;
 kaffeesatz.es = kaffeesatzEs;
+kaffeesatz.bs = kaffeesatzBs;
+kaffeesatz.hr = kaffeesatzHr;
+kaffeesatz.sr = kaffeesatzSr;
+kaffeesatz.ro = kaffeesatzRo;
+kaffeesatz.pt = kaffeesatzPt;
+kaffeesatz.fr = kaffeesatzFr;
+kaffeesatz.id = kaffeesatzId;
+kaffeesatz.hi = kaffeesatzHi;

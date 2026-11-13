@@ -1,104 +1,104 @@
 {
- "metaTitel": "FAQ: Tarot & Coffee Cup Reading App | Tarot Cup",
- "metaBeschreibung": "Answers about Tarot Cup, the tarot and coffee cup reading app: does it predict the future, why does a reading rest, do you need internet or an account?",
- "titel": "Frequently asked questions",
- "vorspann": "Here you will find answers to the questions people ask most often about Tarot Cup. If something is missing, write to me.",
- "ogTitel": "Tarot Cup FAQ: tarot and coffee cup reading",
- "brotkrume": "FAQ",
- "liste": [
-  {
-   "id": "zukunft",
-   "frage": "Does the app predict the future?",
-   "antwort": [
-    "No. The readings follow old traditions around tarot and coffee grounds. You decide what of it fits you.",
-    "For entertainment. The readings are not a prediction and not advice. They do not predict the future and do not replace advice from professionals."
-   ]
-  },
-  {
-   "id": "foto-der-tasse",
-   "frage": "Do I need a photo of my cup?",
-   "antwort": [
-    "No. The app needs neither a camera nor a photo. You look into your cup yourself, choose the shapes you recognize from 80 symbols, and show on the cup map where they are. The reading is made from this."
-   ]
-  },
-  {
-   "id": "tuerkisch",
-   "frage": "Which languages is the app available in?",
-   "antwort": [
-    "Tarot Cup is available entirely in English, Spanish, German, and Turkish: the interface, readings, Dictionary, and legal texts. The app starts in your phone’s language, and you can change it at any time in Settings."
-   ]
-  },
-  {
-   "id": "fragen-gespeichert",
-   "frage": "Are my questions saved?",
-   "antwort": [
-    "No. The app does not have a field for your question; you keep it quietly to yourself. It does not ask for it and does not store it.",
-    "In History, the app keeps a record of what you drew: the date and time, the type of reading, the cards (including whether they were reversed) or the symbols with their place in the cup, for coffee grounds the area of life, and your note, if you write one. Your question is never included."
-   ]
-  },
-  {
-   "id": "internet",
-   "frage": "Do I need an internet connection?",
-   "antwort": [
-    "No. Tarot Cup has no permission to go online. Readings, the Dictionary, and History work entirely without a connection, and the app schedules the reminder for the Card of the Day on your phone, too."
-   ]
-  },
-  {
-   "id": "konto",
-   "frage": "Do I need an account?",
-   "antwort": [
-    "No. There is no sign-up and no account, and the app does not ask for your email address."
-   ]
-  },
-  {
-   "id": "legung-gesperrt",
-   "frage": "Why is a reading sometimes locked?",
-   "antwort": [
-    "Each reading has its own rhythm. Card of the Day and Yes or No are available every day, Three Cards and the full coffee grounds reading every three days, and the Love spread once a week. In between, the reading rests.",
-    "The app shows you when it is available again, for example “You can draw cards again tomorrow.” A reading becomes available again at midnight by your phone’s clock. The Dictionary and History are always open.",
-    "For coffee grounds, there is a short reading with one or two symbols. It does not count toward the rhythm, but it is limited to three a day.",
-    "Rarely, there is a second reason: when there is a new version of the Terms of Use, you can accept it right away or decide later. If you do not accept it within 30 days, new readings are available again only after you accept. History, notes, and the Dictionary stay open."
-   ]
-  },
-  {
-   "id": "notizen",
-   "frage": "What happens to my notes?",
-   "antwort": [
-    "For each reading in your History, you can add a note, such as: What came of it? The app saves your notes and history on your phone. I do not have access to them. Your notes are not visible in the image you share.",
-    "You delete an entry together with its note in History with “Delete entry”. This cannot be undone.",
-    "If you have turned on your phone’s backup, Android may back up your history, notes, language, and reminder time to your Google account. When you move to a new phone, Android can take them along. The rhythm of the readings and the age confirmation are not backed up; they belong to the particular phone.",
-    "There is more about this in the [Privacy Policy](/en/privacy/)."
-   ]
-  },
-  {
-   "id": "iphone",
-   "frage": "Is there an iPhone version of the app?",
-   "antwort": [
-    "No. Tarot Cup is available only for Android. A version for iPhone is not planned."
-   ]
-  },
-  {
-   "id": "zeichen",
-   "frage": "How many symbols does the app know?",
-   "antwort": [
-    "For coffee grounds, the app knows 80 symbols in six categories: Animals, People and figures, Objects, Nature and places, Shapes, and Letters and numbers. You can find them through the categories or the search, also under other names by which a shape is known.",
-    "If you see a shape that is not included, choose “Shape I can’t find.” A reading holds up to eight symbols. For tarot, the app knows all 78 cards."
-   ]
-  },
-  {
-   "id": "sprache",
-   "frage": "Can I change the language?",
-   "antwort": [
-    "Yes. The app starts in your phone’s language if it is English, Spanish, German, or Turkish, and in English otherwise. You can change it at any time in the app’s settings, regardless of your phone’s language.",
-    "The app then also shows earlier readings in History in the new language. Your notes stay as you wrote them."
-   ]
-  },
-  {
-   "id": "alter",
-   "frage": "What age is Tarot Cup for?",
-   "antwort": [
-    "From 16. At the first start, you confirm that you are at least 16 years old and accept the [Terms of Use](/en/terms/). You cannot continue before that."
-   ]
-  }
- ]
+  "metaTitel": "FAQ: Tarot & Coffee Cup Reading App | Tarot Cup",
+  "metaBeschreibung": "Answers about Tarot Cup, the tarot and coffee cup reading app: does it predict the future, why does a reading rest, do you need internet or an account?",
+  "titel": "Frequently asked questions",
+  "vorspann": "Here you will find answers to the questions people ask most often about Tarot Cup. If something is missing, write to me.",
+  "ogTitel": "Tarot Cup FAQ: tarot and coffee cup reading",
+  "brotkrume": "FAQ",
+  "liste": [
+    {
+      "id": "zukunft",
+      "frage": "Does the app predict the future?",
+      "antwort": [
+        "No. The readings follow old traditions around tarot and coffee grounds. You decide what of it fits you.",
+        "For entertainment. The readings are not a prediction and not advice. They do not predict the future and do not replace advice from professionals."
+      ]
+    },
+    {
+      "id": "foto-der-tasse",
+      "frage": "Do I need a photo of my cup?",
+      "antwort": [
+        "No. The app needs neither a camera nor a photo. You look into your cup yourself, choose the shapes you recognize from 80 symbols, and show on the cup map where they are. The reading is made from this."
+      ]
+    },
+    {
+      "id": "tuerkisch",
+      "frage": "Which languages is the app available in?",
+      "antwort": [
+        "Yes. Tarot Cup is available entirely in Turkish, with the interface, readings, Dictionary, and legal texts, as in all twelve of the app’s languages. The app starts in your phone’s language, and you can change it at any time in Settings."
+      ]
+    },
+    {
+      "id": "fragen-gespeichert",
+      "frage": "Are my questions saved?",
+      "antwort": [
+        "No. The app does not have a field for your question; you keep it quietly to yourself. It does not ask for it and does not store it.",
+        "In History, the app keeps a record of what you drew: the date and time, the type of reading, the cards (including whether they were reversed) or the symbols with their place in the cup, for coffee grounds the area of life, and your note, if you write one. Your question is never included."
+      ]
+    },
+    {
+      "id": "internet",
+      "frage": "Do I need an internet connection?",
+      "antwort": [
+        "No. Tarot Cup has no permission to go online. Readings, the Dictionary, and History work entirely without a connection, and the app schedules the reminder for the Card of the Day on your phone, too."
+      ]
+    },
+    {
+      "id": "konto",
+      "frage": "Do I need an account?",
+      "antwort": [
+        "No. There is no sign-up and no account, and the app does not ask for your email address."
+      ]
+    },
+    {
+      "id": "legung-gesperrt",
+      "frage": "Why is a reading sometimes locked?",
+      "antwort": [
+        "Each reading has its own rhythm. Card of the Day and Yes or No are available every day, Three Cards and the full coffee grounds reading every three days, and the Love spread once a week. In between, the reading rests.",
+        "The app shows you when it is available again, for example “You can draw cards again tomorrow.” A reading becomes available again at midnight by your phone’s clock. The Dictionary and History are always open.",
+        "For coffee grounds, there is a short reading with one or two symbols. It does not count toward the rhythm, but it is limited to three a day.",
+        "Rarely, there is a second reason: when there is a new version of the Terms of Use, you can accept it right away or decide later. If you do not accept it within 30 days, new readings are available again only after you accept. History, notes, and the Dictionary stay open."
+      ]
+    },
+    {
+      "id": "notizen",
+      "frage": "What happens to my notes?",
+      "antwort": [
+        "For each reading in your History, you can add a note, such as: What came of it? The app saves your notes and history on your phone. I do not have access to them. Your notes are not visible in the image you share.",
+        "You delete an entry together with its note in History with “Delete entry”. This cannot be undone.",
+        "If you have turned on your phone’s backup, Android may back up your history, notes, language, and reminder time to your Google account. When you move to a new phone, Android can take them along. The rhythm of the readings and the age confirmation are not backed up; they belong to the particular phone.",
+        "There is more about this in the [Privacy Policy](/en/privacy/)."
+      ]
+    },
+    {
+      "id": "iphone",
+      "frage": "Is there an iPhone version of the app?",
+      "antwort": [
+        "No. Tarot Cup is available only for Android. A version for iPhone is not planned."
+      ]
+    },
+    {
+      "id": "zeichen",
+      "frage": "How many symbols does the app know?",
+      "antwort": [
+        "For coffee grounds, the app knows 80 symbols in six categories: Animals, People and figures, Objects, Nature and places, Shapes, and Letters and numbers. You can find them through the categories or the search, also under other names by which a shape is known.",
+        "If you see a shape that is not included, choose “Shape I can’t find.” A reading holds up to eight symbols. For tarot, the app knows all 78 cards."
+      ]
+    },
+    {
+      "id": "sprache",
+      "frage": "Can I change the language?",
+      "antwort": [
+        "Yes. The app starts in your phone’s language if it is one of its twelve languages (German, Turkish, English, Spanish, Bosnian, Croatian, Serbian, Romanian, Portuguese, French, Indonesian, and Hindi), and in English otherwise. You can change it at any time in the app’s settings, regardless of your phone’s language.",
+        "The app then also shows earlier readings in History in the new language. Your notes stay as you wrote them."
+      ]
+    },
+    {
+      "id": "alter",
+      "frage": "What age is Tarot Cup for?",
+      "antwort": [
+        "From 16. At the first start, you confirm that you are at least 16 years old and accept the [Terms of Use](/en/terms/). You cannot continue before that."
+      ]
+    }
+  ]
 }

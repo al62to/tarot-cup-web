@@ -1,0 +1,96 @@
+{
+ "metaTitel": "Upute: Kako koristiti aplikaciju | Tarot Cup",
+ "metaBeschreibung": "Uputa objašnjava Tarot Cup u devet kratkih poglavlja: prvo pokretanje, Karta dana, polaganje karata, samostalno gledanje u šalicu, Leksikon, Povijest i više.",
+ "titel": "Kako koristiti aplikaciju",
+ "vorspann": "Devet kratkih poglavlja sa snimkama zaslona, od prvog pokretanja do promjene jezika. Gumbi i zasloni ovdje se zovu isto kao u aplikaciji.",
+ "ogTitel": "Kako koristiti aplikaciju: Tarot Cup",
+ "brotkrume": "Kako koristiti aplikaciju",
+ "inhaltTitel": "Poglavlja",
+ "kapitel": [
+  {
+   "kennung": "erster-start",
+   "titel": "Što se događa pri prvom pokretanju?",
+   "absaetze": [
+    "Pri prvom otvaranju aplikacija se prikazuje na jeziku svog mobitela; nakon „Dobro došli” dodiruješ „Dalje”. U koraku „Prije nego što počnemo” potvrđuješ da imaš najmanje 16 godina te pomoću „Prihvati i nastavi” prihvaćaš uvjete korištenja. Kratko upoznavanje predstavlja Kartu dana, gledanje u šalicu, tarot i Leksikon; pomoću „Preskoči” možeš ga izostaviti. Na kraju aplikacija pita želiš li da te ujutro podsjeti na tvoju Kartu dana."
+   ],
+   "foto": "01_erster_start",
+   "alt": "Korak „Prije nego što počnemo” s označenim kvadratićem za dob, poveznicama na Izjavu o privatnosti i Uvjete korištenja te gumbom „Prihvati i nastavi”."
+  },
+  {
+   "kennung": "tageskarte",
+   "titel": "Kako doći do Karte dana?",
+   "absaetze": [
+    "Na samom vrhu početne stranice leži tvoja Karta dana, neotkrivena. Kad je dodirneš, otkriva se; ispod nje stoje njezino kratko značenje i „Pročitaj više” za cijelo tumačenje. Cijeli dan ostaje ista karta, čak i ako ponovno otvoriš aplikaciju, a nakon ponoći čeka te nova neotkrivena karta. Svaka Karta dana nalazi se i u Povijesti."
+   ],
+   "foto": "02_tageskarte",
+   "alt": "Početna stranica s otkrivenom Kartom dana, njezinim kratkim značenjem i opcijom „Pročitaj više”, ispod toga pločice „Položi karte” i „Gledanje u šalicu”."
+  },
+  {
+   "kennung": "tarot-legen",
+   "titel": "Kako položiti tarot karte?",
+   "absaetze": [
+    "Preko opcije „Položi karte” biraš „Da ili ne”, „Tri karte” ili „Ljubav” i tiho misliš na svoje pitanje. Miješaš povlačenjem prsta preko hrpe, nakon „Karte su promiješane” biraš svoje karte u lepezi, a nakon „Dalje na otkrivanje” otkrivaš ih jednu po jednu. „Na cjelokupno tumačenje” pokazuje što one zajedno govore. Nakon toga raspored se odmara: „Da ili ne” ponovno je dostupno sljedeći dan, „Tri karte” nakon tri dana, a „Ljubav” nakon tjedan dana, uvijek od ponoći."
+   ],
+   "foto": "03_tarot",
+   "alt": "Raspored „Tri karte” s tri otkrivene karte pod nazivima Prošlost, Sadašnjost i Budućnost te gumbom „Na cjelokupno tumačenje”."
+  },
+  {
+   "kennung": "kaffeesatz",
+   "titel": "Kako samostalno gledati u šalicu?",
+   "absaetze": [
+    "Nakon što popiješ tursku kavu, dodirni „Gledanje u šalicu” i odaberi jedno životno područje. Pod „Odaberi znakove” biraš do osam od 80 znakova i postavljaš svaki na odgovarajuće mjesto na crtežu šalice: rub, sredina, dno ili tanjurić. Od tri znaka dobiva se potpuno tumačenje, svaka 3 dana; jedan ili dva znaka daju kratko tumačenje, do tri puta dnevno. Kako se šalica priprema po starom običaju, pročitaj u [vodiču za gledanje u šalicu](/hr/gledanje-u-salicu/)."
+   ],
+   "foto": "04_kaffeesatz",
+   "alt": "Crtež šalice „Gdje se nalazi koji znak”: šalica gledana odozgo s ručkom desno, na njoj nekoliko postavljenih znakova, ispod toga gumb „Pogledaj tumačenje”."
+  },
+  {
+   "kennung": "lexikon",
+   "titel": "Kako pronaći kartu ili znak u Leksikonu?",
+   "absaetze": [
+    "U kartici „Leksikon” gore se prebacuješ između „Tarot” i „Talog kave”. 78 karata filtriraš prema „Velika arkana” i četiri boje, a 80 znakova pronalaziš putem pretrage ili kategorija. Svaki unos objašnjava značenje: kod karata za uspravan i obrnut položaj, a kod znakova i po čemu ih prepoznaješ u šalici. Leksikon je uvijek dostupan i ne treba internet."
+   ],
+   "foto": "05_lexikon",
+   "alt": "Leksikon u dijelu *talog kave* s poljem za pretraživanje, kategorijama i popisom znakova s linijskim crtežom i kratkim značenjem."
+  },
+  {
+   "kennung": "verlauf",
+   "titel": "Gdje pronaći ranija tumačenja i bilješke?",
+   "absaetze": [
+    "Svaki raspored automatski završava na kartici „Povijest”, najnoviji na vrhu, s datumom i vrstom. Ako dodirneš unos, otvara se cijelo tumačenje; u polju „Tvoja bilješka” bilježiš što je od toga nastalo, a aplikacija to odmah sprema. Pomoću „Izbriši unos” nakon potvrde trajno uklanjaš unos iz aplikacije. Povijest i bilješke aplikacija sprema na tvom mobitelu."
+   ],
+   "foto": "06_verlauf",
+   "alt": "Otvoreni unos iz Povijesti s tumačenjem, ispunjenim poljem „Tvoja bilješka” i gumbima „Podijeli” i „Izbriši”."
+  },
+  {
+   "kennung": "erinnerung",
+   "titel": "Kako postaviti Podsjetnik na Kartu dana?",
+   "absaetze": [
+    "U „Postavkama” uključuješ „Podsjetnik na Kartu dana” i ispod toga namještaš „Vrijeme” u satima i koracima od pet minuta. Ako Android pita smije li aplikacija slati obavijesti, dopuštaš to; bez dopuštenja prekidač ostaje isključen. Podsjetnik stiže svaki dan otprilike u odabrano vrijeme i ne otkriva kartu."
+   ],
+   "foto": "07_erinnerung",
+   "alt": "Postavke s uključenim „Podsjetnikom na Kartu dana” i vremenom koje se namješta gumbima minus i plus."
+  },
+  {
+   "kennung": "teilen",
+   "titel": "Kako podijeliti tumačenje?",
+   "absaetze": [
+    "Ispod tumačenja nalazi se „Podijeli kao sliku”, i to također kod unosa u Povijesti. Aplikacija iz toga stvara sliku s rasporedom, datumom, nazivima karata ili znakova, kratkom rečenicom iz tumačenja i nazivom „Tarot Cup”. Tvoje pitanje nije na slici jer ga aplikacija ne poznaje. Kamo slika ide, biraš u izborniku za dijeljenje na Androidu."
+   ],
+   "foto": "08_teilen",
+   "alt": "Slika za dijeljenje na tamnoj pozadini: gore raspored i datum, u sredini imena karata i rečenica u navodnicima, dolje „Tarot Cup”."
+  },
+  {
+   "kennung": "sprache",
+   "titel": "Kako promijeniti jezik?",
+   "absaetze": [
+    "Na samom vrhu „Postavki” pod „Jezik” biraš između „Deutsch”, „Türkçe”, „English” i „Español”. Bez vlastitog odabira aplikacija prati jezik svog mobitela, a za svaki drugi jezik mobitela prikazuje engleski. Aplikacija odmah mijenja jezik. I ranija tumačenja u Povijesti, Leksikon, pravni tekstovi i podsjetnik tada se prikazuju na novom jeziku; tvoje bilješke ostaju onakve kakve su zapisane."
+   ],
+   "foto": "09_sprache",
+   "alt": "Gornji dio Postavki s odjeljkom „Jezik” i gumbima za jezike."
+  }
+ ],
+ "abschluss": {
+  "titel": "Još pitanja?",
+  "text": "Kratke odgovore, na primjer treba li aplikaciji internet ili zašto se raspored upravo odmara, možeš pronaći pod [Česta pitanja](/hr/pitanja/)."
+ }
+}

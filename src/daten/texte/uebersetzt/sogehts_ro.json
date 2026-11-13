@@ -1,0 +1,96 @@
+{
+ "metaTitel": "Ghid: Cum funcționează aplicația | Tarot Cup",
+ "metaBeschreibung": "Ghidul explică Tarot Cup în nouă capitole scurte: prima pornire, Cartea Zilei, tragerea de tarot, ghicitul în cafea pe cont propriu, Dicționar, Istoric și altele.",
+ "titel": "Cum funcționează",
+ "vorspann": "Nouă capitole scurte cu capturi de ecran, de la prima pornire până la schimbarea limbii. Numele butoanelor și ale ecranelor sunt aici aceleași ca în aplicație.",
+ "ogTitel": "Cum funcționează: Tarot Cup",
+ "brotkrume": "Cum funcționează",
+ "inhaltTitel": "Capitole",
+ "kapitel": [
+  {
+   "kennung": "erster-start",
+   "titel": "Ce se întâmplă la prima pornire?",
+   "absaetze": [
+    "La prima deschidere, aplicația apare în limba telefonului tău; după „Bine ai venit” atingi „Continuă”. În pasul „Înainte să începem” confirmi că ai cel puțin 16 ani și accepți termenii de utilizare cu „Accept și continuă”. O scurtă introducere prezintă Cartea Zilei, ghicitul în cafea, tarotul și Dicționarul; cu „Sari peste” o poți omite. La final, aplicația te întreabă dacă să îți amintească dimineața de Cartea Zilei."
+   ],
+   "foto": "01_erster_start",
+   "alt": "Pasul „Înainte de a începe”, cu căsuța bifată pentru vârstă, linkurile către Politica de confidențialitate și Termenii de utilizare și butonul „Accept și continui”."
+  },
+  {
+   "kennung": "tageskarte",
+   "titel": "Cum îmi obțin Cartea Zilei?",
+   "absaetze": [
+    "În partea de sus a ecranului Acasă, Cartea Zilei se află cu fața în jos. Dacă o atingi, se întoarce; dedesubt apar sensul ei scurt și „Citește mai mult” pentru interpretarea completă. Toată ziua rămâne aceeași carte, chiar dacă redeschizi aplicația, iar de la miezul nopții te așteaptă o nouă carte cu fața în jos. Fiecare Carte a Zilei apare și în Istoric."
+   ],
+   "foto": "02_tageskarte",
+   "alt": "Ecranul Acasă cu o Carte a Zilei întoarsă, sensul ei scurt și „Citește mai mult”, iar dedesubt casetele „Tragere de tarot” și „Ghicit în cafea”."
+  },
+  {
+   "kennung": "tarot-legen",
+   "titel": "Cum trag cărțile de tarot?",
+   "absaetze": [
+    "Prin „Tragere de tarot” alegi „Da sau Nu”, „Trei Cărți” sau „Dragoste” și te gândești în tăcere la întrebarea ta. Amesteci trăgând degetul peste pachet, alegi cărțile din evantai după „Cărțile sunt amestecate” și le întorci pe rând după „Continuă la întoarcere”. „La interpretarea de ansamblu” arată ce spun ele împreună. Apoi tragerea se odihnește: „Da sau Nu” este din nou disponibilă a doua zi, „Trei Cărți” după trei zile, iar „Dragoste” după o săptămână, de fiecare dată începând de la miezul nopții."
+   ],
+   "foto": "03_tarot",
+   "alt": "Tragerea Trei Cărți cu trei cărți întoarse sub Trecut, Prezent și Viitor și butonul „La interpretarea de ansamblu”."
+  },
+  {
+   "kennung": "kaffeesatz",
+   "titel": "Cum citesc zațul de cafea pe cont propriu?",
+   "absaetze": [
+    "După ce ai băut cafeaua turcească, atingi „Ghicit în cafea” și alegi un domeniu al vieții. La „Alege simboluri” cauți până la opt dintre cele 80 de simboluri și pui fiecare simbol pe harta ceștii la locul lui: margine, mijloc, fund sau farfurioară. De la trei simboluri primești interpretarea completă, o dată la trei zile; unul sau două simboluri dau o interpretare scurtă, de până la trei ori pe zi. Cum pregătești ceașca după vechiul obicei găsești în [ghidul despre ghicitul în cafea](/ro/ghicit-in-cafea/)."
+   ],
+   "foto": "04_kaffeesatz",
+   "alt": "Harta ceștii „Unde se află fiecare simbol?”: ceașca văzută de sus, cu toarta în dreapta, cu mai multe simboluri puse pe ea și, dedesubt, butonul „Vezi interpretarea”."
+  },
+  {
+   "kennung": "lexikon",
+   "titel": "Cum găsesc o carte sau un simbol în Dicționar?",
+   "absaetze": [
+    "În fila „Dicționar” comuți sus între „Tarot” și „Zaț de cafea”. Cele 78 de cărți le filtrezi după „Arcanele Majore” și cele patru culori, iar cele 80 de simboluri le găsești prin căutare sau prin categorii. Fiecare intrare explică semnificația: la cărți, în poziție dreaptă și inversată; la simboluri, și cum le recunoști în ceașcă. Dicționarul este mereu disponibil și nu are nevoie de internet."
+   ],
+   "foto": "05_lexikon",
+   "alt": "Dicționarul din secțiunea „Zaț de cafea”, cu câmp de căutare, categorii și o listă de simboluri cu contur și semnificație scurtă."
+  },
+  {
+   "kennung": "verlauf",
+   "titel": "Unde găsesc interpretările și notele anterioare?",
+   "absaetze": [
+    "Fiecare tragere ajunge de la sine în fila „Istoric”, cea mai recentă sus, cu data și tipul. Dacă atingi o intrare, se deschide interpretarea completă; în câmpul „Nota ta” notezi ce s-a ales din ea, iar aplicația salvează imediat. Cu „Șterge intrarea” elimini definitiv o intrare din aplicație, după o întrebare de confirmare. Istoricul și notele sunt salvate de aplicație pe telefonul tău."
+   ],
+   "foto": "06_verlauf",
+   "alt": "O intrare deschisă din Istoric, cu interpretarea, câmpul „Nota ta” completat și butoanele pentru distribuire și ștergere."
+  },
+  {
+   "kennung": "erinnerung",
+   "titel": "Cum setez Memento pentru Cartea Zilei?",
+   "absaetze": [
+    "În „Setări”, activezi „Memento pentru Cartea Zilei” și setezi mai jos „Ora” în ore și pași de cinci minute. Dacă Android întreabă dacă aplicația poate trimite notificări, o autorizezi; fără permisiune, comutatorul rămâne dezactivat. Memento-ul apare în fiecare zi aproximativ la ora aleasă și nu dezvăluie cartea."
+   ],
+   "foto": "07_erinnerung",
+   "alt": "Setările cu „Memento pentru Cartea Zilei” activat și ora care se ajustează cu minus și plus."
+  },
+  {
+   "kennung": "teilen",
+   "titel": "Cum distribui o interpretare?",
+   "absaetze": [
+    "Sub o interpretare se află „Distribuie ca imagine”, inclusiv la intrările din Istoric. Aplicația creează din ea o imagine cu tragerea, data, numele cărților sau simbolurilor, o scurtă propoziție din interpretare și numele „Tarot Cup”. Întrebarea ta nu apare pe ea; aplicația nu o cunoaște. Unde ajunge imaginea alegi în meniul de distribuire din Android."
+   ],
+   "foto": "08_teilen",
+   "alt": "Imaginea de distribuit pe fundal întunecat: sus tragerea și data, la mijloc numele cărților și o propoziție între ghilimele, jos „Tarot Cup”."
+  },
+  {
+   "kennung": "sprache",
+   "titel": "Cum schimb limba?",
+   "absaetze": [
+    "În partea de sus a „Setărilor” alegi la „Limbă” între „Deutsch”, „Türkçe”, „English” și „Español”. Dacă nu alegi nimic, aplicația urmează limba telefonului tău; pentru orice altă limbă a telefonului afișează engleza. Aplicația trece imediat la limba aleasă. Interpretările anterioare din Istoric, Dicționarul, Documentele juridice și Memento-ul apar apoi și ele în noua limbă; notele tale rămân așa cum le-ai scris."
+   ],
+   "foto": "09_sprache",
+   "alt": "Partea de sus a Setărilor, cu secțiunea „Limbă” și butoanele pentru limbi."
+  }
+ ],
+ "abschluss": {
+  "titel": "Mai ai întrebări?",
+  "text": "Răspunsuri scurte, de exemplu dacă aplicația are nevoie de internet sau de ce o tragere se odihnește chiar acum, găsești la [Întrebări frecvente](/ro/intrebari/)."
+ }
+}

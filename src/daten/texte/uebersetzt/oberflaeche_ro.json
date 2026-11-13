@@ -1,0 +1,95 @@
+{
+ "sprache": "Română",
+ "spracheKurz": "RO",
+ "sprung": "Treci la conținut",
+ "nav": {
+  "aria": "Navigare principală",
+  "tarot": "Tarot",
+  "kaffeesatz": "Zaț de cafea",
+  "sogehts": "Cum funcționează",
+  "fragen": "Întrebări",
+  "appLaden": "Descarcă aplicația",
+  "menue": "Meniu",
+  "menueZu": "Închide",
+  "sprachwahl": "Alege limba"
+ },
+ "fuss": {
+  "spalteApp": "Aplicație",
+  "spalteRecht": "Informații juridice",
+  "spalteKontakt": "Contact",
+  "sogehts": "Cum funcționează",
+  "fragen": "Întrebări",
+  "ueber": "Despre Tarot Cup",
+  "datenschutz": "Confidențialitate",
+  "nutzungsbedingungen": "Termenii de utilizare",
+  "offenlegung": "Informații despre editor",
+  "bildnachweis": "Sursele imaginilor și licențe",
+  "kontakt": "Scrie un e-mail",
+  "sprache": "Limbă",
+  "hinweis": "Pentru divertisment. Fără predicții și fără consultanță.",
+  "zeile": "Tarot Cup · Pentru divertisment."
+ },
+ "krumen": {
+  "aria": "Calea de navigare",
+  "start": "Acasă"
+ },
+ "inhalt": "Conținut",
+ "teilen": {
+  "knopf": "Distribuie pagina",
+  "titel": "Distribuie",
+  "kopieren": "Copiază linkul",
+  "kopiert": "Link copiat",
+  "whatsapp": "Prin WhatsApp",
+  "email": "Prin e-mail",
+  "emailText": "Acest lucru te-ar putea interesa:"
+ },
+ "store": {
+  "bald": "În curând pe Google Play",
+  "ansehen": "Vezi pe Google Play",
+  "abzeichenAlt": "Acum pe Google Play"
+ },
+ "app": {
+  "metaTitel": "Descarcă Tarot Cup: aplicație pentru Android",
+  "metaBeschreibung": "Acest link te duce la Tarot Cup pe Google Play. Pe computer, scanezi codul cu telefonul tău. Tarot Cup există pentru Android.",
+  "titel": "Tarot Cup pentru Android",
+  "text": "Tarot Cup este disponibil pentru Android pe Google Play. Dacă ești la computer, scanează codul cu telefonul tău.",
+  "qr": "Scanează cu telefonul",
+  "weiter": "Continuă către Google Play",
+  "bald": "Tarot Cup ajunge în curând pe Google Play. Mai treci pe aici oricând.",
+  "iphone": "Tarot Cup este disponibil doar pentru Android."
+ },
+ "nichtGefunden": {
+  "titel": "Pagina nu a fost găsită",
+  "text": "Această pagină nu există sau nu mai poate fi găsită. De la pagina principală poți continua.",
+  "start": "Înapoi la pagina principală"
+ },
+ "bilder": {
+  "druck1909": "Tipăritură din 1909",
+  "auslegebild": "Imaginea tragerii",
+  "eineKarte": "o carte",
+  "gegenueberKurz": "partea opusă",
+  "tassenkarte": "Harta ceștii văzută de sus: {rand}, {mitte} și {boden}, în stânga {gegenueber}, în dreapta {henkelseite} cu toarta, dedesubt {untertasse}"
+ },
+ "bildnachweis": {
+  "metaTitel": "Sursele imaginilor și licențe | Tarot Cup",
+  "metaBeschreibung": "Aici afli de unde provin imaginile cărților de tarot din 1909 din Tarot Cup și de pe acest site, precum și sub ce licență sunt fonturile site-ului.",
+  "titel": "Sursele imaginilor și licențe",
+  "brotkrume": "Sursele imaginilor",
+  "vorspann": "Aici poți afla de unde provin imaginile cărților și ce fonturi folosește acest site.",
+  "karten": {
+   "titel": "Imagini ale cărților din 1909",
+   "absaetze": [
+    "Imaginile cărților din aplicație și de pe acest site au fost desenate de Pamela Colman Smith. Ele au apărut în 1909 și sunt în domeniul public.",
+    "La bază stau scanări ale tipăriturii originale de pe Wikimedia Commons. În aplicație, imaginile sunt decupate doar la partea cu desenul. Pentru acest site au fost micșorate, decupate într-un format unitar de 480 × 822 pixeli și salvate ca WebP. În rest, sunt neschimbate."
+   ]
+  },
+  "schriften": {
+   "titel": "Fonturile acestui site",
+   "absaetze": [
+    "Site-ul folosește două fonturi: Cormorant Garamond de Christian Thalmann și Inter de Rasmus Andersson. Ambele sunt publicate sub licența SIL Open Font License, versiunea 1.1.",
+    "Fișierele cu fonturi sunt găzduite direct pe acest site și nu sunt încărcate de la servere terțe."
+   ]
+  },
+  "marken": "Google Play și logo-ul Google Play sunt mărci înregistrate ale Google LLC."
+ }
+}

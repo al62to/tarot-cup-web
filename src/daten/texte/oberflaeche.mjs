@@ -194,8 +194,24 @@ export const oberflaeche = {
   },
 };
 
-// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+// Übersetzungen (en, es seit AP-SPR2; bs, hr, sr, ro, pt, fr, id, hi seit AP-23): erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
 import oberflaecheEn from './uebersetzt/oberflaeche_en.json' with { type: 'json' };
 import oberflaecheEs from './uebersetzt/oberflaeche_es.json' with { type: 'json' };
+import oberflaecheBs from './uebersetzt/oberflaeche_bs.json' with { type: 'json' };
+import oberflaecheHr from './uebersetzt/oberflaeche_hr.json' with { type: 'json' };
+import oberflaecheSr from './uebersetzt/oberflaeche_sr.json' with { type: 'json' };
+import oberflaecheRo from './uebersetzt/oberflaeche_ro.json' with { type: 'json' };
+import oberflaechePt from './uebersetzt/oberflaeche_pt.json' with { type: 'json' };
+import oberflaecheFr from './uebersetzt/oberflaeche_fr.json' with { type: 'json' };
+import oberflaecheId from './uebersetzt/oberflaeche_id.json' with { type: 'json' };
+import oberflaecheHi from './uebersetzt/oberflaeche_hi.json' with { type: 'json' };
 oberflaeche.en = oberflaecheEn;
 oberflaeche.es = oberflaecheEs;
+oberflaeche.bs = oberflaecheBs;
+oberflaeche.hr = oberflaecheHr;
+oberflaeche.sr = oberflaecheSr;
+oberflaeche.ro = oberflaecheRo;
+oberflaeche.pt = oberflaechePt;
+oberflaeche.fr = oberflaecheFr;
+oberflaeche.id = oberflaecheId;
+oberflaeche.hi = oberflaecheHi;

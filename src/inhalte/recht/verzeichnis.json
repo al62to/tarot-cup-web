@@ -34,6 +34,38 @@
   "es": {
    "name": "Español",
    "seitentitel": "{titel} de Tarot Cup"
+  },
+  "bs": {
+   "name": "Bosanski",
+   "seitentitel": "{titel}"
+  },
+  "hr": {
+   "name": "Hrvatski",
+   "seitentitel": "{titel}"
+  },
+  "sr": {
+   "name": "Srpski",
+   "seitentitel": "{titel}"
+  },
+  "ro": {
+   "name": "Română",
+   "seitentitel": "{titel}"
+  },
+  "pt": {
+   "name": "Português",
+   "seitentitel": "{titel}"
+  },
+  "fr": {
+   "name": "Français",
+   "seitentitel": "{titel}"
+  },
+  "id": {
+   "name": "Bahasa Indonesia",
+   "seitentitel": "{titel}"
+  },
+  "hi": {
+   "name": "हिन्दी",
+   "seitentitel": "{titel}"
   }
  },
  "texte": [
@@ -71,7 +103,7 @@
     },
     {
      "nummer": "1.4",
-     "datum": "12.11.2026",
+     "datum": "13.11.2026",
      "datei": "datenschutz_1.4.html",
      "quelle": "Datenschutzerklaerung_1.4.md"
     }
@@ -133,7 +165,7 @@
     },
     {
      "nummer": "1.4",
-     "datum": "12.11.2026",
+     "datum": "13.11.2026",
      "datei": "tr_gizlilik_1.4.html",
      "quelle": "1.4_uebersetzung/datenschutz_tr.md"
     }
@@ -171,7 +203,7 @@
    "fassungen": [
     {
      "nummer": "1.4",
-     "datum": "12.11.2026",
+     "datum": "13.11.2026",
      "datei": "en_privacy_1.4.html",
      "quelle": "1.4_uebersetzung/datenschutz_en.md"
     }
@@ -203,7 +235,7 @@
    "fassungen": [
     {
      "nummer": "1.4",
-     "datum": "12.11.2026",
+     "datum": "13.11.2026",
      "datei": "es_privacidad_1.4.html",
      "quelle": "1.4_uebersetzung/datenschutz_es.md"
     }
@@ -222,6 +254,262 @@
      "datum": "12.11.2026",
      "datei": "es_condiciones-de-uso_1.2.html",
      "quelle": "1.4_uebersetzung/nutzungsbedingungen_es.md"
+    }
+   ]
+  },
+  {
+   "pfad": "bs/privatnost",
+   "titel": "Politika privatnosti za Tarot Cup",
+   "sprache": "bs",
+   "gegenstueck": null,
+   "gruppe": "datenschutz",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.4",
+     "datum": "13.11.2026",
+     "datei": "bs_privatnost_1.4.html",
+     "quelle": "1.4_uebersetzung/datenschutz_bs.md"
+    }
+   ]
+  },
+  {
+   "pfad": "bs/uslovi-koristenja",
+   "titel": "Uslovi korištenja aplikacije Tarot Cup",
+   "sprache": "bs",
+   "gegenstueck": null,
+   "gruppe": "nutzungsbedingungen",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.2",
+     "datum": "12.11.2026",
+     "datei": "bs_uslovi-koristenja_1.2.html",
+     "quelle": "1.4_uebersetzung/nutzungsbedingungen_bs.md"
+    }
+   ]
+  },
+  {
+   "pfad": "hr/privatnost",
+   "titel": "Izjava o privatnosti za Tarot Cup",
+   "sprache": "hr",
+   "gegenstueck": null,
+   "gruppe": "datenschutz",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.4",
+     "datum": "13.11.2026",
+     "datei": "hr_privatnost_1.4.html",
+     "quelle": "1.4_uebersetzung/datenschutz_hr.md"
+    }
+   ]
+  },
+  {
+   "pfad": "hr/uvjeti-koristenja",
+   "titel": "Uvjeti korištenja aplikacije Tarot Cup",
+   "sprache": "hr",
+   "gegenstueck": null,
+   "gruppe": "nutzungsbedingungen",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.2",
+     "datum": "12.11.2026",
+     "datei": "hr_uvjeti-koristenja_1.2.html",
+     "quelle": "1.4_uebersetzung/nutzungsbedingungen_hr.md"
+    }
+   ]
+  },
+  {
+   "pfad": "sr/privatnost",
+   "titel": "Politika privatnosti za Tarot Cup",
+   "sprache": "sr",
+   "gegenstueck": null,
+   "gruppe": "datenschutz",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.4",
+     "datum": "13.11.2026",
+     "datei": "sr_privatnost_1.4.html",
+     "quelle": "1.4_uebersetzung/datenschutz_sr.md"
+    }
+   ]
+  },
+  {
+   "pfad": "sr/uslovi-koriscenja",
+   "titel": "Uslovi korišćenja za Tarot Cup",
+   "sprache": "sr",
+   "gegenstueck": null,
+   "gruppe": "nutzungsbedingungen",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.2",
+     "datum": "12.11.2026",
+     "datei": "sr_uslovi-koriscenja_1.2.html",
+     "quelle": "1.4_uebersetzung/nutzungsbedingungen_sr.md"
+    }
+   ]
+  },
+  {
+   "pfad": "ro/confidentialitate",
+   "titel": "Politica de confidențialitate pentru Tarot Cup",
+   "sprache": "ro",
+   "gegenstueck": null,
+   "gruppe": "datenschutz",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.4",
+     "datum": "13.11.2026",
+     "datei": "ro_confidentialitate_1.4.html",
+     "quelle": "1.4_uebersetzung/datenschutz_ro.md"
+    }
+   ]
+  },
+  {
+   "pfad": "ro/termeni-de-utilizare",
+   "titel": "Termenii de utilizare pentru Tarot Cup",
+   "sprache": "ro",
+   "gegenstueck": null,
+   "gruppe": "nutzungsbedingungen",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.2",
+     "datum": "12.11.2026",
+     "datei": "ro_termeni-de-utilizare_1.2.html",
+     "quelle": "1.4_uebersetzung/nutzungsbedingungen_ro.md"
+    }
+   ]
+  },
+  {
+   "pfad": "pt/privacidade",
+   "titel": "Política de Privacidade do Tarot Cup",
+   "sprache": "pt",
+   "gegenstueck": null,
+   "gruppe": "datenschutz",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.4",
+     "datum": "13.11.2026",
+     "datei": "pt_privacidade_1.4.html",
+     "quelle": "1.4_uebersetzung/datenschutz_pt.md"
+    }
+   ]
+  },
+  {
+   "pfad": "pt/termos-de-uso",
+   "titel": "Termos de Uso do Tarot Cup",
+   "sprache": "pt",
+   "gegenstueck": null,
+   "gruppe": "nutzungsbedingungen",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.2",
+     "datum": "12.11.2026",
+     "datei": "pt_termos-de-uso_1.2.html",
+     "quelle": "1.4_uebersetzung/nutzungsbedingungen_pt.md"
+    }
+   ]
+  },
+  {
+   "pfad": "fr/confidentialite",
+   "titel": "Politique de confidentialité de Tarot Cup",
+   "sprache": "fr",
+   "gegenstueck": null,
+   "gruppe": "datenschutz",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.4",
+     "datum": "13.11.2026",
+     "datei": "fr_confidentialite_1.4.html",
+     "quelle": "1.4_uebersetzung/datenschutz_fr.md"
+    }
+   ]
+  },
+  {
+   "pfad": "fr/conditions-d-utilisation",
+   "titel": "Conditions d’utilisation de Tarot Cup",
+   "sprache": "fr",
+   "gegenstueck": null,
+   "gruppe": "nutzungsbedingungen",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.2",
+     "datum": "12.11.2026",
+     "datei": "fr_conditions-d-utilisation_1.2.html",
+     "quelle": "1.4_uebersetzung/nutzungsbedingungen_fr.md"
+    }
+   ]
+  },
+  {
+   "pfad": "id/privasi",
+   "titel": "Kebijakan Privasi untuk Tarot Cup",
+   "sprache": "id",
+   "gegenstueck": null,
+   "gruppe": "datenschutz",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.4",
+     "datum": "13.11.2026",
+     "datei": "id_privasi_1.4.html",
+     "quelle": "1.4_uebersetzung/datenschutz_id.md"
+    }
+   ]
+  },
+  {
+   "pfad": "id/ketentuan-penggunaan",
+   "titel": "Ketentuan Penggunaan untuk Tarot Cup",
+   "sprache": "id",
+   "gegenstueck": null,
+   "gruppe": "nutzungsbedingungen",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.2",
+     "datum": "12.11.2026",
+     "datei": "id_ketentuan-penggunaan_1.2.html",
+     "quelle": "1.4_uebersetzung/nutzungsbedingungen_id.md"
+    }
+   ]
+  },
+  {
+   "pfad": "hi/privacy",
+   "titel": "Tarot Cup के लिए निजता नीति",
+   "sprache": "hi",
+   "gegenstueck": null,
+   "gruppe": "datenschutz",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.4",
+     "datum": "13.11.2026",
+     "datei": "hi_privacy_1.4.html",
+     "quelle": "1.4_uebersetzung/datenschutz_hi.md"
+    }
+   ]
+  },
+  {
+   "pfad": "hi/terms",
+   "titel": "Tarot Cup के उपयोग की शर्तें",
+   "sprache": "hi",
+   "gegenstueck": null,
+   "gruppe": "nutzungsbedingungen",
+   "archiv": false,
+   "fassungen": [
+    {
+     "nummer": "1.2",
+     "datum": "12.11.2026",
+     "datei": "hi_terms_1.2.html",
+     "quelle": "1.4_uebersetzung/nutzungsbedingungen_hi.md"
     }
    ]
   }

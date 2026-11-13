@@ -32,7 +32,7 @@ const PAARE = [
 ];
 
 // Seite der Startseite je Sprache (bisher src/pages/index.astro und tr/index.astro, AP-SPR2 eine Datei für alle).
-const SEITENDATEI = { de: '', tr: 'tr/', en: 'en/', es: 'es/' };
+const SEITENDATEI = Object.fromEntries(Object.entries(ADRESSEN.start).map(([s, a]) => [s, a.slice(1)]));
 
 // Feste deutsche Texte der Seiten, die es nur auf Deutsch gibt.
 const OFFENLEGUNG = {

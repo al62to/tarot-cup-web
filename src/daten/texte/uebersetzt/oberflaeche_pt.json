@@ -1,0 +1,95 @@
+{
+ "sprache": "Português",
+ "spracheKurz": "PT",
+ "sprung": "Pular para o conteúdo",
+ "nav": {
+  "aria": "Navegação principal",
+  "tarot": "Tarô",
+  "kaffeesatz": "Borra de café",
+  "sogehts": "Como funciona",
+  "fragen": "Perguntas",
+  "appLaden": "Baixar o app",
+  "menue": "Menu",
+  "menueZu": "Fechar",
+  "sprachwahl": "Escolher idioma"
+ },
+ "fuss": {
+  "spalteApp": "App",
+  "spalteRecht": "Informações legais",
+  "spalteKontakt": "Contato",
+  "sogehts": "Como funciona",
+  "fragen": "Perguntas",
+  "ueber": "Sobre o Tarot Cup",
+  "datenschutz": "Privacidade",
+  "nutzungsbedingungen": "Termos de Uso",
+  "offenlegung": "Divulgação",
+  "bildnachweis": "Créditos das imagens e licenças",
+  "kontakt": "Enviar e-mail",
+  "sprache": "Idioma",
+  "hinweis": "Para entretenimento. Sem previsão e sem aconselhamento.",
+  "zeile": "Tarot Cup · Para entretenimento."
+ },
+ "krumen": {
+  "aria": "Navegação hierárquica",
+  "start": "Início"
+ },
+ "inhalt": "Conteúdo",
+ "teilen": {
+  "knopf": "Compartilhar página",
+  "titel": "Compartilhar",
+  "kopieren": "Copiar link",
+  "kopiert": "Link copiado",
+  "whatsapp": "Via WhatsApp",
+  "email": "Via e-mail",
+  "emailText": "Isso pode interessar a você:"
+ },
+ "store": {
+  "bald": "Em breve no Google Play",
+  "ansehen": "Ver no Google Play",
+  "abzeichenAlt": "No Google Play agora"
+ },
+ "app": {
+  "metaTitel": "Baixar Tarot Cup: app para Android",
+  "metaBeschreibung": "Este link leva você ao Tarot Cup no Google Play. No computador, você escaneia o código com seu celular. O Tarot Cup está disponível para Android.",
+  "titel": "Tarot Cup para Android",
+  "text": "O Tarot Cup está disponível para Android no Google Play. Se você estiver no computador, escaneie o código com seu celular.",
+  "qr": "Escaneie com o celular",
+  "weiter": "Continuar para o Google Play",
+  "bald": "O Tarot Cup chegará ao Google Play em breve. Sinta-se à vontade para voltar.",
+  "iphone": "O Tarot Cup está disponível apenas para Android."
+ },
+ "nichtGefunden": {
+  "titel": "Página não encontrada",
+  "text": "Esta página não existe ou não existe mais. Você pode seguir a partir da página inicial.",
+  "start": "Ir para a página inicial"
+ },
+ "bilder": {
+  "druck1909": "Impressão de 1909",
+  "auslegebild": "Imagem da tiragem",
+  "eineKarte": "uma carta",
+  "gegenueberKurz": "lado oposto",
+  "tassenkarte": "Mapa da xícara visto de cima: {rand}, {mitte} e {boden}, à esquerda o {gegenueber}, à direita o {henkelseite} com a asa, embaixo o {untertasse}"
+ },
+ "bildnachweis": {
+  "metaTitel": "Créditos das imagens e licenças | Tarot Cup",
+  "metaBeschreibung": "Aqui está a origem das imagens das cartas de 1909 no Tarot Cup e neste site, bem como a licença sob a qual as fontes do site são licenciadas.",
+  "titel": "Créditos das imagens e licenças",
+  "brotkrume": "Créditos das imagens",
+  "vorspann": "Aqui você encontra informações sobre a origem das imagens das cartas e as fontes utilizadas neste site.",
+  "karten": {
+   "titel": "Imagens das cartas de 1909",
+   "absaetze": [
+    "As imagens das cartas no app e neste site foram desenhadas por Pamela Colman Smith. Elas foram publicadas em 1909 e estão em domínio público.",
+    "A base são digitalizações da impressão original, do Wikimedia Commons. No app, as imagens são recortadas apenas na área da ilustração. Para este site, elas foram reduzidas, recortadas em um formato uniforme de 480 × 822 pixels e salvas como WebP. Fora isso, não foram alteradas."
+   ]
+  },
+  "schriften": {
+   "titel": "Fontes deste site",
+   "absaetze": [
+    "O site utiliza duas fontes: Cormorant Garamond de Christian Thalmann e Inter de Rasmus Andersson. Ambas estão sob a SIL Open Font License, versão 1.1.",
+    "Os arquivos de fonte estão hospedados neste site e não são carregados por servidores externos."
+   ]
+  },
+  "marken": "Google Play e o logotipo do Google Play são marcas da Google LLC."
+ }
+}

@@ -1,96 +1,96 @@
 {
- "metaTitel": "Guía de la app: tarot y posos de café | Tarot Cup",
- "metaBeschreibung": "Guía de Tarot Cup en nueve capítulos: primer inicio, carta del día, tirada de tarot, lectura de posos de café por tu cuenta, Diccionario e Historial.",
- "titel": "Cómo funciona",
- "vorspann": "Nueve capítulos breves con capturas de pantalla, desde el primer inicio hasta el cambio de idioma. Los botones y las pantallas se llaman aquí igual que en la app.",
- "ogTitel": "Cómo funciona: Tarot Cup",
- "brotkrume": "Cómo funciona",
- "inhaltTitel": "Capítulos",
- "kapitel": [
-  {
-   "kennung": "erster-start",
-   "titel": "¿Qué ocurre al iniciar por primera vez?",
-   "absaetze": [
-    "La primera vez que abres la app, aparece en el idioma de tu teléfono; después de «Te damos la bienvenida», tocas «Continuar». En el paso «Antes de empezar» confirmas que tienes al menos 16 años y aceptas las Condiciones de uso con «Aceptar y continuar». Una breve introducción presenta la carta del día, los posos del café, el tarot y el Diccionario; con «Omitir» puedes saltarla. Al final, la app te pregunta si quieres que te recuerde tu carta del día por la mañana."
-   ],
-   "foto": "01_erster_start",
-   "alt": "El paso «Antes de empezar» con la casilla marcada para la edad, los enlaces a la Política de privacidad y las Condiciones de uso y el botón «Aceptar y continuar»."
-  },
-  {
-   "kennung": "tageskarte",
-   "titel": "¿Cómo obtengo mi carta del día?",
-   "absaetze": [
-    "Arriba del todo en la pantalla de inicio está tu carta del día boca abajo. Si la tocas, se descubre; debajo aparecen su significado breve y «Leer más» para la lectura entera. Durante todo el día es la misma carta, aunque vuelvas a abrir la app, y a partir de medianoche te espera una nueva carta boca abajo. Cada carta del día aparece también en el Historial."
-   ],
-   "foto": "02_tageskarte",
-   "alt": "La pantalla de inicio con una carta del día descubierta, su significado breve y «Leer más»; debajo, las tarjetas «Tirar las cartas» y «Leer los posos del café»."
-  },
-  {
-   "kennung": "tarot-legen",
-   "titel": "¿Cómo tiro las cartas de tarot?",
-   "absaetze": [
-    "Con «Tirar las cartas» eliges «Sí o no», «Tres cartas» o «Amor» y piensas en silencio en tu pregunta. Barajas deslizando el dedo sobre la baraja; cuando aparece «Cartas barajadas», eliges tus cartas en el abanico y, después de «Continuar para descubrir», las descubres una a una. «Ir a la lectura de conjunto» muestra lo que cuentan juntas. Después, la tirada descansa: Sí o no vuelve a estar disponible al día siguiente, Tres cartas a los tres días y Amor a la semana, siempre a partir de medianoche."
-   ],
-   "foto": "03_tarot",
-   "alt": "La tirada Tres cartas con tres cartas descubiertas bajo Pasado, Presente y Futuro y el botón «Ir a la lectura de conjunto»."
-  },
-  {
-   "kennung": "kaffeesatz",
-   "titel": "¿Cómo leo los posos del café por mi cuenta?",
-   "absaetze": [
-    "Cuando hayas tomado tu café turco, toca «Leer los posos del café» y elige un área de la vida. En «Elegir símbolos» buscas hasta ocho de los 80 símbolos y colocas cada uno en su lugar del mapa de la taza: borde, zona media, fondo o platillo. A partir de tres símbolos hay una lectura completa, cada tres días; uno o dos símbolos dan una lectura breve, hasta tres veces al día. Cómo se prepara la taza según la costumbre antigua lo explica la [guía de los posos del café](/es/lectura-de-posos-de-cafe/)."
-   ],
-   "foto": "04_kaffeesatz",
-   "alt": "El mapa de la taza «¿Dónde está cada símbolo?»: la taza vista desde arriba con el asa a la derecha, encima varios símbolos colocados y, debajo, el botón «Ver la lectura»."
-  },
-  {
-   "kennung": "lexikon",
-   "titel": "¿Cómo encuentro una carta o un símbolo en el Diccionario?",
-   "absaetze": [
-    "En la pestaña «Diccionario» cambias arriba entre «Tarot» y «Posos de café». Las 78 cartas las filtras por «Arcanos Mayores» y por los cuatro palos; los 80 símbolos los encuentras con la búsqueda o por categorías. Cada entrada explica el significado: en las cartas, al derecho e invertidas; en los símbolos, también cómo reconocerlos en la taza. El Diccionario está siempre disponible y no necesita Internet."
-   ],
-   "foto": "05_lexikon",
-   "alt": "El Diccionario en la parte «Posos de café», con campo de búsqueda, categorías y una lista de símbolos con su trazo y su significado breve."
-  },
-  {
-   "kennung": "verlauf",
-   "titel": "¿Dónde encuentro lecturas y notas anteriores?",
-   "absaetze": [
-    "Cada tirada se guarda sola en la pestaña «Historial», la más reciente arriba, con la fecha y el tipo. Si tocas una entrada, se abre la lectura entera; en el campo «Tu nota» anotas qué ha resultado de ella, y la app lo guarda al momento. Con «Eliminar entrada» quitas una entrada de la app de forma definitiva, después de confirmarlo. La app guarda el Historial y las notas en tu teléfono."
-   ],
-   "foto": "06_verlauf",
-   "alt": "Una entrada abierta del Historial con la lectura, el campo «Tu nota» ya rellenado y los botones para compartir y eliminar."
-  },
-  {
-   "kennung": "erinnerung",
-   "titel": "¿Cómo configuro el recordatorio de la carta del día?",
-   "absaetze": [
-    "En «Configuración» activas «Recordatorio de la carta del día» y, debajo, ajustas la «Hora» en horas y en pasos de cinco minutos. Si Android pregunta si la app puede enviar notificaciones, lo permites; sin permiso, el interruptor se queda desactivado. El recordatorio llega cada día más o menos a la hora elegida y no revela la carta."
-   ],
-   "foto": "07_erinnerung",
-   "alt": "La Configuración con «Recordatorio de la carta del día» activado y la hora, que se ajusta con menos y más."
-  },
-  {
-   "kennung": "teilen",
-   "titel": "¿Cómo comparto una lectura?",
-   "absaetze": [
-    "Debajo de una lectura aparece «Compartir como imagen», también en las entradas del Historial. La app crea con ella una imagen con la tirada, la fecha, los nombres de las cartas o de los símbolos, una frase breve de la lectura y el nombre «Tarot Cup». Tu pregunta no aparece; la app no la conoce. A dónde va la imagen lo eliges en el menú Compartir de Android."
-   ],
-   "foto": "08_teilen",
-   "alt": "La imagen para compartir sobre fondo oscuro: arriba la tirada y la fecha, en el centro los nombres de las cartas y una frase entre comillas, abajo «Tarot Cup»."
-  },
-  {
-   "kennung": "sprache",
-   "titel": "¿Cómo cambio el idioma?",
-   "absaetze": [
-    "Arriba del todo en «Configuración», en «Idioma», eliges entre «Deutsch», «Türkçe», «English» y «Español». Si no eliges ninguno, la app sigue el idioma de tu teléfono y, con cualquier otro idioma del teléfono, se muestra en inglés. La app cambia al instante. También las lecturas anteriores del Historial, el Diccionario, los textos legales y el recordatorio aparecen entonces en el nuevo idioma; tus notas se quedan como las escribiste."
-   ],
-   "foto": "09_sprache",
-   "alt": "La parte superior de la Configuración con la sección «Idioma» y los botones de los cuatro idiomas."
+  "metaTitel": "Guía de la app: tarot y posos de café | Tarot Cup",
+  "metaBeschreibung": "Guía de Tarot Cup en nueve capítulos: primer inicio, carta del día, tirada de tarot, lectura de posos de café por tu cuenta, Diccionario e Historial.",
+  "titel": "Cómo funciona",
+  "vorspann": "Nueve capítulos breves con capturas de pantalla, desde el primer inicio hasta el cambio de idioma. Los botones y las pantallas se llaman aquí igual que en la app.",
+  "ogTitel": "Cómo funciona: Tarot Cup",
+  "brotkrume": "Cómo funciona",
+  "inhaltTitel": "Capítulos",
+  "kapitel": [
+    {
+      "kennung": "erster-start",
+      "titel": "¿Qué ocurre al iniciar por primera vez?",
+      "absaetze": [
+        "La primera vez que abres la app, aparece en el idioma de tu teléfono; después de «Te damos la bienvenida», tocas «Continuar». En el paso «Antes de empezar» confirmas que tienes al menos 16 años y aceptas las Condiciones de uso con «Aceptar y continuar». Una breve introducción presenta la carta del día, los posos del café, el tarot y el Diccionario; con «Omitir» puedes saltarla. Al final, la app te pregunta si quieres que te recuerde tu carta del día por la mañana."
+      ],
+      "foto": "01_erster_start",
+      "alt": "El paso «Antes de empezar» con la casilla marcada para la edad, los enlaces a la Política de privacidad y las Condiciones de uso y el botón «Aceptar y continuar»."
+    },
+    {
+      "kennung": "tageskarte",
+      "titel": "¿Cómo obtengo mi carta del día?",
+      "absaetze": [
+        "Arriba del todo en la pantalla de inicio está tu carta del día boca abajo. Si la tocas, se descubre; debajo aparecen su significado breve y «Leer más» para la lectura entera. Durante todo el día es la misma carta, aunque vuelvas a abrir la app, y a partir de medianoche te espera una nueva carta boca abajo. Cada carta del día aparece también en el Historial."
+      ],
+      "foto": "02_tageskarte",
+      "alt": "La pantalla de inicio con una carta del día descubierta, su significado breve y «Leer más»; debajo, las tarjetas «Tirar las cartas» y «Leer los posos del café»."
+    },
+    {
+      "kennung": "tarot-legen",
+      "titel": "¿Cómo tiro las cartas de tarot?",
+      "absaetze": [
+        "Con «Tirar las cartas» eliges «Sí o no», «Tres cartas» o «Amor» y piensas en silencio en tu pregunta. Barajas deslizando el dedo sobre la baraja; cuando aparece «Cartas barajadas», eliges tus cartas en el abanico y, después de «Continuar para descubrir», las descubres una a una. «Ir a la lectura de conjunto» muestra lo que cuentan juntas. Después, la tirada descansa: Sí o no vuelve a estar disponible al día siguiente, Tres cartas a los tres días y Amor a la semana, siempre a partir de medianoche."
+      ],
+      "foto": "03_tarot",
+      "alt": "La tirada Tres cartas con tres cartas descubiertas bajo Pasado, Presente y Futuro y el botón «Ir a la lectura de conjunto»."
+    },
+    {
+      "kennung": "kaffeesatz",
+      "titel": "¿Cómo leo los posos del café por mi cuenta?",
+      "absaetze": [
+        "Cuando hayas tomado tu café turco, toca «Leer los posos del café» y elige un área de la vida. En «Elegir símbolos» buscas hasta ocho de los 80 símbolos y colocas cada uno en su lugar del mapa de la taza: borde, zona media, fondo o platillo. A partir de tres símbolos hay una lectura completa, cada tres días; uno o dos símbolos dan una lectura breve, hasta tres veces al día. Cómo se prepara la taza según la costumbre antigua lo explica la [guía de los posos del café](/es/lectura-de-posos-de-cafe/)."
+      ],
+      "foto": "04_kaffeesatz",
+      "alt": "El mapa de la taza «¿Dónde está cada símbolo?»: la taza vista desde arriba con el asa a la derecha, encima varios símbolos colocados y, debajo, el botón «Ver la lectura»."
+    },
+    {
+      "kennung": "lexikon",
+      "titel": "¿Cómo encuentro una carta o un símbolo en el Diccionario?",
+      "absaetze": [
+        "En la pestaña «Diccionario» cambias arriba entre «Tarot» y «Posos de café». Las 78 cartas las filtras por «Arcanos Mayores» y por los cuatro palos; los 80 símbolos los encuentras con la búsqueda o por categorías. Cada entrada explica el significado: en las cartas, al derecho e invertidas; en los símbolos, también cómo reconocerlos en la taza. El Diccionario está siempre disponible y no necesita Internet."
+      ],
+      "foto": "05_lexikon",
+      "alt": "El Diccionario en la parte «Posos de café», con campo de búsqueda, categorías y una lista de símbolos con su trazo y su significado breve."
+    },
+    {
+      "kennung": "verlauf",
+      "titel": "¿Dónde encuentro lecturas y notas anteriores?",
+      "absaetze": [
+        "Cada tirada se guarda sola en la pestaña «Historial», la más reciente arriba, con la fecha y el tipo. Si tocas una entrada, se abre la lectura entera; en el campo «Tu nota» anotas qué ha resultado de ella, y la app lo guarda al momento. Con «Eliminar entrada» quitas una entrada de la app de forma definitiva, después de confirmarlo. La app guarda el Historial y las notas en tu teléfono."
+      ],
+      "foto": "06_verlauf",
+      "alt": "Una entrada abierta del Historial con la lectura, el campo «Tu nota» ya rellenado y los botones para compartir y eliminar."
+    },
+    {
+      "kennung": "erinnerung",
+      "titel": "¿Cómo configuro el recordatorio de la carta del día?",
+      "absaetze": [
+        "En «Configuración» activas «Recordatorio de la carta del día» y, debajo, ajustas la «Hora» en horas y en pasos de cinco minutos. Si Android pregunta si la app puede enviar notificaciones, lo permites; sin permiso, el interruptor se queda desactivado. El recordatorio llega cada día más o menos a la hora elegida y no revela la carta."
+      ],
+      "foto": "07_erinnerung",
+      "alt": "La Configuración con «Recordatorio de la carta del día» activado y la hora, que se ajusta con menos y más."
+    },
+    {
+      "kennung": "teilen",
+      "titel": "¿Cómo comparto una lectura?",
+      "absaetze": [
+        "Debajo de una lectura aparece «Compartir como imagen», también en las entradas del Historial. La app crea con ella una imagen con la tirada, la fecha, los nombres de las cartas o de los símbolos, una frase breve de la lectura y el nombre «Tarot Cup». Tu pregunta no aparece; la app no la conoce. A dónde va la imagen lo eliges en el menú Compartir de Android."
+      ],
+      "foto": "08_teilen",
+      "alt": "La imagen para compartir sobre fondo oscuro: arriba la tirada y la fecha, en el centro los nombres de las cartas y una frase entre comillas, abajo «Tarot Cup»."
+    },
+    {
+      "kennung": "sprache",
+      "titel": "¿Cómo cambio el idioma?",
+      "absaetze": [
+        "Arriba del todo en «Configuración», en «Idioma», eliges entre «Deutsch», «Türkçe», «English» y «Español». Si no eliges ninguno, la app sigue el idioma de tu teléfono y, con cualquier otro idioma del teléfono, se muestra en inglés. La app cambia al instante. También las lecturas anteriores del Historial, el Diccionario, los textos legales y el recordatorio aparecen entonces en el nuevo idioma; tus notas se quedan como las escribiste."
+      ],
+      "foto": "09_sprache",
+      "alt": "La parte superior de la Configuración con la sección «Idioma» y los botones de los idiomas."
+    }
+  ],
+  "abschluss": {
+    "titel": "¿Aún tienes preguntas?",
+    "text": "Respuestas breves, por ejemplo si la app necesita Internet o por qué una tirada está descansando, las encuentras en [Preguntas frecuentes](/es/preguntas/)."
   }
- ],
- "abschluss": {
-  "titel": "¿Aún tienes preguntas?",
-  "text": "Respuestas breves, por ejemplo si la app necesita Internet o por qué una tirada está descansando, las encuentras en [Preguntas frecuentes](/es/preguntas/)."
- }
 }

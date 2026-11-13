@@ -1,0 +1,41 @@
+{
+ "metaTitel": "Tentang Tarot Cup: apa itu aplikasi ini dan apa yang bukan",
+ "metaBeschreibung": "Tarot Cup adalah aplikasi tarot dan ampas kopi dalam dua belas bahasa. Di sini dijelaskan apa itu Tarot Cup dan apa yang bukan.",
+ "titel": "Tentang Tarot Cup",
+ "vorspann": "Tarot Cup adalah aplikasi yang tenang untuk tarot dan ampas kopi. Di sini dijelaskan apa itu aplikasi ini dan apa yang bukan.",
+ "ogTitel": "Tentang Tarot Cup",
+ "brotkrume": "Tentang",
+ "abschnitte": [
+  {
+   "kennung": "was-sie-ist",
+   "titel": "Apa itu Tarot Cup?",
+   "absaetze": [
+    "Dengan Tarot Cup, kamu membentangkan kartu tarot dan membaca sendiri ampas kopi di cangkirmu. Kamu menarik kartu, memilih simbol yang kamu kenali di dalam cangkir, lalu membaca apa yang dituturkan tradisi tentangnya. Aplikasi ini tersedia untuk Android, dalam dua belas bahasa. Aplikasi terbuka dalam bahasa ponselmu; kamu bisa menggantinya di dalam aplikasi.",
+    "Setiap bentangan punya ritmenya sendiri. Di antaranya, kartu beristirahat, dan kamu punya waktu untuk merenungkan sebuah pembacaan."
+   ]
+  },
+  {
+   "kennung": "was-sie-nicht-ist",
+   "titel": "Apa yang bukan Tarot Cup",
+   "absaetze": [
+    "Tarot Cup tidak mengklaim bisa melihat hal gaib. Pembacaannya bukan prediksi dan bukan konsultasi, dan tidak menggantikan nasihat dari tenaga ahli. Pembacaan ini menuturkan kembali apa yang dilihat oleh kebiasaan lama seputar kartu dan kopi dalam gambar dan simbol.",
+    "Aplikasi ini dibuat untuk hiburan, dengan rasa hormat pada tradisi. Apa yang cocok untukmu, kamu sendiri yang menentukan."
+   ]
+  },
+  {
+   "kennung": "bei-dir",
+   "titel": "Yang tetap bersamamu",
+   "absaetze": [
+    "Tanpa akun, tanpa internet. Riwayat dan catatan disimpan aplikasi di ponselmu. Saya tidak punya akses ke sana."
+   ]
+  },
+  {
+   "kennung": "wer",
+   "titel": "Siapa di balik Tarot Cup",
+   "absaetze": [
+    "Siapa yang bertanggung jawab atas situs web ini tertulis di [Identitas penerbit](/offenlegung/)."
+   ]
+  }
+ ],
+ "kontakt": "Tulis kepada saya: "
+}

@@ -1,0 +1,233 @@
+{
+ "metaTitel": "Tirer les cartes de tarot : rituel, tirages et cartes | Tarot Cup",
+ "metaBeschreibung": "Cette page explique pas à pas comment tirer les cartes de tarot, de la question à la lecture. S’y ajoutent quatre tirages et huit cartes connues.",
+ "titel": "Tirer les cartes de tarot",
+ "vorspann": "Comment tirer les cartes de tarot, de la première question à la dernière carte retournée. Avec les quatre tirages de l’application et quelques cartes connues, accompagnées de leur sens dans la tradition.",
+ "ogTitel": "Tirer les cartes de tarot pas à pas",
+ "brotkrume": "Tarot",
+ "inhaltTitel": "Sommaire",
+ "abschnitte": [
+  {
+   "kennung": "was-ist-tarot",
+   "titel": "Qu’est-ce que le tarot ?",
+   "absaetze": [
+    "Le tarot est un jeu de 78 cartes illustrées. Il est né au XVe siècle dans le nord de l’Italie comme jeu de cartes ; ce n’est que bien plus tard qu’on a commencé à interpréter les images. Aujourd’hui, on tire surtout les cartes pour réfléchir tranquillement à une question. Il ne s’agit pas de prévoir l’avenir, plutôt de dialoguer avec des images.",
+    "Les 22 Arcanes majeurs sont numérotés de 0 à 21, de la carte « Le Fou » à la carte « Le Monde ». Dans la tradition, ils représentent les grands thèmes et les tournants d’une vie, comme le départ, le recueillement ou l’équilibre. Le mot « arcane » vient du latin et signifie à peu près « secrets ».",
+    "Les 56 Arcanes mineurs se répartissent en quatre couleurs, un peu comme dans un jeu de cartes ordinaire. Chaque couleur compte un As, les cartes numérotées de Deux à Dix et quatre figures : Valet, Cavalier, Reine et Roi. On lit souvent les figures comme des personnes ou comme des attitudes que l’on peut adopter soi-même.",
+    "Chaque couleur a son propre domaine. Les Bâtons représentent l’énergie d’agir, les idées et l’élan, les Coupes les sentiments, l’amitié et l’amour. Les Épées touchent aux pensées, aux paroles et aux décisions, les Deniers au concret : le travail, le quotidien et ce que l’on construit de ses propres mains.",
+    "Dans Tarot Cup, tu vois les images de cartes de 1909. Elles sont dans le domaine public et comptent parmi les images de tarot les plus connues ; beaucoup de jeux ultérieurs en ont repris les motifs."
+   ]
+  },
+  {
+   "kennung": "aufrecht-und-umgekehrt",
+   "titel": "À l’endroit et renversée : que signifie une carte renversée ?",
+   "absaetze": [
+    "Une carte peut se présenter à l’endroit ou la tête en bas ; elle est alors dite renversée. Dans bien des lectures d’aujourd’hui, une carte renversée n’est pas un mauvais signe. Elle parle du même thème qu’à l’endroit, mais plus doucement, plus tournée vers l’intérieur, ou un peu en pause.",
+    "Un exemple : à l’endroit, une carte parle peut-être d’élan. Renversée, elle peut signifier que cet élan se fait encore attendre. Elle invite donc plutôt à regarder de plus près.",
+    "Certaines personnes tirent sans aucune carte renversée et lisent chaque carte à l’endroit ; les deux pratiques font partie de la tradition. Dans l’application, chaque carte peut tomber à l’endroit ou renversée, à peu près aussi souvent l’une que l’autre. Même les cartes au nom grave se lisent, dans la tradition, comme des images de changement, de bouleversement ou de lien, pas comme une menace."
+   ]
+  },
+  {
+   "kennung": "ritual-schritt-fuer-schritt",
+   "art": "schritte",
+   "titel": "Comment tirer les cartes de tarot ? Le rituel pas à pas",
+   "absaetze": [
+    "Pour un tirage, il ne te faut pas grand-chose : un jeu, un endroit calme et quelques minutes. Voici comment il se déroule dans la tradition, avec des cartes sur la table ou sur le téléphone."
+   ],
+   "schritte": [
+    {
+     "titel": "Retrouver le calme",
+     "text": "Choisis un moment où personne ne vient te déranger. Mets de côté ce qui te préoccupe en ce moment et respire lentement, quelques fois."
+    },
+    {
+     "titel": "Trouver la question",
+     "text": "Demande-toi ce que tu veux vraiment savoir et formule-le de façon ouverte, par exemple avec « Que », « Comment » ou « Sur quoi ». Une question ouverte te laisse plus de place pour la lecture qu’un simple oui ou non."
+    },
+    {
+     "titel": "Retenir la question",
+     "text": "Tu peux l’écrire, la dire à voix basse ou simplement la garder en tête. En turc, on dit niyet tutmak : former une intention et la porter dans son cœur."
+    },
+    {
+     "titel": "Mélanger",
+     "text": "Mélange les cartes aussi longtemps que cela te semble juste, en pensant à ta question. Certaines personnes les font passer d’une main à l’autre, d’autres laissent deux moitiés se mêler en cascade."
+    },
+    {
+     "titel": "Couper",
+     "text": "Pose le paquet face cachée devant toi, sépare-le en deux et place la moitié du dessous sur le dessus. Dans la tradition, on coupe souvent de la main gauche, car elle passe pour la main du cœur."
+    },
+    {
+     "titel": "Choisir les cartes",
+     "text": "Étale les cartes face cachée en éventail et choisis-en autant que le tirage l’exige. Ne réfléchis pas longtemps : prends la carte sur laquelle ton regard s’arrête."
+    },
+    {
+     "titel": "Disposer les cartes",
+     "text": "Place les cartes choisies face cachée à leur place, dans l’ordre du tirage. Chaque place a sa propre signification, par exemple Passé, Présent et Futur."
+    },
+    {
+     "titel": "Retourner",
+     "text": "Retourne les cartes une à une, par le côté, pour que le haut et le bas restent les mêmes. Regarde d’abord l’image : qu’est-ce qui te frappe, quelle émotion surgit ?"
+    },
+    {
+     "titel": "Lire et laisser résonner",
+     "text": "Lis d’abord chaque carte pour elle-même, puis toutes ensemble comme une petite histoire. Note ce qui t’a touché et regarde, quelques jours plus tard, ce que tu en penses aujourd’hui."
+    }
+   ],
+   "nachsatz": "Dans l’application, tu glisses le doigt sur le paquet pour mélanger, tu choisis les cartes d’un toucher dans l’éventail et tu les retournes une à une. Tes gestes pendant le mélange entrent ainsi dans le hasard."
+  },
+  {
+   "kennung": "gute-fragen",
+   "art": "beispiele",
+   "titel": "Quelles questions conviennent au tarot ?",
+   "absaetze": [
+    "Une bonne question pour le tarot est ouverte, te concerne toi-même et laisse de la place à la réflexion. Les questions qui attendent seulement un oui ou un non au sujet d’autres personnes, ou qui demandent une date précise, conviennent moins bien. Dans la tradition, les cartes montrent des ambiances et des possibilités, pas des dates ni les pensées des autres.",
+    "Une question moins adaptée peut souvent être reformulée. De « Sarah va-t-elle m’appeler d’ici vendredi ? », on passe par exemple à « Comment puis-je entretenir le contact avec Sarah ? ». Ainsi, la question reste centrée sur ce que tu peux faire toi-même."
+   ],
+   "gut": {
+    "titel": "Bonnes questions",
+    "liste": [
+     "Qu’est-ce qui m’aide à trouver ma place dans ma nouvelle équipe ?",
+     "Comment puis-je apaiser l’ambiance entre ma sœur et moi ?",
+     "Sur quoi puis-je porter mon attention cette semaine ?",
+     "De quoi ai-je besoin pour retrouver du plaisir dans mon hobby ?"
+    ]
+   },
+   "weniger": {
+    "titel": "Questions moins adaptées",
+    "liste": [
+     "Jonas m’aime-t-il en secret ?",
+     "Quand vais-je enfin rencontrer quelqu’un ?",
+     "Sarah va-t-elle m’appeler d’ici vendredi ?",
+     "Que pense vraiment ma voisine de moi ?"
+    ]
+   }
+  },
+  {
+   "kennung": "braeuche",
+   "titel": "Les coutumes du tarot : que raconte la tradition ?",
+   "absaetze": [
+    "Autour du tarot se sont formées beaucoup de petites coutumes ; elles font partie du plaisir du rituel.",
+    "La tradition veut que l’on enveloppe les cartes dans un tissu de soie ou de lin et qu’on les range dans un endroit calme. Certaines personnes étendent un tissu bien à elles sur la table au moment du tirage, allument une bougie ou posent une pierre favorite à côté.",
+    "On dit aussi que le premier jeu devrait être un cadeau. Selon une vieille coutume, quand on reçoit un nouveau jeu, on le place une nuit sous l’oreiller ou on regarde chaque carte une fois, tranquillement, pour faire connaissance.",
+    "Beaucoup de gens ne laissent personne d’autre mélanger leurs cartes. Et après un tirage, on mélange bien le paquet pour qu’il soit de nouveau ouvert à la question suivante : c’est ce que raconte la tradition.",
+    "À toi de décider si ces coutumes te plaisent. Plus important que n’importe quel tissu, il y a un moment de calme pour toi."
+   ]
+  },
+  {
+   "kennung": "legungen",
+   "art": "legungen",
+   "titel": "Quels tirages propose Tarot Cup ?",
+   "absaetze": [
+    "Un tirage détermine combien de cartes tu choisis et ce que représente chaque place. Tarot Cup propose quatre tirages, d’une seule carte à cinq cartes. L’image de la disposition montre où se trouve chaque carte.",
+    "Dans l’application, la Carte du jour et le tirage Oui ou non sont disponibles chaque jour, le tirage Trois cartes tous les trois jours et le tirage Amour une fois par semaine. Un nouveau tirage devient possible chaque fois à minuit. Ce rythme tranquille est voulu : il laisse le temps de réfléchir à un tirage."
+   ],
+   "legungen": [
+    {
+     "id": "tageskarte",
+     "text": "Une carte pour t’accompagner pendant la journée, sans aucune question. Tu la retournes d’un toucher, et elle reste la même jusqu’à minuit. La carte d’hier ne revient pas tout de suite le lendemain.",
+     "positionen": []
+    },
+    {
+     "id": "ja_nein",
+     "text": "Une carte pour une question que tu gardes pour toi. La réponse est une tendance, pas un verdict : plutôt oui, plutôt non ou encore en suspens.",
+     "positionen": []
+    },
+    {
+     "id": "drei_karten",
+     "text": "Trois cartes côte à côte, lues de gauche à droite dans la tradition. Elles montrent comment une situation a grandi et vers où elle peut s’orienter.",
+     "positionen": [
+      {
+       "id": "vergangenheit",
+       "text": "Ce qui est derrière toi et a marqué la situation jusqu’à aujourd’hui."
+      },
+      {
+       "id": "gegenwart",
+       "text": "Là où tu en es et ce qui pèse le plus en ce moment."
+      },
+      {
+       "id": "zukunft",
+       "text": "Vers où les choses peuvent évoluer si elles continuent ainsi : un chemin possible, pas un destin figé."
+      }
+     ]
+    },
+    {
+     "id": "liebe",
+     "text": "Cinq cartes autour des sentiments, de la proximité et des relations. Tu peux penser à une relation précise ou simplement à la façon dont va ton cœur. Les places regardent surtout vers toi et vers ce que tu peux apporter toi-même.",
+     "positionen": [
+      {
+       "id": "herz",
+       "text": "Comment tu vas en ce moment dans les affaires de cœur, avec tout ce que cela comporte."
+      },
+      {
+       "id": "brauchen",
+       "text": "Ce qui te ferait du bien pour sentir qu’on te soutient et qu’on te voit."
+      },
+      {
+       "id": "begegnung",
+       "text": "Comment tu te rapproches des autres et ce qui circule entre vous."
+      },
+      {
+       "id": "rat",
+       "text": "Une pensée ou une attitude que tu peux emporter dans tes relations."
+      },
+      {
+       "id": "ausblick",
+       "text": "Ce qui peut se développer avec douceur si tu lui donnes du temps et de la place."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kennung": "bekannte-karten",
+   "art": "karten",
+   "titel": "Que signifient les cartes de tarot les plus connues ?",
+   "absaetze": [
+    "Voici huit cartes du jeu : quatre Arcanes majeurs et une carte de chacune des quatre couleurs, avec leur sens dans la tradition, à l’endroit et renversées. Chaque carte a de nombreuses couches ; le sens en bref est un point de départ, pas un jugement définitif."
+   ],
+   "ids": [
+    "ta_00_narr",
+    "ta_01_magier",
+    "ta_02_hohepriesterin",
+    "ta_09_eremit",
+    "ta_sta_08_acht",
+    "ta_kel_01_ass",
+    "ta_sch_02_zwei",
+    "ta_mue_03_drei"
+   ],
+   "aufrecht": "À l’endroit",
+   "umgekehrt": "Renversée"
+  },
+  {
+   "kennung": "tarot-app",
+   "art": "app",
+   "titel": "Peut-on aussi tirer les cartes de tarot sur son téléphone ?",
+   "absaetze": [
+    "Avec Tarot Cup, tu tires les cartes sur ton téléphone Android, dans l’une de ses douze langues. Tu mélanges avec le doigt, tu choisis dans l’éventail et tu retournes les cartes une à une. Sous chaque carte figurent deux mots-clés ; à la fin vient une lecture d’ensemble du tirage.",
+    "Ta question reste à toi : l’application ne la demande pas et ne l’enregistre pas. Tes tirages sont conservés dans l’Historique sur ton téléphone, et tu peux y ajouter ta propre note.",
+    "Tu trouveras le fonctionnement de l’application pas à pas sous [Comment ça marche](/fr/comment-ca-marche/)."
+   ]
+  }
+ ],
+ "howto": {
+  "name": "Tirer les cartes de tarot : le rituel pas à pas",
+  "beschreibung": "Comment préparer et réaliser un tirage de tarot selon la tradition, du calme avant le mélange à la lecture des cartes retournées."
+ },
+ "tuerkischeBegriffe": [
+  "niyet tutmak"
+ ],
+ "suchbegriffe": {
+  "haupt": [
+   "tirer les cartes de tarot"
+  ],
+  "neben": [
+   "apprendre à tirer les cartes de tarot",
+   "signification des cartes de tarot",
+   "tirages de tarot",
+   "carte de tarot renversée",
+   "tarot carte du jour",
+   "tarot oui non",
+   "tirage trois cartes",
+   "tarot de l’amour"
+  ]
+ }
+}

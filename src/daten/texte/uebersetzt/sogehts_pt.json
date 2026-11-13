@@ -1,0 +1,96 @@
+{
+ "metaTitel": "Guia: Como usar o app | Tarot Cup",
+ "metaBeschreibung": "O guia explica o app Tarot Cup em nove capítulos curtos: primeiro acesso, Carta do Dia, tarô, ler a borra de café por conta própria, Dicionário, Histórico e mais.",
+ "titel": "Como funciona",
+ "vorspann": "Nove capítulos curtos com capturas de tela, do primeiro acesso até a troca de idioma. Os botões e as telas têm aqui os mesmos nomes que no app.",
+ "ogTitel": "Como funciona: Tarot Cup",
+ "brotkrume": "Como funciona",
+ "inhaltTitel": "Capítulos",
+ "kapitel": [
+  {
+   "kennung": "erster-start",
+   "titel": "O que acontece no primeiro acesso?",
+   "absaetze": [
+    "Ao abrir o app pela primeira vez, ele aparece no idioma do seu celular; depois de “Boas-vindas”, você toca em “Continuar”. Na etapa “Antes de começar”, você confirma ter pelo menos 16 anos e aceita os Termos de Uso com “Aceitar e continuar”. Uma breve introdução apresenta a Carta do Dia, a borra de café, o tarô e o Dicionário; com “Pular”, você pode deixá-la de lado. Por fim, o app pergunta se deve lembrar você da Carta do Dia pela manhã."
+   ],
+   "foto": "01_erster_start",
+   "alt": "O passo “Antes de começar” com a caixa marcada para a idade, os links para a Política de Privacidade e os Termos de Uso e o botão “Aceitar e continuar”."
+  },
+  {
+   "kennung": "tageskarte",
+   "titel": "Como obter a Carta do Dia?",
+   "absaetze": [
+    "No topo da página inicial, sua Carta do Dia aparece virada para baixo. Ao tocá-la, ela se revela; abaixo, estão a breve interpretação e “Ler mais” para a leitura completa. Durante todo o dia, permanece a mesma carta, mesmo que você reabra o aplicativo, e à meia-noite aguarda uma nova carta virada para baixo. Cada Carta do Dia também está no Histórico."
+   ],
+   "foto": "02_tageskarte",
+   "alt": "A página inicial com uma Carta do Dia revelada, sua breve interpretação e “Ler mais”, abaixo os blocos “Ler tarô” e “Ler borra de café”."
+  },
+  {
+   "kennung": "tarot-legen",
+   "titel": "Como fazer uma tiragem de tarô?",
+   "absaetze": [
+    "Em “Ler tarô”, você escolhe “Sim ou Não”, “Três Cartas” ou “Amor” e pensa em silêncio na sua pergunta. Você embaralha passando o dedo sobre o monte, escolhe suas cartas no leque depois de “Cartas embaralhadas” e as revela uma a uma depois de “Continuar para revelar”. “Para a leitura completa” mostra o que elas contam em conjunto. Em seguida, a tiragem descansa: “Sim ou Não” fica disponível de novo no dia seguinte, “Três Cartas” depois de três dias e “Amor” depois de uma semana, sempre a partir da meia-noite."
+   ],
+   "foto": "03_tarot",
+   "alt": "A tiragem Três Cartas com três cartas reveladas sob Passado, Presente e Futuro e o botão “Para a leitura completa”."
+  },
+  {
+   "kennung": "kaffeesatz",
+   "titel": "Como ler a borra de café por conta própria?",
+   "absaetze": [
+    "Depois de beber seu café turco, você toca em “Ler borra de café” e escolhe uma área da vida. Em “Escolher símbolos”, você seleciona até oito dos 80 símbolos e os posiciona no mapa da xícara: na borda, no meio, no fundo ou no pires. Com três ou mais símbolos, há a Leitura completa, disponível a cada três dias; um ou dois símbolos resultam em uma Leitura curta, até três vezes ao dia. Como preparar a xícara segundo o costume antigo está descrito no [Guia da borra de café](/pt/leitura-da-borra-de-cafe/)."
+   ],
+   "foto": "04_kaffeesatz",
+   "alt": "O mapa da xícara “Onde fica cada símbolo?”: a xícara vista de cima com a asa à direita, sobre ela vários símbolos posicionados, abaixo o botão “Ver leitura”."
+  },
+  {
+   "kennung": "lexikon",
+   "titel": "Como encontrar uma carta ou um símbolo no Dicionário?",
+   "absaetze": [
+    "Na aba “Dicionário”, você alterna no topo entre “Tarô” e “Borra de café”. As 78 cartas são filtradas por “Arcanos Maiores” e pelos quatro naipes; os 80 símbolos são encontrados por meio da busca ou das categorias. Cada entrada explica o significado: nas cartas, na posição normal e invertida; nos símbolos, também como reconhecê-los na xícara. O Dicionário está sempre disponível e não precisa de internet."
+   ],
+   "foto": "05_lexikon",
+   "alt": "O Dicionário na seção “Borra de café” com campo de busca, categorias e uma lista de símbolos com traçado e significado resumido."
+  },
+  {
+   "kennung": "verlauf",
+   "titel": "Onde encontro leituras e anotações anteriores?",
+   "absaetze": [
+    "Cada tiragem vai automaticamente para a aba “Histórico”, com a mais recente no topo, acompanhada da data e do tipo. Ao tocar em um registro, a leitura completa se abre; no campo “Sua anotação”, você anota o que aconteceu depois, e o app salva tudo na hora. Com “Excluir registro”, você remove um registro do app de forma definitiva, depois de uma pergunta de confirmação. O histórico e as anotações ficam salvos no seu celular."
+   ],
+   "foto": "06_verlauf",
+   "alt": "Um registro aberto no Histórico com a leitura, o campo “Sua anotação” preenchido e os botões para compartilhar e excluir."
+  },
+  {
+   "kennung": "erinnerung",
+   "titel": "Como configurar o Lembrete da Carta do Dia?",
+   "absaetze": [
+    "Em “Configurações”, você ativa o “Lembrete da Carta do Dia” e ajusta o “Horário” em horas e intervalos de cinco minutos. Se o Android perguntar se o app pode enviar notificações, você permite; sem essa permissão, a opção permanece desativada. O lembrete chega todos os dias aproximadamente no horário escolhido e não revela a carta."
+   ],
+   "foto": "07_erinnerung",
+   "alt": "As Configurações com o “Lembrete da Carta do Dia” ativado e o Horário, que pode ser ajustado com os botões de menos e mais."
+  },
+  {
+   "kennung": "teilen",
+   "titel": "Como compartilhar uma leitura?",
+   "absaetze": [
+    "Sob uma leitura há a opção “Compartilhar como imagem”, também nos registros do Histórico. O app cria uma imagem com a tiragem, a data, os nomes das cartas ou dos símbolos, uma frase curta da leitura e o nome “Tarot Cup”. Sua pergunta não aparece nela; o app não a conhece. Para onde a imagem vai, você escolhe no menu Compartilhar do Android."
+   ],
+   "foto": "08_teilen",
+   "alt": "A imagem compartilhada sobre superfície escura: no topo a tiragem e a data, no meio os nomes das cartas e uma frase entre aspas, embaixo “Tarot Cup”."
+  },
+  {
+   "kennung": "sprache",
+   "titel": "Como alterar o idioma?",
+   "absaetze": [
+    "No topo das “Configurações”, em “Idioma”, você escolhe entre “Deutsch”, “Türkçe”, “English” e “Español”. Sem uma escolha própria, o app segue o idioma do seu celular; para qualquer outro idioma do celular, ele mostra inglês. O app muda imediatamente. As leituras anteriores no Histórico, o Dicionário, os Documentos legais e o Lembrete também aparecem então no novo idioma; suas anotações permanecem exatamente como você as escreveu."
+   ],
+   "foto": "09_sprache",
+   "alt": "A parte superior das Configurações, com a seção “Idioma” e os botões dos idiomas."
+  }
+ ],
+ "abschluss": {
+  "titel": "Ainda tem dúvidas?",
+  "text": "Respostas curtas, por exemplo se o app precisa de internet ou por que uma tiragem está descansando agora, você encontra em [Perguntas frequentes](/pt/perguntas/)."
+ }
+}

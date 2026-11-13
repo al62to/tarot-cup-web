@@ -1,0 +1,104 @@
+{
+ "metaTitel": "Întrebări și răspunsuri despre aplicație | Tarot Cup",
+ "metaBeschreibung": "Aici găsești răspunsuri despre Tarot Cup: dacă aplicația prezice viitorul, de ce o tragere se odihnește și dacă ai nevoie de internet sau de un cont.",
+ "titel": "Întrebări frecvente",
+ "vorspann": "Aici găsești răspunsuri la întrebările care apar cel mai des în legătură cu Tarot Cup. Dacă îți lipsește ceva, scrie-mi.",
+ "ogTitel": "Întrebări frecvente despre Tarot Cup",
+ "brotkrume": "Întrebări",
+ "liste": [
+  {
+   "id": "zukunft",
+   "frage": "Prezice aplicația viitorul?",
+   "antwort": [
+    "Nu. Interpretările urmează tradiții vechi legate de tarot și de zațul de cafea. Ce ți se potrivește din ele decizi tu.",
+    "Pentru divertisment. Interpretările nu sunt o prezicere și nu constituie un sfat. Ele nu prezic viitorul și nu înlocuiesc sfatul specialiștilor."
+   ]
+  },
+  {
+   "id": "foto-der-tasse",
+   "frage": "Am nevoie de o poză a ceșcii mele?",
+   "antwort": [
+    "Nu. Aplicația nu are nevoie nici de cameră, nici de fotografie. Te uiți chiar tu în ceașca ta, alegi dintre cele 80 de simboluri formele pe care le recunoști și arăți pe harta ceștii unde se află. Din asta rezultă interpretarea."
+   ]
+  },
+  {
+   "id": "tuerkisch",
+   "frage": "Există aplicația în turcă?",
+   "antwort": [
+    "Da. Tarot Cup este disponibil integral în turcă, cu interfața, interpretările, Dicționarul și Documentele juridice, ca în toate cele 12 limbi ale aplicației. Aplicația pornește în limba telefonului tău; o poți schimba oricând în Setări."
+   ]
+  },
+  {
+   "id": "fragen-gespeichert",
+   "frage": "Sunt salvate întrebările mele?",
+   "antwort": [
+    "Nu. Aplicația nu are un câmp pentru întrebarea ta; o păstrezi doar pentru tine. Nu o cere și nu o salvează.",
+    "În Istoric, aplicația reține ce ai tras: data și ora, tipul de tragere, cărțile (inclusiv dacă erau în poziție inversată) sau simbolurile cu locul lor în ceașcă, la zațul de cafea domeniul vieții și nota ta, dacă scrii una. Întrebarea ta nu apare niciodată printre ele."
+   ]
+  },
+  {
+   "id": "internet",
+   "frage": "Am nevoie de internet?",
+   "antwort": [
+    "Nu. Tarot Cup nu are permisiunea de a accesa internetul. Tragerile, Dicționarul și Istoricul funcționează complet fără conexiune, iar aplicația programează pe telefonul tău și Memento-ul pentru Cartea Zilei."
+   ]
+  },
+  {
+   "id": "konto",
+   "frage": "Am nevoie de un cont?",
+   "antwort": [
+    "Nu. Nu există nicio înregistrare și niciun cont, iar aplicația nu îți cere adresa de e-mail."
+   ]
+  },
+  {
+   "id": "legung-gesperrt",
+   "frage": "De ce este uneori blocată o tragere?",
+   "antwort": [
+    "Fiecare tragere are propriul ei ritm. Cartea Zilei și Da sau Nu sunt disponibile în fiecare zi, Trei Cărți și Interpretarea completă la zaț de cafea o dată la trei zile, iar tragerea pentru Dragoste o dată pe săptămână. În rest, tragerea se odihnește.",
+    "Aplicația îți arată când este din nou disponibilă, de exemplu: „Mâine poți trage din nou.” O tragere devine disponibilă la miezul nopții, după ceasul telefonului tău. Dicționarul și Istoricul sunt mereu deschise.",
+    "La zațul de cafea există o Interpretare scurtă cu unul sau două simboluri. Aceasta nu se ia în calcul pentru ritmul tragerilor, dar este limitată la trei pe zi.",
+    "Rareori mai există un al doilea motiv: la o nouă versiune a Termenilor de utilizare poți accepta imediat sau decide mai târziu. Dacă nu îi accepți în termen de 30 de zile, noile trageri vor fi disponibile doar după acceptare. Istoricul, notele și Dicționarul rămân deschise."
+   ]
+  },
+  {
+   "id": "notizen",
+   "frage": "Ce se întâmplă cu notițele mele?",
+   "antwort": [
+    "Pentru fiecare interpretare din Istoric poți scrie o notă, de exemplu: Ce s-a întâmplat cu ea? Aplicația stochează notele și Istoricul pe telefonul tău. Nu am acces la ele. În imaginea pe care o distribui, notele tale nu apar.",
+    "Ștergi o intrare împreună cu nota ei din Istoric, cu „Șterge intrarea”. Acțiunea nu poate fi anulată.",
+    "Dacă ai activat copia de rezervă a telefonului, Android poate salva Istoricul, notele, limba și ora Memento-ului în contul tău Google. La mutarea pe un telefon nou, Android le poate prelua. Ritmul tragerilor și confirmarea vârstei nu sunt salvate; acestea aparțin fiecărui telefon în parte.",
+    "Mai multe găsești în [Politica de confidențialitate](/ro/confidentialitate/)."
+   ]
+  },
+  {
+   "id": "iphone",
+   "frage": "Există aplicația pentru iPhone?",
+   "antwort": [
+    "Nu. Tarot Cup este disponibil doar pentru Android. O versiune pentru iPhone nu este prevăzută."
+   ]
+  },
+  {
+   "id": "zeichen",
+   "frage": "Câte simboluri cunoaște aplicația?",
+   "antwort": [
+    "Pentru zațul de cafea, aplicația cunoaște 80 de simboluri în șase categorii: Animale, Oameni și figuri, Obiecte, Natură și locuri, Forme, precum și Litere și cifre. Le găsești prin categorii sau prin căutare, inclusiv sub alte denumiri sub care este cunoscută o formă.",
+    "Dacă vezi o formă care lipsește, alegi „Forma pe care nu o găsesc”. O interpretare cuprinde până la opt simboluri. Pentru tarot, aplicația cunoaște toate cele 78 de cărți."
+   ]
+  },
+  {
+   "id": "sprache",
+   "frage": "Pot schimba limba?",
+   "antwort": [
+    "Da. Aplicația pornește în limba telefonului tău, dacă este una dintre cele 12 limbi ale sale (germana, turca, engleza, spaniola, bosniaca, croata, sârba, româna, portugheza, franceza, indoneziana și hindi); altfel, în engleză. În Setările aplicației o schimbi oricând, indiferent de limba telefonului tău.",
+    "Aplicația afișează apoi și interpretările anterioare din Istoric în noua limbă. Notele tale rămân exact așa cum le-ai scris."
+   ]
+  },
+  {
+   "id": "alter",
+   "frage": "De la ce vârstă este Tarot Cup?",
+   "antwort": [
+    "De la 16 ani. La prima pornire confirmi că ai cel puțin 16 ani și accepți [Termenii de utilizare](/ro/termeni-de-utilizare/). Până atunci nu poți continua."
+   ]
+  }
+ ]
+}

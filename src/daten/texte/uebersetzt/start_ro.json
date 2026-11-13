@@ -1,0 +1,204 @@
+{
+ "metaTitel": "Ghicit în cafea și tragere de tarot cu aplicația | Tarot Cup",
+ "metaBeschreibung": "Cu aplicația Android Tarot Cup citești zațul de cafea pe cont propriu, cu 80 de simboluri, și faci trageri de tarot cu 78 de cărți, în 12 limbi și fără internet.",
+ "ogTitel": "Ghicit în cafea. Tragere de tarot.",
+ "kopf": {
+  "zeile": "Tarot Cup · Aplicație pentru Android",
+  "zeilen": [
+   "Citește zațul de cafea *pe cont propriu*.",
+   "Întinde tarot *în liniște*."
+  ],
+  "text": "Alege simbolurile din ceașca ta, indică pe harta ceștii unde se află și citește ce pot semnifica. Sau așază cărțile de tarot în liniște. Aplicația funcționează fără internet și fără cont.",
+  "knopf": "Vezi pe Google Play",
+  "bald": "În curând pe Google Play",
+  "anleitung": "Cum se face",
+  "karte": {
+   "tipp": "Atinge cartea și întoarce-o.",
+   "satz": "Semnificația sa, în poziție dreaptă și inversată, se găsește în Dicționarul aplicației.",
+   "umdrehen": "Întoarce cartea",
+   "zurueck": "Întoarce din nou cartea „{name}”"
+  }
+ },
+ "zahlen": {
+  "aria": "Tarot Cup în cifre",
+  "liste": [
+   {
+    "zahl": "78",
+    "text": "Cărți de tarot, în Dicționar atât drepte, cât și inversate"
+   },
+   {
+    "zahl": "80",
+    "text": "Simboluri pentru zațul de cafea, cu căutare și categorii"
+   },
+   {
+    "zahl": "12",
+    "text": "Limbi, de la germană și turcă până la franceză și hindi"
+   },
+   {
+    "zahl": "0",
+    "text": "Conturi, nu este nevoie de internet"
+   }
+  ]
+ },
+ "wasIst": {
+  "titel": "Ce este Tarot Cup?",
+  "text": "Tarot Cup este o aplicație pentru Android, cu care întinzi cărți de tarot și citești pe cont propriu zațul din ceașca ta. Există în 12 limbi; pornește în limba telefonului tău, iar limba o poți schimba în aplicație. Este destinată persoanelor de la 16 ani în sus și funcționează fără internet și fără cont. Interpretările urmează tradiții vechi și sunt pentru divertisment."
+ },
+ "tasse": {
+  "zeile": "Ritualul",
+  "titel": "Cum citești *ceașca ta*",
+  "schritte": [
+   "Gândește-te la întrebarea ta și bea cafeaua turcească până la fund. Răstoarnă ceașca pe farfurioară și las-o să se răcească. Întrebarea ta o păstrezi pentru tine, aplicația nu o cere.",
+   "Rotește ceașca în liniște și caută formele printre cele 80 de simboluri.",
+   "Arată pe harta ceștii unde se află fiecare simbol. Cu trei sau mai multe simboluri primești interpretarea completă."
+  ],
+  "link": {
+   "text": "Mai multe despre ghicitul în cafea",
+   "ziel": "/ro/ghicit-in-cafea/"
+  }
+ },
+ "tassenkarte": {
+  "titel": "Harta ceștii",
+  "hinweis": "Alege o zonă",
+  "gruppe": "Alege zona din ceașcă",
+  "bereiche": [
+   {
+    "bereich": "rand",
+    "name": "Margine",
+    "bedeutung": "timp apropiat"
+   },
+   {
+    "bereich": "mitte",
+    "name": "Mijloc",
+    "bedeutung": "acum"
+   },
+   {
+    "bereich": "boden",
+    "name": "Fund",
+    "bedeutung": "timp mai îndepărtat"
+   },
+   {
+    "bereich": "henkelseite",
+    "name": "Partea toartei",
+    "bedeutung": "tu, casa ta"
+   },
+   {
+    "bereich": "gegenueber",
+    "name": "Partea opusă",
+    "bedeutung": "afară"
+   },
+   {
+    "bereich": "untertasse",
+    "name": "Farfurioară",
+    "bedeutung": "dorința ta"
+   }
+  ]
+ },
+ "schaukasten": {
+  "titel": "Așa arată *Tarot Cup*",
+  "gruppe": "Alege ecranul",
+  "eintraege": [
+   {
+    "foto": "01_start_tageskarte",
+    "titel": "Cartea Zilei",
+    "text": "O carte pentru zi, în fiecare zi una nouă."
+   },
+   {
+    "foto": "03_deutung_drei_karten",
+    "titel": "Trei Cărți",
+    "text": "Trecut, Prezent și Viitor cu o interpretare care le unește pe toate trei."
+   },
+   {
+    "foto": "05_kaffee_tasse",
+    "titel": "Harta ceștii",
+    "text": "Arată unde se află simbolurile tale în ceașcă."
+   }
+  ]
+ },
+ "koennen": {
+  "titel": "Ce poate *aplicația*",
+  "ruhe": {
+   "titel": "Cu liniște, nu la nesfârșit",
+   "text": "Fiecare tragere are propriul ritm. Între trageri, cărțile se odihnesc.",
+   "pillen": [
+    {
+     "name": "Cartea Zilei",
+     "takt": "zilnic"
+    },
+    {
+     "name": "Da sau Nu",
+     "takt": "zilnic"
+    },
+    {
+     "name": "Trei Cărți",
+     "takt": "la fiecare 3 zile"
+    },
+    {
+     "name": "Citește pe cont propriu",
+     "takt": "la fiecare 3 zile"
+    },
+    {
+     "name": "Dragoste",
+     "takt": "săptămânal"
+    }
+   ]
+  },
+  "sprachen": {
+   "gross": "A / अ",
+   "titel": "12 limbi",
+   "text": "Germană, turcă, engleză, spaniolă, bosniacă, croată, sârbă, română, portugheză, franceză, indoneziană și hindi: întreaga aplicație în fiecare limbă."
+  }
+ },
+ "vorteile": [
+  {
+   "id": "bleibt",
+   "titel": "Rămâne la tine",
+   "text": "Istoricul și notele sunt stocate de aplicație pe telefonul tău. Nu am acces la ele."
+  },
+  {
+   "id": "internet",
+   "titel": "Fără internet",
+   "text": "Aplicația nu are permisiunea de a accesa internetul."
+  },
+  {
+   "id": "konto",
+   "titel": "Fără cont",
+   "text": "În aplicație, fără autentificare și fără adresă de e-mail."
+  }
+ ],
+ "ratgeber": {
+  "titel": "*Înțelege* tarotul și zațul de cafea",
+  "zeile": "Ghid",
+  "eintraege": [
+   {
+    "titel": "Cum se așază tarotul?",
+    "text": "Cele 78 de cărți, în poziție dreaptă și inversată, tragerile aplicației și ritualul pas cu pas.",
+    "link": "Către ghidul tarotului",
+    "ziel": "/ro/tarot/"
+   },
+   {
+    "titel": "Cum se citește zațul de cafea?",
+    "text": "De la cafeaua turcească până la ceașca citită: ritualul, zonele ceștii și simbolurile frecvente.",
+    "link": "Către ghidul zațului de cafea",
+    "ziel": "/ro/ghicit-in-cafea/"
+   }
+  ]
+ },
+ "fotos": {
+  "alt": {
+   "01_start_tageskarte": "Pagina de start a aplicației cu Cartea Zilei „Magicianul” întoarsă, iar dedesubt casetele „Tarot” și „Ghicit în cafea”",
+   "03_deutung_drei_karten": "Tragerea „Trei Cărți” cu „Împărăteasa”, „Roata Norocului” și „Regina de Cupe” pentru Trecut, Prezent și Viitor, iar dedesubt începutul interpretării",
+   "05_kaffee_tasse": "Harta ceștii văzută de sus, cu marginea, mijlocul, fundul, partea toartei și partea opusă, trei simboluri așezate și farfurioara de dedesubt"
+  }
+ },
+ "fragen": {
+  "titel": "*Întrebări* frecvente",
+  "ids": [
+   "zukunft",
+   "foto-der-tasse",
+   "tuerkisch",
+   "fragen-gespeichert"
+  ],
+  "alle": "Toate întrebările"
+ }
+}

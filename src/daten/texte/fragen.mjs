@@ -31,7 +31,7 @@ export const fragen = {
         id: 'tuerkisch',
         frage: 'Gibt es die App auf Türkisch?',
         antwort: [
-          'Ja. Tarot Cup gibt es ganz auf Deutsch, Türkisch, Englisch und Spanisch: Bedienung, Deutungen, Lexikon und Rechtstexte. Die App startet in der Sprache deines Handys; wechseln kannst du sie jederzeit in den Einstellungen.',
+          'Ja. Tarot Cup gibt es ganz auf Türkisch, mit Bedienung, Deutungen, Lexikon und Rechtstexten, wie in allen zwölf Sprachen der App. Die App startet in der Sprache deines Handys; wechseln kannst du sie jederzeit in den Einstellungen.',
         ],
       },
       {
@@ -93,7 +93,7 @@ export const fragen = {
         id: 'sprache',
         frage: 'Kann ich die Sprache wechseln?',
         antwort: [
-          'Ja. Die App startet in der Sprache deines Handys, wenn es Deutsch, Türkisch, Englisch oder Spanisch ist, sonst auf Englisch. In den Einstellungen der App wechselst du jederzeit, unabhängig von der Sprache deines Handys.',
+          'Ja. Die App startet in der Sprache deines Handys, wenn es eine ihrer zwölf Sprachen ist (Deutsch, Türkisch, Englisch, Spanisch, Bosnisch, Kroatisch, Serbisch, Rumänisch, Portugiesisch, Französisch, Indonesisch und Hindi), sonst auf Englisch. In den Einstellungen der App wechselst du jederzeit, unabhängig von der Sprache deines Handys.',
           'Auch frühere Deutungen im Verlauf zeigt die App dann in der neuen Sprache. Deine Notizen bleiben so, wie du sie geschrieben hast.',
         ],
       },
@@ -134,7 +134,7 @@ export const fragen = {
         id: 'tuerkisch',
         frage: 'Uygulamayı Türkçe kullanabilir miyim?',
         antwort: [
-          'Evet. Tarot Cup baştan sona Türkçe, Almanca, İngilizce ve İspanyolca kullanılabilir: menüler, yorumlar, sözlük ve hukuki metinler. Uygulama telefonunun dilinde açılır; dili istediğin zaman Ayarlar’dan değiştirebilirsin.',
+          'Evet. Tarot Cup tamamen Türkçe olarak da var: arayüz, yorumlar, sözlük ve yasal metinler, tıpkı uygulamanın on iki dilinin hepsinde olduğu gibi. Uygulama telefonunun dilinde açılır; dili istediğin zaman ayarlardan değiştirebilirsin.',
         ],
       },
       {
@@ -196,7 +196,7 @@ export const fragen = {
         id: 'sprache',
         frage: 'Dili değiştirebilir miyim?',
         antwort: [
-          'Evet. Telefonun Türkçe, Almanca, İngilizce ya da İspanyolcaysa uygulama o dilde, başka bir dildeyse İngilizce açılır. Dili istediğin zaman uygulamanın Ayarlar bölümünden, telefonunun dilinden bağımsız olarak değiştirebilirsin.',
+          'Evet. Uygulama, telefonunun dili on iki dilinden biriyse (Almanca, Türkçe, İngilizce, İspanyolca, Boşnakça, Hırvatça, Sırpça, Rumence, Portekizce, Fransızca, Endonezce ve Hintçe) o dilde, değilse İngilizce açılır. Uygulamanın ayarlarından, telefonunun dilinden bağımsız olarak dili istediğin zaman değiştirebilirsin.',
           'Geçmişteki eski yorumlar da yeni dilde görünür. Notların ise yazdığın gibi kalır.',
         ],
       },
@@ -211,8 +211,24 @@ export const fragen = {
   },
 };
 
-// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+// Übersetzungen (en, es seit AP-SPR2; bs, hr, sr, ro, pt, fr, id, hi seit AP-23): erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
 import fragenEn from './uebersetzt/fragen_en.json' with { type: 'json' };
 import fragenEs from './uebersetzt/fragen_es.json' with { type: 'json' };
+import fragenBs from './uebersetzt/fragen_bs.json' with { type: 'json' };
+import fragenHr from './uebersetzt/fragen_hr.json' with { type: 'json' };
+import fragenSr from './uebersetzt/fragen_sr.json' with { type: 'json' };
+import fragenRo from './uebersetzt/fragen_ro.json' with { type: 'json' };
+import fragenPt from './uebersetzt/fragen_pt.json' with { type: 'json' };
+import fragenFr from './uebersetzt/fragen_fr.json' with { type: 'json' };
+import fragenId from './uebersetzt/fragen_id.json' with { type: 'json' };
+import fragenHi from './uebersetzt/fragen_hi.json' with { type: 'json' };
 fragen.en = fragenEn;
 fragen.es = fragenEs;
+fragen.bs = fragenBs;
+fragen.hr = fragenHr;
+fragen.sr = fragenSr;
+fragen.ro = fragenRo;
+fragen.pt = fragenPt;
+fragen.fr = fragenFr;
+fragen.id = fragenId;
+fragen.hi = fragenHi;

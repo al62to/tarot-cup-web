@@ -4,7 +4,7 @@
 export const llmsTexte = {
   de: {
     angaben: [
-      'Plattform: Android. Sprachen: Deutsch, Türkisch, Englisch und Spanisch, in der App umschaltbar.',
+      'Plattform: Android. Sprachen: Deutsch, Türkisch, Englisch, Spanisch, Bosnisch, Kroatisch, Serbisch, Rumänisch, Portugiesisch, Französisch, Indonesisch und Hindi, in der App umschaltbar.',
       'Funktionen: Tageskarte, Ja oder Nein, Drei Karten und eine Legung zur Liebe mit 78 Tarotkarten; Kaffeesatz selbst lesen mit 80 Zeichen und der Tassenkarte; Lexikon, Verlauf mit eigenen Notizen, Teilen als Bild, Erinnerung an die Tageskarte.',
       'Die App läuft ohne Internet und ohne Konto. Verlauf und Notizen speichert sie auf dem Handy.',
       'Jede Legung hat ihren Rhythmus: Tageskarte und Ja oder Nein täglich, Drei Karten und die volle Kaffeesatz-Deutung alle drei Tage, Liebe einmal pro Woche. Lexikon und Verlauf sind immer offen.',
@@ -21,7 +21,7 @@ export const llmsTexte = {
   },
   tr: {
     angaben: [
-      'Platform: Android. Diller: Türkçe, Almanca, İngilizce ve İspanyolca, uygulama içinden değiştirilebilir.',
+      'Platform: Android. Diller: Almanca, Türkçe, İngilizce, İspanyolca, Boşnakça, Hırvatça, Sırpça, Rumence, Portekizce, Fransızca, Endonezce ve Hintçe; uygulama içinden değiştirilebilir.',
       'Özellikler: 78 tarot kartıyla Günün Kartı, “Evet mi, Hayır mı”, Üç Kart ve bir aşk açılımı; 80 işaret ve fincan haritasıyla kendi kahve falına bakma; sözlük, kendi notlarınla geçmiş, görsel olarak paylaşma, günün kartı için hatırlatıcı.',
       'Uygulama internetsiz ve üyeliksiz çalışır. Geçmişi ve notları telefonda saklar.',
       'Her açılımın kendi ritmi vardır: Günün Kartı ve “Evet mi, Hayır mı” her gün, Üç Kart ve tam kahve falı yorumu üç günde bir, aşk açılımı haftada bir. Sözlük ve geçmiş her zaman açıktır.',
@@ -36,8 +36,24 @@ export const llmsTexte = {
   },
 };
 
-// Englisch und Spanisch: erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
+// Übersetzungen (en, es seit AP-SPR2; bs, hr, sr, ro, pt, fr, id, hi seit AP-23): erzeugt mit tools/texte_einspielen.mjs aus deutung-unterlagen/uebersetzung/ (nicht von Hand).
 import llmsTexteEn from './uebersetzt/llms_en.json' with { type: 'json' };
 import llmsTexteEs from './uebersetzt/llms_es.json' with { type: 'json' };
+import llmsTexteBs from './uebersetzt/llms_bs.json' with { type: 'json' };
+import llmsTexteHr from './uebersetzt/llms_hr.json' with { type: 'json' };
+import llmsTexteSr from './uebersetzt/llms_sr.json' with { type: 'json' };
+import llmsTexteRo from './uebersetzt/llms_ro.json' with { type: 'json' };
+import llmsTextePt from './uebersetzt/llms_pt.json' with { type: 'json' };
+import llmsTexteFr from './uebersetzt/llms_fr.json' with { type: 'json' };
+import llmsTexteId from './uebersetzt/llms_id.json' with { type: 'json' };
+import llmsTexteHi from './uebersetzt/llms_hi.json' with { type: 'json' };
 llmsTexte.en = llmsTexteEn;
 llmsTexte.es = llmsTexteEs;
+llmsTexte.bs = llmsTexteBs;
+llmsTexte.hr = llmsTexteHr;
+llmsTexte.sr = llmsTexteSr;
+llmsTexte.ro = llmsTexteRo;
+llmsTexte.pt = llmsTextePt;
+llmsTexte.fr = llmsTexteFr;
+llmsTexte.id = llmsTexteId;
+llmsTexte.hi = llmsTexteHi;

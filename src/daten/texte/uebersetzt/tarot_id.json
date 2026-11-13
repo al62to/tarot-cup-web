@@ -1,0 +1,233 @@
+{
+ "metaTitel": "Membentangkan kartu tarot: ritual, bentangan, dan kartu | Tarot Cup",
+ "metaBeschreibung": "Halaman ini menjelaskan langkah demi langkah cara membentangkan kartu tarot, dari pertanyaan hingga membaca kartu. Ada juga empat bentangan dan delapan kartu yang terkenal.",
+ "titel": "Membentangkan kartu tarot",
+ "vorspann": "Cara membentangkan kartu tarot, dari pertanyaan pertama hingga kartu terakhir yang dibuka. Ada pula empat bentangan di aplikasi dan beberapa kartu terkenal beserta maknanya dalam tradisi.",
+ "ogTitel": "Membentangkan kartu tarot langkah demi langkah",
+ "brotkrume": "Tarot",
+ "inhaltTitel": "Isi",
+ "abschnitte": [
+  {
+   "kennung": "was-ist-tarot",
+   "titel": "Apa itu tarot?",
+   "absaetze": [
+    "Tarot adalah set 78 kartu bergambar. Tarot muncul pada abad ke-15 di Italia utara sebagai permainan kartu; baru jauh sesudahnya orang mulai menafsirkan gambar-gambarnya. Kini orang membentangkan kartu tarot terutama untuk merenungkan sebuah pertanyaan dengan tenang. Ini bukan prediksi, melainkan lebih seperti percakapan lewat gambar.",
+    "Dua puluh dua kartu Arkana Mayor diberi nomor 0 sampai 21, dari “Si Bodoh” hingga “Dunia”. Dalam tradisi, kartu-kartu ini melambangkan tema besar dan titik balik dalam hidup, misalnya awal yang baru, perenungan, atau keseimbangan. Kata arkana berasal dari bahasa Latin dan kurang lebih berarti rahasia.",
+    "Lima puluh enam kartu Arkana Minor terbagi dalam empat jenis, mirip kartu remi biasa. Setiap jenis memiliki satu As, kartu angka dari Dua sampai Sepuluh, dan empat kartu istana: Pelayan, Kesatria, Ratu, dan Raja. Kartu istana sering dibaca sebagai orang lain atau sebagai sikap yang bisa kamu ambil sendiri.",
+    "Setiap jenis punya bidangnya sendiri. Tongkat melambangkan tenaga, gagasan, dan semangat, sedangkan Piala melambangkan perasaan, persahabatan, dan cinta. Pedang berkaitan dengan pikiran, kata-kata, dan keputusan, sedangkan Koin dengan hal-hal yang nyata: pekerjaan, keseharian, dan apa yang dibangun dengan tangan sendiri.",
+    "Di aplikasi Tarot Cup, kamu melihat gambar kartu dari tahun 1909. Gambar itu berstatus domain publik dan termasuk gambar tarot paling terkenal; banyak dek sesudahnya mengambil motif-motifnya."
+   ]
+  },
+  {
+   "kennung": "aufrecht-und-umgekehrt",
+   "titel": "Tegak dan terbalik: apa arti kartu terbalik?",
+   "absaetze": [
+    "Sebuah kartu bisa terletak tegak atau terbalik, dengan bagian atasnya di bawah. Dalam banyak pembacaan masa kini, kartu terbalik bukan pertanda buruk. Kartu itu bercerita tentang tema yang sama seperti saat tegak, hanya lebih pelan, lebih mengarah ke dalam, atau sedang tersendat sejenak.",
+    "Contohnya: saat tegak, sebuah kartu mungkin berbicara tentang semangat. Saat terbalik, kartu itu bisa berarti bahwa semangat tersebut belum juga datang. Jadi kartu itu lebih mengajakmu untuk melihat lebih saksama.",
+    "Sebagian orang membentangkan kartu tanpa posisi terbalik dan membaca setiap kartu dalam posisi tegak; keduanya bagian dari tradisi. Di aplikasi, setiap kartu bisa jatuh tegak atau terbalik, dengan kemungkinan kurang lebih sama. Kartu yang namanya terdengar serius pun dalam tradisi dibaca sebagai gambaran perubahan, pergolakan, atau ikatan, bukan sebagai ancaman."
+   ]
+  },
+  {
+   "kennung": "ritual-schritt-fuer-schritt",
+   "art": "schritte",
+   "titel": "Bagaimana cara membentangkan kartu tarot? Ritual langkah demi langkah",
+   "absaetze": [
+    "Untuk sebuah bentangan, kamu tidak perlu banyak: satu dek, tempat yang tenang, dan beberapa menit. Beginilah alurnya dalam tradisi, baik dengan kartu di meja maupun di ponsel."
+   ],
+   "schritte": [
+    {
+     "titel": "Menenangkan diri",
+     "text": "Cari saat ketika tidak ada yang mengganggumu. Singkirkan dulu apa yang sedang memenuhi pikiranmu, lalu tarik napas dan embuskan perlahan beberapa kali."
+    },
+    {
+     "titel": "Menemukan pertanyaan",
+     "text": "Pikirkan apa yang benar-benar ingin kamu ketahui, lalu rumuskan secara terbuka, misalnya dengan “Apa”, “Bagaimana”, atau “Hal apa”. Pertanyaan terbuka memberimu lebih banyak ruang saat membaca dibandingkan sekadar ya atau tidak."
+    },
+    {
+     "titel": "Menyimpan pertanyaan",
+     "text": "Kamu bisa menuliskannya, mengucapkannya dengan pelan, atau cukup menyimpannya dalam pikiran. Dalam bahasa Turki, hal ini disebut niyet tutmak: menetapkan sebuah niat dan membawanya di dalam hati."
+    },
+    {
+     "titel": "Mengocok",
+     "text": "Kocok kartu selama terasa pas bagimu, dan pikirkan pertanyaanmu saat melakukannya. Sebagian orang menggeser kartu dari tangan ke tangan, sebagian lain membiarkan dua belahan tumpukan saling menyelip."
+    },
+    {
+     "titel": "Memotong tumpukan",
+     "text": "Letakkan tumpukan kartu dalam keadaan tertutup di depanmu, bagi menjadi dua sekali, lalu taruh bagian bawah di atas. Dalam tradisi, orang sering memotong dengan tangan kiri karena dianggap sebagai tangan hati."
+    },
+    {
+     "titel": "Menarik kartu",
+     "text": "Bentangkan kartu dalam keadaan tertutup seperti kipas, lalu tarik sebanyak yang dibutuhkan bentangan. Jangan lama-lama berpikir; ambil saja kartu yang menarik pandanganmu."
+    },
+    {
+     "titel": "Menata kartu",
+     "text": "Letakkan kartu yang kamu tarik dalam keadaan tertutup di tempatnya, sesuai urutan bentangan. Setiap tempat punya makna sendiri, misalnya masa lalu, masa kini, dan masa depan."
+    },
+    {
+     "titel": "Membuka kartu",
+     "text": "Balik kartu satu per satu ke samping, supaya bagian atas dan bawah tetap sama. Lihat dulu gambarnya: apa yang kamu perhatikan, perasaan apa yang muncul?"
+    },
+    {
+     "titel": "Membaca dan merenungkan",
+     "text": "Baca setiap kartu satu per satu, lalu semuanya bersama seperti sebuah cerita kecil. Catat apa yang menyentuhmu, dan lihat beberapa hari kemudian bagaimana pendapatmu sekarang."
+    }
+   ],
+   "nachsatz": "Di aplikasi, kamu mengusap tumpukan untuk mengocok, memilih kartu dari kipas dengan satu ketukan, lalu membukanya satu per satu. Gerakanmu saat mengocok ikut memengaruhi hasil acaknya."
+  },
+  {
+   "kennung": "gute-fragen",
+   "art": "beispiele",
+   "titel": "Pertanyaan apa yang cocok untuk tarot?",
+   "absaetze": [
+    "Pertanyaan yang baik untuk tarot bersifat terbuka, menyangkut dirimu sendiri, dan menyisakan ruang untuk merenung. Kurang cocok adalah pertanyaan yang hanya menginginkan ya atau tidak tentang orang lain, atau menanyakan waktu yang pasti. Dalam tradisi, kartu menunjukkan suasana dan kemungkinan, bukan tanggal dan bukan pikiran orang lain.",
+    "Sering kali pertanyaan yang kurang cocok bisa diubah. Dari “Apakah Sarah menelepon saya sebelum Jumat?” menjadi, misalnya, “Bagaimana saya bisa menjaga hubungan dengan Sarah?”. Dengan begitu pertanyaan tetap pada hal yang bisa kamu lakukan sendiri."
+   ],
+   "gut": {
+    "titel": "Pertanyaan yang baik",
+    "liste": [
+     "Apa yang membantu saya merasa betah di tim baru saya?",
+     "Bagaimana saya bisa mencairkan suasana antara saya dan saudara perempuan saya?",
+     "Hal apa yang bisa saya perhatikan minggu ini?",
+     "Apa yang saya butuhkan agar kembali senang dengan hobi saya?"
+    ]
+   },
+   "weniger": {
+    "titel": "Pertanyaan yang kurang cocok",
+    "liste": [
+     "Apakah Jonas diam-diam mencintai saya?",
+     "Kapan akhirnya saya berkenalan dengan seseorang?",
+     "Apakah Sarah menelepon saya sebelum Jumat?",
+     "Apa sebenarnya yang dipikirkan tetangga saya tentang saya?"
+    ]
+   }
+  },
+  {
+   "kennung": "braeuche",
+   "titel": "Kebiasaan saat membentangkan tarot: apa kata tradisi?",
+   "absaetze": [
+    "Di seputar tarot tumbuh banyak kebiasaan kecil; semuanya bagian dari kesenangan akan ritual.",
+    "Dalam tradisi, konon kartu sebaiknya dibungkus dengan kain sutra atau linen dan disimpan di tempat yang tenang. Sebagian orang membentangkan kain khusus di meja saat membentangkan kartu, menyalakan lilin, atau meletakkan batu kesayangan di sampingnya.",
+    "Konon, dek pertama sebaiknya berupa hadiah. Menurut kebiasaan lama, orang yang mendapat dek baru menaruhnya semalam di bawah bantal atau memandangi setiap kartu dengan tenang untuk mengenalnya.",
+    "Banyak orang tidak membiarkan orang lain mengocok kartunya. Dan setelah sebuah bentangan, tumpukan dikocok sampai rata agar kembali terbuka untuk pertanyaan berikutnya, begitulah cerita tradisi.",
+    "Apakah kebiasaan seperti itu cocok untukmu, kamu sendiri yang memutuskan. Lebih penting daripada kain apa pun adalah saat yang tenang untuk dirimu."
+   ]
+  },
+  {
+   "kennung": "legungen",
+   "art": "legungen",
+   "titel": "Bentangan tarot apa saja yang ada di Tarot Cup?",
+   "absaetze": [
+    "Sebuah bentangan menentukan berapa kartu yang kamu tarik dan untuk apa setiap tempatnya. Tarot Cup memiliki empat bentangan, dari satu kartu hingga lima kartu. Gambar tata letak menunjukkan di mana setiap kartu berada.",
+    "Di aplikasi, “Kartu hari ini” dan “Ya atau tidak” tersedia setiap hari, “Tiga kartu” setiap tiga hari, dan bentangan “Cinta” seminggu sekali. Bentangan baru bisa dibuat setiap tengah malam. Ritme yang tenang ini disengaja: dengan begitu ada waktu untuk merenungkan sebuah bentangan."
+   ],
+   "legungen": [
+    {
+     "id": "tageskarte",
+     "text": "Satu kartu sebagai pendamping hari ini, tanpa pertanyaan. Kamu membukanya dengan satu ketukan, dan kartu itu tetap sama sampai tengah malam. Kartu kemarin tidak langsung muncul lagi keesokan harinya.",
+     "positionen": []
+    },
+    {
+     "id": "ja_nein",
+     "text": "Satu kartu untuk pertanyaan yang kamu simpan dalam hati. Jawabannya berupa kecenderungan, bukan putusan: lebih ke ya, lebih ke tidak, atau masih terbuka.",
+     "positionen": []
+    },
+    {
+     "id": "drei_karten",
+     "text": "Tiga kartu berdampingan, dalam tradisi dibaca dari kiri ke kanan. Kartu-kartu itu menunjukkan bagaimana sebuah hal tumbuh dan ke mana hal itu dapat condong.",
+     "positionen": [
+      {
+       "id": "vergangenheit",
+       "text": "Apa yang ada di belakangmu dan telah membentuk keadaan sampai hari ini."
+      },
+      {
+       "id": "gegenwart",
+       "text": "Di mana kamu berada sekarang dan apa yang paling berbobot saat ini."
+      },
+      {
+       "id": "zukunft",
+       "text": "Ke mana segala sesuatu dapat condong jika terus berjalan seperti ini: sebuah jalan yang mungkin, bukan takdir yang sudah ditetapkan."
+      }
+     ]
+    },
+    {
+     "id": "liebe",
+     "text": "Lima kartu seputar perasaan, kedekatan, dan hubungan. Kamu bisa memikirkan hubungan tertentu atau sekadar bagaimana keadaan hatimu. Tempat-tempatnya terutama memandang dirimu dan apa yang bisa kamu sumbangkan sendiri.",
+     "positionen": [
+      {
+       "id": "herz",
+       "text": "Bagaimana keadaanmu dalam urusan hati saat ini, dengan segala yang menyertainya."
+      },
+      {
+       "id": "brauchen",
+       "text": "Apa yang baik bagimu agar kamu merasa dirangkul dan dilihat."
+      },
+      {
+       "id": "begegnung",
+       "text": "Bagaimana kamu mendekati orang lain dan apa yang terjadi bolak-balik di antara kalian."
+      },
+      {
+       "id": "rat",
+       "text": "Sebuah pikiran atau sikap yang bisa kamu bawa ke dalam hubunganmu."
+      },
+      {
+       "id": "ausblick",
+       "text": "Apa yang dapat berkembang dengan lembut jika kamu memberinya waktu dan ruang."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kennung": "bekannte-karten",
+   "art": "karten",
+   "titel": "Apa arti kartu tarot yang terkenal?",
+   "absaetze": [
+    "Berikut delapan kartu dari dek: empat kartu Arkana Mayor dan masing-masing satu kartu dari keempat jenis, dengan maknanya dalam tradisi, tegak dan terbalik. Setiap kartu punya banyak lapisan; makna singkat hanyalah awal, bukan putusan akhir."
+   ],
+   "ids": [
+    "ta_00_narr",
+    "ta_01_magier",
+    "ta_02_hohepriesterin",
+    "ta_09_eremit",
+    "ta_sta_08_acht",
+    "ta_kel_01_ass",
+    "ta_sch_02_zwei",
+    "ta_mue_03_drei"
+   ],
+   "aufrecht": "Tegak",
+   "umgekehrt": "Terbalik"
+  },
+  {
+   "kennung": "tarot-app",
+   "art": "app",
+   "titel": "Bisakah tarot dibentangkan di ponsel?",
+   "absaetze": [
+    "Dengan Tarot Cup, kamu membentangkan kartu di ponsel Android, dalam salah satu dari dua belas bahasa. Kamu mengocok dengan jari, memilih dari kipas, lalu membuka kartu satu per satu. Di bawah setiap kartu ada dua kata kunci, dan pada akhirnya ada pembacaan untuk seluruh bentangan.",
+    "Pertanyaanmu tetap bersamamu: aplikasi tidak menanyakannya dan tidak menyimpannya. Bentanganmu masuk ke Riwayat di ponselmu, dan kamu bisa menulis catatan sendiri untuknya.",
+    "Cara kerja aplikasi langkah demi langkah ada di [Cara kerja](/id/cara-kerja/)."
+   ]
+  }
+ ],
+ "howto": {
+  "name": "Membentangkan kartu tarot: ritual langkah demi langkah",
+  "beschreibung": "Cara menyiapkan dan menjalankan bentangan tarot menurut tradisi, dari ketenangan sebelum mengocok hingga membaca kartu yang sudah dibuka."
+ },
+ "tuerkischeBegriffe": [
+  "niyet tutmak"
+ ],
+ "suchbegriffe": {
+  "haupt": [
+   "Membentangkan kartu tarot"
+  ],
+  "neben": [
+   "Belajar membentangkan kartu tarot",
+   "Arti kartu tarot",
+   "Sistem bentangan tarot",
+   "Kartu tarot terbalik",
+   "Kartu tarot hari ini",
+   "Tarot ya atau tidak",
+   "Bentangan tiga kartu",
+   "Tarot cinta"
+  ]
+ }
+}

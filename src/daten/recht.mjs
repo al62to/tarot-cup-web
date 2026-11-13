@@ -145,6 +145,23 @@ const BESCHREIBUNG = {
   'en/terms': 'The Tarot Cup terms of use explain what the app is and what it is not, what to keep in mind when using it, and which rules apply.',
   'es/privacidad': 'La política de privacidad de Tarot Cup explica, para la app y el sitio web, qué se guarda, quién es responsable y qué derechos tienes.',
   'es/condiciones-de-uso': 'Las condiciones de uso de Tarot Cup explican qué es la app y qué no es, qué debes tener en cuenta al usarla y qué reglas se aplican.',
+  // AP-23: von der Hauptsitzung geschrieben, muttersprachlich ungeprüft.
+  'bs/privatnost': 'Politika privatnosti aplikacije Tarot Cup objašnjava za aplikaciju i web-stranicu šta se sprema, ko je odgovoran i koja prava imaš.',
+  'bs/uslovi-koristenja': 'Uslovi korištenja aplikacije Tarot Cup objašnjavaju šta aplikacija jeste, a šta nije, na šta trebaš paziti i koja pravila vrijede.',
+  'hr/privatnost': 'Izjava o privatnosti aplikacije Tarot Cup objašnjava za aplikaciju i web-stranicu što se sprema, tko je odgovoran i koja prava imaš.',
+  'hr/uvjeti-koristenja': 'Uvjeti korištenja aplikacije Tarot Cup objašnjavaju što aplikacija jest, a što nije, na što trebaš paziti i koja pravila vrijede.',
+  'sr/privatnost': 'Politika privatnosti aplikacije Tarot Cup objašnjava za aplikaciju i veb-sajt šta se čuva, ko je odgovoran i koja prava imaš.',
+  'sr/uslovi-koriscenja': 'Uslovi korišćenja aplikacije Tarot Cup objašnjavaju šta aplikacija jeste, a šta nije, na šta treba da paziš i koja pravila važe.',
+  'ro/confidentialitate': 'Politica de confidențialitate Tarot Cup explică, pentru aplicație și site, ce se salvează, cine este responsabil și ce drepturi ai.',
+  'ro/termeni-de-utilizare': 'Termenii de utilizare Tarot Cup explică ce este aplicația și ce nu este, la ce să fii atent când o folosești și ce reguli se aplică.',
+  'pt/privacidade': 'A Política de Privacidade do Tarot Cup explica, para o app e o site, o que é salvo, quem é responsável e quais direitos você tem.',
+  'pt/termos-de-uso': 'Os Termos de Uso do Tarot Cup explicam o que o app é e o que não é, o que observar ao usá-lo e quais regras se aplicam.',
+  'fr/confidentialite': 'La politique de confidentialité de Tarot Cup explique, pour l’application et le site web, ce qui est enregistré, qui est responsable et quels sont tes droits.',
+  'fr/conditions-d-utilisation': 'Les conditions d’utilisation de Tarot Cup expliquent ce qu’est l’application et ce qu’elle n’est pas, à quoi faire attention et quelles règles s’appliquent.',
+  'id/privasi': 'Kebijakan Privasi Tarot Cup menjelaskan, untuk aplikasi dan situs web, apa yang disimpan, siapa yang bertanggung jawab, dan apa saja hakmu.',
+  'id/ketentuan-penggunaan': 'Ketentuan Penggunaan Tarot Cup menjelaskan apa aplikasi ini dan apa yang bukan, apa yang perlu kamu perhatikan saat memakainya, dan aturan yang berlaku.',
+  'hi/privacy': 'Tarot Cup की निजता नीति ऐप और वेबसाइट के लिए बताती है कि क्या सहेजा जाता है, कौन ज़िम्मेदार है और आपके क्या अधिकार हैं।',
+  'hi/terms': 'Tarot Cup के उपयोग की शर्तें बताती हैं कि ऐप क्या है और क्या नहीं, उपयोग करते समय किन बातों का ध्यान रखें और कौन से नियम लागू होते हैं।',
 };
 const BESCHREIBUNG_ARCHIV = {
   de: 'Fassung {nr} vom {datum} der {titel} von Tarot Cup, unverändert aufbewahrt im Archiv aller früheren Fassungen und der aktuellen.',

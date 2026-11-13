@@ -1,0 +1,204 @@
+{
+ "metaTitel": "Gledanje u šolju i tarot čitanje putem aplikacije | Tarot Cup",
+ "metaBeschreibung": "Uz Android aplikaciju Tarot Cup samostalno čitaš talog kafe sa 80 znakova i polažeš tarot sa 78 karata, na dvanaest jezika i bez interneta.",
+ "ogTitel": "Gledanje u šolju. Tarot čitanje.",
+ "kopf": {
+  "zeile": "Tarot Cup · Aplikacija za Android",
+  "zeilen": [
+   "Čitaj talog kafe *samostalno*.",
+   "Polagaj tarot *u miru*."
+  ],
+  "text": "Izaberi znake iz svoje šoljice, pokaži na crtežu šoljice gde se nalaze i pročitaj šta mogu da znače. Ili u miru položi tarot karte. Aplikacija radi bez interneta i bez naloga.",
+  "knopf": "Pogledaj na Google Play-u",
+  "bald": "Uskoro na Google Play-u",
+  "anleitung": "Kako funkcioniše",
+  "karte": {
+   "tipp": "Dodirni kartu i okreni je.",
+   "satz": "Značenje karte, uspravne i obrnute, nalazi se u leksikonu aplikacije.",
+   "umdrehen": "Okreni kartu",
+   "zurueck": "Ponovo okreni kartu „{name}“"
+  }
+ },
+ "zahlen": {
+  "aria": "Tarot Cup u brojkama",
+  "liste": [
+   {
+    "zahl": "78",
+    "text": "tarot karata, u leksikonu uspravno i obrnuto"
+   },
+   {
+    "zahl": "80",
+    "text": "znakova u talogu kafe, sa pretragom i kategorijama"
+   },
+   {
+    "zahl": "12",
+    "text": "jezika, od nemačkog i turskog do francuskog i hindija"
+   },
+   {
+    "zahl": "0",
+    "text": "naloga, internet nije potreban"
+   }
+  ]
+ },
+ "wasIst": {
+  "titel": "Šta je Tarot Cup?",
+  "text": "Tarot Cup je aplikacija za Android u kojoj možeš samostalno polagati tarot karte i čitati talog kafe u svojoj šoljici. Dostupna je na dvanaest jezika; pokreće se na jeziku tvog telefona, a jezik možeš promeniti u aplikaciji. Namenjena je osobama od 16 i više godina, radi bez interneta i bez potrebe za nalogom. Tumačenja se oslanjaju na stare tradicije i služe za zabavu."
+ },
+ "tasse": {
+  "zeile": "Ritual",
+  "titel": "Kako čitaš *svoju šoljicu*",
+  "schritte": [
+   "Misli na svoje pitanje i popij tursku kafu. Preokreni šoljicu na tacnu i ostavi je da se ohladi. Tvoje pitanje čuvaš za sebe, aplikacija te ne pita za njega.",
+   "Okreni šoljicu u miru i potraži oblike među 80 znakova.",
+   "Pokaži na crtežu šoljice gde se svaki znak nalazi. Sa tri ili više znakova dostupno je potpuno tumačenje."
+  ],
+  "link": {
+   "text": "Više o gledanju u šolju",
+   "ziel": "/sr/gledanje-u-solju/"
+  }
+ },
+ "tassenkarte": {
+  "titel": "Crtež šoljice",
+  "hinweis": "Izaberi oblast",
+  "gruppe": "Izaberi oblast šoljice",
+  "bereiche": [
+   {
+    "bereich": "rand",
+    "name": "Ivica",
+    "bedeutung": "bliska budućnost"
+   },
+   {
+    "bereich": "mitte",
+    "name": "Sredina",
+    "bedeutung": "sada"
+   },
+   {
+    "bereich": "boden",
+    "name": "Dno",
+    "bedeutung": "dalja budućnost"
+   },
+   {
+    "bereich": "henkelseite",
+    "name": "Strana drške",
+    "bedeutung": "ti, tvoj dom"
+   },
+   {
+    "bereich": "gegenueber",
+    "name": "nasuprot",
+    "bedeutung": "napolju"
+   },
+   {
+    "bereich": "untertasse",
+    "name": "Tacna",
+    "bedeutung": "tvoja želja"
+   }
+  ]
+ },
+ "schaukasten": {
+  "titel": "Kako izgleda *Tarot Cup*",
+  "gruppe": "Izaberi ekran",
+  "eintraege": [
+   {
+    "foto": "01_start_tageskarte",
+    "titel": "Karta dana",
+    "text": "Jedna karta za dan, svaki dan nova."
+   },
+   {
+    "foto": "03_deutung_drei_karten",
+    "titel": "Tri karte",
+    "text": "Prošlost, sadašnjost i budućnost sa tumačenjem koje povezuje sve tri."
+   },
+   {
+    "foto": "05_kaffee_tasse",
+    "titel": "Crtež šoljice",
+    "text": "Pokaži gde se tvoji znaci nalaze u šoljici."
+   }
+  ]
+ },
+ "koennen": {
+  "titel": "Šta aplikacija *može*",
+  "ruhe": {
+   "titel": "U miru, a ne u nedogled",
+   "text": "Svaki raspored ima svoj ritam. Između rasporeda karte se odmaraju.",
+   "pillen": [
+    {
+     "name": "Karta dana",
+     "takt": "svaki dan"
+    },
+    {
+     "name": "Da ili ne",
+     "takt": "svaki dan"
+    },
+    {
+     "name": "Tri karte",
+     "takt": "svaka 3 dana"
+    },
+    {
+     "name": "Samostalno čitanje",
+     "takt": "svaka 3 dana"
+    },
+    {
+     "name": "Ljubav",
+     "takt": "nedeljno"
+    }
+   ]
+  },
+  "sprachen": {
+   "gross": "A / अ",
+   "titel": "Dvanaest jezika",
+   "text": "Nemački, turski, engleski, španski, bosanski, hrvatski, srpski, rumunski, portugalski, francuski, indonežanski i hindi: cela aplikacija na svakom jeziku."
+  }
+ },
+ "vorteile": [
+  {
+   "id": "bleibt",
+   "titel": "Ostaje uz tebe",
+   "text": "Istoriju i beleške aplikacija čuva na tvom telefonu. Nemam pristup tim podacima."
+  },
+  {
+   "id": "internet",
+   "titel": "Bez interneta",
+   "text": "Aplikacija nema dozvolu da pristupi internetu."
+  },
+  {
+   "id": "konto",
+   "titel": "Bez naloga",
+   "text": "U aplikaciji nema prijave ni e-mail adrese."
+  }
+ ],
+ "ratgeber": {
+  "titel": "Tarot i talog kafe *razumeti*",
+  "zeile": "Vodič",
+  "eintraege": [
+   {
+    "titel": "Kako se polaže tarot?",
+    "text": "78 karata, uspravnih i obrnutih, rasporedi aplikacije i ritual korak po korak.",
+    "link": "Ka vodiču za tarot",
+    "ziel": "/sr/tarot/"
+   },
+   {
+    "titel": "Kako se čita talog kafe?",
+    "text": "Od turske kafe do pročitane šoljice: ritual, oblasti šoljice i česti znaci.",
+    "link": "Ka vodiču za talog kafe",
+    "ziel": "/sr/gledanje-u-solju/"
+   }
+  ]
+ },
+ "fotos": {
+  "alt": {
+   "01_start_tageskarte": "Početna stranica aplikacije sa otkrivenom kartom dana „Mag“, ispod koje se nalaze pločice „Položi karte“ i „Gledanje u šolju“",
+   "03_deutung_drei_karten": "Raspored „Tri karte“ sa kartama „Carica“, „Kolo sreće“ i „Kraljica pehara“ za prošlost, sadašnjost i budućnost, a ispod njih početak tumačenja",
+   "05_kaffee_tasse": "Crtež šoljice odozgo sa oblastima ivica, sredina, dno, strana drške i nasuprot, sa tri postavljena znaka i tacnom ispod"
+  }
+ },
+ "fragen": {
+  "titel": "Česta *pitanja*",
+  "ids": [
+   "zukunft",
+   "foto-der-tasse",
+   "tuerkisch",
+   "fragen-gespeichert"
+  ],
+  "alle": "Sva pitanja"
+ }
+}

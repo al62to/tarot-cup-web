@@ -1,0 +1,104 @@
+{
+ "metaTitel": "Questions et réponses sur l’application | Tarot Cup",
+ "metaBeschreibung": "Retrouve ici les réponses sur Tarot Cup : si l’application prédit l’avenir, pourquoi un tirage se repose et si tu as besoin d’Internet ou d’un compte.",
+ "titel": "Questions fréquentes",
+ "vorspann": "Tu trouves ici les réponses aux questions qui reviennent le plus souvent sur Tarot Cup. S’il te manque quelque chose, écris-moi.",
+ "ogTitel": "Questions fréquentes sur Tarot Cup",
+ "brotkrume": "Questions",
+ "liste": [
+  {
+   "id": "zukunft",
+   "frage": "L’application prédit-elle l’avenir ?",
+   "antwort": [
+    "Non. Les lectures suivent d’anciennes traditions autour du tarot et du marc de café. Ce qui te parle, c’est toi qui en décides.",
+    "Pour le divertissement. Les lectures ne sont ni une prédiction ni un conseil. Elles ne prédisent pas l’avenir et ne remplacent pas l’avis de spécialistes."
+   ]
+  },
+  {
+   "id": "foto-der-tasse",
+   "frage": "Ai-je besoin d’une photo de ma tasse ?",
+   "antwort": [
+    "Non. L’application n’a besoin ni de l’appareil photo ni d’une photo. Tu regardes toi-même dans ta tasse, tu choisis parmi 80 symboles les formes que tu reconnais et tu indiques sur le plan de la tasse où elles se trouvent. C’est de là que naît la lecture."
+   ]
+  },
+  {
+   "id": "tuerkisch",
+   "frage": "L’application existe-t-elle en turc ?",
+   "antwort": [
+    "Oui. Tarot Cup existe entièrement en turc, avec l’interface, les lectures, le dictionnaire et les textes juridiques, comme dans les douze langues de l’application. L’application démarre dans la langue de ton téléphone ; tu peux en changer à tout moment dans les paramètres."
+   ]
+  },
+  {
+   "id": "fragen-gespeichert",
+   "frage": "Mes questions sont-elles enregistrées ?",
+   "antwort": [
+    "Non. L’application n’a pas de champ pour ta question : tu la gardes en silence pour toi. Elle ne la demande pas et ne l’enregistre pas.",
+    "Dans l’historique, l’application garde la trace de ce que tu as fait : la date et l’heure, le type de tirage, les cartes (avec l’indication si elles étaient renversées) ou les symboles avec leur emplacement dans la tasse, et pour le marc de café, le domaine de la vie ainsi que ta note si tu en écris une. Ta question n’y figure jamais."
+   ]
+  },
+  {
+   "id": "internet",
+   "frage": "Ai-je besoin d’Internet ?",
+   "antwort": [
+    "Non. Tarot Cup n’a pas l’autorisation d’accéder à Internet. Les tirages, le dictionnaire et l’historique fonctionnent sans aucune connexion, et même le rappel de la carte du jour est programmé par l’application sur ton téléphone."
+   ]
+  },
+  {
+   "id": "konto",
+   "frage": "Ai-je besoin d’un compte ?",
+   "antwort": [
+    "Non. Il n’y a ni inscription ni compte, et l’application ne demande pas ton adresse e-mail."
+   ]
+  },
+  {
+   "id": "legung-gesperrt",
+   "frage": "Pourquoi un tirage est-il parfois bloqué ?",
+   "antwort": [
+    "Chaque tirage a son propre rythme. La carte du jour et « Oui ou non » sont disponibles chaque jour, « Trois cartes » et la lecture complète du marc de café tous les trois jours, le tirage Amour une fois par semaine. Entre-temps, le tirage se repose.",
+    "L’application t’indique quand un tirage redevient disponible, par exemple : « Demain, tu pourras de nouveau tirer les cartes. » Un tirage redevient disponible à minuit, selon l’heure de ton téléphone. Le dictionnaire et l’historique sont toujours ouverts.",
+    "Pour le marc de café, une lecture courte est possible avec un ou deux symboles. Elle ne compte pas dans le rythme, mais elle est limitée à trois par jour.",
+    "Il existe rarement une seconde raison : quand une nouvelle version des conditions d’utilisation paraît, tu peux l’accepter tout de suite ou décider plus tard. Si tu ne l’acceptes pas dans les 30 jours, de nouveaux tirages ne sont de nouveau possibles qu’après l’acceptation. L’historique, les notes et le dictionnaire restent ouverts."
+   ]
+  },
+  {
+   "id": "notizen",
+   "frage": "Que deviennent mes notes ?",
+   "antwort": [
+    "Pour chaque lecture de l’historique, tu peux écrire une note, par exemple : qu’est-ce que cela est devenu ? L’application enregistre les notes et l’historique sur ton téléphone. Je n’y ai pas accès. Tes notes ne figurent pas sur l’image que tu partages.",
+    "Tu supprimes une entrée avec sa note dans l’historique grâce à « Supprimer l’entrée ». Cette action est irréversible.",
+    "Si tu as activé la sauvegarde de ton téléphone, Android peut sauvegarder l’historique, les notes, la langue et l’heure du rappel dans ton compte Google. Lors du passage à un nouveau téléphone, Android peut les reprendre. Le rythme des tirages et la confirmation de l’âge ne sont pas sauvegardés : ils restent liés à chaque téléphone.",
+    "Plus de détails se trouvent dans la [Politique de confidentialité](/fr/confidentialite/)."
+   ]
+  },
+  {
+   "id": "iphone",
+   "frage": "L’application existe-t-elle sur iPhone ?",
+   "antwort": [
+    "Non. Tarot Cup n’existe que pour Android. Une version pour iPhone n’est pas prévue."
+   ]
+  },
+  {
+   "id": "zeichen",
+   "frage": "Combien de symboles l’application connaît-elle ?",
+   "antwort": [
+    "Pour le marc de café, l’application connaît 80 symboles répartis en six catégories : animaux, personnes et figures, objets, nature et lieux, formes, ainsi que lettres et chiffres. Tu les trouves par les catégories ou par la recherche, y compris sous les autres noms sous lesquels une forme est connue.",
+    "Si tu vois une forme qui n’en fait pas partie, tu choisis « Forme que je ne trouve pas ». Une lecture peut regrouper jusqu’à huit symboles. Pour le tarot, l’application connaît les 78 cartes."
+   ]
+  },
+  {
+   "id": "sprache",
+   "frage": "Puis-je changer de langue ?",
+   "antwort": [
+    "Oui. L’application démarre dans la langue de ton téléphone si c’est l’une de ses douze langues (allemand, turc, anglais, espagnol, bosnien, croate, serbe, roumain, portugais, français, indonésien et hindi), sinon en anglais. Dans les paramètres de l’application, tu peux en changer à tout moment, indépendamment de la langue de ton téléphone.",
+    "L’application affiche alors aussi les lectures précédentes de l’historique dans la nouvelle langue. Tes notes restent telles que tu les as écrites."
+   ]
+  },
+  {
+   "id": "alter",
+   "frage": "Quel âge faut-il avoir pour utiliser Tarot Cup ?",
+   "antwort": [
+    "À partir de 16 ans. Au premier lancement, tu confirmes avoir au moins 16 ans et tu acceptes les [Conditions d’utilisation](/fr/conditions-d-utilisation/). Tant que ce n’est pas fait, tu ne peux pas continuer."
+   ]
+  }
+ ]
+}

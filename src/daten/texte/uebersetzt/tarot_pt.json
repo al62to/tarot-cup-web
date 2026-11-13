@@ -1,0 +1,233 @@
+{
+ "metaTitel": "Tarô: rituais, tiragens e cartas | Tarot Cup",
+ "metaBeschreibung": "Esta página explica como você faz uma tiragem de tarô, passo a passo, desde a pergunta até a leitura. Além disso, há quatro tiragens e oito cartas conhecidas.",
+ "titel": "Ler tarô",
+ "vorspann": "Veja como realizar uma tiragem de tarô, desde a primeira pergunta até a última carta revelada. Além disso, as quatro tiragens do aplicativo e algumas cartas conhecidas com seus significados na tradição.",
+ "ogTitel": "Ler tarô passo a passo",
+ "brotkrume": "Tarô",
+ "inhaltTitel": "Conteúdo",
+ "abschnitte": [
+  {
+   "kennung": "was-ist-tarot",
+   "titel": "O que é o tarô?",
+   "absaetze": [
+    "O tarô é um jogo composto por 78 cartas com imagens. Surgiu no século XV, no norte da Itália, como um jogo de cartas; só muito mais tarde se começou a interpretar as imagens. Hoje em dia, usa-se o tarô principalmente para refletir em paz sobre uma pergunta. Não se trata de uma previsão, mas sim de uma conversa com imagens.",
+    "Os 22 Arcanos Maiores são numerados de 0 a 21, de “O Louco” a “O Mundo”. Na tradição, eles representam os grandes temas e pontos de virada de uma vida, como partida, introspecção ou equilíbrio. A palavra arcano vem do latim e significa algo como segredos.",
+    "Os 56 Arcanos Menores dividem-se em quatro naipes, tal como um baralho comum. Cada naipe possui um Ás, as cartas numeradas de dois a dez e quatro cartas da corte: Valete, Cavaleiro, Rainha e Rei. As cartas da corte costumam ser lidas como pessoas ou como atitudes que você pode adotar.",
+    "Cada naipe tem seu próprio campo. Os Paus representam ação, ideias e impulso; as Copas, sentimentos, amizade e amor. As Espadas estão ligadas a pensamentos, palavras e decisões; os Ouros, ao tangível: trabalho, cotidiano e aquilo que se constrói com as próprias mãos.",
+    "No Tarot Cup você vê as imagens das cartas de 1909. Elas são de domínio público e estão entre as imagens de tarô mais conhecidas de todas; muitos baralhos posteriores adotaram seus motivos."
+   ]
+  },
+  {
+   "kennung": "aufrecht-und-umgekehrt",
+   "titel": "Na posição normal e invertida: o que significa uma carta invertida?",
+   "absaetze": [
+    "Uma carta pode estar na posição normal ou de cabeça para baixo; nesse caso, ela é chamada de invertida. Em muitas leituras atuais, uma carta invertida não é um sinal ruim. Ela fala sobre o mesmo tema que na posição normal, apenas de forma mais suave, mais voltada para dentro ou talvez um pouco travada no momento.",
+    "Um exemplo: na posição normal, uma carta talvez fale de impulso. Invertida, ela pode indicar que esse impulso ainda se faz esperar. Por isso, ela convida antes de tudo a observar com mais atenção.",
+    "Algumas pessoas tiram as cartas sem considerar inversões e leem cada uma na posição normal; ambas as práticas fazem parte da tradição. No aplicativo, cada carta pode cair em posição normal ou invertida, com frequência aproximadamente igual. Mesmo cartas com nomes sérios são lidas na tradição como imagens de transformação, ruptura ou vínculo, não como ameaça."
+   ]
+  },
+  {
+   "kennung": "ritual-schritt-fuer-schritt",
+   "art": "schritte",
+   "titel": "Como ler tarô? O ritual passo a passo",
+   "absaetze": [
+    "Para uma tiragem, você não precisa de muito: um baralho, um lugar tranquilo e alguns minutos. É assim que ela costuma transcorrer na tradição, seja com cartas sobre a mesa ou no celular."
+   ],
+   "schritte": [
+    {
+     "titel": "Acalmar-se",
+     "text": "Escolha um momento em que ninguém interrompa você. Deixe de lado o que está ocupando sua mente agora e respire profundamente e devagar algumas vezes."
+    },
+    {
+     "titel": "Encontrar a pergunta",
+     "text": "Pense no que você realmente deseja saber e formule a pergunta de forma aberta, usando termos como “O quê”, “Como” ou “Sobre o quê”. Uma pergunta aberta oferece mais espaço durante a leitura do que um simples sim ou não."
+    },
+    {
+     "titel": "Registrar a pergunta",
+     "text": "Você pode anotá-la, dizê-la em voz baixa ou simplesmente guardá-la na mente. Em turco, diz-se niyet tutmak: formar uma intenção e carregá-la no coração."
+    },
+    {
+     "titel": "Embaralhar",
+     "text": "Embaralhe as cartas enquanto isso parecer certo para você e pense na sua pergunta. Algumas pessoas passam as cartas de mão em mão; outras deixam as duas metades escorrerem uma dentro da outra."
+    },
+    {
+     "titel": "Cortar o baralho",
+     "text": "Coloque o monte de cartas virado para baixo à sua frente, divida-o uma vez e coloque a metade de baixo por cima. Na tradição, costuma-se cortar o baralho com a mão esquerda, pois ela é considerada a mão do coração."
+    },
+    {
+     "titel": "Puxar as cartas",
+     "text": "Espalhe as cartas viradas para baixo em leque e retire quantas a tiragem exigir. Não pense muito; pegue a carta que prende o seu olhar."
+    },
+    {
+     "titel": "Dispor as cartas",
+     "text": "Coloque as cartas tiradas viradas para baixo em suas posições, na ordem da tiragem. Cada posição tem um significado próprio, como Passado, Presente e Futuro."
+    },
+    {
+     "titel": "Revelar",
+     "text": "Vire uma carta de cada vez pelo lado, para que a parte de cima continue em cima e a de baixo, embaixo. Observe primeiro a imagem: o que chama sua atenção, que sensação surge?"
+    },
+    {
+     "titel": "Ler e deixar ressoar",
+     "text": "Leia primeiro cada carta separadamente, depois todas juntas como uma pequena história. Anote o que tocou você e, depois de alguns dias, veja como você pensa sobre isso hoje."
+    }
+   ],
+   "nachsatz": "No aplicativo, você desliza o dedo sobre o monte para embaralhar, escolhe as cartas com um toque no leque e as revela uma a uma. Seus gestos ao embaralhar passam, assim, a fazer parte do acaso."
+  },
+  {
+   "kennung": "gute-fragen",
+   "art": "beispiele",
+   "titel": "Quais perguntas são adequadas para o tarô?",
+   "absaetze": [
+    "Uma boa pergunta para o tarô é aberta, diz respeito a você e deixa espaço para reflexão. Combinam menos as perguntas que querem apenas um sim ou não sobre outras pessoas ou que perguntam por um momento exato. Na tradição, as cartas mostram estados de espírito e possibilidades, não datas nem pensamentos alheios.",
+    "Muitas vezes é possível reformular uma pergunta menos adequada. De “Sarah vai me ligar até sexta-feira?” pode-se chegar, por exemplo, a “Como posso cultivar o contato com Sarah?”. Assim, a pergunta fica no que está ao seu alcance."
+   ],
+   "gut": {
+    "titel": "Boas perguntas",
+    "liste": [
+     "O que me ajuda a me integrar na minha nova equipe?",
+     "Como posso acalmar o clima entre mim e minha irmã?",
+     "No que devo prestar atenção nesta semana?",
+     "O que preciso para reencontrar a alegria em meu hobby?"
+    ]
+   },
+   "weniger": {
+    "titel": "Perguntas menos adequadas",
+    "liste": [
+     "Jonas me ama secretamente?",
+     "Quando vou finalmente conhecer alguém?",
+     "Sarah vai me ligar até sexta-feira?",
+     "O que minha vizinha realmente pensa de mim?"
+    ]
+   }
+  },
+  {
+   "kennung": "braeuche",
+   "titel": "Costumes ao fazer uma tiragem de tarô: o que a tradição conta?",
+   "absaetze": [
+    "Em torno do tarô surgiram muitos pequenos costumes; eles fazem parte do prazer do ritual.",
+    "Na tradição, diz-se que as cartas devem ser embrulhadas em um pano de seda ou linho e guardadas em um lugar tranquilo. Algumas pessoas estendem um pano próprio sobre a mesa durante a leitura, acendem uma vela ou colocam uma pedra preferida ao lado.",
+    "Diz-se também que o primeiro baralho deve ser um presente. Quem recebe um baralho novo costuma, segundo o antigo costume, colocá-lo uma noite sob o travesseiro ou olhar cada carta com calma para conhecê-la.",
+    "Muitas pessoas não permitem que outros embaralhem suas cartas. E após uma tiragem, a tradição conta que se deve embaralhar bem o baralho para que ele fique aberto para a próxima pergunta.",
+    "Você decide se esses costumes lhe agradam. Mais importante do que qualquer pano é um momento de tranquilidade para você."
+   ]
+  },
+  {
+   "kennung": "legungen",
+   "art": "legungen",
+   "titel": "Quais tiragens de tarô existem no Tarot Cup?",
+   "absaetze": [
+    "Uma tiragem define quantas cartas você tira e o que cada posição representa. O Tarot Cup oferece quatro tipos de tiragem, desde uma única carta até cinco cartas. A disposição das cartas mostra onde cada uma está posicionada.",
+    "No aplicativo, você tem acesso à Carta do Dia e à carta Sim ou Não todos os dias, às Três Cartas a cada três dias e à tiragem Amor uma vez por semana. Uma nova tiragem fica disponível sempre à meia-noite. O ritmo tranquilo é intencional: assim, sobra tempo para refletir sobre uma tiragem."
+   ],
+   "legungen": [
+    {
+     "id": "tageskarte",
+     "text": "Uma carta como companhia para o dia, sem nenhuma pergunta. Você a revela com um toque, e ela permanece a mesma até a meia-noite. A carta de ontem não volta logo no dia seguinte.",
+     "positionen": []
+    },
+    {
+     "id": "ja_nein",
+     "text": "Uma carta para uma pergunta que você guarda em silêncio. A resposta é uma tendência, não um veredicto: mais para sim, mais para não ou ainda em aberto.",
+     "positionen": []
+    },
+    {
+     "id": "drei_karten",
+     "text": "Três cartas lado a lado, lidas na tradição da esquerda para a direita. Elas mostram como uma situação cresceu e para onde ela pode se inclinar.",
+     "positionen": [
+      {
+       "id": "vergangenheit",
+       "text": "O que ficou para trás e moldou sua situação até hoje."
+      },
+      {
+       "id": "gegenwart",
+       "text": "Onde você está agora e o que tem mais peso no momento."
+      },
+      {
+       "id": "zukunft",
+       "text": "Para onde as coisas podem se inclinar, se continuarem assim: um caminho possível, não um destino fixo."
+      }
+     ]
+    },
+    {
+     "id": "liebe",
+     "text": "Cinco cartas em torno de sentimentos, proximidade e relacionamentos. Você pode pensar em um relacionamento específico ou simplesmente em como vai o seu coração. As posições olham sobretudo para você e para aquilo que você pode contribuir.",
+     "positionen": [
+      {
+       "id": "herz",
+       "text": "Como estão as coisas do coração para você, com tudo o que isso envolve."
+      },
+      {
+       "id": "brauchen",
+       "text": "O que faria bem a você, para que encontre acolhimento e sinta que alguém enxerga você."
+      },
+      {
+       "id": "begegnung",
+       "text": "Como você se aproxima dos outros e o que flui entre vocês."
+      },
+      {
+       "id": "rat",
+       "text": "Um pensamento ou atitude que você pode levar para seus relacionamentos."
+      },
+      {
+       "id": "ausblick",
+       "text": "O que pode se desenvolver com cuidado, se você der tempo e espaço a isso."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kennung": "bekannte-karten",
+   "art": "karten",
+   "titel": "O que significam as cartas conhecidas do tarô?",
+   "absaetze": [
+    "Aqui estão oito cartas do baralho: quatro Arcanos Maiores e uma carta de cada um dos quatro naipes, com seu significado na tradição, na posição normal e invertida. Cada carta possui muitas camadas; o breve significado é apenas um ponto de partida, não um veredicto pronto."
+   ],
+   "ids": [
+    "ta_00_narr",
+    "ta_01_magier",
+    "ta_02_hohepriesterin",
+    "ta_09_eremit",
+    "ta_sta_08_acht",
+    "ta_kel_01_ass",
+    "ta_sch_02_zwei",
+    "ta_mue_03_drei"
+   ],
+   "aufrecht": "Normal",
+   "umgekehrt": "Invertida"
+  },
+  {
+   "kennung": "tarot-app",
+   "art": "app",
+   "titel": "É possível fazer uma tiragem de tarô também no celular?",
+   "absaetze": [
+    "Com o Tarot Cup, você faz a tiragem das cartas no seu celular Android, em um dos doze idiomas. Você embaralha com o dedo, escolhe no leque e revela uma carta após a outra. Sob cada carta, há duas palavras-chave; ao final, segue-se uma leitura da tiragem completa.",
+    "Sua pergunta permanece com você: o aplicativo não a solicita nem a armazena. Suas tiragens ficam no Histórico do seu celular, e você pode escrever uma anotação pessoal sobre elas.",
+    "O funcionamento do app, passo a passo, está explicado em [Como funciona](/pt/como-funciona/)."
+   ]
+  }
+ ],
+ "howto": {
+  "name": "Tiragem de tarô: o ritual passo a passo",
+  "beschreibung": "Veja como preparar e realizar uma tiragem de tarô na tradição, desde a calma antes de embaralhar até a leitura das cartas reveladas."
+ },
+ "tuerkischeBegriffe": [
+  "niyet tutmak"
+ ],
+ "suchbegriffe": {
+  "haupt": [
+   "Tiragem de tarô"
+  ],
+  "neben": [
+   "Aprender tiragem de tarô",
+   "Significado das cartas de tarô",
+   "Sistemas de tiragem de tarô",
+   "Carta de tarô invertida",
+   "Carta do Dia de tarô",
+   "Tarô Sim Não",
+   "Tiragem de três cartas",
+   "Tarô do amor"
+  ]
+ }
+}
