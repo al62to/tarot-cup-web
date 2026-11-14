@@ -49,15 +49,15 @@
     },
     {
      "titel": "Embaralhar",
-     "text": "Embaralhe as cartas enquanto isso parecer certo para você e pense na sua pergunta. Algumas pessoas passam as cartas de mão em mão; outras deixam as duas metades escorrerem uma dentro da outra."
+     "text": "Embaralhe as cartas enquanto isso parecer certo para você e pense em sua pergunta. Algumas pessoas passam as cartas de mão em mão; outras deixam as duas metades escorrerem uma dentro da outra."
     },
     {
      "titel": "Cortar o baralho",
-     "text": "Coloque o monte de cartas virado para baixo à sua frente, divida-o uma vez e coloque a metade de baixo por cima. Na tradição, costuma-se cortar o baralho com a mão esquerda, pois ela é considerada a mão do coração."
+     "text": "Coloque o monte de cartas virado para baixo diante de você, divida-o uma vez e coloque a metade de baixo por cima. Na tradição, costuma-se cortar o baralho com a mão esquerda, pois ela é considerada a mão do coração."
     },
     {
      "titel": "Puxar as cartas",
-     "text": "Espalhe as cartas viradas para baixo em leque e retire quantas a tiragem exigir. Não pense muito; pegue a carta que prende o seu olhar."
+     "text": "Espalhe as cartas viradas para baixo em leque e retire quantas a tiragem exigir. Não pense muito; pegue a carta que prende seu olhar."
     },
     {
      "titel": "Dispor as cartas",
@@ -80,7 +80,7 @@
    "titel": "Quais perguntas são adequadas para o tarô?",
    "absaetze": [
     "Uma boa pergunta para o tarô é aberta, diz respeito a você e deixa espaço para reflexão. Combinam menos as perguntas que querem apenas um sim ou não sobre outras pessoas ou que perguntam por um momento exato. Na tradição, as cartas mostram estados de espírito e possibilidades, não datas nem pensamentos alheios.",
-    "Muitas vezes é possível reformular uma pergunta menos adequada. De “Sarah vai me ligar até sexta-feira?” pode-se chegar, por exemplo, a “Como posso cultivar o contato com Sarah?”. Assim, a pergunta fica no que está ao seu alcance."
+    "Muitas vezes é possível reformular uma pergunta menos adequada. De “Sarah vai me ligar até sexta-feira?” pode-se chegar, por exemplo, a “Como posso cultivar o contato com Sarah?”. Assim, a pergunta fica no que está a seu alcance."
    ],
    "gut": {
     "titel": "Boas perguntas",
@@ -151,7 +151,7 @@
     },
     {
      "id": "liebe",
-     "text": "Cinco cartas em torno de sentimentos, proximidade e relacionamentos. Você pode pensar em um relacionamento específico ou simplesmente em como vai o seu coração. As posições olham sobretudo para você e para aquilo que você pode contribuir.",
+     "text": "Cinco cartas em torno de sentimentos, proximidade e relacionamentos. Você pode pensar em um relacionamento específico ou simplesmente em como vai seu coração. As posições olham sobretudo para você e para aquilo que você pode contribuir.",
      "positionen": [
       {
        "id": "herz",
@@ -202,8 +202,8 @@
    "art": "app",
    "titel": "É possível fazer uma tiragem de tarô também no celular?",
    "absaetze": [
-    "Com o Tarot Cup, você faz a tiragem das cartas no seu celular Android, em um dos doze idiomas. Você embaralha com o dedo, escolhe no leque e revela uma carta após a outra. Sob cada carta, há duas palavras-chave; ao final, segue-se uma leitura da tiragem completa.",
-    "Sua pergunta permanece com você: o aplicativo não a solicita nem a armazena. Suas tiragens ficam no Histórico do seu celular, e você pode escrever uma anotação pessoal sobre elas.",
+    "Com o Tarot Cup, você faz a tiragem das cartas em seu celular Android, em um dos doze idiomas. Você embaralha com o dedo, escolhe no leque e revela uma carta após a outra. Sob cada carta, há duas palavras-chave; ao final, segue-se uma leitura da tiragem completa.",
+    "Sua pergunta permanece com você: o aplicativo não a solicita nem a armazena. Suas tiragens ficam no Histórico de seu celular, e você pode escrever uma anotação pessoal sobre elas.",
     "O funcionamento do app, passo a passo, está explicado em [Como funciona](/pt/como-funciona/)."
    ]
   }

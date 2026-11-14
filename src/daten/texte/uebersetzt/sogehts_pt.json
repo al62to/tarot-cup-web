@@ -11,7 +11,7 @@
    "kennung": "erster-start",
    "titel": "O que acontece no primeiro acesso?",
    "absaetze": [
-    "Ao abrir o app pela primeira vez, ele aparece no idioma do seu celular; depois de “Boas-vindas”, você toca em “Continuar”. Na etapa “Antes de começar”, você confirma ter pelo menos 16 anos e aceita os Termos de Uso com “Aceitar e continuar”. Uma breve introdução apresenta a Carta do Dia, a borra de café, o tarô e o Dicionário; com “Pular”, você pode deixá-la de lado. Por fim, o app pergunta se deve lembrar você da Carta do Dia pela manhã."
+    "Ao abrir o app pela primeira vez, ele aparece no idioma de seu celular; depois de “Boas-vindas”, você toca em “Continuar”. Na etapa “Antes de começar”, você confirma ter pelo menos 16 anos e aceita os Termos de Uso com “Aceitar e continuar”. Uma breve introdução apresenta a Carta do Dia, a borra de café, o tarô e o Dicionário; com “Pular”, você pode deixá-la de lado. Por fim, o app pergunta se deve lembrar você da Carta do Dia pela manhã."
    ],
    "foto": "01_erster_start",
    "alt": "O passo “Antes de começar” com a caixa marcada para a idade, os links para a Política de Privacidade e os Termos de Uso e o botão “Aceitar e continuar”."
@@ -29,7 +29,7 @@
    "kennung": "tarot-legen",
    "titel": "Como fazer uma tiragem de tarô?",
    "absaetze": [
-    "Em “Ler tarô”, você escolhe “Sim ou Não”, “Três Cartas” ou “Amor” e pensa em silêncio na sua pergunta. Você embaralha passando o dedo sobre o monte, escolhe suas cartas no leque depois de “Cartas embaralhadas” e as revela uma a uma depois de “Continuar para revelar”. “Para a leitura completa” mostra o que elas contam em conjunto. Em seguida, a tiragem descansa: “Sim ou Não” fica disponível de novo no dia seguinte, “Três Cartas” depois de três dias e “Amor” depois de uma semana, sempre a partir da meia-noite."
+    "Em “Ler tarô”, você escolhe “Sim ou Não”, “Três Cartas” ou “Amor” e pensa em silêncio em sua pergunta. Você embaralha passando o dedo sobre o monte, escolhe suas cartas no leque depois de “Cartas embaralhadas” e as revela uma a uma depois de “Continuar para revelar”. “Para a leitura completa” mostra o que elas contam em conjunto. Em seguida, a tiragem descansa: “Sim ou Não” fica disponível de novo no dia seguinte, “Três Cartas” depois de três dias e “Amor” depois de uma semana, sempre a partir da meia-noite."
    ],
    "foto": "03_tarot",
    "alt": "A tiragem Três Cartas com três cartas reveladas sob Passado, Presente e Futuro e o botão “Para a leitura completa”."
@@ -56,7 +56,7 @@
    "kennung": "verlauf",
    "titel": "Onde encontro leituras e anotações anteriores?",
    "absaetze": [
-    "Cada tiragem vai automaticamente para a aba “Histórico”, com a mais recente no topo, acompanhada da data e do tipo. Ao tocar em um registro, a leitura completa se abre; no campo “Sua anotação”, você anota o que aconteceu depois, e o app salva tudo na hora. Com “Excluir registro”, você remove um registro do app de forma definitiva, depois de uma pergunta de confirmação. O histórico e as anotações ficam salvos no seu celular."
+    "Cada tiragem vai automaticamente para a aba “Histórico”, com a mais recente no topo, acompanhada da data e do tipo. Ao tocar em um registro, a leitura completa se abre; no campo “Sua anotação”, você anota o que aconteceu depois, e o app salva tudo na hora. Com “Excluir registro”, você remove um registro do app de forma definitiva, depois de uma pergunta de confirmação. O histórico e as anotações ficam salvos em seu celular."
    ],
    "foto": "06_verlauf",
    "alt": "Um registro aberto no Histórico com a leitura, o campo “Sua anotação” preenchido e os botões para compartilhar e excluir."
@@ -83,7 +83,7 @@
    "kennung": "sprache",
    "titel": "Como alterar o idioma?",
    "absaetze": [
-    "No topo das “Configurações”, em “Idioma”, você escolhe entre “Deutsch”, “Türkçe”, “English” e “Español”. Sem uma escolha própria, o app segue o idioma do seu celular; para qualquer outro idioma do celular, ele mostra inglês. O app muda imediatamente. As leituras anteriores no Histórico, o Dicionário, os Documentos legais e o Lembrete também aparecem então no novo idioma; suas anotações permanecem exatamente como você as escreveu."
+    "No topo das “Configurações”, em “Idioma”, você escolhe entre “Deutsch”, “Türkçe”, “English” e “Español”. Sem uma escolha própria, o app segue o idioma de seu celular; para qualquer outro idioma do celular, ele mostra inglês. O app muda imediatamente. As leituras anteriores no Histórico, o Dicionário, os Documentos legais e o Lembrete também aparecem então no novo idioma; suas anotações permanecem exatamente como você as escreveu."
    ],
    "foto": "09_sprache",
    "alt": "A parte superior das Configurações, com a seção “Idioma” e os botões dos idiomas."

@@ -8,7 +8,7 @@
    "Leia a borra de café *por conta própria*.",
    "Faça tiragens de tarô *com calma*."
   ],
-  "text": "Escolha os símbolos da sua xícara, indique no mapa da xícara onde eles estão e leia o que podem significar. Ou faça uma tiragem de tarô com calma. O app funciona sem internet e sem conta.",
+  "text": "Escolha os símbolos de sua xícara, indique no mapa da xícara onde eles estão e leia o que podem significar. Ou faça uma tiragem de tarô com calma. O app funciona sem internet e sem conta.",
   "knopf": "Veja no Google Play",
   "bald": "Em breve no Google Play",
   "anleitung": "Como funciona",
@@ -42,13 +42,13 @@
  },
  "wasIst": {
   "titel": "O que é o Tarot Cup?",
-  "text": "O Tarot Cup é um aplicativo para Android com o qual você faz tiragens de tarô e lê por conta própria a borra de café da sua xícara. Está disponível em doze idiomas; abre no idioma do seu celular, e você pode mudar o idioma no app. É voltado a pessoas a partir de 16 anos e funciona sem internet e sem conta. As interpretações seguem tradições antigas e são feitas para entretenimento."
+  "text": "O Tarot Cup é um aplicativo para Android com o qual você faz tiragens de tarô e lê por conta própria a borra de café de sua xícara. Está disponível em doze idiomas; abre no idioma de seu celular, e você pode mudar o idioma no app. É voltado a pessoas a partir de 16 anos e funciona sem internet e sem conta. As interpretações seguem tradições antigas e são feitas para entretenimento."
  },
  "tasse": {
   "zeile": "O ritual",
   "titel": "Como ler *sua xícara*",
   "schritte": [
-   "Pense na sua pergunta e beba o café turco. Vire a xícara sobre o pires e deixe-a esfriar. Sua pergunta fica só com você; o app não pergunta por ela.",
+   "Pense em sua pergunta e beba o café turco. Vire a xícara sobre o pires e deixe-a esfriar. Sua pergunta fica só com você; o app não pergunta por ela.",
    "Gire a xícara com calma e procure as formas entre os 80 símbolos.",
    "Mostre no mapa da xícara onde cada símbolo está. Com três ou mais símbolos, há a leitura completa."
   ],
@@ -153,7 +153,7 @@
   {
    "id": "bleibt",
    "titel": "Fica com você",
-   "text": "O histórico e as anotações ficam salvos no seu celular. Não tenho acesso a eles."
+   "text": "O histórico e as anotações ficam salvos em seu celular. Não tenho acesso a eles."
   },
   {
    "id": "internet",

@@ -18,21 +18,21 @@
    "id": "foto-der-tasse",
    "frage": "Preciso de uma foto da minha xícara?",
    "antwort": [
-    "Não. O aplicativo não precisa nem de câmera nem de foto. Você olha para a sua própria xícara, escolhe entre 80 símbolos as formas que reconhece e indica no mapa da xícara onde elas estão. A partir disso, surge a leitura."
+    "Não. O aplicativo não precisa nem de câmera nem de foto. Você olha para sua própria xícara, escolhe entre 80 símbolos as formas que reconhece e indica no mapa da xícara onde elas estão. A partir disso, surge a leitura."
    ]
   },
   {
    "id": "tuerkisch",
    "frage": "O aplicativo está disponível em turco?",
    "antwort": [
-    "Sim. O Tarot Cup está disponível inteiramente em turco, com interface, interpretações, Dicionário e documentos legais, como em todos os doze idiomas do app. O app abre no idioma do seu celular; você pode trocá-lo a qualquer momento nas Configurações."
+    "Sim. O Tarot Cup está disponível inteiramente em turco, com interface, interpretações, Dicionário e documentos legais, como em todos os doze idiomas do app. O app abre no idioma de seu celular; você pode trocá-lo a qualquer momento nas Configurações."
    ]
   },
   {
    "id": "fragen-gespeichert",
    "frage": "Minhas perguntas são salvas?",
    "antwort": [
-    "Não. O aplicativo não tem um campo para a sua pergunta; você a guarda em silêncio, só para você. Ele não a solicita nem a armazena.",
+    "Não. O aplicativo não tem um campo para sua pergunta; você a guarda em silêncio, só para você. Ele não a solicita nem a armazena.",
     "No Histórico, o app registra o que você tirou: data e horário, o tipo de tiragem, as cartas (inclusive se estavam invertidas) ou os símbolos com sua posição na xícara; na leitura da borra de café, a área da vida e sua anotação, caso você escreva uma. Sua pergunta nunca fica registrada."
    ]
   },
@@ -40,7 +40,7 @@
    "id": "internet",
    "frage": "Preciso de internet?",
    "antwort": [
-    "Não. O Tarot Cup não tem permissão para acessar a internet. As tiragens, o Dicionário e o Histórico funcionam completamente sem conexão, e o app também agenda no seu celular o lembrete da Carta do Dia."
+    "Não. O Tarot Cup não tem permissão para acessar a internet. As tiragens, o Dicionário e o Histórico funcionam completamente sem conexão, e o app também agenda em seu celular o lembrete da Carta do Dia."
    ]
   },
   {
@@ -54,8 +54,8 @@
    "id": "legung-gesperrt",
    "frage": "Por que uma tiragem às vezes está bloqueada?",
    "antwort": [
-    "Cada tiragem tem o seu próprio ritmo. A Carta do Dia e a tiragem Sim ou Não estão disponíveis todos os dias; Três Cartas e a Leitura completa na borra de café, a cada três dias; a tiragem sobre amor, uma vez por semana. Entre essas datas, a tiragem descansa.",
-    "O aplicativo mostra quando ela estará disponível de novo, por exemplo: “Amanhã você pode fazer outra tiragem.” Uma tiragem fica disponível à meia-noite, conforme o relógio do seu celular. O Dicionário e o Histórico ficam sempre acessíveis.",
+    "Cada tiragem tem seu próprio ritmo. A Carta do Dia e a tiragem Sim ou Não estão disponíveis todos os dias; Três Cartas e a Leitura completa na borra de café, a cada três dias; a tiragem sobre amor, uma vez por semana. Entre essas datas, a tiragem descansa.",
+    "O aplicativo mostra quando ela estará disponível de novo, por exemplo: “Amanhã você pode fazer outra tiragem.” Uma tiragem fica disponível à meia-noite, conforme o relógio de seu celular. O Dicionário e o Histórico ficam sempre acessíveis.",
     "Na leitura da borra de café, com um ou dois símbolos há uma Leitura curta. Ela não conta para o ritmo, mas é limitada a três por dia.",
     "Raramente há uma segunda razão: quando há uma nova versão dos Termos de Uso, você pode aceitá-la imediatamente ou decidir depois. Se não a aceitar em 30 dias, novas tiragens só voltam a ficar disponíveis após a aceitação. O Histórico, as anotações e o Dicionário continuam acessíveis."
    ]
@@ -64,9 +64,9 @@
    "id": "notizen",
    "frage": "O que acontece com minhas anotações?",
    "antwort": [
-    "Para cada leitura no Histórico, você pode escrever uma anotação, por exemplo: No que isso se transformou? As anotações e o Histórico são salvos no seu celular. Eu não tenho acesso a eles. Na imagem que você compartilha, suas anotações não aparecem.",
-    "Você exclui uma entrada junto com a sua anotação no Histórico, em “Excluir entrada”. Isso não pode ser desfeito.",
-    "Se você ativou o backup do seu celular, o Android pode salvar o Histórico, as anotações, o idioma e o horário do lembrete na sua conta do Google. Ao trocar de celular, o Android pode levá-los consigo. O ritmo das tiragens e a confirmação de idade não são salvos; eles pertencem ao respectivo aparelho.",
+    "Para cada leitura no Histórico, você pode escrever uma anotação, por exemplo: No que isso se transformou? As anotações e o Histórico são salvos em seu celular. Eu não tenho acesso a eles. Na imagem que você compartilha, suas anotações não aparecem.",
+    "Você exclui uma entrada junto com sua anotação no Histórico, em “Excluir entrada”. Isso não pode ser desfeito.",
+    "Se você ativou o backup de seu celular, o Android pode salvar o Histórico, as anotações, o idioma e o horário do lembrete em sua conta do Google. Ao trocar de celular, o Android pode levá-los consigo. O ritmo das tiragens e a confirmação de idade não são salvos; eles pertencem ao respectivo aparelho.",
     "Mais detalhes estão na [Política de Privacidade](/pt/privacidade/)."
    ]
   },
@@ -89,7 +89,7 @@
    "id": "sprache",
    "frage": "Posso mudar o idioma?",
    "antwort": [
-    "Sim. O app abre no idioma do seu celular, se for um dos doze idiomas do app (alemão, turco, inglês, espanhol, bósnio, croata, sérvio, romeno, português, francês, indonésio e hindi); caso contrário, em inglês. Nas Configurações do aplicativo, você pode mudar a qualquer momento, independentemente do idioma do seu celular.",
+    "Sim. O app abre no idioma de seu celular, se for um dos doze idiomas do app (alemão, turco, inglês, espanhol, bósnio, croata, sérvio, romeno, português, francês, indonésio e hindi); caso contrário, em inglês. Nas Configurações do aplicativo, você pode mudar a qualquer momento, independentemente do idioma de seu celular.",
     "O app também mostra no novo idioma as interpretações anteriores no Histórico. Suas anotações permanecem exatamente como você as escreveu."
    ]
   },
