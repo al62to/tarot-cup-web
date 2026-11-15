@@ -34,6 +34,15 @@
     if (fenster.tarotcupGtm) return;
     fenster.tarotcupGtm = true;
     const schicht = (fenster.dataLayer = fenster.dataLayer || []);
+    // Einwilligungsmodus von Google vor dem Tag Manager (AP-26): Statistik erlaubt (der Tag Manager lädt nur nach Zustimmung),
+    // Werbung immer abgelehnt, wie in der App. gtag erwartet das arguments-Objekt, kein Feld.
+    function gtag(..._werte: unknown[]) {
+      // eslint-disable-next-line prefer-rest-params
+      schicht.push(arguments);
+    }
+    gtag('consent', 'default', {
+      ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted',
+    });
     schicht.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
     const skript = document.createElement('script');
     skript.async = true;
