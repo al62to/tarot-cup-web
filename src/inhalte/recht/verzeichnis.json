@@ -106,6 +106,12 @@
      "datum": "14.11.2026",
      "datei": "datenschutz_1.4.html",
      "quelle": "Datenschutzerklaerung_1.4.md"
+    },
+    {
+     "nummer": "1.5",
+     "datum": "15.11.2026",
+     "datei": "datenschutz_1.5.html",
+     "quelle": "Datenschutzerklaerung_1.5.md"
     }
    ]
   },
@@ -168,6 +174,12 @@
      "datum": "14.11.2026",
      "datei": "tr_gizlilik_1.4.html",
      "quelle": "1.4_uebersetzung/datenschutz_tr.md"
+    },
+    {
+     "nummer": "1.5",
+     "datum": "15.11.2026",
+     "datei": "tr_gizlilik_1.5.html",
+     "quelle": "1.5_uebersetzung/datenschutz_tr.md"
     }
    ]
   },
@@ -202,10 +214,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.4",
-     "datum": "14.11.2026",
-     "datei": "en_privacy_1.4.html",
-     "quelle": "1.4_uebersetzung/datenschutz_en.md"
+     "nummer": "1.5",
+     "datum": "15.11.2026",
+     "datei": "en_privacy_1.5.html",
+     "quelle": "1.5_uebersetzung/datenschutz_en.md"
     }
    ]
   },
@@ -234,10 +246,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.4",
-     "datum": "14.11.2026",
-     "datei": "es_privacidad_1.4.html",
-     "quelle": "1.4_uebersetzung/datenschutz_es.md"
+     "nummer": "1.5",
+     "datum": "15.11.2026",
+     "datei": "es_privacidad_1.5.html",
+     "quelle": "1.5_uebersetzung/datenschutz_es.md"
     }
    ]
   },
@@ -266,10 +278,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.4",
-     "datum": "14.11.2026",
-     "datei": "bs_privatnost_1.4.html",
-     "quelle": "1.4_uebersetzung/datenschutz_bs.md"
+     "nummer": "1.5",
+     "datum": "15.11.2026",
+     "datei": "bs_privatnost_1.5.html",
+     "quelle": "1.5_uebersetzung/datenschutz_bs.md"
     }
    ]
   },
@@ -298,10 +310,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.4",
-     "datum": "14.11.2026",
-     "datei": "hr_privatnost_1.4.html",
-     "quelle": "1.4_uebersetzung/datenschutz_hr.md"
+     "nummer": "1.5",
+     "datum": "15.11.2026",
+     "datei": "hr_privatnost_1.5.html",
+     "quelle": "1.5_uebersetzung/datenschutz_hr.md"
     }
    ]
   },
@@ -330,10 +342,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.4",
-     "datum": "14.11.2026",
-     "datei": "sr_privatnost_1.4.html",
-     "quelle": "1.4_uebersetzung/datenschutz_sr.md"
+     "nummer": "1.5",
+     "datum": "15.11.2026",
+     "datei": "sr_privatnost_1.5.html",
+     "quelle": "1.5_uebersetzung/datenschutz_sr.md"
     }
    ]
   },
@@ -362,10 +374,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.4",
-     "datum": "14.11.2026",
-     "datei": "ro_confidentialitate_1.4.html",
-     "quelle": "1.4_uebersetzung/datenschutz_ro.md"
+     "nummer": "1.5",
+     "datum": "15.11.2026",
+     "datei": "ro_confidentialitate_1.5.html",
+     "quelle": "1.5_uebersetzung/datenschutz_ro.md"
     }
    ]
   },
@@ -394,10 +406,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.4",
-     "datum": "14.11.2026",
-     "datei": "pt_privacidade_1.4.html",
-     "quelle": "1.4_uebersetzung/datenschutz_pt.md"
+     "nummer": "1.5",
+     "datum": "15.11.2026",
+     "datei": "pt_privacidade_1.5.html",
+     "quelle": "1.5_uebersetzung/datenschutz_pt.md"
     }
    ]
   },
@@ -426,10 +438,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.4",
-     "datum": "14.11.2026",
-     "datei": "fr_confidentialite_1.4.html",
-     "quelle": "1.4_uebersetzung/datenschutz_fr.md"
+     "nummer": "1.5",
+     "datum": "15.11.2026",
+     "datei": "fr_confidentialite_1.5.html",
+     "quelle": "1.5_uebersetzung/datenschutz_fr.md"
     }
    ]
   },
@@ -458,10 +470,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.4",
-     "datum": "14.11.2026",
-     "datei": "id_privasi_1.4.html",
-     "quelle": "1.4_uebersetzung/datenschutz_id.md"
+     "nummer": "1.5",
+     "datum": "15.11.2026",
+     "datei": "id_privasi_1.5.html",
+     "quelle": "1.5_uebersetzung/datenschutz_id.md"
     }
    ]
   },
@@ -490,10 +502,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.4",
-     "datum": "14.11.2026",
-     "datei": "hi_privacy_1.4.html",
-     "quelle": "1.4_uebersetzung/datenschutz_hi.md"
+     "nummer": "1.5",
+     "datum": "15.11.2026",
+     "datei": "hi_privacy_1.5.html",
+     "quelle": "1.5_uebersetzung/datenschutz_hi.md"
     }
    ]
   },
