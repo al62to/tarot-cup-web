@@ -133,7 +133,11 @@ export function pruefeBau(ordner, { still = false } = {}) {
     const html = readFileSync(datei, 'utf8');
     // Nur echte Seiten (mit Fuß); Weiterleitungen ohne Fuß haben keinen Hinweis.
     if (!html.includes('<footer')) continue;
-    if (einwilligungPfad && !html.includes(`src="${einwilligungPfad}"`)) melde(datei, '11 Einwilligung', `Skript ${einwilligungPfad} nicht eingebunden`);
+    // Ausnahme /app/ (AP-26): die Android-Weiche lädt keine Statistik und keinen Hinweis, das Skript darf dort nicht stehen.
+    const ohneStatistik = relative(ordner, datei).split(sep).join('/') === 'app/index.html';
+    if (ohneStatistik) {
+      if (einwilligungPfad && html.includes(`src="${einwilligungPfad}"`)) melde(datei, '11 Einwilligung', '/app/ darf die Einwilligung nicht laden');
+    } else if (einwilligungPfad && !html.includes(`src="${einwilligungPfad}"`)) melde(datei, '11 Einwilligung', `Skript ${einwilligungPfad} nicht eingebunden`);
     const sprache = html.match(/<html[^>]*\slang="([^"]+)"/)?.[1];
     const text = (EINWILLIGUNG[sprache] ?? EINWILLIGUNG.de).fusslink;
     const link = html.match(/<a\b[^>]*\sdata-cc="show-preferencesModal"[^>]*>([^<]*)<\/a>/);

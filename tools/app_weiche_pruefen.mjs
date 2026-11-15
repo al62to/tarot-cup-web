@@ -92,10 +92,12 @@ try {
           links: [...erster.querySelectorAll('.app-links a')].map((a) => a.getAttribute('href')),
           nur: erster.querySelector('.app-nur')?.textContent.trim(),
           qr: qr ? !qr.hidden && getComputedStyle(qr).display !== 'none' : null,
+          // keine Statistik auf /app/: kein Einwilligungshinweis, kein Tag Manager, kein Cookie
+          statistik: !!document.querySelector('script[src*="Einwilligung"], script[src*="googletagmanager"], #cc-main') || document.cookie !== '',
         };
       });
       const ok = !play() && befund.sprachen[0] === ersteSprache && befund.sprachen.length === 12 && befund.h1 === 1 && befund.h1ImErsten
-        && befund.links.length === 4 && befund.qr === qrSichtbar;
+        && befund.links.length === 4 && befund.qr === qrSichtbar && !befund.statistik;
       zeilen.push(`${ok ? 'ok  ' : 'ROT '} ${name.padEnd(17)} ${optionen.locale.padEnd(11)} ${anfrage.padEnd(16)} erste ${befund.sprachen[0]}, QR ${befund.qr ? 'ja' : 'nein'}, „${befund.nur}“`);
       if (!ok) fehler.push(`${name} ${optionen.locale} ${anfrage}: ${JSON.stringify(befund)}, play ${play()}`);
       // Links auf die Erklärseiten: es gibt sie im Bau (Sprungmarke #traumdeutung auf der Startseite)

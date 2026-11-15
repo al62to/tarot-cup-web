@@ -25,7 +25,9 @@ import { OG_LOCALE, OG_LOCALE_ZUSATZ, STANDARD_SPRACHE } from '../daten/adressen
 import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
 import { websiteDaten, herausgeberDaten, jsonLd } from '../daten/strukturiert.mjs';
 
-const { adresse = Astro.url.pathname, daten = [], klasse } = Astro.props;
+// statistik={false}: ohne Einwilligungshinweis und damit ohne Google Tag Manager und Analytics, auch nach früherer
+// Zustimmung (AP-26: die Android-Weiche /app/ leitet nur weiter und speichert nichts).
+const { adresse = Astro.url.pathname, daten = [], klasse, statistik = true } = Astro.props;
 const angaben = seiteVon(adresse);
 const { sprache, titel, beschreibung, fassungen, krumen, bild, bildAlt, art, imIndex, teilen } = angaben;
 const T = oberflaeche[sprache];
@@ -113,6 +115,6 @@ const hinweisZiele = (fassungen ?? []).filter((fassung) => fassung.sprache !== s
       <slot />
     </main>
     <Fuss angaben={angaben} teilen={teilen ? { titel, adresse: kanonisch } : null} />
-    <Einwilligung />
+    {statistik && <Einwilligung />}
   </body>
 </html>
