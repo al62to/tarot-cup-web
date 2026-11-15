@@ -56,7 +56,10 @@
   "qr": "Skeniraj mobitelom",
   "weiter": "Dalje na Google Play",
   "bald": "Tarot Cup uskoro stiže na Google Play. Slobodno se vrati.",
-  "iphone": "Tarot Cup dostupan je isključivo za Android."
+  "iphone": "Tarot Cup dostupan je samo za Android mobitele.",
+  "mehr": "Na našoj web-stranici možeš saznati više:",
+  "kaffeesatz": "Gledanje u šalicu",
+  "traum": "Tumačenje snova"
  },
  "nichtGefunden": {
   "titel": "Stranica nije pronađena",

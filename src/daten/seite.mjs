@@ -63,6 +63,15 @@ export function storeLink(ort, sprache) {
   return `${store.adresse}${hl}&referrer=utm_source%3Dwebsite%26utm_medium%3Dlink%26utm_campaign%3D${ort}`;
 }
 
+// Links, die aus der App geteilt werden, führen auf /app/?von=<art> (AP-26). Android geht von dort zu Google Play mit
+// utm_source=app_teilen, utm_medium=<art>, utm_campaign=teilen; so erkennen Firebase und GA4 (nur bei zugestimmter
+// Statistik in der App) Installationen aus Empfehlungen. Nur diese Arten gelten; alles andere nimmt den Kurzlink.
+export const TEILEN_VON = ['deutung', 'tageskarte', 'traum', 'app'];
+export function teilenStoreLink(von) {
+  if (!TEILEN_VON.includes(von)) throw new Error(`Unbekannte Art für einen geteilten Link: ${von}`);
+  return `${store.adresse}&referrer=utm_source%3Dapp_teilen%26utm_medium%3D${von}%26utm_campaign%3Dteilen`;
+}
+
 // Die E-Mail-Adresse steht im HTML als Zeichenfolge aus HTML-Entitäten (wie bei FoodAsu), nicht als Klartext.
 export function kodiert(text) {
   return [...text].map((zeichen) => `&#${zeichen.codePointAt(0)};`).join('');

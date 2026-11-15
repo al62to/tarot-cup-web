@@ -56,7 +56,10 @@
   "qr": "Scan with your phone",
   "weiter": "Continue to Google Play",
   "bald": "Tarot Cup is coming to Google Play soon. Please check back later.",
-  "iphone": "Tarot Cup is available only for Android."
+  "iphone": "Tarot Cup is only available for Android phones.",
+  "mehr": "Find out more on our website:",
+  "kaffeesatz": "Coffee cup reading",
+  "traum": "Dream interpretation"
  },
  "nichtGefunden": {
   "titel": "Page not found",

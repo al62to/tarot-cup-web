@@ -60,7 +60,11 @@ export const oberflaeche = {
       qr: 'Mit dem Handy scannen',
       weiter: 'Weiter zu Google Play',
       bald: 'Tarot Cup kommt bald zu Google Play. Schau gern wieder vorbei.',
-      iphone: 'Tarot Cup gibt es nur für Android.',
+      // AP-26: steht jetzt oben in jedem Teil, darunter Links auf die Erklärseiten (Tarot und So geht’s aus nav).
+      iphone: 'Tarot Cup gibt es nur für Android-Handys.',
+      mehr: 'Auf unserer Website erfährst du mehr darüber:',
+      kaffeesatz: 'Kaffeesatz lesen',
+      traum: 'Traumdeutung',
     },
     nichtGefunden: {
       titel: 'Seite nicht gefunden',
@@ -155,7 +159,10 @@ export const oberflaeche = {
       qr: 'Telefonunla tara',
       weiter: 'Google Play’e git',
       bald: 'Tarot Cup yakında Google Play’de olacak. Ara ara uğramayı unutma.',
-      iphone: 'Tarot Cup yalnızca Android için var.',
+      iphone: 'Tarot Cup yalnızca Android telefonlarda var.',
+      mehr: 'Daha fazlasını web sitemizde okuyabilirsin:',
+      kaffeesatz: 'Kahve falı',
+      traum: 'Rüya yorumu',
     },
     nichtGefunden: {
       titel: 'Sayfa bulunamadı',

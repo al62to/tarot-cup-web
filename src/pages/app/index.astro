@@ -1,34 +1,59 @@
 ---
-// Kurzlink /app/ (Muster [kurzlink] von FoodAsu, Auftrag Teil F). Ist die App öffentlich, schickt ein kleines eigenes
-// Skript Android-Geräte sofort zum Eintrag bei Google Play (Kennung utm_source=website, utm_campaign=kurzlink); am
-// Computer bleibt diese Seite mit Abzeichen und QR-Code stehen (QR beim Bau lokal erzeugt, er führt wieder auf
-// /app/). iPhone und iPad bleiben auf der Seite und lesen, dass es Tarot Cup nur für Android gibt. Solange die App
-// nicht öffentlich ist, steht hier nur „Bald bei Google Play“. Die Seite gilt für alle Sprachen (Deutsch, Türkisch,
-// Englisch, Spanisch, AP-SPR2); jeder Teil außer dem deutschen trägt lang, das Abzeichen und der Link je Teil die
-// Sprache des Teils. Die Weiterleitung für Android nimmt den Link ohne Sprache (Google Play wählt die Sprache des Geräts).
-// noindex, nicht in Sitemap und llms.txt. Nichts wird gespeichert, nichts von anderen Anbietern geladen.
+// Kurzlink /app/ (Muster [kurzlink] von FoodAsu, Auftrag Teil F), seit AP-26 auch das Ziel aller Links, die aus der App
+// geteilt werden (`/app/?von=<art>`, art = deutung, tageskarte, traum oder app).
+//
+// Android: ein kleines eigenes Skript schickt das Gerät sofort zum Eintrag bei Google Play. Mit bekanntem `von` trägt der
+// Link die Kennung utm_source=app_teilen, utm_medium=<von>, utm_campaign=teilen (Installationen aus Empfehlungen, nur bei
+// zugestimmter Statistik in der App sichtbar); ohne `von` oder mit unbekanntem Wert die bisherige Kennung
+// utm_source=website, utm_campaign=kurzlink. Die vier Ziele stehen fertig in der Seite; der Wert aus der Adresse wird nie in
+// einen Link eingesetzt, sondern nur mit der Liste verglichen (und muss nur aus a bis z bestehen).
+//
+// iPhone, iPad und Computer bleiben auf der Seite. Oben in jedem Teil steht, dass es Tarot Cup nur für Android-Handys gibt,
+// darunter Links auf die Erklärseiten in derselben Sprache (Kaffeesatz lesen, Tarot, Traumdeutung, So geht's). Das Skript
+// stellt den Teil in der Sprache des Browsers nach oben (andere Sprachen: Englisch; ohne Skript: Deutsch zuerst) und zeigt den QR-Code nur am Computer.
+// Jeder Teil außer dem deutschen trägt lang, Abzeichen und Links tragen die Sprache des Teils. Die Weiterleitung für Android
+// nimmt den Link ohne Sprache (Google Play wählt die Sprache des Geräts).
+// noindex, nicht in Sitemap und llms.txt, keine Statistik. Nichts wird gespeichert, nichts von anderen Anbietern geladen.
+// Solange die App nicht öffentlich ist, steht hier nur „Bald bei Google Play“.
 import QRCode from 'qrcode';
 import '../../styles/dokument.css';
 import Basis from '../../layouts/Basis.astro';
 import Storeknopf from '../../components/Storeknopf.astro';
 import Text from '../../components/Text.astro';
-import { seite, store, storeLink } from '../../daten/seite.mjs';
+import { seite, store, storeLink, teilenStoreLink, TEILEN_VON } from '../../daten/seite.mjs';
 import { oberflaeche } from '../../daten/texte/oberflaeche.mjs';
-import { SPRACHEN } from '../../daten/adressen.mjs';
+import { ADRESSEN, SPRACHEN } from '../../daten/adressen.mjs';
 
-const ziel = store.oeffentlich ? storeLink('kurzlink') : null;
 const qr = store.oeffentlich
   ? await QRCode.toString(`${seite.adresse}/app/`, { type: 'svg', margin: 1, errorCorrectionLevel: 'M', color: { dark: '#12162B', light: '#FFFDF8' } })
   : null;
-const weiter = { android: ziel };
+// Ziele für Android: ohne (oder mit unbekanntem) `von` der Kurzlink, sonst je Art ein fester Link.
+const weiter = store.oeffentlich
+  ? { kurzlink: storeLink('kurzlink'), von: Object.fromEntries(TEILEN_VON.map((von) => [von, teilenStoreLink(von)])), sprachen: SPRACHEN }
+  : null;
+const erklaerseiten = (sprache) => {
+  const N = oberflaeche[sprache].nav;
+  const T = oberflaeche[sprache].app;
+  return [
+    { text: T.kaffeesatz, ziel: ADRESSEN.kaffeesatz[sprache] },
+    { text: N.tarot, ziel: ADRESSEN.tarot[sprache] },
+    { text: T.traum, ziel: `${ADRESSEN.start[sprache]}#traumdeutung` },
+    { text: N.sogehts, ziel: ADRESSEN.sogehts[sprache] },
+  ];
+};
 ---
 <Basis klasse="seite-app">
-  <div class="innen schmal app-seite">
+  <div class="innen schmal app-seite" id="app-teile">
     {SPRACHEN.map((sprache) => {
       const T = oberflaeche[sprache].app;
       return (
-        <section class="app-teil" lang={sprache === 'de' ? undefined : sprache}>
+        <section class="app-teil" data-sprache={sprache} lang={sprache === 'de' ? undefined : sprache}>
           {sprache === 'de' ? <h1><Text text={T.titel} ohne /></h1> : <h2><Text text={T.titel} ohne /></h2>}
+          <p class="app-nur"><Text text={T.iphone} ohne /></p>
+          <p class="app-mehr"><Text text={T.mehr} ohne /></p>
+          <ul class="app-links">
+            {erklaerseiten(sprache).map((link) => <li><a href={link.ziel}>{link.text}</a></li>)}
+          </ul>
           {store.oeffentlich ? (
             <>
               <Text text={T.text} />
@@ -41,7 +66,6 @@ const weiter = { android: ziel };
               <Storeknopf sprache={sprache} ort="kurzlink" />
             </>
           )}
-          <Text text={T.iphone} klasse="app-iphone" />
         </section>
       );
     })}
@@ -52,22 +76,53 @@ const weiter = { android: ziel };
       </figure>
     )}
   </div>
-  {weiter.android && (
+  {weiter && (
     <script type="application/json" id="app-weiter" set:html={JSON.stringify(weiter)} />
   )}
+  <script is:inline>
+    // Direkt nach dem Inhalt und ohne Aufschub, damit der Teil in der Sprache des Browsers schon oben steht, bevor die Seite
+    // zu sehen ist. Erkennung allein am User-Agent und an den Sprachen des Browsers; nichts wird gespeichert oder gesendet.
+    (function () {
+      var kennung = navigator.userAgent || '';
+      var daten = document.getElementById('app-weiter');
+      var weiter = null;
+      try { weiter = daten ? JSON.parse(daten.textContent) : null; } catch (fehler) { weiter = null; }
+      if (weiter && /Android/i.test(kennung)) {
+        var von = null;
+        try { von = new URLSearchParams(window.location.search).get('von'); } catch (fehler) { von = null; }
+        var ziel = von && /^[a-z]+$/.test(von) && Object.prototype.hasOwnProperty.call(weiter.von, von) ? weiter.von[von] : weiter.kurzlink;
+        window.location.replace(ziel);
+        return;
+      }
+      // iPhone und iPad (iPadOS meldet sich wie ein Mac, hat aber Touch): kein QR-Code, der gehört an den Computer.
+      var mobil = /iPhone|iPad|iPod|Mobi/i.test(kennung) || (/Macintosh/.test(kennung) && navigator.maxTouchPoints > 0);
+      var qr = document.querySelector('.app-qr');
+      if (mobil && qr) qr.hidden = true;
+      // Teil in der Sprache des Browsers nach oben; die Überschrift erster Ordnung wandert mit.
+      var sprachen = weiter ? weiter.sprachen : ['de', 'tr', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'];
+      var wunsch = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+      var gewaehlt = null;
+      for (var i = 0; i < wunsch.length && !gewaehlt; i++) {
+        var code = String(wunsch[i] || '').toLowerCase().split('-')[0];
+        if (code === 'in') code = 'id';
+        if (sprachen.indexOf(code) >= 0) gewaehlt = code;
+      }
+      // Andere Sprachen des Browsers: Englisch zuerst, wie hreflang x-default der Website
+      if (!gewaehlt) gewaehlt = 'en';
+      if (gewaehlt === 'de') return;
+      var behaelter = document.getElementById('app-teile');
+      var teil = behaelter && behaelter.querySelector('.app-teil[data-sprache="' + gewaehlt + '"]');
+      var erster = behaelter && behaelter.querySelector('.app-teil');
+      if (!teil || !erster || teil === erster) return;
+      var tausche = function (alt, art) {
+        var neu = document.createElement(art);
+        while (alt.firstChild) neu.appendChild(alt.firstChild);
+        alt.parentNode.replaceChild(neu, alt);
+      };
+      var h1 = erster.querySelector('h1');
+      var h2 = teil.querySelector('h2');
+      if (h1 && h2) { tausche(h1, 'h2'); tausche(h2, 'h1'); }
+      behaelter.insertBefore(teil, erster);
+    })();
+  </script>
 </Basis>
-
-<script>
-  // Weiterleitung nur für Android und nur, wenn die Seite ein Ziel nennt (App öffentlich). Erkennung allein am
-  // User-Agent, nichts wird gespeichert oder gesendet.
-  const daten = document.getElementById('app-weiter');
-  if (daten) {
-    try {
-      const { android } = JSON.parse(daten.textContent);
-      const kennung = navigator.userAgent;
-      if (android && /Android/i.test(kennung)) window.location.replace(android);
-    } catch {
-      // Die Seite mit den Links bleibt stehen.
-    }
-  }
-</script>
