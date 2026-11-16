@@ -72,6 +72,14 @@ export function teilenStoreLink(von) {
   return `${store.adresse}&referrer=utm_source%3Dapp_teilen%26utm_medium%3D${von}%26utm_campaign%3Dteilen`;
 }
 
+// Einladen (AP-31): Die App teilt /app/?von=app&e=<CODE>. Die Seite prüft den Code streng (genau 8 Zeichen aus dem Alphabet
+// des Servers, ohne 0, 1, I, L, O) und hängt ihn als tc_e an den Referrer; die eingeladene App liest ihn über den Install
+// Referrer. Ein ungültiger Code wird nie weitergegeben (dann gilt der Link wie ohne e).
+export const EINLADUNG_CODE = /^[23456789ABCDEFGHJKMNPQRSTUVWXYZ]{8}$/;
+export function einladungStoreLinkBasis() {
+  return `${store.adresse}&referrer=utm_source%3Dapp_teilen%26utm_medium%3Dapp%26utm_campaign%3Deinladen%26tc_e%3D`;
+}
+
 // Die E-Mail-Adresse steht im HTML als Zeichenfolge aus HTML-Entitäten (wie bei FoodAsu), nicht als Klartext.
 export function kodiert(text) {
   return [...text].map((zeichen) => `&#${zeichen.codePointAt(0)};`).join('');

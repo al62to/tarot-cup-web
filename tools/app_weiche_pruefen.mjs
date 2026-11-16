@@ -21,6 +21,7 @@ const UA = {
 
 const PLAY = 'https://play.google.com/store/apps/details?id=at.tonc.kaffeesatztarot';
 const kurzlink = `${PLAY}&referrer=utm_source%3Dwebsite%26utm_medium%3Dlink%26utm_campaign%3Dkurzlink`;
+const einladung = (code) => `${PLAY}&referrer=utm_source%3Dapp_teilen%26utm_medium%3Dapp%26utm_campaign%3Deinladen%26tc_e%3D${code}`;
 const teilen = (von) => `${PLAY}&referrer=utm_source%3Dapp_teilen%26utm_medium%3D${von}%26utm_campaign%3Dteilen`;
 
 const ANDROID_FAELLE = [
@@ -36,6 +37,15 @@ const ANDROID_FAELLE = [
   ['?von=deutung%26utm_source%3Dfremd', kurzlink],
   ['?von=%3Cscript%3E', kurzlink],
   ['?von=deutung&von=app', teilen('deutung')],
+  // Einladen (AP-31): e streng geprüft, sonst wie ohne e
+  ['?von=app&e=K7M2Q9XA', einladung('K7M2Q9XA')],
+  ['?e=K7M2Q9XA', einladung('K7M2Q9XA')],
+  ['?von=app&e=k7m2q9xa', teilen('app')],
+  ['?von=app&e=K7M2Q9X', teilen('app')],
+  ['?von=app&e=K7M2Q9XAB', teilen('app')],
+  ['?von=app&e=K7M2Q9X0', teilen('app')],
+  ['?von=app&e=K7M2Q9XA%26tc_e%3DAAAAAAAA', teilen('app')],
+  ['?von=app&e=%3Cscript%3E', teilen('app')],
 ];
 
 const server = spawn(process.execPath, ['tools/vorschau.mjs', ORDNER, String(PORT)], { stdio: 'ignore' });
