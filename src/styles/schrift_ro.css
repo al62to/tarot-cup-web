@@ -1,0 +1,13 @@
+/* Inter für ă Ă ș Ș ț Ț (AP-28): Ausschnitt aus der Datei latin-ext, unverändert und mit allen Strichstärken, erzeugt
+   mit tools/schrift_ro_bauen.mjs. Unter 4 KB, Vite setzt sie direkt ins CSS: „Română“ in der Sprachwahl lädt so keine
+   eigene Schriftdatei mehr (vorher die ganze latin-ext, 85 KB, auf jeder Seite). Steht nach @fontsource-variable/inter
+   (Basis.astro), damit diese Fläche für die sechs Zeichen gewinnt; alle übrigen Zeichen von latin-ext kommen wie bisher
+   aus der vollen Datei (etwa auf /ro/ und /tr/). */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(./schriften/inter-ro.woff2) format('woff2-variations');
+  unicode-range: U+0102-0103, U+0218-021B;
+}

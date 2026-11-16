@@ -81,10 +81,11 @@ export const oberflaeche = {
       eineKarte: 'eine Karte',
       gegenueberKurz: 'gegenüber',
       tassenkarte: 'Tassenkarte von oben: {rand}, {mitte} und {boden}, links {gegenueber}, rechts die {henkelseite} mit dem Henkel, darunter die {untertasse}',
-      // AP-28: die beiden gezeichneten Figuren, ohne Namen (die kommen später).
-      begleiterBeide: 'Zwei gezeichnete Begleiter in Gold auf Nachtblau: eine Frau mit Mokkatasse und ein Mann mit Kupfer-Cezve',
-      begleiterErzaehlerin: 'Gezeichnete Frau mit einer Mokkatasse in den Händen',
-      begleiterErzaehler: 'Gezeichneter Mann mit Kupfer-Cezve und Tasse',
+      // AP-28: die beiden gezeichneten Figuren Aylin und Ozan (Namen von Ali, 16.11.2026); in Nutzertexten kein Oberbegriff
+      // „Begleiter“.
+      begleiterBeide: 'Aylin und Ozan, gezeichnet in Gold auf Nachtblau: sie mit Mokkatasse, er mit Kupfer-Cezve',
+      begleiterErzaehlerin: 'Aylin, gezeichnete Erzählerin mit Mokkatasse',
+      begleiterErzaehler: 'Ozan, gezeichneter Erzähler mit Kupfer-Cezve und Tasse',
     },
     bildnachweis: {
       metaTitel: 'Bildnachweis und Lizenzen | Tarot Cup',
@@ -108,9 +109,9 @@ export const oberflaeche = {
       },
       // AP-28: die beiden Figuren der App.
       begleiter: {
-        titel: 'Die beiden Figuren',
+        titel: 'Aylin und Ozan',
         absaetze: [
-          'Die beiden Figuren auf dieser Website und in der App sind mit dem Bildgenerator von Canva gezeichnet und für Tarot Cup bearbeitet.',
+          'Aylin und Ozan, die beiden Figuren auf dieser Website und in der App, sind mit dem Bildgenerator von Canva gezeichnet und für Tarot Cup bearbeitet.',
         ],
       },
       marken: 'Google Play und das Google Play-Logo sind Marken von Google LLC.',
@@ -191,9 +192,9 @@ export const oberflaeche = {
       gegenueberKurz: 'Karşı taraf',
       tassenkarte: 'Yukarıdan fincan haritası: {rand}, {mitte} ve {boden}; solda {gegenueber}, sağda {henkelseite} ve kulp, altta {untertasse}',
       // ÜBERSETZEN AP-28: die drei Beschreibungen der Figuren vorläufig in der englischen Fassung.
-      begleiterBeide: 'Two illustrated companions in gold on midnight blue: a woman with a cup of Turkish coffee and a man with a copper cezve',
-      begleiterErzaehlerin: 'Illustrated woman holding a cup of Turkish coffee',
-      begleiterErzaehler: 'Illustrated man with a copper cezve and a cup',
+      begleiterBeide: 'Aylin and Ozan, illustrated in gold on midnight blue: she holds a cup of Turkish coffee, he a copper cezve',
+      begleiterErzaehlerin: 'Aylin, an illustrated storyteller holding a cup of Turkish coffee',
+      begleiterErzaehler: 'Ozan, an illustrated storyteller with a copper cezve and a cup',
     },
     bildnachweis: {
       metaTitel: 'Görsel kaynakları ve lisanslar | Tarot Cup',
@@ -217,9 +218,9 @@ export const oberflaeche = {
       },
       // ÜBERSETZEN AP-28: vorläufig die englische Fassung.
       begleiter: {
-        titel: 'The two illustrated figures',
+        titel: 'Aylin and Ozan',
         absaetze: [
-          'The two figures on this website and in the app were drawn with Canva’s image generator and edited for Tarot Cup.',
+          'Aylin and Ozan, the two figures on this website and in the app, were drawn with Canva’s image generator and edited for Tarot Cup.',
         ],
       },
       marken: 'Google Play ve Google Play logosu, Google LLC’nin ticari markalarıdır.',
@@ -250,17 +251,18 @@ oberflaeche.id = oberflaecheId;
 oberflaeche.hi = oberflaecheHi;
 
 // AP-28 (Begleiter): Beschreibungen der Figuren, Sprechblase auf /app/ und Absatz im Bildnachweis für die Sprachen aus
-// den JSON-Dateien. Indonesisch aus deutung-unterlagen/arbeit/ap28/texte_begleiter.md (Absatz im Bildnachweis eigens
-// geschrieben); die übrigen tragen vorläufig die englische Fassung, bis nach dem Zwischenbericht übersetzt wird. Sobald
-// die Texte über tools/texte_einspielen.mjs in den JSON-Dateien stehen, gelten diese, der Block füllt nur Lücken.
+// den JSON-Dateien. Indonesisch: Sprechblase aus deutung-unterlagen/arbeit/ap28/texte_begleiter.md, Beschreibungen und
+// Bildnachweis mit den Namen Aylin und Ozan eigens geschrieben (ohne „pendamping“, kein Oberbegriff). Die übrigen tragen
+// vorläufig die englische Fassung, bis nach dem Zwischenbericht übersetzt wird. Sobald die Texte über
+// tools/texte_einspielen.mjs in den JSON-Dateien stehen, gelten diese, der Block füllt nur Lücken.
 const BEGLEITER_ID = {
-  begleiterBeide: 'Dua pendamping bergambar emas di atas biru malam: seorang perempuan dengan cangkir kopi Turki dan seorang laki-laki dengan cezve tembaga',
-  begleiterErzaehlerin: 'Gambar seorang perempuan yang memegang cangkir kopi Turki',
-  begleiterErzaehler: 'Gambar seorang laki-laki dengan cezve tembaga dan cangkir',
+  begleiterBeide: 'Aylin dan Ozan, digambar dengan warna emas di atas biru malam: Aylin dengan cangkir kopi Turki, Ozan dengan cezve tembaga',
+  begleiterErzaehlerin: 'Aylin, pencerita bergambar yang memegang cangkir kopi Turki',
+  begleiterErzaehler: 'Ozan, pencerita bergambar dengan cezve tembaga dan cangkir',
   blase: 'Tarot Cup hanya tersedia untuk ponsel Android. Kamu tetap bisa membaca di sini bagaimana tarot dan ampas kopi dibaca.',
   bildnachweis: {
-    titel: 'Dua sosok bergambar',
-    absaetze: ['Kedua sosok di situs ini dan di aplikasi digambar dengan generator gambar Canva, lalu disunting untuk Tarot Cup.'],
+    titel: 'Aylin dan Ozan',
+    absaetze: ['Aylin dan Ozan, dua sosok di situs ini dan di aplikasi, digambar dengan generator gambar Canva, lalu disunting untuk Tarot Cup.'],
   },
 };
 // ÜBERSETZEN AP-28: englische Fassung, vorläufig auch für es, bs, hr, sr, ro, pt, fr und hi.
