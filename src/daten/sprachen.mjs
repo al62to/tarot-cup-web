@@ -31,6 +31,10 @@ const fest = [
   { text: 'Kısmet', lang: 'tr', nur: ['de', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
   { text: 'Österreich', lang: 'de', nur: ['tr', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
   { text: 'Höchst', lang: 'de', nur: ['en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'] },
+  // Standort des Servers in den Rechtstexten 1.7 (AP-31): Eigenname, in mehreren Übersetzungen in deutscher Schreibung.
+  { text: 'Nürnberg', lang: 'de', nur: ['tr', 'en', 'es', 'ro', 'pt', 'fr', 'id', 'hi'] },
+  // bs, hr, sr beugen den Namen („u Nürnbergu“)
+  { text: 'Nürnbergu', lang: 'de', nur: ['bs', 'hr', 'sr'] },
 ];
 
 const tuerkisch = ['de', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'].flatMap((sprache) =>
