@@ -57,10 +57,43 @@
 .app-teil { padding: 28px 24px 12px; background: var(--karte); border: 1px solid var(--rand); border-radius: 24px; }
 .app-teil h1, .app-teil h2 { margin-bottom: 14px; font-size: clamp(1.875rem, 1.5rem + 1.5vw, 2.5rem); }
 .app-teil .store { margin-bottom: 16px; }
-.app-nur { margin-bottom: 10px; font-size: 1.125rem; font-weight: 600; }
-.app-mehr { margin-bottom: 6px; color: var(--gedaempft); }
+/* Figur mit Sprechblase (AP-28): ein kleiner Nachthimmel als Bogen (Nachtblau, ein paar goldene Sterne aus Verläufen,
+   nie unter Text), daneben die Blase mit einer Spitze zur Figur. Schmal (unter 32rem Breite des Teils, also auch bei
+   großer Schrift): Figur oben, Blase darunter, Spitze nach oben. Breit: Blase links, Figur rechts, Spitze nach rechts
+   zur offenen Hand der Erzählerin. In den Teilen unter dem ersten ist die Figur kleiner. */
+.app-teil { container-type: inline-size; }
+.app-sprecher { display: flex; flex-direction: column; align-items: center; gap: 18px; margin: 4px 0 18px; }
+.app-figur {
+  position: relative; flex: none; display: block; width: min(8.5rem, 44vw); aspect-ratio: 4 / 5; overflow: hidden;
+  border-radius: 50% 50% 18px 18px / 40% 40% 18px 18px;
+  background:
+    radial-gradient(circle at 16% 22%, var(--gold) 0 1.6px, transparent 2.4px),
+    radial-gradient(circle at 84% 18%, var(--gold) 0 2px, transparent 2.8px),
+    radial-gradient(circle at 30% 8%, var(--gold-hell) 0 1px, transparent 1.8px),
+    radial-gradient(circle at 72% 6%, var(--gold-hell) 0 1.2px, transparent 2px),
+    radial-gradient(circle at 90% 44%, var(--gold-hell) 0 1px, transparent 1.8px),
+    radial-gradient(70% 50% at 50% 0%, #2E3560, transparent 75%),
+    linear-gradient(180deg, var(--tinte), var(--nacht));
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--gold) 50%, transparent), 0 10px 22px rgb(18 22 43 / 0.16);
+}
+.app-figur .figur { position: absolute; left: 4%; bottom: -6px; width: 92%; }
+.app-blase {
+  position: relative; max-width: 30rem; margin: 0; padding: 16px 20px; text-align: start;
+  background: var(--creme); border: 1px solid var(--rand-stark); border-radius: 20px;
+  font-size: 1.0625rem; line-height: 1.55; color: var(--text);
+}
+.app-blase::before {
+  content: ""; position: absolute; left: 50%; top: -9px; width: 16px; height: 16px; margin-left: -8px;
+  background: var(--creme); border: 1px solid var(--rand-stark); border-right: 0; border-bottom: 0; transform: rotate(45deg);
+}
+@container (min-width: 32rem) {
+  .app-sprecher { flex-direction: row-reverse; justify-content: center; gap: 22px; }
+  .app-figur { width: 10rem; }
+  .app-blase::before { left: auto; right: -9px; top: 58%; margin: -8px 0 0; border: 1px solid var(--rand-stark); border-left: 0; border-bottom: 0; }
+}
+.app-teil:not(:first-child) .app-figur { width: 6.5rem; }
 .app-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 18px; margin: 0 0 22px; padding: 0; list-style: none; }
-.app-links a { display: inline-block; padding: 10px 2px; }
+.app-links a { display: inline-block; min-width: 44px; padding: 10px 2px; text-align: center; }
 .app-qr { margin: 8px auto 0; padding: 20px; background: var(--karte); border: 1px solid var(--rand); border-radius: 20px; }
 .app-qr svg { display: block; width: 180px; height: 180px; margin: 0 auto 10px; }
 .app-qr figcaption { font-size: 0.875rem; color: var(--gedaempft); }

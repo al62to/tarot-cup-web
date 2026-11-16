@@ -1,6 +1,7 @@
 ---
-// Startseite in einer Sprache nach Entwurf 9.1 (design/reihe9/WebNeu.dc.html, Auftrag AP-W2): Titelbild mit Karte zum
-// Umdrehen und Zahlenband (Titelbild.astro), „Was ist Tarot Cup?“ (Pflicht, im Entwurf nicht zu sehen), das Ritual mit
+// Startseite in einer Sprache nach Entwurf 9.1 (design/reihe9/WebNeu.dc.html, Auftrag AP-W2): Titelbild mit den beiden
+// Figuren der App (seit AP-28) und Zahlenband (Titelbild.astro), „Was ist Tarot Cup?“ (Pflicht, im Entwurf nicht zu
+// sehen) mit der Karte zum Umdrehen (bis AP-28 im Titelbild, Wendekarte.astro), das Ritual mit
 // der Tassenkarte zum Antippen, der Schaukasten mit einem Handy (Schaukasten.astro), „Was die App kann“ als
 // Kachelraster, zwei Ratgeber-Kacheln (Bild oben in eigenem Bereich, Text darunter, nie überlappend) und häufige
 // Fragen mit Trennlinien. Der Hinweis „Zur Unterhaltung …“ steht seit AP-W2 im Fuß jeder Seite.
@@ -16,6 +17,7 @@ import Schaukasten from './Schaukasten.astro';
 import Tassenkarte from './Tassenkarte.astro';
 import Text from './Text.astro';
 import Titelbild from './Titelbild.astro';
+import Wendekarte from './Wendekarte.astro';
 import Storeknopf from './Storeknopf.astro';
 import { store } from '../daten/seite.mjs';
 import { start } from '../daten/texte/start.mjs';
@@ -53,8 +55,11 @@ const SYMBOL = {
   <Titelbild sprache={sprache} kopf={T.kopf} zahlen={T.zahlen} />
 
   <section class="wasist innen" aria-labelledby="wasist-titel">
-    <h2 id="wasist-titel" class="start-titel"><Betont text={T.wasIst.titel} /></h2>
-    <Text text={T.wasIst.text} klasse="wasist-text" />
+    <div class="wasist-teil">
+      <h2 id="wasist-titel" class="start-titel"><Betont text={T.wasIst.titel} /></h2>
+      <Text text={T.wasIst.text} klasse="wasist-text" />
+    </div>
+    <Wendekarte sprache={sprache} karte={T.kopf.karte} />
   </section>
 
   <section class="ritual innen" aria-labelledby="ritual-titel">

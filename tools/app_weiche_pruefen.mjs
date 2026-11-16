@@ -90,14 +90,16 @@ try {
           h1: document.querySelectorAll('h1').length,
           h1ImErsten: !!erster.querySelector('h1'),
           links: [...erster.querySelectorAll('.app-links a')].map((a) => a.getAttribute('href')),
-          nur: erster.querySelector('.app-nur')?.textContent.trim(),
+          // seit AP-28 steht der Satz „nur für Android-Handys“ in der Sprechblase der Figur
+          nur: erster.querySelector('.app-blase')?.textContent.trim(),
+          figur: !!erster.querySelector('.app-figur img[alt]:not([alt=""])'),
           qr: qr ? !qr.hidden && getComputedStyle(qr).display !== 'none' : null,
           // keine Statistik auf /app/: kein Einwilligungshinweis, kein Tag Manager, kein Cookie
           statistik: !!document.querySelector('script[src*="Einwilligung"], script[src*="googletagmanager"], #cc-main') || document.cookie !== '',
         };
       });
       const ok = !play() && befund.sprachen[0] === ersteSprache && befund.sprachen.length === 12 && befund.h1 === 1 && befund.h1ImErsten
-        && befund.links.length === 4 && befund.qr === qrSichtbar && !befund.statistik;
+        && befund.links.length === 4 && befund.qr === qrSichtbar && !befund.statistik && !!befund.nur && befund.figur;
       zeilen.push(`${ok ? 'ok  ' : 'ROT '} ${name.padEnd(17)} ${optionen.locale.padEnd(11)} ${anfrage.padEnd(16)} erste ${befund.sprachen[0]}, QR ${befund.qr ? 'ja' : 'nein'}, „${befund.nur}“`);
       if (!ok) fehler.push(`${name} ${optionen.locale} ${anfrage}: ${JSON.stringify(befund)}, play ${play()}`);
       // Links auf die Erklärseiten: es gibt sie im Bau (Sprungmarke #traumdeutung auf der Startseite)

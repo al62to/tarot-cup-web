@@ -19,14 +19,26 @@
   content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background-size: 160px 160px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='k'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url%28%23k%29' opacity='.09'/%3E%3C/svg%3E");
 }
-.titel-raster { display: flex; flex-wrap: wrap; align-items: center; gap: 40px 48px; padding-top: clamp(36px, 5vw, 56px); padding-bottom: clamp(44px, 6vw, 72px); }
-.titel-text { flex: 999 1 32.5rem; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
+/* Raster (AP-28): am Handy eine Spalte in der Reihenfolge des Quelltexts (Zeile, Überschrift, Figuren, Knöpfe, Absatz),
+   ab 60rem links der Text (Absatz vor den Knöpfen wie im Entwurf), rechts die Bühne mit den Figuren, senkrecht mittig.
+   Die leeren Zeilen oben und unten (1fr) nehmen den Platz auf, wenn die Bühne höher ist als der Text. */
+.titel-raster { display: grid; grid-template-columns: minmax(0, 1fr); align-items: start; gap: 24px; padding-top: clamp(36px, 5vw, 56px); padding-bottom: clamp(44px, 6vw, 72px); }
+.titel-raster > * { min-width: 0; margin-block: 0; }
+@media (min-width: 60rem) {
+  .titel-raster { grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr); grid-template-rows: 1fr repeat(4, auto) 1fr; column-gap: 48px; }
+  .titel-raster > * { grid-column: 1; }
+  .titel-zeile { grid-row: 2; }
+  .titel h1 { grid-row: 3; }
+  .titel-absatz { grid-row: 4; }
+  .titel-knoepfe { grid-row: 5; }
+  .titel-raster > .begleiter-buehne { grid-column: 2; grid-row: 1 / -1; align-self: center; justify-self: center; max-width: 34rem; }
+}
 .titel-zeile { margin: 0; font: 600 0.8125rem/1.4 var(--sans); letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); }
 .titel h1 { font-size: min(max(3.125rem, 8.2cqw), 7.25rem, 12.8cqw); font-weight: 500; line-height: 0.95; letter-spacing: -0.01em; color: var(--creme); text-wrap: initial; }
 /* Ein Satz je Zeile; nur ein Satz, der allein zu lang ist, bricht (ausgewogen) um. */
 .titel-satz { display: block; text-wrap: balance; }
 .titel-absatz { max-width: 34rem; margin: 0; font-size: 1.125rem; line-height: 1.65; color: var(--hell-gedaempft); }
-.titel-knoepfe { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 16px; margin-top: 4px; }
+.titel-knoepfe { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 16px; }
 /* Abzeichen im Titelbild: 56 px hoch wie der Zweitknopf, freier Raum 14 px (ein Viertel) über den Abstand der Knöpfe. */
 .titel-store { justify-content: flex-start; margin-block: 0; }
 .titel-knopf { display: inline-flex; align-items: center; gap: 10px; min-height: 56px; margin: 0; padding: 0 22px; border: 1px solid transparent; border-radius: 14px; font: 600 0.9375rem/1.2 var(--sans); text-decoration: none; }
@@ -37,6 +49,31 @@ a.titel-knopf-hell:hover { background: var(--papier); color: var(--espresso); }
 .titel-knopf-rand { border-color: var(--gold-mittel); color: var(--creme); }
 .titel-knopf-rand svg { width: 16px; height: 16px; stroke: var(--gold); stroke-width: 2; }
 .titel-knopf-rand:hover { border-color: var(--gold); background: var(--gold-fein); color: var(--creme); }
+
+/* Bühne mit den beiden Figuren (AP-28): Nachthimmel als Bogen (Nachtblau mit leichtem Licht von oben, eine feine
+   goldene Linie innen), ein paar goldene Sterne als kleines SVG hinter den Figuren. Seitenverhältnis fest (400 : 310),
+   die Figuren stehen unten auf der Kante und ragen 10 px darunter (überdeckt), damit beim Schweben keine Lücke
+   aufgeht. Kein Text liegt auf der Bühne. */
+.begleiter-buehne {
+  position: relative; isolation: isolate; overflow: hidden; width: 100%; max-width: 30rem; aspect-ratio: 400 / 310;
+  border-radius: 50% 50% 24px 24px / 36% 36% 24px 24px;
+  background:
+    radial-gradient(70% 55% at 50% 0%, color-mix(in srgb, var(--tinte) 55%, #3A4170), transparent 75%),
+    radial-gradient(60% 45% at 50% 100%, color-mix(in srgb, var(--gold) 16%, transparent), transparent 80%),
+    linear-gradient(180deg, var(--tinte), var(--nacht));
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--gold) 45%, transparent), 0 30px 60px rgb(0 0 0 / 0.45);
+}
+.begleiter-buehne::before {
+  content: ""; position: absolute; inset: 9px 9px -2px; z-index: -1; pointer-events: none;
+  border: 1px solid color-mix(in srgb, var(--gold) 30%, transparent); border-bottom: 0;
+  border-radius: 50% 50% 0 0 / 36% 36% 0 0;
+}
+.buehne-sterne { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; pointer-events: none; }
+.buehne-stern { fill: var(--gold); opacity: 0.85; }
+.buehne-punkt { fill: var(--gold-hell); opacity: 0.7; }
+.begleiter-buehne .buehne-figur { position: absolute; bottom: -10px; width: 50%; }
+.buehne-links { left: 0; }
+.buehne-rechts { right: 0; }
 
 /* Karte zum Umdrehen: Bühne 340 x 460 wie im Entwurf, alle Teile in Prozent davon. */
 .titel-karten { flex: 1 1 21.25rem; display: flex; flex-direction: column; align-items: center; gap: 18px; }
@@ -61,6 +98,8 @@ button.wende { cursor: pointer; }
 /* Ohne JavaScript: nur die Vorderseite (der Magier), kein Knopf, kein Tipp. */
 html:not(.js) .wende-rueck { display: none; }
 html:not(.js) .wende-vorn { transform: none; }
+/* Ohne JavaScript zeigt das Bild im noscript den Magier; das leere Bild für das spätere Laden bleibt weg. */
+html:not(.js) .wende-bild[data-spaet-src] { display: none; }
 .wende-text { display: flex; flex-direction: column; align-items: center; gap: 4px; min-height: 4.75rem; max-width: 20rem; margin: 0; text-align: center; }
 .wende-name { font: 600 1.5rem/1.2 var(--serif); color: var(--creme); }
 .wende-name:empty { display: none; }
@@ -74,9 +113,16 @@ html:not(.js) .wende-vorn { transform: none; }
 .zahl-text { font-size: 0.9375rem; line-height: 1.45; color: var(--hell-gedaempft); }
 
 /* ---------- Was ist Tarot Cup? Ruhig auf hellem Grund ---------- */
-.wasist { display: flex; flex-wrap: wrap; align-items: baseline; gap: 20px 64px; padding-top: clamp(64px, 8vw, 104px); padding-bottom: clamp(56px, 7vw, 88px); }
-.wasist h2 { flex: 1 1 18rem; }
-.wasist-text { flex: 1 1 26rem; max-width: 42.5rem; margin: 0; font-size: clamp(1.125rem, 1rem + 0.45vw, 1.3125rem); line-height: 1.7; color: var(--text); }
+/* Seit AP-28 links Überschrift und Text untereinander, rechts die Karte zum Umdrehen (vorher im Titelbild). Auf dem
+   hellen Grund trägt die Schrift unter der Karte die dunklen Töne. */
+.wasist { display: flex; flex-wrap: wrap; align-items: center; gap: 48px 64px; overflow-x: clip; padding-top: clamp(64px, 8vw, 104px); padding-bottom: clamp(56px, 7vw, 88px); }
+.wasist-teil { flex: 999 1 30rem; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
+.wasist-text { max-width: 42.5rem; margin: 0; font-size: clamp(1.125rem, 1rem + 0.45vw, 1.3125rem); line-height: 1.7; color: var(--text); }
+.wasist .stapel-ringe { stroke: var(--gold-linie); }
+.wasist .wende-name { color: var(--tinte); }
+.wasist .wende-satz { color: var(--gedaempft); }
+.wasist .stapel-hinten { box-shadow: 0 14px 30px rgb(43 29 22 / 0.28); }
+.wasist .wende-seite { box-shadow: 0 18px 36px rgb(43 29 22 / 0.32); }
 
 /* ---------- Das Ritual: Magazin-Liste links, Tassenkarte rechts ---------- */
 .ritual {
@@ -243,7 +289,9 @@ button.schau-eintrag:hover { border-color: var(--gold-mittel); }
 /* ---------- Bewegung ---------- */
 @media (prefers-reduced-motion: no-preference) {
   .stapel-ringe { animation: ringe 90s linear infinite; }
+  .buehne-stern.funkeln { animation: funkeln 5.5s ease-in-out infinite; }
 }
+@keyframes funkeln { 0%, 100% { opacity: 0.85; } 50% { opacity: 0.25; } }
 @keyframes ringe { to { transform: rotate(1turn); } }
 @media (prefers-reduced-motion: reduce) {
   .wende-dreh { transition: none; }

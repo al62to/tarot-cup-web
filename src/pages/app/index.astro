@@ -8,8 +8,10 @@
 // utm_source=website, utm_campaign=kurzlink. Die vier Ziele stehen fertig in der Seite; der Wert aus der Adresse wird nie in
 // einen Link eingesetzt, sondern nur mit der Liste verglichen (und muss nur aus a bis z bestehen).
 //
-// iPhone, iPad und Computer bleiben auf der Seite. Oben in jedem Teil steht, dass es Tarot Cup nur für Android-Handys gibt,
-// darunter Links auf die Erklärseiten in derselben Sprache (Kaffeesatz lesen, Tarot, Traumdeutung, So geht's). Das Skript
+// iPhone, iPad und Computer bleiben auf der Seite. Oben in jedem Teil sagt die Erzählerin (eine der beiden gezeichneten
+// Figuren der App, fest gewählt, weil sie mit offener Hand auf ihre Sprechblase zeigt; AP-28) in einer Sprechblase, dass
+// es Tarot Cup nur für Android-Handys gibt, darunter Links auf die Erklärseiten in derselben Sprache (Kaffeesatz lesen,
+// Tarot, Traumdeutung, So geht's). Dieselbe Datei für alle Teile (gleiche sizes), der Teil oben lädt sie mit Vorrang. Das Skript
 // stellt den Teil in der Sprache des Browsers nach oben (andere Sprachen: Englisch; ohne Skript: Deutsch zuerst) und zeigt den QR-Code nur am Computer.
 // Jeder Teil außer dem deutschen trägt lang, Abzeichen und Links tragen die Sprache des Teils. Die Weiterleitung für Android
 // nimmt den Link ohne Sprache (Google Play wählt die Sprache des Geräts).
@@ -18,12 +20,15 @@
 import QRCode from 'qrcode';
 import '../../styles/dokument.css';
 import Basis from '../../layouts/Basis.astro';
+import Begleiterbild from '../../components/Begleiterbild.astro';
 import Storeknopf from '../../components/Storeknopf.astro';
 import Text from '../../components/Text.astro';
 import { seite, store, storeLink, teilenStoreLink, TEILEN_VON } from '../../daten/seite.mjs';
 import { oberflaeche } from '../../daten/texte/oberflaeche.mjs';
 import { ADRESSEN, SPRACHEN } from '../../daten/adressen.mjs';
 
+// Figur der Sprechblase: ein fester Wert, kein Zufall (AP-28).
+const FIGUR = 'erzaehlerin';
 const qr = store.oeffentlich
   ? await QRCode.toString(`${seite.adresse}/app/`, { type: 'svg', margin: 1, errorCorrectionLevel: 'M', color: { dark: '#12162B', light: '#FFFDF8' } })
   : null;
@@ -44,13 +49,17 @@ const erklaerseiten = (sprache) => {
 ---
 <Basis klasse="seite-app" statistik={false}>
   <div class="innen schmal app-seite" id="app-teile">
-    {SPRACHEN.map((sprache) => {
+    {SPRACHEN.map((sprache, nummer) => {
       const T = oberflaeche[sprache].app;
       return (
         <section class="app-teil" data-sprache={sprache} lang={sprache === 'de' ? undefined : sprache}>
           {sprache === 'de' ? <h1><Text text={T.titel} ohne /></h1> : <h2><Text text={T.titel} ohne /></h2>}
-          <p class="app-nur"><Text text={T.iphone} ohne /></p>
-          <p class="app-mehr"><Text text={T.mehr} ohne /></p>
+          <div class="app-sprecher">
+            <span class="app-figur">
+              <Begleiterbild name={FIGUR} alt={oberflaeche[sprache].bilder[FIGUR === 'erzaehlerin' ? 'begleiterErzaehlerin' : 'begleiterErzaehler']} groessen="(min-width: 40rem) 148px, 126px" vorrang={nummer === 0} />
+            </span>
+            <p class="app-blase"><Text text={T.blase} ohne /></p>
+          </div>
           <ul class="app-links">
             {erklaerseiten(sprache).map((link) => <li><a href={link.ziel}>{link.text}</a></li>)}
           </ul>

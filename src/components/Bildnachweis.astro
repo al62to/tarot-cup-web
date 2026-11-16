@@ -1,6 +1,6 @@
 ---
-// Bildnachweis und Lizenzen: Kartenbilder von 1909 (wie der Bildnachweis der App), Schriften der Website, Marke
-// Google Play (nur, wenn das Abzeichen gezeigt wird).
+// Bildnachweis und Lizenzen: Kartenbilder von 1909 (wie der Bildnachweis der App), die beiden gezeichneten Figuren
+// (seit AP-28), Schriften der Website, Marke Google Play (nur, wenn das Abzeichen gezeigt wird).
 import '../styles/dokument.css';
 import Basis from '../layouts/Basis.astro';
 import Text from './Text.astro';
@@ -16,7 +16,7 @@ const T = oberflaeche[sprache].bildnachweis;
     <Text text={T.vorspann} klasse="vorspann" />
   </header>
   <div class="innen schmal dokument">
-    {[T.karten, T.schriften].map((teil) => (
+    {[T.karten, T.begleiter, T.schriften].map((teil) => (
       <section>
         <h2>{teil.titel}</h2>
         {teil.absaetze.map((absatz) => <Text text={absatz} />)}

@@ -59,7 +59,7 @@
   --fokus: var(--gold-linie);
   --gold-fein: color-mix(in srgb, var(--gold) 20%, transparent);
   --gold-mittel: color-mix(in srgb, var(--gold) 48%, transparent);
-  --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --serif: 'Cormorant Garamond', 'Cormorant Ersatz', Georgia, 'Times New Roman', serif;
   --sans: 'Inter Variable', Inter, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --breite: 75rem;
   --rand-seite: 16px;

@@ -65,6 +65,8 @@ export const oberflaeche = {
       mehr: 'Auf unserer Website erfährst du mehr darüber:',
       kaffeesatz: 'Kaffeesatz lesen',
       traum: 'Traumdeutung',
+      // AP-28: Sprechblase der Figur, steht statt iphone und mehr über den Links auf die Erklärseiten.
+      blase: 'Tarot Cup gibt es nur für Android-Handys. Lies gern hier weiter, wie Tarot und Kaffeesatz funktionieren.',
     },
     nichtGefunden: {
       titel: 'Seite nicht gefunden',
@@ -79,6 +81,10 @@ export const oberflaeche = {
       eineKarte: 'eine Karte',
       gegenueberKurz: 'gegenüber',
       tassenkarte: 'Tassenkarte von oben: {rand}, {mitte} und {boden}, links {gegenueber}, rechts die {henkelseite} mit dem Henkel, darunter die {untertasse}',
+      // AP-28: die beiden gezeichneten Figuren, ohne Namen (die kommen später).
+      begleiterBeide: 'Zwei gezeichnete Begleiter in Gold auf Nachtblau: eine Frau mit Mokkatasse und ein Mann mit Kupfer-Cezve',
+      begleiterErzaehlerin: 'Gezeichnete Frau mit einer Mokkatasse in den Händen',
+      begleiterErzaehler: 'Gezeichneter Mann mit Kupfer-Cezve und Tasse',
     },
     bildnachweis: {
       metaTitel: 'Bildnachweis und Lizenzen | Tarot Cup',
@@ -98,6 +104,13 @@ export const oberflaeche = {
         absaetze: [
           'Die Website verwendet zwei Schriften: Cormorant Garamond von Christian Thalmann und Inter von Rasmus Andersson. Beide stehen unter der SIL Open Font License, Version 1.1.',
           'Die Schriftdateien liegen auf dieser Website selbst und werden nicht von fremden Servern geladen.',
+        ],
+      },
+      // AP-28: die beiden Figuren der App.
+      begleiter: {
+        titel: 'Die beiden Figuren',
+        absaetze: [
+          'Die beiden Figuren auf dieser Website und in der App sind mit dem Bildgenerator von Canva gezeichnet und für Tarot Cup bearbeitet.',
         ],
       },
       marken: 'Google Play und das Google Play-Logo sind Marken von Google LLC.',
@@ -163,6 +176,8 @@ export const oberflaeche = {
       mehr: 'Daha fazlasını web sitemizde okuyabilirsin:',
       kaffeesatz: 'Kahve falı',
       traum: 'Rüya yorumu',
+      // ÜBERSETZEN AP-28: vorläufig die englische Fassung.
+      blase: 'Tarot Cup is only available for Android phones. You can still read here about how tarot and coffee reading work.',
     },
     nichtGefunden: {
       titel: 'Sayfa bulunamadı',
@@ -175,6 +190,10 @@ export const oberflaeche = {
       eineKarte: 'tek kart',
       gegenueberKurz: 'Karşı taraf',
       tassenkarte: 'Yukarıdan fincan haritası: {rand}, {mitte} ve {boden}; solda {gegenueber}, sağda {henkelseite} ve kulp, altta {untertasse}',
+      // ÜBERSETZEN AP-28: die drei Beschreibungen der Figuren vorläufig in der englischen Fassung.
+      begleiterBeide: 'Two illustrated companions in gold on midnight blue: a woman with a cup of Turkish coffee and a man with a copper cezve',
+      begleiterErzaehlerin: 'Illustrated woman holding a cup of Turkish coffee',
+      begleiterErzaehler: 'Illustrated man with a copper cezve and a cup',
     },
     bildnachweis: {
       metaTitel: 'Görsel kaynakları ve lisanslar | Tarot Cup',
@@ -194,6 +213,13 @@ export const oberflaeche = {
         absaetze: [
           'Sitede iki yazı tipi kullanılıyor: Christian Thalmann’ın tasarladığı Cormorant Garamond ve Rasmus Andersson’un tasarladığı Inter. İkisi de SIL Open Font License 1.1 lisansıyla sunulur.',
           'Yazı tipi dosyaları bu sitenin içinde durur, başka sunuculardan yüklenmez.',
+        ],
+      },
+      // ÜBERSETZEN AP-28: vorläufig die englische Fassung.
+      begleiter: {
+        titel: 'The two illustrated figures',
+        absaetze: [
+          'The two figures on this website and in the app were drawn with Canva’s image generator and edited for Tarot Cup.',
         ],
       },
       marken: 'Google Play ve Google Play logosu, Google LLC’nin ticari markalarıdır.',
@@ -222,3 +248,46 @@ oberflaeche.pt = oberflaechePt;
 oberflaeche.fr = oberflaecheFr;
 oberflaeche.id = oberflaecheId;
 oberflaeche.hi = oberflaecheHi;
+
+// AP-28 (Begleiter): Beschreibungen der Figuren, Sprechblase auf /app/ und Absatz im Bildnachweis für die Sprachen aus
+// den JSON-Dateien. Indonesisch aus deutung-unterlagen/arbeit/ap28/texte_begleiter.md (Absatz im Bildnachweis eigens
+// geschrieben); die übrigen tragen vorläufig die englische Fassung, bis nach dem Zwischenbericht übersetzt wird. Sobald
+// die Texte über tools/texte_einspielen.mjs in den JSON-Dateien stehen, gelten diese, der Block füllt nur Lücken.
+const BEGLEITER_ID = {
+  begleiterBeide: 'Dua pendamping bergambar emas di atas biru malam: seorang perempuan dengan cangkir kopi Turki dan seorang laki-laki dengan cezve tembaga',
+  begleiterErzaehlerin: 'Gambar seorang perempuan yang memegang cangkir kopi Turki',
+  begleiterErzaehler: 'Gambar seorang laki-laki dengan cezve tembaga dan cangkir',
+  blase: 'Tarot Cup hanya tersedia untuk ponsel Android. Kamu tetap bisa membaca di sini bagaimana tarot dan ampas kopi dibaca.',
+  bildnachweis: {
+    titel: 'Dua sosok bergambar',
+    absaetze: ['Kedua sosok di situs ini dan di aplikasi digambar dengan generator gambar Canva, lalu disunting untuk Tarot Cup.'],
+  },
+};
+// ÜBERSETZEN AP-28: englische Fassung, vorläufig auch für es, bs, hr, sr, ro, pt, fr und hi.
+const BEGLEITER_EN = {
+  begleiterBeide: oberflaeche.tr.bilder.begleiterBeide,
+  begleiterErzaehlerin: oberflaeche.tr.bilder.begleiterErzaehlerin,
+  begleiterErzaehler: oberflaeche.tr.bilder.begleiterErzaehler,
+  blase: oberflaeche.tr.app.blase,
+  bildnachweis: oberflaeche.tr.bildnachweis.begleiter,
+};
+const BEGLEITER = {
+  id: BEGLEITER_ID,
+  en: BEGLEITER_EN, // ÜBERSETZEN AP-28
+  es: BEGLEITER_EN, // ÜBERSETZEN AP-28
+  bs: BEGLEITER_EN, // ÜBERSETZEN AP-28
+  hr: BEGLEITER_EN, // ÜBERSETZEN AP-28
+  sr: BEGLEITER_EN, // ÜBERSETZEN AP-28
+  ro: BEGLEITER_EN, // ÜBERSETZEN AP-28
+  pt: BEGLEITER_EN, // ÜBERSETZEN AP-28
+  fr: BEGLEITER_EN, // ÜBERSETZEN AP-28
+  hi: BEGLEITER_EN, // ÜBERSETZEN AP-28
+};
+for (const [sprache, texte] of Object.entries(BEGLEITER)) {
+  const ziel = oberflaeche[sprache];
+  ziel.bilder.begleiterBeide ??= texte.begleiterBeide;
+  ziel.bilder.begleiterErzaehlerin ??= texte.begleiterErzaehlerin;
+  ziel.bilder.begleiterErzaehler ??= texte.begleiterErzaehler;
+  ziel.app.blase ??= texte.blase;
+  ziel.bildnachweis.begleiter ??= texte.bildnachweis;
+}

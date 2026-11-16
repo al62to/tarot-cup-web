@@ -1,0 +1,33 @@
+---
+// Eine der beiden gezeichneten Figuren (AP-28, Begleiter der App): freigestellt, 4:5, durchsichtiger Hintergrund, als
+// AVIF und WebP in vier Breiten (public/bilder/begleiter/<name>-<breite>.<format>, Herkunft als XMP in den Dateien).
+// Darüber im Code gezeichneter Dampf aus der Tasse. Schweben und Dampf nur per CSS (begleiter.css), bei reduzierter
+// Bewegung steht alles still. Den Himmel dahinter zeichnet die Seite, die das Bild einsetzt.
+// "vorrang": Bild im ersten Bildschirm, der Browser lädt es zuerst und nie verzögert.
+// "groessen": sizes wie beim Kartenbild; dieselben Werte auf einer Seite laden dieselbe Datei nur einmal.
+import '../styles/begleiter.css';
+
+const NAMEN = ['erzaehlerin', 'erzaehler'];
+const BREITEN = [240, 360, 480, 720];
+const { name, alt = '', groessen, vorrang = false, klasse } = Astro.props;
+if (!NAMEN.includes(name)) throw new Error(`Begleiterbild: unbekannte Figur ${name}`);
+if (!groessen) throw new Error('Begleiterbild: groessen (sizes) fehlt');
+const quellen = (format) => BREITEN.map((breite) => `/bilder/begleiter/${name}-${breite}.${format} ${breite}w`).join(', ');
+---
+<span class:list={['figur', `figur-${name}`, klasse]}>
+  <picture>
+    <source type="image/avif" srcset={quellen('avif')} sizes={groessen} />
+    <source type="image/webp" srcset={quellen('webp')} sizes={groessen} />
+    <img
+      class="figur-bild"
+      src={`/bilder/begleiter/${name}-480.webp`}
+      width="720"
+      height="900"
+      alt={alt}
+      loading={vorrang ? 'eager' : 'lazy'}
+      fetchpriority={vorrang ? 'high' : undefined}
+      decoding={vorrang ? 'sync' : 'async'}
+    />
+  </picture>
+  <span class="figur-dampf" aria-hidden="true"><i></i><i></i><i></i></span>
+</span>

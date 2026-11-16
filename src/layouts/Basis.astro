@@ -14,6 +14,9 @@ import interLatein from '@fontsource-variable/inter/files/inter-latin-wght-norma
 // Zeile nicht erst in der Ersatzschrift erscheint und dann springt (Lighthouse, Verschiebung des Layouts).
 import titelNormal from '@fontsource/cormorant-garamond/files/cormorant-garamond-latin-500-normal.woff2?url';
 import titelKursiv from '@fontsource/cormorant-garamond/files/cormorant-garamond-latin-500-italic.woff2?url';
+// /app/ (AP-28): Überschriften in Cormorant 600 früh laden, sonst springt die Figur mit der Sprechblase nach oben, wenn
+// die Schrift nachkommt (die Überschrift wird dann eine Zeile kürzer).
+import titelFett from '@fontsource/cormorant-garamond/files/cormorant-garamond-latin-600-normal.woff2?url';
 import Kopf from '../components/Kopf.astro';
 import Fuss from '../components/Fuss.astro';
 import Brotkrumen from '../components/Brotkrumen.astro';
@@ -104,6 +107,7 @@ const hinweisZiele = (fassungen ?? []).filter((fassung) => fassung.sprache !== s
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preload" href={interLatein} as="font" type="font/woff2" crossorigin />
     {klasse === 'seite-start' && [titelNormal, titelKursiv].map((datei) => <link rel="preload" href={datei} as="font" type="font/woff2" crossorigin />)}
+    {klasse === 'seite-app' && <link rel="preload" href={titelFett} as="font" type="font/woff2" crossorigin />}
     {alleDaten.map((eintrag) => <script type="application/ld+json" set:html={jsonLd(eintrag)} />)}
   </head>
   <body class={klasse}>

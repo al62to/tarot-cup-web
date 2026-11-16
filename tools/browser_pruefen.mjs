@@ -80,7 +80,9 @@ try {
         }).catch(() => ({ lokal: 0, sitzung: 0, dbs: 0, caches: 0, cookie: '' }));
         const cookies = (await umgebung.cookies()).length + (speicher.cookie ? 1 : 0);
         const belegt = speicher.lokal + speicher.sitzung + speicher.dbs + speicher.caches;
-        const gut = status === 200 && cookies === 0 && belegt === 0 && fremd.length === 0 && hinweis !== 'nein';
+        // /app/ zeigt seit AP-26 bewusst keinen Hinweis zur Einwilligung (keine Statistik dort); dort ist „nein“ richtig.
+        const hinweisRichtig = pfad === '/app/' ? hinweis === 'nein' : hinweis !== 'nein';
+        const gut = status === 200 && cookies === 0 && belegt === 0 && fremd.length === 0 && hinweisRichtig;
         if (!gut) fehler++;
         if (breite === 390 || !gut) zeilen.push(`| \`${pfad}\` (${breite}) | ${status} | ${hinweis} | ${cookies} | ${belegt} | ${fremd.length ? fremd.map((eintrag) => eintrag.url).join(', ') : 0} |`);
         await umgebung.close();
