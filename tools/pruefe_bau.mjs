@@ -399,6 +399,8 @@ export function pruefeBau(ordner, { still = false } = {}) {
     const rest = html
       .replace(/<(script|style|title)\b[\s\S]*?<\/\1>/g, ' ')
       .replace(/<span lang="[^"]+">[^<]*<\/span>/g, ' ')
+      // Abschnitte einer anderen Sprache tragen lang selbst (AP-28: /app/ hat je Sprache einen Abschnitt mit Sprechblase).
+      .replace(/<section\b[^>]*\slang="[^"]+"[^>]*>[\s\S]*?<\/section>/g, ' ')
       // Links der Sprachwahl tragen lang selbst (AP-W6).
       .replace(/<a\b[^>]*\slang="[^"]+"[^>]*>[^<]*<\/a>/g, ' ')
       .replace(/<[^>]+>/g, ' ');

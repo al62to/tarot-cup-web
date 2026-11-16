@@ -177,8 +177,6 @@ export const oberflaeche = {
       mehr: 'Daha fazlasını web sitemizde okuyabilirsin:',
       kaffeesatz: 'Kahve falı',
       traum: 'Rüya yorumu',
-      // ÜBERSETZEN AP-28: vorläufig die englische Fassung.
-      blase: 'Tarot Cup is only available for Android phones. You can still read here about how tarot and coffee reading work.',
     },
     nichtGefunden: {
       titel: 'Sayfa bulunamadı',
@@ -191,10 +189,6 @@ export const oberflaeche = {
       eineKarte: 'tek kart',
       gegenueberKurz: 'Karşı taraf',
       tassenkarte: 'Yukarıdan fincan haritası: {rand}, {mitte} ve {boden}; solda {gegenueber}, sağda {henkelseite} ve kulp, altta {untertasse}',
-      // ÜBERSETZEN AP-28: die drei Beschreibungen der Figuren vorläufig in der englischen Fassung.
-      begleiterBeide: 'Aylin and Ozan, illustrated in gold on midnight blue: she holds a cup of Turkish coffee, he a copper cezve',
-      begleiterErzaehlerin: 'Aylin, an illustrated storyteller holding a cup of Turkish coffee',
-      begleiterErzaehler: 'Ozan, an illustrated storyteller with a copper cezve and a cup',
     },
     bildnachweis: {
       metaTitel: 'Görsel kaynakları ve lisanslar | Tarot Cup',
@@ -214,13 +208,6 @@ export const oberflaeche = {
         absaetze: [
           'Sitede iki yazı tipi kullanılıyor: Christian Thalmann’ın tasarladığı Cormorant Garamond ve Rasmus Andersson’un tasarladığı Inter. İkisi de SIL Open Font License 1.1 lisansıyla sunulur.',
           'Yazı tipi dosyaları bu sitenin içinde durur, başka sunuculardan yüklenmez.',
-        ],
-      },
-      // ÜBERSETZEN AP-28: vorläufig die englische Fassung.
-      begleiter: {
-        titel: 'Aylin and Ozan',
-        absaetze: [
-          'Aylin and Ozan, the two figures on this website and in the app, were drawn with Canva’s image generator and edited for Tarot Cup.',
         ],
       },
       marken: 'Google Play ve Google Play logosu, Google LLC’nin ticari markalarıdır.',
@@ -250,40 +237,32 @@ oberflaeche.fr = oberflaecheFr;
 oberflaeche.id = oberflaecheId;
 oberflaeche.hi = oberflaecheHi;
 
-// AP-28 (Begleiter): Beschreibungen der Figuren, Sprechblase auf /app/ und Absatz im Bildnachweis für die Sprachen aus
-// den JSON-Dateien. Indonesisch: Sprechblase aus deutung-unterlagen/arbeit/ap28/texte_begleiter.md, Beschreibungen und
-// Bildnachweis mit den Namen Aylin und Ozan eigens geschrieben (ohne „pendamping“, kein Oberbegriff). Die übrigen tragen
-// vorläufig die englische Fassung, bis nach dem Zwischenbericht übersetzt wird. Sobald die Texte über
-// tools/texte_einspielen.mjs in den JSON-Dateien stehen, gelten diese, der Block füllt nur Lücken.
-const BEGLEITER_ID = {
-  begleiterBeide: 'Aylin dan Ozan, digambar dengan warna emas di atas biru malam: Aylin dengan cangkir kopi Turki, Ozan dengan cezve tembaga',
-  begleiterErzaehlerin: 'Aylin, pencerita bergambar yang memegang cangkir kopi Turki',
-  begleiterErzaehler: 'Ozan, pencerita bergambar dengan cezve tembaga dan cangkir',
-  blase: 'Tarot Cup hanya tersedia untuk ponsel Android. Kamu tetap bisa membaca di sini bagaimana tarot dan ampas kopi dibaca.',
-  bildnachweis: {
-    titel: 'Aylin dan Ozan',
-    absaetze: ['Aylin dan Ozan, dua sosok di situs ini dan di aplikasi, digambar dengan generator gambar Canva, lalu disunting untuk Tarot Cup.'],
-  },
-};
-// ÜBERSETZEN AP-28: englische Fassung, vorläufig auch für es, bs, hr, sr, ro, pt, fr und hi.
-const BEGLEITER_EN = {
-  begleiterBeide: oberflaeche.tr.bilder.begleiterBeide,
-  begleiterErzaehlerin: oberflaeche.tr.bilder.begleiterErzaehlerin,
-  begleiterErzaehler: oberflaeche.tr.bilder.begleiterErzaehler,
-  blase: oberflaeche.tr.app.blase,
-  bildnachweis: oberflaeche.tr.bildnachweis.begleiter,
-};
+// AP-28: Beschreibungen der Figuren Aylin und Ozan, Sprechblase auf /app/ und Absatz im Bildnachweis je Sprache (ohne de).
+// Quelle: deutung-unterlagen/arbeit/ap28/uebersetzung/web_<sprache>.json (übersetzt und gegengeprüft, muttersprachlich
+// ungeprüft), hierher kopiert; nicht von Hand ändern.
+import begleiterTr from './uebersetzt/begleiter_tr.json' with { type: 'json' };
+import begleiterEn from './uebersetzt/begleiter_en.json' with { type: 'json' };
+import begleiterEs from './uebersetzt/begleiter_es.json' with { type: 'json' };
+import begleiterBs from './uebersetzt/begleiter_bs.json' with { type: 'json' };
+import begleiterHr from './uebersetzt/begleiter_hr.json' with { type: 'json' };
+import begleiterSr from './uebersetzt/begleiter_sr.json' with { type: 'json' };
+import begleiterRo from './uebersetzt/begleiter_ro.json' with { type: 'json' };
+import begleiterPt from './uebersetzt/begleiter_pt.json' with { type: 'json' };
+import begleiterFr from './uebersetzt/begleiter_fr.json' with { type: 'json' };
+import begleiterId from './uebersetzt/begleiter_id.json' with { type: 'json' };
+import begleiterHi from './uebersetzt/begleiter_hi.json' with { type: 'json' };
 const BEGLEITER = {
-  id: BEGLEITER_ID,
-  en: BEGLEITER_EN, // ÜBERSETZEN AP-28
-  es: BEGLEITER_EN, // ÜBERSETZEN AP-28
-  bs: BEGLEITER_EN, // ÜBERSETZEN AP-28
-  hr: BEGLEITER_EN, // ÜBERSETZEN AP-28
-  sr: BEGLEITER_EN, // ÜBERSETZEN AP-28
-  ro: BEGLEITER_EN, // ÜBERSETZEN AP-28
-  pt: BEGLEITER_EN, // ÜBERSETZEN AP-28
-  fr: BEGLEITER_EN, // ÜBERSETZEN AP-28
-  hi: BEGLEITER_EN, // ÜBERSETZEN AP-28
+  tr: begleiterTr,
+  en: begleiterEn,
+  es: begleiterEs,
+  bs: begleiterBs,
+  hr: begleiterHr,
+  sr: begleiterSr,
+  ro: begleiterRo,
+  pt: begleiterPt,
+  fr: begleiterFr,
+  id: begleiterId,
+  hi: begleiterHi,
 };
 for (const [sprache, texte] of Object.entries(BEGLEITER)) {
   const ziel = oberflaeche[sprache];
