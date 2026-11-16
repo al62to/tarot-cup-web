@@ -101,9 +101,10 @@ const erklaerseiten = (sprache) => {
       var e = null;
       try { e = new URLSearchParams(window.location.search).get('e'); } catch (fehler) { e = null; }
       if (!(e && /^[23456789ABCDEFGHJKMNPQRSTUVWXYZ]{8}$/.test(e))) e = null;
-      // Teilen-Staffel (AP-31, Abschnitt 8): das Öffnen eines geteilten Links einmal melden, auf jedem Gerät, nur der Code,
-      // ohne Cookies und ohne Kennung (sendBeacon, text/plain, keine Vorabfrage). Vorschauen von Messengern laden kein Skript.
-      if (e && navigator.sendBeacon) {
+      // Teilen-Staffel (AP-31, Abschnitt 8): das Öffnen eines geteilten Links einmal melden, nur auf Android-Geräten (nur dort
+      // kann eine Installation folgen; Entscheidung Ali, AP-31 Stufe 2 A3), nur der Code, ohne Cookies und ohne Kennung
+      // (sendBeacon, text/plain, keine Vorabfrage). Vorschauen von Messengern laden kein Skript.
+      if (e && navigator.sendBeacon && /Android/i.test(kennung)) {
         try { navigator.sendBeacon('https://api.tarot-cup.com/v1/link/geoeffnet', JSON.stringify({ e: e })); } catch (fehler) { /* nichts */ }
       }
       if (weiter && /Android/i.test(kennung)) {

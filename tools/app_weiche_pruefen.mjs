@@ -101,8 +101,10 @@ try {
     ['Desktop', UA.desktop, { locale: 'ja-JP' }, 'en', true],
   ];
   for (const [name, ua, optionen, ersteSprache, qrSichtbar] of FAELLE) {
-    for (const anfrage of ['', '?von=tageskarte']) {
-      const { kontext, seite, play } = await oeffne(ua, optionen, `/app/${anfrage}`);
+    // seit AP-31 Stufe 2 (A3): auch mit gültigem Code keine Meldung „Link geöffnet“ außerhalb von Android
+    for (const anfrage of ['', '?von=tageskarte', '?von=app&e=K7M2Q9XA']) {
+      const { kontext, seite, play, meldungen } = await oeffne(ua, optionen, `/app/${anfrage}`);
+      if (meldungen.length !== 0) fehler.push(`${name} ${optionen.locale} ${anfrage}: Meldung Link geöffnet außerhalb von Android: ${JSON.stringify(meldungen)}`);
       const befund = await seite.evaluate(() => {
         const teile = [...document.querySelectorAll('.app-teil')];
         const erster = teile[0];
@@ -120,7 +122,7 @@ try {
           statistik: !!document.querySelector('script[src*="Einwilligung"], script[src*="googletagmanager"], #cc-main') || document.cookie !== '',
         };
       });
-      const ok = !play() && befund.sprachen[0] === ersteSprache && befund.sprachen.length === 12 && befund.h1 === 1 && befund.h1ImErsten
+      const ok = !play() && meldungen.length === 0 && befund.sprachen[0] === ersteSprache && befund.sprachen.length === 12 && befund.h1 === 1 && befund.h1ImErsten
         && befund.links.length === 4 && befund.qr === qrSichtbar && !befund.statistik && !!befund.nur && befund.figur;
       zeilen.push(`${ok ? 'ok  ' : 'ROT '} ${name.padEnd(17)} ${optionen.locale.padEnd(11)} ${anfrage.padEnd(16)} erste ${befund.sprachen[0]}, QR ${befund.qr ? 'ja' : 'nein'}, „${befund.nur}“`);
       if (!ok) fehler.push(`${name} ${optionen.locale} ${anfrage}: ${JSON.stringify(befund)}, play ${play()}`);
