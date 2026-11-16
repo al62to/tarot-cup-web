@@ -57,21 +57,33 @@ const zeilen = [];
 async function oeffne(ua, { locale = 'de-AT', touch = false, mobil = false } = {}, pfad = '/app/') {
   const kontext = await browser.newContext({ userAgent: ua, locale, hasTouch: touch, isMobile: mobil, viewport: mobil ? { width: 390, height: 844 } : { width: 1280, height: 900 } });
   let play = null;
-  // Die zuletzt eingetragene Regel gilt zuerst: Google Play abfangen, alles andere Fremde melden
+  const meldungen = [];
+  // Die zuletzt eingetragene Regel gilt zuerst: Google Play und die Meldung „Link geöffnet“ abfangen, alles andere Fremde melden
   await kontext.route(/^https?:\/\/(?!127\.0\.0\.1)/, (anfrage) => { fehler.push(`fremde Anfrage: ${anfrage.request().url()}`); return anfrage.abort(); });
   await kontext.route('https://play.google.com/**', (anfrage) => { play = anfrage.request().url(); return anfrage.fulfill({ status: 200, body: 'play' }); });
+  await kontext.route('https://api.tarot-cup.com/v1/link/geoeffnet', (anfrage) => {
+    const r = anfrage.request();
+    meldungen.push({ methode: r.method(), body: r.postData(), cookie: r.headers().cookie ?? null });
+    return anfrage.fulfill({ status: 204, body: '' });
+  });
   const seite = await kontext.newPage();
   await seite.goto(BASIS + pfad, { waitUntil: 'load' }).catch(() => {});
   await seite.waitForTimeout(300);
-  return { kontext, seite, play: () => play };
+  return { kontext, seite, play: () => play, meldungen };
 }
 
 try {
   // 1. Android: Weiterleitung mit der richtigen Kennung
   for (const [name, ua] of [['Chrome Android', UA.chromeAndroid], ['Samsung Internet', UA.samsung], ['WhatsApp Android', UA.whatsappAndroid]]) {
     for (const [anfrage, erwartet] of ANDROID_FAELLE) {
-      const { kontext, play } = await oeffne(ua, { mobil: true, touch: true }, `/app/${anfrage}`);
-      const ok = play() === erwartet;
+      const { kontext, play, meldungen } = await oeffne(ua, { mobil: true, touch: true }, `/app/${anfrage}`);
+      // Meldung „Link geöffnet“ genau dann, wenn ein gültiger Code in der Adresse steht, mit nur diesem Code im Body
+      const code = /tc_e%3D([A-Z0-9]{8})$/.exec(erwartet)?.[1] ?? null;
+      const meldungOk = code
+        ? meldungen.length === 1 && meldungen[0].methode === 'POST' && meldungen[0].body === JSON.stringify({ e: code }) && !meldungen[0].cookie
+        : meldungen.length === 0;
+      if (!meldungOk) fehler.push(`${name} ${anfrage}: Meldung Link geöffnet falsch: ${JSON.stringify(meldungen)}`);
+      const ok = play() === erwartet && meldungOk;
       zeilen.push(`${ok ? 'ok  ' : 'ROT '} ${name.padEnd(17)} /app/${anfrage.padEnd(38)} -> ${play() ?? '(keine Weiterleitung)'}`);
       if (!ok) fehler.push(`${name} ${anfrage}: erwartet ${erwartet}, war ${play()}`);
       await kontext.close();

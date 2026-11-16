@@ -16,6 +16,7 @@
 // Jeder Teil außer dem deutschen trägt lang, Abzeichen und Links tragen die Sprache des Teils. Die Weiterleitung für Android
 // nimmt den Link ohne Sprache (Google Play wählt die Sprache des Geräts).
 // noindex, nicht in Sitemap und llms.txt, keine Statistik. Nichts wird gespeichert, nichts von anderen Anbietern geladen.
+// Seit AP-31: Mit gültigem Code e meldet die Seite das Öffnen einmal an api.tarot-cup.com (nur der Code, Teilen-Staffel).
 // Solange die App nicht öffentlich ist, steht hier nur „Bald bei Google Play“.
 import QRCode from 'qrcode';
 import '../../styles/dokument.css';
@@ -96,14 +97,21 @@ const erklaerseiten = (sprache) => {
       var daten = document.getElementById('app-weiter');
       var weiter = null;
       try { weiter = daten ? JSON.parse(daten.textContent) : null; } catch (fehler) { weiter = null; }
+      // Code aus einem geteilten Link (AP-31): nur 8 Zeichen aus dem Alphabet des Servers gelten
+      var e = null;
+      try { e = new URLSearchParams(window.location.search).get('e'); } catch (fehler) { e = null; }
+      if (!(e && /^[23456789ABCDEFGHJKMNPQRSTUVWXYZ]{8}$/.test(e))) e = null;
+      // Teilen-Staffel (AP-31, Abschnitt 8): das Öffnen eines geteilten Links einmal melden, auf jedem Gerät, nur der Code,
+      // ohne Cookies und ohne Kennung (sendBeacon, text/plain, keine Vorabfrage). Vorschauen von Messengern laden kein Skript.
+      if (e && navigator.sendBeacon) {
+        try { navigator.sendBeacon('https://api.tarot-cup.com/v1/link/geoeffnet', JSON.stringify({ e: e })); } catch (fehler) { /* nichts */ }
+      }
       if (weiter && /Android/i.test(kennung)) {
         var von = null;
         try { von = new URLSearchParams(window.location.search).get('von'); } catch (fehler) { von = null; }
         var ziel = von && /^[a-z]+$/.test(von) && Object.prototype.hasOwnProperty.call(weiter.von, von) ? weiter.von[von] : weiter.kurzlink;
         // Einladen (AP-31): nur ein gültiger Code (8 Zeichen aus dem Alphabet des Servers) geht als tc_e an Google Play
-        var e = null;
-        try { e = new URLSearchParams(window.location.search).get('e'); } catch (fehler) { e = null; }
-        if (e && /^[23456789ABCDEFGHJKMNPQRSTUVWXYZ]{8}$/.test(e) && weiter.einladung) ziel = weiter.einladung + e;
+        if (e && weiter.einladung) ziel = weiter.einladung + e;
         window.location.replace(ziel);
         return;
       }
