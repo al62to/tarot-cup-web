@@ -1,0 +1,69 @@
+# Außenwache für den Deutungsdienst (AP-32): ruft alle 15 Minuten von außen https://api.tarot-cup.com/v1/status ab.
+# Schlägt der Abruf zweimal hintereinander fehl (zweiter Versuch nach 2 Minuten), gilt der Dienst als nicht erreichbar:
+# Der Lauf endet rot und schickt eine Nachricht an das ntfy-Thema aus dem Secret NTFY_THEMA, beim Wechsel von
+# erreichbar zu nicht erreichbar und danach höchstens einmal je Stunde; beim Wechsel zurück kommt „wieder erreichbar“.
+# Den vorigen Zustand liest der Ablauf aus dem Ergebnis seines letzten abgeschlossenen Laufs (kein gespeicherter Zustand).
+# Nachrichten enthalten nur den Zustand, keine Daten. Von Hand mit „probe“ gestartet, schickt er eine Probe-Nachricht.
+name: Außenwache
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      probe:
+        description: "Probe-Nachricht an ntfy schicken"
+        type: boolean
+        default: false
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: aussenwache
+  cancel-in-progress: false
+
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Status von außen abrufen
+        env:
+          NTFY_THEMA: ${{ secrets.NTFY_THEMA }}
+          GH_TOKEN: ${{ github.token }}
+          PROBE: ${{ inputs.probe }}
+        run: |
+          set -u
+          adresse="https://api.tarot-cup.com/v1/status"
+          senden() {
+            if [ -z "${NTFY_THEMA:-}" ]; then echo "Secret NTFY_THEMA fehlt"; return 1; fi
+            curl -fsS --max-time 20 -H "Title: Tarot Cup Außenwache" -d "$1" "https://ntfy.sh/${NTFY_THEMA}" >/dev/null
+          }
+          abruf() { [ "$(curl -fsS --max-time 20 "$adresse" 2>/dev/null)" = "ok" ]; }
+          if [ "${PROBE:-false}" = "true" ]; then
+            senden "Tarot Cup Außenwache: Probe-Nachricht, bitte ignorieren."
+            echo "Probe gesendet"
+          fi
+          if abruf; then
+            jetzt="erreichbar"
+          else
+            echo "erster Abruf fehlgeschlagen, zweiter Versuch in 2 Minuten"
+            sleep 120
+            if abruf; then jetzt="erreichbar"; else jetzt="nicht_erreichbar"; fi
+          fi
+          # Ergebnis des letzten abgeschlossenen Laufs dieses Ablaufs (success = war erreichbar, failure = war nicht erreichbar)
+          vorher="$(gh api "repos/${GITHUB_REPOSITORY}/actions/workflows/aussenwache.yml/runs?status=completed&per_page=1" \
+                     --jq '.workflow_runs[0].conclusion // "unbekannt"' 2>/dev/null || echo unbekannt)"
+          minute="$(date -u +%M)"
+          echo "vorher=${vorher} jetzt=${jetzt}"
+          if [ "$jetzt" = "nicht_erreichbar" ]; then
+            if [ "$vorher" != "failure" ] || [ "$((10#$minute))" -lt 15 ]; then
+              senden "Tarot Cup Außenwache: api.tarot-cup.com nicht erreichbar (2 Fehlschläge hintereinander)." || true
+            fi
+            exit 1
+          fi
+          if [ "$vorher" = "failure" ]; then
+            senden "Tarot Cup Außenwache: api.tarot-cup.com wieder erreichbar."
+          fi
