@@ -115,13 +115,14 @@ export const oberflaeche = {
         ],
       },
       // AP-25: die Posen der Figuren auf den Erklärseiten.
-      // AP-25A: gekürzt auf das, was live ist (Nr. 1, 7, 20: nur Aylin, beim Schreiben, mit Karten, mit Geschenk).
-      // Voller Stand für später (mit Nr. 13 bis 17, Ozan und der Mond-Pose), Titel 'Weitere Bilder von Aylin und Ozan':
+      // AP-25A: gekürzt auf das, was live ist. AP-25C: dazu Nr. 13 bis 15 (Träume; Ozan und Aylin unter dem Mond).
+      // Live: Nr. 1, 7, 20 (Aylin beim Schreiben, mit Karten, mit Geschenk), Nr. 13, 15 (Ozan, Mond), Nr. 14 (Aylin, Mond).
+      // Voller Stand für später (mit Nr. 16 und 17 und den übrigen Seiten mit Ozan), Titel 'Weitere Bilder von Aylin und Ozan':
       // 'Auf den Seiten mit Wissen zu Kaffeesatz, Tarot, Träumen und Mond zeigen weitere Bilder Aylin und Ozan: beim Schreiben, unter dem Mond, mit einem Geschenk und mit Tarotkarten. Die Bilder mit Tarotkarten sind mit dem Bildgenerator von Canva entstanden, die übrigen mit dem Bildgenerator Seedream 5.5 bei ElevenLabs. Alle sind für Tarot Cup bearbeitet; für diese Website sind sie nur verkleinert und als AVIF und WebP gespeichert.',
       posen: {
-        titel: 'Weitere Bilder von Aylin',
+        titel: 'Weitere Bilder von Aylin und Ozan',
         absaetze: [
-          'Auf den Seiten mit Wissen zu Kaffeesatz und Tarot zeigen weitere Bilder Aylin: beim Schreiben, mit einem Geschenk und mit Tarotkarten. Das Bild mit Tarotkarten ist mit dem Bildgenerator von Canva entstanden, die beiden übrigen mit dem Bildgenerator Seedream 5.5 bei ElevenLabs. Alle sind für Tarot Cup bearbeitet; für diese Website sind sie nur verkleinert und als AVIF und WebP gespeichert.',
+          'Auf den Seiten mit Wissen zu Kaffeesatz und Tarot zeigen weitere Bilder Aylin beim Schreiben, mit einem Geschenk und mit Tarotkarten, auf den Seiten mit Wissen zu Träumen Aylin und Ozan unter dem Mond. Das Bild mit Tarotkarten ist mit dem Bildgenerator von Canva entstanden, die übrigen mit dem Bildgenerator Seedream 5.5 bei ElevenLabs. Alle sind für Tarot Cup bearbeitet; für diese Website sind sie nur verkleinert und als AVIF und WebP gespeichert.',
         ],
       },
       marken: 'Google Play und das Google Play-Logo sind Marken von Google LLC.',
@@ -230,10 +231,12 @@ export const oberflaeche = {
           'Yazı tipi dosyaları bu sitenin içinde durur, başka sunuculardan yüklenmez.',
         ],
       },
+      // AP-25C: auf Türkisch sind nur die Seiten zu Träumen live (Nr. 13 bis 15: Aylin und Ozan unter dem Mond).
+      // Voller Stand für später: 'Kahve falı, tarot, rüyalar ve Ay hakkındaki bilgi sayfalarında Aylin ile Ozan’ı başka resimlerde de görürsün: yazarken, Ay’ın altında, elinde bir hediyeyle ve tarot kartlarıyla. Tarot kartlı resimler Canva’nın görsel üreticisiyle, diğerleri ElevenLabs’teki Seedream 5.5 görsel üreticisiyle çizildi. Hepsi Tarot Cup için düzenlendi; bu sitede yalnızca küçültüldü ve AVIF ile WebP biçiminde kaydedildi.'
       posen: {
         titel: 'Aylin ve Ozan’ın diğer resimleri',
         absaetze: [
-          'Kahve falı, tarot, rüyalar ve Ay hakkındaki bilgi sayfalarında Aylin ile Ozan’ı başka resimlerde de görürsün: yazarken, Ay’ın altında, elinde bir hediyeyle ve tarot kartlarıyla. Tarot kartlı resimler Canva’nın görsel üreticisiyle, diğerleri ElevenLabs’teki Seedream 5.5 görsel üreticisiyle çizildi. Hepsi Tarot Cup için düzenlendi; bu sitede yalnızca küçültüldü ve AVIF ile WebP biçiminde kaydedildi.',
+          'Rüyalarla ilgili bilgi sayfalarında Aylin ile Ozan’ı başka resimlerde, ayın altında da görürsün. Bu resimler ElevenLabs’teki Seedream 5.5 görsel üreticisiyle oluşturuldu ve Tarot Cup için düzenlendi; bu sitede yalnızca küçültüldü ve AVIF ile WebP biçiminde kaydedildi.',
         ],
       },
       marken: 'Google Play ve Google Play logosu, Google LLC’nin ticari markalarıdır.',

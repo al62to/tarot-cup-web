@@ -16,12 +16,15 @@ const PFADE = eigene.length ? eigene : ['/', '/tr/', '/tarot/', '/tr/tarot/', '/
 const BEREICHE = ['performance', 'accessibility', 'best-practices', 'seo'];
 const MINDESTENS = 90;
 const chrome = chromePfad();
+// AP-25C: LH_BREITE=390 misst mit 390 px breitem Handy-Bildschirm (Höhe 844, Faktor 3) statt der Lighthouse-Vorgabe 412 px.
+const BREITE = Number(process.env.LH_BREITE) || 0;
+const BREITE_FLAGS = BREITE ? ['--screenEmulation.mobile', `--screenEmulation.width=${BREITE}`, '--screenEmulation.height=844', '--screenEmulation.deviceScaleFactor=3'] : [];
 mkdirSync(ziel, { recursive: true });
 
 function lauf(pfad, nummer) {
   const datei = join(ziel, `${pfad.replace(/^\/|\/$/g, '').replace(/\//g, '_') || 'start'}-${nummer}.json`);
   execFileSync('npx', ['--yes', 'lighthouse', vorschau + pfad, '--quiet', '--output=json', `--output-path=${datei}`,
-    `--only-categories=${BEREICHE.join(',')}`, '"--chrome-flags=--headless=new --disable-blink-features=AutomationControlled"'],
+    `--only-categories=${BEREICHE.join(',')}`, ...BREITE_FLAGS, '"--chrome-flags=--headless=new --disable-blink-features=AutomationControlled"'],
   { stdio: ['ignore', 'ignore', 'inherit'], shell: true, env: { ...process.env, CHROME_PATH: chrome } });
   const daten = JSON.parse(readFileSync(datei, 'utf8'));
   return Object.fromEntries(BEREICHE.map((bereich) => [bereich, Math.round((daten.categories[bereich]?.score ?? 0) * 100)]));
@@ -40,6 +43,6 @@ for (const pfad of PFADE) {
   zeilen.push(`| \`${pfad}\` | ${werte.performance} | ${werte.accessibility} | ${werte['best-practices']} | ${werte.seo} | ${leistung.join(', ')} |`);
   console.log(zeilen.at(-1));
 }
-const text = `${zeilen.join('\n')}\n\nGerät: Handy (Lighthouse-Standard), Chrome ${chrome}. ${unter ? `${unter} Seite(n) unter ${MINDESTENS}.` : `Alle Werte mindestens ${MINDESTENS}.`}\n`;
+const text = `${zeilen.join('\n')}\n\nGerät: Handy (Lighthouse-Standard${BREITE ? `, Bildschirm ${BREITE} px breit` : ''}), Chrome ${chrome}. ${unter ? `${unter} Seite(n) unter ${MINDESTENS}.` : `Alle Werte mindestens ${MINDESTENS}.`}\n`;
 writeFileSync(join(ziel, 'lighthouse.md'), text);
 console.log(text);

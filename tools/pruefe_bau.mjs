@@ -404,9 +404,10 @@ export function pruefeBau(ordner, { still = false } = {}) {
       // Links der Sprachwahl tragen lang selbst (AP-W6).
       .replace(/<a\b[^>]*\slang="[^"]+"[^>]*>[^<]*<\/a>/g, ' ')
       .replace(/<[^>]+>/g, ' ');
+    // Nur ganze Wörter, wie in tools/sprache_setzen.mjs (AP-25C: „Fal“ steckt in „Fallen“).
     for (const { text } of tuerkisch) {
-      const stelle = rest.indexOf(text);
-      if (stelle >= 0) melde(datei, 'lang fehlt', `„${text}“`);
+      const ganz = new RegExp(`(?<![\\p{L}\\p{N}])${text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\p{L}\\p{N}])`, 'u');
+      if (ganz.test(rest)) melde(datei, 'lang fehlt', `„${text}“`);
     }
   }
 
