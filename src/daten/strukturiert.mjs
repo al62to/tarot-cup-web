@@ -134,6 +134,29 @@ export const ueberDaten = ({ pfad, sprache, titel, beschreibung }) => ({
   mainEntity: { '@id': HERAUSGEBER_ID },
 });
 
+// Übersicht /wissen/ (AP-25E): CollectionPage mit einer ItemList aller verlinkten Erklärseiten (Reihenfolge der Seite).
+export const sammlungDaten = ({ pfad, sprache, titel, beschreibung, eintraege }) => ({
+  '@context': KONTEXT,
+  '@type': 'CollectionPage',
+  '@id': `${absolut(pfad)}#seite`,
+  name: titel,
+  description: beschreibung,
+  inLanguage: sprache,
+  url: absolut(pfad),
+  isPartOf: { '@id': WEBSITE_ID },
+  publisher: { '@id': HERAUSGEBER_ID },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: eintraege.length,
+    itemListElement: eintraege.map((eintrag, nummer) => ({
+      '@type': 'ListItem',
+      position: nummer + 1,
+      name: eintrag.titel,
+      url: absolut(eintrag.pfad),
+    })),
+  },
+});
+
 export const brotkrumenDaten = (krumen) => ({
   '@context': KONTEXT,
   '@type': 'BreadcrumbList',

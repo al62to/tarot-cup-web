@@ -13,7 +13,9 @@ function wissenZeilen(sprache, T, link) {
     .sort((a, b) => a.erklaer.nr - b.erklaer.nr);
   if (!liste.length) return [];
   if (!T.wissen) throw new Error(`llms.txt: Überschrift „wissen“ fehlt für ${sprache} (src/daten/texte/llms.mjs)`);
-  return [`## ${T.wissen}`, ...liste.map((eintrag) => link(eintrag.schluessel)), ''];
+  // Zuerst die Übersicht /wissen/ (AP-25E), wo es sie gibt, dann die Seiten.
+  const uebersicht = SEITEN.some((eintrag) => eintrag.schluessel === 'wissen' && eintrag.sprache === sprache) ? ['wissen'] : [];
+  return [`## ${T.wissen}`, ...[...uebersicht, ...liste.map((eintrag) => eintrag.schluessel)].map(link), ''];
 }
 
 export const llmsPfad = (sprache) => `${startVon(sprache)}llms.txt`;

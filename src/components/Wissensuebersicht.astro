@@ -1,0 +1,36 @@
+---
+// Übersicht aller Erklärseiten einer Sprache (AP-25E, /wissen/ und /tr/bilgi/): Titel und Vorspann, darunter je Bereich
+// (Kaffeesatz, Tarot, Träume, Mond, Allgemein) die Seiten als Karten mit Titel und dem ersten Satz der Kurzantwort, bei
+// Kaffeesatz und Tarot dazu der Link auf den Ratgeber. Alles aus src/daten/erklaer.mjs über src/daten/wissen.mjs: Es
+// erscheinen nur Seiten, die es in der Sprache gibt (live); eine neue Seite steht hier von selbst. Gestaltung aus dem
+// Bestand (Seitenkopf wie „Über“, Karten aus wissen.css, Abstände in wissen_uebersicht.css), ohne neue Farben oder
+// Schriften.
+import '../styles/wissen.css';
+import '../styles/wissen_uebersicht.css';
+import Basis from '../layouts/Basis.astro';
+import Betont from './Betont.astro';
+import Text from './Text.astro';
+import Wissensblock from './Wissensblock.astro';
+import { seiteVon } from '../daten/seiten.mjs';
+import { uebersichtGruppen, wissenTexte } from '../daten/wissen.mjs';
+import { sammlungDaten } from '../daten/strukturiert.mjs';
+
+const { sprache } = Astro.props;
+const angaben = seiteVon(Astro.url.pathname);
+const W = wissenTexte(sprache);
+const T = W.uebersicht;
+const gruppen = uebersichtGruppen(sprache);
+if (!gruppen.length) throw new Error(`Wissensübersicht: keine Erklärseite auf ${sprache}`);
+const daten = [sammlungDaten({ pfad: angaben.pfad, sprache, titel: T.titel.replace(/\*/g, ''), beschreibung: T.metaBeschreibung, eintraege: gruppen.flatMap((gruppe) => gruppe.eintraege) })];
+---
+<Basis daten={daten} klasse="seite-wissen">
+  <header class="seitenkopf innen">
+    <h1><Betont text={T.titel} /></h1>
+    <Text text={T.vorspann} klasse="vorspann" />
+  </header>
+  <div class="innen wissen-uebersicht">
+    {gruppen.map((gruppe) => (
+      <Wissensblock titel={W.bereiche[gruppe.bereich]} kennung={gruppe.bereich} eintraege={gruppe.eintraege} alle={gruppe.ratgeber} klasse={`wissen-gruppe-${gruppe.bereich}`} />
+    ))}
+  </div>
+</Basis>

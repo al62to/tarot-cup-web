@@ -136,6 +136,16 @@ export const oberflaeche = {
       figurErzaehlerin: 'gezeichnete Figur Aylin',
       figurErzaehler: 'gezeichnete Figur Ozan',
       bereiche: { kaffeesatz: 'Kaffeesatz', tarot: 'Tarot', traum: 'Träume', mond: 'Mond', allgemein: 'Allgemein' },
+      // AP-25E: Punkt im Kopf und Link im Fuß, Link am Ende des Blocks auf der Startseite und die Übersicht /wissen/.
+      nav: 'Wissen',
+      alle: 'Alle Seiten',
+      uebersicht: {
+        metaTitel: 'Wissen zu Kaffeesatz, Tarot und Träumen | Tarot Cup',
+        metaBeschreibung: 'Alle Seiten zum Nachlesen bei Tarot Cup an einem Ort: Kaffeesatz, Tarot, Träume und Allgemeines, jede mit einer kurzen Antwort und ihren Quellen.',
+        brotkrume: 'Wissen',
+        titel: 'Wissen zu Kaffeesatz, Tarot und *Träumen*',
+        vorspann: 'Hier stehen alle Seiten zum Nachlesen an einem Ort, nach Themen geordnet. Jede beginnt mit einer kurzen Antwort, erklärt dann ausführlicher und nennt ihre Quellen.',
+      },
     },
   },
 
@@ -250,6 +260,15 @@ export const oberflaeche = {
       figurErzaehlerin: 'çizilmiş karakter Aylin',
       figurErzaehler: 'çizilmiş karakter Ozan',
       bereiche: { kaffeesatz: 'Kahve falı', tarot: 'Tarot', traum: 'Rüyalar', mond: 'Ay', allgemein: 'Genel' },
+      nav: 'Bilgi',
+      alle: 'Tüm sayfalar',
+      uebersicht: {
+        metaTitel: 'Kahve falı, tarot ve rüyalar hakkında bilgi | Tarot Cup',
+        metaBeschreibung: 'Tarot Cup’taki tüm bilgi sayfaları bir arada: kahve falı, tarot, rüyalar ve genel konular; her biri kısa bir cevap ve kaynaklarıyla birlikte.',
+        brotkrume: 'Bilgi',
+        titel: 'Kahve falı, tarot ve *rüyalar* hakkında bilgi',
+        vorspann: 'Okuyabileceğin tüm bilgi sayfalarını burada, konularına göre ayrılmış olarak bir arada bulursun. Her sayfa kısa bir cevapla başlar, sonra ayrıntıya girer ve kaynaklarını da gösterir.',
+      },
     },
   },
 };

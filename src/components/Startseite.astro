@@ -27,7 +27,7 @@ import { fragen } from '../daten/texte/fragen.mjs';
 import { pfadVon } from '../daten/seiten.mjs';
 import { appDaten, faqDaten } from '../daten/strukturiert.mjs';
 import { FOTOS_START, fotoPfad } from '../daten/fotos.mjs';
-import { wissenGruppen, wissenTexte } from '../daten/wissen.mjs';
+import { wissenGruppen, wissenTexte, uebersichtLink } from '../daten/wissen.mjs';
 
 const { sprache } = Astro.props;
 const T = start[sprache];
@@ -51,6 +51,8 @@ const istTarot = (ziel) => ziel === pfadVon('tarot', sprache);
 // Wissen zum Nachlesen (AP-25): alle Erklärseiten der Sprache nach Bereich; ohne Seiten kein Block.
 const wissen = wissenGruppen(sprache);
 const W = wissen.length ? wissenTexte(sprache) : null;
+// Link „Alle Seiten“ auf die Übersicht /wissen/ (AP-25E), nur wo es sie gibt.
+const wissenAlle = W && uebersichtLink(sprache) ? { text: W.alle, ziel: uebersichtLink(sprache).ziel } : null;
 // Linien-Symbole der kleinen Kacheln (Entwurf 9.1): Funkwellen durchgestrichen, Person durchgestrichen.
 const SYMBOL = {
   internet: '<path d="M6 15a20 20 0 0 1 28 0M10 20a14 14 0 0 1 20 0M14.5 25a8 8 0 0 1 11 0"/><circle cx="20" cy="30" r="1.6" class="voll"/><path d="M5 35L35 5"/>',
@@ -182,7 +184,7 @@ const SYMBOL = {
     </div>
   </section>
 
-  {W && <Wissensblock titel={W.startTitel} kennung="wissen" gruppen={wissen} bereichNamen={W.bereiche} klasse="wissen-teil innen" titelKlasse="start-titel" />}
+  {W && <Wissensblock titel={W.startTitel} kennung="wissen" gruppen={wissen} bereichNamen={W.bereiche} alle={wissenAlle} klasse="wissen-teil innen" titelKlasse="start-titel" />}
 
   <section class="fragen-teil" aria-labelledby="fragen-titel">
     <div class="innen fragen-raster">

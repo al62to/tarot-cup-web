@@ -59,6 +59,9 @@ export const ADRESSEN = {
   nutzungsbedingungen: { de: '/nutzungsbedingungen/', tr: '/tr/kullanim-kosullari/', en: '/en/terms/', es: '/es/condiciones-de-uso/',
     bs: '/bs/uslovi-koristenja/', hr: '/hr/uvjeti-koristenja/', sr: '/sr/uslovi-koriscenja/', ro: '/ro/termeni-de-utilizare/', pt: '/pt/termos-de-uso/', fr: '/fr/conditions-d-utilisation/', id: '/id/ketentuan-penggunaan/', hi: '/hi/terms/',
   },
+  // Übersicht aller Erklärseiten (AP-25E). Gebaut wird sie nur in Sprachen mit mindestens einer Erklärseite, die live
+  // ist (src/daten/erklaer.mjs, uebersichtSprachen); eine weitere Sprache bekommt hier ihre Adresse.
+  wissen: { de: '/wissen/', tr: '/tr/bilgi/' },
   // Erklärseiten (AP-25). Weitere Sprachen trägt die Hauptsitzung nach, sobald die Übersetzung da ist.
   kaffeeHerkunft: { de: '/kaffeesatz-lesen/herkunft/', tr: '/tr/kahve-fali/tarihi/' },
   kaffeeZubereitung: { de: '/kaffeesatz-lesen/tuerkischen-kaffee-zubereiten/', tr: '/tr/kahve-fali/turk-kahvesi-yapimi/' },

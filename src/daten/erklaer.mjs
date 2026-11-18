@@ -64,3 +64,10 @@ export function erklaerSprachen(eintrag) {
 
 // Ort für store_klick und den Link zu Google Play: je Seite eigener Ort.
 export const erklaerOrt = (eintrag) => `wissen_${eintrag.nr}`;
+
+// Sprachen, in denen die Übersicht /wissen/ gebaut wird (AP-25E): mit Adresse in src/daten/adressen.mjs und mindestens
+// einer Erklärseite, die es in der Sprache gibt. Davon hängen auch der Punkt „Wissen“ im Kopf, der Link im Fuß, der Link
+// „Alle Seiten“ auf der Startseite und die Brotkrumen der Erklärseiten ohne Themenseite ab.
+export const uebersichtSprachen = () => Object.keys(ADRESSEN.wissen)
+  .filter((sprache) => ERKLAERSEITEN.some((eintrag) => erklaerSprachen(eintrag).includes(sprache)));
+export const hatUebersicht = (sprache) => uebersichtSprachen().includes(sprache);

@@ -16,6 +16,7 @@ const TYPEN = {
   WebSite: { ober: 'CreativeWork', eigen: ['potentialAction'] },
   WebPage: { ober: 'CreativeWork', eigen: ['breadcrumb', 'primaryImageOfPage', 'lastReviewed'] },
   AboutPage: { ober: 'WebPage', eigen: [] },
+  CollectionPage: { ober: 'WebPage', eigen: [] },
   FAQPage: { ober: 'WebPage', eigen: [] },
   Article: { ober: 'CreativeWork', eigen: ['articleBody', 'articleSection', 'wordCount'] },
   SoftwareApplication: {

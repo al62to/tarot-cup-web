@@ -3,12 +3,13 @@
 //   eintraege: Karten mit Titel und kurzer Beschreibung („Weiterlesen“ auf den Erklärseiten, „Mehr zum Thema“ auf den
 //              Ratgebern Tarot und Kaffeesatz);
 //   gruppen:   Spalten je Bereich mit schlichten Links (Startseite).
-// Listen aus src/daten/wissen.mjs; ohne Einträge zeichnet der Block nichts. Stile in src/styles/wissen.css (nur auf den
+// "alle" ({ text, ziel }, AP-25E): Link am Ende des Blocks (Startseite „Alle Seiten“ auf die Übersicht, Übersicht der
+// Link auf den Ratgeber des Bereichs). Listen aus src/daten/wissen.mjs; ohne Einträge zeichnet der Block nichts. Stile in src/styles/wissen.css (nur auf den
 // Seiten, die den Block einsetzen; /app/ lädt ihn nie).
 import '../styles/wissen.css';
 import Betont from './Betont.astro';
 
-const { titel, kennung, eintraege = [], gruppen = [], bereichNamen = {}, klasse, titelKlasse } = Astro.props;
+const { titel, kennung, eintraege = [], gruppen = [], bereichNamen = {}, klasse, titelKlasse, alle = null } = Astro.props;
 if (!kennung) throw new Error('Wissensblock: kennung fehlt');
 const leer = !eintraege.length && !gruppen.length;
 ---
@@ -39,5 +40,6 @@ const leer = !eintraege.length && !gruppen.length;
         ))}
       </div>
     )}
+    {alle && <div class="wissen-alle"><a class="pfeil-link" href={alle.ziel}>{alle.text}</a></div>}
   </section>
 )}

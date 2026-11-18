@@ -299,7 +299,7 @@ export function pruefeBau(ordner, { still = false } = {}) {
     }
     const pflicht = ['WebSite', 'Organization'];
     if (eintrag.krumen) pflicht.push('BreadcrumbList');
-    const jeSeite = { start: ['MobileApplication', 'FAQPage'], tarot: ['Article', 'HowTo'], kaffeesatz: ['Article', 'HowTo'], sogehts: ['Article'], fragen: ['FAQPage'], ueber: ['AboutPage'] };
+    const jeSeite = { start: ['MobileApplication', 'FAQPage'], tarot: ['Article', 'HowTo'], kaffeesatz: ['Article', 'HowTo'], sogehts: ['Article'], fragen: ['FAQPage'], ueber: ['AboutPage'], wissen: ['CollectionPage'] };
     pflicht.push(...(jeSeite[eintrag.schluessel] ?? []));
     for (const typ of pflicht) if (!typen.includes(typ)) melde(datei, 'JSON-LD Pflichttyp fehlt', typ);
   }

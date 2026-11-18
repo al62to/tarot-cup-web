@@ -1,7 +1,7 @@
 ---
 // Fuß nach Entwurf 9.1 auf Espresso. Oben links der Hinweis „Zur Unterhaltung …“ (auf jeder Seite einmal) und auf
-// Inhaltsseiten der Teilen-Knopf (Teilen.astro, "teilen" kommt aus Basis.astro). Rechts die Spalten App (So geht's,
-// Fragen, Über), Rechtliches (Datenschutz, Nutzungsbedingungen, Offenlegung, Bildnachweis und Lizenzen), Kontakt
+// Inhaltsseiten der Teilen-Knopf (Teilen.astro, "teilen" kommt aus Basis.astro). Rechts die Spalten App (Wissen seit
+// AP-25E nur mit Übersicht, So geht's, Fragen, Über), Rechtliches (Datenschutz, Nutzungsbedingungen, Offenlegung, Bildnachweis und Lizenzen), Kontakt
 // (E-Mail, kodiert) und Sprache. Unter Rechtliches zuletzt „Cookie-Einstellungen“ (W7). Darunter der große Schriftzug „Tarot Cup“ als Schmuck (aria-hidden), ganz unten
 // „Tarot Cup · Zur Unterhaltung.“ Unter dem Hinweis das Abzeichen von Google Play (Storeknopf, nur mit öffentlichem
 // Store; Abstand 14 px zu den Nachbarn, mehr als ein Viertel der Höhe von 48 px).
@@ -16,6 +16,7 @@ import { pfadVon, startPfad } from '../daten/seiten.mjs';
 import { mailtoKodiert, emailKodiert } from '../daten/seite.mjs';
 import { ADRESSEN, SPRACHEN, SPRACHNAMEN } from '../daten/adressen.mjs';
 import { EINWILLIGUNG } from '../daten/einwilligung.mjs';
+import { uebersichtLink } from '../daten/wissen.mjs';
 
 const { angaben, teilen = null } = Astro.props;
 const { sprache, pfad, fassungen } = angaben;
@@ -31,7 +32,10 @@ const sprachen = SPRACHEN.map((code) => ({
 }));
 // „Offenlegung“ gibt es nur auf Deutsch; das deutsche Wort im Linktext trägt lang="de" (Türkisch „Offenlegung (künye)“).
 const offenlegungDe = sprache !== 'de' && T.fuss.offenlegung.includes('Offenlegung');
+// „Wissen“ (AP-25E) zuerst, wie im Kopf vor „So geht's“; nur in Sprachen mit der Übersicht /wissen/.
+const wissen = uebersichtLink(sprache);
 const app = [
+  ...(wissen ? [wissen] : []),
   { text: T.fuss.sogehts, ziel: pfadVon('sogehts', sprache) },
   { text: T.fuss.fragen, ziel: pfadVon('fragen', sprache) },
   { text: T.fuss.ueber, ziel: pfadVon('ueber', sprache) },

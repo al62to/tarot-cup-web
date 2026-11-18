@@ -1,5 +1,6 @@
 ---
-// Kopf (Entwurf 9.1: Espresso, feine goldene Linie unten): Marke, Hauptnavigation (Tarot · Kaffeesatz · So geht's · Fragen), Sprachwahl (Weltkugel mit Liste), Knopf „App laden“ (/app/).
+// Kopf (Entwurf 9.1: Espresso, feine goldene Linie unten): Marke, Hauptnavigation (Tarot · Kaffeesatz · Wissen · So geht's ·
+// Fragen; „Wissen“ seit AP-25E nur in Sprachen mit der Übersicht /wissen/), Sprachwahl (Weltkugel mit Liste), Knopf „App laden“ (/app/).
 // Am Handy ein schlichtes Menü zum Aufklappen (Muster FoodAsu, ohne Mega-Menü). Ohne JavaScript steht das Menü offen
 // da. Zustand nur in aria-expanded; nichts wird gespeichert.
 // Sprachwahl (AP-W6): Knopf mit Weltkugel und dem Eigennamen der aktuellen Sprache, darunter die Liste aller Sprachen
@@ -10,16 +11,20 @@ import Marke from './Marke.astro';
 import { oberflaeche } from '../daten/texte/oberflaeche.mjs';
 import { pfadVon, startPfad } from '../daten/seiten.mjs';
 import { SPRACHEN, SPRACHNAMEN } from '../daten/adressen.mjs';
+import { uebersichtLink } from '../daten/wissen.mjs';
 
 const { angaben } = Astro.props;
 const { sprache, pfad, fassungen } = angaben;
 const T = oberflaeche[sprache];
+// „Wissen“ ist aktuell auf der Übersicht selbst und auf den Erklärseiten ohne Themenseite (Traum, Mond, Allgemein).
+const wissen = uebersichtLink(sprache);
 const punkte = [
   { text: T.nav.tarot, ziel: pfadVon('tarot', sprache) },
   { text: T.nav.kaffeesatz, ziel: pfadVon('kaffeesatz', sprache) },
+  ...(wissen ? [{ ...wissen, aktuell: pfad === wissen.ziel || (angaben.erklaer && !angaben.erklaer.eltern) }] : []),
   { text: T.nav.sogehts, ziel: pfadVon('sogehts', sprache) },
   { text: T.nav.fragen, ziel: pfadVon('fragen', sprache) },
-];
+].map((punkt) => ({ ...punkt, aktuell: punkt.aktuell || pfad === punkt.ziel }));
 const sprachen = SPRACHEN.map((code) => ({
   code,
   name: SPRACHNAMEN[code],
@@ -40,7 +45,7 @@ const aktuell = sprachen.find((eintrag) => eintrag.aktuell);
       <nav aria-label={T.nav.aria}>
         <ul class="menue-liste">
           {punkte.map((punkt) => (
-            <li><a href={punkt.ziel} aria-current={pfad === punkt.ziel ? 'page' : undefined}>{punkt.text}</a></li>
+            <li><a href={punkt.ziel} aria-current={punkt.aktuell ? 'page' : undefined}>{punkt.text}</a></li>
           ))}
         </ul>
       </nav>

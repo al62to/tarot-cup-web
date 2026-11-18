@@ -12,7 +12,7 @@ import { kaffeesatz } from './texte/kaffeesatz.mjs';
 import { sogehts } from './texte/sogehts.mjs';
 import { fragen } from './texte/fragen.mjs';
 import { ueber } from './texte/ueber.mjs';
-import { ERKLAERSEITEN, erklaerTexte, erklaerSprachen, erklaerDatei } from './erklaer.mjs';
+import { ERKLAERSEITEN, erklaerTexte, erklaerSprachen, erklaerDatei, uebersichtSprachen, hatUebersicht } from './erklaer.mjs';
 import { SPRACHEN, rechtsseiten, seitentitel, beschreibung as rechtBeschreibung, sprachfassungen, textVon } from './recht.mjs';
 
 // Inhaltsseiten in allen Sprachen. "texte": Modul mit metaTitel, metaBeschreibung, brotkrume je Sprache.
@@ -94,7 +94,11 @@ for (const erklaer of ERKLAERSEITEN) {
   for (const sprache of sprachen) {
     const texte = erklaerTexte(erklaer, sprache);
     const pfad = ADRESSEN[erklaer.schluessel][sprache];
-    const eltern = erklaer.eltern ? { titel: PAAR_TEXTE[erklaer.eltern][sprache].brotkrume, ziel: ADRESSEN[erklaer.eltern][sprache] } : null;
+    // Brotkrumen: Start › Ratgeber › Seite; ohne Themenseite (Traum, Mond, Allgemein) Start › Wissen › Seite (AP-25E),
+    // solange es die Übersicht in der Sprache gibt.
+    const eltern = erklaer.eltern
+      ? { titel: PAAR_TEXTE[erklaer.eltern][sprache].brotkrume, ziel: ADRESSEN[erklaer.eltern][sprache] }
+      : hatUebersicht(sprache) ? { titel: oberflaeche[sprache].wissen.uebersicht.brotkrume, ziel: ADRESSEN.wissen[sprache] } : null;
     liste.push(eintrag({
       schluessel: erklaer.schluessel,
       pfad,
@@ -113,6 +117,30 @@ for (const erklaer of ERKLAERSEITEN) {
       erklaer,
     }));
   }
+}
+
+// Übersicht aller Erklärseiten (AP-25E): nur in Sprachen mit mindestens einer Erklärseite, die es gibt.
+const wissenSprachen = uebersichtSprachen();
+const wissenFassungen = wissenSprachen.length > 1 ? wissenSprachen.map((sprache) => ({ sprache, pfad: ADRESSEN.wissen[sprache] })) : null;
+const ERKLAER_DATEIEN = [...new Set(ERKLAERSEITEN.map((erklaer) => `src/daten/texte/${erklaerDatei(erklaer)}.mjs`))];
+for (const sprache of wissenSprachen) {
+  const texte = oberflaeche[sprache].wissen.uebersicht;
+  const pfad = ADRESSEN.wissen[sprache];
+  liste.push(eintrag({
+    schluessel: 'wissen',
+    pfad,
+    sprache,
+    fassungen: wissenFassungen,
+    titel: texte.metaTitel,
+    beschreibung: texte.metaBeschreibung,
+    bild: `/bilder/teilen/start-${sprache}.jpg`,
+    bildAlt: texte.metaTitel.replace(/\s*\|\s*Tarot Cup$/, ''),
+    art: 'website',
+    krumen: [krume(sprache), { titel: texte.brotkrume, ziel: pfad }],
+    prioritaet: 0.7,
+    quellen: ['src/daten/texte/oberflaeche.mjs', 'src/daten/erklaer.mjs', 'src/daten/wissen.mjs', 'src/components/Wissensuebersicht.astro', ...ERKLAER_DATEIEN],
+    teilen: true,
+  }));
 }
 
 liste.push(eintrag({

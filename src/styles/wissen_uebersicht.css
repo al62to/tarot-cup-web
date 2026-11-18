@@ -1,0 +1,10 @@
+/* Übersicht /wissen/ (AP-25E, components/Wissensuebersicht.astro), nur auf dieser Seite geladen, damit die übrigen Seiten
+   gleich bleiben. Je Bereich ein Abschnitt mit den Karten aus wissen.css, Abstand wie zwischen den Abschnitten der
+   Ratgeber; darunter bei Kaffeesatz und Tarot der Link auf den Ratgeber. Keine neuen Farben oder Schriften. */
+.wissen-uebersicht { display: flex; flex-direction: column; gap: clamp(40px, 5vw, 56px); padding-bottom: clamp(64px, 8vw, 96px); }
+.wissen-uebersicht .wissen-alle { margin-top: 16px; }
+
+/* wissen.css blendet Linkblöcke beim Drucken aus; hier sind sie der Inhalt der Seite. */
+@media print {
+  .wissen-uebersicht .wissen { display: block; }
+}
