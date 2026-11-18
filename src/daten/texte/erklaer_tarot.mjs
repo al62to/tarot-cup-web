@@ -3,7 +3,7 @@ export const erklaerTarot = {
   de: {
     geschichte: {
       metaTitel: 'Geschichte des Tarot: von Tarocchi bis 1909 | Tarot Cup',
-      metaBeschreibung: 'Tarot begann im 15. Jahrhundert als Kartenspiel in Norditalien. Wie daraus ab 1781 ein Werkzeug der Deutung wurde, bis zu den Karten von 1909.',
+      metaBeschreibung: 'Tarot begann im 15. Jahrhundert als Kartenspiel in Nord- und Mittelitalien. Wie daraus ab 1781 ein Werkzeug der Deutung wurde, bis zu den Karten von 1909.',
       titel: 'Geschichte des Tarot: von den Tarocchi bis zu den Karten von 1909',
       brotkrume: 'Geschichte',
       kurzantwort: [
