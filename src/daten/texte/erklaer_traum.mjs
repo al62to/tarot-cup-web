@@ -26,7 +26,7 @@ export const erklaerTraum = {
           titel: 'Wer war Artemidor von Daldis?',
           absaetze: [
             'Artemidor stammte aus Ephesos, nannte sich aber nach Daldis, dem Heimatort seiner Mutter. Die antike Stadt lag in der Landschaft Lydien, im Gebiet der heutigen Provinz Manisa in der Türkei. Gelebt und geschrieben hat er im 2. Jahrhundert. Wann genau, ist unsicher; neuere Forschung setzt sein Wirken etwa zwischen 140 und 200 an.',
-            'Sein Werk heißt *Oneirokritika*, auf Deutsch etwa „Traumdeutung“. Es ist das älteste erhaltene griechische Buch zu diesem Thema und hat fünf Teile. Die ersten drei schrieb Artemidor für ein breites Publikum; sie gehen die Traumbilder der Reihe nach durch, vom menschlichen Körper über die Natur bis zu vielem anderen. Die Bücher vier und fünf waren für seinen Sohn bestimmt, der ebenfalls Träume deutete. Das fünfte sammelt 95 Beispielträume.',
+            'Sein Werk heißt *Oneirokritika*, auf Deutsch etwa „Traumdeutung“. Es ist das älteste erhaltene griechische Buch zu diesem Thema und hat fünf Teile. Die ersten drei schrieb Artemidor für ein breites Publikum; sie gehen die Traumbilder der Reihe nach durch, vom menschlichen Körper über die Natur bis zu vielem anderen. Die Bücher vier und fünf waren für seinen Sohn bestimmt, der ebenfalls Träume deutete. Das fünfte sammelt fast hundert Beispielträume.',
             'Bemerkenswert ist seine Haltung: Derselbe Traum kann für zwei Menschen ganz Verschiedenes heißen. Wer deutet, muss deshalb wissen, wer träumt und wie diese Person lebt. Im 9. Jahrhundert wurden die ersten drei Bücher ins Arabische übertragen, und noch Sigmund Freud bezog sich auf Artemidor.',
           ],
         },
@@ -331,7 +331,7 @@ export const erklaerTraum = {
           titel: 'Daldisli Artemidoros kimdi?',
           absaetze: [
             'Artemidoros Efesliydi, ama kendini annesinin memleketi Daldis’ten ötürü “Daldisli” diye tanıttı. Lidya bölgesindeki bu antik kent bugün Manisa il sınırları içinde, Marmara Gölü’nün yukarısında kalır. 2. yüzyılda yaşadı ve eserini bu dönemde yazdı. Tarihler tam olarak belli değil; yeni araştırmalar onun etkin olduğu dönemi yaklaşık 140 ile 200 yılları arasına yerleştiriyor.',
-            'Eserinin adı *Oneirokritika*’dır; kabaca “rüyaların yorumu” anlamına gelir. Bu konuda günümüze ulaşan en eski Yunanca eserdir ve beş kitaptan oluşur. İlk üç kitap geniş bir okur kitlesine seslenir; insan bedeninden doğaya uzanan pek çok rüya imgesini sırayla ele alır. Dördüncü ve beşinci kitapları, kendisi gibi rüya yorumlayan oğlu için yazdı. Beşinci kitapta 95 örnek rüya bulunur.',
+            'Eserinin adı *Oneirokritika*’dır; kabaca “rüyaların yorumu” anlamına gelir. Bu konuda günümüze ulaşan en eski Yunanca eserdir ve beş kitaptan oluşur. İlk üç kitap geniş bir okur kitlesine seslenir; insan bedeninden doğaya uzanan pek çok rüya imgesini sırayla ele alır. Dördüncü ve beşinci kitapları, kendisi gibi rüya yorumlayan oğlu için yazdı. Beşinci kitapta yüze yakın örnek rüya bulunur.',
             'Artemidoros’un bakışı bugün de dikkat çeker: Aynı rüya iki insan için çok farklı anlamlara gelebilir. Yorumcu, rüyayı görenin kim olduğunu ve nasıl bir hayat sürdüğünü bilmelidir. İlk üç kitap 9. yüzyılda Arapçaya çevrildi; Sigmund Freud da yüzyıllar sonra ondan söz etti.',
           ],
         },
