@@ -122,7 +122,7 @@ export const oberflaeche = {
       posen: {
         titel: 'Weitere Bilder von Aylin und Ozan',
         absaetze: [
-          'Auf den Seiten mit Wissen zu Kaffeesatz und Tarot zeigen weitere Bilder Aylin beim Schreiben, mit einem Geschenk und mit Tarotkarten, auf den Seiten mit Wissen zu Träumen Aylin und Ozan unter dem Mond. Das Bild mit Tarotkarten ist mit dem Bildgenerator von Canva entstanden, die übrigen mit dem Bildgenerator Seedream 5.5 bei ElevenLabs. Alle sind für Tarot Cup bearbeitet; für diese Website sind sie nur verkleinert und als AVIF und WebP gespeichert.',
+          'Auf den Seiten mit Wissen zu Kaffeesatz, Tarot und zur Deutung zeigen weitere Bilder Aylin beim Schreiben, mit Tarotkarten und mit einem Geschenk, auf den Seiten mit Wissen zu Träumen Aylin und Ozan unter dem Mond. Das Bild mit Tarotkarten ist mit dem Bildgenerator von Canva entstanden, die übrigen mit dem Bildgenerator Seedream 5.5 bei ElevenLabs. Alle sind für Tarot Cup bearbeitet; für diese Website sind sie nur verkleinert und als AVIF und WebP gespeichert.',
         ],
       },
       marken: 'Google Play und das Google Play-Logo sind Marken von Google LLC.',
@@ -232,12 +232,12 @@ export const oberflaeche = {
         ],
       },
       // AP-25C: auf Türkisch sind nur die Seiten zu Träumen live (Nr. 13 bis 15: Aylin und Ozan unter dem Mond).
-      // AP-25D: dazu Nr. 1, 7, 20 (Aylin beim Schreiben, mit Tarotkarten, mit Geschenk), gleichlautend mit de.
+      // AP-25D: dazu Nr. 1, 7, 20 (Aylin beim Schreiben, mit Tarotkarten, mit Geschenk), gleichlautend mit de (Entscheidung PL: „zur Deutung“).
       // Voller Stand für später: 'Kahve falı, tarot, rüyalar ve Ay hakkındaki bilgi sayfalarında Aylin ile Ozan’ı başka resimlerde de görürsün: yazarken, Ay’ın altında, elinde bir hediyeyle ve tarot kartlarıyla. Tarot kartlı resimler Canva’nın görsel üreticisiyle, diğerleri ElevenLabs’teki Seedream 5.5 görsel üreticisiyle çizildi. Hepsi Tarot Cup için düzenlendi; bu sitede yalnızca küçültüldü ve AVIF ile WebP biçiminde kaydedildi.'
       posen: {
         titel: 'Aylin ve Ozan’ın diğer resimleri',
         absaetze: [
-          'Kahve falı ve tarotla ilgili bilgi sayfalarında Aylin’i başka resimlerde de görürsün: yazarken, elinde bir hediyeyle ve tarot kartlarıyla. Rüyalarla ilgili bilgi sayfalarında ise Aylin ile Ozan ayın altında. Tarot kartlı resim Canva’nın görsel üreticisiyle, diğerleri ElevenLabs’teki Seedream 5.5 görsel üreticisiyle oluşturuldu. Hepsi Tarot Cup için düzenlendi; bu sitede yalnızca küçültüldü ve AVIF ile WebP biçiminde kaydedildi.',
+          'Kahve falı, tarot ve yorumla ilgili bilgi sayfalarında Aylin’i başka resimlerde de görürsün: yazarken, tarot kartlarıyla ve elinde bir hediyeyle. Rüyalarla ilgili bilgi sayfalarında ise Aylin ile Ozan ayın altında. Tarot kartlı resim Canva’nın görsel üreticisiyle, diğerleri ElevenLabs’teki Seedream 5.5 görsel üreticisiyle oluşturuldu. Hepsi Tarot Cup için düzenlendi; bu sitede yalnızca küçültüldü ve AVIF ile WebP biçiminde kaydedildi.',
         ],
       },
       marken: 'Google Play ve Google Play logosu, Google LLC’nin ticari markalarıdır.',
