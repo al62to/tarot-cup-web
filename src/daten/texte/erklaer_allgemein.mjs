@@ -47,7 +47,7 @@ export const erklaerAllgemein = {
           titel: 'Was geschieht mit deinem Traum oder deiner Frage?',
           absaetze: [
             'Tippst du zum ersten Mal auf „Deuten lassen“, bittet dich die App um deine ausdrückliche Zustimmung, denn ein Traum oder eine Frage kann sehr Persönliches enthalten, etwa zu Gesundheit, Glauben oder Intimem. Ohne Zustimmung sendet die App nichts für die automatische Deutung.',
-            'Mit deiner Zustimmung gehen dein Traum oder deine Karten und, wenn du eine stellst, deine Frage für diese eine Deutung an den Server von Tarot Cup in Deutschland und an einen Dienstleister außerhalb der EU, etwa in den USA, bei dem das Programm die Deutung schreibt. Der Server von Tarot Cup speichert weder deinen Text noch die Deutung. Meldest du eine Deutung, speichert er nur ihren Text, ohne Kennung und derzeit 90 Tage lang. Der Dienstleister löscht deine Angaben derzeit in der Regel nach spätestens 30 Tagen und nutzt sie nicht zum Trainieren.',
+            'Mit deiner Zustimmung gehen dein Traum oder deine Karten und, wenn du eine stellst, deine Frage für diese eine Deutung an den Server von Tarot Cup in Deutschland und an einen Dienstleister außerhalb der EU, etwa in den USA, bei dem das Programm die Deutung schreibt. Der Server von Tarot Cup speichert weder deinen Text noch die Deutung. Meldest du eine Deutung, speichert er ohne Kennung nur ihren Text mit Art, Sprache, Land und Datum, derzeit 90 Tage lang. Der Dienstleister löscht deine Angaben derzeit in der Regel nach spätestens 30 Tagen und nutzt sie nicht zum Trainieren.',
             'Außerdem schickt die App unter anderem die Sprache der App und das Land deines Handys als Kürzel aus zwei Buchstaben mit. Das Land braucht es, damit ein Hilfetext passende Stellen nennen kann; eine Standortberechtigung braucht die App dafür nicht. An den Server von Tarot Cup gehen auch eine zufällige Kennung dieser Installation und ein Nachweis von Google Play; die Kennung bekommt der Dienstleister nicht. Alles Weitere, auch die Ausnahmen, steht in der [Datenschutzerklärung](/datenschutz/).',
             'In deinen Verlauf kommt eine automatische Deutung nur, wenn du auf „Merken“ tippst, und auch dann ohne deinen Traum und ohne deine Frage. Namen, Adressen oder Telefonnummern anderer Menschen lässt du am besten weg.',
           ],
@@ -95,5 +95,96 @@ export const erklaerAllgemein = {
       ],
     },
   },
-  tr: {},
+  tr: {
+    deutung: {
+      metaTitel: 'Bir yorum ne yapabilir, uygulama nasıl yorumlar | Tarot Cup',
+      metaBeschreibung: 'Tarot Cup’ta bir yorum neler yapabilir, neler yapamaz: değişmeyen sınırlar, otomatik yorumun nasıl oluştuğu, rızan ve bir kriz anında yardım.',
+      titel: 'Bir yorumun yapabildikleri ve yapamadıkları',
+      brotkrume: 'Bir yorumun yapabildikleri',
+      kurzantwort: [
+        'Tarot Cup’ta bir yorum eğlence amaçlıdır ve üzerine düşünmen için bir çıkış noktasıdır; bir öngörü ya da danışmanlık değildir. Birinin hastalanacağını, hamile kalacağını ya da öleceğini öngörmez, para konusunda ya da şans oyunları için tüyo vermez. Otomatik yorumu, yalnızca senin rızanla, bir program yazar; bu yorum şu an yalnızca hediye olarak gelir. Bu sırada rüyan ya da sorun gerçek bir kriz ya da tehlike düşündürürse, yorum yerine nereden yardım bulabileceğini gösteren bir bilgi alırsın.',
+      ],
+      inhaltTitel: 'İçindekiler',
+      abschnitte: [
+        {
+          kennung: 'yorum-nedir',
+          titel: 'Yorum nedir, ne değildir?',
+          absaetze: [
+            'Bir yorum, geleneğin bir tarot kartında, kahve telvesindeki bir işarette ya da bir rüya imgesinde ne gördüğünü anlatır ve seni bunu kendi hayatınla karşılaştırmaya davet eder. Kesinliklerle değil, olasılıklarla konuşur.',
+            'Tarot Cup eğlence amaçlıdır. Bir yorum ne bir öngörüdür ne bir gerçektir ne de bir danışmanlıktır.',
+            'Bu yüzden önemli kararlarını bir yoruma dayandırma. Sağlık, ruhsal durum, hukuk ya da para konusundaki sorularda sana uzmanlar ve güvendiğin insanlar yardımcı olur.',
+          ],
+        },
+        {
+          kennung: 'degismeyen-sinirlar',
+          titel: 'Her yorum için hangi sınırlar geçerli?',
+          absaetze: [
+            'Uygulamanın metinleri için, açıkça istesen bile değişmeyen sınırlar vardır. Bir yorum, senin ya da başkalarının hastalanacağını, hamile kalacağını ya da öleceğini üstü kapalı biçimde bile öngörmez. Hastalık ya da ölümle ilgili bir rüya imgesini özenle, içsel bir imge olarak yorumlar. Para miktarı ya da şanslı sayı söylemez, loto, bahis ve yatırım için tüyo vermez; mahkemedeki ya da resmî bir kurumdaki bir sürecin nasıl sonuçlanacağını da öngörmez.',
+            'Bir yorum insanlar hakkında hüküm de vermez: Birinin aldattığını, yalan söylediğini ya da bir kavgada suçlu olduğunu ileri sürmez; lanete, nazara ya da kıskananlara karşı uyarmaz ve seni asla ayrılmaya, istifaya ya da biriyle bağını koparmaya çağırmaz. En fazla sakin bir konuşmaya davet eder; karar sende kalır.',
+            'Uygulama karanlık görünen kartları da özenle yorumlar. *Ölüm* kartı Tarot Cup’ta bir ölümü değil, dönüşümü ve bir kapanışı anlatır. Kartlar hakkında daha fazlasını [Tarot rehberi](/tr/tarot/) anlatıyor.',
+          ],
+        },
+        {
+          kennung: 'yorumlar-nasil-olusur',
+          titel: 'Uygulamadaki yorumlar nasıl oluşur?',
+          absaetze: [
+            'Tarot, kahve falı ve rüya için normal yorumları uygulama telefonunda, sabit kurallara göre, geleneksel anlamları izleyen hazır metinlerden oluşturur. Tarotta ve kahve falında aklındaki soruyu da sormaz: Gelenekte olduğu gibi soruyu yalnızca içinden geçirirsin.',
+            'Otomatik yorumda ise rüyanı kendi sözlerinle yazarsın ya da kart çekersin ve istersen kartlara kendi sorunu sorarsın. Bundan bir program, önceden bir insan okumadan, otomatik olarak kısa bir yorum yazar. Bu yorum “otomatik oluşturuldu” notunu taşır.',
+            'Yukarıdaki sınırlar programın sabit talimatlarında da yer alır. Tarot Cup’ın sunucusu her yanıtı kontrol eder ve yanıtı yeniden isteyebilir ya da sabit bir metinle değiştirebilir, ama her otomatik yorumun bütün sınırlara uyduğunu güvence altına alamaz. Örneğin hasta olup olmadığını sorarsan otomatik yorum, önce tek bir cümleyle bunu yanıtlayamayacağını ve doğru adresin bir doktor olduğunu söyleyecek, ardından genel bir yorum yapacak şekilde tasarlanmıştır.',
+            'Yine de böyle bir metin uygunsuz olabilir, doğru olmayan şeyler ileri sürebilir ya da sorunu yanlış anlayabilir. İçindeki ifadelere kendin kontrol etmeden güvenme. Yorum sana incitici, uygunsuz ya da yanlış gelirse hemen altındaki “Bildir” düğmesine dokun.',
+          ],
+        },
+        {
+          kennung: 'riza-ve-veriler',
+          titel: 'Rüyana ya da sorduğun soruya ne olur?',
+          absaetze: [
+            '“Yorumlat”a ilk kez dokunduğunda uygulama senden açık rızanı ister, çünkü bir rüya ya da soru çok kişisel şeyler içerebilir; örneğin sağlık, inanç ya da mahrem konular. Rıza vermezsen uygulama otomatik yorum için hiçbir şey göndermez.',
+            'Rıza verirsen rüyan ya da kartların, bir soru yazdıysan sorun da yalnızca bu tek yorum için Tarot Cup’ın Almanya’daki sunucusuna ve AB dışındaki, örneğin ABD’deki bir hizmet sağlayıcıya gider; yorumu orada program yazar. Tarot Cup’ın sunucusu ne senin metnini ne de yorumu saklar. Bir yorumu bildirirsen sunucu, tanımlayıcı olmadan, yalnızca yorumun metnini, türünü, dili, ülkeyi ve tarihi şu an için 90 gün boyunca saklar. Hizmet sağlayıcı senin bilgilerini şu an genellikle en geç 30 gün sonra siler ve onları eğitim için kullanmaz.',
+            'Uygulama ayrıca, başka bilgilerin yanı sıra, uygulamanın dilini ve telefonunun ülkesini iki harfli bir kısaltma olarak gönderir. Ülke, bir yardım metninin uygun kuruluşları gösterebilmesi için gerekir; uygulamanın bunun için konum iznine ihtiyacı yoktur. Tarot Cup’ın sunucusuna bu kuruluma ait rastgele bir tanımlayıcı ve Google Play doğrulaması da gider; tanımlayıcıyı hizmet sağlayıcı almaz. İstisnalar da dahil olmak üzere geri kalan her şey [Gizlilik Politikası](/tr/gizlilik/)’nda yazıyor.',
+            'Otomatik bir yorum geçmişine yalnızca “Kaydet”e dokunursan girer, o zaman da rüyan ve sorun olmadan. Başka insanların adlarını, adreslerini ya da telefon numaralarını en iyisi hiç yazma.',
+          ],
+        },
+        {
+          kennung: 'yorum-yerine-yardim',
+          titel: 'Metnin bir kriz ya da tehlike düşündürürse ne olur?',
+          absaetze: [
+            'Bu yalnızca otomatik yorum için geçerlidir, çünkü yalnızca orada kendin bir şey yazarsın. Metnin hizmet sağlayıcıya gitmeden önce Tarot Cup’ın sunucusu, metninin gerçek hayatındaki bir krizi ya da tehlikeyi düşündürüp düşündürmediğini, örneğin kendine zarar verme düşüncelerine ya da sana gerçekten yapılan şiddete işaret edip etmediğini kelime listeleriyle kontrol eder. Kontrol bir işaret bulursa metnin daha ileri gitmez ve yorum yerine nereden yardım bulabileceğini gösteren sabit bir bilgi alırsın. Böyle bir durumu ancak program fark ederse sunucu onun yanıtını atar ve yine yalnızca bu bilgiyi gönderir.',
+            'Bir rüyada ölüm ya da şiddet geçmesi tek başına bir kriz işareti değildir; böyle bir rüya normal ve özenli bir yorum alır. Kontrol her krizi fark etmez ve bu bilgi acil yardım çağrısının yerini tutmaz: Sen ya da başka biri tehlikedeyse ülkendeki acil yardım hattına başvur.',
+          ],
+        },
+        {
+          kennung: 'hediye-olarak-otomatik-yorum',
+          titel: 'Otomatik yorumu nasıl alırsın?',
+          absaetze: [
+            'Otomatik yorumu şu an yalnızca hediye olarak alırsın. Paylaşım için şimdilik şu kural geçerli: Yedi gün içinde üç farklı günde uygulamadan bir şey paylaşırsan ve bu sürede bağlantılarından en az biri açılırsa bir tane alırsın. Yalnızca kodlu bağlantılar sayılır, “kodsuz paylaş” ile gönderdiklerin sayılmaz. Birini davet edersen ve bu kişi Tarot Cup’ı uygulamanın belirttiği kadar gün kullanırsa ikiniz de birer tane alırsınız.',
+            'Şu an cihaz başına yedi günde en fazla bir otomatik yorum alınabilir. Bekleyen bir yorum olup olmadığına Tarot Cup’ın sunucusu karar verir; bunun için uygulamanın internete ihtiyacı vardır. Şu an neyin geçerli olduğunu uygulama sana gösterir. Bu kurallar her an değişebilir; bir hediyeyi talep etme hakkın yoktur ([Kullanım Koşulları](/tr/kullanim-kosullari/)).',
+          ],
+        },
+      ],
+      fragenTitel: 'Sık sorulan sorular',
+      fragen: [
+        {
+          frage: 'Rüyamı ya da sorumu bir insan okuyor mu?',
+          antwort: ['Normalde hayır. Yalnızca hizmet sağlayıcının güvenlik sistemleri bir isteği işaretlerse hizmet sağlayıcı onu inceleyebilir. Bir yorumu bildirirsen, hataları gidermek için o yorumun metni okunur; rüyan ve sorun bu sırada gönderilmez.'],
+        },
+        {
+          frage: 'Rızamı geri alabilir miyim?',
+          antwort: ['Evet, istediğin zaman Ayarlar’da “Otomatik yorum” altından; bundan sonra uygulama, yeniden rıza verene kadar bunun için hiçbir şey göndermez. “Sunucudaki verilerimi sil”, sunucunun cihazınla ilgili sakladığı her şeyi hemen siler; bunlar sunucunun yedeklerinde şu an en fazla 14 gün daha bulunabilir ve bekleyen hediyeler kaybolur.'],
+        },
+        {
+          frage: 'Uygulama otomatik yorum olmadan da çalışır mı?',
+          antwort: ['Evet. Tarot, kahve falı, simgelerle rüya yorumu, Sözlük ve Geçmiş rıza vermeden ve internet olmadan çalışır. Otomatik yorum, sunucudan gelen hediyeler ve davet etme için, ayrıca yeni sürüm bildirimi ve Google Play üzerinden değerlendirme için internet gerekir.'],
+        },
+      ],
+      app: {
+        titel: 'Uygulamada',
+        text: ['Android için Tarot Cup’ta kartları, kahve telvesini ve rüyaları hesap olmadan yorumlarsın. Paylaştığında ya da birini davet ettiğinde, şu an hediye olarak bir otomatik yorum da kazanabilirsin.'],
+      },
+      quellenTitel: 'Kaynaklar',
+      quellen: [
+        { angabe: 'Tarot Cup: Gizlilik Politikası, Sürüm 1.7, Tarih: 17.11.2026, özellikle 1, 3, 4, 6, 10, 15 ve 17. bölümler. tarot-cup.com, 2026.', url: 'https://tarot-cup.com/tr/gizlilik/' },
+        { angabe: 'Tarot Cup: Kullanım Koşulları, Sürüm 1.3, Tarih: 17.11.2026, özellikle 3, 5, 6, 11 ve 14. bölümler. tarot-cup.com, 2026.', url: 'https://tarot-cup.com/tr/kullanim-kosullari/' },
+      ],
+    },
+  },
 };

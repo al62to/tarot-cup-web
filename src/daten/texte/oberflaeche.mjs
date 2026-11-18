@@ -232,11 +232,12 @@ export const oberflaeche = {
         ],
       },
       // AP-25C: auf Türkisch sind nur die Seiten zu Träumen live (Nr. 13 bis 15: Aylin und Ozan unter dem Mond).
+      // AP-25D: dazu Nr. 1, 7, 20 (Aylin beim Schreiben, mit Tarotkarten, mit Geschenk), gleichlautend mit de.
       // Voller Stand für später: 'Kahve falı, tarot, rüyalar ve Ay hakkındaki bilgi sayfalarında Aylin ile Ozan’ı başka resimlerde de görürsün: yazarken, Ay’ın altında, elinde bir hediyeyle ve tarot kartlarıyla. Tarot kartlı resimler Canva’nın görsel üreticisiyle, diğerleri ElevenLabs’teki Seedream 5.5 görsel üreticisiyle çizildi. Hepsi Tarot Cup için düzenlendi; bu sitede yalnızca küçültüldü ve AVIF ile WebP biçiminde kaydedildi.'
       posen: {
         titel: 'Aylin ve Ozan’ın diğer resimleri',
         absaetze: [
-          'Rüyalarla ilgili bilgi sayfalarında Aylin ile Ozan’ı başka resimlerde, ayın altında da görürsün. Bu resimler ElevenLabs’teki Seedream 5.5 görsel üreticisiyle oluşturuldu ve Tarot Cup için düzenlendi; bu sitede yalnızca küçültüldü ve AVIF ile WebP biçiminde kaydedildi.',
+          'Kahve falı ve tarotla ilgili bilgi sayfalarında Aylin’i başka resimlerde de görürsün: yazarken, elinde bir hediyeyle ve tarot kartlarıyla. Rüyalarla ilgili bilgi sayfalarında ise Aylin ile Ozan ayın altında. Tarot kartlı resim Canva’nın görsel üreticisiyle, diğerleri ElevenLabs’teki Seedream 5.5 görsel üreticisiyle oluşturuldu. Hepsi Tarot Cup için düzenlendi; bu sitede yalnızca küçültüldü ve AVIF ile WebP biçiminde kaydedildi.',
         ],
       },
       marken: 'Google Play ve Google Play logosu, Google LLC’nin ticari markalarıdır.',
