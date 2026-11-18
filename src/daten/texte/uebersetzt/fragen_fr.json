@@ -32,15 +32,20 @@
    "id": "fragen-gespeichert",
    "frage": "Mes questions sont-elles enregistrées ?",
    "antwort": [
-    "Non. L’application n’a pas de champ pour ta question : tu la gardes en silence pour toi. Elle ne la demande pas et ne l’enregistre pas.",
-    "Dans l’historique, l’application garde la trace de ce que tu as fait : la date et l’heure, le type de tirage, les cartes (avec l’indication si elles étaient renversées) ou les symboles avec leur emplacement dans la tasse, et pour le marc de café, le domaine de la vie ainsi que ta note si tu en écris une. Ta question n’y figure jamais."
+    "Pour les tirages habituels, l’application n’a pas de champ pour ta question : tu la gardes en silence pour toi. C’est seulement avec la lecture automatique que tu peux poser aux cartes ta propre question, si tu le souhaites.",
+    "Cette question est envoyée uniquement pour cette seule lecture à mon serveur et à Anthropic, où un modèle de langage rédige la lecture. Mon serveur ne l’enregistre pas : il l’écarte dès que la requête est terminée. Anthropic la supprime en règle générale au plus tard au bout de 30 jours et ne s’en sert pas pour l’entraînement. Il en va de même pour un rêve que tu y écris.",
+    "Dans l’historique, l’application garde la trace de ce que tu as fait : la date et l’heure, le type de tirage, les cartes (avec l’indication si elles étaient renversées) ou les symboles avec leur emplacement dans la tasse, et pour le marc de café, le domaine de la vie ainsi que ta note si tu en écris une. Ta question n’y figure jamais, pas même pour une lecture automatique que tu conserves avec « Enregistrer »."
    ]
   },
   {
    "id": "internet",
    "frage": "Ai-je besoin d’Internet ?",
    "antwort": [
-    "Non. Tarot Cup n’a pas l’autorisation d’accéder à Internet. Les tirages, le dictionnaire et l’historique fonctionnent sans aucune connexion, et même le rappel de la carte du jour est programmé par l’application sur ton téléphone."
+    "Pour presque tout, non. Le tarot, le marc de café, l’interprétation des rêves, le dictionnaire et l’historique fonctionnent sans aucune connexion, et même le rappel de la carte du jour est programmé par l’application sur ton téléphone.",
+    "L’application a besoin d’une connexion pour la lecture automatique, pour les cadeaux du serveur et pour les invitations, ainsi que pour la notification des nouvelles versions et pour la notation, qui passent par le Play Store.",
+    "Pour la lecture automatique, une fois que tu as donné ton consentement et que tu touches « Interpréter », ton rêve ou tes cartes avec ta question, la langue et le pays sont envoyés de manière chiffrée à mon serveur en Allemagne, puis de là à Anthropic, où un modèle de langage rédige la lecture. Mon serveur n’enregistre ni ton texte ni la lecture, sauf si tu signales une lecture.",
+    "L’application envoie aussi à mon serveur un identifiant aléatoire de cette installation, qu’il conserve uniquement sous forme d’empreinte non réversible, ainsi qu’une attestation de Google Play indiquant que la véritable application fonctionne sur un véritable appareil. Lors du partage et des invitations, ton lien contient un code aléatoire. Mon serveur ne connaît ni ton nom, ni ton adresse e-mail, ni tes contacts.",
+    "L’application n’envoie des statistiques d’utilisation et des rapports de plantage que si tu les actives. Tous les détails figurent dans la [Politique de confidentialité](/fr/confidentialite/)."
    ]
   },
   {

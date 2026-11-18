@@ -59,7 +59,8 @@
   "iphone": "Tarot Cup hanya tersedia untuk ponsel Android.",
   "mehr": "Selengkapnya bisa kamu baca di situs web kami:",
   "kaffeesatz": "Membaca ampas kopi",
-  "traum": "Tafsir mimpi"
+  "traum": "Tafsir mimpi",
+  "blase": "Tarot Cup hanya tersedia untuk ponsel Android. Silakan baca di sini cara kerja tarot dan ampas kopi."
  },
  "nichtGefunden": {
   "titel": "Halaman tidak ditemukan",
@@ -71,7 +72,10 @@
   "auslegebild": "Gambar bentangan",
   "eineKarte": "satu kartu",
   "gegenueberKurz": "sisi seberang",
-  "tassenkarte": "Peta cangkir dari atas: {rand}, {mitte}, dan {boden}, di kiri {gegenueber}, di kanan {henkelseite} dengan gagangnya, di bawahnya {untertasse}"
+  "tassenkarte": "Peta cangkir dari atas: {rand}, {mitte}, dan {boden}, di kiri {gegenueber}, di kanan {henkelseite} dengan gagangnya, di bawahnya {untertasse}",
+  "begleiterBeide": "Aylin dan Ozan, digambar dengan warna emas di atas biru malam: Aylin dengan cangkir kopi Turki, Ozan dengan cezve tembaga",
+  "begleiterErzaehlerin": "Aylin, ilustrasi pencerita dengan cangkir kopi Turki",
+  "begleiterErzaehler": "Ozan, ilustrasi pencerita dengan cezve tembaga dan cangkir"
  },
  "bildnachweis": {
   "metaTitel": "Sumber gambar dan lisensi | Tarot Cup",
@@ -91,6 +95,12 @@
    "absaetze": [
     "Situs web ini memakai dua fon: Cormorant Garamond karya Christian Thalmann dan Inter karya Rasmus Andersson. Keduanya berlisensi SIL Open Font License, Versi 1.1.",
     "Berkas fon disimpan di situs web ini sendiri dan tidak dimuat dari server pihak lain."
+   ]
+  },
+  "begleiter": {
+   "titel": "Aylin dan Ozan",
+   "absaetze": [
+    "Aylin dan Ozan, dua sosok di situs ini dan di aplikasi, digambar dengan generator gambar Canva, lalu disunting untuk Tarot Cup."
    ]
   },
   "marken": "Google Play dan logo Google Play adalah merek dagang Google LLC."

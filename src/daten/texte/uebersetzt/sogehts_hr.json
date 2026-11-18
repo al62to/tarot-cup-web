@@ -11,7 +11,7 @@
    "kennung": "erster-start",
    "titel": "Što se događa pri prvom pokretanju?",
    "absaetze": [
-    "Pri prvom otvaranju aplikacija se prikazuje na jeziku svog mobitela; nakon „Dobro došli” dodiruješ „Dalje”. U koraku „Prije nego što počnemo” potvrđuješ da imaš najmanje 16 godina te pomoću „Prihvati i nastavi” prihvaćaš uvjete korištenja. Kratko upoznavanje predstavlja Kartu dana, gledanje u šalicu, tarot i Leksikon; pomoću „Preskoči” možeš ga izostaviti. Na kraju aplikacija pita želiš li da te ujutro podsjeti na tvoju Kartu dana."
+    "Pri prvom otvaranju aplikacija se prikazuje na jeziku svog mobitela; nakon „Dobro došli” dodiruješ „Dalje”. U koraku „Prije nego što počnemo” potvrđuješ da imaš najmanje 16 godina te pomoću „Prihvati sve” ili „Samo nužno” prihvaćaš uvjete korištenja. „Prihvati sve” uključuje i statistiku korištenja i izvješća o padovima, a „Samo nužno” ih ostavlja isključenima; to možeš u bilo kojem trenutku promijeniti u postavkama. Kratko upoznavanje predstavlja Kartu dana, gledanje u šalicu, tarot i Leksikon; pomoću „Preskoči” možeš ga izostaviti. Na kraju aplikacija pita želiš li da te ujutro podsjeti na tvoju Kartu dana."
    ],
    "foto": "01_erster_start",
    "alt": "Korak „Prije nego što počnemo” s označenim kvadratićem za dob, poveznicama na Izjavu o privatnosti i Uvjete korištenja te gumbom „Prihvati i nastavi”."
@@ -74,7 +74,7 @@
    "kennung": "teilen",
    "titel": "Kako podijeliti tumačenje?",
    "absaetze": [
-    "Ispod tumačenja nalazi se „Podijeli kao sliku”, i to također kod unosa u Povijesti. Aplikacija iz toga stvara sliku s rasporedom, datumom, nazivima karata ili znakova, kratkom rečenicom iz tumačenja i nazivom „Tarot Cup”. Tvoje pitanje nije na slici jer ga aplikacija ne poznaje. Kamo slika ide, biraš u izborniku za dijeljenje na Androidu."
+    "Ispod tumačenja nalazi se „Podijeli kao sliku”, i to također kod unosa u Povijesti. Aplikacija iz toga stvara sliku s rasporedom, datumom, nazivima karata ili znakova, kratkom rečenicom iz tumačenja i nazivom „Tarot Cup”. Tvoje bilješke i tvoje pitanje nisu na slici. Kamo slika ide, biraš u izborniku za dijeljenje na Androidu."
    ],
    "foto": "08_teilen",
    "alt": "Slika za dijeljenje na tamnoj pozadini: gore raspored i datum, u sredini imena karata i rečenica u navodnicima, dolje „Tarot Cup”."
@@ -83,7 +83,7 @@
    "kennung": "sprache",
    "titel": "Kako promijeniti jezik?",
    "absaetze": [
-    "Na samom vrhu „Postavki” pod „Jezik” biraš između „Deutsch”, „Türkçe”, „English” i „Español”. Bez vlastitog odabira aplikacija prati jezik svog mobitela, a za svaki drugi jezik mobitela prikazuje engleski. Aplikacija odmah mijenja jezik. I ranija tumačenja u Povijesti, Leksikon, pravni tekstovi i podsjetnik tada se prikazuju na novom jeziku; tvoje bilješke ostaju onakve kakve su zapisane."
+    "Na samom vrhu „Postavki” pod „Jezik” biraš jedan od dvanaest jezika; svaki je ondje napisan u svom izvornom obliku, na primjer „Deutsch”, „Türkçe”, „English” ili „Español”. Bez vlastitog odabira aplikacija prati jezik svog mobitela, a za svaki drugi jezik mobitela prikazuje engleski. Aplikacija odmah mijenja jezik. I ranija tumačenja u Povijesti, Leksikon, pravni tekstovi i podsjetnik tada se prikazuju na novom jeziku; tvoje bilješke ostaju onakve kakve su zapisane."
    ],
    "foto": "09_sprache",
    "alt": "Gornji dio Postavki s odjeljkom „Jezik” i gumbima za jezike."

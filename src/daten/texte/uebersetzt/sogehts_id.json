@@ -11,7 +11,7 @@
    "kennung": "erster-start",
    "titel": "Apa yang terjadi saat aplikasi pertama kali dibuka?",
    "absaetze": [
-    "Saat pertama kali dibuka, aplikasi tampil dalam bahasa ponselmu; setelah “Selamat datang”, kamu mengetuk “Lanjutkan”. Di langkah “Sebelum mulai”, kamu menyatakan bahwa kamu berusia minimal 16 tahun, lalu menerima Ketentuan Penggunaan dengan “Terima dan lanjutkan”. Pengenalan singkat memperkenalkan kartu hari ini, ampas kopi, tarot, dan kamus; dengan “Lewati” kamu bisa melewatkannya. Terakhir, aplikasi bertanya apakah ia boleh mengingatkanmu pada kartu hari ini setiap pagi."
+    "Saat pertama kali dibuka, aplikasi tampil dalam bahasa ponselmu; setelah “Selamat datang”, kamu mengetuk “Lanjutkan”. Di langkah “Sebelum mulai”, kamu menyatakan bahwa kamu berusia minimal 16 tahun, lalu menerima Ketentuan Penggunaan dengan “Terima semua” atau “Hanya yang diperlukan”. “Terima semua” juga mengaktifkan statistik penggunaan dan laporan error, sedangkan “Hanya yang diperlukan” membiarkannya nonaktif; kamu bisa mengubahnya kapan saja di Setelan. Pengenalan singkat memperkenalkan kartu hari ini, ampas kopi, tarot, dan kamus; dengan “Lewati” kamu bisa melewatkannya. Terakhir, aplikasi bertanya apakah ia boleh mengingatkanmu pada kartu hari ini setiap pagi."
    ],
    "foto": "01_erster_start",
    "alt": "Langkah “Sebelum mulai” dengan kotak usia yang sudah dicentang, tautan ke Kebijakan Privasi dan Ketentuan Penggunaan, serta tombol “Terima dan lanjutkan”."
@@ -74,7 +74,7 @@
    "kennung": "teilen",
    "titel": "Bagaimana cara membagikan pembacaan?",
    "absaetze": [
-    "Di bawah setiap pembacaan ada “Bagikan sebagai gambar”, juga pada entri di Riwayat. Aplikasi membuat gambar berisi bentangan, tanggal, nama kartu atau simbol, satu kalimat singkat dari pembacaan, dan nama “Tarot Cup”. Pertanyaanmu tidak tercantum karena aplikasi tidak mengetahuinya. Tujuan gambar kamu pilih di menu Bagikan Android."
+    "Di bawah setiap pembacaan ada “Bagikan sebagai gambar”, juga pada entri di Riwayat. Aplikasi membuat gambar berisi bentangan, tanggal, nama kartu atau simbol, satu kalimat singkat dari pembacaan, dan nama “Tarot Cup”. Catatanmu dan pertanyaanmu tidak tercantum. Tujuan gambar kamu pilih di menu Bagikan Android."
    ],
    "foto": "08_teilen",
    "alt": "Gambar untuk dibagikan di latar gelap: di atas bentangan dan tanggal, di tengah nama kartu dan satu kalimat dalam tanda kutip, di bawah “Tarot Cup”."
@@ -83,7 +83,7 @@
    "kennung": "sprache",
    "titel": "Bagaimana cara mengganti bahasa?",
    "absaetze": [
-    "Di bagian paling atas “Setelan”, di bawah “Bahasa” kamu memilih antara “Deutsch”, “Türkçe”, “English”, dan “Español”. Jika kamu tidak memilih sendiri, aplikasi mengikuti bahasa ponselmu; untuk bahasa ponsel lainnya, aplikasi menampilkan bahasa Inggris. Aplikasi langsung berganti. Pembacaan lama di Riwayat, kamus, teks hukum, dan pengingat juga tampil dalam bahasa baru; catatanmu tetap seperti yang kamu tulis."
+    "Di bagian paling atas “Setelan”, di bawah “Bahasa” kamu memilih salah satu dari dua belas bahasa; masing-masing tertulis di sana dalam ejaannya sendiri, misalnya “Deutsch”, “Türkçe”, “English”, atau “Español”. Jika kamu tidak memilih sendiri, aplikasi mengikuti bahasa ponselmu; untuk bahasa ponsel lainnya, aplikasi menampilkan bahasa Inggris. Aplikasi langsung berganti. Pembacaan lama di Riwayat, kamus, teks hukum, dan pengingat juga tampil dalam bahasa baru; catatanmu tetap seperti yang kamu tulis."
    ],
    "foto": "09_sprache",
    "alt": "Bagian atas Setelan dengan bagian “Bahasa” dan tombol untuk pilihan bahasa."

@@ -1,6 +1,6 @@
 {
  "metaTitel": "Baca ampas kopi dan bentangkan tarot lewat aplikasi | Tarot Cup",
- "metaBeschreibung": "Dengan aplikasi Android Tarot Cup, kamu membaca ampas kopi sendiri dengan 80 simbol dan membentangkan tarot dengan 78 kartu, dalam dua belas bahasa, tanpa internet.",
+ "metaBeschreibung": "Dengan aplikasi Android Tarot Cup, kamu membaca ampas kopi sendiri dengan 80 simbol dan membentangkan tarot dengan 78 kartu, dalam dua belas bahasa, tanpa akun.",
  "ogTitel": "Baca ampas kopi. Bentangkan tarot.",
  "kopf": {
   "zeile": "Tarot Cup · Aplikasi untuk Android",
@@ -8,7 +8,7 @@
    "Baca ampas kopi *sendiri*.",
    "Bentangkan tarot *dengan tenang*."
   ],
-  "text": "Pilih simbol dari cangkirmu, tunjukkan letaknya di peta cangkir, lalu baca apa yang mungkin dimaksudkannya. Atau bentangkan kartu tarot dengan tenang. Aplikasi ini berjalan tanpa internet dan tanpa akun.",
+  "text": "Pilih simbol dari cangkirmu, tunjukkan letaknya di peta cangkir, lalu baca apa yang mungkin dimaksudkannya. Atau bentangkan kartu tarot dengan tenang. Aplikasi ini tidak memerlukan akun, dan hampir semuanya juga bisa digunakan tanpa internet.",
   "knopf": "Lihat di Google Play",
   "bald": "Segera hadir di Google Play",
   "anleitung": "Cara kerja",
@@ -36,13 +36,13 @@
    },
    {
     "zahl": "0",
-    "text": "akun, tanpa perlu internet"
+    "text": "akun, hampir semuanya juga tanpa internet"
    }
   ]
  },
  "wasIst": {
   "titel": "Apa itu Tarot Cup?",
-  "text": "Tarot Cup adalah aplikasi untuk Android yang memungkinkanmu membentangkan kartu tarot dan membaca sendiri ampas kopi di cangkirmu. Aplikasi ini hadir dalam dua belas bahasa; aplikasi terbuka dalam bahasa ponselmu, dan kamu bisa menggantinya di dalam aplikasi. Aplikasi ini ditujukan bagi orang berusia 16 tahun ke atas dan berjalan tanpa internet dan tanpa akun. Pembacaannya mengikuti tradisi lama dan ditujukan untuk hiburan."
+  "text": "Tarot Cup adalah aplikasi untuk Android yang memungkinkanmu membentangkan kartu tarot dan membaca sendiri ampas kopi di cangkirmu. Aplikasi ini hadir dalam dua belas bahasa; aplikasi terbuka dalam bahasa ponselmu, dan kamu bisa menggantinya di dalam aplikasi. Aplikasi ini ditujukan bagi orang berusia 16 tahun ke atas dan tidak memerlukan akun; hampir semuanya juga bisa digunakan tanpa internet. Pembacaannya mengikuti tradisi lama dan ditujukan untuk hiburan."
  },
  "tasse": {
   "zeile": "Ritualnya",
@@ -157,8 +157,8 @@
   },
   {
    "id": "internet",
-   "titel": "Tanpa internet",
-   "text": "Aplikasi ini tidak memiliki izin untuk terhubung ke internet."
+   "titel": "Hampir semuanya tanpa internet",
+   "text": "Bentangan, Kamus, dan Riwayat berfungsi tanpa koneksi. Internet diperlukan aplikasi misalnya untuk pembacaan otomatis."
   },
   {
    "id": "konto",

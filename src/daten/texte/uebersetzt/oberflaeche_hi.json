@@ -59,7 +59,8 @@
   "iphone": "Tarot Cup सिर्फ़ एंड्रॉइड फ़ोन पर उपलब्ध है।",
   "mehr": "हमारी वेबसाइट पर इसके बारे में और जानें:",
   "kaffeesatz": "कॉफ़ी की तलछट पढ़ना",
-  "traum": "सपनों की व्याख्या"
+  "traum": "सपनों की व्याख्या",
+  "blase": "Tarot Cup सिर्फ़ एंड्रॉइड फ़ोन पर उपलब्ध है। चाहें तो यहां आगे पढ़ें कि टैरो और कॉफ़ी की तलछट पढ़ना कैसे काम करता है।"
  },
  "nichtGefunden": {
   "titel": "पेज नहीं मिला",
@@ -71,7 +72,10 @@
   "auslegebild": "स्प्रेड की तस्वीर",
   "eineKarte": "एक कार्ड",
   "gegenueberKurz": "सामने",
-  "tassenkarte": "ऊपर से कप का नक्शा: {rand}, {mitte} और {boden}, बाईं ओर {gegenueber}, दाईं ओर {henkelseite}, जहां हैंडल है, नीचे {untertasse}"
+  "tassenkarte": "ऊपर से कप का नक्शा: {rand}, {mitte} और {boden}, बाईं ओर {gegenueber}, दाईं ओर {henkelseite}, जहां हैंडल है, नीचे {untertasse}",
+  "begleiterBeide": "Aylin और Ozan, गहरे नीले रंग पर सुनहरे रंग से बने चित्र: Aylin के हाथों में तुर्की कॉफ़ी का कप, Ozan के हाथों में तांबे की कॉफ़ी केतली",
+  "begleiterErzaehlerin": "Aylin, कहानी सुनाने वाली का चित्र, हाथों में तुर्की कॉफ़ी का कप",
+  "begleiterErzaehler": "Ozan, कहानी सुनाने वाले का चित्र, तांबे की कॉफ़ी केतली और कप के साथ"
  },
  "bildnachweis": {
   "metaTitel": "तस्वीरों का श्रेय और लाइसेंस | Tarot Cup",
@@ -91,6 +95,12 @@
    "absaetze": [
     "वेबसाइट दो फ़ॉन्ट इस्तेमाल करती है: Christian Thalmann का Cormorant Garamond और Rasmus Andersson का Inter। दोनों SIL Open Font License, वर्शन 1.1 के तहत हैं।",
     "फ़ॉन्ट फ़ाइलें इसी वेबसाइट पर रखी हैं और बाहरी सर्वरों से लोड नहीं होतीं।"
+   ]
+  },
+  "begleiter": {
+   "titel": "Aylin और Ozan",
+   "absaetze": [
+    "Aylin और Ozan, इस वेबसाइट और ऐप के दोनों किरदार, Canva के इमेज जनरेटर से बनाए गए हैं और Tarot Cup के लिए संपादित किए गए हैं।"
    ]
   },
   "marken": "Google Play और Google Play का लोगो Google LLC के ट्रेडमार्क हैं।"

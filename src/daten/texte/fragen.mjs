@@ -38,15 +38,20 @@ export const fragen = {
         id: 'fragen-gespeichert',
         frage: 'Werden meine Fragen gespeichert?',
         antwort: [
-          'Nein. Die App hat kein Feld für deine Frage, du behältst sie still für dich. Sie fragt nicht danach und speichert sie nicht.',
-          'Im Verlauf hält die App fest, was du gelegt hast: Datum und Uhrzeit, die Art der Legung, die Karten (auch ob sie umgekehrt lagen) oder die Zeichen mit ihrem Platz in der Tasse, beim Kaffeesatz den Lebensbereich und deine Notiz, wenn du eine schreibst. Deine Frage ist nie dabei.',
+          'Bei den normalen Legungen hat die App kein Feld für deine Frage; du behältst sie still für dich. Nur bei der automatischen Deutung kannst du den Karten eine eigene Frage stellen, wenn du willst.',
+          'Diese Frage geht nur für die eine Deutung an meinen Server und an Anthropic, wo ein Sprachmodell die Deutung schreibt. Mein Server speichert sie nicht, sondern verwirft sie, sobald die Anfrage fertig ist. Anthropic löscht sie in der Regel nach spätestens 30 Tagen und trainiert nicht damit. Für einen Traum, den du dort aufschreibst, gilt dasselbe.',
+          'Im Verlauf hält die App fest, was du gelegt hast: Datum und Uhrzeit, die Art der Legung, die Karten (auch ob sie umgekehrt lagen) oder die Zeichen mit ihrem Platz in der Tasse, beim Kaffeesatz den Lebensbereich und deine Notiz, wenn du eine schreibst. Deine Frage ist nie dabei, auch nicht bei einer automatischen Deutung, die du mit „Merken“ aufhebst.',
         ],
       },
       {
         id: 'internet',
         frage: 'Brauche ich Internet?',
         antwort: [
-          'Nein. Tarot Cup hat keine Erlaubnis, ins Internet zu gehen. Legungen, Lexikon und Verlauf funktionieren ganz ohne Verbindung, und auch die Erinnerung an die Tageskarte plant die App auf deinem Handy.',
+          'Für fast alles nicht. Tarot, Kaffeesatz, Traumdeutung, Lexikon und Verlauf gehen ohne Verbindung, und auch die Erinnerung an die Tageskarte plant die App auf deinem Handy.',
+          'Eine Verbindung braucht die App für die automatische Deutung, für die Geschenke vom Server und fürs Einladen, außerdem für den Hinweis auf neue Versionen und fürs Bewerten, die über den Play Store laufen.',
+          'Bei der automatischen Deutung gehen, nachdem du einmal eingewilligt hast und auf „Deuten lassen“ tippst, dein Traum oder deine Karten mit deiner Frage, die Sprache und das Land verschlüsselt an meinen Server in Deutschland und von dort an Anthropic, wo ein Sprachmodell die Deutung schreibt. Mein Server speichert weder deinen Text noch die Deutung, außer du meldest eine Deutung.',
+          'An meinen Server sendet die App außerdem eine zufällige Kennung dieser Installation, die er nur als nicht umkehrbaren Prüfwert ablegt, und einen Nachweis von Google Play, dass die echte App auf einem echten Gerät läuft. Beim Teilen und Einladen trägt dein Link einen zufälligen Code. Deinen Namen, deine E-Mail-Adresse oder deine Kontakte kennt mein Server nicht.',
+          'Nutzungsstatistik und Absturzberichte sendet die App nur, wenn du sie einschaltest. Alles Genaue steht in der [Datenschutzerklärung](/datenschutz/).',
         ],
       },
       {
@@ -141,15 +146,20 @@ export const fragen = {
         id: 'fragen-gespeichert',
         frage: 'Sorularım kaydediliyor mu?',
         antwort: [
-          'Hayır. Uygulamada sorunu yazacağın bir alan yok; niyetini içinden tutarsın. Uygulama onu sormaz ve kaydetmez.',
-          'Geçmiş bölümünde açtıkların durur: tarih ve saat, açılımın türü, çıkan kartlar (ters gelip gelmedikleri de) ya da fincandaki yerleriyle birlikte işaretler, kahve falında seçtiğin hayat alanı ve yazdıysan notun. Niyetin hiçbir zaman orada yer almaz.',
+          'Normal açılımlarda uygulamada sorunu yazacağın bir alan yok; niyetini içinden tutarsın. Yalnızca otomatik yorumda, istersen kartlara kendi sorunu sorabilirsin.',
+          'Bu soru yalnızca o tek yorum için sunucuma ve yorumu bir dil modelinin yazdığı Anthropic’e gider. Sunucum onu saklamaz, istek biter bitmez atar. Anthropic onu genellikle en geç 30 gün sonra siler ve onunla model eğitmez. Orada yazdığın bir rüya için de aynısı geçerlidir.',
+          'Geçmiş bölümünde açtıkların durur: tarih ve saat, açılımın türü, çıkan kartlar (ters gelip gelmedikleri de) ya da fincandaki yerleriyle birlikte işaretler, kahve falında seçtiğin hayat alanı ve yazdıysan notun. Sorun hiçbir zaman orada yer almaz; “Kaydet” ile sakladığın bir otomatik yorumda bile.',
         ],
       },
       {
         id: 'internet',
         frage: 'İnternet gerekiyor mu?',
         antwort: [
-          'Hayır. Tarot Cup’ın internete bağlanma izni yok. Açılımlar, sözlük ve geçmiş bağlantı olmadan çalışır; günün kartı hatırlatmasını da uygulama telefonunda kendisi planlar.',
+          'Neredeyse hiçbir şey için gerekmez. Tarot, kahve falı, rüya tabiri, sözlük ve geçmiş bağlantı olmadan çalışır; günün kartı hatırlatmasını da uygulama telefonunda kendisi planlar.',
+          'Bağlantı otomatik yorum, sunucudan gelen hediyeler ve davet için gerekir; ayrıca Play Store üzerinden çalışan yeni sürüm bildirimi ve değerlendirme için.',
+          'Otomatik yorumda, bir kez rıza verdikten sonra “Yorumlat”a dokunduğunda rüyan ya da kartların sorunla birlikte, uygulamanın dili ve ülken şifreli olarak Almanya’daki sunucuma, oradan da yorumu bir dil modelinin yazdığı Anthropic’e gider. Bir yorumu bildirmediğin sürece sunucum ne metnini ne de yorumu saklar.',
+          'Uygulama sunucuma ayrıca bu kurulum için rastgele bir tanımlayıcı gönderir; sunucum onu yalnızca geri döndürülemez bir kontrol değeri olarak saklar. Bunun yanında gerçek uygulamanın gerçek bir cihazda çalıştığını gösteren bir Google Play kanıtı da gider. Paylaşırken ve davet ederken bağlantın rastgele bir kod taşır. Sunucum adını, e-posta adresini ya da kişilerini bilmez.',
+          'Kullanım istatistiklerini ve çökme raporlarını uygulama yalnızca sen açarsan gönderir. Ayrıntılar [Gizlilik Politikası](/tr/gizlilik/) sayfasında.',
         ],
       },
       {

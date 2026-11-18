@@ -1,6 +1,6 @@
 {
  "metaTitel": "Gledanje u šoljicu i postavljanje tarota putem aplikacije | Tarot Cup",
- "metaBeschreibung": "Uz Android aplikaciju Tarot Cup samostalno čitaš talog kahve s 80 znakova i postavljaš tarot sa 78 karata, na dvanaest jezika i bez interneta.",
+ "metaBeschreibung": "Uz Android aplikaciju Tarot Cup samostalno čitaš talog kahve s 80 znakova i postavljaš tarot sa 78 karata, na dvanaest jezika i bez korisničkog računa.",
  "ogTitel": "Gledaj u šoljicu. Položi karte.",
  "kopf": {
   "zeile": "Tarot Cup · Aplikacija za Android",
@@ -8,7 +8,7 @@
    "*Samostalno* čitaj talog kahve.",
    "Položi tarot *u miru*."
   ],
-  "text": "Odaberi znakove iz svoje šoljice, pokaži na crtežu šoljice gdje se nalaze i pročitaj šta mogu značiti. Ili u miru položi tarot karte. Aplikacija radi bez interneta i bez korisničkog računa.",
+  "text": "Odaberi znakove iz svoje šoljice, pokaži na crtežu šoljice gdje se nalaze i pročitaj šta mogu značiti. Ili u miru položi tarot karte. Aplikaciji nije potreban korisnički račun, a gotovo sve radi i bez interneta.",
   "knopf": "Pogledaj na Google Playju",
   "bald": "Uskoro na Google Playju",
   "anleitung": "Kako funkcioniše",
@@ -36,13 +36,13 @@
    },
    {
     "zahl": "0",
-    "text": "korisničkih računa, internet nije potreban"
+    "text": "korisničkih računa, gotovo sve i bez interneta"
    }
   ]
  },
  "wasIst": {
   "titel": "Šta je Tarot Cup?",
-  "text": "Tarot Cup je aplikacija za Android pomoću koje postavljaš tarot karte i samostalno čitaš talog kahve u svojoj šoljici. Dostupna je na dvanaest jezika; pokreće se na jeziku tvog mobitela, a jezik možeš promijeniti u aplikaciji. Namijenjena je ljudima od 16 godina naviše i radi bez interneta i bez korisničkog računa. Tumačenja slijede stare tradicije i služe za zabavu."
+  "text": "Tarot Cup je aplikacija za Android pomoću koje postavljaš tarot karte i samostalno čitaš talog kahve u svojoj šoljici. Dostupna je na dvanaest jezika; pokreće se na jeziku tvog mobitela, a jezik možeš promijeniti u aplikaciji. Namijenjena je ljudima od 16 godina naviše i nije joj potreban korisnički račun; gotovo sve radi i bez interneta. Tumačenja slijede stare tradicije i služe za zabavu."
  },
  "tasse": {
   "zeile": "Ritual",
@@ -157,8 +157,8 @@
   },
   {
    "id": "internet",
-   "titel": "Bez interneta",
-   "text": "Aplikacija nema dozvolu za pristup internetu."
+   "titel": "Gotovo sve bez interneta",
+   "text": "Rasporedi, Leksikon i Historija rade bez internetske veze. Internet aplikaciji treba na primjer za automatsko tumačenje."
   },
   {
    "id": "konto",

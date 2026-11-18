@@ -33,7 +33,8 @@ export const ueber = {
         kennung: 'bei-dir',
         titel: 'Was bei dir bleibt',
         absaetze: [
-          'Kein Konto, kein Internet. Verlauf und Notizen speichert die App auf deinem Handy. Ich habe darauf keinen Zugriff.',
+          'Kein Konto, und fast alles geht auch ohne Internet. Verlauf und Notizen speichert die App auf deinem Handy. Ich habe darauf keinen Zugriff.',
+          'Mit meinem Server spricht die App nur, wenn du die automatische Deutung nutzt, teilst, einlädst oder eingeladen wurdest. Was sie dabei sendet, steht in der [Datenschutzerklärung](/datenschutz/).',
         ],
       },
       {
@@ -75,7 +76,8 @@ export const ueber = {
         kennung: 'bei-dir',
         titel: 'Senin olan sende kalır',
         absaetze: [
-          'Üyelik yok, internet yok. Geçmişini ve notlarını uygulama telefonunda saklar. Benim bunlara erişimim yok.',
+          'Üyelik yok; neredeyse her şey internet olmadan da çalışır. Geçmişini ve notlarını uygulama telefonunda saklar. Benim bunlara erişimim yok.',
+          'Uygulama sunucumla yalnızca otomatik yorumu kullandığında, paylaştığında, davet ettiğinde ya da davet edildiğinde konuşur. Bu sırada neler gönderdiği [Gizlilik Politikası](/tr/gizlilik/) sayfasında yazıyor.',
         ],
       },
       {

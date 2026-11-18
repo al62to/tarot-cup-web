@@ -32,15 +32,20 @@
    "id": "fragen-gespeichert",
    "frage": "Sunt salvate întrebările mele?",
    "antwort": [
-    "Nu. Aplicația nu are un câmp pentru întrebarea ta; o păstrezi doar pentru tine. Nu o cere și nu o salvează.",
-    "În Istoric, aplicația reține ce ai tras: data și ora, tipul de tragere, cărțile (inclusiv dacă erau în poziție inversată) sau simbolurile cu locul lor în ceașcă, la zațul de cafea domeniul vieții și nota ta, dacă scrii una. Întrebarea ta nu apare niciodată printre ele."
+    "La tragerile obișnuite, aplicația nu are un câmp pentru întrebarea ta; o păstrezi doar pentru tine. Doar la interpretarea automată poți pune cărților o întrebare proprie, dacă vrei.",
+    "Această întrebare ajunge doar pentru acea singură interpretare la serverul meu și la Anthropic, unde un model de limbaj scrie interpretarea. Serverul meu nu o stochează, ci o elimină imediat ce cererea s-a încheiat. Anthropic o șterge de regulă după cel mult 30 de zile și nu o folosește pentru antrenare. Același lucru este valabil pentru un vis pe care îl scrii acolo.",
+    "În Istoric, aplicația reține ce ai tras: data și ora, tipul de tragere, cărțile (inclusiv dacă erau în poziție inversată) sau simbolurile cu locul lor în ceașcă, la zațul de cafea domeniul vieții și nota ta, dacă scrii una. Întrebarea ta nu apare niciodată printre ele, nici la o interpretare automată pe care o păstrezi cu „Salvează”."
    ]
   },
   {
    "id": "internet",
    "frage": "Am nevoie de internet?",
    "antwort": [
-    "Nu. Tarot Cup nu are permisiunea de a accesa internetul. Tragerile, Dicționarul și Istoricul funcționează complet fără conexiune, iar aplicația programează pe telefonul tău și Memento-ul pentru Cartea Zilei."
+    "Pentru aproape tot, nu. Tarotul, zațul de cafea, interpretarea viselor, Dicționarul și Istoricul funcționează fără conexiune, iar aplicația programează pe telefonul tău și Memento-ul pentru Cartea Zilei.",
+    "Aplicația are nevoie de conexiune pentru interpretarea automată, pentru cadourile de pe server și pentru invitare, precum și pentru notificarea despre versiuni noi și pentru evaluare, care trec prin Play Store.",
+    "La interpretarea automată, după ce ți-ai dat o dată consimțământul și atingi „Cere interpretarea”, visul tău sau cărțile tale împreună cu întrebarea ta, limba și țara ajung criptat la serverul meu din Germania și de acolo la Anthropic, unde un model de limbaj scrie interpretarea. Serverul meu nu stochează nici textul tău, nici interpretarea, cu excepția cazului în care raportezi o interpretare.",
+    "Aplicația trimite serverului meu și un identificator aleatoriu al acestei instalări, pe care serverul îl stochează doar ca valoare de control ireversibilă, precum și o atestare de la Google Play că aplicația autentică rulează pe un dispozitiv real. La distribuire și la invitare, linkul tău poartă un cod aleatoriu. Serverul meu nu îți cunoaște numele, adresa de e-mail sau contactele.",
+    "Aplicația trimite statistici de utilizare și rapoarte de blocare doar dacă le activezi. Toate detaliile se află în [Politica de confidențialitate](/ro/confidentialitate/)."
    ]
   },
   {

@@ -1,6 +1,6 @@
 {
  "metaTitel": "Ghicit în cafea și tragere de tarot cu aplicația | Tarot Cup",
- "metaBeschreibung": "Cu aplicația Android Tarot Cup citești zațul de cafea pe cont propriu, cu 80 de simboluri, și faci trageri de tarot cu 78 de cărți, în 12 limbi și fără internet.",
+ "metaBeschreibung": "Cu aplicația Android Tarot Cup citești zațul de cafea pe cont propriu, cu 80 de simboluri, și faci trageri de tarot cu 78 de cărți, în 12 limbi și fără cont.",
  "ogTitel": "Ghicit în cafea. Tragere de tarot.",
  "kopf": {
   "zeile": "Tarot Cup · Aplicație pentru Android",
@@ -8,7 +8,7 @@
    "Citește zațul de cafea *pe cont propriu*.",
    "Întinde tarot *în liniște*."
   ],
-  "text": "Alege simbolurile din ceașca ta, indică pe harta ceștii unde se află și citește ce pot semnifica. Sau așază cărțile de tarot în liniște. Aplicația funcționează fără internet și fără cont.",
+  "text": "Alege simbolurile din ceașca ta, indică pe harta ceștii unde se află și citește ce pot semnifica. Sau așază cărțile de tarot în liniște. Aplicația nu are nevoie de cont, iar aproape totul merge și fără internet.",
   "knopf": "Vezi pe Google Play",
   "bald": "În curând pe Google Play",
   "anleitung": "Cum se face",
@@ -36,13 +36,13 @@
    },
    {
     "zahl": "0",
-    "text": "Conturi, nu este nevoie de internet"
+    "text": "Conturi, aproape totul și fără internet"
    }
   ]
  },
  "wasIst": {
   "titel": "Ce este Tarot Cup?",
-  "text": "Tarot Cup este o aplicație pentru Android, cu care întinzi cărți de tarot și citești pe cont propriu zațul din ceașca ta. Există în 12 limbi; pornește în limba telefonului tău, iar limba o poți schimba în aplicație. Este destinată persoanelor de la 16 ani în sus și funcționează fără internet și fără cont. Interpretările urmează tradiții vechi și sunt pentru divertisment."
+  "text": "Tarot Cup este o aplicație pentru Android, cu care întinzi cărți de tarot și citești pe cont propriu zațul din ceașca ta. Există în 12 limbi; pornește în limba telefonului tău, iar limba o poți schimba în aplicație. Este destinată persoanelor de la 16 ani în sus și nu are nevoie de cont; aproape totul merge și fără internet. Interpretările urmează tradiții vechi și sunt pentru divertisment."
  },
  "tasse": {
   "zeile": "Ritualul",
@@ -157,8 +157,8 @@
   },
   {
    "id": "internet",
-   "titel": "Fără internet",
-   "text": "Aplicația nu are permisiunea de a accesa internetul."
+   "titel": "Aproape totul fără internet",
+   "text": "Tragerile, Dicționarul și Istoricul funcționează fără conexiune. Aplicația are nevoie de internet, de exemplu, pentru interpretarea automată."
   },
   {
    "id": "konto",

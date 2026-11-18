@@ -59,7 +59,8 @@
   "iphone": "Tarot Cup solo está disponible para teléfonos Android.",
   "mehr": "En nuestro sitio web encontrarás más información:",
   "kaffeesatz": "Leer los posos del café",
-  "traum": "Interpretación de sueños"
+  "traum": "Interpretación de sueños",
+  "blase": "Tarot Cup solo está disponible para teléfonos Android. Sigue leyendo aquí cómo funcionan el tarot y los posos de café."
  },
  "nichtGefunden": {
   "titel": "Página no encontrada",
@@ -71,7 +72,10 @@
   "auslegebild": "Disposición de la tirada",
   "eineKarte": "una carta",
   "gegenueberKurz": "lado opuesto",
-  "tassenkarte": "Mapa de la taza visto desde arriba: {rand}, {mitte} y {boden}; a la izquierda, {gegenueber}; a la derecha, {henkelseite} con el asa; debajo, {untertasse}"
+  "tassenkarte": "Mapa de la taza visto desde arriba: {rand}, {mitte} y {boden}; a la izquierda, {gegenueber}; a la derecha, {henkelseite} con el asa; debajo, {untertasse}",
+  "begleiterBeide": "Aylin y Ozan, dibujados en dorado sobre azul noche: ella con una taza de café turco, él con una cezve de cobre",
+  "begleiterErzaehlerin": "Aylin, narradora dibujada con una taza de café turco",
+  "begleiterErzaehler": "Ozan, narrador dibujado con una cezve de cobre y una taza"
  },
  "bildnachweis": {
   "metaTitel": "Créditos de las imágenes y licencias | Tarot Cup",
@@ -91,6 +95,12 @@
    "absaetze": [
     "El sitio web utiliza dos fuentes tipográficas: Cormorant Garamond, de Christian Thalmann, e Inter, de Rasmus Andersson. Ambas están bajo la SIL Open Font License, versión 1.1.",
     "Los archivos de fuentes se encuentran en este sitio web y no se cargan desde servidores externos."
+   ]
+  },
+  "begleiter": {
+   "titel": "Aylin y Ozan",
+   "absaetze": [
+    "Aylin y Ozan, los dos personajes de este sitio web y de la app, se dibujaron con el generador de imágenes de Canva y se retocaron para Tarot Cup."
    ]
   },
   "marken": "Google Play y el logotipo de Google Play son marcas de Google LLC."

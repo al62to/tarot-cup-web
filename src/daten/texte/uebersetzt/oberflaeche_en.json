@@ -59,7 +59,8 @@
   "iphone": "Tarot Cup is only available for Android phones.",
   "mehr": "Find out more on our website:",
   "kaffeesatz": "Coffee cup reading",
-  "traum": "Dream interpretation"
+  "traum": "Dream interpretation",
+  "blase": "Tarot Cup is only available for Android phones. Read on here to see how tarot and coffee cup reading work."
  },
  "nichtGefunden": {
   "titel": "Page not found",
@@ -71,7 +72,10 @@
   "auslegebild": "Spread layout",
   "eineKarte": "one card",
   "gegenueberKurz": "opposite",
-  "tassenkarte": "Cup map from above: {rand}, {mitte} and {boden}; on the left {gegenueber}, on the right the {henkelseite} with the handle, below it the {untertasse}"
+  "tassenkarte": "Cup map from above: {rand}, {mitte} and {boden}; on the left {gegenueber}, on the right the {henkelseite} with the handle, below it the {untertasse}",
+  "begleiterBeide": "Aylin and Ozan, drawn in gold on midnight blue: she with a cup of Turkish coffee, he with a copper cezve",
+  "begleiterErzaehlerin": "Aylin, an illustrated storyteller with a cup of Turkish coffee",
+  "begleiterErzaehler": "Ozan, an illustrated storyteller with a copper cezve and a cup"
  },
  "bildnachweis": {
   "metaTitel": "Image credits and licenses | Tarot Cup",
@@ -91,6 +95,12 @@
    "absaetze": [
     "The website uses two fonts: Cormorant Garamond by Christian Thalmann and Inter by Rasmus Andersson. Both are under the SIL Open Font License, Version 1.1.",
     "The font files are hosted directly on this website and are not loaded from external servers."
+   ]
+  },
+  "begleiter": {
+   "titel": "Aylin and Ozan",
+   "absaetze": [
+    "Aylin and Ozan, the two characters on this website and in the app, were drawn with Canva’s image generator and edited for Tarot Cup."
    ]
   },
   "marken": "Google Play and the Google Play logo are trademarks of Google LLC."

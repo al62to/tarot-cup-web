@@ -59,7 +59,8 @@
   "iphone": "Tarot Cup n’existe que sur les téléphones Android.",
   "mehr": "Tu en apprendras davantage sur notre site :",
   "kaffeesatz": "Lire le marc de café",
-  "traum": "Interprétation des rêves"
+  "traum": "Interprétation des rêves",
+  "blase": "Tarot Cup n’existe que sur les téléphones Android. N’hésite pas à lire ici comment fonctionnent le tarot et le marc de café."
  },
  "nichtGefunden": {
   "titel": "Page introuvable",
@@ -71,7 +72,10 @@
   "auslegebild": "Schéma du tirage",
   "eineKarte": "une carte",
   "gegenueberKurz": "côté opposé",
-  "tassenkarte": "Plan de la tasse vu du dessus : {rand}, {mitte} et {boden}, à gauche le {gegenueber}, à droite le {henkelseite} avec l’anse, en dessous la {untertasse}"
+  "tassenkarte": "Plan de la tasse vu du dessus : {rand}, {mitte} et {boden}, à gauche le {gegenueber}, à droite le {henkelseite} avec l’anse, en dessous la {untertasse}",
+  "begleiterBeide": "Aylin et Ozan, dessinés en or sur bleu nuit : elle avec une tasse de café turc, lui avec une cezve en cuivre",
+  "begleiterErzaehlerin": "Aylin, conteuse dessinée avec une tasse de café turc",
+  "begleiterErzaehler": "Ozan, conteur dessiné avec une cezve en cuivre et une tasse"
  },
  "bildnachweis": {
   "metaTitel": "Crédits des images et licences | Tarot Cup",
@@ -91,6 +95,12 @@
    "absaetze": [
     "Le site utilise deux polices : Cormorant Garamond de Christian Thalmann et Inter de Rasmus Andersson. Toutes deux sont sous licence SIL Open Font License, version 1.1.",
     "Les fichiers de polices sont hébergés sur ce site même et ne sont pas chargés depuis des serveurs tiers."
+   ]
+  },
+  "begleiter": {
+   "titel": "Aylin et Ozan",
+   "absaetze": [
+    "Aylin et Ozan, les deux personnages de ce site et de l’application, ont été dessinés avec le générateur d’images de Canva, puis retravaillés pour Tarot Cup."
    ]
   },
   "marken": "Google Play et le logo Google Play sont des marques de Google LLC."

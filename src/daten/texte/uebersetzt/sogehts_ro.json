@@ -11,7 +11,7 @@
    "kennung": "erster-start",
    "titel": "Ce se întâmplă la prima pornire?",
    "absaetze": [
-    "La prima deschidere, aplicația apare în limba telefonului tău; după „Bine ai venit” atingi „Continuă”. În pasul „Înainte să începem” confirmi că ai cel puțin 16 ani și accepți termenii de utilizare cu „Accept și continuă”. O scurtă introducere prezintă Cartea Zilei, ghicitul în cafea, tarotul și Dicționarul; cu „Sari peste” o poți omite. La final, aplicația te întreabă dacă să îți amintească dimineața de Cartea Zilei."
+    "La prima deschidere, aplicația apare în limba telefonului tău; după „Bine ai venit” atingi „Continuă”. În pasul „Înainte să începem” confirmi că ai cel puțin 16 ani și accepți termenii de utilizare cu „Accept tot” sau „Doar cele necesare”. „Accept tot” activează și statisticile de utilizare și rapoartele de blocare, iar „Doar cele necesare” le lasă dezactivate; poți schimba oricând acest lucru în setări. O scurtă introducere prezintă Cartea Zilei, ghicitul în cafea, tarotul și Dicționarul; cu „Sari peste” o poți omite. La final, aplicația te întreabă dacă să îți amintească dimineața de Cartea Zilei."
    ],
    "foto": "01_erster_start",
    "alt": "Pasul „Înainte de a începe”, cu căsuța bifată pentru vârstă, linkurile către Politica de confidențialitate și Termenii de utilizare și butonul „Accept și continui”."
@@ -74,7 +74,7 @@
    "kennung": "teilen",
    "titel": "Cum distribui o interpretare?",
    "absaetze": [
-    "Sub o interpretare se află „Distribuie ca imagine”, inclusiv la intrările din Istoric. Aplicația creează din ea o imagine cu tragerea, data, numele cărților sau simbolurilor, o scurtă propoziție din interpretare și numele „Tarot Cup”. Întrebarea ta nu apare pe ea; aplicația nu o cunoaște. Unde ajunge imaginea alegi în meniul de distribuire din Android."
+    "Sub o interpretare se află „Distribuie ca imagine”, inclusiv la intrările din Istoric. Aplicația creează din ea o imagine cu tragerea, data, numele cărților sau simbolurilor, o scurtă propoziție din interpretare și numele „Tarot Cup”. Notele tale și întrebarea ta nu apar pe ea. Unde ajunge imaginea alegi în meniul de distribuire din Android."
    ],
    "foto": "08_teilen",
    "alt": "Imaginea de distribuit pe fundal întunecat: sus tragerea și data, la mijloc numele cărților și o propoziție între ghilimele, jos „Tarot Cup”."
@@ -83,7 +83,7 @@
    "kennung": "sprache",
    "titel": "Cum schimb limba?",
    "absaetze": [
-    "În partea de sus a „Setărilor” alegi la „Limbă” între „Deutsch”, „Türkçe”, „English” și „Español”. Dacă nu alegi nimic, aplicația urmează limba telefonului tău; pentru orice altă limbă a telefonului afișează engleza. Aplicația trece imediat la limba aleasă. Interpretările anterioare din Istoric, Dicționarul, Documentele juridice și Memento-ul apar apoi și ele în noua limbă; notele tale rămân așa cum le-ai scris."
+    "În partea de sus a „Setărilor” alegi la „Limbă” una dintre cele 12 limbi; fiecare apare acolo în propria ei grafie, de exemplu „Deutsch”, „Türkçe”, „English” sau „Español”. Dacă nu alegi nimic, aplicația urmează limba telefonului tău; pentru orice altă limbă a telefonului afișează engleza. Aplicația trece imediat la limba aleasă. Interpretările anterioare din Istoric, Dicționarul, Documentele juridice și Memento-ul apar apoi și ele în noua limbă; notele tale rămân așa cum le-ai scris."
    ],
    "foto": "09_sprache",
    "alt": "Partea de sus a Setărilor, cu secțiunea „Limbă” și butoanele pentru limbi."

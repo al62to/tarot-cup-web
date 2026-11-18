@@ -32,15 +32,20 @@
    "id": "fragen-gespeichert",
    "frage": "Apakah pertanyaan saya disimpan?",
    "antwort": [
-    "Tidak. Aplikasi ini tidak memiliki kolom untuk pertanyaanmu; kamu menyimpannya sendiri dalam hati. Aplikasi tidak menanyakannya dan tidak menyimpannya.",
-    "Di Riwayat, aplikasi mencatat apa yang telah kamu bentangkan: tanggal dan waktu, jenis bentangan, kartu (termasuk apakah kartu itu terbalik), atau simbol beserta letaknya di cangkir; pada ampas kopi juga bidang kehidupan dan catatanmu bila kamu menulisnya. Pertanyaanmu tidak pernah ikut tercatat."
+    "Pada bentangan biasa, aplikasi ini tidak memiliki kolom untuk pertanyaanmu; kamu menyimpannya sendiri dalam hati. Hanya pada pembacaan otomatis kamu bisa mengajukan pertanyaanmu sendiri kepada kartu, jika kamu mau.",
+    "Pertanyaan itu hanya dikirim untuk pembacaan yang satu itu ke server saya dan ke Anthropic, tempat sebuah model bahasa menulis pembacaannya. Server saya tidak menyimpannya, melainkan membuangnya begitu permintaan selesai. Anthropic biasanya menghapusnya paling lambat setelah 30 hari dan tidak menggunakannya untuk pelatihan. Hal yang sama berlaku untuk mimpi yang kamu tuliskan di sana.",
+    "Di Riwayat, aplikasi mencatat apa yang telah kamu bentangkan: tanggal dan waktu, jenis bentangan, kartu (termasuk apakah kartu itu terbalik), atau simbol beserta letaknya di cangkir; pada ampas kopi juga bidang kehidupan dan catatanmu bila kamu menulisnya. Pertanyaanmu tidak pernah ikut tercatat, juga tidak pada pembacaan otomatis yang kamu simpan dengan “Simpan”."
    ]
   },
   {
    "id": "internet",
    "frage": "Apakah saya memerlukan internet?",
    "antwort": [
-    "Tidak. Tarot Cup tidak memiliki izin untuk mengakses internet. Bentangan, Kamus, dan Riwayat berfungsi sepenuhnya tanpa koneksi, dan pengingat kartu hari ini pun dijadwalkan oleh aplikasi di ponselmu."
+    "Untuk hampir semuanya, tidak. Tarot, ampas kopi, tafsir mimpi, Kamus, dan Riwayat berfungsi tanpa koneksi, dan pengingat kartu hari ini pun dijadwalkan oleh aplikasi di ponselmu.",
+    "Aplikasi memerlukan koneksi untuk pembacaan otomatis, untuk hadiah dari server, dan untuk mengundang, serta untuk pemberitahuan versi baru dan penilaian, yang berjalan melalui Play Store.",
+    "Pada pembacaan otomatis, setelah kamu sekali memberikan persetujuan dan mengetuk “Mulai pembacaan”, mimpimu atau kartumu beserta pertanyaanmu, bahasa, dan negara dikirim secara terenkripsi ke server saya di Jerman dan dari sana ke Anthropic, tempat sebuah model bahasa menulis pembacaannya. Server saya tidak menyimpan teksmu maupun pembacaannya, kecuali kamu melaporkan suatu pembacaan.",
+    "Aplikasi juga mengirim ke server saya pengenal acak instalasi ini, yang hanya disimpan server sebagai nilai periksa yang tidak dapat dibalik, serta bukti dari Google Play bahwa aplikasi asli berjalan di perangkat asli. Saat berbagi dan mengundang, tautanmu membawa kode acak. Server saya tidak mengetahui namamu, alamat emailmu, atau kontakmu.",
+    "Aplikasi hanya mengirim statistik penggunaan dan laporan error jika kamu mengaktifkannya. Semua detailnya ada di [Kebijakan Privasi](/id/privasi/)."
    ]
   },
   {

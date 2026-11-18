@@ -11,7 +11,7 @@
    "kennung": "erster-start",
    "titel": "O que acontece no primeiro acesso?",
    "absaetze": [
-    "Ao abrir o app pela primeira vez, ele aparece no idioma de seu celular; depois de “Boas-vindas”, você toca em “Continuar”. Na etapa “Antes de começar”, você confirma ter pelo menos 16 anos e aceita os Termos de Uso com “Aceitar e continuar”. Uma breve introdução apresenta a Carta do Dia, a borra de café, o tarô e o Dicionário; com “Pular”, você pode deixá-la de lado. Por fim, o app pergunta se deve lembrar você da Carta do Dia pela manhã."
+    "Ao abrir o app pela primeira vez, ele aparece no idioma de seu celular; depois de “Boas-vindas”, você toca em “Continuar”. Na etapa “Antes de começar”, você confirma ter pelo menos 16 anos e aceita os Termos de Uso com “Aceitar tudo” ou “Só o necessário”. “Aceitar tudo” também ativa as estatísticas de uso e os relatórios de falhas, e “Só o necessário” os deixa desativados; você pode mudar isso a qualquer momento nas Configurações. Uma breve introdução apresenta a Carta do Dia, a borra de café, o tarô e o Dicionário; com “Pular”, você pode deixá-la de lado. Por fim, o app pergunta se deve lembrar você da Carta do Dia pela manhã."
    ],
    "foto": "01_erster_start",
    "alt": "O passo “Antes de começar” com a caixa marcada para a idade, os links para a Política de Privacidade e os Termos de Uso e o botão “Aceitar e continuar”."
@@ -74,7 +74,7 @@
    "kennung": "teilen",
    "titel": "Como compartilhar uma leitura?",
    "absaetze": [
-    "Sob uma leitura há a opção “Compartilhar como imagem”, também nos registros do Histórico. O app cria uma imagem com a tiragem, a data, os nomes das cartas ou dos símbolos, uma frase curta da leitura e o nome “Tarot Cup”. Sua pergunta não aparece nela; o app não a conhece. Para onde a imagem vai, você escolhe no menu Compartilhar do Android."
+    "Sob uma leitura há a opção “Compartilhar como imagem”, também nos registros do Histórico. O app cria uma imagem com a tiragem, a data, os nomes das cartas ou dos símbolos, uma frase curta da leitura e o nome “Tarot Cup”. Suas anotações e sua pergunta não aparecem nela. Para onde a imagem vai, você escolhe no menu Compartilhar do Android."
    ],
    "foto": "08_teilen",
    "alt": "A imagem compartilhada sobre superfície escura: no topo a tiragem e a data, no meio os nomes das cartas e uma frase entre aspas, embaixo “Tarot Cup”."
@@ -83,7 +83,7 @@
    "kennung": "sprache",
    "titel": "Como alterar o idioma?",
    "absaetze": [
-    "No topo das “Configurações”, em “Idioma”, você escolhe entre “Deutsch”, “Türkçe”, “English” e “Español”. Sem uma escolha própria, o app segue o idioma de seu celular; para qualquer outro idioma do celular, ele mostra inglês. O app muda imediatamente. As leituras anteriores no Histórico, o Dicionário, os Documentos legais e o Lembrete também aparecem então no novo idioma; suas anotações permanecem exatamente como você as escreveu."
+    "No topo das “Configurações”, em “Idioma”, você escolhe um dos doze idiomas; cada um aparece ali em sua própria grafia, como “Deutsch”, “Türkçe”, “English” ou “Español”. Sem uma escolha própria, o app segue o idioma de seu celular; para qualquer outro idioma do celular, ele mostra inglês. O app muda imediatamente. As leituras anteriores no Histórico, o Dicionário, os Documentos legais e o Lembrete também aparecem então no novo idioma; suas anotações permanecem exatamente como você as escreveu."
    ],
    "foto": "09_sprache",
    "alt": "A parte superior das Configurações, com a seção “Idioma” e os botões dos idiomas."

@@ -145,7 +145,7 @@ export const tarot = {
         titel: 'Kann man Tarot auch auf dem Handy legen?',
         absaetze: [
           'Mit Tarot Cup legst du die Karten auf deinem Android-Handy, in einer von zwölf Sprachen. Du mischst mit dem Finger, wählst aus dem Fächer und deckst eine Karte nach der anderen auf. Unter jeder Karte stehen dabei zwei Stichworte, am Ende folgt eine Deutung der ganzen Legung.',
-          'Deine Frage bleibt bei dir: Die App fragt nicht danach und speichert sie nicht. Deine Legungen landen im Verlauf auf deinem Handy, und du kannst dir eine eigene Notiz dazu schreiben.',
+          'Deine Frage behältst du für dich. Eintippen kannst du sie nur bei der automatischen Deutung, wenn du willst, und auch dann behält die App sie nur, solange die Deutung läuft. Deine Legungen landen im Verlauf auf deinem Handy, und du kannst dir eine eigene Notiz dazu schreiben.',
           'Wie die App Schritt für Schritt funktioniert, steht unter [So geht’s](/so-gehts/).',
         ],
       },
@@ -305,7 +305,7 @@ export const tarot = {
         titel: 'Tarot telefonda nasıl açılır?',
         absaetze: [
           'Tarot Cup ile kartları Android telefonunda, on iki dilden birinde açarsın. Kartları parmağınla karıştırır, yelpazeden seçer ve birer birer açarsın. Her kartın altında iki anahtar kelime yer alır, sonunda ise açılımın tamamına dair bir yorum gelir.',
-          'Sorun sende kalır: Uygulama onu sormaz ve kaydetmez. Açtığın kartlar telefonundaki Geçmiş bölümünde durur; istersen yanına kendi notunu yazarsın.',
+          'Sorun sende kalır. Onu yalnızca otomatik yorumda, istersen yazabilirsin; uygulama onu o zaman da yalnızca yorum sürerken tutar. Açtığın kartlar telefonundaki Geçmiş bölümünde durur; istersen yanına kendi notunu yazarsın.',
           'Uygulamanın adım adım nasıl kullanıldığını [Nasıl kullanılır](/tr/nasil-kullanilir/) sayfasında bulabilirsin.',
         ],
       },

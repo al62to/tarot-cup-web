@@ -14,7 +14,7 @@ export const kaffeesatz = {
         titel: 'Was ist Kaffeesatzlesen und woher kommt es?',
         absaetze: [
           'Beim Kaffeesatzlesen schaut man nach dem Trinken in die leere Tasse. Der Satz des türkischen Kaffees, auf Türkisch telve, bleibt an der Innenwand und auf der Untertasse hängen und bildet dort Flecken, Linien und Formen. In manchen davon erkennt man ein Tier, einen Gegenstand oder ein Muster, und jedes dieser Zeichen hat in der Tradition eine eigene Bedeutung. Auf Türkisch heißt der Brauch kahve falı. Im Deutschen sagt man manchmal auch Tasseografie, ein Wort, das ebenso das Lesen von Teeblättern meint.',
-          'Der Brauch ist eng mit der osmanischen und türkischen Kaffeekultur verbunden. Als der Kaffee dort vor einigen Jahrhunderten zum Getränk für Gäste, Feste und lange Nachmittage wurde, kam das Lesen der Tasse dazu. Bekannt ist es heute auch in Griechenland, auf dem Balkan, im Kaukasus und in arabischen Ländern, überall mit eigenen Bräuchen und eigenen Lieblingszeichen.',
+          'Der Brauch ist eng mit der osmanischen und türkischen Kaffeekultur verbunden, in der der Kaffee vor einigen Jahrhunderten zum Getränk für Gäste, Feste und lange Nachmittage wurde. Seit wann man dort den Satz in der Tasse liest, ist kaum belegt; ein sicheres Anfangsdatum gibt es nicht. Bekannt ist es heute auch in Griechenland, auf dem Balkan, im Kaukasus und in arabischen Ländern, überall mit eigenen Bräuchen und eigenen Lieblingszeichen.',
           'Wichtig ist dabei weniger das einzelne Zeichen als das Zusammensein. Eine Tasse zu lesen heißt, sich Zeit zu nehmen, miteinander zu reden und über Wünsche und Pläne nachzudenken. Eine feste Vorhersage ist damit nicht gemeint. Ein türkisches Sprichwort fasst die Haltung vieler Menschen zusammen: „Fala inanma ama falsız da kalma.“ Sinngemäß heißt das: Glaub nicht an die Deutung, aber lass sie dir auch nicht entgehen.',
         ],
       },
@@ -178,7 +178,7 @@ export const kaffeesatz = {
     metaTitel: 'Kahve falına nasıl bakılır? Adım adım | Tarot Cup',
     metaBeschreibung: 'Kahve falına nasıl bakılır? Cezveden fincanı kapatmaya kadar ritüeli, fincanın bölümlerini ve sık görülen şekilleri bu rehberde bulursun.',
     titel: 'Kahve falına nasıl bakılır?',
-    vorspann: 'Kahve falı, Osmanlı kahve kültüründen bugüne uzanan bir sohbet geleneğidir. Bu sayfada cezveden fincanı açmaya kadar ritüeli, fincanın bölümlerini ve sık görülen on iki şekli bulacaksın.',
+    vorspann: 'Kahve falı, Türk kahve kültürünün bir parçası olan bir sohbet geleneğidir. Bu sayfada cezveden fincanı açmaya kadar ritüeli, fincanın bölümlerini ve sık görülen on iki şekli bulacaksın.',
     ogTitel: 'Kahve falı: adım adım ritüel',
     brotkrume: 'Kahve falı',
     inhaltTitel: 'İçindekiler',
@@ -188,7 +188,7 @@ export const kaffeesatz = {
         titel: 'Kahve falı nedir, nereden gelir?',
         absaetze: [
           'Kahve falında, içilen kahvenin ardından fincanda kalan telveye bakılır. Fincan kapatılıp soğuduğunda telve iç yüzeyde ve tabakta lekeler, çizgiler, irili ufaklı şekiller bırakır. Bu şekillerin kimi bir kuşa, kimi bir yola ya da bir kalbe benzer. Geleneğe göre her birinin kendine özgü bir anlamı vardır. Bunu mümkün kılan da Türk kahvesinin kendisidir: İnce çekilir, cezvede pişirilir ve süzülmeden içilir. Fal, fincanda kalan bu telveden doğar.',
-          'Kahve, Osmanlı topraklarında birkaç yüzyıl önce gündelik hayatın vazgeçilmez içeceği oldu. Kahvehanelerde, konaklarda, komşu oturmalarında ikram edildi; fincanın dibine bakmak da özellikle ev sohbetlerinin bir parçası hâline geldi. Fal geleneği bugün Yunanistan’dan Balkanlar’a, Kafkasya’dan Arap ülkelerine kadar geniş bir coğrafyada yaşıyor ve her yerde kendine has âdetleri, sevilen şekilleri var.',
+          'Kahve, Osmanlı topraklarında birkaç yüzyıl önce gündelik hayatın vazgeçilmez içeceği oldu. Kahvehanelerde, konaklarda, komşu oturmalarında ikram edildi. Fincandaki telveye bakma âdetinin ne zaman başladığı ise pek belgelenmemiştir; kesin bir başlangıç tarihi yoktur. Fal bugün özellikle ev sohbetlerinin sevilen bir parçasıdır ve Yunanistan’dan Balkanlar’a, Kafkasya’dan Arap ülkelerine kadar geniş bir coğrafyada yaşıyor; her yerde kendine has âdetleri, gözde şekilleri var.',
           'Kahve falında asıl mesele çoğu zaman tek tek şekiller değil, fincanın etrafında kurulan sohbettir. Biri fincanı açarken diğerleri merakla bekler, dilekler konuşulur, gülüşülür. Fal kesin bir kehanet sayılmaz; birçok kişi için insanın kendi isteklerine bir de bu gözle bakmasının tatlı bir yoludur. Atasözü bunu güzel özetler: “Fala inanma ama falsız da kalma.”',
         ],
       },

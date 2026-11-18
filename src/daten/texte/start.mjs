@@ -7,12 +7,12 @@
 export const start = {
   de: {
     metaTitel: 'Kaffeesatz lesen und Tarot legen per App | Tarot Cup',
-    metaBeschreibung: 'Mit der Android-App Tarot Cup liest du Kaffeesatz selbst mit 80 Zeichen und legst Tarot mit 78 Karten, in zwölf Sprachen und ohne Internet.',
+    metaBeschreibung: 'Mit der Android-App Tarot Cup liest du Kaffeesatz selbst mit 80 Zeichen und legst Tarot mit 78 Karten, in zwölf Sprachen und ohne Konto.',
     ogTitel: 'Kaffeesatz lesen. Tarot legen.',
     kopf: {
       zeile: 'Tarot Cup · App für Android',
       zeilen: ['Kaffeesatz *selbst* lesen.', 'Tarot *in Ruhe* legen.'],
-      text: 'Wähle die Zeichen aus deiner Tasse, zeig auf der Tassenkarte, wo sie liegen, und lies, was sie bedeuten können. Oder lege Tarotkarten in Ruhe. Die App läuft ohne Internet und ohne Konto.',
+      text: 'Wähle die Zeichen aus deiner Tasse, zeig auf der Tassenkarte, wo sie liegen, und lies, was sie bedeuten können. Oder lege Tarotkarten in Ruhe. Die App braucht kein Konto, und fast alles geht auch ohne Internet.',
       knopf: 'Bei Google Play ansehen',
       bald: 'Bald bei Google Play',
       // Zweitknopf zur Anleitung (Ziel: Seite „sogehts“ in src/daten/seiten.mjs).
@@ -32,12 +32,12 @@ export const start = {
         { zahl: '78', text: 'Tarotkarten, im Lexikon aufrecht und umgekehrt' },
         { zahl: '80', text: 'Zeichen für den Kaffeesatz, mit Suche und Kategorien' },
         { zahl: '12', text: 'Sprachen, von Deutsch und Türkisch bis Französisch und Hindi' },
-        { zahl: '0', text: 'Konten, kein Internet nötig' },
+        { zahl: '0', text: 'Konten, fast alles auch ohne Internet' },
       ],
     },
     wasIst: {
       titel: 'Was ist Tarot Cup?',
-      text: 'Tarot Cup ist eine App für Android, mit der du Tarotkarten legst und den Kaffeesatz in deiner Tasse selbst liest. Es gibt sie in zwölf Sprachen; sie startet in der Sprache deines Handys, und umstellen kannst du in der App. Sie ist für Menschen ab 16 Jahren gedacht und läuft ohne Internet und ohne Konto. Die Deutungen folgen alten Traditionen und sind zur Unterhaltung gedacht.',
+      text: 'Tarot Cup ist eine App für Android, mit der du Tarotkarten legst und den Kaffeesatz in deiner Tasse selbst liest. Es gibt sie in zwölf Sprachen; sie startet in der Sprache deines Handys, und umstellen kannst du in der App. Sie ist für Menschen ab 16 Jahren gedacht und braucht kein Konto; fast alles geht auch ohne Internet. Die Deutungen folgen alten Traditionen und sind zur Unterhaltung gedacht.',
     },
     tasse: {
       zeile: 'Das Ritual',
@@ -94,7 +94,7 @@ export const start = {
     // Texte unverändert aus AP-W1; "id" ordnet sie den Kacheln zu.
     vorteile: [
       { id: 'bleibt', titel: 'Bleibt bei dir', text: 'Verlauf und Notizen speichert die App auf deinem Handy. Ich habe darauf keinen Zugriff.' },
-      { id: 'internet', titel: 'Ohne Internet', text: 'Die App hat keine Erlaubnis, ins Internet zu gehen.' },
+      { id: 'internet', titel: 'Fast alles ohne Internet', text: 'Legungen, Lexikon und Verlauf gehen ohne Verbindung. Internet braucht die App etwa für die automatische Deutung.' },
       { id: 'konto', titel: 'Ohne Konto', text: 'In der App kein Anmelden und keine E-Mail-Adresse.' },
     ],
     // Abschnitt Traumdeutung mit dem Weg zur App (AP-T2 Teil 3). Wortlaut fertig und geprüft aus
@@ -137,12 +137,12 @@ export const start = {
 
   tr: {
     metaTitel: 'Kahve falı ve tarot uygulaması | Tarot Cup',
-    metaBeschreibung: 'Tarot Cup Android uygulamasıyla kahve falını 80 işaretle kendin yorumlar, 78 kartla tarot açarsın; on iki dilde ve internet olmadan.',
+    metaBeschreibung: 'Tarot Cup Android uygulamasıyla kahve falını 80 işaretle kendin yorumlar, 78 kartla tarot açarsın; on iki dilde ve üyelik olmadan.',
     ogTitel: 'Kahve falı ve tarot, kendi elinle',
     kopf: {
       zeile: 'Tarot Cup · Android uygulaması',
       zeilen: ['Fincanını *kendin* yorumla.', 'Tarot kartlarını *acele etmeden* aç.'],
-      text: 'Fincanında gördüğün işaretleri seç, fincan haritasında nerede durduklarını göster ve neler anlatabileceklerini oku. Dilersen tarot kartlarını sakin sakin aç. Uygulama internet ve üyelik olmadan çalışır.',
+      text: 'Fincanında gördüğün işaretleri seç, fincan haritasında nerede durduklarını göster ve neler anlatabileceklerini oku. Dilersen tarot kartlarını sakin sakin aç. Uygulama üyelik istemez; neredeyse her şey internet olmadan da çalışır.',
       knopf: 'Google Play’de incele',
       bald: 'Yakında Google Play’de',
       anleitung: 'Nasıl kullanılır?',
@@ -158,13 +158,13 @@ export const start = {
       liste: [
         { zahl: '78', text: 'tarot kartı, sözlükte düz ve ters anlamıyla' },
         { zahl: '80', text: 'kahve falı işareti, arama ve kategorilerle' },
-        { zahl: '4', text: 'Dil, Almanca ve Türkçeden Fransızca ve Hintçeye kadar' },
-        { zahl: '0', text: 'üyelik adımı, internet de gerekmez' },
+        { zahl: '12', text: 'dil, Almanca ve Türkçeden Fransızca ve Hintçeye kadar' },
+        { zahl: '0', text: 'üyelik adımı; çoğu şey internetsiz de çalışır' },
       ],
     },
     wasIst: {
       titel: 'Tarot Cup nedir?',
-      text: 'Tarot Cup, tarot kartları açtığın ve fincanındaki kahve telvesini kendin okuduğun bir Android uygulamasıdır. On iki dilde sunulur; telefonunun dilinde açılır ve dili uygulama içinden değiştirebilirsin. 16 yaş ve üzeri kişiler için tasarlanmıştır, internet ve hesap olmadan çalışır. Yorumlar eski geleneklere dayanır ve eğlence amaçlıdır.',
+      text: 'Tarot Cup, tarot kartları açtığın ve fincanındaki kahve telvesini kendin okuduğun bir Android uygulamasıdır. On iki dilde sunulur; telefonunun dilinde açılır ve dili uygulama içinden değiştirebilirsin. 16 yaş ve üzeri kişiler için tasarlanmıştır, üyelik istemez ve neredeyse her şey internet olmadan da çalışır. Yorumlar eski geleneklere dayanır ve eğlence amaçlıdır.',
     },
     tasse: {
       zeile: 'Ritüel',
@@ -215,7 +215,7 @@ export const start = {
     },
     vorteile: [
       { id: 'bleibt', titel: 'Sende kalır', text: 'Geçmişini ve notlarını uygulama telefonunda saklar. Benim bunlara erişimim yok.' },
-      { id: 'internet', titel: 'İnternetsiz', text: 'Uygulamanın internete bağlanma izni yok.' },
+      { id: 'internet', titel: 'Çoğu şey internetsiz', text: 'Açılımlar, sözlük ve geçmiş bağlantı olmadan çalışır. İnternet örneğin otomatik yorum için gerekir.' },
       { id: 'konto', titel: 'Üyeliksiz', text: 'Uygulamada kayıt yok, e-posta adresi de gerekmez.' },
     ],
     traum: {

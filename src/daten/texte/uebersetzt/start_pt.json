@@ -1,6 +1,6 @@
 {
  "metaTitel": "Leia a borra de café e faça uma tiragem de tarô pelo aplicativo | Tarot Cup",
- "metaBeschreibung": "Com o app Tarot Cup para Android, você lê a borra de café por conta própria com 80 símbolos e faz tiragens de tarô com 78 cartas, em doze idiomas e sem internet.",
+ "metaBeschreibung": "Com o app Tarot Cup para Android, você lê a borra de café por conta própria com 80 símbolos e faz tiragens de tarô com 78 cartas, em doze idiomas e sem conta.",
  "ogTitel": "Leitura da borra de café. Tiragem de tarô.",
  "kopf": {
   "zeile": "Tarot Cup · Aplicativo para Android",
@@ -8,7 +8,7 @@
    "Leia a borra de café *por conta própria*.",
    "Faça tiragens de tarô *com calma*."
   ],
-  "text": "Escolha os símbolos de sua xícara, indique no mapa da xícara onde eles estão e leia o que podem significar. Ou faça uma tiragem de tarô com calma. O app funciona sem internet e sem conta.",
+  "text": "Escolha os símbolos de sua xícara, indique no mapa da xícara onde eles estão e leia o que podem significar. Ou faça uma tiragem de tarô com calma. O app não precisa de conta, e quase tudo funciona também sem internet.",
   "knopf": "Veja no Google Play",
   "bald": "Em breve no Google Play",
   "anleitung": "Como funciona",
@@ -36,13 +36,13 @@
    },
    {
     "zahl": "0",
-    "text": "Contas, sem necessidade de internet"
+    "text": "Contas, quase tudo também sem internet"
    }
   ]
  },
  "wasIst": {
   "titel": "O que é o Tarot Cup?",
-  "text": "O Tarot Cup é um aplicativo para Android com o qual você faz tiragens de tarô e lê por conta própria a borra de café de sua xícara. Está disponível em doze idiomas; abre no idioma de seu celular, e você pode mudar o idioma no app. É voltado a pessoas a partir de 16 anos e funciona sem internet e sem conta. As interpretações seguem tradições antigas e são feitas para entretenimento."
+  "text": "O Tarot Cup é um aplicativo para Android com o qual você faz tiragens de tarô e lê por conta própria a borra de café de sua xícara. Está disponível em doze idiomas; abre no idioma de seu celular, e você pode mudar o idioma no app. É voltado a pessoas a partir de 16 anos e não precisa de conta; quase tudo funciona também sem internet. As interpretações seguem tradições antigas e são feitas para entretenimento."
  },
  "tasse": {
   "zeile": "O ritual",
@@ -157,8 +157,8 @@
   },
   {
    "id": "internet",
-   "titel": "Sem internet",
-   "text": "O aplicativo não tem permissão para acessar a internet."
+   "titel": "Quase tudo sem internet",
+   "text": "As tiragens, o Dicionário e o Histórico funcionam sem conexão. O app precisa de internet, por exemplo, para a leitura automática."
   },
   {
    "id": "konto",

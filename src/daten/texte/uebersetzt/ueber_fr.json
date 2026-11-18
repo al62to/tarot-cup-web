@@ -26,7 +26,8 @@
    "kennung": "bei-dir",
    "titel": "Ce qui reste chez toi",
    "absaetze": [
-    "Ni compte, ni connexion internet. L’application enregistre l’historique et les notes sur ton téléphone. Je n’y ai pas accès."
+    "Aucun compte, et presque tout fonctionne aussi sans connexion internet. L’application enregistre l’historique et les notes sur ton téléphone. Je n’y ai pas accès.",
+    "L’application ne communique avec mon serveur que lorsque tu utilises la lecture automatique, partages, invites quelqu’un ou as reçu une invitation. Ce qu’elle envoie alors est décrit dans la [Politique de confidentialité](/fr/confidentialite/)."
    ]
   },
   {

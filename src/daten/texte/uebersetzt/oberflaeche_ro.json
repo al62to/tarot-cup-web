@@ -59,7 +59,8 @@
   "iphone": "Tarot Cup este disponibil doar pentru telefoane Android.",
   "mehr": "Pe site-ul nostru afli mai multe:",
   "kaffeesatz": "Ghicitul în cafea",
-  "traum": "Interpretarea viselor"
+  "traum": "Interpretarea viselor",
+  "blase": "Tarot Cup este disponibil doar pentru telefoane Android. Citește mai departe aici, dacă vrei, cum funcționează tarotul și ghicitul în cafea."
  },
  "nichtGefunden": {
   "titel": "Pagina nu a fost găsită",
@@ -71,7 +72,10 @@
   "auslegebild": "Imaginea tragerii",
   "eineKarte": "o carte",
   "gegenueberKurz": "partea opusă",
-  "tassenkarte": "Harta ceștii văzută de sus: {rand}, {mitte} și {boden}, în stânga {gegenueber}, în dreapta {henkelseite} cu toarta, dedesubt {untertasse}"
+  "tassenkarte": "Harta ceștii văzută de sus: {rand}, {mitte} și {boden}, în stânga {gegenueber}, în dreapta {henkelseite} cu toarta, dedesubt {untertasse}",
+  "begleiterBeide": "Aylin și Ozan, desenați cu auriu pe albastru închis: ea cu o ceașcă de cafea turcească, el cu un ibric de aramă",
+  "begleiterErzaehlerin": "Aylin, povestitoare desenată, cu o ceașcă de cafea turcească",
+  "begleiterErzaehler": "Ozan, povestitor desenat, cu un ibric de aramă și o ceașcă"
  },
  "bildnachweis": {
   "metaTitel": "Sursele imaginilor și licențe | Tarot Cup",
@@ -91,6 +95,12 @@
    "absaetze": [
     "Site-ul folosește două fonturi: Cormorant Garamond de Christian Thalmann și Inter de Rasmus Andersson. Ambele sunt publicate sub licența SIL Open Font License, versiunea 1.1.",
     "Fișierele cu fonturi sunt găzduite direct pe acest site și nu sunt încărcate de la servere terțe."
+   ]
+  },
+  "begleiter": {
+   "titel": "Aylin și Ozan",
+   "absaetze": [
+    "Aylin și Ozan, cele două personaje de pe acest site și din aplicație, au fost desenate cu generatorul de imagini Canva și prelucrate pentru Tarot Cup."
    ]
   },
   "marken": "Google Play și logo-ul Google Play sunt mărci înregistrate ale Google LLC."

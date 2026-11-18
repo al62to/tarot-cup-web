@@ -13,7 +13,7 @@ export const sogehts = {
         kennung: 'erster-start',
         titel: 'Was passiert beim ersten Start?',
         absaetze: [
-          'Beim ersten Öffnen erscheint die App in der Sprache deines Handys; nach „Willkommen“ tippst du auf „Weiter“. Im Schritt „Bevor es losgeht“ bestätigst du, dass du mindestens 16 Jahre alt bist, und nimmst mit „Annehmen und weiter“ die Nutzungsbedingungen an. Eine kurze Einführung stellt Tageskarte, Kaffeesatz, Tarot und Lexikon vor, mit „Überspringen“ kannst du sie auslassen. Zum Schluss fragt die App, ob sie dich morgens an deine Tageskarte erinnern soll.',
+          'Beim ersten Öffnen erscheint die App in der Sprache deines Handys; nach „Willkommen“ tippst du auf „Weiter“. Im Schritt „Bevor es losgeht“ bestätigst du, dass du mindestens 16 Jahre alt bist, und nimmst die Nutzungsbedingungen mit „Alle akzeptieren“ oder „Nur Notwendige“ an. „Alle akzeptieren“ schaltet auch Nutzungsstatistik und Absturzberichte ein, „Nur Notwendige“ lässt sie aus; ändern kannst du das jederzeit in den Einstellungen. Eine kurze Einführung stellt Tageskarte, Kaffeesatz, Tarot und Lexikon vor, mit „Überspringen“ kannst du sie auslassen. Zum Schluss fragt die App, ob sie dich morgens an deine Tageskarte erinnern soll.',
         ],
         foto: '01_erster_start',
         alt: 'Der Schritt „Bevor es losgeht“ mit angehaktem Kästchen zum Alter, den Links zu Datenschutzerklärung und Nutzungsbedingungen und dem Knopf „Annehmen und weiter“.',
@@ -76,7 +76,7 @@ export const sogehts = {
         kennung: 'teilen',
         titel: 'Wie teile ich eine Deutung?',
         absaetze: [
-          'Unter einer Deutung steht „Als Bild teilen“, auch bei Einträgen im Verlauf. Die App macht daraus ein Bild mit der Legung, dem Datum, den Namen der Karten oder Zeichen, einem kurzen Satz aus der Deutung und dem Namen „Tarot Cup“. Deine Frage steht nicht darauf, die App kennt sie nicht. Wohin das Bild geht, wählst du im Teilen-Menü von Android.',
+          'Unter einer Deutung steht „Als Bild teilen“, auch bei Einträgen im Verlauf. Die App macht daraus ein Bild mit der Legung, dem Datum, den Namen der Karten oder Zeichen, einem kurzen Satz aus der Deutung und dem Namen „Tarot Cup“. Deine Notizen und deine Frage stehen nicht darauf. Wohin das Bild geht, wählst du im Teilen-Menü von Android.',
         ],
         foto: '08_teilen',
         alt: 'Das Teilen-Bild auf dunklem Grund: oben Legung und Datum, in der Mitte die Namen der Karten und ein Satz in Anführungszeichen, unten „Tarot Cup“.',
@@ -85,7 +85,7 @@ export const sogehts = {
         kennung: 'sprache',
         titel: 'Wie wechsle ich die Sprache?',
         absaetze: [
-          'Ganz oben in den „Einstellungen“ wählst du unter „Sprache“ zwischen „Deutsch“, „Türkçe“, „English“ und „Español“. Ohne eigene Wahl folgt die App der Sprache deines Handys, bei jeder anderen Handysprache zeigt sie Englisch. Die App wechselt sofort. Auch frühere Deutungen im Verlauf, das Lexikon, die Rechtstexte und die Erinnerung erscheinen dann in der neuen Sprache; deine Notizen bleiben, wie du sie geschrieben hast.',
+          'Ganz oben in den „Einstellungen“ wählst du unter „Sprache“ eine der zwölf Sprachen; jede steht dort in ihrer eigenen Schreibweise, etwa „Deutsch“, „Türkçe“, „English“ oder „Español“. Ohne eigene Wahl folgt die App der Sprache deines Handys, bei jeder anderen Handysprache zeigt sie Englisch. Die App wechselt sofort. Auch frühere Deutungen im Verlauf, das Lexikon, die Rechtstexte und die Erinnerung erscheinen dann in der neuen Sprache; deine Notizen bleiben, wie du sie geschrieben hast.',
         ],
         foto: '09_sprache',
         alt: 'Der obere Teil der Einstellungen mit dem Abschnitt „Sprache“ und den Knöpfen für die Sprachen.',
@@ -109,7 +109,7 @@ export const sogehts = {
         kennung: 'ilk-acilis',
         titel: 'Uygulamayı ilk açtığında neler olur?',
         absaetze: [
-          'İlk açılışta uygulama telefonunun dilinde açılır; “Hoş geldin” ekranında “Devam” dersin. “Başlamadan önce” adımında kutucuğu işaretleyip en az 16 yaşında olduğunu onaylarsın; “Kabul et ve devam et” düğmesi ancak o zaman çalışır ve onunla Kullanım Koşulları’nı kabul etmiş olursun. Sonra kısa bir tanıtım günün kartını, kahve falını, tarotu ve sözlüğü gösterir, istersen “Geç” diyebilirsin. En sonda uygulama, günün kartını sana sabahları hatırlatıp hatırlatmayacağını sorar.',
+          'İlk açılışta uygulama telefonunun dilinde açılır; “Hoş geldin” ekranında “Devam” dersin. “Başlamadan önce” adımında kutucuğu işaretleyip en az 16 yaşında olduğunu onaylarsın; ardından “Tümünü kabul et” ya da “Yalnızca gerekli olanlar” ile Kullanım Koşulları’nı kabul edersin; iki düğme de ancak onaydan sonra çalışır. “Tümünü kabul et” kullanım istatistiklerini ve çökme raporlarını da açar, “Yalnızca gerekli olanlar” bunları kapalı bırakır; tercihini istediğin zaman ayarlardan değiştirebilirsin. Sonra kısa bir tanıtım günün kartını, kahve falını, tarotu ve sözlüğü gösterir, istersen “Geç” diyebilirsin. En sonda uygulama, günün kartını sana sabahları hatırlatıp hatırlatmayacağını sorar.',
         ],
         foto: '01_erster_start',
         alt: '“Başlamadan önce” adımı: işaretlenmiş yaş kutucuğu, Gizlilik Politikası ve Kullanım Koşulları bağlantıları ve “Kabul et ve devam et” düğmesi.',
@@ -127,7 +127,7 @@ export const sogehts = {
         kennung: 'tarot-acmak',
         titel: 'Tarot falı nasıl açılır?',
         absaetze: [
-          '“Tarot aç” ile “Evet mi, Hayır mı”, “Üç Kart” ya da “Aşk” açılımını seçer, niyetini içinden tutarsın; uygulama niyetini sormaz. Parmağını destenin üzerinde kaydırarak kartları karıştırır, “Karıştırdım” dedikten sonra yelpazeden kartlarını seçersin. “Açmaya geç” dedikten sonra kartlara sırayla dokunup açarsın, “Genel yoruma geç” ise hepsini birlikte yorumlar. Ardından açılım bir süre dinlenir: Evet mi, Hayır mı her gün, Üç Kart üç günde bir, Aşk haftada bir, hep gece yarısından itibaren yeniden açılır.',
+          '“Tarot aç” ile “Evet mi, Hayır mı”, “Üç Kart” ya da “Aşk” açılımını seçer, niyetini içinden tutarsın. Parmağını destenin üzerinde kaydırarak kartları karıştırır, “Karıştırdım” dedikten sonra yelpazeden kartlarını seçersin. “Açmaya geç” dedikten sonra kartlara sırayla dokunup açarsın, “Genel yoruma geç” ise hepsini birlikte yorumlar. Ardından açılım bir süre dinlenir: Evet mi, Hayır mı her gün, Üç Kart üç günde bir, Aşk haftada bir, hep gece yarısından itibaren yeniden açılır.',
         ],
         foto: '03_tarot',
         alt: 'Üç Kart açılımı: Geçmiş, Şimdi ve Gelecek altında açılmış üç kart ve “Genel yoruma geç” düğmesi.',
@@ -172,7 +172,7 @@ export const sogehts = {
         kennung: 'paylasma',
         titel: 'Falını nasıl paylaşırsın?',
         absaetze: [
-          'Yorumun altında “Görsel olarak paylaş” düğmesi bulunur, Geçmiş’teki kayıtlarda da. Uygulama bundan bir görsel hazırlar: açılımın adı, tarih, kartların ya da işaretlerin adları, yorumdan kısa bir cümle ve “Tarot Cup” yazısı. Niyetin görselde yer almaz, çünkü uygulama onu bilmez. Görseli nereye göndereceğini Android’in paylaşım menüsünden seçersin.',
+          'Yorumun altında “Görsel olarak paylaş” düğmesi bulunur, Geçmiş’teki kayıtlarda da. Uygulama bundan bir görsel hazırlar: açılımın adı, tarih, kartların ya da işaretlerin adları, yorumdan kısa bir cümle ve “Tarot Cup” yazısı. Notların ve sorun görselde yer almaz. Görseli nereye göndereceğini Android’in paylaşım menüsünden seçersin.',
         ],
         foto: '08_teilen',
         alt: 'Koyu zeminli paylaşım görseli: üstte açılımın adı ve tarih, ortada kart adları ve tırnak içinde bir cümle, altta “Tarot Cup”.',
@@ -181,7 +181,7 @@ export const sogehts = {
         kennung: 'dil',
         titel: 'Uygulamanın dili nasıl değiştirilir?',
         absaetze: [
-          '“Ayarlar” sayfasının en üstündeki “Dil” bölümünde “Deutsch”, “Türkçe”, “English” ve “Español” arasında seçim yaparsın. Kendin seçmezsen uygulama telefonunun dilini kullanır; telefonun başka bir dildeyse İngilizce açılır. Uygulama hemen seçtiğin dile geçer. Geçmiş’teki eski yorumlar, sözlük, hukuki metinler ve hatırlatma da yeni dilde görünür; notların ise yazdığın gibi kalır.',
+          '“Ayarlar” sayfasının en üstündeki “Dil” bölümünde on iki dilden birini seçersin; her dil orada kendi yazılışıyla durur, örneğin “Deutsch”, “Türkçe”, “English” ya da “Español”. Kendin seçmezsen uygulama telefonunun dilini kullanır; telefonun başka bir dildeyse İngilizce açılır. Uygulama hemen seçtiğin dile geçer. Geçmiş’teki eski yorumlar, sözlük, hukuki metinler ve hatırlatma da yeni dilde görünür; notların ise yazdığın gibi kalır.',
         ],
         foto: '09_sprache',
         alt: 'Ayarların üst kısmı: „Dil“ bölümü ve dil düğmeleri.',

@@ -59,7 +59,8 @@
   "iphone": "Tarot Cup dostupan je samo za Android mobitele.",
   "mehr": "Na našoj web-stranici možeš saznati više:",
   "kaffeesatz": "Gledanje u šalicu",
-  "traum": "Tumačenje snova"
+  "traum": "Tumačenje snova",
+  "blase": "Tarot Cup dostupan je samo za Android mobitele. Ovdje slobodno čitaj dalje kako funkcioniraju tarot i gledanje u šalicu."
  },
  "nichtGefunden": {
   "titel": "Stranica nije pronađena",
@@ -71,7 +72,10 @@
   "auslegebild": "Prikaz rasporeda",
   "eineKarte": "jedna karta",
   "gegenueberKurz": "nasuprot",
-  "tassenkarte": "Crtež šalice odozgo: {rand}, {mitte} i {boden}, lijevo {gegenueber}, desno {henkelseite} s ručkom, ispod {untertasse}"
+  "tassenkarte": "Crtež šalice odozgo: {rand}, {mitte} i {boden}, lijevo {gegenueber}, desno {henkelseite} s ručkom, ispod {untertasse}",
+  "begleiterBeide": "Aylin i Ozan, nacrtani zlatom na tamnoplavoj podlozi: ona sa šalicom kave, on s bakrenom džezvom",
+  "begleiterErzaehlerin": "Aylin, nacrtana pripovjedačica sa šalicom kave",
+  "begleiterErzaehler": "Ozan, nacrtani pripovjedač s bakrenom džezvom i šalicom"
  },
  "bildnachweis": {
   "metaTitel": "Izvori slika i licencije | Tarot Cup",
@@ -91,6 +95,12 @@
    "absaetze": [
     "Web-stranica koristi dva fonta: Cormorant Garamond (Christian Thalmann) i Inter (Rasmus Andersson). Oba su pod licencom SIL Open Font License, verzija 1.1.",
     "Datoteke fontova nalaze se na samoj ovoj web-stranici i ne učitavaju se s tuđih poslužitelja."
+   ]
+  },
+  "begleiter": {
+   "titel": "Aylin i Ozan",
+   "absaetze": [
+    "Aylin i Ozan, dva lika na ovoj web-stranici i u aplikaciji, nacrtani su generatorom slika u Canvi i dorađeni za Tarot Cup."
    ]
   },
   "marken": "Google Play i logotip Google Play zaštitni su znakovi tvrtke Google LLC."
