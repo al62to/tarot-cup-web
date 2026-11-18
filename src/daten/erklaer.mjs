@@ -4,6 +4,8 @@
 // tools/texte_einspielen.mjs). Eine Sprache gilt als vorhanden, wenn es für sie Adresse und Text gibt.
 // Bereiche: kaffeesatz (Kaffeebraun), tarot (Nachtblau), traum und mond (Nacht), allgemein.
 // Figuren: erzaehlerin = Aylin, erzaehler = Ozan; Posen ohne Tasse (mond, geschenk, schreibt, karten), immer ganz 9:16.
+// live: false hält eine Seite zurück (AP-25A): Text bleibt im Modul, die Seite wird aber in keiner Sprache gebaut und
+// steht weder in Sitemap noch in llms.txt noch in einem Block. Gilt für Seiten, deren Faktenprüfung noch fehlt.
 import { ADRESSEN } from './adressen.mjs';
 import { erklaerKaffeesatz } from './texte/erklaer_kaffeesatz.mjs';
 import { erklaerTarot } from './texte/erklaer_tarot.mjs';
@@ -30,9 +32,9 @@ export const ERKLAERSEITEN = [
   { schluessel: 'tarotFarben', nr: 9, bereich: 'tarot', text: 'farben', serie: 'sogehts', figur: 'erzaehlerin', pose: 'karten', eltern: 'tarot', verwandt: ['tarotArkana', 'tarotUmgekehrt', 'tarot'] },
   { schluessel: 'tarotUmgekehrt', nr: 11, bereich: 'tarot', text: 'umgekehrt', serie: 'sogehts', figur: 'erzaehler', pose: 'karten', eltern: 'tarot', verwandt: ['tarot', 'tarotArkana', 'frageStellen'] },
   { schluessel: 'tarotSmith', nr: 12, bereich: 'tarot', text: 'smith', serie: 'woher', figur: 'erzaehlerin', pose: 'karten', eltern: 'tarot', verwandt: ['tarotGeschichte', 'tarotArkana', 'tarot'] },
-  { schluessel: 'traumGeschichte', nr: 13, bereich: 'traum', text: 'geschichte', serie: 'woher', figur: 'erzaehler', pose: 'mond', eltern: null, verwandt: ['traumErinnern', 'traumSymbole', 'vergleich'] },
-  { schluessel: 'traumErinnern', nr: 14, bereich: 'traum', text: 'erinnern', serie: 'sogehts', figur: 'erzaehlerin', pose: 'mond', eltern: null, verwandt: ['traumSymbole', 'traumGeschichte', 'mondPhasen'] },
-  { schluessel: 'traumSymbole', nr: 15, bereich: 'traum', text: 'symbole', serie: 'sogehts', figur: 'erzaehler', pose: 'mond', eltern: null, verwandt: ['traumGeschichte', 'traumErinnern', 'kaffeeZeichen'] },
+  { schluessel: 'traumGeschichte', nr: 13, live: false, bereich: 'traum', text: 'geschichte', serie: 'woher', figur: 'erzaehler', pose: 'mond', eltern: null, verwandt: ['traumErinnern', 'traumSymbole', 'vergleich'] },
+  { schluessel: 'traumErinnern', nr: 14, live: false, bereich: 'traum', text: 'erinnern', serie: 'sogehts', figur: 'erzaehlerin', pose: 'mond', eltern: null, verwandt: ['traumSymbole', 'traumGeschichte', 'mondPhasen'] },
+  { schluessel: 'traumSymbole', nr: 15, live: false, bereich: 'traum', text: 'symbole', serie: 'sogehts', figur: 'erzaehler', pose: 'mond', eltern: null, verwandt: ['traumGeschichte', 'traumErinnern', 'kaffeeZeichen'] },
   { schluessel: 'mondPhasen', nr: 16, bereich: 'mond', text: 'phasen', serie: 'sogehts', figur: 'erzaehlerin', pose: 'mond', eltern: null, verwandt: ['mondBrauchtum', 'traumErinnern', 'frageStellen'] },
   { schluessel: 'mondBrauchtum', nr: 17, bereich: 'mond', text: 'brauchtum', serie: 'woher', figur: 'erzaehler', pose: 'mond', eltern: null, verwandt: ['mondPhasen', 'kaffeeBrauchtum', 'traumGeschichte'] },
   { schluessel: 'frageStellen', nr: 18, bereich: 'allgemein', text: 'frage', serie: 'sogehts', figur: 'erzaehlerin', pose: 'schreibt', eltern: null, verwandt: ['deutungKann', 'tarot', 'kaffeesatz'] },
@@ -54,8 +56,9 @@ export function erklaerTexte(eintrag, sprache) {
   return texte && texte.titel ? texte : null;
 }
 
-// Sprachen, in denen es die Seite gibt (Adresse und Text).
+// Sprachen, in denen es die Seite gibt (Adresse und Text); zurückgehaltene Seiten (live: false) in keiner.
 export function erklaerSprachen(eintrag) {
+  if (eintrag.live === false) return [];
   return Object.keys(ADRESSEN[eintrag.schluessel]).filter((sprache) => erklaerTexte(eintrag, sprache));
 }
 

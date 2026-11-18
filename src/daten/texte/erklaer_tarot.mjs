@@ -33,7 +33,7 @@ export const erklaerTarot = {
           titel: 'Wie wurde mit Tarotkarten gespielt?',
           absaetze: [
             'Tarocchi war ein Stichspiel. Wer die ausgespielte Farbe nicht bedienen konnte, musste mit einer der Bildkarten stechen; Tarot gehört damit zu den frühesten Spielen mit Trümpfen überhaupt. Der Narr hatte eine Sonderrolle: In den älteren Spielweisen durfte man ihn in jeden Stich geben, statt zu bedienen oder zu stechen; einen Stich gewann man mit ihm aber nie.',
-            'Um 1500 kam das Spiel nach Frankreich, wohl über die französische Besetzung Mailands in dieser Zeit. Dort setzte sich ein Bildmuster durch, das man heute Tarot de Marseille nennt: 78 Karten, also vier Farben zu je 14 Karten, 21 nummerierte Trümpfe und der Narr. Der Name ist jünger als die Karten und rührt wohl daher, dass viele Kartenmacher in Marseille sie herstellten; gedruckt wurde das Muster aber auch in Paris, Avignon und in der Schweiz. Mehr dazu unter [Große und Kleine Arkana](/tarot/grosse-und-kleine-arkana/).',
+            'Um 1500 kam das Spiel nach Frankreich, wohl über die französische Besetzung Mailands in dieser Zeit. Dort setzte sich ein Bildmuster durch, das man heute Tarot de Marseille nennt: 78 Karten, also vier Farben zu je 14 Karten, 21 nummerierte Trümpfe und der Narr. Der Name ist jünger als die Karten und rührt wohl daher, dass viele Kartenmacher in Marseille sie herstellten; gedruckt wurde das Muster aber auch in Paris, Avignon und in der Schweiz.',
           ],
         },
         {
@@ -59,7 +59,7 @@ export const erklaerTarot = {
           titel: 'Was geschah 1909?',
           absaetze: [
             'Aus diesem Kreis stammt auch das Deck, das bis heute das Bild vom Tarot prägt. Ein früheres Mitglied des Golden Dawn gab es 1909 in Auftrag und schrieb ein Begleitbuch dazu; gezeichnet hat die 78 Karten die Künstlerin Pamela Colman Smith, die er im Orden kennengelernt hatte. Erschienen ist das Deck 1909 beim Verlag Rider in London, manche Angaben nennen für den ersten Druck auch 1910. Im selben Jahr erschien in Paris Papus’ Buch „Le Tarot divinatoire“ mit 78 neu gezeichneten Karten von Jean-Gabriel Goulinat.',
-            'Besonders war, dass auch die Zahlenkarten der vier Farben kleine Szenen zeigen, statt nur Stäbe, Kelche, Schwerter oder Münzen aneinanderzureihen. Das machte die Bilder leichter zugänglich, und viele spätere Decks haben ihre Motive aufgegriffen. Mehr über die Zeichnerin und ihre Bilder steht auf der Seite [Pamela Colman Smith und die Bilder von 1909](/tarot/pamela-colman-smith/).',
+            'Besonders war, dass auch die Zahlenkarten der vier Farben kleine Szenen zeigen, statt nur Stäbe, Kelche, Schwerter oder Münzen aneinanderzureihen. Das machte die Bilder leichter zugänglich, und viele spätere Decks haben ihre Motive aufgegriffen.',
             'Wie man mit diesen Karten heute legt, erklärt [Tarot legen](/tarot/#ritual-schritt-fuer-schritt).',
           ],
         },

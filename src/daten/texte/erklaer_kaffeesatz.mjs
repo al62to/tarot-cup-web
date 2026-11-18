@@ -7,7 +7,7 @@ export const erklaerKaffeesatz = {
       titel: 'Woher das Kaffeesatzlesen kommt',
       brotkrume: 'Herkunft',
       kurzantwort: [
-        'Das Kaffeesatzlesen gehört zur Kaffeekultur, die sich ab dem 16. Jahrhundert im Osmanischen Reich entwickelt hat: Erst der fein gemahlene, ungefilterte türkische Kaffee hinterlässt in der Tasse einen Satz, in dem man Formen sehen kann. Seit wann dieser Satz gedeutet wird, ist dagegen kaum belegt, ein sicheres Anfangsdatum gibt es nicht. Der Kaffee selbst und die Kaffeehäuser kamen im 17. Jahrhundert nach Europa, unter anderem nach London und Wien.',
+        'Das Kaffeesatzlesen gehört zur Kaffeekultur, die sich ab dem 16. Jahrhundert im Osmanischen Reich entwickelt hat: Erst der fein gemahlene, ungefilterte türkische Kaffee hinterlässt in der Tasse einen Satz, in dem man Formen sehen kann. Seit wann dieser Satz gedeutet wird, ist dagegen kaum belegt, ein sicheres Anfangsdatum gibt es nicht. Als Handelsware und mit den ersten Kaffeehäusern verbreitete sich der Kaffee im 17. Jahrhundert in Europa, unter anderem in London und Wien.',
       ],
       inhaltTitel: 'Inhalt',
       abschnitte: [
@@ -16,15 +16,15 @@ export const erklaerKaffeesatz = {
           titel: 'Wie kam der Kaffee ins Osmanische Reich?',
           absaetze: [
             'Die Geschichte beginnt nicht in Istanbul, sondern am Horn von Afrika. Die Kaffeepflanze stammt aus Äthiopien, wo man sie zunächst als Nahrung nutzte. Als Getränk verbreitete sich Kaffee gegen Ende des 15. Jahrhunderts im Jemen, und zwar zuerst unter Sufis: Sie schätzten ihn, weil er frisch und wach hielt, beim Gebet und beim gemeinsamen Gottesgedenken.',
-            'Zu Beginn des 16. Jahrhunderts erreichte der Kaffee Mekka und Kairo. Von den Häfen am Roten Meer ging er über Ägypten weiter nach Istanbul, in die Hauptstadt des Osmanischen Reichs. Wann genau das war, ist umstritten. Der Gelehrte Kâtib Çelebi nennt das Jahr 1543 und berichtet, das neue Getränk sei zunächst auf Ablehnung gestoßen. Andere osmanische Autoren nennen erst die Jahre um 1553 bis 1555, in denen die ersten Kaffeehäuser öffneten.',
+            'Zu Beginn des 16. Jahrhunderts erreichte der Kaffee Mekka und Kairo. Von den Häfen am Roten Meer ging er über Ägypten weiter nach Istanbul, in die Hauptstadt des Osmanischen Reichs. Wann genau der Kaffee Istanbul erreichte, ist umstritten. Der Gelehrte Kâtib Çelebi berichtet, 1543 sei Kaffee mit Schiffen in die Stadt gekommen und wegen ablehnender Rechtsgutachten auf Widerstand gestoßen; getrunken wurde er dort aber wohl schon früher. Die ersten Kaffeehäuser setzen andere osmanische Autoren rund zehn Jahre später an, in die Jahre 1553 bis 1555.',
           ],
         },
         {
           kennung: 'erste-kaffeehaeuser-in-istanbul',
           titel: 'Wann öffneten in Istanbul die ersten Kaffeehäuser?',
           absaetze: [
-            'Überliefert ist eine schöne Gründungsgeschichte: Der Geschichtsschreiber Peçuylu İbrâhim erzählt, zwei Männer, Hakem aus Aleppo und Şems aus Damaskus, hätten um 1554 oder 1555 im Istanbuler Viertel Tahtakale die ersten Kaffeehäuser eröffnet. Ein anderer Autor nennt das Jahr 1553. Meist gilt deshalb die Mitte der 1550er-Jahre als Beginn.',
-            'Das Kaffeehaus, auf Türkisch kahvehane, wurde schnell mehr als ein Ort zum Trinken. Man traf sich zum Gespräch, tauschte Neuigkeiten aus, hörte Erzählern zu oder sah dem Schattenspiel Karagöz zu. Nicht allen gefiel das. Behörden ließen Kaffeehäuser immer wieder schließen, weil sie Klatsch, Glücksspiel und allzu offene Reden über die Regierung fürchteten. Besonders streng war Sultan Murad IV., der 1633 die Kaffeehäuser in Istanbul schließen ließ.',
+            'Überliefert ist eine schöne Gründungsgeschichte: Der Geschichtsschreiber Peçuylu İbrâhim erzählt, zwei Männer, Hakem aus Aleppo und Şems aus Damaskus, hätten um 1554 oder 1555 im Istanbuler Viertel Tahtakale die ersten Kaffeehäuser eröffnet. Ein anderer Autor nennt das Jahr 1553. Meist setzt man den Beginn in die erste Hälfte der 1550er-Jahre.',
+            'Das Kaffeehaus, auf Türkisch kahvehane, wurde schnell mehr als ein Ort zum Trinken. Man traf sich zum Gespräch, tauschte Neuigkeiten aus, hörte Erzählern zu oder sah dem Schattenspiel Karagöz zu. Nicht allen gefiel das. Manche Gelehrte störten sich an Klatsch, losen Reden und Glücksspiel, und die Obrigkeit fürchtete vor allem das Gerede über Staat und Regierung. Kaffeehäuser wurden darum immer wieder verboten, doch die Verbote hielten meist nicht lange. Besonders streng war Sultan Murad IV., der 1633 die Kaffeehäuser in Istanbul schließen ließ.',
             'Auf Dauer setzte sich der Kaffee trotzdem durch. Der Reisende Evliya Çelebi zählte später rund 500 Kaffeehändler und 300 Kaffeeläden in der Stadt.',
           ],
         },
@@ -32,7 +32,7 @@ export const erklaerKaffeesatz = {
           kennung: 'was-tuerkischen-kaffee-ausmacht',
           titel: 'Warum gerade türkischer Kaffee?',
           absaetze: [
-            'Für das Lesen ist entscheidend, wie türkischer Kaffee gemacht wird. Frisch geröstete Bohnen werden sehr fein gemahlen und mit kaltem Wasser, nach Wunsch auch mit Zucker, in einem kleinen Kännchen langsam erhitzt, bis sich Schaum bildet. Getrunken wird er ungefiltert aus kleinen Tassen, dazu gibt es ein Glas Wasser. Weil nichts gefiltert wird, bleibt am Ende der Satz in der Tasse, auf Türkisch telve. Wie du ihn so zubereitest, dass er sich gut lesen lässt, steht unter [Türkischen Kaffee zubereiten](/kaffeesatz-lesen/tuerkischen-kaffee-zubereiten/).',
+            'Für das Lesen ist entscheidend, wie türkischer Kaffee gemacht wird. Frisch geröstete Bohnen werden sehr fein gemahlen und mit kaltem Wasser, nach Wunsch auch mit Zucker, in einem kleinen Kännchen langsam erhitzt, bis sich Schaum bildet. Getrunken wird er ungefiltert aus kleinen Tassen, dazu gibt es ein Glas Wasser. Weil nichts gefiltert wird, bleibt am Ende der Satz in der Tasse, auf Türkisch telve.',
             'Im Jahr 2013 hat die UNESCO die türkische Kaffeekultur und ihre Tradition in die Repräsentative Liste des immateriellen Kulturerbes der Menschheit aufgenommen. Der Eintrag beschreibt den Kaffee als Zeichen von Gastfreundschaft und Freundschaft, als Anlass für vertraute Gespräche und als festen Teil von Anlässen wie Verlobungen und Feiertagen. Er erwähnt auch das Lesen des Satzes in der leeren Tasse als Teil dieser Kultur.',
           ],
         },
@@ -41,7 +41,7 @@ export const erklaerKaffeesatz = {
           titel: 'Wie alt ist das Kaffeesatzlesen selbst?',
           absaetze: [
             'Hier wird es unsicher. Für die Kaffeehäuser gibt es Chroniken mit Namen und Jahreszahlen, für das Lesen der Tasse kaum. Selbst ausführliche Nachschlagewerke zur osmanischen Geschichte von Kaffee und Kaffeehaus erwähnen den Brauch nicht. Zwei italienische Autoren, die über den Kaffee im Europa des 17. und 18. Jahrhunderts geschrieben haben, vermuten, dass sich bei der Herkunft der Kaffeesatzdeutung Überliefertes und hübsch Erzähltes kaum auseinanderhalten lassen.',
-            'Oft liest man, der Brauch sei im Palast des Sultans entstanden, etwa unter den Frauen des Harems. Das ist eine verbreitete Erzählung, für die sich in den Quellen dieser Seite kein Beleg findet. Sicher ist nur eine einfache Überlegung: Gelesen werden kann nur, was in der Tasse bleibt. Das Lesen des Kaffeesatzes ist an den ungefilterten Kaffee gebunden und kann deshalb nicht älter sein als die Kaffeekultur, in der es lebt.',
+            'Oft liest man, der Brauch sei im Palast des Sultans entstanden, etwa unter den Frauen des Harems. Das ist eine verbreitete Erzählung, für die sich in den Quellen dieser Seite kein Beleg findet. Sicher ist nur eine einfache Überlegung: Gelesen werden kann nur, was in der Tasse bleibt. Den Kaffeesatz selbst kann man nur lesen, wo ungefilterter Kaffee getrunken wird; älter als diese Kaffeekultur kann das Lesen gerade des Kaffeesatzes also nicht sein. Schon früher hat man in Spiegel, Wasser oder Tassen geschaut, um daraus zu lesen, etwa in Byzanz; ob das Kaffeesatzlesen daran anknüpft, ist nicht belegt.',
             'Was beim Lesen geschieht und wie das Ritual abläuft, beschreibt der Ratgeber [Kaffeesatz lesen](/kaffeesatz-lesen/#was-ist-kaffeesatzlesen).',
           ],
         },
@@ -50,16 +50,15 @@ export const erklaerKaffeesatz = {
           titel: 'Wie kam der Kaffee nach Europa?',
           absaetze: [
             'Aus dem Osmanischen Reich gelangte der Kaffee über den Handel im Mittelmeer nach Europa, zuerst in Hafenstädte wie Venedig und Marseille. Etwa ein Jahrhundert nach den ersten Istanbuler Kaffeehäusern gab es solche Häuser auch in großen europäischen Städten. Schon das Wort zeigt den Weg: Kaffee geht über das türkische kahve auf das arabische qahwa zurück.',
-            'In London eröffnete 1652 Pasqua Rosée ein Kaffeehaus in einer Gasse an der Kirche St Michael in Cornhill. Er war Grieche und Diener eines englischen Kaufmanns im Levantehandel, der selbst gern Kaffee trank. Im 18. Jahrhundert zählte man in London schon mehrere Hundert Kaffeehäuser.',
+            'In London eröffnete 1652 Pasqua Rosée ein Kaffeehaus in einer Gasse an der Kirche St Michael in Cornhill. Beschrieben wird er als Grieche; er war Diener eines englischen Kaufmanns im Levantehandel, der selbst gern Kaffee trank. Im 18. Jahrhundert zählte man in London schon mehrere Hundert Kaffeehäuser.',
             'In Wien erzählt man gern eine andere Geschichte: Nach der Belagerung durch das osmanische Heer im Jahr 1683 habe der Kundschafter Georg Franz Kolschitzky zum Dank das Recht bekommen, das erste Kaffeehaus der Stadt zu eröffnen. Diese Geschichte gilt als Legende; aufgeschrieben wurde sie erst rund hundert Jahre später. Belegt ist dagegen, dass am 17. Januar 1685 Johannes Diodato, ein armenischer Kaufmann aus Istanbul, für zwanzig Jahre das Recht erhielt, Kaffee, Tee und Scherbet zuzubereiten. Damit öffnete er das erste Kaffeehaus der Stadt.',
-            'Wie das Lesen der Tasse heute in der Türkei, auf dem Balkan, in Griechenland und im Nahen Osten gepflegt wird, erzählt die Seite [Brauchtum rund um den Kaffeesatz](/kaffeesatz-lesen/brauchtum/).',
           ],
         },
         {
           kennung: 'was-vom-brauch-geblieben-ist',
           titel: 'Was ist vom alten Brauch geblieben?',
           absaetze: [
-            'Gelesen wird die Tasse heute oft im privaten Kreis: in der Familie, unter Freundinnen, bei Nachbarn. Laut UNESCO geben Familien das Wissen rund um den Kaffee weiter, indem man zuschaut und mitmacht.',
+            'Gelesen wird die Tasse heute oft im vertrauten Kreis, etwa unter Freundinnen. Laut UNESCO geben Familien das Wissen rund um den Kaffee weiter, indem man zuschaut und mitmacht.',
             'Eine sprachwissenschaftliche Studie aus dem Jahr 2025 hat Aufnahmen von 22 solchen Runden unter befreundeten türkischsprachigen Frauen ausgewertet. Sie zeigt, dass in diesen Runden viel über Sorgen gesprochen wird und dass das gemeinsame Lesen die Verbundenheit stärkt.',
             'Darin liegt vielleicht der eigentliche Kern des Brauchs. Die Tasse gibt einen Grund, zusammenzusitzen und über Wünsche und Pläne zu reden. Eine Deutung zeigt dabei eine Möglichkeit, kein festes Schicksal. Welche kleinen Bräuche dazugehören, vom Ring auf der Tasse bis zum Daumenabdruck, steht unter [Bräuche beim Kaffeesatzlesen](/kaffeesatz-lesen/#braeuche-beim-kaffeesatzlesen).',
           ],
@@ -76,7 +75,7 @@ export const erklaerKaffeesatz = {
         {
           frage: 'Seit wann gibt es Kaffeehäuser in Istanbul?',
           antwort: [
-            'Osmanische Geschichtsschreiber setzen die ersten Kaffeehäuser in die Mitte der 1550er-Jahre. Überliefert ist, dass zwei Männer aus Aleppo und Damaskus sie im Viertel Tahtakale eröffneten.',
+            'Osmanische Geschichtsschreiber nennen für die ersten Kaffeehäuser die Jahre 1553 bis 1555. Überliefert ist, dass zwei Männer aus Aleppo und Damaskus sie im Viertel Tahtakale eröffneten.',
           ],
         },
         {
@@ -119,6 +118,10 @@ export const erklaerKaffeesatz = {
           url: 'https://islamansiklopedisi.org.tr/kahvehane',
         },
         {
+          angabe: 'Mehmet Aydın: Fal. TDV İslâm Ansiklopedisi, Band 12, Istanbul 1995, S. 134–138.',
+          url: 'https://islamansiklopedisi.org.tr/fal',
+        },
+        {
           angabe: 'Suna Timur Ağıldere: Batılı Seyyahların Gözünden İstanbul ve Cezayir’de Kahve ve Kahvehane Kültürü (17.–19. yy). Milli Folklor 16, Heft 122, 2019, S. 14–28.',
           url: 'https://dergipark.org.tr/tr/pub/millifolklor/article/590380',
         },
@@ -158,6 +161,7 @@ export const erklaerKaffeesatz = {
         'Tahtakale',
         'kahvehane',
         'Karagöz',
+        'Fal',
         'Evliya Çelebi',
         'telve',
         'kahve',

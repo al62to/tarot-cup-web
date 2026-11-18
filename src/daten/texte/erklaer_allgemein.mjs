@@ -20,7 +20,7 @@ export const erklaerAllgemein = {
           absaetze: [
             'Eine Deutung erzählt, was die Tradition in einer Tarotkarte, einem Zeichen im Kaffeesatz oder einem Traumbild sieht, und lädt dich ein, das mit deinem eigenen Leben zu vergleichen. Sie spricht in Möglichkeiten, nicht in Gewissheiten.',
             'Tarot Cup ist zur Unterhaltung da. Eine Deutung ist keine Vorhersage, keine Tatsache und keine Beratung.',
-            'Triff wichtige Entscheidungen darum nicht wegen einer Deutung. Bei Fragen zu Gesundheit, seelischem Befinden, Recht oder Geld helfen Fachleute und Menschen, denen du vertraust. Wie eine gute Frage aussieht, steht unter [Eine gute Frage stellen](/gute-frage-stellen/).',
+            'Triff wichtige Entscheidungen darum nicht wegen einer Deutung. Bei Fragen zu Gesundheit, seelischem Befinden, Recht oder Geld helfen Fachleute und Menschen, denen du vertraust.',
           ],
         },
         {
