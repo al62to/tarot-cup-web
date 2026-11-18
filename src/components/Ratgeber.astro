@@ -14,10 +14,12 @@ import Auslegung from './Auslegung.astro';
 import Kartenbild from './Kartenbild.astro';
 import Tassenkarte from './Tassenkarte.astro';
 import Inhaltsverzeichnis from './Inhaltsverzeichnis.astro';
+import Wissensblock from './Wissensblock.astro';
 import appDaten from '../daten/app_daten.json' with { type: 'json' };
 import { seiteVon } from '../daten/seiten.mjs';
 import { artikelDaten, anleitungDaten, listenDaten } from '../daten/strukturiert.mjs';
 import { ZEICHENFORMEN } from '../gestaltung/zeichenformen.mjs';
+import { unterseiten, wissenTexte } from '../daten/wissen.mjs';
 
 const { texte, sprache } = Astro.props;
 const angaben = seiteVon(Astro.url.pathname);
@@ -63,6 +65,9 @@ const daten = [
 // Karten im Kopf des Ratgebers Tarot (Schmuck; dieselben Bilder stehen weiter unten mit Beschreibung).
 const KOPFKARTEN = ['ta_00_narr', 'ta_02_hohepriesterin', 'ta_09_eremit'];
 const istTarot = angaben.schluessel === 'tarot';
+// „Mehr zum Thema“ (AP-25): die Erklärseiten unter dieser Themenseite, die es in der Sprache gibt; ohne sie kein Block.
+const mehr = unterseiten(angaben.schluessel, sprache);
+const mehrTitel = mehr.length ? wissenTexte(sprache).mehr : '';
 const TASSE = `
   <path d="M42 30 Q37 23 42 16 Q47 9 42 2" fill="none" stroke="#D2B47A" stroke-width="1.4" stroke-linecap="round" opacity="0.85" />
   <path d="M56 30 Q51 23 56 16 Q61 9 56 2" fill="none" stroke="#D2B47A" stroke-width="1.4" stroke-linecap="round" opacity="0.85" />
@@ -211,6 +216,7 @@ const TASSE = `
             {abschnitt.nachsatz && <Text text={abschnitt.nachsatz} klasse="nachsatz" />}
           </section>
         ))}
+        <Wissensblock titel={mehrTitel} kennung="mehr-zum-thema" eintraege={mehr} klasse="abschnitt" />
       </div>
     </div>
   </article>

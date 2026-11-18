@@ -47,6 +47,38 @@
   "breite": 1080,
   "hoehe": 2160
  },
+ "posen/erzaehler-geschenk": {
+  "breite": 1536,
+  "hoehe": 2720
+ },
+ "posen/erzaehler-karten": {
+  "breite": 461,
+  "hoehe": 820
+ },
+ "posen/erzaehler-mond": {
+  "breite": 1536,
+  "hoehe": 2720
+ },
+ "posen/erzaehler-schreibt": {
+  "breite": 1536,
+  "hoehe": 2720
+ },
+ "posen/erzaehlerin-geschenk": {
+  "breite": 1536,
+  "hoehe": 2720
+ },
+ "posen/erzaehlerin-karten": {
+  "breite": 469,
+  "hoehe": 834
+ },
+ "posen/erzaehlerin-mond": {
+  "breite": 1536,
+  "hoehe": 2720
+ },
+ "posen/erzaehlerin-schreibt": {
+  "breite": 1536,
+  "hoehe": 2720
+ },
  "sogehts/01_erster_start-de": {
   "breite": 1080,
   "hoehe": 2400

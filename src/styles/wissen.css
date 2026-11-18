@@ -1,0 +1,29 @@
+/* Links auf Erklärseiten (AP-25, components/Wissensblock.astro): Karten mit Titel und Beschreibung oder Spalten je
+   Bereich mit schlichten Links. Ruhig wie das Inhaltsverzeichnis: Papier, feine Linie, goldener Winkel als Pfeil.
+   Jede Fläche zum Antippen ist mindestens 44 px hoch. */
+
+.wissen-karten { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); gap: 12px; margin: 24px 0 0; padding: 0; }
+.wissen-karte { display: flex; flex-direction: column; gap: 8px; height: 100%; min-height: 44px; padding: 20px 22px 22px; background: var(--karte); border: 1px solid var(--rand); border-radius: 20px; color: var(--text); text-decoration: none; }
+.wissen-karte:hover { border-color: var(--gold-linie); color: var(--text); }
+.wissen-karte:focus-visible { outline-offset: 2px; border-radius: 20px; }
+.wissen-karte-titel { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; font: 600 1.375rem/1.2 var(--serif); color: var(--tinte); }
+.wissen-karte-titel::after, .wissen-link::after { content: ""; flex: none; width: 8px; height: 8px; border-top: 2px solid var(--gold-linie); border-right: 2px solid var(--gold-linie); transform: rotate(45deg); }
+.wissen-karte-titel::after { margin-right: 3px; translate: 0 -0.15em; }
+.wissen-karte:hover .wissen-karte-titel { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; text-decoration-color: var(--gold-linie); }
+.wissen-karte-text { font-size: 0.9375rem; line-height: 1.55; color: var(--gedaempft); }
+
+.wissen-gruppen { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 28px 40px; }
+.wissen-gruppe-titel { margin: 0 0 4px; font: 600 0.75rem/1.4 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-text); }
+.wissen-liste { list-style: none; margin: 0; padding: 0; }
+.wissen-liste li + li { border-top: 1px solid var(--rand); }
+.wissen-link { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 48px; padding: 10px 0; color: var(--tinte); font-weight: 500; line-height: 1.35; text-decoration: none; }
+.wissen-link::after { margin-right: 4px; }
+.wissen-link:hover { color: var(--gold-text); text-decoration: underline; }
+
+/* Startseite: eigener Abschnitt nach den Ratgebern, die Ratgeber rücken dafür näher heran. */
+.wissen-teil { display: flex; flex-direction: column; gap: 32px; padding-bottom: clamp(64px, 8vw, 96px); }
+.ratgeber-teil:has(+ .wissen-teil) { padding-bottom: clamp(40px, 5vw, 56px); }
+
+@media print {
+  .wissen { display: none; }
+}

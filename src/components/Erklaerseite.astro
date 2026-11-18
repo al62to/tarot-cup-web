@@ -1,0 +1,131 @@
+---
+// Erklärseite (AP-25) in einer Sprache: Kopf in der Farbe des Bereichs (Kaffeesatz Kaffeebraun, Tarot Nachtblau, Traum
+// und Mond Nachthimmel wie der Traum-Abschnitt der Startseite, Allgemein Sand) mit Überschrift, Kurzantwort im Kasten
+// „Kurz gesagt“ und der Figur in ihrer Pose; darunter wie bei den Ratgebern links das Inhaltsverzeichnis, rechts die
+// Lesespalte mit den Abschnitten, den häufigen Fragen (zugleich FAQPage), einem ruhigen Hinweis auf die App mit dem
+// Abzeichen von Google Play (Ort wissen_<nr>), den Quellen und „Weiterlesen“ mit den verwandten Seiten.
+// Die Figur steht immer ganz im Format des Originals (etwa 9:16, mit Rahmen und Himmel), nie beschnitten oder verzerrt:
+// Breite fest, Höhe aus width und height des Bildes. Das Motiv mit den Kreisen steht nur in der Spalte der Figur, nie
+// hinter Text. Texte: src/daten/erklaer.mjs (Verzeichnis) und src/daten/texte/erklaer_<bereich>.mjs; Stile in
+// src/styles/erklaer.css, Raster und Abschnitte aus src/styles/inhalt.css.
+import '../styles/inhalt.css';
+import '../styles/erklaer.css';
+import Basis from '../layouts/Basis.astro';
+import Betont from './Betont.astro';
+import Text from './Text.astro';
+import Inhaltsverzeichnis from './Inhaltsverzeichnis.astro';
+import Storeknopf from './Storeknopf.astro';
+import Wissensblock from './Wissensblock.astro';
+import { seiteVon } from '../daten/seiten.mjs';
+import { erklaerVon, erklaerTexte, erklaerOrt } from '../daten/erklaer.mjs';
+import { poseVon } from '../daten/posen.mjs';
+import { wissenEintraege, wissenTexte } from '../daten/wissen.mjs';
+import { artikelDaten, faqDaten } from '../daten/strukturiert.mjs';
+
+const { schluessel, sprache } = Astro.props;
+const eintrag = erklaerVon(schluessel);
+if (!eintrag) throw new Error(`Erklärseite: unbekannter Schlüssel ${schluessel}`);
+const texte = erklaerTexte(eintrag, sprache);
+if (!texte) throw new Error(`Erklärseite: kein Text für ${schluessel} (${sprache})`);
+const angaben = seiteVon(Astro.url.pathname);
+const W = wissenTexte(sprache);
+
+// Sprungmarken für Fragen und Quellen aus ihren Überschriften (kebab-case ohne Umlaute, wie die Kennungen der Abschnitte).
+const ERSATZ = { ä: 'ae', ö: 'oe', ü: 'ue', ß: 'ss', ç: 'c', ş: 's', ğ: 'g', ı: 'i' };
+const kennungAus = (titel) => titel.toLocaleLowerCase(sprache).replace(/[äöüßçşğı]/g, (zeichen) => ERSATZ[zeichen])
+  .normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const fragenKennung = kennungAus(texte.fragenTitel) || 'fragen';
+const quellenKennung = kennungAus(texte.quellenTitel) || 'quellen';
+const kennungen = [...texte.abschnitte.map((abschnitt) => abschnitt.kennung), fragenKennung, quellenKennung, 'weiterlesen'];
+if (new Set(kennungen).size !== kennungen.length) throw new Error(`Erklärseite ${schluessel} (${sprache}): Sprungmarke doppelt in ${kennungen.join(', ')}`);
+const quellen = texte.quellen ?? [];
+for (const quelle of quellen) {
+  if (quelle.url && !/^https?:\/\/[^\s]+$/.test(quelle.url)) throw new Error(`Erklärseite ${schluessel} (${sprache}): Quelle ohne volle Adresse: ${quelle.url}`);
+}
+const verzeichnis = [
+  ...texte.abschnitte,
+  { kennung: fragenKennung, titel: texte.fragenTitel },
+  ...(quellen.length ? [{ kennung: quellenKennung, titel: texte.quellenTitel }] : []),
+];
+
+// Figur in ihrer Pose: am Laptop 224 px breit, am Handy 160 px; die Dateien gibt es bis 480 px (dreifache Dichte).
+const pose = poseVon(eintrag.figur, eintrag.pose);
+const quellenSatz = (format) => pose.breiten.map((breite) => `${pose.pfad(breite, format)} ${breite}w`).join(', ');
+const GROESSEN = '(min-width: 56rem) 224px, 160px';
+const figurAlt = eintrag.figur === 'erzaehlerin' ? W.figurErzaehlerin : W.figurErzaehler;
+
+// Verwandte Seiten, nur die in dieser Sprache vorhandenen, ohne die Seite selbst.
+const verwandt = wissenEintraege(eintrag.verwandt.filter((andere) => andere !== schluessel), sprache);
+
+const daten = [
+  artikelDaten({ pfad: angaben.pfad, sprache, titel: texte.titel, beschreibung: texte.metaBeschreibung, bild: angaben.bild, quellen: angaben.quellen, zitate: quellen }),
+  ...(texte.fragen?.length ? [faqDaten({ pfad: angaben.pfad, sprache, liste: texte.fragen })] : []),
+];
+const hell = eintrag.bereich === 'allgemein';
+---
+<Basis daten={daten} klasse={`seite-erklaer erklaer-${eintrag.bereich}`}>
+  <article class="erklaer">
+    <header class:list={['erklaer-kopf', { 'flaeche-dunkel': !hell }]}>
+      <div class="innen erklaer-kopf-innen">
+        <div class="seitenkopf erklaer-kopf-text">
+          <h1><Betont text={texte.titel} /></h1>
+          <div class="kurz">
+            <p class="kurz-titel">{W.kurz}</p>
+            {texte.kurzantwort.map((absatz) => <Text text={absatz} klasse="kurz-text" />)}
+          </div>
+        </div>
+        <div class="erklaer-figur">
+          <svg class="erklaer-kreise" viewBox="0 0 400 400" aria-hidden="true" focusable="false"><circle cx="200" cy="200" r="190" /><circle cx="200" cy="200" r="166" stroke-dasharray="1 7" /><circle cx="200" cy="200" r="118" /></svg>
+          <picture>
+            <source type="image/avif" srcset={quellenSatz('avif')} sizes={GROESSEN} />
+            <source type="image/webp" srcset={quellenSatz('webp')} sizes={GROESSEN} />
+            <img class="erklaer-figur-bild" src={pose.pfad(pose.breiten.at(-1), 'webp')} width={pose.breite} height={pose.hoehe} alt={figurAlt} loading="eager" fetchpriority="high" decoding="async" />
+          </picture>
+        </div>
+      </div>
+    </header>
+
+    <div class="innen inhalt-raster">
+      <Inhaltsverzeichnis titel={texte.inhaltTitel} eintraege={verzeichnis} />
+      <div class="lesen">
+        {texte.abschnitte.map((abschnitt) => (
+          <section class="abschnitt" id={abschnitt.kennung} aria-labelledby={`${abschnitt.kennung}-titel`}>
+            <h2 id={`${abschnitt.kennung}-titel`}><Text text={abschnitt.titel} ohne /></h2>
+            {abschnitt.absaetze.map((absatz) => <Text text={absatz} />)}
+          </section>
+        ))}
+
+        <section class="abschnitt erklaer-fragen" id={fragenKennung} aria-labelledby={`${fragenKennung}-titel`}>
+          <h2 id={`${fragenKennung}-titel`}>{texte.fragenTitel}</h2>
+          <div class="erklaer-fragen-liste">
+            {texte.fragen.map((frage) => (
+              <div class="erklaer-frage">
+                <h3><Text text={frage.frage} ohne /></h3>
+                {frage.antwort.map((absatz) => <Text text={absatz} />)}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section class="abschnitt abschnitt-app erklaer-app" aria-labelledby="erklaer-app-titel">
+          <h2 id="erklaer-app-titel"><Text text={texte.app.titel} ohne /></h2>
+          {texte.app.text.map((absatz) => <Text text={absatz} />)}
+          <Storeknopf sprache={sprache} ort={erklaerOrt(eintrag)} klasse="erklaer-store" hoehe={56} />
+        </section>
+
+        {quellen.length > 0 && (
+          <section class="abschnitt erklaer-quellen" id={quellenKennung} aria-labelledby={`${quellenKennung}-titel`}>
+            <h2 id={`${quellenKennung}-titel`}>{texte.quellenTitel}</h2>
+            <ol class="quellen-liste">
+              {quellen.map((quelle) => (
+                <li>{quelle.url ? <a href={quelle.url} rel="noopener">{quelle.angabe}</a> : quelle.angabe}</li>
+              ))}
+            </ol>
+          </section>
+        )}
+
+        <Wissensblock titel={W.weiter} kennung="weiterlesen" eintraege={verwandt} klasse="abschnitt erklaer-weiter" />
+      </div>
+    </div>
+  </article>
+</Basis>

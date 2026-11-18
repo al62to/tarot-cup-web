@@ -1,0 +1,14 @@
+---
+// Erklärseiten (AP-25) in allen Sprachen, für die es Adresse und Text gibt (src/daten/erklaer.mjs, src/daten/seiten.mjs).
+import Erklaerseite from '../components/Erklaerseite.astro';
+import { SEITEN } from '../daten/seiten.mjs';
+
+export function getStaticPaths() {
+  return SEITEN.filter((eintrag) => eintrag.erklaer).map((eintrag) => ({
+    params: { wissen: eintrag.pfad.replace(/^\/|\/$/g, '') },
+    props: { schluessel: eintrag.schluessel, sprache: eintrag.sprache },
+  }));
+}
+const { schluessel, sprache } = Astro.props;
+---
+<Erklaerseite schluessel={schluessel} sprache={sprache} />

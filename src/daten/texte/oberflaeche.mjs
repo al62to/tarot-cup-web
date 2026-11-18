@@ -114,7 +114,24 @@ export const oberflaeche = {
           'Aylin und Ozan, die beiden Figuren auf dieser Website und in der App, sind mit dem Bildgenerator von Canva gezeichnet und für Tarot Cup bearbeitet.',
         ],
       },
+      // AP-25: die Posen der Figuren auf den Erklärseiten.
+      posen: {
+        titel: 'Weitere Bilder von Aylin und Ozan',
+        absaetze: [
+          'Auf den Seiten mit Wissen zu Kaffeesatz, Tarot, Träumen und Mond zeigen weitere Bilder Aylin und Ozan: beim Schreiben, unter dem Mond, mit einem Geschenk und mit Tarotkarten. Die Bilder mit Tarotkarten sind mit dem Bildgenerator von Canva entstanden, die übrigen mit dem Bildgenerator Seedream 5.5 bei ElevenLabs. Alle sind für Tarot Cup bearbeitet; für diese Website sind sie nur verkleinert und als AVIF und WebP gespeichert.',
+        ],
+      },
       marken: 'Google Play und das Google Play-Logo sind Marken von Google LLC.',
+    },
+    // AP-25: Erklärseiten (Kurzantwort, Figur, Weiterlesen) und die Blöcke mit Links auf sie (Ratgeber, Startseite).
+    wissen: {
+      kurz: 'Kurz gesagt',
+      weiter: 'Weiterlesen',
+      mehr: 'Mehr zum Thema',
+      startTitel: 'Wissen zum *Nachlesen*',
+      figurErzaehlerin: 'gezeichnete Figur Aylin',
+      figurErzaehler: 'gezeichnete Figur Ozan',
+      bereiche: { kaffeesatz: 'Kaffeesatz', tarot: 'Tarot', traum: 'Träume', mond: 'Mond', allgemein: 'Allgemein' },
     },
   },
 
@@ -210,7 +227,22 @@ export const oberflaeche = {
           'Yazı tipi dosyaları bu sitenin içinde durur, başka sunuculardan yüklenmez.',
         ],
       },
+      posen: {
+        titel: 'Aylin ve Ozan’ın diğer resimleri',
+        absaetze: [
+          'Kahve falı, tarot, rüyalar ve Ay hakkındaki bilgi sayfalarında Aylin ile Ozan’ı başka resimlerde de görürsün: yazarken, Ay’ın altında, elinde bir hediyeyle ve tarot kartlarıyla. Tarot kartlı resimler Canva’nın görsel üreticisiyle, diğerleri ElevenLabs’teki Seedream 5.5 görsel üreticisiyle çizildi. Hepsi Tarot Cup için düzenlendi; bu sitede yalnızca küçültüldü ve AVIF ile WebP biçiminde kaydedildi.',
+        ],
+      },
       marken: 'Google Play ve Google Play logosu, Google LLC’nin ticari markalarıdır.',
+    },
+    wissen: {
+      kurz: 'Kısaca',
+      weiter: 'Okumaya devam et',
+      mehr: 'Bu konuda daha fazlası',
+      startTitel: 'Merak edenler için *daha fazlası*',
+      figurErzaehlerin: 'çizilmiş karakter Aylin',
+      figurErzaehler: 'çizilmiş karakter Ozan',
+      bereiche: { kaffeesatz: 'Kahve falı', tarot: 'Tarot', traum: 'Rüyalar', mond: 'Ay', allgemein: 'Genel' },
     },
   },
 };

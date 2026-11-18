@@ -1,0 +1,116 @@
+/* Erklärseiten (AP-25, components/Erklaerseite.astro). Raster, Inhaltsverzeichnis und Abschnitte kommen aus inhalt.css;
+   hier stehen Kopf, Kurzantwort, Figur, Fragen, Hinweis auf die App und Quellen.
+   Farben je Bereich wie die Ratgeber und die Startseite: Kaffeesatz Kaffeebraun, Tarot Nachtblau, Traum und Mond der
+   Nachthimmel des Traum-Abschnitts (Lavendel statt Gold für Linien), Allgemein Sand mit dunkler Schrift.
+   Die Stile stehen im HTML vor basis.css; Regeln mit Gegenstück dort tragen darum .seite-erklaer davor. */
+
+.seite-erklaer {
+  --erklaer-grund: var(--sand);
+  --erklaer-titel: var(--tinte);
+  --erklaer-text: var(--text);
+  --erklaer-gedaempft: var(--gedaempft);
+  --erklaer-akzent: var(--gold-linie);
+  --erklaer-marke: var(--gold-text);
+  --erklaer-kasten: var(--papier);
+  --erklaer-kasten-rand: var(--rand);
+}
+.erklaer-kaffeesatz {
+  --erklaer-grund: var(--kaffee);
+  --erklaer-titel: var(--kaffee-text);
+  --erklaer-text: var(--kaffee-text);
+  --erklaer-gedaempft: var(--kaffee-gedaempft);
+  --erklaer-akzent: var(--gold);
+  --erklaer-marke: var(--gold);
+  --erklaer-kasten: color-mix(in srgb, var(--creme) 7%, transparent);
+  --erklaer-kasten-rand: var(--gold-fein);
+}
+.erklaer-tarot {
+  --erklaer-grund: var(--nacht);
+  --erklaer-titel: var(--nacht-text);
+  --erklaer-text: var(--nacht-text);
+  --erklaer-gedaempft: var(--nacht-rand);
+  --erklaer-akzent: var(--gold);
+  --erklaer-marke: var(--gold);
+  --erklaer-kasten: color-mix(in srgb, var(--creme) 6%, transparent);
+  --erklaer-kasten-rand: var(--gold-fein);
+}
+.erklaer-traum, .erklaer-mond {
+  --erklaer-grund: var(--traum-nacht);
+  --erklaer-titel: var(--creme);
+  --erklaer-text: var(--creme);
+  --erklaer-gedaempft: var(--lavendel-hell);
+  --erklaer-akzent: var(--lavendel);
+  --erklaer-marke: var(--lavendel-hell);
+  --erklaer-kasten: color-mix(in srgb, var(--lavendel) 9%, transparent);
+  --erklaer-kasten-rand: var(--lavendel-fein);
+}
+
+/* Brotkrumen auf der Farbe des Kopfs. */
+.seite-erklaer .krumen { background: var(--erklaer-grund); }
+.seite-erklaer .krumen, .seite-erklaer .krumen a { color: var(--erklaer-gedaempft); }
+.seite-erklaer .krumen a:hover, .seite-erklaer .krumen [aria-current="page"] { color: var(--erklaer-titel); }
+.seite-erklaer .krumen li + li::before { border-color: var(--erklaer-akzent); }
+.seite-erklaer:not(.erklaer-allgemein) .krumen :focus-visible { outline-color: var(--erklaer-akzent); }
+
+/* Kopf: am Handy Überschrift, Kurzantwort und darunter die Figur; am Laptop die Figur rechts daneben. */
+.seite-erklaer .erklaer-kopf { background: var(--erklaer-grund); color: var(--erklaer-text); }
+.seite-erklaer .erklaer-kopf :focus-visible { outline-color: var(--erklaer-akzent); }
+.seite-erklaer .erklaer-kopf h1 { color: var(--erklaer-titel); }
+.seite-erklaer .erklaer-kopf h1::after { background: var(--erklaer-akzent); }
+.seite-erklaer .erklaer-kopf a { color: inherit; text-decoration-color: var(--erklaer-akzent); }
+.seite-erklaer .erklaer-kopf em.betont { color: var(--erklaer-marke); }
+.seite-erklaer.erklaer-allgemein .erklaer-kopf em.betont { color: var(--kupfer); }
+.erklaer-kopf-innen { display: grid; }
+.erklaer-kopf-text { padding-bottom: 28px; }
+
+/* Kurz gesagt: hervorgehobener Kasten, Linie links in der Farbe des Bereichs. */
+.kurz { max-width: 42rem; margin-top: 22px; padding: 18px 20px 20px; background: var(--erklaer-kasten); border: 1px solid var(--erklaer-kasten-rand); border-left: 3px solid var(--erklaer-akzent); border-radius: 18px; }
+.kurz-titel { margin: 0 0 8px; font: 600 0.75rem/1.4 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--erklaer-marke); }
+.kurz-text { margin: 0; font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem); line-height: 1.6; color: var(--erklaer-text); }
+.kurz-text + .kurz-text { margin-top: 0.8em; }
+
+/* Figur: feste Breite, Höhe aus dem Seitenverhältnis des Bildes; nie beschnitten. Die Kreise stehen nur hinter der
+   Figur, nie hinter Text. */
+.erklaer-figur { position: relative; display: grid; place-items: center; padding: 4px 0 36px; }
+.erklaer-kreise { position: absolute; left: 50%; top: calc(50% - 16px); width: 300px; height: 300px; max-width: none; fill: none; stroke: var(--erklaer-akzent); stroke-width: 1; opacity: 0.22; transform: translate(-50%, -50%); pointer-events: none; }
+.erklaer-figur picture { position: relative; display: block; width: 160px; }
+.erklaer-figur-bild { display: block; width: 100%; height: auto; box-shadow: 0 18px 36px -12px rgb(0 0 0 / 0.55); }
+.erklaer-allgemein .erklaer-figur-bild { box-shadow: 0 18px 36px -14px rgb(var(--schatten) / 0.45); }
+.erklaer-allgemein .erklaer-kreise { opacity: 0.3; }
+
+@media (min-width: 56rem) {
+  .erklaer-kopf-innen { grid-template-columns: minmax(0, 1fr) 20rem; align-items: center; gap: 40px; }
+  .erklaer-kopf-text { padding-bottom: clamp(36px, 4vw, 52px); }
+  .erklaer-figur { padding: 32px 0 40px; }
+  .erklaer-kreise { top: 50%; width: 380px; height: 380px; }
+  .erklaer-figur picture { width: 224px; }
+}
+
+/* Lesespalte unter dem Kopf: Luft wie bei den Ratgebern. */
+.seite-erklaer .inhalt-raster { padding-top: 24px; padding-bottom: clamp(56px, 7vw, 88px); }
+@media (min-width: 56rem) { .seite-erklaer .inhalt-raster { padding-top: 48px; } }
+
+/* Häufige Fragen: offen lesbar, mit feinen Linien dazwischen (zugleich FAQPage). */
+.erklaer-fragen-liste { border-top: 1px solid var(--rand); }
+.erklaer-frage { padding: 20px 0 6px; border-bottom: 1px solid var(--rand); }
+.erklaer-frage h3 { margin-bottom: 8px; font-size: 1.375rem; }
+.erklaer-frage p { font-size: 1rem; line-height: 1.65; }
+
+/* Hinweis auf die App: Sandfläche wie bei den Ratgebern, das Abzeichen links. */
+.erklaer-app h2 { font-size: clamp(1.625rem, 1.4rem + 1vw, 2rem); }
+.erklaer-app .erklaer-store { justify-content: flex-start; margin-bottom: 0; }
+
+/* Quellen: klein und ruhig, Nummern in Gold. */
+.quellen-liste { margin: 0; padding-left: 1.6em; font-size: 0.9375rem; line-height: 1.55; color: var(--gedaempft); }
+.quellen-liste li { padding: 6px 0 6px 4px; }
+.quellen-liste li::marker { color: var(--gold-text); font-weight: 600; }
+/* Jeder Link mindestens 44 px hoch (Fläche zum Antippen). */
+.quellen-liste a { display: block; min-height: 44px; padding: 10px 0; color: var(--tinte); }
+.quellen-liste li:has(a) { padding-block: 0; }
+
+.erklaer-weiter { padding-top: 56px; }
+
+@media print {
+  .erklaer-kopf, .seite-erklaer .krumen { background: none; color: #000; }
+  .erklaer-figur, .erklaer-app { display: none; }
+}

@@ -18,6 +18,8 @@ export const MESS_ID = 'G-DZT3YDP3Q8';
 
 // Orte der Abzeichen von Google Play (Storeknopf) als Wert des Parameters ort beim Ereignis store_klick.
 export const STORE_ORT = { kopf: 'titelbild', fuss: 'fusszeile', kurzlink: 'app_seite', traum: 'traumdeutung' };
+// Erklärseiten (AP-25): Ort wissen_<nr> geht unverändert als ort an store_klick (Nummer der Seite im Auftrag).
+export const storeOrtName = (ort) => STORE_ORT[ort] ?? (/^wissen_\d{1,2}$/.test(ort) ? ort : undefined);
 
 // Cookies von Google Analytics, die beim Widerruf gelöscht werden (_ga und _ga_<Kennung>).
 export const GA_COOKIES = /^_ga(_.*)?$/;

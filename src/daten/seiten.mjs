@@ -12,6 +12,7 @@ import { kaffeesatz } from './texte/kaffeesatz.mjs';
 import { sogehts } from './texte/sogehts.mjs';
 import { fragen } from './texte/fragen.mjs';
 import { ueber } from './texte/ueber.mjs';
+import { ERKLAERSEITEN, erklaerTexte, erklaerSprachen, erklaerDatei } from './erklaer.mjs';
 import { SPRACHEN, rechtsseiten, seitentitel, beschreibung as rechtBeschreibung, sprachfassungen, textVon } from './recht.mjs';
 
 // Inhaltsseiten in allen Sprachen. "texte": Modul mit metaTitel, metaBeschreibung, brotkrume je Sprache.
@@ -80,6 +81,36 @@ for (const paar of PAARE) {
       teilen: paar.schluessel !== 'bildnachweis',
       rechtlich: paar.schluessel === 'bildnachweis',
       index: paar.schluessel !== 'bildnachweis',
+    }));
+  }
+}
+
+// Erklärseiten (AP-25): nur in den Sprachen, für die es Adresse und Text gibt; hreflang nennt nur diese.
+const PAAR_TEXTE = Object.fromEntries(PAARE.map((paar) => [paar.schluessel, paar.texte]));
+for (const erklaer of ERKLAERSEITEN) {
+  const sprachen = erklaerSprachen(erklaer);
+  const fassungen = sprachen.length > 1 ? sprachen.map((sprache) => ({ sprache, pfad: ADRESSEN[erklaer.schluessel][sprache] })) : null;
+  const datei = erklaerDatei(erklaer);
+  for (const sprache of sprachen) {
+    const texte = erklaerTexte(erklaer, sprache);
+    const pfad = ADRESSEN[erklaer.schluessel][sprache];
+    const eltern = erklaer.eltern ? { titel: PAAR_TEXTE[erklaer.eltern][sprache].brotkrume, ziel: ADRESSEN[erklaer.eltern][sprache] } : null;
+    liste.push(eintrag({
+      schluessel: erklaer.schluessel,
+      pfad,
+      sprache,
+      fassungen,
+      titel: texte.metaTitel,
+      beschreibung: texte.metaBeschreibung,
+      bild: `/bilder/teilen/${erklaer.eltern ?? 'start'}-${sprache}.jpg`,
+      bildAlt: texte.titel,
+      art: 'article',
+      krumen: [krume(sprache), ...(eltern ? [eltern] : []), { titel: texte.brotkrume, ziel: pfad }],
+      prioritaet: 0.6,
+      quellen: [`src/daten/texte/${datei}.mjs`, 'src/daten/erklaer.mjs', 'src/components/Erklaerseite.astro',
+        ...(['de', 'tr'].includes(sprache) ? [] : [`src/daten/texte/uebersetzt/${datei}_${sprache}.json`])],
+      teilen: true,
+      erklaer,
     }));
   }
 }

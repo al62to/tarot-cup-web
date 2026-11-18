@@ -1,8 +1,11 @@
 ---
 // Ein Stück Fließtext aus den Textdateien. Erlaubt ist nur ein Link der Form [Linktext](/pfad/) auf eine Seite dieser
-// Website; alles andere wird als Text gesetzt (kein HTML aus den Daten). "als": Element um den Text (Standard: p),
-// "ohne": nur der Inhalt ohne Element. Der Name „Tarot Cup“ steht in einem span mit der Klasse marke-wort und bricht
-// so nie zwischen „Tarot“ und „Cup“ um.
+// Website und eine Hervorhebung *so* (seit AP-25 auch im Fließtext, über Betont.astro: kursiv, auf hellem Grund
+// Kupfer, auf dunklem Gold); alles andere wird als Text gesetzt (kein HTML aus den Daten). "als": Element um den Text
+// (Standard: p), "ohne": nur der Inhalt ohne Element. Der Name „Tarot Cup“ steht in einem span mit der Klasse
+// marke-wort und bricht so nie zwischen „Tarot“ und „Cup“ um (Betont.astro).
+import Betont from './Betont.astro';
+
 const { text, als = 'p', klasse, ohne = false } = Astro.props;
 if (typeof text !== 'string') throw new Error(`Text: Zeichenkette erwartet, gefunden ${typeof text}`);
 const teile = [];
@@ -19,7 +22,7 @@ teile.push({ text: text.slice(rest) });
 const Element = als;
 ---
 {ohne ? (
-  teile.map((teil) => (teil.ziel ? <a href={teil.ziel}>{teil.text.split(/(Tarot Cup)/).map((stueck) => (stueck === 'Tarot Cup' ? <span class="marke-wort">{stueck}</span> : stueck))}</a> : teil.text.split(/(Tarot Cup)/).map((stueck) => (stueck === 'Tarot Cup' ? <span class="marke-wort">{stueck}</span> : stueck))))
+  teile.map((teil) => (teil.ziel ? <a href={teil.ziel}><Betont text={teil.text} /></a> : <Betont text={teil.text} />))
 ) : (
-  <Element class={klasse}>{teile.map((teil) => (teil.ziel ? <a href={teil.ziel}>{teil.text.split(/(Tarot Cup)/).map((stueck) => (stueck === 'Tarot Cup' ? <span class="marke-wort">{stueck}</span> : stueck))}</a> : teil.text.split(/(Tarot Cup)/).map((stueck) => (stueck === 'Tarot Cup' ? <span class="marke-wort">{stueck}</span> : stueck))))}</Element>
+  <Element class={klasse}>{teile.map((teil) => (teil.ziel ? <a href={teil.ziel}><Betont text={teil.text} /></a> : <Betont text={teil.text} />))}</Element>
 )}

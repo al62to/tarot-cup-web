@@ -53,12 +53,14 @@ export const store = {
 // (Abschnitt Traumdeutung der Startseite, AP-T2).
 // Jede Sprache mit hl=<sprache> (AP-21), damit Google Play den Eintrag in der Sprache der Seite zeigt. Ohne Sprache
 // (Weiterleitung auf /app/) ohne hl, dann zeigt Google Play die Sprache des Geräts.
+// Dazu je Erklärseite ein eigener Ort wissen_<nr> (AP-25, src/daten/erklaer.mjs, Nummer aus dem Auftrag).
 export const STORE_ORTE = ['kopf', 'start', 'kurzlink', 'fuss', 'traum'];
+const istStoreOrt = (ort) => STORE_ORTE.includes(ort) || /^wissen_([1-9]|1[0-9]|20)$/.test(ort);
 const STORE_HL = {
   de: 'de', tr: 'tr', en: 'en', es: 'es', bs: 'bs', hr: 'hr', sr: 'sr', ro: 'ro', pt: 'pt-BR', fr: 'fr', id: 'id', hi: 'hi',
 };
 export function storeLink(ort, sprache) {
-  if (!STORE_ORTE.includes(ort)) throw new Error(`Unbekannter Ort für den Link zu Google Play: ${ort}`);
+  if (!istStoreOrt(ort)) throw new Error(`Unbekannter Ort für den Link zu Google Play: ${ort}`);
   const hl = STORE_HL[sprache] ? `&hl=${STORE_HL[sprache]}` : '';
   return `${store.adresse}${hl}&referrer=utm_source%3Dwebsite%26utm_medium%3Dlink%26utm_campaign%3D${ort}`;
 }

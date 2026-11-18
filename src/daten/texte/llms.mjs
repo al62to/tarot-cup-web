@@ -15,6 +15,7 @@ export const llmsTexte = {
     ],
     store: 'Google Play',
     seiten: 'Wichtige Seiten',
+    wissen: 'Wissen: Herkunft, Ablauf und Brauchtum',
     // Überschrift über den Links zu llms.txt in den anderen Sprachen (AP-SPR2; andereSprache und andereLink nutzt
     // llms.txt seitdem nicht mehr).
     weitereSprachen: 'Andere Sprachen',
@@ -34,6 +35,7 @@ export const llmsTexte = {
     ],
     store: 'Google Play',
     seiten: 'Önemli sayfalar',
+    wissen: 'Bilgi: köken, uygulama ve gelenek',
     weitereSprachen: 'Diğer diller',
     andereSprache: 'Almanca',
     andereLink: '[Almanca llms.txt](https://tarot-cup.com/llms.txt)',

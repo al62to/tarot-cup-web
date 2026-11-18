@@ -8,6 +8,14 @@ import { start } from './texte/start.mjs';
 import { llmsTexte } from './texte/llms.mjs';
 import { SPRACHNAMEN, startVon } from './adressen.mjs';
 
+function wissenZeilen(sprache, T, link) {
+  const liste = SEITEN.filter((eintrag) => eintrag.erklaer && eintrag.sprache === sprache && eintrag.index)
+    .sort((a, b) => a.erklaer.nr - b.erklaer.nr);
+  if (!liste.length) return [];
+  if (!T.wissen) throw new Error(`llms.txt: Überschrift „wissen“ fehlt für ${sprache} (src/daten/texte/llms.mjs)`);
+  return [`## ${T.wissen}`, ...liste.map((eintrag) => link(eintrag.schluessel)), ''];
+}
+
 export const llmsPfad = (sprache) => `${startVon(sprache)}llms.txt`;
 
 export function llmsText(sprache) {
@@ -28,6 +36,8 @@ export function llmsText(sprache) {
     `## ${T.seiten}`,
     ...['start', 'tarot', 'kaffeesatz', 'sogehts', 'fragen', 'ueber'].map(link),
     '',
+    // Erklärseiten (AP-25), in der Reihenfolge des Auftrags; nur die, die es in der Sprache gibt.
+    ...wissenZeilen(sprache, T, link),
     `## ${T.weitereSprachen}`,
     ...seite.sprachen.filter((andere) => andere !== sprache).map((andere) => `- [${SPRACHNAMEN[andere]}](${seite.adresse}${llmsPfad(andere)})`),
     '',

@@ -4,7 +4,8 @@
 // sehen) mit der Karte zum Umdrehen (bis AP-28 im Titelbild, Wendekarte.astro), das Ritual mit
 // der Tassenkarte zum Antippen, der Schaukasten mit einem Handy (Schaukasten.astro), „Was die App kann“ als
 // Kachelraster, zwei Ratgeber-Kacheln (Bild oben in eigenem Bereich, Text darunter, nie überlappend) und häufige
-// Fragen mit Trennlinien. Der Hinweis „Zur Unterhaltung …“ steht seit AP-W2 im Fuß jeder Seite.
+// Fragen mit Trennlinien; dazwischen seit AP-25 „Wissen zum Nachlesen“ mit allen Erklärseiten der Sprache
+// (Wissensblock.astro). Der Hinweis „Zur Unterhaltung …“ steht seit AP-W2 im Fuß jeder Seite.
 // Nach „Was die App kann“ (AP-T2): eine Kachel zur Traumdeutung im Traum-Stil der App (Nachtblau, Linien von Mond und
 // Sternen in Lavendel in einem eigenen Bildbereich, nie unter dem Text) mit dem Abzeichen von Google Play (Ort „traum“);
 // solange die App nicht öffentlich ist, wie im Titelbild „Bald bei Google Play“ ohne Link.
@@ -19,12 +20,14 @@ import Text from './Text.astro';
 import Titelbild from './Titelbild.astro';
 import Wendekarte from './Wendekarte.astro';
 import Storeknopf from './Storeknopf.astro';
+import Wissensblock from './Wissensblock.astro';
 import { store } from '../daten/seite.mjs';
 import { start } from '../daten/texte/start.mjs';
 import { fragen } from '../daten/texte/fragen.mjs';
 import { pfadVon } from '../daten/seiten.mjs';
 import { appDaten, faqDaten } from '../daten/strukturiert.mjs';
 import { FOTOS_START, fotoPfad } from '../daten/fotos.mjs';
+import { wissenGruppen, wissenTexte } from '../daten/wissen.mjs';
 
 const { sprache } = Astro.props;
 const T = start[sprache];
@@ -45,6 +48,9 @@ const vorteil = (id) => {
 };
 const [sprachLinks, sprachRechts] = T.koennen.sprachen.gross.split('/').map((teil) => teil.trim());
 const istTarot = (ziel) => ziel === pfadVon('tarot', sprache);
+// Wissen zum Nachlesen (AP-25): alle Erklärseiten der Sprache nach Bereich; ohne Seiten kein Block.
+const wissen = wissenGruppen(sprache);
+const W = wissen.length ? wissenTexte(sprache) : null;
 // Linien-Symbole der kleinen Kacheln (Entwurf 9.1): Funkwellen durchgestrichen, Person durchgestrichen.
 const SYMBOL = {
   internet: '<path d="M6 15a20 20 0 0 1 28 0M10 20a14 14 0 0 1 20 0M14.5 25a8 8 0 0 1 11 0"/><circle cx="20" cy="30" r="1.6" class="voll"/><path d="M5 35L35 5"/>',
@@ -175,6 +181,8 @@ const SYMBOL = {
       ))}
     </div>
   </section>
+
+  {W && <Wissensblock titel={W.startTitel} kennung="wissen" gruppen={wissen} bereichNamen={W.bereiche} klasse="wissen-teil innen" titelKlasse="start-titel" />}
 
   <section class="fragen-teil" aria-labelledby="fragen-titel">
     <div class="innen fragen-raster">

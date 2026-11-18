@@ -20,7 +20,7 @@
   import * as CookieConsent from 'vanilla-cookieconsent';
   import stileBibliothek from 'vanilla-cookieconsent/dist/cookieconsent.css?inline';
   import stileEigen from '../styles/einwilligung.css?inline';
-  import { EINWILLIGUNG, GTM_ID, GTM_EREIGNIS, GTM_ADRESSE, MESS_ID, STORE_ORT, GA_COOKIES } from '../daten/einwilligung.mjs';
+  import { EINWILLIGUNG, GTM_ID, GTM_EREIGNIS, GTM_ADRESSE, MESS_ID, storeOrtName, GA_COOKIES } from '../daten/einwilligung.mjs';
   import { ADRESSEN } from '../daten/adressen.mjs';
 
   const stil = document.createElement('style');
@@ -65,7 +65,7 @@
     const ziel = ereignis.target as Element | null;
     const link = ziel && ziel.closest ? ziel.closest('a[data-store-ort]') : null;
     if (!link || !statistikAn() || !fenster.dataLayer) return;
-    const ort = STORE_ORT[link.getAttribute('data-store-ort') as keyof typeof STORE_ORT];
+    const ort = storeOrtName(link.getAttribute('data-store-ort') || '');
     fenster.dataLayer.push({ event: 'store_klick', sprache: link.getAttribute('hreflang') || document.documentElement.lang, ort });
   }, true);
 

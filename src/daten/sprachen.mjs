@@ -4,6 +4,11 @@
 // übernehmen das Feld aus dem Deutschen, tools/texte_einspielen.mjs).
 import { kaffeesatz } from './texte/kaffeesatz.mjs';
 import { tarot } from './texte/tarot.mjs';
+import { erklaerKaffeesatz } from './texte/erklaer_kaffeesatz.mjs';
+import { erklaerTarot } from './texte/erklaer_tarot.mjs';
+import { erklaerTraum } from './texte/erklaer_traum.mjs';
+import { erklaerMond } from './texte/erklaer_mond.mjs';
+import { erklaerAllgemein } from './texte/erklaer_allgemein.mjs';
 
 const fest = [
   { text: 'Google Play', lang: 'en' },
@@ -38,7 +43,11 @@ const fest = [
 ];
 
 const tuerkisch = ['de', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', 'hi'].flatMap((sprache) =>
-  [...(kaffeesatz[sprache]?.tuerkischeBegriffe ?? []), ...(tarot[sprache]?.tuerkischeBegriffe ?? [])].map((text) => ({ text, lang: 'tr', nur: [sprache] })));
+  [...(kaffeesatz[sprache]?.tuerkischeBegriffe ?? []), ...(tarot[sprache]?.tuerkischeBegriffe ?? []),
+    // Erklärseiten (AP-25): Feld tuerkischeBegriffe je Seite.
+    ...[erklaerKaffeesatz, erklaerTarot, erklaerTraum, erklaerMond, erklaerAllgemein].flatMap((modul) =>
+      Object.values(modul[sprache] ?? {}).flatMap((seite) => seite?.tuerkischeBegriffe ?? [])),
+  ].map((text) => ({ text, lang: 'tr', nur: [sprache] })));
 
 // Gleiche Begriffe zusammenfassen (Sprachen der Seiten vereinigt); längere Begriffe zuerst, damit ein ganzer Satz vor
 // einem Teil daraus greift.

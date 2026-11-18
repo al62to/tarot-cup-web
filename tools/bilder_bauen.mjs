@@ -5,8 +5,9 @@
 //   Die Ordner für en und es stehen in QUELLORDNER; liegen die Fotos woanders, dort ändern. Sprachen wählen mit
 //   SPRACHEN=en,es (ohne: alle Sprachen, deren Quellen vorhanden sind).
 //   App-Symbol:           ../deutung-unterlagen/store/grafiken/app_symbol_512.png
+//   Posen der Figuren:    ../werbung/figuren/posen/<aylin|ozan>_<mond|geschenk|schreibt|karten>.png (AP-25, Erklärseiten)
 // Gebaut werden nur Karten, die die Website zeigt (Titelbild und Ratgeber Tarot); Karten mit nackten Figuren nie.
-// Aufruf (aus tarot-cup-web): node tools/bilder_bauen.mjs [karten|app|sogehts|symbol ...]
+// Aufruf (aus tarot-cup-web): node tools/bilder_bauen.mjs [karten|app|sogehts|symbol|posen ...]
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -90,5 +91,49 @@ if (soll('symbol')) {
   console.log('Symbol');
 }
 
-writeFileSync(MASSE_DATEI, `${JSON.stringify(Object.fromEntries(Object.entries(masse).sort()), null, 1)}
+// Posen von Aylin und Ozan für die Erklärseiten (AP-25): ganze Bilder im eigenen Format (etwa 9:16) mit Rahmen und
+// Hintergrund, nichts abgeschnitten, nur verkleinert und nie breiter als das Original (die Kartenposen aus Canva sind
+// nur 469 bzw. 461 px breit; dann ist die größte Datei so breit wie das Original, auf gerade Pixel abgerundet). AVIF und WebP in den Breiten
+// von POSE_BREITEN (src/daten/posen.mjs), Dateien public/bilder/begleiter/posen/<figur>-<pose>-<breite>.<format>.
+// Größte Darstellung: 240 px breit am Laptop, 160 px am Handy; 480 px reicht damit für doppelte und dreifache Dichte.
+// Qualität AVIF 48, WebP 74 (im Vergleich mit 60 und 80 bei 480 px kein sichtbarer Unterschied). Herkunft als XMP wie in werbung/figuren/werkzeug/posen_aufbereiten.py (IPTC DigitalSourceType
+// compositeWithTrainedAlgorithmicMedia); Maße der Originale in src/daten/fotos_masse.json (posen/<figur>-<pose>).
+if (soll('posen')) {
+  const { POSEN, FIGUREN_POSEN, poseBreiten } = await import('../src/daten/posen.mjs');
+  const HERKUNFT = { karten: 'Canva AI (Bildgenerator)', mond: 'ElevenLabs (Seedream 5.5)', geschenk: 'ElevenLabs (Seedream 5.5)', schreibt: 'ElevenLabs (Seedream 5.5)' };
+  const xmp = (beschreibung, herkunft) => `<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/">
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about=""
+    xmlns:Iptc4xmpExt="http://iptc.org/std/Iptc4xmpExt/2008-02-29/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+    Iptc4xmpExt:DigitalSourceType="http://cv.iptc.org/newscodes/digitalsourcetype/compositeWithTrainedAlgorithmicMedia"
+    photoshop:Credit="${herkunft}, bearbeitet fuer Tarot Cup">
+   <dc:description><rdf:Alt><rdf:li xml:lang="x-default">${beschreibung}</rdf:li></rdf:Alt></dc:description>
+  </rdf:Description>
+ </rdf:RDF>
+</x:xmpmeta>
+<?xpacket end="w"?>`;
+  for (const [figur, kurz] of Object.entries(FIGUREN_POSEN)) {
+    for (const pose of POSEN) {
+      const quelle = join(PROJEKT, 'werbung', 'figuren', 'posen', `${kurz}_${pose}.png`);
+      if (!existsSync(quelle)) throw new Error(`Quelle fehlt: ${quelle}`);
+      const { width, height } = await sharp(quelle).metadata();
+      masse[`posen/${figur}-${pose}`] = { breite: width, hoehe: height };
+      const beschreibung = `Tarot Cup, gezeichnete Figur ${kurz === 'aylin' ? 'Aylin' : 'Ozan'}, Pose ${pose}`;
+      for (const breite of poseBreiten(width)) {
+        const ziel = (format) => join(ZIEL, 'begleiter', 'posen', `${figur}-${pose}-${breite}.${format}`);
+        mkdirSync(dirname(ziel('webp')), { recursive: true });
+        // fit: inside, ohne Vergrößern: das ganze Bild, Seitenverhältnis wie das Original.
+        const bild = () => sharp(quelle).resize({ width: breite, fit: 'inside', withoutEnlargement: true }).withXmp(xmp(beschreibung, HERKUNFT[pose]));
+        await bild().webp({ quality: 74, effort: 6 }).toFile(ziel('webp'));
+        await bild().avif({ quality: 48, effort: 6 }).toFile(ziel('avif'));
+      }
+      console.log('Pose', figur, pose, poseBreiten(width).join(', '));
+    }
+  }
+}
+
+writeFileSync(MASSE_DATEI,`${JSON.stringify(Object.fromEntries(Object.entries(masse).sort()), null, 1)}
 `);

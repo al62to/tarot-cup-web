@@ -71,7 +71,8 @@ export const faqDaten = ({ pfad, sprache, liste }) => ({
   })),
 });
 
-export const artikelDaten = ({ pfad, sprache, titel, beschreibung, bild, quellen, teile = [] }) => ({
+// zitate (Erklärseiten, AP-25): Quellenliste der Seite als citation, je { angabe, url } (url darf fehlen).
+export const artikelDaten = ({ pfad, sprache, titel, beschreibung, bild, quellen, teile = [], zitate = [] }) => ({
   '@context': KONTEXT,
   '@type': 'Article',
   '@id': `${absolut(pfad)}#artikel`,
@@ -88,6 +89,7 @@ export const artikelDaten = ({ pfad, sprache, titel, beschreibung, bild, quellen
   about: { '@id': APP_ID },
   // Listen (Zeichen, Karten, Legungen) als mainEntity: hasPart erlaubt nur CreativeWork, ItemList ist keins (schema.org-Validator).
   ...(teile.length ? { mainEntity: teile } : {}),
+  ...(zitate.length ? { citation: zitate.map((zitat) => ({ '@type': 'CreativeWork', name: zitat.angabe, ...(zitat.url ? { url: zitat.url } : {}) })) } : {}),
 });
 
 // Liste (Zeichen, Karten, Legungen) als ItemList.

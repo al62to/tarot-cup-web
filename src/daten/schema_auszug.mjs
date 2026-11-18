@@ -11,7 +11,7 @@ const TYPEN = {
   CreativeWork: {
     ober: 'Thing',
     eigen: ['inLanguage', 'publisher', 'author', 'dateModified', 'datePublished', 'headline', 'isPartOf', 'about', 'mainEntity',
-      'hasPart', 'text', 'keywords', 'license', 'creator', 'copyrightHolder'],
+      'hasPart', 'text', 'keywords', 'license', 'creator', 'copyrightHolder', 'citation'],
   },
   WebSite: { ober: 'CreativeWork', eigen: ['potentialAction'] },
   WebPage: { ober: 'CreativeWork', eigen: ['breadcrumb', 'primaryImageOfPage', 'lastReviewed'] },
@@ -76,7 +76,10 @@ export function pruefeSchema(daten, sprache) {
     const liste = erlaubt(typ);
     for (const [schluessel, wert] of Object.entries(knoten)) {
       if (!liste.has(schluessel)) befunde.push(`${weg}: ${typ} kennt ${schluessel} nicht`);
-      if (['url', 'item', 'installUrl', 'mainEntityOfPage'].includes(schluessel) && typeof wert === 'string' && !ADRESSE.test(wert) && !wert.startsWith('https://play.google.com/')) befunde.push(`${weg}.${schluessel}: keine volle Adresse (${wert})`);
+      // Quellen der Erklärseiten (citation, AP-25) dürfen auf fremde Seiten zeigen (volle Adresse mit http oder https).
+      const zitat = /\.citation\[\d+\]$/.test(weg);
+      if (zitat && schluessel === 'url' && !/^https?:\/\/[^\s]+$/.test(wert)) befunde.push(`${weg}.url: Quelle ohne volle Adresse (${wert})`);
+      if (!zitat && ['url', 'item', 'installUrl', 'mainEntityOfPage'].includes(schluessel) && typeof wert === 'string' && !ADRESSE.test(wert) && !wert.startsWith('https://play.google.com/')) befunde.push(`${weg}.${schluessel}: keine volle Adresse (${wert})`);
       if (['image', 'screenshot'].includes(schluessel)) [wert].flat().forEach((bild) => { if (!ADRESSE.test(bild)) befunde.push(`${weg}.${schluessel}: keine volle Adresse (${bild})`); });
       if (['position', 'numberOfItems'].includes(schluessel) && !Number.isInteger(wert)) befunde.push(`${weg}.${schluessel}: keine ganze Zahl`);
       if (['dateModified', 'datePublished'].includes(schluessel) && !DATUM.test(wert)) befunde.push(`${weg}.${schluessel}: kein Datum JJJJ-MM-TT`);
