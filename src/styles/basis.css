@@ -294,8 +294,8 @@ main { display: block; padding-bottom: 64px; }
 /* Fußzeile: Abzeichen links unter dem Hinweis. */
 .fuss-store { justify-content: flex-start; margin-block: 0; }
 
-/* Fuß (Entwurf 9.1): Espresso. Oben links der Hinweis und der Teilen-Knopf, rechts die Spalten App, Rechtliches,
-   Kontakt und Sprache; darunter der große Schriftzug als Schmuck, ganz unten die Zeile. */
+/* Fuß (Entwurf 9.1): Espresso. Oben links der Hinweis und der Teilen-Knopf, rechts die Spalten App, Rechtliches und
+   Kontakt; darunter die Zeile Sprache (AP-40B), der große Schriftzug als Schmuck, ganz unten die Zeile. */
 .fuss { container-type: inline-size; overflow: hidden; background: var(--espresso); padding-top: clamp(48px, 6vw, 64px); font-size: 0.9375rem; }
 .fuss-oben { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px 56px; }
 .fuss-start { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; flex: 0 1 21rem; min-width: min(100%, 15rem); }
@@ -304,10 +304,17 @@ main { display: block; padding-bottom: 64px; }
 .fuss-spalte { min-width: 9rem; }
 .fuss-titel { margin: 0 0 6px; font: 600 0.75rem/1.4 var(--sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); }
 .fuss-spalte ul { list-style: none; margin: 0; padding: 0; }
-.fuss-spalte ul + .fuss-titel { margin-top: 20px; }
-.fuss-spalte a { display: inline-flex; align-items: center; min-height: 44px; padding: 4px 0; color: var(--creme); line-height: 1.35; text-decoration: none; }
+.fuss-spalte a { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; padding: 4px 0; color: var(--creme); line-height: 1.35; text-decoration: none; }
 .fuss-spalte a:hover { color: var(--gold); text-decoration: underline; }
 .fuss-spalte a[aria-current] { color: var(--gold); }
+/* Spaltenlinks seit AP-40B auch mindestens 44 px breit (kurze Wörter wie „Bilgi“). Sprache (AP-40B): eigene Zeile unter den Spalten, Titel darüber, die Links nebeneinander und bei wenig Platz
+   umbrechend. Jeder Link mindestens 44 x 44 px (auch das kurze „हिन्दी“), Name bleibt zusammen (nowrap). Der Text
+   steht links in der Trefferfläche, damit Zeilenanfang und Abstände zwischen den Namen überall gleich bleiben. */
+.fuss-sprachwahl { margin-top: clamp(32px, 4vw, 44px); }
+.fuss-sprachen { display: flex; flex-wrap: wrap; gap: 0 26px; list-style: none; margin: 0; padding: 0; }
+.fuss-sprachen a { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; padding: 4px 0; color: var(--creme); line-height: 1.35; text-decoration: none; white-space: nowrap; }
+.fuss-sprachen a:hover { color: var(--gold); text-decoration: underline; }
+.fuss-sprachen a[aria-current] { color: var(--gold); }
 /* Der große Schriftzug (aria-hidden): passt in jeder Breite in die Zeile, ohne umzubrechen. */
 .fuss-schriftzug { margin-top: clamp(36px, 5vw, 56px); font: 500 min(14.5rem, 23cqw)/0.8 var(--serif); letter-spacing: -0.02em; color: var(--gold); white-space: nowrap; user-select: none; padding-bottom: 0.32em; }
 .fuss-schriftzug em { font-style: italic; }

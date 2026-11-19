@@ -1,8 +1,10 @@
 ---
 // Fuß nach Entwurf 9.1 auf Espresso. Oben links der Hinweis „Zur Unterhaltung …“ (auf jeder Seite einmal) und auf
 // Inhaltsseiten der Teilen-Knopf (Teilen.astro, "teilen" kommt aus Basis.astro). Rechts die Spalten App (Wissen seit
-// AP-25E nur mit Übersicht, So geht's, Fragen, Über), Rechtliches (Datenschutz, Nutzungsbedingungen, Offenlegung, Bildnachweis und Lizenzen), Kontakt
-// (E-Mail, kodiert) und Sprache. Unter Rechtliches zuletzt „Cookie-Einstellungen“ (W7). Darunter der große Schriftzug „Tarot Cup“ als Schmuck (aria-hidden), ganz unten
+// AP-25E nur mit Übersicht, So geht's, Fragen, Über), Rechtliches (Datenschutz, Nutzungsbedingungen, Offenlegung, Bildnachweis und Lizenzen) und Kontakt
+// (E-Mail, kodiert). Unter Rechtliches zuletzt „Cookie-Einstellungen“ (W7). Unter den Spalten seit AP-40B eine eigene Zeile
+// „Sprache“: die 12 Sprachen nebeneinander, bei wenig Platz umbrechend (vorher untereinander in der Spalte Kontakt, was den
+// Fuß sehr hoch machte). Darunter der große Schriftzug „Tarot Cup“ als Schmuck (aria-hidden), ganz unten
 // „Tarot Cup · Zur Unterhaltung.“ Unter dem Hinweis das Abzeichen von Google Play (Storeknopf, nur mit öffentlichem
 // Store; Abstand 14 px zu den Nachbarn, mehr als ein Viertel der Höhe von 48 px).
 // Die Offenlegung gibt es nur auf Deutsch; auf türkischen Seiten heißt der Link „Offenlegung (künye)“; „Offenlegung“
@@ -78,15 +80,17 @@ const kontakt = `<a href="${mailtoKodiert()}">${emailKodiert()}</a>`;
           <ul aria-labelledby="fuss-kontakt">
             <li set:html={kontakt} />
           </ul>
-          <h2 class="fuss-titel" id="fuss-sprache">{T.fuss.sprache}</h2>
-          <ul class="fuss-sprachen" aria-labelledby="fuss-sprache">
-            {sprachen.map((eintrag) => (
-              <li><a href={eintrag.ziel} hreflang={eintrag.aktuell ? undefined : eintrag.code} aria-current={eintrag.aktuell ? 'true' : undefined}><span lang={eintrag.code}>{eintrag.name}</span></a></li>
-            ))}
-          </ul>
         </div>
       </div>
     </div>
+    <nav class="fuss-sprachwahl" aria-labelledby="fuss-sprache">
+      <h2 class="fuss-titel" id="fuss-sprache">{T.fuss.sprache}</h2>
+      <ul class="fuss-sprachen">
+        {sprachen.map((eintrag) => (
+          <li><a href={eintrag.ziel} hreflang={eintrag.aktuell ? undefined : eintrag.code} aria-current={eintrag.aktuell ? 'true' : undefined}><span lang={eintrag.code}>{eintrag.name}</span></a></li>
+        ))}
+      </ul>
+    </nav>
     <div class="fuss-schriftzug" aria-hidden="true">Tarot <em>Cup</em></div>
     <div class="fuss-zeile">
       <p>{T.fuss.zeile}</p>
