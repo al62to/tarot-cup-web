@@ -362,30 +362,6 @@
   "ausnahmen": [
     {
       "id": "frage",
-      "seite": "/fragen/",
-      "satz": "Bei den normalen Legungen hat die App kein Feld für deine Frage",
-      "begruendung": "Bei den normalen Legungen; der nächste Satz nennt die eigene Frage bei der automatischen Deutung (DS 1.7 Abschnitt 3: kein Eingabefeld außer bei der automatischen Deutung)."
-    },
-    {
-      "id": "frage",
-      "seite": "/",
-      "satz": "Bei den normalen Legungen hat die App kein Feld für deine Frage",
-      "begruendung": "Bei den normalen Legungen; der nächste Satz nennt die eigene Frage bei der automatischen Deutung (DS 1.7 Abschnitt 3: kein Eingabefeld außer bei der automatischen Deutung). Fragen-Block der Startseite."
-    },
-    {
-      "id": "frage",
-      "seite": "/tr/sorular/",
-      "satz": "Normal açılımlarda uygulamada sorunu yazacağın bir alan yok",
-      "begruendung": "Normale Legungen; der nächste Satz nennt die eigene Frage bei der automatischen Deutung (DS 1.7 Abschnitt 3)."
-    },
-    {
-      "id": "frage",
-      "seite": "/tr/",
-      "satz": "Normal açılımlarda uygulamada sorunu yazacağın bir alan yok",
-      "begruendung": "Normale Legungen; der nächste Satz nennt die eigene Frage bei der automatischen Deutung (DS 1.7 Abschnitt 3). Fragen-Block der Startseite."
-    },
-    {
-      "id": "frage",
       "seite": "/",
       "satz": "Deine Frage behältst du für dich, die App fragt nicht danach.",
       "begruendung": "Kaffeesatz: Dort gibt es keine automatische Deutung (DS 1.7 Abschnitt 10, Die automatische Deutung: Traum oder Karten; Kaffeesatz kommt nicht vor), die App fragt also wirklich nicht nach der Frage. In AP-25B geprüft und bewusst so gelassen. Ritual „So liest du deine Tasse“ der Startseite."

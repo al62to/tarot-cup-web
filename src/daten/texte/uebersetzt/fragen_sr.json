@@ -29,21 +29,12 @@
    ]
   },
   {
-   "id": "fragen-gespeichert",
-   "frage": "Da li se moja pitanja čuvaju?",
-   "antwort": [
-    "Kod običnih rasporeda aplikacija nema polje za tvoje pitanje; zadržavaš ga tiho za sebe. Samo kod automatskog tumačenja možeš kartama da postaviš sopstveno pitanje, ako želiš.",
-    "To pitanje ide samo za to jedno tumačenje na moj server i kompaniji Anthropic, gde jezički model piše tumačenje. Moj server ga ne čuva, već ga odbacuje čim je upit završen. Anthropic ga po pravilu briše najkasnije posle 30 dana i ne koristi ga za treniranje. Isto važi i za san koji tamo zapišeš.",
-    "U istoriji aplikacija beleži šta je položeno: datum i vreme, vrstu rasporeda, karte (i da li su bile obrnute) ili znake sa njihovim mestom u šoljici, kod gledanja u šolju oblast života i tvoju belešku, ako je napišeš. Tvoje pitanje nikada nije među tim podacima, ni kod automatskog tumačenja koje sačuvaš dodirom na „Sačuvaj“."
-   ]
-  },
-  {
    "id": "internet",
    "frage": "Da li mi je potreban internet?",
    "antwort": [
     "Za skoro sve ne. Tarot, talog kafe, tumačenje snova, Leksikon i Istorija rade bez internet veze, a i podsetnik na kartu dana aplikacija zakazuje na tvom telefonu.",
     "Veza je aplikaciji potrebna za automatsko tumačenje, za poklone sa servera i za pozivanje, a osim toga za obaveštenje o novim verzijama i za ocenjivanje, koja idu preko Play Store-a.",
-    "Kod automatskog tumačenja, kada jednom daš pristanak i dodirneš „Zatraži tumačenje“, tvoj san ili tvoje karte sa tvojim pitanjem, jezik i zemlja idu šifrovano na moj server u Nemačkoj, a odatle kompaniji Anthropic, gde jezički model piše tumačenje. Moj server ne čuva ni tvoj tekst ni tumačenje, osim ako prijaviš tumačenje.",
+    "Kod automatskog tumačenja, kada jednom daš pristanak i dodirneš „Zatraži tumačenje“, tvoj san ili tvoje karte sa tvojim pitanjem, jezik i zemlja idu šifrovano na moj server u Nemačkoj, a odatle pružaocu usluga kod kog jezički model piše tumačenje. Moj server ne čuva ni tvoj tekst ni tumačenje, osim ako prijaviš tumačenje.",
     "Na moj server aplikacija šalje i nasumični identifikator ove instalacije, koji server čuva samo kao nepovratnu kontrolnu vrednost, i potvrdu od Google Play da prava aplikacija radi na pravom uređaju. Pri deljenju i pozivanju tvoj link nosi nasumičan kod. Moj server ne zna tvoje ime, tvoju imejl adresu ni tvoje kontakte.",
     "Statistiku korišćenja i izveštaje o padovima aplikacija šalje samo ako ih uključiš. Sve pojedinosti su u [Politici privatnosti](/sr/privatnost/)."
    ]

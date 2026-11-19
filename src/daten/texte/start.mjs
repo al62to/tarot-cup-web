@@ -130,7 +130,7 @@ export const start = {
     },
     fragen: {
       titel: 'Häufige *Fragen*',
-      ids: ['zukunft', 'foto-der-tasse', 'tuerkisch', 'fragen-gespeichert'],
+      ids: ['zukunft', 'foto-der-tasse', 'tuerkisch'],
       alle: 'Alle Fragen',
     },
   },
@@ -249,7 +249,7 @@ export const start = {
     },
     fragen: {
       titel: 'Sık sorulan *sorular*',
-      ids: ['zukunft', 'foto-der-tasse', 'tuerkisch', 'fragen-gespeichert'],
+      ids: ['zukunft', 'foto-der-tasse', 'tuerkisch'],
       alle: 'Tüm sorular',
     },
   },

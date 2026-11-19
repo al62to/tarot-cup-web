@@ -29,21 +29,12 @@
    ]
   },
   {
-   "id": "fragen-gespeichert",
-   "frage": "Are my questions saved?",
-   "antwort": [
-    "For the regular readings, the app does not have a field for your question; you keep it quietly to yourself. Only with the automatic reading can you ask the cards a question of your own, if you want to.",
-    "This question is sent only for that one reading to my server and to Anthropic, where a language model writes the reading. My server does not store it; it discards it as soon as the request is complete. Anthropic usually deletes it after 30 days at the latest and does not use it for training. The same applies to a dream you write down there.",
-    "In History, the app keeps a record of what you drew: the date and time, the type of reading, the cards (including whether they were reversed) or the symbols with their place in the cup, for coffee grounds the area of life, and your note, if you write one. Your question is never included, not even with an automatic reading that you keep with “Save”."
-   ]
-  },
-  {
    "id": "internet",
    "frage": "Do I need an internet connection?",
    "antwort": [
     "For almost everything, no. Tarot, coffee grounds, dream interpretation, the Dictionary, and History work without a connection, and the app schedules the reminder for the Card of the Day on your phone, too.",
     "The app needs a connection for the automatic reading, for the gifts from the server, and for inviting, and also for the notice about new versions and for rating the app, which run through the Play Store.",
-    "For the automatic reading, once you have given your consent and tap “Get a reading”, your dream or your cards with your question, along with the language and the country, are sent encrypted to my server in Germany and from there to Anthropic, where a language model writes the reading. My server stores neither your text nor the reading, unless you report a reading.",
+    "For the automatic reading, once you have given your consent and tap “Get a reading”, your dream or your cards with your question, along with the language and the country, are sent encrypted to my server in Germany and from there to a service provider, where a language model writes the reading. My server stores neither your text nor the reading, unless you report a reading.",
     "The app also sends my server a random identifier of this installation, which the server stores only as a non-reversible check value, and a verification from Google Play that the genuine app is running on a genuine device. When you share and invite, your link carries a random code. My server does not know your name, your email address, or your contacts.",
     "The app sends usage statistics and crash reports only if you turn them on. All the details are in the [Privacy Policy](/en/privacy/)."
    ]

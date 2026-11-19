@@ -29,21 +29,12 @@
    ]
   },
   {
-   "id": "fragen-gespeichert",
-   "frage": "Minhas perguntas são salvas?",
-   "antwort": [
-    "Nas tiragens normais, o aplicativo não tem um campo para sua pergunta; você a guarda em silêncio, só para você. Só na leitura automática você pode fazer às cartas uma pergunta sua, se quiser.",
-    "Essa pergunta vai, só para essa leitura, ao meu servidor e à Anthropic, onde um modelo de linguagem escreve a leitura. Meu servidor não a armazena, mas a descarta assim que a solicitação termina. A Anthropic a apaga, em regra, no máximo após 30 dias e não a usa para treinamento. O mesmo vale para um sonho que você escreva ali.",
-    "No Histórico, o app registra o que você tirou: data e horário, o tipo de tiragem, as cartas (inclusive se estavam invertidas) ou os símbolos com sua posição na xícara; na leitura da borra de café, a área da vida e sua anotação, caso você escreva uma. Sua pergunta nunca fica registrada, nem em uma leitura automática que você guarde com “Salvar”."
-   ]
-  },
-  {
    "id": "internet",
    "frage": "Preciso de internet?",
    "antwort": [
     "Para quase tudo, não. O tarô, a borra de café, a interpretação de sonhos, o Dicionário e o Histórico funcionam sem conexão, e o app também agenda em seu celular o lembrete da Carta do Dia.",
     "O app precisa de conexão para a leitura automática, para os presentes do servidor e para os convites, além do aviso sobre novas versões e da avaliação, que passam pela Play Store.",
-    "Na leitura automática, depois que você deu uma vez o seu consentimento e toca em “Interpretar”, seu sonho ou suas cartas com sua pergunta, o idioma e o país vão de forma criptografada ao meu servidor na Alemanha e, de lá, à Anthropic, onde um modelo de linguagem escreve a leitura. Meu servidor não armazena nem seu texto nem a leitura, a menos que você reporte uma leitura.",
+    "Na leitura automática, depois que você deu uma vez o seu consentimento e toca em “Interpretar”, seu sonho ou suas cartas com sua pergunta, o idioma e o país vão de forma criptografada ao meu servidor na Alemanha e, de lá, a um prestador de serviços, onde um modelo de linguagem escreve a leitura. Meu servidor não armazena nem seu texto nem a leitura, a menos que você reporte uma leitura.",
     "O app também envia ao meu servidor um identificador aleatório desta instalação, que ele guarda apenas como valor de verificação irreversível, e uma comprovação do Google Play de que o app verdadeiro está rodando em um dispositivo verdadeiro. Ao compartilhar e convidar, seu link contém um código aleatório. Meu servidor não conhece seu nome, seu endereço de e-mail nem seus contatos.",
     "O app só envia estatísticas de uso e relatórios de falhas se você as ativar. Todos os detalhes estão na [Política de Privacidade](/pt/privacidade/)."
    ]
