@@ -13,7 +13,7 @@ import { sogehts } from './texte/sogehts.mjs';
 import { fragen } from './texte/fragen.mjs';
 import { ueber } from './texte/ueber.mjs';
 import { ERKLAERSEITEN, erklaerTexte, erklaerSprachen, erklaerDatei, uebersichtSprachen, hatUebersicht } from './erklaer.mjs';
-import { SPRACHEN, rechtsseiten, seitentitel, beschreibung as rechtBeschreibung, sprachfassungen, textVon } from './recht.mjs';
+import { rechtsseiten, seitentitel, beschreibung as rechtBeschreibung, sprachfassungen, textVon } from './recht.mjs';
 
 // Inhaltsseiten in allen Sprachen. "texte": Modul mit metaTitel, metaBeschreibung, brotkrume je Sprache.
 // "quellen": Dateien, deren letzter Commit den Tag der letzten Änderung ergibt (src/daten/stand.mjs); "datei": Name
@@ -151,13 +151,13 @@ liste.push(eintrag({
   prioritaet: 0.1, quellen: ['src/pages/offenlegung/index.astro'], teilen: false, rechtlich: true, index: false,
 }));
 
-// Rechtsseiten aus dem Verzeichnis: gültige Fassung und Archiv.
+// Rechtsseiten aus dem Verzeichnis: nur die gültige Fassung (AP-40D).
 for (const rechtsseite of rechtsseiten()) {
-  const { text, fassung, archiv, adresse } = rechtsseite;
+  const { text, fassung, adresse } = rechtsseite;
   const sp = text.sprache;
   const gueltig = { titel: textVon(text.pfad).titel, ziel: `/${text.pfad}/` };
   liste.push(eintrag({
-    schluessel: `recht:${text.pfad}${archiv ? `:${fassung.nummer}` : ''}`,
+    schluessel: `recht:${text.pfad}`,
     pfad: adresse,
     sprache: sp,
     fassungen: sprachfassungen(rechtsseite),
@@ -165,10 +165,8 @@ for (const rechtsseite of rechtsseiten()) {
     beschreibung: rechtBeschreibung(rechtsseite),
     bild: `/bilder/teilen/start-${sp}.jpg`,
     bildAlt: 'Tarot Cup',
-    krumen: archiv
-      ? [krume(sp), gueltig, { titel: SPRACHEN[sp].fassung.replace('{nr}', fassung.nummer), ziel: adresse }]
-      : [krume(sp), gueltig],
-    prioritaet: archiv ? 0.1 : 0.2,
+    krumen: [krume(sp), gueltig],
+    prioritaet: 0.2,
     quellen: [`src/inhalte/recht/${fassung.datei}`, 'src/inhalte/recht/verzeichnis.json'],
     teilen: false,
     rechtlich: true,

@@ -22,7 +22,6 @@
 .sprachwahl-recht a { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 18px 0 14px; border-radius: 999px; background: var(--sand); font-size: 0.9375rem; font-weight: 500; text-decoration: none; }
 .sprachwahl-recht a::before { content: ""; flex: none; width: 16px; height: 16px; border: 1.6px solid var(--gold-dunkel); border-radius: 50%; background: linear-gradient(var(--gold-dunkel), var(--gold-dunkel)) center / 100% 1.4px no-repeat, linear-gradient(var(--gold-dunkel), var(--gold-dunkel)) center / 1.4px 100% no-repeat; }
 .sprachwahl-recht a:hover { background: var(--rand); text-decoration: underline; }
-.recht .hinweis { margin: 0 0 28px; padding: 14px 18px; background: var(--karte); border: 1px solid var(--rand); border-left: 3px solid var(--gold-linie); border-radius: 14px; font-size: 0.96875rem; }
 .rechtstext { font-size: 1.0625rem; line-height: 1.7; }
 .rechtstext h1 { margin-bottom: 12px; font-size: clamp(2.25rem, 1.6rem + 2.6vw, 3.25rem); }
 .rechtstext h1::after { content: ""; display: block; width: 72px; height: 2px; margin-top: 18px; background: var(--gold-linie); }
@@ -38,11 +37,6 @@
 .rechtstext th, .rechtstext td { min-width: 9rem; padding: 10px 12px; border: 1px solid var(--rand); text-align: left; vertical-align: top; }
 .rechtstext th { background: var(--sand); color: var(--tinte); font-weight: 600; }
 .rechtstext td { background: var(--karte); }
-.fassungen { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--rand); }
-.fassungen h2 { margin-bottom: 8px; font-size: 1.5rem; }
-.fassungen ul { list-style: none; margin: 0; padding: 0; }
-.fassungen li { display: flex; flex-wrap: wrap; align-items: center; min-height: 44px; font-size: 0.96875rem; color: var(--gedaempft); }
-.fassungen a { display: inline-flex; align-items: center; min-height: 44px; margin-right: 0.25em; }
 
 /* Seite nicht gefunden: beide Sprachen untereinander. */
 .nichtgefunden { padding-top: clamp(40px, 7vw, 80px); text-align: center; }
@@ -100,7 +94,7 @@
 
 @media print {
   .recht, .dokument { max-width: none; padding: 0; }
-  .sprachwahl-recht, .fassungen { display: none; }
+  .sprachwahl-recht { display: none; }
   .rechtstext { font-size: 11pt; line-height: 1.5; color: #000; }
   .rechtstext h1 { font-size: 22pt; }
   .rechtstext h1::after { display: none; }

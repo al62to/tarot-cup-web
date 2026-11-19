@@ -51,8 +51,7 @@ export const ADRESSEN = {
     en: '/en/image-credits-and-licenses/', es: '/es/creditos-de-imagenes-y-licencias/',
     bs: '/bs/izvori-slika-i-licence/', hr: '/hr/izvori-slika-i-licence/', sr: '/sr/izvori-slika-i-licence/', ro: '/ro/surse-imagini-si-licente/', pt: '/pt/creditos-de-imagens-e-licencas/', fr: '/fr/credits-images-et-licences/', id: '/id/kredit-gambar-dan-lisensi/', hi: '/hi/image-credits-and-licenses/',
   },
-  // Rechtstexte: gültige Fassung. Die Fassungen im Archiv (/<text>/<nummer>/) gibt es nur auf Deutsch und Türkisch
-  // (src/inhalte/recht/verzeichnis.json).
+  // Rechtstexte: nur die gültige Fassung (seit AP-40D keine Seiten einzelner Fassungen /<text>/<nummer>/ mehr).
   datenschutz: { de: '/datenschutz/', tr: '/tr/gizlilik/', en: '/en/privacy/', es: '/es/privacidad/',
     bs: '/bs/privatnost/', hr: '/hr/privatnost/', sr: '/sr/privatnost/', ro: '/ro/confidentialitate/', pt: '/pt/privacidade/', fr: '/fr/confidentialite/', id: '/id/privasi/', hi: '/hi/privacy/',
   },

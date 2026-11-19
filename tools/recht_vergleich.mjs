@@ -1,19 +1,18 @@
-// Vergleicht den sichtbaren Text der Rechtsseiten (Hauptinhalt <main>) im neuen Bau mit dem Bau vor AP-W1
-// (web_bauen.py, Stand main 9b06a2d), Zeile für Zeile, dazu Sprachlinks und Liste der Fassungen (Ziele der Links).
-// Kopf, Brotkrumen und Fuß gehören nicht zum Vergleich (sie sind mit AP-W1 neu).
+// Vergleicht den sichtbaren Text der Rechtsseiten (Hauptinhalt <main>) im neuen Bau mit einem älteren Bau (zuerst der
+// Bau vor AP-W1, web_bauen.py, Stand main 9b06a2d; seither der Bau von main vor der Änderung), Zeile für Zeile, dazu
+// die Sprachlinks (Ziele der Links). Kopf, Brotkrumen und Fuß gehören nicht zum Vergleich (sie sind mit AP-W1 neu).
+// AP-40D: Verglichen werden die gültigen Rechtsseiten aller Sprachen (aus dem Verzeichnis) und /offenlegung/; Seiten
+// einzelner Fassungen gibt es nicht mehr. Die Liste „Frühere und aktuelle Fassungen“ (<section class="fassungen">) ist
+// seither entfernt; steht sie im älteren Bau, wird sie dort vor dem Vergleich herausgenommen.
 // Aufruf: node tools/recht_vergleich.mjs <alter Bau> <neuer Bau> [Bericht.md]
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import verzeichnis from '../src/inhalte/recht/verzeichnis.json' with { type: 'json' };
 
 const [alt, neu, bericht] = process.argv.slice(2);
 if (!alt || !neu) throw new Error('Aufruf: node tools/recht_vergleich.mjs <alter Bau> <neuer Bau> [Bericht.md]');
 
-const SEITEN = [
-  '/datenschutz/', '/datenschutz/1.0/', '/datenschutz/1.1/',
-  '/nutzungsbedingungen/', '/nutzungsbedingungen/1.0/', '/nutzungsbedingungen/1.1/',
-  '/tr/gizlilik/', '/tr/gizlilik/1.1/', '/tr/kullanim-kosullari/', '/tr/kullanim-kosullari/1.1/',
-  '/offenlegung/',
-];
+const SEITEN = [...verzeichnis.texte.map((text) => `/${text.pfad}/`), '/offenlegung/'];
 
 const ENTITAETEN = { amp: '&', lt: '<', gt: '>', quot: '"', '#39': "'", apos: "'", nbsp: ' ' };
 const dekodiere = (text) => text
@@ -24,7 +23,7 @@ const dekodiere = (text) => text
 function hauptinhalt(html) {
   const treffer = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/);
   if (!treffer) throw new Error('kein <main>');
-  return treffer[1];
+  return treffer[1].replace(/<section class="fassungen"[\s\S]*?<\/section>/, '');
 }
 
 // Sichtbare Zeilen: Blockelemente trennen Zeilen, Inline-Elemente nicht.

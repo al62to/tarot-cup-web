@@ -26,7 +26,7 @@ const FAELLE = [
   { nr: 3, name: 'yapay zeka', erwartet: '[3 KI]', tun: (o) => ersetze(o, 'tr/sorular/index.html', '</h1>', ' yapay zekâ</h1>') },
   { nr: 4, name: 'Skript von fremder Domain', erwartet: '[4 fremde Domain]', tun: (o) => ersetze(o, 'index.html', '</head>', '<script src="https://cdn.example.com/x.js"></script></head>') },
   { nr: 4, name: 'Schrift von Google Fonts', erwartet: '[4 fremde Domain]', tun: (o) => ersetze(o, 'tarot/index.html', '</head>', '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter"></head>') },
-  { nr: 5, name: 'alte Adresse fehlt', erwartet: '[5 Adresse fehlt]', tun: (o) => rmSync(join(o, 'datenschutz', '1.0'), { recursive: true }) },
+  { nr: 5, name: 'alte Adresse fehlt', erwartet: '[5 Adresse fehlt]', tun: (o) => rmSync(join(o, 'datenschutz'), { recursive: true }) },
   { nr: 6, name: 'description fehlt', erwartet: '[6 description fehlt]', tun: (o) => { const p = join(o, 'so-gehts/index.html'); writeFileSync(p, readFileSync(p, 'utf8').replace(/<meta name="description"[^>]*>/, '')); } },
   { nr: 6, name: 'Sprachfassung in hreflang fehlt', erwartet: '[6 hreflang fehlt oder falsch]', tun: (o) => { const p = join(o, 'tr/kahve-fali/index.html'); writeFileSync(p, readFileSync(p, 'utf8').replace(/<link rel="alternate" hreflang="de"[^>]*>/, '')); } },
   { nr: 6, name: 'canonical fehlt', erwartet: '[6 canonical]', tun: (o) => { const p = join(o, 'ueber-tarot-cup/index.html'); writeFileSync(p, readFileSync(p, 'utf8').replace(/<link rel="canonical"[^>]*>/, '')); } },
