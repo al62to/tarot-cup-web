@@ -318,6 +318,32 @@ main { display: block; padding-bottom: 64px; }
 /* Der große Schriftzug (aria-hidden): passt in jeder Breite in die Zeile, ohne umzubrechen. */
 .fuss-schriftzug { margin-top: clamp(36px, 5vw, 56px); font: 500 min(14.5rem, 23cqw)/0.8 var(--serif); letter-spacing: -0.02em; color: var(--gold); white-space: nowrap; user-select: none; padding-bottom: 0.32em; }
 .fuss-schriftzug em { font-style: italic; }
+/* Fuß am Handy (AP-40C, Fuß bis 30rem breit): App und Rechtliches nebeneinander, Kontakt darunter über die volle
+   Breite. App so breit wie ihr längster Eintrag, Rechtliches bekommt den Rest (Grundbreite min-content, wächst),
+   lange Einträge brechen dort nur an Wortgrenzen um; ohne Silbentrennung, sonst zählte die Mindestbreite nur Silben
+   und „Nutzungsbedingungen“ würde getrennt. Passt das längste Wort von Rechtliches nicht neben App, stehen die
+   Spalten wie vorher untereinander. Spaltenabstand 28 px, unter 360 px Breite bis 16 px enger. Der Schriftzug ist
+   hier klein (etwa 80 px weniger Höhe), Stil unverändert. Grenzen in rem, damit große Schrift sie mitschiebt.
+   Geschrieben als „nicht ab …“, weil der Bau „max-width“ zu „width<=“ verkürzt und ein „<“ ohne folgendes „>“ im
+   eingebetteten Stil tools/sprache_setzen.mjs aus dem Tritt bringt. */
+@container not (min-width: 30.01rem) {
+  .fuss-spalten { gap: 24px clamp(16px, 30cqw - 80px, 28px); }
+  .fuss-spalte { min-width: auto; flex: 0 1 auto; }
+  .fuss-spalte li, .fuss-spalte .fuss-titel { hyphens: manual; -webkit-hyphens: manual; }
+  .fuss-spalte:nth-child(2) { flex: 1 1 0; }
+  @supports (flex-basis: min-content) {
+    .fuss-spalten { min-width: 0; }
+    .fuss-spalte:nth-child(2) { flex-basis: min-content; min-width: 0; }
+  }
+  .fuss-spalte:last-child { flex-basis: 100%; }
+  .fuss-schriftzug { margin-top: 20px; font-size: min(2.25rem, 9cqw); }
+}
+/* Sehr große Schrift auf kleinem Handy (unter 12.5rem, etwa 200 % bei 400 px): ein langes Wort ist breiter als der
+   Fuß. Dann wie vor AP-40C: Spalten untereinander, Silbentrennung erlaubt, statt dass Text abgeschnitten wird. */
+@container not (min-width: 12.5rem) {
+  .fuss-spalte, .fuss-spalte:nth-child(2) { flex-basis: 100%; }
+  .fuss-spalte li, .fuss-spalte .fuss-titel { hyphens: auto; -webkit-hyphens: auto; }
+}
 .fuss-zeile { margin-top: clamp(20px, 3vw, 32px); padding-top: 18px; padding-bottom: 32px; border-top: 1px solid var(--gold-fein); }
 .fuss-zeile p { margin: 0; color: var(--dunkel-leise); font-size: 0.8125rem; }
 
