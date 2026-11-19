@@ -13,7 +13,7 @@ const nachDemBau = {
       const { seiten, stellen } = setzeSprachen(ordner);
       logger.info(`lang-Attribut an ${stellen} Stellen auf ${seiten} Seiten gesetzt`);
       const ergebnis = pruefeBau(ordner, { still: true });
-      logger.info(`Prüfung: ${ergebnis.dateien} Dateien, ${ergebnis.seiten} Seiten, ${ergebnis.adressenVorher} Adressen von vorher, ${ergebnis.hreflangPaare} hreflang-Verbindungen gegenseitig, ${ergebnis.interneLinks} interne Links, ${ergebnis.jsonLd} JSON-LD-Blöcke, ${ergebnis.restSeiten} Seiten en/es auf deutsche Reste geprüft, kein Befund${ergebnis.warnungen ? `, ${ergebnis.warnungen} Warnung(en) im Entwurf der Übersetzung` : ''}`);
+      logger.info(`Prüfung: ${ergebnis.dateien} Dateien, ${ergebnis.seiten} Seiten, ${ergebnis.adressenVorher} Adressen von vorher, ${ergebnis.hreflangPaare} hreflang-Verbindungen gegenseitig, ${ergebnis.interneLinks} interne Links, ${ergebnis.jsonLd} JSON-LD-Blöcke, ${ergebnis.restSeiten} Seiten en/es auf deutsche Reste geprüft, ${ergebnis.zwillingeSaetze} Sätze gegen die Datenschutzerklärung (Text-Zwillinge), kein Befund${ergebnis.warnungen ? `, ${ergebnis.warnungen} Warnung(en) im Entwurf der Übersetzung` : ''}`);
       if (ergebnis.ersatzfotos.length) logger.warn(`${ergebnis.ersatzfotos.length} Seite(n) en/es mit deutschen Ersatzfotos (src/daten/fotos.mjs): ${ergebnis.ersatzfotos.join(', ')}`);
     },
   },

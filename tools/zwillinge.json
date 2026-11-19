@@ -1,0 +1,444 @@
+{
+  "zweck": "Text-Zwillinge (AP-36): Kernaussagen der Datenschutzerklärung und Wendungen, die ihr auf der Website widersprechen. tarot-cup-web/tools/pruefe_bau.mjs (Regel 12) durchsucht damit den sichtbaren Text aller gebauten Seiten außer den Rechtsseiten; jeder Treffer macht den Bau rot. Ändert sich die Datenschutzerklärung, wird diese Datei im selben AP nachgezogen und nach tarot-cup-web/tools/zwillinge.json kopiert (die Prüfung vergleicht beide, wenn deutung-unterlagen daneben liegt).",
+  "fassung_ds": "1.7",
+  "stand": "19.11.2026 (AP-36, mit den Befunden des dt-pruefer)",
+  "regeln": [
+    "verboten: reguläre Ausdrücke (JavaScript, Schalter iu), je Sprache. Die Prüfung setzt sie zwischen Wortgrenzen und prüft jeden Satz einzeln; İ wird vorher zu i, deshalb darf keine tr-Wendung „İ“ enthalten (die Prüfung meldet das selbst).",
+    "zahlen: findet eine Zahl in Ziffern direkt vor dem Wort der Sprache (Leerzeichen und · dazwischen erlaubt). Steht die Zahl nicht in soll, ist es ein Treffer. Mit anker gilt je Vorkommen des Ankers nur die erste solche Zahl ab dem Anker (bis zum nächsten Anker einer anderen Zahlenregel), sonst die letzte davor. Für die 10 Sprachen außer de und tr nur Zahlen und Wörter, die im Bau selbst neben der richtigen Zahl stehen (Sprachen neben 12, Tage neben 30), und Anthropic als Name.",
+    "ausnahmen: Seite (Pfad), ein Stück des Satzes und die Begründung, nur für Sätze, die bewusst so stehen. Eine Ausnahme deckt nur Treffer, die ganz in diesem Stück liegen. Eine Ausnahme ohne Treffer ist selbst ein Befund, damit die Liste nicht veraltet. Vorläufige Ausnahmen nennen in bis, wann sie wegfallen."
+  ],
+  "kernaussagen": [
+    {
+      "id": "internet",
+      "thema": "Internet",
+      "aussage": "Fast alles geht ohne Internet. Eine Verbindung brauchen die automatische Deutung, die Geschenke vom Server, das Einladen sowie Hinweis auf neue Versionen und Bewerten über den Play Store. Die App hat die Berechtigung für das Internet.",
+      "beleg": "DS 1.7 Abschnitte 1, 17 und 19",
+      "verboten": {
+        "de": [
+          "kein(?:e|en)?\\s+(?:Erlaubnis|Berechtigung|Zugriff|Zugang|Recht)\\s*,?\\s+(?:ins|für das|fürs|zum|aufs|auf das)\\s+Internet\\p{L}*",
+          "kein(?:e|en)?\\s+Internet(?:berechtigung|zugriff|zugang|erlaubnis|verbindung)",
+          "(?<=^|[,:]\\s*)kein(?:e)?\\s+(?:Internet|WLAN|Verbindung)(?:\\s+(?:nötig|notwendig|erforderlich))?(?=\\s*[.,;!]?\\s*$|\\s*[,;])",
+          "(?:App|Tarot Cup)\\s+(?:braucht|benötigt)\\s+(?:auch\\s+|gar\\s+|überhaupt\\s+)?(?:kein(?:e|en)?\\s+(?:Internet|Verbindung|Netz|WLAN)|nie\\s+(?:Internet|eine Verbindung))",
+          "(?<!(?:Lexikon|Tageskarte|Erinnerung|Legung|Legungen|Verlauf|Suche|Mondkalender|Kaffeesatz|Tarot)\\s+)(?:läuft|funktioniert|arbeitet)\\s+(?:auch\\s+|sogar\\s+)?(?:ganz\\s+|komplett\\s+|vollständig\\s+|völlig\\s+|immer\\s+)?(?:offline|ohne\\s+(?:Internet|Verbindung|Netz|WLAN))",
+          "ohne\\s+(?:Internet|Verbindung|Netz)\\s+(?:läuft|funktioniert|geht|arbeitet)\\s+(?:die App|Tarot Cup|alles)",
+          "(?<!fast\\s)alles\\s+(?:geht|läuft|funktioniert)\\s+(?:auch\\s+)?ohne\\s+(?:Internet|Verbindung|Netz)",
+          "(?:App|Tarot Cup)\\s+(?:ist|bleibt)\\s+(?:ganz\\s+|komplett\\s+|vollständig\\s+|völlig\\s+)?offline(?:\\s+nutzbar)?",
+          "offline\\s+(?:nutzbar|verwendbar|benutzbar)",
+          "ohne Internet und ohne Konto",
+          "ohne Konto und ohne Internet",
+          "Sprachen und ohne Internet",
+          "^(?:ganz\\s+|komplett\\s+|völlig\\s+)?(?:ohne Internet|offline)(?:\\s+nutzbar)?$",
+          "offline[- ]?App\\p{L}*"
+        ],
+        "tr": [
+          "internete bağlanma izni",
+          "internet(?:siz)? ve (?:üyelik|hesap)(?:siz)?",
+          "internet yok",
+          "(?<!için\\s)internet (?:de )?gerekmez",
+          "(?:uygulama|Tarot Cup)\\p{L}*(?:[’']\\p{L}+)?\\s+(?:hiç\\s+|asla\\s+)?internet\\p{L}*\\s+(?:bağlantısı(?:na)?\\s+)?(?:gerek(?:mez|tirmez|miyor)|gerek\\s+yok|ihtiyac\\p{L}*\\s+yok|ihtiyaç\\s+duymaz)",
+          "^internet(?:e)?\\s+(?:bağlantısı(?:na)?\\s+)?(?:gerek(?:mez|tirmez)|gerek\\s+yok|ihtiyac\\p{L}*\\s+yok)",
+          "internete\\s+bağlanmaz",
+          "internet\\s+(?:izni|erişimi|bağlantı\\s+izni)\\s+yok",
+          "^(?:tamamen\\s+)?(?:internetsiz|çevrimdışı)$",
+          "dilde ve internet(?:siz| olmadan)",
+          "(?:uygulama|Tarot Cup)\\p{L}*\\s+(?:tamamen\\s+|hiç\\s+)?(?:internetsiz|internet olmadan|çevrimdışı)(?:\\s+(?:da\\s+)?çalışır)?"
+        ]
+      }
+    },
+    {
+      "id": "frage",
+      "thema": "Frage bei der automatischen Deutung",
+      "aussage": "Bei der automatischen Deutung kannst du eine eigene Frage eingeben (Karten); bei den normalen Legungen gibt es kein Feld dafür. Die Frage geht nur für die eine Deutung an den Server und an Anthropic.",
+      "beleg": "DS 1.7 Abschnitte 1, 3 (kein Eingabefeld außer bei der automatischen Deutung), 4 und 10",
+      "verboten": {
+        "de": [
+          "kein (?:Eingabe)?feld für deine Frage",
+          "(?:App|sie) fragt (?:auch )?nicht (?:danach|nach deiner Frage)",
+          "(?:App|sie) kennt (?:sie|deine Frage) nicht",
+          "deine Frage (?:bleibt|bleiben) (?:immer |ganz )?bei dir",
+          "fragt\\s+(?:die App|sie|Tarot Cup)\\s+(?:dich\\s+)?(?:auch\\s+)?(?:nicht|nie|niemals)",
+          "(?:App|sie)\\s+fragt\\s+(?:dich\\s+)?(?:auch\\s+)?(?:nie|niemals|nicht)\\s+(?:danach|nach\\s+(?:deiner|der|einer)\\s+(?:Frage|Traum))",
+          "kennt\\s+(?:die App|sie)\\s+(?:deine Frage\\s+|deinen Traum\\s+)?nicht",
+          "(?:Frage|Traum)\\s+(?:bleibt|bleiben)\\s+(?:immer\\s+|ganz\\s+)?(?:bei dir|auf deinem (?:Handy|Gerät)|geheim|privat)",
+          "(?:Frage|Traum)[^.!?]{0,30}verl(?:ä|a)ss\\p{L}*\\s+(?:nie|niemals|nicht)\\s+(?:dein|das)\\s+(?:Handy|Gerät)"
+        ],
+        "tr": [
+          "sorunu(?:zu)? yazaca(?:ğın|ğınız) bir alan yok",
+          "(?:onu|niyetini|niyetin|sorunu|sorunuzu|soruyu)(?:\\s+da)?\\s+(?:hiç\\s+|asla\\s+)?sormaz",
+          "uygulama onu bilmez",
+          "(?:sormaz|bilmez) ve kaydetmez",
+          "sorun(?:uz)?\\s+(?:sende|sizde|telefonun(?:uz)?da)\\s+kalır"
+        ]
+      }
+    },
+    {
+      "id": "server_speichert",
+      "thema": "Was der Server speichert (auch bei Meldungen)",
+      "aussage": "Der Server speichert weder Traum noch Frage noch Deutung; nur eine gemeldete Deutung, und dann ohne Kennung ihren Text mit Art, Sprache, Land und Datum. Je Gerät speichert er, was für Grenzen und Geschenke nötig ist (Prüfwert der Kennung, Code, Zähler). Für die Seite /app/ speichert er je Code das Datum und die Zahl der Öffnungen geteilter Links.",
+      "beleg": "DS 1.7 Abschnitte 10 (Was gespeichert wird, Melden, Einladen, Schutz vor Missbrauch), 12 (Die Seite /app/), 15 und 19",
+      "verboten": {
+        "de": [
+          "speichert (?:er |der Server |mein Server )?(?:ohne Kennung )?nur ihren Text(?! mit Art)",
+          "(?:Server|er)\\s+(?:speichert|merkt sich|behält|sammelt)\\s+(?:gar\\s+|überhaupt\\s+)?(?:nichts|keine(?:rlei)?\\s+Daten)",
+          "(?:Server|er) speichert (?:deinen Traum|deine Frage|deinen Text)(?! nicht)",
+          "keine Daten (?:auf|an) (?:einem|einen|meinem|meinen|den|dem|unseren|unserem) Server\\p{L}*",
+          "(?:auf|am)\\s+(?:dem\\s+|meinem\\s+)?Server[^.!?]{0,20}(?:wird|werden)\\s+(?:gar\\s+)?(?:nichts|keine Daten)\\s+gespeichert"
+        ],
+        "tr": [
+          "yalnızca (?:o )?yorumun metnini(?!, türünü)",
+          "sunucu\\p{L}*\\s+hiçbir\\s+(?:şey\\p{L}*|veri\\p{L}*)\\s+(?:sakla(?:maz|nmaz)|tutmaz|tutulmaz|kaydetmez|kaydedilmez|depolamaz)",
+          "sunucu\\p{L}*\\s+(?:hiçbir\\s+)?veri\\s+(?:gönderilmez|gitmez|göndermez)"
+        ]
+      }
+    },
+    {
+      "id": "fristen",
+      "thema": "Speicherfristen (30 Tage Anthropic, 90 Tage Meldungen, 14 Tage Sicherungen)",
+      "aussage": "Anthropic löscht Eingaben und Deutungen in der Regel nach spätestens 30 Tagen, außer bei markierten Anfragen (bis zu 2 Jahre, Bewertungen bis zu 7 Jahre); gemeldete Deutungen löscht der Server nach 90 Tagen; in den Sicherungen des Servers liegen gelöschte Angaben bis zu 14 Tage.",
+      "beleg": "DS 1.7 Abschnitte 1, 10 (Wer die Deutung schreibt, Melden, Deine Daten am Server löschen) und 15",
+      "verboten": {
+        "de": [
+          "(?:Anthropic|Dienstleister)[^.!?]{0,60}(?:sofort|direkt|gleich) (?:gelöscht|löscht)",
+          "(?:Anthropic|Dienstleister) (?:speichert|behält|bewahrt) (?:nichts|sie nicht|ihn nicht)",
+          "(?:Anthropic|Dienstleister\\p{L}*)\\s+(?:speichert|behält|bewahrt|hebt)\\s+(?:\\p{L}+\\s+){0,3}?(?:nicht|nichts|nie)(?!\\p{L})",
+          "(?:bei|von)\\s+(?:Anthropic|dem Dienstleister)[^.!?]{0,30}(?:nicht|nichts|nie)\\s+(?:gespeichert|aufbewahrt)",
+          "(?:Traum|Frage|Text|Eingabe\\p{L}*)[^.!?]{0,40}(?:sofort|direkt|gleich|unmittelbar|umgehend)\\s+(?:gelöscht|vergessen)",
+          "(?:Anthropic|Dienstleister\\p{L}*)[^.!?]{0,60}(?:einem|einen|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|vierzehn|zwanzig|neunzig)\\s+(?:Tag\\p{L}*|Woche\\p{L}*)",
+          "(?:Anthropic|Dienstleister\\p{L}*)[^.!?]{0,60}\\d+\\s+Woche\\p{L}*"
+        ],
+        "tr": [
+          "(?:Anthropic|hizmet sağlayıcı)\\p{L}*[^.!?]{0,60}(?:hemen|anında|derhal)\\s+(?:siler|silinir)",
+          "(?:Anthropic|hizmet sağlayıcı)\\p{L}*(?:[’']\\p{L}+)?\\s+(?:\\p{L}+\\s+){0,3}?(?:saklamaz|saklanmaz|tutmaz|tutulmaz|kaydetmez)"
+        ]
+      }
+    },
+    {
+      "id": "einwilligung_app",
+      "thema": "Knöpfe beim ersten Start (Einwilligung)",
+      "aussage": "Beim ersten Start gibt es zwei gleich große Knöpfe: „Alle akzeptieren“ (Nutzungsbedingungen und Statistik) und „Nur Notwendige“ (nur Nutzungsbedingungen). Den Knopf „Annehmen und weiter“ gibt es nicht mehr.",
+      "beleg": "DS 1.7 Abschnitt 9 (Nur mit deiner Zustimmung); AP-25B Nr. 20",
+      "verboten": {
+        "de": [
+          "„?Annehmen und weiter“?"
+        ],
+        "tr": [
+          "“?Kabul et ve devam et”?"
+        ]
+      }
+    },
+    {
+      "id": "konto",
+      "thema": "Konto",
+      "aussage": "Kein Konto und keine Registrierung.",
+      "beleg": "DS 1.7 Abschnitte 1, 3 und 19",
+      "verboten": {
+        "de": [
+          "(?<!kein(?:e|en)?\\s|-)(?:Nutzer|Benutzer|Kunden)?(?:konto|account|profil)\\s+(?:anlegen|anzulegen|erstellen|eröffnen)",
+          "(?:Registrierung|Anmeldung|Login)\\s+(?:ist\\s+)?(?:nötig|erforderlich|notwendig|Pflicht)",
+          "nach\\s+(?:der\\s+)?(?:Registrierung|Anmeldung)",
+          "registrier(?:e|st) dich(?!\\s+(?:nicht|nirgends|nie))",
+          "(?:dich|sich)\\s+(?:zuerst\\s+|erst\\s+)?(?:registrieren|einloggen)",
+          "logg?e?\\s+dich\\s+ein",
+          "(?:lege|leg|erstelle)\\s+(?:dir\\s+)?ein\\s+(?:Nutzer|Benutzer)?(?:konto|profil|account)",
+          "(?:melde dich|meldest du dich) (?:in der App )?an",
+          "mit (?:deinem|einem) (?:Tarot[- ]Cup-)?Konto(?!\\s+bei\\s+Google)"
+        ],
+        "tr": [
+          "hesap\\s+oluştur(?:un|unuz|malısın(?:ız)?|man(?:ız)?\\s+gerek(?:ir|iyor)|arak)",
+          "hesap\\s+oluştur(?=\\s*[.!]?\\s*$)",
+          "üye\\s+ol(?:un|unuz|malısın(?:ız)?|man(?:ız)?\\s+gerek(?:ir|iyor)|arak)",
+          "kayıt\\s+ol(?:un|unuz|malısın(?:ız)?|man(?:ız)?\\s+gerek(?:ir|iyor))",
+          "kaydol(?:un|unuz|malısın(?:ız)?|man(?:ız)?\\s+gerek(?:ir|iyor))?",
+          "giriş\\s+yap(?:ın|ınız|malısın(?:ız)?|man(?:ız)?\\s+gerek(?:ir|iyor))",
+          "oturum\\s+aç(?:ın|ınız|malısın(?:ız)?|man(?:ız)?\\s+gerek(?:ir|iyor))",
+          "ile\\s+oturum\\s+aç",
+          "hesap\\s+aç(?:ın|ınız|malısın(?:ız)?|man(?:ız)?\\s+gerek(?:ir|iyor))",
+          "hesabın(?:ız)?la\\s+giriş"
+        ]
+      }
+    },
+    {
+      "id": "sprachen",
+      "thema": "Zahl der Sprachen",
+      "aussage": "Die App und die Website gibt es in 12 Sprachen.",
+      "beleg": "keine Zahl in der DS 1.7 (Abschnitt 20: „in mehreren Sprachen“); Grundlage ist die App (Sprachen.ALLE, 12 Sprachen) wie in AP-25B Nr. 11 und 24",
+      "verboten": {
+        "de": [
+          "(?:zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|dreizehn|vierzehn)\\s+(?:App-)?Sprachen",
+          "„English“ und „Español“",
+          "(?:zwei|drei|vier)sprachig\\p{L}*",
+          "(?:nur|ausschließlich)\\s+(?:auf|in)\\s+Deutsch\\s+und\\s+Türkisch"
+        ],
+        "tr": [
+          "(?<!on )(?:iki|üç|dört|beş|altı|yedi|sekiz|dokuz|on|on bir|on üç|on dört)\\s+(?:farklı\\s+)?dil(?:de|e|i|in|den|li|ler\\p{L}*)?",
+          "“English” ve “Español”",
+          "yalnızca\\s+Türkçe\\s+ve\\s+Almanca"
+        ]
+      }
+    },
+    {
+      "id": "serverort",
+      "thema": "Ort des Servers",
+      "aussage": "Der Server von Tarot Cup steht bei Hetzner in Nürnberg, Deutschland. Anthropic rechnet in den USA oder anderen Ländern außerhalb der EU.",
+      "beleg": "DS 1.7 Abschnitte 1, 10 und 14",
+      "verboten": {
+        "de": [
+          "(?:mein|unser|der)\\s+(?:eigene\\s+)?Server(?:\\s+von\\s+Tarot\\s+Cup)?\\s+(?:steht|liegt|ist)\\s+in\\s+(?:den USA|Amerika|Irland|Österreich|der Schweiz|Finnland|Helsinki|Falkenstein|Frankfurt|Gunzenhausen)",
+          "(?:mein|unser|der)\\s+US-Server",
+          "(?:Daten|Traum|Frage|Text|alles)\\p{L}*\\s+bleib\\p{L}*\\s+(?:immer\\s+|nur\\s+)?in\\s+(?:der EU|Europa|Deutschland)",
+          "verlass\\p{L}* (?:nie|niemals) (?:die EU|Europa)",
+          "verlass\\p{L}* (?:die EU|Europa) nicht",
+          "nur in (?:Deutschland|der EU|Europa) verarbeitet",
+          "(?:gehen|gelangen|kommen)\\s+(?:nie|niemals|nicht)\\s+in\\s+die\\s+USA",
+          "verl(?:ä|a)ss\\p{L}*\\s+(?:nie|niemals)\\s+Deutschland",
+          "verl(?:ä|a)ss\\p{L}*\\s+(?:die EU|Europa|Deutschland)\\s+(?:nie|niemals)"
+        ],
+        "tr": [
+          "(?:sunucum|sunucumuz|Tarot Cup[’']?(?:un|ın) sunucusu)\\s+(?:ABD|Amerika|irlanda|Avusturya)\\p{L}*",
+          "(?:ABD|Amerika)[’']?\\p{L}*\\s+(?:sunucum|sunucumuz)",
+          "AB dışına çıkmaz",
+          "Avrupa[’']?da kalır",
+          "yalnızca Almanya[’']?da işlenir",
+          "(?:AB|Avrupa|Almanya)[’']?(?:da|de|nda|içinde)\\s+kalır",
+          "(?:ABD|Amerika)[’']?(?:ye|ya)\\s+(?:gitmez|aktarılmaz|gönderilmez)",
+          "yurt\\s?dışına\\s+(?:çıkmaz|gitmez|aktarılmaz)"
+        ]
+      }
+    },
+    {
+      "id": "senden",
+      "thema": "Was die App sendet",
+      "aussage": "Die App sendet etwas, wenn du zugestimmt hast (Statistik, Absturzberichte), wenn du die automatische Deutung nutzt, teilst oder einlädst, dazu Anfragen an den Play Store; Verlauf und Notizen können in die Sicherung deines Google-Kontos gehen. „Nichts verlässt dein Handy“ stimmt deshalb nicht.",
+      "beleg": "DS 1.7 Abschnitte 1, 3, 6, 7, 9, 10 und 19",
+      "verboten": {
+        "de": [
+          "(?:sendet|schickt)\\s+(?:die App|sie)\\s+(?:gar\\s+)?nichts(?!\\s+(?:für|mehr|dafür|an Google))",
+          "(?:App|Tarot Cup)\\s+(?:sendet|schickt|überträgt)\\s+(?:gar\\s+|überhaupt\\s+)?(?:nichts|keine(?:rlei)?\\s+Daten)(?!\\s+(?:für|mehr|dafür|an Google))",
+          "(?<!fast\\s)alles\\s+bleibt\\s+(?:auf|in)\\s+deinem\\s+(?:Handy|Gerät)",
+          "(?:nichts|keine Daten)\\s+verl(?:ä|a)ss\\p{L}*\\s+dein\\p{L}*\\s+(?:Handy|Gerät)",
+          "Daten\\s+verl(?:ä|a)ss\\p{L}*\\s+(?:nie|niemals|nicht)\\s+dein\\p{L}*\\s+(?:Handy|Gerät)"
+        ],
+        "tr": [
+          "(?<!neredeyse\\s)her\\s+şey\\s+telefonun(?:da|uzda)\\s+kalır",
+          "veri\\p{L}*\\s+telefon\\p{L}*\\s+(?:dışına\\s+)?çıkmaz",
+          "uygulama\\s+(?:hiçbir\\s+)?(?:veri|şey)\\s+göndermez"
+        ]
+      }
+    },
+    {
+      "id": "statistik",
+      "thema": "Statistik und Cookies",
+      "aussage": "Die Website setzt das notwendige Cookie „cc_cookie“ und mit Zustimmung Google Analytics; App und Website zählen Statistik nur mit Zustimmung, ausgeschaltet bis zur Zustimmung.",
+      "beleg": "DS 1.7 Abschnitte 1, 9 und 12",
+      "verboten": {
+        "de": [
+          "(?:Website|Seite)\\s+(?:setzt|nutzt|verwendet|speichert)\\s+(?:gar\\s+)?keine\\s+Cookies",
+          "(?:App|Website)\\s+(?:sammelt|erhebt|nutzt)\\s+keine\\s+(?:Statistik\\p{L}*|Nutzungsdaten)",
+          "(?:Statistik|Analytics)[^.!?]{0,30}(?:von Anfang an|standardmäßig|immer)\\s+(?:an|eingeschaltet|aktiv)",
+          "ohne\\s+(?:jedes\\s+)?Tracking",
+          "kein(?:e|en)?\\s+(?:Google Analytics|Tracking)(?!\\s+ohne)"
+        ],
+        "tr": [
+          "çerez\\s+(?:kullanmaz|yok)",
+          "istatistik\\s+(?:toplamaz|tutmaz)"
+        ]
+      }
+    },
+    {
+      "id": "mensch",
+      "thema": "Wer liest",
+      "aussage": "Die Deutung schreibt kein Mensch. Den Text liest normalerweise niemand; markieren die Sicherheitssysteme von Anthropic eine Anfrage, kann Anthropic sie prüfen; gemeldete Deutungen liest der Entwickler.",
+      "beleg": "DS 1.7 Abschnitt 10 (Die automatische Deutung, Melden)",
+      "verboten": {
+        "de": [
+          "(?:niemand|kein Mensch)\\s+(?:liest|sieht)\\s+(?:je(?:mals)?\\s+)?(?:deinen Traum|deine Frage|deinen Text)",
+          "schreibt\\s+ein\\s+Mensch"
+        ],
+        "tr": [
+          "(?:rüyanı|sorunu|metnini)\\s+(?:hiç\\s+)?kimse\\s+okumaz"
+        ]
+      }
+    }
+  ],
+  "zahlen": [
+    {
+      "id": "sprachen_zahl",
+      "thema": "Zahl der Sprachen",
+      "beleg": "App: 12 Sprachen (AP-25B Nr. 24: Startseite tr, en, es zeigte 4)",
+      "soll": [
+        12
+      ],
+      "wort": {
+        "de": "(?:App-|verschiedene\\p{L}*\\s+)?Sprachen",
+        "tr": "(?:farklı\\s+)?dil(?:de|e|i|in|den|li|ler\\p{L}*)?",
+        "en": "languages",
+        "es": "idiomas",
+        "pt": "idiomas",
+        "fr": "langues",
+        "ro": "limbi",
+        "bs": "jezika",
+        "hr": "jezika",
+        "sr": "jezika",
+        "id": "bahasa",
+        "hi": "भाष[\\p{L}\\p{M}]*"
+      }
+    },
+    {
+      "id": "frist_anthropic",
+      "thema": "Speicherfrist bei Anthropic",
+      "beleg": "DS 1.7 Abschnitte 1, 10 und 15: spätestens 30 Tage",
+      "soll": [
+        30
+      ],
+      "anker": {
+        "*": "Anthropic",
+        "de": "Anthropic|Dienstleister\\p{L}*",
+        "tr": "Anthropic|hizmet sağlayıcı\\p{L}*"
+      },
+      "wort": {
+        "de": "Tag(?:e|en)?",
+        "tr": "gün(?:de|e|dür|lük|ü)?",
+        "en": "days?",
+        "es": "días?",
+        "pt": "dias?",
+        "fr": "jours?",
+        "ro": "(?:de )?zile",
+        "bs": "dana",
+        "hr": "dana",
+        "sr": "dana",
+        "id": "hari",
+        "hi": "दिन[\\p{L}\\p{M}]*"
+      }
+    },
+    {
+      "id": "frist_meldungen",
+      "thema": "Speicherfrist gemeldeter Deutungen",
+      "beleg": "DS 1.7 Abschnitte 10 (Melden) und 15: 90 Tage",
+      "soll": [
+        90
+      ],
+      "anker": {
+        "de": "meldest du (?:eine |die )?Deutung|gemeldete\\p{L}* Deutung\\p{L}*|Deutung\\p{L}* (?:meldest|gemeldet)|Deutung\\p{L}*, die du meldest|Meldung\\p{L}*",
+        "tr": "yorum\\p{L}* bildir\\p{L}*|bildirilen yorum\\p{L}*|bildirdiğin yorum\\p{L}*"
+      },
+      "wort": {
+        "de": "Tag(?:e|en)?",
+        "tr": "gün(?:de|e|dür|lük|ü)?"
+      }
+    },
+    {
+      "id": "frist_sicherungen",
+      "thema": "Gelöschte Angaben in den Sicherungen des Servers",
+      "beleg": "DS 1.7 Abschnitte 10 (Deine Daten am Server löschen) und 15: bis zu 14 Tage",
+      "soll": [
+        14
+      ],
+      "anker": {
+        "de": "Sicherung\\p{L}* (?:des|meines) Servers|Sicherungen (?:am|auf dem) Server|Server\\p{L}*-?(?:sicherung|backup)\\p{L}*",
+        "tr": "sunucu\\p{L}* yedek\\p{L}*|yedeklerde"
+      },
+      "wort": {
+        "de": "Tag(?:e|en)?",
+        "tr": "gün(?:de|e|dür|lük|ü)?"
+      }
+    },
+    {
+      "id": "alter",
+      "thema": "Mindestalter",
+      "beleg": "DS 1.7 Abschnitt 4 (Bestätigung, mindestens 16 Jahre alt) und 18",
+      "soll": [
+        16
+      ],
+      "anker": {
+        "de": "(?:ab|mindestens|unter)\\s+\\d+\\s+Jahr\\p{L}*|\\d+\\s+Jahre\\s+alt",
+        "tr": "\\d+\\s+yaş\\p{L}*"
+      },
+      "wort": {
+        "de": "Jahr(?:e|en)?",
+        "tr": "yaş\\p{L}*"
+      }
+    }
+  ],
+  "ausnahmen": [
+    {
+      "id": "frage",
+      "seite": "/fragen/",
+      "satz": "Bei den normalen Legungen hat die App kein Feld für deine Frage",
+      "begruendung": "Bei den normalen Legungen; der nächste Satz nennt die eigene Frage bei der automatischen Deutung (DS 1.7 Abschnitt 3: kein Eingabefeld außer bei der automatischen Deutung)."
+    },
+    {
+      "id": "frage",
+      "seite": "/",
+      "satz": "Bei den normalen Legungen hat die App kein Feld für deine Frage",
+      "begruendung": "Bei den normalen Legungen; der nächste Satz nennt die eigene Frage bei der automatischen Deutung (DS 1.7 Abschnitt 3: kein Eingabefeld außer bei der automatischen Deutung). Fragen-Block der Startseite."
+    },
+    {
+      "id": "frage",
+      "seite": "/tr/sorular/",
+      "satz": "Normal açılımlarda uygulamada sorunu yazacağın bir alan yok",
+      "begruendung": "Normale Legungen; der nächste Satz nennt die eigene Frage bei der automatischen Deutung (DS 1.7 Abschnitt 3)."
+    },
+    {
+      "id": "frage",
+      "seite": "/tr/",
+      "satz": "Normal açılımlarda uygulamada sorunu yazacağın bir alan yok",
+      "begruendung": "Normale Legungen; der nächste Satz nennt die eigene Frage bei der automatischen Deutung (DS 1.7 Abschnitt 3). Fragen-Block der Startseite."
+    },
+    {
+      "id": "frage",
+      "seite": "/",
+      "satz": "Deine Frage behältst du für dich, die App fragt nicht danach.",
+      "begruendung": "Kaffeesatz: Dort gibt es keine automatische Deutung (DS 1.7 Abschnitt 10, Die automatische Deutung: Traum oder Karten; Kaffeesatz kommt nicht vor), die App fragt also wirklich nicht nach der Frage. In AP-25B geprüft und bewusst so gelassen. Ritual „So liest du deine Tasse“ der Startseite."
+    },
+    {
+      "id": "frage",
+      "seite": "/kaffeesatz-lesen/",
+      "satz": "Deine Frage behältst du dabei für dich; die App fragt nicht danach.",
+      "begruendung": "Kaffeesatz: Dort gibt es keine automatische Deutung (DS 1.7 Abschnitt 10, Die automatische Deutung: Traum oder Karten; Kaffeesatz kommt nicht vor), die App fragt also wirklich nicht nach der Frage. In AP-25B geprüft und bewusst so gelassen."
+    },
+    {
+      "id": "frage",
+      "seite": "/tr/",
+      "satz": "Niyetin sende kalır, uygulama onu sormaz.",
+      "begruendung": "Kaffeesatz: Dort gibt es keine automatische Deutung (DS 1.7 Abschnitt 10, Die automatische Deutung: Traum oder Karten; Kaffeesatz kommt nicht vor), die App fragt also wirklich nicht nach der Frage. In AP-25B geprüft und bewusst so gelassen. Ritual der Startseite tr."
+    },
+    {
+      "id": "frage",
+      "seite": "/tr/kahve-fali/",
+      "satz": "Niyetini içinden tutarsın; uygulama onu sormaz.",
+      "begruendung": "Kaffeesatz: Dort gibt es keine automatische Deutung (DS 1.7 Abschnitt 10, Die automatische Deutung: Traum oder Karten; Kaffeesatz kommt nicht vor), die App fragt also wirklich nicht nach der Frage. In AP-25B geprüft und bewusst so gelassen."
+    },
+    {
+      "id": "frage",
+      "seite": "/tr/tarot/",
+      "satz": "Sorun sende kalır.",
+      "begruendung": "Der nächste Satz schränkt ein: Eingeben kannst du die Frage nur bei der automatischen Deutung, und die App behält sie nur, solange die Deutung läuft (DS 1.7 Abschnitte 1 und 4; AP-25B Nr. 18)."
+    },
+    {
+      "id": "frage",
+      "seite": "/tr/yorum-neyi-yapabilir/",
+      "satz": "Tarotta ve kahve falında aklındaki soruyu da sormaz",
+      "begruendung": "Steht im Absatz über die normalen Deutungen; der nächste Satz nennt die eigene Frage bei der automatischen Deutung (DS 1.7 Abschnitt 3). Seite Nr. 20 in AP-25D gegen DS 1.7 tr geprüft."
+    },
+    {
+      "id": "einwilligung_app",
+      "seite": "/so-gehts/",
+      "satz": "und dem Knopf „Annehmen und weiter“",
+      "begruendung": "Vorläufig, an die PL gemeldet (AP-36): Bildbeschreibung (alt) des alten App-Fotos 01, das noch den alten Knopf zeigt (AP-25B, offener Punkt 2: neue Fotos in eigenem AP). Der Text der Seite nennt die Knöpfe richtig. Fällt weg, sobald Foto und Bildbeschreibung erneuert sind.",
+      "bis": "neue App-Fotos für So geht's (AP-25B, offener Punkt 2); dann entfernen"
+    },
+    {
+      "id": "einwilligung_app",
+      "seite": "/tr/nasil-kullanilir/",
+      "satz": "ve “Kabul et ve devam et” düğmesi",
+      "begruendung": "Vorläufig, an die PL gemeldet (AP-36): wie bei /so-gehts/, Bildbeschreibung des alten Fotos 01 in tr.",
+      "bis": "neue App-Fotos für So geht's (AP-25B, offener Punkt 2); dann entfernen"
+    },
+    {
+      "id": "frage",
+      "seite": "/was-eine-deutung-kann/",
+      "satz": "Bei Tarot und Kaffeesatz fragt sie auch nicht nach deiner Frage",
+      "begruendung": "Steht im Absatz über die normalen Deutungen; der nächste Satz nennt die eigene Frage bei der automatischen Deutung (DS 1.7 Abschnitt 3). Seite Nr. 20 in AP-25A gegen DS 1.7 geprüft; Gegenstück zu /tr/yorum-neyi-yapabilir/."
+    }
+  ]
+}

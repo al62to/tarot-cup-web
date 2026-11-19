@@ -21,6 +21,11 @@
 // 10. JSON-LD gegen einen Auszug aus schema.org (src/daten/schema_auszug.mjs): bekannter Typ, nur Eigenschaften des
 //     Typs (samt Obertypen), inLanguage passt zur Seite.
 //  7. Kartenbild mit nackten Figuren (src/daten/karten.mjs, GESPERRT).
+// 12. Text-Zwillinge (AP-36): Kein Satz der Website widerspricht der Datenschutzerklärung. tools/zwillinge.json (Kopie von
+//     deutung-unterlagen/recht/zwillinge.json; liegt das Repo daneben, müssen beide gleich sein) nennt je Kernaussage
+//     verbotene Wendungen in de und tr und Zahlenregeln (Sprachen 12, Fristen 30, 90, 14 Tage), dazu Ausnahmen mit
+//     Begründung. Durchsucht wird der sichtbare Text aller Seiten (auch Titel, description, alt, JSON-LD) und llms.txt,
+//     nicht die Rechtsseiten und nicht der Wortlaut der Rechtstexte (data-rechtstext).
 // 11. Einwilligung (Auftrag W7): Google Tag Manager und Google Analytics nur im einen gebündelten Skript der Einwilligung
 //     (Erkennung: es enthält die Adresse des Tag Manager mit GTM_ID, das Cookie „cc_cookie“ und GTM_EREIGNIS), nirgends
 //     sonst (kein HTML, kein anderes Skript, keine Mess-ID G-… im Bau). Jede Seite bindet dieses Skript ein und hat in
@@ -31,7 +36,7 @@
 // Sprach-Hinweisleiste, MUSTER.speicherErlaubt, Auftrag W5, und das Skript der Einwilligung, Regel 11), keine Emojis, gültige strukturierte Daten mit den
 // Pflichttypen je Seite, türkische Wörter auf deutschen Seiten mit lang="tr".
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
-import { dirname, join, relative, sep } from 'node:path';
+import { dirname, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SEITEN } from '../src/daten/seiten.mjs';
 import { seite, store, suche } from '../src/daten/seite.mjs';
@@ -83,6 +88,125 @@ export function ohneRechtstext(html) {
   }
 }
 
+// 12: Text-Zwillinge (AP-36). Sichtbarer Text einer Seite als Liste von Sätzen: ohne Skripte, Stile und den Wortlaut
+// der Rechtstexte; Blockelemente trennen, Inline-Elemente nicht (Zahlenband: „12“ und „Sprachen“ stehen in zwei span).
+// Dazu Titel, description, og:description, alt, aria-label und die Zeichenketten aus JSON-LD.
+const BLOCK = /<\/?(?:p|li|ul|ol|h[1-6]|div|section|article|header|footer|nav|main|aside|td|th|tr|table|dt|dd|dl|br|figcaption|figure|summary|details|blockquote|title|button|label|option)\b[^>]*>/gi;
+const entitaeten = (text) => text
+  .replace(/&#(\d+);/g, (_, zahl) => String.fromCodePoint(Number(zahl)))
+  .replace(/&#x([0-9a-f]+);/gi, (_, zahl) => String.fromCodePoint(parseInt(zahl, 16)))
+  .replace(/&nbsp;/g, ' ').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+export function saetze(text) {
+  const liste = [];
+  for (const abschnitt of text.split('\n')) {
+    const rein = abschnitt.replace(/[\s  ]+/g, ' ').trim();
+    if (!rein) continue;
+    // Satzende: . ! ? । gefolgt von Leerraum und einem Großbuchstaben, einer Ziffer oder einem Anführungszeichen.
+    // Punkte nach Zahlen („16. Jahrhundert“) trennen nicht.
+    for (const satz of rein.split(/(?<=(?<!\d)[.!?।])\s+(?=[\p{Lu}\p{N}„“"«(])/u)) if (satz.trim()) liste.push(satz.trim());
+  }
+  return liste;
+}
+export function sichtbareSaetze(html) {
+  const ohne = ohneRechtstext(html);
+  const jsonLd = [...ohne.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].flatMap((m) => {
+    const werte = [];
+    (function lauf(wert) {
+      if (typeof wert === 'string') { if (/\s/.test(wert) && !/^https?:/.test(wert)) werte.push(wert); } else if (wert && typeof wert === 'object') Object.values(wert).forEach(lauf);
+    })(JSON.parse(m[1]));
+    return werte;
+  });
+  const koerper = ohne.replace(/<(script|style|svg|template)\b[\s\S]*?<\/\1>/gi, ' ');
+  const attribute = [...koerper.matchAll(/<(?:meta\b[^>]*(?:name="description"|property="og:description")|img\b|[a-z]+\b[^>]*\saria-label=)[^>]*>/gi)]
+    .map((m) => m[0].match(/\s(?:content|alt|aria-label)="([^"]*)"/)?.[1]).filter(Boolean);
+  const text = koerper.replace(/<head\b[\s\S]*?<\/head>/i, (kopf) => (kopf.match(/<title>([^<]*)<\/title>/)?.[1] ?? '') + '\n').replace(BLOCK, '\n').replace(/<[^>]+>/g, '');
+  const alle = [...saetze(entitaeten(text)), ...attribute.flatMap((wert) => saetze(entitaeten(wert))), ...jsonLd.flatMap((wert) => saetze(wert))];
+  return [...new Set(alle)];
+}
+
+// Liest die Liste der Kernaussagen (tools/zwillinge.json, Kopie von deutung-unterlagen/recht/zwillinge.json).
+export const ZWILLINGE_DATEI = join(dirname(fileURLToPath(import.meta.url)), 'zwillinge.json');
+export const ZWILLINGE_QUELLE = join(dirname(fileURLToPath(import.meta.url)), '..', '..', 'deutung-unterlagen', 'recht', 'zwillinge.json');
+const grenze = (quelle, schalter = 'iu') => new RegExp(`(?<![\\p{L}\\p{N}])(?:${quelle})(?![\\p{L}\\p{N}])`, schalter);
+const zahlVor = (wort) => new RegExp(`(?<![\\p{N}.,])(\\d+)\\s*(?:·\\s*)?(?:${wort})(?![\\p{L}\\p{N}])`, 'giu');
+// Sätze einer Datei je Sprache: Abschnitte mit eigenem lang (etwa auf /app/) zählen für ihre Sprache.
+function saetzeJeSprache(datei, ordner) {
+  const name = relative(ordner, datei).split(sep).join('/');
+  const inhalt = readFileSync(datei, 'utf8');
+  if (!datei.endsWith('.html')) return [[name.match(/^([a-z]{2})\//)?.[1] ?? 'de', saetze(inhalt)]];
+  const sprache = inhalt.match(/<html\b[^>]*\slang="([a-z]{2})/)?.[1] ?? 'de';
+  const teile = [];
+  const rest = inhalt.replace(/<(section|div|article)\b[^>]*\slang="([a-z]{2})"[^>]*>[\s\S]*?<\/\1>/g, (abschnitt, _, lang) => {
+    teile.push([lang, sichtbareSaetze(abschnitt)]);
+    return ' ';
+  });
+  return [[sprache, sichtbareSaetze(rest)], ...teile];
+}
+// Durchsucht einen Bau nach Wendungen aus zwillinge.json. ausgenommen: Pfade der Rechtsseiten (/datenschutz/ usw.).
+export function zwillingeBefunde(ordner, liste, ausgenommen) {
+  const treffer = [];
+  const genutzt = new Set();
+  // Selbstprüfung: Die Sätze tragen statt „İ“ ein „i“, eine tr-Wendung mit „İ“ könnte nie zutreffen.
+  const fehler = [];
+  for (const k of liste.kernaussagen) for (const quelle of k.verboten.tr ?? []) if (quelle.includes('İ')) fehler.push(`${k.id}: ${quelle}`);
+  for (const z of liste.zahlen) for (const quelle of [z.anker?.tr, z.wort?.tr]) if (quelle?.includes('İ')) fehler.push(`${z.id}: ${quelle}`);
+  const kompiliert = liste.kernaussagen.map((k) => ({ ...k, muster: Object.fromEntries(Object.entries(k.verboten).map(([l, q]) => [l, q.map((quelle) => [quelle, grenze(quelle, 'giu')])])) }));
+  const dateien = alleDateien(ordner).filter((datei) => {
+    const name = relative(ordner, datei).split(sep).join('/');
+    if (/(^|\/)llms\.txt$/.test(name)) return true;
+    if (!name.endsWith('.html')) return false;
+    return !ausgenommen.has(`/${name.replace(/index\.html$/, '')}`);
+  });
+  let anzahl = 0;
+  for (const datei of dateien) {
+    const seitenPfad = `/${relative(ordner, datei).split(sep).join('/').replace(/index\.html$/, '')}`;
+    for (const [sprache, liste2] of saetzeJeSprache(datei, ordner)) {
+      // Anker aller Zahlenregeln dieser Sprache (eine Zahl gehört zum nächsten Anker davor).
+      const ankerAlle = liste.zahlen.map((z) => [z.id, z.anker ? (z.anker[sprache] ?? z.anker['*']) : null]).filter(([, a]) => a);
+      for (const roh of liste2) {
+        anzahl++;
+        const satz = roh.replace(/İ/g, 'i');
+        // Ein Treffer an der Stelle von start bis ende; eine Ausnahme deckt ihn nur, wenn er ganz in ihrem Stück liegt.
+        const fund = (id, thema, wie, start, ende) => {
+          const ausnahme = liste.ausnahmen.findIndex((a) => {
+            const stelle = a.id === id && a.seite === seitenPfad ? roh.indexOf(a.satz) : -1;
+            return stelle >= 0 && start >= stelle && ende <= stelle + a.satz.length;
+          });
+          if (ausnahme >= 0) return genutzt.add(ausnahme);
+          // Ein Treffer je Satz und Kernaussage, auch wenn mehrere Wendungen passen.
+          const schon = treffer.find((t) => t.datei === datei && t.id === id && t.satz === roh);
+          if (schon) schon.wie += ` | ${wie}`;
+          else treffer.push({ datei, seite: seitenPfad, sprache, id, thema, wie, satz: roh });
+        };
+        for (const k of kompiliert) for (const [quelle, re] of k.muster[sprache] ?? []) for (const m of satz.matchAll(re)) fund(k.id, k.thema, quelle, m.index, m.index + m[0].length);
+        for (const z of liste.zahlen) {
+          const wort = z.wort[sprache];
+          if (!wort) continue;
+          const zahlen = [...satz.matchAll(zahlVor(wort))].map((m) => ({ start: m.index, ende: m.index + m[0].length, wert: Number(m[1]), text: m[0] }));
+          let pruefen = zahlen;
+          if (z.anker) {
+            const anker = z.anker[sprache] ?? z.anker['*'];
+            if (!anker) continue;
+            // Je Vorkommen des Ankers: die erste Zahl ab dem Anker bis zum nächsten Anker einer anderen Regel, sonst die letzte davor.
+            const fremd = ankerAlle.filter(([id]) => id !== z.id).flatMap(([, a]) => [...satz.matchAll(grenze(a, 'giu'))].map((m) => m.index));
+            const gewaehlt = new Set();
+            for (const m of satz.matchAll(grenze(anker, 'giu'))) {
+              const grenzeNach = Math.min(...fremd.filter((stelle) => stelle > m.index), Infinity);
+              const nach = zahlen.find((zahl) => zahl.start >= m.index && zahl.start < grenzeNach);
+              const vor = zahlen.filter((zahl) => zahl.ende <= m.index).at(-1);
+              if (nach ?? vor) gewaehlt.add(nach ?? vor);
+            }
+            pruefen = [...gewaehlt];
+          }
+          for (const zahl of pruefen) if (!z.soll.includes(zahl.wert)) fund(z.id, z.thema, `${zahl.text} statt ${z.soll.join(' oder ')}`, zahl.start, zahl.ende);
+        }
+      }
+    }
+  }
+  const ohneTreffer = liste.ausnahmen.filter((_, i) => !genutzt.has(i));
+  return { treffer, ohneTreffer, fehler, saetze: anzahl, dateien: dateien.length };
+}
+
 const umgebung = (text, stelle, laenge = 40) => text.slice(Math.max(0, stelle - laenge), stelle + laenge).replace(/\s+/g, ' ');
 const R = (quelle, schalter = 'gu') => new RegExp(`(?<![\\p{L}\\p{N}])(?:${quelle})(?![\\p{L}\\p{N}])`, schalter);
 
@@ -109,7 +233,8 @@ export function pruefeBau(ordner, { still = false } = {}) {
   // Seiten mit englischem oder spanischem Text: alles unter en/ und es/, dazu Kurzlink und 404 (Teile je Sprache).
   const mitUebersetzung = (name) => /^(en|es|bs|hr|sr|ro|pt|fr|id|hi)\//.test(name) || ['app/index.html', '404.html'].includes(name);
   const melde = (datei, regel, fund) => {
-    const name = relative(ordner, datei).split(sep).join('/');
+    // Dateien außerhalb des Baus (tools/zwillinge.json) relativ zum Repo nennen.
+    const name = (relative(ordner, datei).startsWith('..') ? relative(WURZEL, datei) : relative(ordner, datei)).split(sep).join('/');
     const zeile = `${name}: [${regel}] ${fund}`;
     if (entwurf && /^[239] /.test(regel) && mitUebersetzung(name)) warnungen.push(zeile);
     else befunde.push(zeile);
@@ -411,21 +536,39 @@ export function pruefeBau(ordner, { still = false } = {}) {
     }
   }
 
+  // 12: Text-Zwillinge (AP-36): keine Wendung, die der Datenschutzerklärung widerspricht (tools/zwillinge.json).
+  const zwillingeText = readFileSync(ZWILLINGE_DATEI, 'utf8');
+  if (existsSync(ZWILLINGE_QUELLE) && readFileSync(ZWILLINGE_QUELLE, 'utf8') !== zwillingeText) melde(ZWILLINGE_DATEI, '12 zwillinge.json', 'weicht von deutung-unterlagen/recht/zwillinge.json ab, Kopie nachziehen');
+  const rechtsPfade = new Set(SEITEN.filter((eintrag) => eintrag.schluessel.startsWith('recht:')).map((eintrag) => eintrag.pfad));
+  const zwillinge = zwillingeBefunde(ordner, JSON.parse(zwillingeText), rechtsPfade);
+  for (const t of zwillinge.treffer) melde(t.datei, `12 Zwilling ${t.id}`, `„${t.satz}“ (Thema: ${t.thema}; ${t.wie})`);
+  for (const f of zwillinge.fehler) melde(ZWILLINGE_DATEI, '12 Wendung mit İ', f);
+  for (const a of zwillinge.ohneTreffer) melde(ZWILLINGE_DATEI, '12 Ausnahme ohne Treffer', `${a.seite} (${a.id}): „${a.satz}“`);
+
   if (befunde.length) {
     throw new Error(`Prüfung nach dem Bau: ${befunde.length} Befund(e)\n  ${befunde.join('\n  ')}`);
   }
   const ersatzfotos = htmlDateien.filter((datei) => /<html[^>]*\slang="(en|es|bs|hr|sr|ro|pt|fr|id|hi)"/.test(readFileSync(datei, 'utf8')) && /\/bilder\/(?:app|sogehts)\/[^"]*-de-\d+\.webp/.test(readFileSync(datei, 'utf8'))).map((datei) => relative(ordner, datei).split(sep).join('/'));
   if (warnungen.length) console.warn(`Prüfung nach dem Bau, Entwurf der Übersetzung (UEBERSETZUNG_ENTWURF=1): ${warnungen.length} Warnung(en)\n  ${warnungen.join('\n  ')}`);
-  const ergebnis = { einwilligung: einwilligungPfad, warnungen: warnungen.length, dateien: dateien.length, seiten: htmlDateien.length, adressenVorher: vorher.length, hreflangPaare, interneLinks, jsonLd: jsonLdAnzahl, restSeiten, ersatzfotos };
+  const ergebnis = { einwilligung: einwilligungPfad, warnungen: warnungen.length, dateien: dateien.length, seiten: htmlDateien.length, adressenVorher: vorher.length, hreflangPaare, interneLinks, jsonLd: jsonLdAnzahl, restSeiten, ersatzfotos, zwillingeSaetze: zwillinge.saetze };
   if (!still) {
-    console.log(`Prüfung nach dem Bau: ${ergebnis.dateien} Dateien, ${ergebnis.seiten} Seiten, ${ergebnis.adressenVorher} Adressen von vorher, ${hreflangPaare} hreflang-Verbindungen gegenseitig, ${interneLinks} interne Links, ${jsonLdAnzahl} JSON-LD-Blöcke, ${restSeiten} Seiten en/es auf deutsche Reste geprüft, kein Befund`);
+    console.log(`Prüfung nach dem Bau: ${ergebnis.dateien} Dateien, ${ergebnis.seiten} Seiten, ${ergebnis.adressenVorher} Adressen von vorher, ${hreflangPaare} hreflang-Verbindungen gegenseitig, ${interneLinks} interne Links, ${jsonLdAnzahl} JSON-LD-Blöcke, ${restSeiten} Seiten en/es auf deutsche Reste geprüft, ${zwillinge.saetze} Sätze in ${zwillinge.dateien} Dateien gegen die Datenschutzerklärung (Text-Zwillinge), kein Befund`);
     if (ersatzfotos.length) console.warn(`Warnung: ${ersatzfotos.length} Seite(n) en/es mit deutschen Ersatzfotos (src/daten/fotos.mjs): ${ersatzfotos.join(', ')}`);
   }
   return ergebnis;
 }
 
 // Aufruf von der Kommandozeile: node tools/pruefe_bau.mjs dist
-if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1] && process.argv[2] === '--zwillinge') {
+  // Nur Regel 12 an einem beliebigen Bau, etwa einem alten Stand (Gegenprobe AP-36):
+  // node tools/pruefe_bau.mjs --zwillinge <ordner>. Gibt je Treffer Seite, Sprache, Kernaussage und Satz aus.
+  const ordner = resolve(process.argv[3] ?? 'dist');
+  const rechtsPfade = new Set(SEITEN.filter((eintrag) => eintrag.schluessel.startsWith('recht:')).map((eintrag) => eintrag.pfad));
+  const { treffer, saetze: anzahl, dateien } = zwillingeBefunde(ordner, JSON.parse(readFileSync(ZWILLINGE_DATEI, 'utf8')), rechtsPfade);
+  for (const t of treffer) console.log(`${t.seite}\t${t.sprache}\t${t.id}\t${t.satz}`);
+  console.log(`Text-Zwillinge: ${treffer.length} Treffer in ${anzahl} Sätzen aus ${dateien} Dateien`);
+  process.exit(treffer.length ? 1 : 0);
+} else if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const ordner = process.argv[2] ?? 'dist';
   try {
     pruefeBau(join(process.cwd(), ordner));

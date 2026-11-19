@@ -47,6 +47,13 @@ const FAELLE = [
   { nr: 3, name: 'IA auf Spanisch', erwartet: '[3 KI]', tun: (o) => ersetze(o, 'es/preguntas/index.html', '</h1>', ' con IA</h1>') },
   { nr: 10, name: 'JSON-LD unbekannte Eigenschaft', erwartet: '[10 JSON-LD schema.org]', tun: (o) => ersetze(o, 'en/index.html', '"@type":"MobileApplication",', '"@type":"MobileApplication","farbe":"gold",') },
   { nr: 10, name: 'JSON-LD inLanguage falsch', erwartet: '[10 JSON-LD schema.org]', tun: (o) => ersetze(o, 'es/tarot/index.html', '"inLanguage":"es"', '"inLanguage":"de"') },
+  { nr: 12, name: 'Zwilling Internet (de)', erwartet: '[12 Zwilling internet]', tun: (o) => ersetze(o, 'ueber-tarot-cup/index.html', '</h1>', ' Die App läuft ohne Internet.</h1>') },
+  { nr: 12, name: 'Zwilling Frage (tr)', erwartet: '[12 Zwilling frage]', tun: (o) => ersetze(o, 'tr/sorular/index.html', '</h1>', ' Uygulama onu sormaz ve kaydetmez.</h1>') },
+  { nr: 12, name: 'Zwilling Sprachenzahl (en)', erwartet: '[12 Zwilling sprachen_zahl]', tun: (o) => ersetze(o, 'en/index.html', '</h1>', ' 4 languages</h1>') },
+  { nr: 12, name: 'Zwilling Frist Anthropic (de)', erwartet: '[12 Zwilling frist_anthropic]', tun: (o) => ersetze(o, 'fragen/index.html', '</h1>', ' Anthropic löscht sie nach 60 Tagen.</h1>') },
+  { nr: 12, name: 'Zwilling in llms.txt', erwartet: '[12 Zwilling internet]', tun: (o) => ersetze(o, 'llms.txt', '\n', '\nDie App läuft ohne Internet und ohne Konto.\n') },
+  { nr: 12, name: 'Ausnahme deckt nur ihr Stück', erwartet: '[12 Zwilling frage]', tun: (o) => ersetze(o, 'kaffeesatz-lesen/index.html', 'die App fragt nicht danach.', 'die App fragt nicht danach, die App kennt sie nicht.') },
+  { nr: 12, name: 'Ausnahme ohne Treffer', erwartet: '[12 Ausnahme ohne Treffer]', tun: (o) => ersetze(o, 'kaffeesatz-lesen/index.html', 'die App fragt nicht danach.', 'die App fragt dich nicht.') },
   { nr: 'Zusatz', name: 'türkisches Wort ohne lang', erwartet: '[lang fehlt]', tun: (o) => ersetze(o, 'kaffeesatz-lesen/index.html', '</h1>', ' niyet tutmak</h1>') },
 ];
 
