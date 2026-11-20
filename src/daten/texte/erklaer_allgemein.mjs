@@ -64,8 +64,8 @@ export const erklaerAllgemein = {
           kennung: 'automatische-deutung-als-geschenk',
           titel: 'Wie bekommst du eine automatische Deutung?',
           absaetze: [
-            'Eine automatische Deutung bekommst du derzeit nur als Geschenk. Beim Teilen gilt derzeit: Teilst du an drei verschiedenen Tagen innerhalb von sieben Tagen etwas aus der App und wurde in dieser Zeit mindestens einer deiner Links geöffnet, bekommst du eine. Es zählen nur Links mit Code, nicht solche, die du „ohne Code“ teilst. Lädst du jemanden ein und nutzt diese Person Tarot Cup an so vielen Tagen, wie die App es angibt, bekommt ihr beide eine.',
-            'Höchstens eine automatische Deutung gibt es derzeit in sieben Tagen je Gerät. Ob eine offen ist, entscheidet der Server von Tarot Cup, dafür braucht die App Internet. Was gerade gilt, zeigt dir die App. Diese Regeln können sich jederzeit ändern; einen Anspruch auf ein Geschenk gibt es nicht ([Nutzungsbedingungen](/nutzungsbedingungen/)).',
+            'Eine automatische Deutung bekommst du derzeit nur als Geschenk. Deine erste ist ein Willkommensgeschenk, wenn du noch kein anderes Geschenk dafür hast oder hattest; das Willkommensgeschenk gibt es einmal je Gerät. Weitere bekommst du über Teilen und Einladen. Beim Teilen gilt derzeit: Teilst du an drei verschiedenen Tagen innerhalb von sieben Tagen etwas aus der App und wurde in dieser Zeit mindestens einer deiner Links geöffnet, bekommst du eine. Es zählen nur Links mit Code, nicht solche, die du „ohne Code“ teilst. Lädst du jemanden ein und nutzt diese Person Tarot Cup an so vielen Tagen, wie die App es angibt, bekommt ihr beide eine.',
+            'Höchstens eine automatische Deutung gibt es derzeit in sieben Tagen je Gerät, das Willkommensgeschenk zählt dabei mit. Ob eine offen ist, entscheidet der Server von Tarot Cup, dafür braucht die App Internet. Was gerade gilt, zeigt dir die App. Diese Regeln können sich jederzeit ändern; einen Anspruch auf ein Geschenk gibt es nicht ([Nutzungsbedingungen](/nutzungsbedingungen/)).',
           ],
         },
       ],
@@ -86,7 +86,7 @@ export const erklaerAllgemein = {
       ],
       app: {
         titel: 'In der App',
-        text: ['In Tarot Cup für Android liest du Karten, Kaffeesatz und Träume ohne Konto. Eine automatische Deutung kann derzeit als Geschenk dazukommen, wenn du teilst oder jemanden einlädst.'],
+        text: ['In Tarot Cup für Android liest du Karten, Kaffeesatz und Träume ohne Konto. Eine automatische Deutung kann derzeit als Geschenk dazukommen: die erste als Willkommensgeschenk, weitere, wenn du teilst oder jemanden einlädst.'],
       },
       quellenTitel: 'Quellen',
       quellen: [
@@ -156,8 +156,8 @@ export const erklaerAllgemein = {
           kennung: 'hediye-olarak-otomatik-yorum',
           titel: 'Otomatik yorumu nasıl alırsın?',
           absaetze: [
-            'Otomatik yorumu şu an yalnızca hediye olarak alırsın. Paylaşım için şimdilik şu kural geçerli: Yedi gün içinde üç farklı günde uygulamadan bir şey paylaşırsan ve bu sürede bağlantılarından en az biri açılırsa bir tane alırsın. Yalnızca kodlu bağlantılar sayılır, “kodsuz paylaş” ile gönderdiklerin sayılmaz. Birini davet edersen ve bu kişi Tarot Cup’ı uygulamanın belirttiği kadar gün kullanırsa ikiniz de birer tane alırsınız.',
-            'Şu an cihaz başına yedi günde en fazla bir otomatik yorum alınabilir. Bekleyen bir yorum olup olmadığına Tarot Cup’ın sunucusu karar verir; bunun için uygulamanın internete ihtiyacı vardır. Şu an neyin geçerli olduğunu uygulama sana gösterir. Bu kurallar her an değişebilir; bir hediyeyi talep etme hakkın yoktur ([Kullanım Koşulları](/tr/kullanim-kosullari/)).',
+            'Otomatik yorumu şu an yalnızca hediye olarak alırsın. Bunun için başka bir hediyen yoksa ve hiç olmadıysa ilk otomatik yorumun bir hoş geldin hediyesidir; hoş geldin hediyesi cihaz başına bir kez verilir. Sonrakileri paylaşarak ve davet ederek alırsın. Paylaşım için şimdilik şu kural geçerli: Yedi gün içinde üç farklı günde uygulamadan bir şey paylaşırsan ve bu sürede bağlantılarından en az biri açılırsa bir tane alırsın. Yalnızca kodlu bağlantılar sayılır, “kodsuz paylaş” ile gönderdiklerin sayılmaz. Birini davet edersen ve bu kişi Tarot Cup’ı uygulamanın belirttiği kadar gün kullanırsa ikiniz de birer tane alırsınız.',
+            'Şu an cihaz başına yedi günde en fazla bir otomatik yorum alınabilir; hoş geldin hediyesi de buna dahildir. Bekleyen bir yorum olup olmadığına Tarot Cup’ın sunucusu karar verir; bunun için uygulamanın internete ihtiyacı vardır. Şu an neyin geçerli olduğunu uygulama sana gösterir. Bu kurallar her an değişebilir; bir hediyeyi talep etme hakkın yoktur ([Kullanım Koşulları](/tr/kullanim-kosullari/)).',
           ],
         },
       ],
@@ -178,7 +178,7 @@ export const erklaerAllgemein = {
       ],
       app: {
         titel: 'Uygulamada',
-        text: ['Android için Tarot Cup’ta kartları, kahve telvesini ve rüyaları hesap olmadan yorumlarsın. Paylaştığında ya da birini davet ettiğinde, şu an hediye olarak bir otomatik yorum da kazanabilirsin.'],
+        text: ['Android için Tarot Cup’ta kartları, kahve telvesini ve rüyaları hesap olmadan yorumlarsın. Şu an ilk otomatik yorumun hoş geldin hediyesi olarak gelir; paylaştığında ya da birini davet ettiğinde hediye olarak başka otomatik yorumlar da kazanabilirsin.'],
       },
       quellenTitel: 'Kaynaklar',
       quellen: [
