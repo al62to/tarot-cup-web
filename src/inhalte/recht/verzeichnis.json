@@ -78,10 +78,10 @@
    "archiv": true,
    "fassungen": [
     {
-     "nummer": "1.8",
-     "datum": "20.11.2026",
-     "datei": "datenschutz_1.8.html",
-     "quelle": "Datenschutzerklaerung_1.8.md"
+     "nummer": "1.9",
+     "datum": "21.11.2026",
+     "datei": "datenschutz_1.9.html",
+     "quelle": "Datenschutzerklaerung_1.9.md"
     }
    ]
   },
@@ -110,10 +110,10 @@
    "archiv": true,
    "fassungen": [
     {
-     "nummer": "1.8",
-     "datum": "20.11.2026",
-     "datei": "tr_gizlilik_1.8.html",
-     "quelle": "1.8_uebersetzung/datenschutz_tr.md"
+     "nummer": "1.9",
+     "datum": "21.11.2026",
+     "datei": "tr_gizlilik_1.9.html",
+     "quelle": "1.9_uebersetzung/datenschutz_tr.md"
     }
    ]
   },
@@ -142,10 +142,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.8",
-     "datum": "20.11.2026",
-     "datei": "en_privacy_1.8.html",
-     "quelle": "1.8_uebersetzung/datenschutz_en.md"
+     "nummer": "1.9",
+     "datum": "21.11.2026",
+     "datei": "en_privacy_1.9.html",
+     "quelle": "1.9_uebersetzung/datenschutz_en.md"
     }
    ]
   },
@@ -174,10 +174,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.8",
-     "datum": "20.11.2026",
-     "datei": "es_privacidad_1.8.html",
-     "quelle": "1.8_uebersetzung/datenschutz_es.md"
+     "nummer": "1.9",
+     "datum": "21.11.2026",
+     "datei": "es_privacidad_1.9.html",
+     "quelle": "1.9_uebersetzung/datenschutz_es.md"
     }
    ]
   },
@@ -206,10 +206,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.8",
-     "datum": "20.11.2026",
-     "datei": "bs_privatnost_1.8.html",
-     "quelle": "1.8_uebersetzung/datenschutz_bs.md"
+     "nummer": "1.9",
+     "datum": "21.11.2026",
+     "datei": "bs_privatnost_1.9.html",
+     "quelle": "1.9_uebersetzung/datenschutz_bs.md"
     }
    ]
   },
@@ -238,10 +238,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.8",
-     "datum": "20.11.2026",
-     "datei": "hr_privatnost_1.8.html",
-     "quelle": "1.8_uebersetzung/datenschutz_hr.md"
+     "nummer": "1.9",
+     "datum": "21.11.2026",
+     "datei": "hr_privatnost_1.9.html",
+     "quelle": "1.9_uebersetzung/datenschutz_hr.md"
     }
    ]
   },
@@ -270,10 +270,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.8",
-     "datum": "20.11.2026",
-     "datei": "sr_privatnost_1.8.html",
-     "quelle": "1.8_uebersetzung/datenschutz_sr.md"
+     "nummer": "1.9",
+     "datum": "21.11.2026",
+     "datei": "sr_privatnost_1.9.html",
+     "quelle": "1.9_uebersetzung/datenschutz_sr.md"
     }
    ]
   },
@@ -302,10 +302,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.8",
-     "datum": "20.11.2026",
-     "datei": "ro_confidentialitate_1.8.html",
-     "quelle": "1.8_uebersetzung/datenschutz_ro.md"
+     "nummer": "1.9",
+     "datum": "21.11.2026",
+     "datei": "ro_confidentialitate_1.9.html",
+     "quelle": "1.9_uebersetzung/datenschutz_ro.md"
     }
    ]
   },
@@ -334,10 +334,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.8",
-     "datum": "20.11.2026",
-     "datei": "pt_privacidade_1.8.html",
-     "quelle": "1.8_uebersetzung/datenschutz_pt.md"
+     "nummer": "1.9",
+     "datum": "21.11.2026",
+     "datei": "pt_privacidade_1.9.html",
+     "quelle": "1.9_uebersetzung/datenschutz_pt.md"
     }
    ]
   },
@@ -366,10 +366,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.8",
-     "datum": "20.11.2026",
-     "datei": "fr_confidentialite_1.8.html",
-     "quelle": "1.8_uebersetzung/datenschutz_fr.md"
+     "nummer": "1.9",
+     "datum": "21.11.2026",
+     "datei": "fr_confidentialite_1.9.html",
+     "quelle": "1.9_uebersetzung/datenschutz_fr.md"
     }
    ]
   },
@@ -398,10 +398,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.8",
-     "datum": "20.11.2026",
-     "datei": "id_privasi_1.8.html",
-     "quelle": "1.8_uebersetzung/datenschutz_id.md"
+     "nummer": "1.9",
+     "datum": "21.11.2026",
+     "datei": "id_privasi_1.9.html",
+     "quelle": "1.9_uebersetzung/datenschutz_id.md"
     }
    ]
   },
@@ -430,10 +430,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.8",
-     "datum": "20.11.2026",
-     "datei": "hi_privacy_1.8.html",
-     "quelle": "1.8_uebersetzung/datenschutz_hi.md"
+     "nummer": "1.9",
+     "datum": "21.11.2026",
+     "datei": "hi_privacy_1.9.html",
+     "quelle": "1.9_uebersetzung/datenschutz_hi.md"
     }
    ]
   },
