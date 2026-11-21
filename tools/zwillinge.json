@@ -1,7 +1,7 @@
 {
   "zweck": "Text-Zwillinge (AP-36): Kernaussagen der Datenschutzerklärung und Wendungen, die ihr auf der Website widersprechen. tarot-cup-web/tools/pruefe_bau.mjs (Regel 12) durchsucht damit den sichtbaren Text aller gebauten Seiten außer den Rechtsseiten; jeder Treffer macht den Bau rot. Ändert sich die Datenschutzerklärung, wird diese Datei im selben AP nachgezogen und nach tarot-cup-web/tools/zwillinge.json kopiert (die Prüfung vergleicht beide, wenn deutung-unterlagen daneben liegt).",
-  "fassung_ds": "1.8",
-  "stand": "19.11.2026 (AP-38: DS 1.8, Kernaussage willkommen und Zahlenregel woche_willkommen; Kopie in tarot-cup-web/tools/ und Website-Bau folgen in AP-39); davor 19.11.2026 (AP-36, mit den Befunden des dt-pruefer)",
+  "fassung_ds": "1.9",
+  "stand": "21.11.2026 (AP-R1: DS 1.9 als Entwurf; die drei geänderten Stellen berühren keine Kernaussage und keine verbotene Wendung); davor 19.11.2026 (AP-38: DS 1.8, Kernaussage willkommen und Zahlenregel woche_willkommen; Kopie in tarot-cup-web/tools/ und Website-Bau folgen in AP-39); davor 19.11.2026 (AP-36, mit den Befunden des dt-pruefer)",
   "regeln": [
     "verboten: reguläre Ausdrücke (JavaScript, Schalter iu), je Sprache. Die Prüfung setzt sie zwischen Wortgrenzen und prüft jeden Satz einzeln; İ wird vorher zu i, deshalb darf keine tr-Wendung „İ“ enthalten (die Prüfung meldet das selbst).",
     "zahlen: findet eine Zahl in Ziffern direkt vor dem Wort der Sprache (Leerzeichen und · dazwischen erlaubt). Steht die Zahl nicht in soll, ist es ein Treffer. Mit anker gilt je Vorkommen des Ankers nur die erste solche Zahl ab dem Anker (bis zum nächsten Anker einer anderen Zahlenregel), sonst die letzte davor. Für die 10 Sprachen außer de und tr nur Zahlen und Wörter, die im Bau selbst neben der richtigen Zahl stehen (Sprachen neben 12, Tage neben 30), und Anthropic als Name.",
