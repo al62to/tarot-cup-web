@@ -23,12 +23,14 @@ export function ausdruckFuer(sprache) {
 
 // Zerlegt HTML in Marken und Text und ruft "beiText" für jeden sichtbaren Textteil außerhalb eines lang-Elements.
 export function durchlaufe(html, beiText) {
-  const teile = html.split(/(<!--[\s\S]*?-->|<[^>]+>)/);
+  // Skript und Stil sind je ein Stück: Ihr Inhalt kann "<" enthalten (max-width wird beim Bau zu "width<=...", AP-40).
+  const teile = html.split(/(<!--[\s\S]*?-->|<script\b[^>]*>[\s\S]*?<\/script>|<style\b[^>]*>[\s\S]*?<\/style>|<[^>]+>)/i);
   const stapel = [];
   let gesperrt = 0;
   for (let nummer = 0; nummer < teile.length; nummer++) {
     const teil = teile[nummer];
     if (nummer % 2 === 1) {
+      if (/^<(script|style)\b/i.test(teil)) continue;
       const marke = teil.match(/^<(\/?)([a-zA-Z][\w-]*)/);
       if (!marke || /\/>$/.test(teil)) continue;
       const name = marke[2].toLowerCase();

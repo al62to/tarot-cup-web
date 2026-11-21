@@ -125,9 +125,13 @@ html[data-sprachhinweis="tr"] .sprachhinweis[data-fuer="tr"],
 html[data-sprachhinweis="en"] .sprachhinweis[data-fuer="en"],
 html[data-sprachhinweis="es"] .sprachhinweis[data-fuer="es"] { display: flex; }
 .menue-offen .sprachhinweis { display: none !important; }
-.sprachhinweis-text { flex: 1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 14px; margin: 0; }
-.sprachhinweis-text a { color: var(--gold-hell); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+/* Trefferfläche des Links: Er füllt seine Zeile und reicht mit Innenabstand und gleich großem negativem Rand nach oben,
+   ohne die Leiste zu erhöhen. Steht er unter dem Satz, liegt die Fläche über dem Satz; der Fokusring bleibt am Text. */
+.sprachhinweis-text { flex: 1; align-self: stretch; display: flex; flex-wrap: wrap; align-items: center; gap: 2px 14px; margin: 0; }
+.sprachhinweis-text a { align-self: stretch; display: flex; align-items: center; margin-top: -26px; padding-top: 26px; color: var(--gold-hell); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 .sprachhinweis-text a:hover { color: var(--creme); }
+.sprachhinweis-text a:focus-visible { outline: none; }
+.sprachhinweis-text a:focus-visible > span { outline: 3px solid var(--fokus); outline-offset: 3px; border-radius: 4px; }
 .sprachhinweis-zu { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 999px; background: transparent; color: var(--kaffee-gedaempft); cursor: pointer; }
 .sprachhinweis-zu:hover { color: var(--creme); background: var(--gold-fein); }
 .sprachhinweis-zu svg { width: 20px; height: 20px; }
@@ -233,7 +237,7 @@ html[data-sprachhinweis="es"] .sprachhinweis[data-fuer="es"] { display: flex; }
 .krumen ol { list-style: none; display: flex; flex-wrap: wrap; align-items: center; margin-top: 0; margin-bottom: 0; padding-top: 4px; padding-bottom: 0; }
 .krumen li { display: inline-flex; align-items: center; min-height: 44px; }
 .krumen li + li::before { content: ""; flex: none; width: 6px; height: 6px; margin: 0 12px 0 10px; border-top: 1.5px solid var(--gold-linie); border-right: 1.5px solid var(--gold-linie); transform: rotate(45deg); }
-.krumen a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; margin: 0 -6px; color: var(--gedaempft); text-decoration: none; }
+.krumen a { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; padding: 0 6px; margin: 0 -6px; color: var(--gedaempft); text-decoration: none; }
 .krumen a:hover { color: var(--tinte); text-decoration: underline; }
 .krumen [aria-current="page"] { color: var(--tinte); }
 

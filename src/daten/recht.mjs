@@ -1,8 +1,8 @@
 // Rechtstexte: Verzeichnis, Bausteine und alles, was die Rechtsseiten außer dem Text zeigen (Sprachlink, Titel,
 // Beschreibung). Seit AP-40D (Entscheidung Ali, 19.11.2026) baut die Website je Text nur die gültige Fassung unter
-// /<pfad>/; es gibt keine Liste der Fassungen und keine nummerierten Seiten /<pfad>/<nummer>/ mehr. Das Verzeichnis
-// nennt weiter alle Fassungen (die letzte ist die gültige); für eine neue Fassung reicht es, sie mit recht_web.py
-// einzutragen. Die alten Fassungen liegen nur intern in deutung-unterlagen/recht/ (archiv_web_2026-11-19/).
+// /<pfad>/; es gibt keine Liste der Fassungen und keine nummerierten Seiten /<pfad>/<nummer>/ mehr. Seit AP-40 stehen
+// im Verzeichnis und in src/inhalte/recht/ nur noch die gültigen Fassungen; für eine neue Fassung reicht es, sie mit
+// recht_web.py einzutragen. Die alten Fassungen liegen nur intern in deutung-unterlagen/recht/ (archiv_web_2026-11-19/).
 // Bausteine und Verzeichnis schreibt deutung-unterlagen/arbeit/recht_web.py; hier wird nichts am Wortlaut geändert.
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';

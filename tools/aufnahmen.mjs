@@ -50,7 +50,8 @@ function pruefeSeite() {
       const kaesten = [...bereich.getClientRects()].filter((kasten) => kasten.width > 0);
       if (!kaesten.length) continue;
       const zeilen = new Set(kaesten.map((kasten) => Math.round(kasten.top)));
-      if (zeilen.size > 1 && !(trennt && /^[\p{L}]+-?$/u.test(treffer[0]))) {
+      // Apostroph gehört zum Wort (französisch „l’appli-cation“): Silbentrennung des Browsers, kein Wortbruch (AP-40).
+      if (zeilen.size > 1 && !(trennt && /^[\p{L}’']+-?$/u.test(treffer[0]))) {
         befunde.push(`Wort bricht ohne Trennung: „${treffer[0]}“ in <${element.tagName.toLowerCase()} class="${element.className}">`);
       }
       // Wörter in einem Bereich, der in sich scrollt (Tabellen der Rechtstexte), ragen nicht aus der Seite.

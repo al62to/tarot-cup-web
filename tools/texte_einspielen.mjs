@@ -45,6 +45,9 @@ const KEIN_TEXT = new Set(['ziel', 'bereich', 'href', 'url', 'id', 'bild', 'icon
   'tuerkischeBegriffe']);
 const istText = (text) => /[A-Za-zÄÖÜäöüß]/.test(text) && !/^(\/[a-z0-9\-/#]*|https?:\/\/\S+)$/.test(text);
 
+// Teile übersetzter Module, die es nur auf Deutsch und Türkisch gibt (Wissensbereich, Posen der Figuren; AP-40).
+const NUR_DE_TR = new Set(['oberflaeche.wissen', 'oberflaeche.bildnachweis.posen', 'llmsTexte.wissen']);
+
 const FEST = {
   'oberflaeche.sprache': (code) => SPRACHNAMEN[code],
   'oberflaeche.spracheKurz': (code) => SPRACHKUERZEL[code],
@@ -57,7 +60,10 @@ const sterne = (text) => (text.match(/\*/g) ?? []).length;
 
 // Damit die Module laden, auch wenn eine Zieldatei noch fehlt.
 mkdirSync(ZIEL, { recursive: true });
-const dateien = readdirSync(TEXTE).filter((name) => name.endsWith('.mjs')).sort();
+// Nur Module mit übersetzten Dateien; die Erklärseiten gibt es nur auf Deutsch und Türkisch (AP-40).
+const dateien = readdirSync(TEXTE)
+  .filter((name) => name.endsWith('.mjs') && readFileSync(join(TEXTE, name), 'utf8').includes(`./uebersetzt/${name.replace(/\.mjs$/, '')}_`))
+  .sort();
 for (const name of dateien) {
   for (const code of SPRACHEN) {
     const datei = join(ZIEL, `${name.replace(/\.mjs$/, '')}_${code}.json`);
@@ -125,7 +131,7 @@ for (const code of SPRACHEN) {
           return de.map((teil, nummer) => gang(teil, `${weg}[${nummer}]`, null));
         }
         if (de && typeof de === 'object') {
-          return Object.fromEntries(Object.entries(de).map(([schluessel, teil]) => [
+          return Object.fromEntries(Object.entries(de).filter(([schluessel]) => !NUR_DE_TR.has(`${weg}.${schluessel}`)).map(([schluessel, teil]) => [
             schluessel,
             KEIN_TEXT.has(schluessel) && typeof teil !== 'string' ? structuredClone(teil) : gang(teil, `${weg}.${schluessel}`, schluessel),
           ]));

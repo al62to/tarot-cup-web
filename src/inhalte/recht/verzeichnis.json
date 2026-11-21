@@ -78,54 +78,6 @@
    "archiv": true,
    "fassungen": [
     {
-     "nummer": "1.0",
-     "datum": "26.10.2026",
-     "datei": "datenschutz_1.0.html",
-     "quelle": "Datenschutzerklaerung_1.0_final.md"
-    },
-    {
-     "nummer": "1.1",
-     "datum": "26.10.2026",
-     "datei": "datenschutz_1.1.html",
-     "quelle": "Datenschutzerklaerung_1.1.md"
-    },
-    {
-     "nummer": "1.2",
-     "datum": "02.11.2026",
-     "datei": "datenschutz_1.2.html",
-     "quelle": "Datenschutzerklaerung_1.2.md"
-    },
-    {
-     "nummer": "1.3",
-     "datum": "04.11.2026",
-     "datei": "datenschutz_1.3.html",
-     "quelle": "Datenschutzerklaerung_1.3.md"
-    },
-    {
-     "nummer": "1.4",
-     "datum": "14.11.2026",
-     "datei": "datenschutz_1.4.html",
-     "quelle": "Datenschutzerklaerung_1.4.md"
-    },
-    {
-     "nummer": "1.5",
-     "datum": "15.11.2026",
-     "datei": "datenschutz_1.5.html",
-     "quelle": "Datenschutzerklaerung_1.5.md"
-    },
-    {
-     "nummer": "1.6",
-     "datum": "16.11.2026",
-     "datei": "datenschutz_1.6.html",
-     "quelle": "Datenschutzerklaerung_1.6.md"
-    },
-    {
-     "nummer": "1.7",
-     "datum": "17.11.2026",
-     "datei": "datenschutz_1.7.html",
-     "quelle": "Datenschutzerklaerung_1.7.md"
-    },
-    {
      "nummer": "1.8",
      "datum": "20.11.2026",
      "datei": "datenschutz_1.8.html",
@@ -141,24 +93,6 @@
    "gruppe": "nutzungsbedingungen",
    "archiv": true,
    "fassungen": [
-    {
-     "nummer": "1.0",
-     "datum": "26.10.2026",
-     "datei": "nutzungsbedingungen_1.0.html",
-     "quelle": "Nutzungsbedingungen_1.0_final.md"
-    },
-    {
-     "nummer": "1.1",
-     "datum": "26.10.2026",
-     "datei": "nutzungsbedingungen_1.1.html",
-     "quelle": "Nutzungsbedingungen_1.1.md"
-    },
-    {
-     "nummer": "1.2",
-     "datum": "12.11.2026",
-     "datei": "nutzungsbedingungen_1.2.html",
-     "quelle": "Nutzungsbedingungen_1.2.md"
-    },
     {
      "nummer": "1.3",
      "datum": "17.11.2026",
@@ -176,48 +110,6 @@
    "archiv": true,
    "fassungen": [
     {
-     "nummer": "1.1",
-     "datum": "26.10.2026",
-     "datei": "tr_gizlilik_1.1.html",
-     "quelle": "Datenschutzerklaerung_1.1_tr.md"
-    },
-    {
-     "nummer": "1.2",
-     "datum": "02.11.2026",
-     "datei": "tr_gizlilik_1.2.html",
-     "quelle": "Datenschutzerklaerung_1.2_tr.md"
-    },
-    {
-     "nummer": "1.3",
-     "datum": "04.11.2026",
-     "datei": "tr_gizlilik_1.3.html",
-     "quelle": "Datenschutzerklaerung_1.3_tr.md"
-    },
-    {
-     "nummer": "1.4",
-     "datum": "14.11.2026",
-     "datei": "tr_gizlilik_1.4.html",
-     "quelle": "1.4_uebersetzung/datenschutz_tr.md"
-    },
-    {
-     "nummer": "1.5",
-     "datum": "15.11.2026",
-     "datei": "tr_gizlilik_1.5.html",
-     "quelle": "1.5_uebersetzung/datenschutz_tr.md"
-    },
-    {
-     "nummer": "1.6",
-     "datum": "16.11.2026",
-     "datei": "tr_gizlilik_1.6.html",
-     "quelle": "1.6_uebersetzung/datenschutz_tr.md"
-    },
-    {
-     "nummer": "1.7",
-     "datum": "17.11.2026",
-     "datei": "tr_gizlilik_1.7.html",
-     "quelle": "1.7_uebersetzung/datenschutz_tr.md"
-    },
-    {
      "nummer": "1.8",
      "datum": "20.11.2026",
      "datei": "tr_gizlilik_1.8.html",
@@ -233,18 +125,6 @@
    "gruppe": "nutzungsbedingungen",
    "archiv": true,
    "fassungen": [
-    {
-     "nummer": "1.1",
-     "datum": "26.10.2026",
-     "datei": "tr_kullanim-kosullari_1.1.html",
-     "quelle": "Nutzungsbedingungen_1.1_tr.md"
-    },
-    {
-     "nummer": "1.2",
-     "datum": "12.11.2026",
-     "datei": "tr_kullanim-kosullari_1.2.html",
-     "quelle": "1.4_uebersetzung/nutzungsbedingungen_tr.md"
-    },
     {
      "nummer": "1.3",
      "datum": "17.11.2026",
