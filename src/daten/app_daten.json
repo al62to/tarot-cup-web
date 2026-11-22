@@ -483,7 +483,7 @@
     "pt": "A casa representa o lar. Ela mostra aconchego, família e uma casa onde você se sente bem.",
     "fr": "La maison représente le chez-soi. Elle montre la sécurité, la famille et un foyer où l’on se sent bien.",
     "id": "Rumah berarti tempat tinggal sendiri. Ia melambangkan rasa aman, keluarga, dan rumah tempat orang merasa nyaman.",
-    "hi": "घर का मतलब अपना घर-परिवार है। वह सुकून, अपनापन और ऐसा घर दिखाता है, जहां मन को अच्छा लगे।"
+    "hi": "घर का मतलब अपना घर-परिवार है। वह सुकून, अपनापन और ऐसा घर दिखाता है, जहाँ मन को अच्छा लगे।"
    }
   },
   {
@@ -2584,8 +2584,8 @@
     "ro": "Nebunul",
     "pt": "O Louco",
     "fr": "Le Fou",
-    "id": "Si Bodoh",
-    "hi": "मूर्ख"
+    "id": "The Fool",
+    "hi": "The Fool"
    },
    "kurz": {
     "aufrecht": {
@@ -2634,8 +2634,8 @@
     "ro": "Magicianul",
     "pt": "O Mago",
     "fr": "Le Magicien",
-    "id": "Penyihir",
-    "hi": "जादूगर"
+    "id": "The Magician",
+    "hi": "The Magician"
    },
    "kurz": {
     "aufrecht": {
@@ -2684,8 +2684,8 @@
     "ro": "Marea Preoteasă",
     "pt": "A Sacerdotisa",
     "fr": "La Grande Prêtresse",
-    "id": "Pendeta Wanita",
-    "hi": "महापुजारिन"
+    "id": "The High Priestess",
+    "hi": "The High Priestess"
    },
    "kurz": {
     "aufrecht": {
@@ -2734,8 +2734,8 @@
     "ro": "Împărăteasa",
     "pt": "A Imperatriz",
     "fr": "L’Impératrice",
-    "id": "Maharani",
-    "hi": "साम्राज्ञी"
+    "id": "The Empress",
+    "hi": "The Empress"
    },
    "kurz": {
     "aufrecht": {
@@ -2784,8 +2784,8 @@
     "ro": "Împăratul",
     "pt": "O Imperador",
     "fr": "L’Empereur",
-    "id": "Kaisar",
-    "hi": "सम्राट"
+    "id": "The Emperor",
+    "hi": "The Emperor"
    },
    "kurz": {
     "aufrecht": {
@@ -2834,8 +2834,8 @@
     "ro": "Hierofantul",
     "pt": "O Hierofante",
     "fr": "Le Hiérophant",
-    "id": "Hierofan",
-    "hi": "धर्मगुरु"
+    "id": "The Hierophant",
+    "hi": "The Hierophant"
    },
    "kurz": {
     "aufrecht": {
@@ -2884,8 +2884,8 @@
     "ro": "Îndrăgostiții",
     "pt": "Os Enamorados",
     "fr": "Les Amoureux",
-    "id": "Sepasang Kekasih",
-    "hi": "प्रेमी"
+    "id": "The Lovers",
+    "hi": "The Lovers"
    },
    "kurz": {
     "aufrecht": {
@@ -2934,8 +2934,8 @@
     "ro": "Carul",
     "pt": "O Carro",
     "fr": "Le Chariot",
-    "id": "Kereta Perang",
-    "hi": "रथ"
+    "id": "The Chariot",
+    "hi": "The Chariot"
    },
    "kurz": {
     "aufrecht": {
@@ -2963,7 +2963,7 @@
      "ro": "Direcția e acum neclară. O oprire scurtă ajută mai mult decât și mai multă presiune.",
      "pt": "O rumo está pouco claro agora. Parar um instante ajuda mais do que ainda mais pressão.",
      "fr": "La direction est floue pour l’instant. Une courte pause aide plus qu’une pression supplémentaire.",
-     "id": "Arahnya sedang tidak jelas. Berhenti sebentar lebih menolong daripada tekanan yang makin besar.",
+     "id": "Arahnya belum terlihat jelas. Berhenti sejenak jauh lebih baik daripada terus memaksakan diri.",
      "hi": "दिशा अभी साफ़ नहीं है। थोड़ा ठहरना और ज़्यादा दबाव डालने से ज़्यादा काम आता है।"
     }
    }
@@ -2984,8 +2984,8 @@
     "ro": "Puterea",
     "pt": "A Força",
     "fr": "La Force",
-    "id": "Kekuatan",
-    "hi": "शक्ति"
+    "id": "Strength",
+    "hi": "Strength"
    },
    "kurz": {
     "aufrecht": {
@@ -3034,8 +3034,8 @@
     "ro": "Pustnicul",
     "pt": "O Eremita",
     "fr": "L’Ermite",
-    "id": "Pertapa",
-    "hi": "संन्यासी"
+    "id": "The Hermit",
+    "hi": "The Hermit"
    },
    "kurz": {
     "aufrecht": {
@@ -3084,8 +3084,8 @@
     "ro": "Roata Norocului",
     "pt": "A Roda da Fortuna",
     "fr": "La Roue de Fortune",
-    "id": "Roda Keberuntungan",
-    "hi": "भाग्य का पहिया"
+    "id": "Wheel of Fortune",
+    "hi": "Wheel of Fortune"
    },
    "kurz": {
     "aufrecht": {
@@ -3113,7 +3113,7 @@
      "ro": "Un ciclu se repetă sau se blochează. Te ajută să nu mai eviți schimbarea.",
      "pt": "Um ciclo se repete ou emperra. Ajuda parar de fugir da mudança.",
      "fr": "Un cycle se répète ou s’enraye. Il aide de ne plus esquiver le changement.",
-     "id": "Sebuah lingkaran terulang atau macet. Menolong kalau kamu tidak lagi menghindari perubahan.",
+     "id": "Sebuah lingkaran terulang atau macet. Akan membantu kalau kamu tidak lagi menghindari perubahan.",
      "hi": "एक ही बात बार-बार दोहरती है या अटक जाती है। बदलाव से बचने की जगह उसे अपनाना काम आता है।"
     }
    }
@@ -3134,8 +3134,8 @@
     "ro": "Dreptatea",
     "pt": "A Justiça",
     "fr": "La Justice",
-    "id": "Keadilan",
-    "hi": "न्याय"
+    "id": "Justice",
+    "hi": "Justice"
    },
    "kurz": {
     "aufrecht": {
@@ -3149,7 +3149,7 @@
      "ro": "Claritate și corectitudine. O privire sobră asupra cauzei și a efectului te ajută să alegi potrivit.",
      "pt": "Clareza e justiça. Um olhar sóbrio sobre causa e efeito ajuda você a decidir com coerência.",
      "fr": "Clarté et équité. Un regard sobre sur la cause et l’effet t’aide à décider de façon cohérente.",
-     "id": "Kejelasan dan keadilan. Pandangan yang tenang pada sebab dan akibat menolongmu memutuskan dengan pas.",
+     "id": "Kejelasan dan keadilan. Pandangan yang tenang pada sebab dan akibat membantumu memutuskan dengan pas.",
      "hi": "स्पष्टता और निष्पक्षता। कारण और नतीजे पर शांत नज़र आपको ठीक फ़ैसला लेने में मदद करती है।"
     },
     "umgekehrt": {
@@ -3184,8 +3184,8 @@
     "ro": "Spânzuratul",
     "pt": "O Enforcado",
     "fr": "Le Pendu",
-    "id": "Orang yang Tergantung",
-    "hi": "लटका हुआ व्यक्ति"
+    "id": "The Hanged Man",
+    "hi": "The Hanged Man"
    },
    "kurz": {
     "aufrecht": {
@@ -3213,7 +3213,7 @@
      "ro": "O pauză se prelungește sau e sărită. Și totuși ea vrea să lămurească ceva.",
      "pt": "Uma pausa se arrasta ou é pulada. Mas ela quer esclarecer algo.",
      "fr": "Une pause traîne en longueur ou est sautée. Pourtant, elle voudrait éclaircir quelque chose.",
-     "id": "Sebuah jeda berlarut-larut atau dilewati. Padahal dia ingin menjernihkan sesuatu.",
+     "id": "Sebuah jeda berlarut-larut atau dilewati. Padahal jeda itu justru berguna untuk menjernihkan sesuatu.",
      "hi": "ठहराव खिंच जाता है या छोड़ दिया जाता है। जबकि वह कुछ साफ़ करना चाहता है।"
     }
    }
@@ -3234,8 +3234,8 @@
     "ro": "Moartea",
     "pt": "A Morte",
     "fr": "La Mort",
-    "id": "Kematian",
-    "hi": "मृत्यु"
+    "id": "Death",
+    "hi": "Death"
    },
    "kurz": {
     "aufrecht": {
@@ -3284,8 +3284,8 @@
     "ro": "Cumpătarea",
     "pt": "A Temperança",
     "fr": "La Tempérance",
-    "id": "Kesederhanaan",
-    "hi": "संयम"
+    "id": "Temperance",
+    "hi": "Temperance"
    },
    "kurz": {
     "aufrecht": {
@@ -3334,8 +3334,8 @@
     "ro": "Diavolul",
     "pt": "O Diabo",
     "fr": "Le Diable",
-    "id": "Iblis",
-    "hi": "शैतान"
+    "id": "The Devil",
+    "hi": "The Devil"
    },
    "kurz": {
     "aufrecht": {
@@ -3384,8 +3384,8 @@
     "ro": "Turnul",
     "pt": "A Torre",
     "fr": "La Tour",
-    "id": "Menara",
-    "hi": "मीनार"
+    "id": "The Tower",
+    "hi": "The Tower"
    },
    "kurz": {
     "aufrecht": {
@@ -3434,8 +3434,8 @@
     "ro": "Steaua",
     "pt": "A Estrela",
     "fr": "L’Étoile",
-    "id": "Bintang",
-    "hi": "तारा"
+    "id": "The Star",
+    "hi": "The Star"
    },
    "kurz": {
     "aufrecht": {
@@ -3484,8 +3484,8 @@
     "ro": "Luna",
     "pt": "A Lua",
     "fr": "La Lune",
-    "id": "Bulan",
-    "hi": "चंद्रमा"
+    "id": "The Moon",
+    "hi": "The Moon"
    },
    "kurz": {
     "aufrecht": {
@@ -3534,8 +3534,8 @@
     "ro": "Soarele",
     "pt": "O Sol",
     "fr": "Le Soleil",
-    "id": "Matahari",
-    "hi": "सूर्य"
+    "id": "The Sun",
+    "hi": "The Sun"
    },
    "kurz": {
     "aufrecht": {
@@ -3584,8 +3584,8 @@
     "ro": "Judecata",
     "pt": "O Julgamento",
     "fr": "Le Jugement",
-    "id": "Penghakiman",
-    "hi": "निर्णय"
+    "id": "Judgement",
+    "hi": "Judgement"
    },
    "kurz": {
     "aufrecht": {
@@ -3634,8 +3634,8 @@
     "ro": "Lumea",
     "pt": "O Mundo",
     "fr": "Le Monde",
-    "id": "Dunia",
-    "hi": "संसार"
+    "id": "The World",
+    "hi": "The World"
    },
    "kurz": {
     "aufrecht": {
@@ -3684,8 +3684,8 @@
     "ro": "Asul de Bastoane",
     "pt": "Ás de Paus",
     "fr": "As de Bâtons",
-    "id": "As Tongkat",
-    "hi": "छड़ियों का इक्का"
+    "id": "Ace of Wands",
+    "hi": "Ace of Wands"
    },
    "kurz": {
     "aufrecht": {
@@ -3734,8 +3734,8 @@
     "ro": "Doiul de Bastoane",
     "pt": "Dois de Paus",
     "fr": "Deux de Bâtons",
-    "id": "Dua Tongkat",
-    "hi": "छड़ियों का दो"
+    "id": "Two of Wands",
+    "hi": "Two of Wands"
    },
    "kurz": {
     "aufrecht": {
@@ -3784,8 +3784,8 @@
     "ro": "Treiul de Bastoane",
     "pt": "Três de Paus",
     "fr": "Trois de Bâtons",
-    "id": "Tiga Tongkat",
-    "hi": "छड़ियों का तीन"
+    "id": "Three of Wands",
+    "hi": "Three of Wands"
    },
    "kurz": {
     "aufrecht": {
@@ -3834,8 +3834,8 @@
     "ro": "Patrul de Bastoane",
     "pt": "Quatro de Paus",
     "fr": "Quatre de Bâtons",
-    "id": "Empat Tongkat",
-    "hi": "छड़ियों का चार"
+    "id": "Four of Wands",
+    "hi": "Four of Wands"
    },
    "kurz": {
     "aufrecht": {
@@ -3884,8 +3884,8 @@
     "ro": "Cinciul de Bastoane",
     "pt": "Cinco de Paus",
     "fr": "Cinq de Bâtons",
-    "id": "Lima Tongkat",
-    "hi": "छड़ियों का पांच"
+    "id": "Five of Wands",
+    "hi": "Five of Wands"
    },
    "kurz": {
     "aufrecht": {
@@ -3934,8 +3934,8 @@
     "ro": "Șasele de Bastoane",
     "pt": "Seis de Paus",
     "fr": "Six de Bâtons",
-    "id": "Enam Tongkat",
-    "hi": "छड़ियों का छह"
+    "id": "Six of Wands",
+    "hi": "Six of Wands"
    },
    "kurz": {
     "aufrecht": {
@@ -3984,8 +3984,8 @@
     "ro": "Șaptele de Bastoane",
     "pt": "Sete de Paus",
     "fr": "Sept de Bâtons",
-    "id": "Tujuh Tongkat",
-    "hi": "छड़ियों का सात"
+    "id": "Seven of Wands",
+    "hi": "Seven of Wands"
    },
    "kurz": {
     "aufrecht": {
@@ -4034,8 +4034,8 @@
     "ro": "Optul de Bastoane",
     "pt": "Oito de Paus",
     "fr": "Huit de Bâtons",
-    "id": "Delapan Tongkat",
-    "hi": "छड़ियों का आठ"
+    "id": "Eight of Wands",
+    "hi": "Eight of Wands"
    },
    "kurz": {
     "aufrecht": {
@@ -4084,8 +4084,8 @@
     "ro": "Nouăle de Bastoane",
     "pt": "Nove de Paus",
     "fr": "Neuf de Bâtons",
-    "id": "Sembilan Tongkat",
-    "hi": "छड़ियों का नौ"
+    "id": "Nine of Wands",
+    "hi": "Nine of Wands"
    },
    "kurz": {
     "aufrecht": {
@@ -4134,8 +4134,8 @@
     "ro": "Zecele de Bastoane",
     "pt": "Dez de Paus",
     "fr": "Dix de Bâtons",
-    "id": "Sepuluh Tongkat",
-    "hi": "छड़ियों का दस"
+    "id": "Ten of Wands",
+    "hi": "Ten of Wands"
    },
    "kurz": {
     "aufrecht": {
@@ -4184,8 +4184,8 @@
     "ro": "Pajul de Bastoane",
     "pt": "Valete de Paus",
     "fr": "Valet de Bâtons",
-    "id": "Pelayan Tongkat",
-    "hi": "छड़ियों का सेवक"
+    "id": "Page of Wands",
+    "hi": "Page of Wands"
    },
    "kurz": {
     "aufrecht": {
@@ -4234,8 +4234,8 @@
     "ro": "Cavalerul de Bastoane",
     "pt": "Cavaleiro de Paus",
     "fr": "Cavalier de Bâtons",
-    "id": "Kesatria Tongkat",
-    "hi": "छड़ियों का घुड़सवार"
+    "id": "Knight of Wands",
+    "hi": "Knight of Wands"
    },
    "kurz": {
     "aufrecht": {
@@ -4284,8 +4284,8 @@
     "ro": "Regina de Bastoane",
     "pt": "Rainha de Paus",
     "fr": "Reine de Bâtons",
-    "id": "Ratu Tongkat",
-    "hi": "छड़ियों की रानी"
+    "id": "Queen of Wands",
+    "hi": "Queen of Wands"
    },
    "kurz": {
     "aufrecht": {
@@ -4334,8 +4334,8 @@
     "ro": "Regele de Bastoane",
     "pt": "Rei de Paus",
     "fr": "Roi de Bâtons",
-    "id": "Raja Tongkat",
-    "hi": "छड़ियों का राजा"
+    "id": "King of Wands",
+    "hi": "King of Wands"
    },
    "kurz": {
     "aufrecht": {
@@ -4384,8 +4384,8 @@
     "ro": "Asul de Cupe",
     "pt": "Ás de Copas",
     "fr": "As de Coupes",
-    "id": "As Piala",
-    "hi": "प्यालों का इक्का"
+    "id": "Ace of Cups",
+    "hi": "Ace of Cups"
    },
    "kurz": {
     "aufrecht": {
@@ -4434,8 +4434,8 @@
     "ro": "Doiul de Cupe",
     "pt": "Dois de Copas",
     "fr": "Deux de Coupes",
-    "id": "Dua Piala",
-    "hi": "प्यालों का दो"
+    "id": "Two of Cups",
+    "hi": "Two of Cups"
    },
    "kurz": {
     "aufrecht": {
@@ -4449,8 +4449,8 @@
      "ro": "Întâlnire de la egal la egal. Unde e respect de ambele părți, se naște o legătură adevărată.",
      "pt": "Encontro de igual para igual. Onde há respeito dos dois lados, nasce uma relação de verdade.",
      "fr": "Une rencontre d’égal à égal. Là où le respect existe des deux côtés, un vrai lien naît.",
-     "id": "Pertemuan yang sejajar. Di mana ada penghormatan di kedua pihak, lahir hubungan yang sungguh-sungguh.",
-     "hi": "बराबरी की मुलाक़ात। जहां दोनों ओर सम्मान हो, वहां सच्चा जुड़ाव बनता है।"
+     "id": "Pertemuan yang setara. Di mana ada penghormatan di kedua pihak, lahir hubungan yang sungguh-sungguh.",
+     "hi": "बराबरी की मुलाक़ात। जहाँ दोनों ओर सम्मान हो, वहाँ सच्चा जुड़ाव बनता है।"
     },
     "umgekehrt": {
      "de": "Der Gleichklang stockt gerade. Es lohnt sich, zuerst bei dir selbst wieder ins Reine zu kommen.",
@@ -4484,8 +4484,8 @@
     "ro": "Treiul de Cupe",
     "pt": "Três de Copas",
     "fr": "Trois de Coupes",
-    "id": "Tiga Piala",
-    "hi": "प्यालों का तीन"
+    "id": "Three of Cups",
+    "hi": "Three of Cups"
    },
    "kurz": {
     "aufrecht": {
@@ -4534,8 +4534,8 @@
     "ro": "Patrul de Cupe",
     "pt": "Quatro de Copas",
     "fr": "Quatre de Coupes",
-    "id": "Empat Piala",
-    "hi": "प्यालों का चार"
+    "id": "Four of Cups",
+    "hi": "Four of Cups"
    },
    "kurz": {
     "aufrecht": {
@@ -4584,8 +4584,8 @@
     "ro": "Cinciul de Cupe",
     "pt": "Cinco de Copas",
     "fr": "Cinq de Coupes",
-    "id": "Lima Piala",
-    "hi": "प्यालों का पांच"
+    "id": "Five of Cups",
+    "hi": "Five of Cups"
    },
    "kurz": {
     "aufrecht": {
@@ -4634,8 +4634,8 @@
     "ro": "Șasele de Cupe",
     "pt": "Seis de Copas",
     "fr": "Six de Coupes",
-    "id": "Enam Piala",
-    "hi": "प्यालों का छह"
+    "id": "Six of Cups",
+    "hi": "Six of Cups"
    },
    "kurz": {
     "aufrecht": {
@@ -4684,8 +4684,8 @@
     "ro": "Șaptele de Cupe",
     "pt": "Sete de Copas",
     "fr": "Sept de Coupes",
-    "id": "Tujuh Piala",
-    "hi": "प्यालों का सात"
+    "id": "Seven of Cups",
+    "hi": "Seven of Cups"
    },
    "kurz": {
     "aufrecht": {
@@ -4734,8 +4734,8 @@
     "ro": "Optul de Cupe",
     "pt": "Oito de Copas",
     "fr": "Huit de Coupes",
-    "id": "Delapan Piala",
-    "hi": "प्यालों का आठ"
+    "id": "Eight of Cups",
+    "hi": "Eight of Cups"
    },
    "kurz": {
     "aufrecht": {
@@ -4784,8 +4784,8 @@
     "ro": "Nouăle de Cupe",
     "pt": "Nove de Copas",
     "fr": "Neuf de Coupes",
-    "id": "Sembilan Piala",
-    "hi": "प्यालों का नौ"
+    "id": "Nine of Cups",
+    "hi": "Nine of Cups"
    },
    "kurz": {
     "aufrecht": {
@@ -4834,8 +4834,8 @@
     "ro": "Zecele de Cupe",
     "pt": "Dez de Copas",
     "fr": "Dix de Coupes",
-    "id": "Sepuluh Piala",
-    "hi": "प्यालों का दस"
+    "id": "Ten of Cups",
+    "hi": "Ten of Cups"
    },
    "kurz": {
     "aufrecht": {
@@ -4850,7 +4850,7 @@
      "pt": "Segurança e sensação de pertencer se espalham. Você pode estar por inteiro onde se sente bem.",
      "fr": "Le sentiment de refuge et d’appartenance s’étend. Tu peux être pleinement là où tu te sens bien.",
      "id": "Rasa aman dan rasa memiliki meluas. Kamu boleh sepenuhnya hadir di tempat kamu merasa nyaman.",
-     "hi": "सुरक्षा और अपनापन फैलते हैं। आप वहां पूरी तरह मौजूद रह सकते हैं जहां आपको अच्छा लगता है।"
+     "hi": "सुरक्षा और अपनापन फैलते हैं। आप वहाँ पूरी तरह मौजूद रह सकते हैं जहाँ आपको अच्छा लगता है।"
     },
     "umgekehrt": {
      "de": "Die Sehnsucht nach Zugehörigkeit ist spürbar. Vielleicht hängt das Bild vom vollkommenen Glück gerade etwas zu hoch.",
@@ -4884,8 +4884,8 @@
     "ro": "Pajul de Cupe",
     "pt": "Valete de Copas",
     "fr": "Valet de Coupes",
-    "id": "Pelayan Piala",
-    "hi": "प्यालों का सेवक"
+    "id": "Page of Cups",
+    "hi": "Page of Cups"
    },
    "kurz": {
     "aufrecht": {
@@ -4934,8 +4934,8 @@
     "ro": "Cavalerul de Cupe",
     "pt": "Cavaleiro de Copas",
     "fr": "Cavalier de Coupes",
-    "id": "Kesatria Piala",
-    "hi": "प्यालों का घुड़सवार"
+    "id": "Knight of Cups",
+    "hi": "Knight of Cups"
    },
    "kurz": {
     "aufrecht": {
@@ -4984,8 +4984,8 @@
     "ro": "Regina de Cupe",
     "pt": "Rainha de Copas",
     "fr": "Reine de Coupes",
-    "id": "Ratu Piala",
-    "hi": "प्यालों की रानी"
+    "id": "Queen of Cups",
+    "hi": "Queen of Cups"
    },
    "kurz": {
     "aufrecht": {
@@ -5034,8 +5034,8 @@
     "ro": "Regele de Cupe",
     "pt": "Rei de Copas",
     "fr": "Roi de Coupes",
-    "id": "Raja Piala",
-    "hi": "प्यालों का राजा"
+    "id": "King of Cups",
+    "hi": "King of Cups"
    },
    "kurz": {
     "aufrecht": {
@@ -5084,8 +5084,8 @@
     "ro": "Asul de Săbii",
     "pt": "Ás de Espadas",
     "fr": "As d’Épées",
-    "id": "As Pedang",
-    "hi": "तलवारों का इक्का"
+    "id": "Ace of Swords",
+    "hi": "Ace of Swords"
    },
    "kurz": {
     "aufrecht": {
@@ -5134,8 +5134,8 @@
     "ro": "Doiul de Săbii",
     "pt": "Dois de Espadas",
     "fr": "Deux d’Épées",
-    "id": "Dua Pedang",
-    "hi": "तलवारों का दो"
+    "id": "Two of Swords",
+    "hi": "Two of Swords"
    },
    "kurz": {
     "aufrecht": {
@@ -5184,8 +5184,8 @@
     "ro": "Treiul de Săbii",
     "pt": "Três de Espadas",
     "fr": "Trois d’Épées",
-    "id": "Tiga Pedang",
-    "hi": "तलवारों का तीन"
+    "id": "Three of Swords",
+    "hi": "Three of Swords"
    },
    "kurz": {
     "aufrecht": {
@@ -5234,8 +5234,8 @@
     "ro": "Patrul de Săbii",
     "pt": "Quatro de Espadas",
     "fr": "Quatre d’Épées",
-    "id": "Empat Pedang",
-    "hi": "तलवारों का चार"
+    "id": "Four of Swords",
+    "hi": "Four of Swords"
    },
    "kurz": {
     "aufrecht": {
@@ -5284,8 +5284,8 @@
     "ro": "Cinciul de Săbii",
     "pt": "Cinco de Espadas",
     "fr": "Cinq d’Épées",
-    "id": "Lima Pedang",
-    "hi": "तलवारों का पांच"
+    "id": "Five of Swords",
+    "hi": "Five of Swords"
    },
    "kurz": {
     "aufrecht": {
@@ -5334,8 +5334,8 @@
     "ro": "Șasele de Săbii",
     "pt": "Seis de Espadas",
     "fr": "Six d’Épées",
-    "id": "Enam Pedang",
-    "hi": "तलवारों का छह"
+    "id": "Six of Swords",
+    "hi": "Six of Swords"
    },
    "kurz": {
     "aufrecht": {
@@ -5384,8 +5384,8 @@
     "ro": "Șaptele de Săbii",
     "pt": "Sete de Espadas",
     "fr": "Sept d’Épées",
-    "id": "Tujuh Pedang",
-    "hi": "तलवारों का सात"
+    "id": "Seven of Swords",
+    "hi": "Seven of Swords"
    },
    "kurz": {
     "aufrecht": {
@@ -5434,8 +5434,8 @@
     "ro": "Optul de Săbii",
     "pt": "Oito de Espadas",
     "fr": "Huit d’Épées",
-    "id": "Delapan Pedang",
-    "hi": "तलवारों का आठ"
+    "id": "Eight of Swords",
+    "hi": "Eight of Swords"
    },
    "kurz": {
     "aufrecht": {
@@ -5484,8 +5484,8 @@
     "ro": "Nouăle de Săbii",
     "pt": "Nove de Espadas",
     "fr": "Neuf d’Épées",
-    "id": "Sembilan Pedang",
-    "hi": "तलवारों का नौ"
+    "id": "Nine of Swords",
+    "hi": "Nine of Swords"
    },
    "kurz": {
     "aufrecht": {
@@ -5534,8 +5534,8 @@
     "ro": "Zecele de Săbii",
     "pt": "Dez de Espadas",
     "fr": "Dix d’Épées",
-    "id": "Sepuluh Pedang",
-    "hi": "तलवारों का दस"
+    "id": "Ten of Swords",
+    "hi": "Ten of Swords"
    },
    "kurz": {
     "aufrecht": {
@@ -5584,8 +5584,8 @@
     "ro": "Pajul de Săbii",
     "pt": "Valete de Espadas",
     "fr": "Valet d’Épées",
-    "id": "Pelayan Pedang",
-    "hi": "तलवारों का सेवक"
+    "id": "Page of Swords",
+    "hi": "Page of Swords"
    },
    "kurz": {
     "aufrecht": {
@@ -5634,8 +5634,8 @@
     "ro": "Cavalerul de Săbii",
     "pt": "Cavaleiro de Espadas",
     "fr": "Cavalier d’Épées",
-    "id": "Kesatria Pedang",
-    "hi": "तलवारों का घुड़सवार"
+    "id": "Knight of Swords",
+    "hi": "Knight of Swords"
    },
    "kurz": {
     "aufrecht": {
@@ -5684,8 +5684,8 @@
     "ro": "Regina de Săbii",
     "pt": "Rainha de Espadas",
     "fr": "Reine d’Épées",
-    "id": "Ratu Pedang",
-    "hi": "तलवारों की रानी"
+    "id": "Queen of Swords",
+    "hi": "Queen of Swords"
    },
    "kurz": {
     "aufrecht": {
@@ -5734,8 +5734,8 @@
     "ro": "Regele de Săbii",
     "pt": "Rei de Espadas",
     "fr": "Roi d’Épées",
-    "id": "Raja Pedang",
-    "hi": "तलवारों का राजा"
+    "id": "King of Swords",
+    "hi": "King of Swords"
    },
    "kurz": {
     "aufrecht": {
@@ -5784,8 +5784,8 @@
     "ro": "Asul de Monede",
     "pt": "Ás de Ouros",
     "fr": "As de Deniers",
-    "id": "As Koin",
-    "hi": "सिक्कों का इक्का"
+    "id": "Ace of Pentacles",
+    "hi": "Ace of Pentacles"
    },
    "kurz": {
     "aufrecht": {
@@ -5834,8 +5834,8 @@
     "ro": "Doiul de Monede",
     "pt": "Dois de Ouros",
     "fr": "Deux de Deniers",
-    "id": "Dua Koin",
-    "hi": "सिक्कों का दो"
+    "id": "Two of Pentacles",
+    "hi": "Two of Pentacles"
    },
    "kurz": {
     "aufrecht": {
@@ -5884,8 +5884,8 @@
     "ro": "Treiul de Monede",
     "pt": "Três de Ouros",
     "fr": "Trois de Deniers",
-    "id": "Tiga Koin",
-    "hi": "सिक्कों का तीन"
+    "id": "Three of Pentacles",
+    "hi": "Three of Pentacles"
    },
    "kurz": {
     "aufrecht": {
@@ -5934,8 +5934,8 @@
     "ro": "Patrul de Monede",
     "pt": "Quatro de Ouros",
     "fr": "Quatre de Deniers",
-    "id": "Empat Koin",
-    "hi": "सिक्कों का चार"
+    "id": "Four of Pentacles",
+    "hi": "Four of Pentacles"
    },
    "kurz": {
     "aufrecht": {
@@ -5984,8 +5984,8 @@
     "ro": "Cinciul de Monede",
     "pt": "Cinco de Ouros",
     "fr": "Cinq de Deniers",
-    "id": "Lima Koin",
-    "hi": "सिक्कों का पांच"
+    "id": "Five of Pentacles",
+    "hi": "Five of Pentacles"
    },
    "kurz": {
     "aufrecht": {
@@ -6034,8 +6034,8 @@
     "ro": "Șasele de Monede",
     "pt": "Seis de Ouros",
     "fr": "Six de Deniers",
-    "id": "Enam Koin",
-    "hi": "सिक्कों का छह"
+    "id": "Six of Pentacles",
+    "hi": "Six of Pentacles"
    },
    "kurz": {
     "aufrecht": {
@@ -6063,8 +6063,8 @@
      "ro": "Schimbul e strâmb: primește și tu ceva și ai grijă de tine.",
      "pt": "A troca está torta: aceite algo também para você e cuide de si.",
      "fr": "L’échange penche d’un côté: accepte aussi quelque chose pour toi et fais attention à toi.",
-     "id": "Pertukaran sedang miring: terimalah juga sesuatu dan perhatikan dirimu sendiri dengan baik.",
-     "hi": "लेन-देन टेढ़ा है: खुद भी कुछ लीजिए और अपना ख़याल रखिए।"
+     "id": "Memberi dan menerima sedang tidak seimbang: terimalah juga sesuatu dan perhatikan dirimu sendiri dengan baik.",
+     "hi": "देना-लेना टेढ़ा है: खुद भी कुछ लीजिए और अपना ख़याल रखिए।"
     }
    }
   },
@@ -6084,8 +6084,8 @@
     "ro": "Șaptele de Monede",
     "pt": "Sete de Ouros",
     "fr": "Sept de Deniers",
-    "id": "Tujuh Koin",
-    "hi": "सिक्कों का सात"
+    "id": "Seven of Pentacles",
+    "hi": "Seven of Pentacles"
    },
    "kurz": {
     "aufrecht": {
@@ -6134,8 +6134,8 @@
     "ro": "Optul de Monede",
     "pt": "Oito de Ouros",
     "fr": "Huit de Deniers",
-    "id": "Delapan Koin",
-    "hi": "सिक्कों का आठ"
+    "id": "Eight of Pentacles",
+    "hi": "Eight of Pentacles"
    },
    "kurz": {
     "aufrecht": {
@@ -6184,8 +6184,8 @@
     "ro": "Nouăle de Monede",
     "pt": "Nove de Ouros",
     "fr": "Neuf de Deniers",
-    "id": "Sembilan Koin",
-    "hi": "सिक्कों का नौ"
+    "id": "Nine of Pentacles",
+    "hi": "Nine of Pentacles"
    },
    "kurz": {
     "aufrecht": {
@@ -6234,8 +6234,8 @@
     "ro": "Zecele de Monede",
     "pt": "Dez de Ouros",
     "fr": "Dix de Deniers",
-    "id": "Sepuluh Koin",
-    "hi": "सिक्कों का दस"
+    "id": "Ten of Pentacles",
+    "hi": "Ten of Pentacles"
    },
    "kurz": {
     "aufrecht": {
@@ -6284,8 +6284,8 @@
     "ro": "Pajul de Monede",
     "pt": "Valete de Ouros",
     "fr": "Valet de Deniers",
-    "id": "Pelayan Koin",
-    "hi": "सिक्कों का सेवक"
+    "id": "Page of Pentacles",
+    "hi": "Page of Pentacles"
    },
    "kurz": {
     "aufrecht": {
@@ -6334,8 +6334,8 @@
     "ro": "Cavalerul de Monede",
     "pt": "Cavaleiro de Ouros",
     "fr": "Cavalier de Deniers",
-    "id": "Kesatria Koin",
-    "hi": "सिक्कों का घुड़सवार"
+    "id": "Knight of Pentacles",
+    "hi": "Knight of Pentacles"
    },
    "kurz": {
     "aufrecht": {
@@ -6384,8 +6384,8 @@
     "ro": "Regina de Monede",
     "pt": "Rainha de Ouros",
     "fr": "Reine de Deniers",
-    "id": "Ratu Koin",
-    "hi": "सिक्कों की रानी"
+    "id": "Queen of Pentacles",
+    "hi": "Queen of Pentacles"
    },
    "kurz": {
     "aufrecht": {
@@ -6434,8 +6434,8 @@
     "ro": "Regele de Monede",
     "pt": "Rei de Ouros",
     "fr": "Roi de Deniers",
-    "id": "Raja Koin",
-    "hi": "सिक्कों का राजा"
+    "id": "King of Pentacles",
+    "hi": "King of Pentacles"
    },
    "kurz": {
     "aufrecht": {
@@ -6655,7 +6655,7 @@
     "pt": "Sim ou Não",
     "fr": "Oui ou non",
     "id": "Ya atau tidak",
-    "hi": "हां या ना"
+    "hi": "हाँ या ना"
    },
    "positionen": []
   },
