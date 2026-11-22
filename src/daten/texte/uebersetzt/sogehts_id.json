@@ -29,7 +29,7 @@
    "kennung": "tarot-legen",
    "titel": "Bagaimana cara membentangkan kartu tarot?",
    "absaetze": [
-    "Lewat “Bentangkan kartu tarot” kamu memilih “Ya atau tidak”, “Tiga kartu”, atau “Cinta”, lalu memikirkan pertanyaanmu dalam hati. Kamu mengocok dengan menggeser jari di atas tumpukan, memilih kartumu di kipas setelah “Kartu sudah dikocok”, dan membukanya satu per satu setelah “Lanjutkan ke pembukaan kartu”. “Ke pembacaan menyeluruh” menunjukkan apa yang mereka ceritakan bersama. Setelah itu bentangannya beristirahat: “Ya atau tidak” tersedia lagi keesokan harinya, “Tiga kartu” setelah tiga hari, “Cinta” setelah seminggu, masing-masing mulai tengah malam."
+    "Lewat “Bentangkan kartu tarot” kamu memilih “Ya atau tidak”, “Tiga kartu”, atau “Cinta”, lalu memikirkan pertanyaanmu dalam hati. Kamu mengocok dengan menggeser jari di atas tumpukan, memilih kartumu di kipas setelah “Kartu sudah dikocok”, dan membukanya satu per satu setelah “Lanjutkan ke pembukaan kartu”. “Ke pembacaan menyeluruh” menunjukkan apa yang mereka ceritakan bersama. Setelah itu bentangannya sedang jeda: “Ya atau tidak” tersedia lagi keesokan harinya, “Tiga kartu” setelah tiga hari, “Cinta” setelah seminggu, masing-masing mulai tengah malam."
    ],
    "foto": "03_tarot",
    "alt": "Bentangan Tiga kartu dengan tiga kartu terbuka di bawah Masa lalu, Masa kini, dan Masa depan, serta tombol “Ke pembacaan menyeluruh”."
@@ -91,6 +91,6 @@
  ],
  "abschluss": {
   "titel": "Masih ada pertanyaan?",
-  "text": "Jawaban singkat, misalnya apakah aplikasi butuh internet atau mengapa suatu bentangan sedang beristirahat, ada di [Pertanyaan yang sering diajukan](/id/pertanyaan/)."
+  "text": "Jawaban singkat, misalnya apakah aplikasi butuh internet atau mengapa suatu bentangan sedang jeda, ada di [Pertanyaan yang sering diajukan](/id/pertanyaan/)."
  }
 }
