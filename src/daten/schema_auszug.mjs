@@ -19,6 +19,8 @@ const TYPEN = {
   CollectionPage: { ober: 'WebPage', eigen: [] },
   FAQPage: { ober: 'WebPage', eigen: [] },
   Article: { ober: 'CreativeWork', eigen: ['articleBody', 'articleSection', 'wordCount'] },
+  // https://schema.org/VideoObject (über MediaObject: contentUrl, duration, uploadDate), AP-WV1.
+  VideoObject: { ober: 'CreativeWork', eigen: ['thumbnailUrl', 'uploadDate', 'duration', 'contentUrl'] },
   SoftwareApplication: {
     ober: 'CreativeWork',
     eigen: ['operatingSystem', 'applicationCategory', 'applicationSubCategory', 'screenshot', 'installUrl', 'downloadUrl',

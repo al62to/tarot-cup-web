@@ -1,0 +1,57 @@
+---
+// Abschnitt „So sieht Tarot Cup aus“ (AP-WV1): eigenes Video von dieser Domain, kein fremder Dienst, keine Cookies.
+// Lädt erst beim Klick (preload="none"), kein Autoplay. Die Box hält 16:9, damit nichts springt.
+// Das Poster setzt das Skript erst kurz vor dem Sichtbarwerden (WebP, sonst JPG): Als festes Attribut lädt es sofort und
+// verzögert das größte Bild der Seite (Lighthouse, rund 300 ms). Ohne JavaScript zeigt noscript das Bild.
+// Chrome am Handy startet nur über die kleine Taste; darum startet ein Klick auf das Bild das Video ebenfalls.
+import Betont from './Betont.astro';
+import { trailer, trailerVideo, TRAILER_BILD_JPG, TRAILER_BILD_WEBP } from '../daten/texte/trailer.mjs';
+
+const { sprache } = Astro.props;
+const T = trailer[sprache];
+if (!T) throw new Error(`Trailer: Texte für ${sprache} fehlen`);
+const video = trailerVideo(sprache);
+---
+<section class="trailer innen" aria-labelledby="trailer-titel">
+  <h2 id="trailer-titel" class="start-titel"><Betont text={T.titel} /></h2>
+  <div class="trailer-box">
+    <noscript><img src={TRAILER_BILD_JPG} alt="" width="1280" height="720" /></noscript>
+    <video controls playsinline preload="none" width="1280" height="720" aria-label={T.name} data-webp={TRAILER_BILD_WEBP} data-jpg={TRAILER_BILD_JPG}>
+      <source src={video} type="video/mp4" />
+      <a href={video}>{T.oeffnen}</a>
+    </video>
+  </div>
+</section>
+
+<script>
+  // Höhe der Bedienleiste unten im Video: Klicks dort bleiben bei den Bedienelementen (Ton, Vollbild, Zeitleiste).
+  const LEISTE = 64;
+  const video = document.querySelector<HTMLVideoElement>('.trailer video');
+  if (video) {
+    const posterSetzen = () => {
+      const probe = new Image();
+      probe.onload = () => { video.poster = probe.currentSrc; };
+      probe.onerror = () => { video.poster = video.dataset.jpg ?? ''; };
+      probe.src = video.dataset.webp ?? '';
+    };
+    if ('IntersectionObserver' in window) {
+      const wache = new IntersectionObserver((eintraege) => {
+        if (!eintraege.some((eintrag) => eintrag.isIntersecting)) return;
+        posterSetzen();
+        wache.disconnect();
+      }, { rootMargin: '300px 0px' });
+      wache.observe(video);
+    } else {
+      posterSetzen();
+    }
+    let gestartet = false;
+    video.addEventListener('play', () => { gestartet = true; });
+    // pointerup statt click: Beim Tippen schlucken die Bedienelemente von Chrome das click. Beim Wischen kommt kein
+    // pointerup (sondern pointercancel), Scrollen startet also nichts.
+    video.addEventListener('pointerup', (ereignis) => {
+      if (gestartet || ereignis.button !== 0 || ereignis.offsetY > video.clientHeight - LEISTE) return;
+      // Erst nach dem eigenen Verhalten des Browsers prüfen, damit ein Klick das Video nicht startet und gleich anhält.
+      setTimeout(() => { if (!gestartet && video.paused) video.play().catch(() => {}); }, 150);
+    });
+  }
+</script>

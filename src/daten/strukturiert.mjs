@@ -71,6 +71,22 @@ export const faqDaten = ({ pfad, sprache, liste }) => ({
   })),
 });
 
+// Trailer auf der Startseite (AP-WV1), je Sprache mit der passenden Videofassung.
+export const videoDaten = ({ pfad, sprache, name, beschreibung, bilder, video }) => ({
+  '@context': KONTEXT,
+  '@type': 'VideoObject',
+  '@id': `${absolut(pfad)}#trailer`,
+  name,
+  description: beschreibung,
+  inLanguage: sprache,
+  thumbnailUrl: bilder.map(absolut),
+  uploadDate: '2026-11-23',
+  duration: 'PT30S',
+  contentUrl: absolut(video),
+  publisher: { '@id': HERAUSGEBER_ID },
+  about: { '@id': APP_ID },
+});
+
 // zitate (Erklärseiten, AP-25): Quellenliste der Seite als citation, je { angabe, url } (url darf fehlen).
 export const artikelDaten = ({ pfad, sprache, titel, beschreibung, bild, quellen, teile = [], zitate = [] }) => ({
   '@context': KONTEXT,

@@ -18,6 +18,7 @@ import Schaukasten from './Schaukasten.astro';
 import Tassenkarte from './Tassenkarte.astro';
 import Text from './Text.astro';
 import Titelbild from './Titelbild.astro';
+import Trailer from './Trailer.astro';
 import Wendekarte from './Wendekarte.astro';
 import Storeknopf from './Storeknopf.astro';
 import Wissensblock from './Wissensblock.astro';
@@ -25,7 +26,8 @@ import { store } from '../daten/seite.mjs';
 import { start } from '../daten/texte/start.mjs';
 import { fragen } from '../daten/texte/fragen.mjs';
 import { pfadVon } from '../daten/seiten.mjs';
-import { appDaten, faqDaten } from '../daten/strukturiert.mjs';
+import { appDaten, faqDaten, videoDaten } from '../daten/strukturiert.mjs';
+import { trailer, trailerVideo, TRAILER_BILD_JPG, TRAILER_BILD_WEBP } from '../daten/texte/trailer.mjs';
 import { FOTOS_START, fotoPfad } from '../daten/fotos.mjs';
 import { wissenGruppen, wissenTexte, uebersichtLink } from '../daten/wissen.mjs';
 
@@ -40,6 +42,7 @@ const pfad = pfadVon('start', sprache);
 const daten = [
   appDaten({ beschreibung: T.wasIst.text, bildschirmfotos: FOTOS_START.map((name) => fotoPfad('app', name, sprache, 720)) }),
   faqDaten({ pfad, sprache, liste: auszug }),
+  videoDaten({ pfad, sprache, name: trailer[sprache].name, beschreibung: trailer[sprache].beschreibung, bilder: [TRAILER_BILD_WEBP, TRAILER_BILD_JPG], video: trailerVideo(sprache) }),
 ];
 const vorteil = (id) => {
   const eintrag = T.vorteile.find((kandidat) => kandidat.id === id);
@@ -61,6 +64,8 @@ const SYMBOL = {
 ---
 <Basis daten={daten} klasse="seite-start">
   <Titelbild sprache={sprache} kopf={T.kopf} zahlen={T.zahlen} />
+
+  <Trailer sprache={sprache} />
 
   <section class="wasist innen" aria-labelledby="wasist-titel">
     <div class="wasist-teil">
