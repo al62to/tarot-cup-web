@@ -5,6 +5,7 @@
 // installUrl und genau ein Angebot mit Preis 0 (ANGEBOT, tools/pruefe_bau.mjs lässt nur diese Form zu).
 import { seite, store } from './seite.mjs';
 import { standVon } from './stand.mjs';
+import { start } from './texte/start.mjs';
 
 export const WEBSITE_ID = `${seite.adresse}/#website`;
 export const HERAUSGEBER_ID = `${seite.adresse}/#organisation`;
@@ -21,6 +22,8 @@ export const websiteDaten = (sprache) => ({
   '@id': WEBSITE_ID,
   name: seite.name,
   url: `${seite.adresse}/`,
+  // AP-WT1: Beschreibung = Meta-Beschreibung der Startseite in der Sprache der Seite (Tarot vorne).
+  ...(start[sprache] ? { description: start[sprache].metaBeschreibung } : {}),
   inLanguage: sprache,
   publisher: { '@id': HERAUSGEBER_ID },
 });

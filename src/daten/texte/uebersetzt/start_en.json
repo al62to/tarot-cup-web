@@ -1,14 +1,14 @@
 {
- "metaTitel": "Tarot & Coffee Cup Reading App for Android | Tarot Cup",
- "metaBeschreibung": "Tarot Cup is an Android app for coffee cup reading with 80 symbols and tarot readings with 78 cards, in twelve languages and without an account.",
- "ogTitel": "Read your coffee cup. Draw tarot cards.",
+ "metaTitel": "Tarot Reading & Coffee Cup Reading App | Tarot Cup",
+ "metaBeschreibung": "Tarot readings with the 78 cards Pamela Colman Smith drew in 1909: Card of the Day, Yes or No, Love. Read your coffee cup yourself, too. Free to download.",
+ "ogTitel": "Draw tarot cards. Read your coffee cup.",
  "kopf": {
   "zeile": "Tarot Cup · App for Android",
   "zeilen": [
-   "Read your coffee cup *yourself*.",
-   "Draw tarot cards *at your own pace*."
+   "Draw tarot cards *at your own pace*.",
+   "Read your coffee cup *yourself*."
   ],
-  "text": "Choose the symbols from your cup, show on the cup map where they are, and read what they can mean. Or draw tarot cards at your own pace. The app needs no account, and almost everything also works without internet.",
+  "text": "Draw your Card of the Day, ask a yes-or-no question, or do a Love spread, all with the 78 cards Pamela Colman Smith drew in 1909. Or read your coffee cup yourself: choose the symbols from your cup, show on the cup map where they are, and read what they can mean. The app needs no account, and almost everything also works without internet.",
   "knopf": "View on Google Play",
   "bald": "Coming soon to Google Play",
   "anleitung": "How it works",

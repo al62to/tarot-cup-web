@@ -1,14 +1,14 @@
 {
- "metaTitel": "Gledanje u šoljicu i postavljanje tarota putem aplikacije | Tarot Cup",
- "metaBeschreibung": "Uz Android aplikaciju Tarot Cup samostalno čitaš talog kahve s 80 znakova i postavljaš tarot sa 78 karata, na dvanaest jezika i bez korisničkog računa.",
- "ogTitel": "Gledaj u šoljicu. Položi karte.",
+ "metaTitel": "Tarot karte, Karta dana i gledanje u šoljicu | Tarot Cup",
+ "metaBeschreibung": "Položi tarot sa 78 karata koje je 1909. nacrtala Pamela Colman Smith: Karta dana, Da ili ne, Ljubav. I samostalno čitaj talog kahve. Preuzmi besplatno.",
+ "ogTitel": "Položi karte. Gledaj u šoljicu.",
  "kopf": {
   "zeile": "Tarot Cup · Aplikacija za Android",
   "zeilen": [
-   "*Samostalno* čitaj talog kahve.",
-   "Položi tarot *u miru*."
+   "Položi tarot *u miru*.",
+   "*Samostalno* čitaj talog kahve."
   ],
-  "text": "Odaberi znakove iz svoje šoljice, pokaži na crtežu šoljice gdje se nalaze i pročitaj šta mogu značiti. Ili u miru položi tarot karte. Aplikaciji nije potreban korisnički račun, a gotovo sve radi i bez interneta.",
+  "text": "Izvuci kartu dana, položi karte za ljubav ili pitaj da ili ne, sa 78 karata koje je 1909. nacrtala Pamela Colman Smith. Ili samostalno čitaj talog kahve: odaberi znakove iz svoje šoljice, pokaži na crtežu šoljice gdje se nalaze i pročitaj šta mogu značiti. Aplikaciji nije potreban korisnički račun, a gotovo sve radi i bez interneta.",
   "knopf": "Pogledaj na Google Playju",
   "bald": "Uskoro na Google Playju",
   "anleitung": "Kako funkcioniše",

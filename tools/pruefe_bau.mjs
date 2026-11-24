@@ -46,6 +46,13 @@ import { EINWILLIGUNG, GTM_ADRESSE, GTM_ID, GTM_EREIGNIS } from '../src/daten/ei
 // Das eine erlaubte Angebot der App in JSON-LD (AP-21: Preis 0, nur mit öffentlichem Store). Genau diese Zeichenfolge
 // nimmt die Prüfung auf Preis und Gratis aus; jede andere Form von offers oder price bleibt ein Befund.
 const ANGEBOT_TEXT = store.oeffentlich ? `"offers":${JSON.stringify(ANGEBOT)}` : null;
+// AP-WT1 (Freigabe PL 24.11.2026): „gratis laden“ als letzter Satz der Meta-Beschreibung der Startseite (auch og:description
+// und die description in WebSite). Ausgenommen ist genau diese Wendung je Sprache und nur am Ende eines Attributs oder
+// JSON-Strings (direkt vor dem schließenden Anführungszeichen) oder am Zeilenende (Liste der Seiten in llms.txt); jede
+// andere Gratis-Aussage bleibt ein Befund.
+const GRATIS_LADEN = ['Gratis laden.', 'Ücretsiz indir.', 'Free to download.', 'Descarga la app gratis.', 'Preuzmi besplatno.',
+  'Descarcă gratuit.', 'Baixe grátis.', 'Téléchargement gratuit.', 'Unduh gratis.', 'मुफ़्त डाउनलोड करें।'];
+const ohneGratisLaden = (text) => GRATIS_LADEN.reduce((rest, wendung) => rest.replaceAll(`${wendung}"`, '"').replaceAll(`${wendung}\n`, '\n'), text);
 import { GESPERRT } from '../src/daten/karten.mjs';
 import { begriffe } from '../src/daten/sprachen.mjs';
 import { OG_LOCALE, STANDARD_SPRACHE } from '../src/daten/adressen.mjs';
@@ -294,7 +301,7 @@ export function pruefeBau(ordner, { still = false } = {}) {
     if (!/\.(html|txt|xml)$/.test(datei)) continue;
     const ohne = datei.endsWith('.html') ? ohneRechtstext(inhalt) : inhalt;
     // E-Mail-Adresse als HTML-Entitäten zählt nicht als Text.
-    const ohneAngebot = ANGEBOT_TEXT ? ohne.replaceAll(ANGEBOT_TEXT, '') : ohne;
+    const ohneAngebot = ohneGratisLaden(ANGEBOT_TEXT ? ohne.replaceAll(ANGEBOT_TEXT, '') : ohne);
     for (const fund of ohneAngebot.matchAll(MUSTER.preis)) melde(datei, '2 Preis/Gratis', `„${fund[0]}“ in „${umgebung(ohneAngebot, fund.index)}“`);
     for (const fund of ohne.matchAll(MUSTER.kiGross)) melde(datei, '3 KI', `„${fund[0]}“ in „${umgebung(ohne, fund.index)}“`);
     for (const fund of ohne.matchAll(MUSTER.ki)) melde(datei, '3 KI', `„${fund[0]}“ in „${umgebung(ohne, fund.index)}“`);

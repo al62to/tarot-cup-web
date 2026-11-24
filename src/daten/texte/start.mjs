@@ -6,13 +6,13 @@
 
 export const start = {
   de: {
-    metaTitel: 'Kaffeesatz lesen und Tarot legen per App | Tarot Cup',
-    metaBeschreibung: 'Mit der Android-App Tarot Cup liest du Kaffeesatz selbst mit 80 Zeichen und legst Tarot mit 78 Karten, in zwölf Sprachen und ohne Konto.',
-    ogTitel: 'Kaffeesatz lesen. Tarot legen.',
+    metaTitel: 'Tarot: Tageskarte ziehen und Kaffeesatz lesen | Tarot Cup',
+    metaBeschreibung: 'Lege Tarot mit den 78 Karten von Pamela Colman Smith aus dem Jahr 1909: Tageskarte, Ja oder Nein, Liebe. Und lies den Kaffeesatz selbst. Gratis laden.',
+    ogTitel: 'Tarot legen. Kaffeesatz lesen.',
     kopf: {
       zeile: 'Tarot Cup · App für Android',
-      zeilen: ['Kaffeesatz *selbst* lesen.', 'Tarot *in Ruhe* legen.'],
-      text: 'Wähle die Zeichen aus deiner Tasse, zeig auf der Tassenkarte, wo sie liegen, und lies, was sie bedeuten können. Oder lege Tarotkarten in Ruhe. Die App braucht kein Konto, und fast alles geht auch ohne Internet.',
+      zeilen: ['Tarot *in Ruhe* legen.', 'Kaffeesatz *selbst* lesen.'],
+      text: 'Zieh deine Tageskarte, frag nach Ja oder Nein oder leg die Karten zur Liebe, alles mit den 78 Karten, die Pamela Colman Smith 1909 gezeichnet hat. Oder lies den Kaffeesatz selbst: Wähle die Zeichen aus deiner Tasse, zeig auf der Tassenkarte, wo sie liegen, und lies, was sie bedeuten können. Die App braucht kein Konto, und fast alles geht auch ohne Internet.',
       knopf: 'Bei Google Play ansehen',
       bald: 'Bald bei Google Play',
       // Zweitknopf zur Anleitung (Ziel: Seite „sogehts“ in src/daten/seiten.mjs).
@@ -136,13 +136,13 @@ export const start = {
   },
 
   tr: {
-    metaTitel: 'Kahve falı ve tarot uygulaması | Tarot Cup',
-    metaBeschreibung: 'Tarot Cup Android uygulamasıyla kahve falını 80 işaretle kendin yorumlar, 78 kartla tarot açarsın; on iki dilde ve üyelik olmadan.',
-    ogTitel: 'Kahve falı ve tarot, kendi elinle',
+    metaTitel: 'Tarot falı, Günün Kartı ve kahve falı | Tarot Cup',
+    metaBeschreibung: 'Tarot falını Pamela Colman Smith’in 1909’da çizdiği 78 kartla aç: Günün Kartı, “Evet mi, Hayır mı”, Aşk. Kahve falına da kendin bak. Ücretsiz indir.',
+    ogTitel: 'Tarot ve kahve falı, kendi elinle',
     kopf: {
       zeile: 'Tarot Cup · Android uygulaması',
-      zeilen: ['Fincanını *kendin* yorumla.', 'Tarot kartlarını *acele etmeden* aç.'],
-      text: 'Fincanında gördüğün işaretleri seç, fincan haritasında nerede durduklarını göster ve neler anlatabileceklerini oku. Dilersen tarot kartlarını sakin sakin aç. Uygulama üyelik istemez; neredeyse her şey internet olmadan da çalışır.',
+      zeilen: ['Tarot kartlarını *acele etmeden* aç.', 'Fincanını *kendin* yorumla.'],
+      text: 'Günün kartını çek, evet mi hayır mı diye sor ya da aşk için kart aç; hepsi Pamela Colman Smith’in 1909’da çizdiği 78 kartla. Dilersen kahve falına da kendin bak: Fincanında gördüğün işaretleri seç, fincan haritasında nerede durduklarını göster ve neler anlatabileceklerini oku. Uygulama üyelik istemez; neredeyse her şey internet olmadan da çalışır.',
       knopf: 'Google Play’de incele',
       bald: 'Yakında Google Play’de',
       anleitung: 'Nasıl kullanılır?',
