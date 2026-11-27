@@ -367,9 +367,9 @@
     {
       "id": "alter",
       "thema": "Mindestalter",
-      "beleg": "DS 1.8 Abschnitt 4 (Bestätigung, mindestens 16 Jahre alt) und 18",
+      "beleg": "DS 1.10 Abschnitt 4 (Bestätigung, mindestens 18 Jahre alt) und 18 (Altersgrenze 18 seit AP-AS2, Ali über die PL 27.11.2026)",
       "soll": [
-        16
+        18
       ],
       "anker": {
         "de": "(?:ab|mindestens|unter)\\s+\\d+\\s+Jahr\\p{L}*|\\d+\\s+Jahre\\s+alt",
