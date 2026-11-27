@@ -83,6 +83,8 @@ export const ADRESSEN = {
   deutungKann: { de: '/was-eine-deutung-kann/', tr: '/tr/yorum-neyi-yapabilir/', en: '/en/what-a-reading-can-do/', es: '/es/lo-que-puede-una-lectura/', pt: '/pt/o-que-uma-leitura-pode-fazer/' },
   // Nur Deutsch; die anderen Sprachen verlinken darauf mit übersetzter Beschriftung.
   offenlegung: { de: '/offenlegung/' },
+  // Nur Portugiesisch (AP-AS2): Kurzfassung der Folgenabschätzung mit Meldekanal (ECA Digital), src/daten/avaliacao.mjs.
+  avaliacao: { pt: '/pt/avaliacao-de-impacto/' },
   // Kurzlink und 404: je eine Seite für alle Sprachen (Teile je Sprache mit lang).
   app: { de: '/app/' },
   404: { de: '/404.html' },

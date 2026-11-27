@@ -13,6 +13,7 @@ import { sogehts } from './texte/sogehts.mjs';
 import { fragen } from './texte/fragen.mjs';
 import { ueber } from './texte/ueber.mjs';
 import { ERKLAERSEITEN, erklaerTexte, erklaerSprachen, erklaerDatei, uebersichtSprachen, hatUebersicht } from './erklaer.mjs';
+import { AVALIACAO } from './avaliacao.mjs';
 import { rechtsseiten, seitentitel, beschreibung as rechtBeschreibung, sprachfassungen, textVon } from './recht.mjs';
 
 // Inhaltsseiten in allen Sprachen. "texte": Modul mit metaTitel, metaBeschreibung, brotkrume je Sprache.
@@ -149,6 +150,17 @@ liste.push(eintrag({
   bild: '/bilder/teilen/start-de.jpg', bildAlt: 'Tarot Cup',
   krumen: [krume('de'), { titel: 'Offenlegung', ziel: '/offenlegung/' }],
   prioritaet: 0.1, quellen: ['src/pages/offenlegung/index.astro'], teilen: false, rechtlich: true, index: false,
+}));
+
+// Avaliação de impacto (AP-AS2): nur auf Portugiesisch, ohne Fassungen in anderen Sprachen ("einsprachig", Regel 6 in
+// tools/pruefe_bau.mjs), rechtlich wie die Offenlegung und daher ohne Index.
+liste.push(eintrag({
+  schluessel: 'avaliacao', pfad: AVALIACAO.pfad, sprache: 'pt', einsprachig: true,
+  titel: AVALIACAO.metaTitel, beschreibung: AVALIACAO.metaBeschreibung,
+  bild: '/bilder/teilen/start-pt.jpg', bildAlt: 'Tarot Cup',
+  krumen: [krume('pt'), { titel: AVALIACAO.brotkrume, ziel: AVALIACAO.pfad }],
+  prioritaet: 0.1, quellen: ['src/inhalte/avaliacao/avaliacao_de_impacto_pt.html', 'src/daten/avaliacao.mjs', 'src/pages/pt/avaliacao-de-impacto/index.astro'],
+  teilen: false, rechtlich: true, index: false,
 }));
 
 // Rechtsseiten aus dem Verzeichnis: nur die gültige Fassung (AP-40D).

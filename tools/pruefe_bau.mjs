@@ -7,7 +7,7 @@
 //  4. Laden von einer fremden Domain (Links sind erlaubt).
 //  5. Eine Adresse aus der Liste vor dem Umbau fehlt (tools/adressen_vor_apw1.txt).
 //  6. Seite ohne title, description, genau eine canonical, lang, og:locale oder ohne alle Sprachfassungen in hreflang
-//     (ausgenommen Seiten nur auf Deutsch); hreflang im Bau gegenseitig und vollständig, x-default auf Englisch (sonst
+//     (ausgenommen Seiten nur auf Deutsch und Seiten mit "einsprachig" wie /pt/avaliacao-de-impacto/); hreflang im Bau gegenseitig und vollständig, x-default auf Englisch (sonst
 //     Deutsch); jede Seite im Bau steht in src/daten/seiten.mjs und umgekehrt; Robots passt zum Schalter E8.
 //  8. Interne Links (AP-SPR2): jedes Ziel liegt im Bau, jede Sprungmarke gibt es auf der Zielseite; ein Link ohne
 //     hreflang führt nicht in eine andere Sprache, wenn es die Zielseite auch in der Sprache der Seite gibt (Seiten nur
@@ -405,8 +405,8 @@ export function pruefeBau(ordner, { still = false } = {}) {
         if (!(sprache in soll)) melde(datei, '6 hreflang zu viel', sprache);
         if (sprache !== 'x-default' && !/^[a-z]{2}$/.test(sprache)) melde(datei, '6 hreflang nicht nur Sprachcode', sprache);
       }
-    } else if (eintrag.sprache !== 'de') {
-      melde(datei, '6 Seite ohne Sprachfassungen', `nur deutsche Seiten dürfen ohne andere Fassung sein (${eintrag.pfad})`);
+    } else if (eintrag.sprache !== 'de' && !eintrag.einsprachig) {
+      melde(datei, '6 Seite ohne Sprachfassungen', `nur deutsche Seiten und Seiten mit "einsprachig" dürfen ohne andere Fassung sein (${eintrag.pfad})`);
     } else if (Object.keys(alternativen).length) {
       melde(datei, '6 hreflang ohne Sprachfassungen', eintrag.pfad);
     }

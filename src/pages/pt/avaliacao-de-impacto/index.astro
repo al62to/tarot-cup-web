@@ -1,0 +1,12 @@
+---
+// Avaliação de impacto (Kurzfassung der Folgenabschätzung mit Meldekanal), nur auf Portugiesisch. Text und Werte:
+// src/daten/avaliacao.mjs. Gerüst wie /offenlegung/; der Wortlaut steht in einem Element mit data-rechtstext.
+import '../../../styles/dokument.css';
+import Basis from '../../../layouts/Basis.astro';
+import { avaliacaoHtml } from '../../../daten/avaliacao.mjs';
+---
+<Basis klasse="seite-recht">
+  <div class="innen recht">
+    <div class="rechtstext" data-rechtstext set:html={avaliacaoHtml()} />
+  </div>
+</Basis>

@@ -1,5 +1,6 @@
 ---
-// Fuß nach Entwurf 9.1 auf Espresso. Oben links der Hinweis „Zur Unterhaltung …“ (auf jeder Seite einmal) und auf
+// Fuß nach Entwurf 9.1 auf Espresso. Auf pt-Seiten unter Rechtliches zusätzlich „Avaliação de impacto e denúncias“ (AP-AS2).
+// Oben links der Hinweis „Zur Unterhaltung …“ (auf jeder Seite einmal) und auf
 // Inhaltsseiten der Teilen-Knopf (Teilen.astro, "teilen" kommt aus Basis.astro). Rechts die Spalten App (Wissen seit
 // AP-25E nur mit Übersicht, So geht's, Fragen, Über), Rechtliches (Datenschutz, Nutzungsbedingungen, Offenlegung, Bildnachweis und Lizenzen) und Kontakt
 // (E-Mail, kodiert). Unter Rechtliches zuletzt „Cookie-Einstellungen“ (W7). Unter den Spalten seit AP-40B eine eigene Zeile
@@ -19,6 +20,7 @@ import { mailtoKodiert, emailKodiert } from '../daten/seite.mjs';
 import { ADRESSEN, SPRACHEN, SPRACHNAMEN } from '../daten/adressen.mjs';
 import { EINWILLIGUNG } from '../daten/einwilligung.mjs';
 import { uebersichtLink } from '../daten/wissen.mjs';
+import { AVALIACAO } from '../daten/avaliacao.mjs';
 
 const { angaben, teilen = null } = Astro.props;
 const { sprache, pfad, fassungen } = angaben;
@@ -47,6 +49,8 @@ const recht = [
   { text: T.fuss.nutzungsbedingungen, ziel: bedingungen },
   { text: T.fuss.offenlegung, ziel: '/offenlegung/', lang: offenlegungDe ? 'de' : undefined, hreflang: sprache === 'de' ? undefined : 'de' },
   { text: T.fuss.bildnachweis, ziel: pfadVon('bildnachweis', sprache) },
+  // Nur auf pt-Seiten (AP-AS2): Folgenabschätzung und Meldekanal nach dem ECA Digital (src/daten/avaliacao.mjs).
+  ...(sprache === 'pt' ? [{ text: AVALIACAO.fusslink, ziel: AVALIACAO.pfad }] : []),
 ];
 // „Cookie-Einstellungen“ (W7, Datenschutzerklärung 1.4, Abschnitt 11): öffnet mit JavaScript die Einstellungen von
 // CookieConsent (data-cc, components/Einwilligung.astro); ohne JavaScript führt der Link zur Datenschutzerklärung.
