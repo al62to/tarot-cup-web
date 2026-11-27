@@ -33,7 +33,7 @@ const FAELLE = [
   { nr: 6, name: 'lang falsch', erwartet: '[6 lang]', tun: (o) => ersetze(o, 'tr/hakkinda/index.html', '<html lang="tr"', '<html lang="de"') },
   { nr: 6, name: 'hreflang nicht gegenseitig', erwartet: '[6 hreflang nicht gegenseitig]', tun: (o) => ersetze(o, 'es/tarot/index.html', '<link rel="alternate" hreflang="en" href="https://tarot-cup.com/en/tarot/">', '<link rel="alternate" hreflang="en" href="https://tarot-cup.com/en/tarot/"><link rel="alternate" hreflang="fr" href="https://tarot-cup.com/en/tarot/">') },
   { nr: 6, name: 'canonical doppelt', erwartet: '[6 canonical nicht genau einmal]', tun: (o) => ersetze(o, 'en/faq/index.html', '</head>', '<link rel="canonical" href="https://tarot-cup.com/en/faq/"></head>') },
-  { nr: 6, name: 'og:locale falsch', erwartet: '[6 og:locale]', tun: (o) => ersetze(o, 'es/index.html', '<meta property="og:locale" content="es_ES">', '<meta property="og:locale" content="en_US">') },
+  { nr: 6, name: 'og:locale falsch', erwartet: '[6 og:locale]', tun: (o) => ersetze(o, 'es/index.html', '<meta property="og:locale" content="es_MX">', '<meta property="og:locale" content="en_US">') },
   { nr: 6, name: 'title fehlt', erwartet: '[6 title fehlt]', tun: (o) => { const p = join(o, 'fragen/index.html'); writeFileSync(p, readFileSync(p, 'utf8').replace(/<title>[^<]*<\/title>/, '')); } },
   { nr: 7, name: 'Kartenbild Der Stern', erwartet: '[7 gesperrtes Kartenbild]', tun: (o) => ersetze(o, 'tarot/index.html', '</main>', '<img src="/bilder/karten/ta_17_stern-240.webp" alt="Der Stern"></main>') },
   { nr: 'Zusatz', name: 'localStorage im Skript', erwartet: '[Speicher/Cookie im Skript]', tun: (o) => ersetze(o, 'index.html', '</body>', '<script>localStorage.setItem("x","1")</script></body>') },

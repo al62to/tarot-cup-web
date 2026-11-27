@@ -20,9 +20,10 @@ export const SPRACHKUERZEL = {
   de: 'DE', tr: 'TR', en: 'EN', es: 'ES', bs: 'BS', hr: 'HR', sr: 'SR', ro: 'RO', pt: 'PT', fr: 'FR', id: 'ID', hi: 'HI',
 };
 
-// Open Graph: og:locale je Sprache (Deutsch zusätzlich de_AT wie bisher).
+// Open Graph: og:locale je Sprache (Deutsch zusätzlich de_AT wie bisher). Spanisch seit AP-WS1 es_MX (Text neutral für
+// Lateinamerika, Mexiko erster Markt; Entscheidung PL/Ali 27.11.2026).
 export const OG_LOCALE = {
-  de: 'de_DE', tr: 'tr_TR', en: 'en_US', es: 'es_ES', bs: 'bs_BA', hr: 'hr_HR', sr: 'sr_RS', ro: 'ro_RO',
+  de: 'de_DE', tr: 'tr_TR', en: 'en_US', es: 'es_MX', bs: 'bs_BA', hr: 'hr_HR', sr: 'sr_RS', ro: 'ro_RO',
   pt: 'pt_BR', fr: 'fr_FR', id: 'id_ID', hi: 'hi_IN',
 };
 export const OG_LOCALE_ZUSATZ = { de: ['de_AT'] };

@@ -58,7 +58,7 @@ export const erklaerTarot = {
           kennung: 'die-karten-von-1909',
           titel: 'Was geschah 1909?',
           absaetze: [
-            'Aus diesem Kreis stammt auch das Deck, das bis heute das Bild vom Tarot prägt. Ein früheres Mitglied des Golden Dawn gab es 1909 in Auftrag und schrieb ein Begleitbuch dazu; gezeichnet hat die 78 Karten die Künstlerin [Pamela Colman Smith](/tarot/pamela-colman-smith/), die er im Orden kennengelernt hatte. Erschienen ist das Deck 1909 beim Verlag Rider in London, manche Angaben nennen für den ersten Druck auch 1910. Im selben Jahr erschien in Paris Papus’ Buch „Le Tarot divinatoire“ mit 78 neu gezeichneten Karten von Jean-Gabriel Goulinat.',
+            'Aus diesem Kreis stammt auch das Deck, das bis heute das Bild vom Tarot prägt. Ein Mitglied des Golden Dawn, das dort einen eigenen Zweig leitete, gab es 1909 in Auftrag und schrieb ein Begleitbuch dazu; gezeichnet hat die 78 Karten die Künstlerin [Pamela Colman Smith](/tarot/pamela-colman-smith/), die er im Orden kennengelernt hatte. Erschienen ist das Deck 1909 beim Verlag Rider in London, manche Angaben nennen für den ersten Druck auch 1910. Im selben Jahr erschien in Paris Papus’ Buch „Le Tarot divinatoire“ mit 78 neu gezeichneten Karten von Jean-Gabriel Goulinat.',
             'Besonders war, dass auch die Zahlenkarten der [vier Farben](/tarot/vier-farben/) kleine Szenen zeigen, statt nur Stäbe, Kelche, Schwerter oder Münzen aneinanderzureihen. Das machte die Bilder leichter zugänglich, und viele spätere Decks haben ihre Motive aufgegriffen.',
             'Wie man mit diesen Karten heute legt, erklärt [Tarot legen](/tarot/#ritual-schritt-fuer-schritt).',
           ],
@@ -99,7 +99,7 @@ export const erklaerTarot = {
         { angabe: 'International Playing-Card Society: Pattern Sheet 2, Tarot de Marseille, Stand 09.09.2010.', url: 'https://i-p-c-s.org/pattern/ps-2.html' },
         { angabe: 'John McLeod: Tarot Games. Pagat.com.', url: 'https://www.pagat.com/tarot/' },
         { angabe: 'Museum of Freemasonry: The Hermetic Order of the Golden Dawn, its members and related bodies (Bestand GBR 1991 GD). AIM25.', url: 'https://atom.aim25.com/index.php/the-hermetic-order-of-the-golden-dawn-its-members-and-related-bodies-2' },
-        { angabe: 'Rebecca Billingham, Ruth Hibbard, Josephine Nardecchia: Tarot cards. Victoria and Albert Museum, London, aktualisiert 2026.', url: 'https://www.vam.ac.uk/articles/tarot-cards' },
+        { angabe: 'Rebecca Billingham, Ruth Hibbard, Josephine Nardecchia: A history of tarot cards. Victoria and Albert Museum, London, aktualisiert 2026.', url: 'https://www.vam.ac.uk/articles/tarot-cards' },
         { angabe: 'Victoria and Albert Museum: Tarotkarte „The Chariot“, Sammlungsobjekt O1028236.', url: 'https://collections.vam.ac.uk/item/O1028236' },
       ],
     },
@@ -207,7 +207,7 @@ export const erklaerTarot = {
           "url": "https://www.universalis.fr/encyclopedie/tarot/3-le-tarot-divinatoire-et-occultiste/"
         },
         {
-          "angabe": "Rebecca Billingham, Ruth Hibbard, Josephine Nardecchia: Tarot cards. Victoria and Albert Museum, London, aktualisiert 16.07.2026.",
+          "angabe": "Rebecca Billingham, Ruth Hibbard, Josephine Nardecchia: A history of tarot cards. Victoria and Albert Museum, London, aktualisiert 16.07.2026.",
           "url": "https://www.vam.ac.uk/articles/tarot-cards"
         },
         {
@@ -369,7 +369,7 @@ export const erklaerTarot = {
           "url": "https://i-p-c-s.org/pattern/PS001.pdf"
         },
         {
-          "angabe": "Rebecca Billingham, Ruth Hibbard, Josephine Nardecchia: Tarot cards. Victoria and Albert Museum, London, aktualisiert 16.07.2026.",
+          "angabe": "Rebecca Billingham, Ruth Hibbard, Josephine Nardecchia: A history of tarot cards. Victoria and Albert Museum, London, aktualisiert 16.07.2026.",
           "url": "https://www.vam.ac.uk/articles/tarot-cards"
         },
         {
@@ -724,7 +724,7 @@ export const erklaerTarot = {
           kennung: 'kartlar-1909',
           titel: '1909’da ne oldu?',
           absaetze: [
-            'Tarot denince bugün hâlâ gözümüzün önüne gelen deste de bu çevreden çıktı. Desteyi 1909’da Golden Dawn’ın eski üyelerinden biri ısmarladı ve desteye eşlik eden bir kitap da yazdı; 78 kartı ise onun cemiyette tanıdığı sanatçı [Pamela Colman Smith](/tr/tarot/pamela-colman-smith/) çizdi. Deste 1909’da Londra’da Rider yayınevinden çıktı; bazı kaynaklar ilk baskı için 1910 yılını da verir. Aynı yıl Paris’te Papus’ün “Le Tarot divinatoire” adlı kitabı, Jean-Gabriel Goulinat’nın yeni çizdiği 78 kartla birlikte yayımlandı.',
+            'Tarot denince bugün hâlâ gözümüzün önüne gelen deste de bu çevreden çıktı. Desteyi 1909’da Golden Dawn’da kendi kolunu yöneten bir üye ısmarladı ve desteye eşlik eden bir kitap da yazdı; 78 kartı ise onun cemiyette tanıdığı sanatçı [Pamela Colman Smith](/tr/tarot/pamela-colman-smith/) çizdi. Deste 1909’da Londra’da Rider yayınevinden çıktı; bazı kaynaklar ilk baskı için 1910 yılını da verir. Aynı yıl Paris’te Papus’ün “Le Tarot divinatoire” adlı kitabı, Jean-Gabriel Goulinat’nın yeni çizdiği 78 kartla birlikte yayımlandı.',
             'Bu destenin farkı, [dört takımın](/tr/tarot/dort-takim/) sayı kartlarında da yalnızca sıra sıra dizilmiş değnekler, kadehler, kılıçlar ya da pentagramlar değil, küçük sahneler görülmesiydi. Bu, resimleri daha kolay anlaşılır kıldı; sonraki pek çok deste de bu motifleri benimsedi.',
             'Bu kartlarla bugün nasıl açılım yapıldığını [Adım adım tarot açmak](/tr/tarot/#adim-adim-rituel) bölümünde bulabilirsin.',
           ],
@@ -765,7 +765,7 @@ export const erklaerTarot = {
         { angabe: 'International Playing-Card Society: Pattern Sheet 2, Tarot de Marseille, son güncelleme 09.09.2010 (İngilizce).', url: 'https://i-p-c-s.org/pattern/ps-2.html' },
         { angabe: 'McLeod, John: Tarot Games. Pagat.com (İngilizce).', url: 'https://www.pagat.com/tarot/' },
         { angabe: 'Museum of Freemasonry: The Hermetic Order of the Golden Dawn, its members and related bodies (arşiv fonu GBR 1991 GD). AIM25 (İngilizce).', url: 'https://atom.aim25.com/index.php/the-hermetic-order-of-the-golden-dawn-its-members-and-related-bodies-2' },
-        { angabe: 'Billingham, Rebecca; Hibbard, Ruth; Nardecchia, Josephine: Tarot cards. Victoria and Albert Museum, Londra, güncelleme 2026 (İngilizce).', url: 'https://www.vam.ac.uk/articles/tarot-cards' },
+        { angabe: 'Billingham, Rebecca; Hibbard, Ruth; Nardecchia, Josephine: A history of tarot cards. Victoria and Albert Museum, Londra, güncelleme 2026 (İngilizce).', url: 'https://www.vam.ac.uk/articles/tarot-cards' },
         { angabe: 'Victoria and Albert Museum: “The Chariot” tarot kartı, koleksiyon eseri O1028236 (İngilizce).', url: 'https://collections.vam.ac.uk/item/O1028236' },
       ],
     },
@@ -873,7 +873,7 @@ export const erklaerTarot = {
           "url": "https://www.universalis.fr/encyclopedie/tarot/3-le-tarot-divinatoire-et-occultiste/"
         },
         {
-          "angabe": "Billingham, Rebecca; Hibbard, Ruth; Nardecchia, Josephine: Tarot cards. Victoria and Albert Museum, Londra, güncelleme 16.07.2026 (İngilizce).",
+          "angabe": "Billingham, Rebecca; Hibbard, Ruth; Nardecchia, Josephine: A history of tarot cards. Victoria and Albert Museum, Londra, güncelleme 16.07.2026 (İngilizce).",
           "url": "https://www.vam.ac.uk/articles/tarot-cards"
         },
         {
@@ -1035,7 +1035,7 @@ export const erklaerTarot = {
           "url": "https://i-p-c-s.org/pattern/PS001.pdf"
         },
         {
-          "angabe": "Billingham, Rebecca; Hibbard, Ruth; Nardecchia, Josephine: Tarot cards. Victoria and Albert Museum, Londra, güncelleme 16.07.2026 (İngilizce).",
+          "angabe": "Billingham, Rebecca; Hibbard, Ruth; Nardecchia, Josephine: A history of tarot cards. Victoria and Albert Museum, Londra, güncelleme 16.07.2026 (İngilizce).",
           "url": "https://www.vam.ac.uk/articles/tarot-cards"
         },
         {

@@ -90,7 +90,7 @@ export const erklaerAllgemein = {
       },
       quellenTitel: 'Quellen',
       quellen: [
-        { angabe: 'Tarot Cup: Datenschutzerklärung, Version 1.7, Stand 17.11.2026, besonders Abschnitte 1, 3, 4, 6, 10, 15 und 17. tarot-cup.com, 2026.', url: 'https://tarot-cup.com/datenschutz/' },
+        { angabe: 'Tarot Cup: Datenschutzerklärung, Version 1.9, Stand 21.11.2026, besonders Abschnitte 1, 3, 4, 6, 10, 15 und 17. tarot-cup.com, 2026.', url: 'https://tarot-cup.com/datenschutz/' },
         { angabe: 'Tarot Cup: Nutzungsbedingungen, Version 1.3, Stand 17.11.2026, besonders Abschnitte 3, 5, 6, 11 und 14. tarot-cup.com, 2026.', url: 'https://tarot-cup.com/nutzungsbedingungen/' },
       ],
     },
@@ -182,7 +182,7 @@ export const erklaerAllgemein = {
       },
       quellenTitel: 'Kaynaklar',
       quellen: [
-        { angabe: 'Tarot Cup: Gizlilik Politikası, Sürüm 1.7, Tarih: 17.11.2026, özellikle 1, 3, 4, 6, 10, 15 ve 17. bölümler. tarot-cup.com, 2026.', url: 'https://tarot-cup.com/tr/gizlilik/' },
+        { angabe: 'Tarot Cup: Gizlilik Politikası, Sürüm 1.9, Tarih: 21.11.2026, özellikle 1, 3, 4, 6, 10, 15 ve 17. bölümler. tarot-cup.com, 2026.', url: 'https://tarot-cup.com/tr/gizlilik/' },
         { angabe: 'Tarot Cup: Kullanım Koşulları, Sürüm 1.3, Tarih: 17.11.2026, özellikle 3, 5, 6, 11 ve 14. bölümler. tarot-cup.com, 2026.', url: 'https://tarot-cup.com/tr/kullanim-kosullari/' },
       ],
     },
