@@ -78,10 +78,10 @@
    "archiv": true,
    "fassungen": [
     {
-     "nummer": "1.9",
-     "datum": "21.11.2026",
-     "datei": "datenschutz_1.9.html",
-     "quelle": "Datenschutzerklaerung_1.9.md"
+     "nummer": "1.10",
+     "datum": "28.11.2026",
+     "datei": "datenschutz_1.10.html",
+     "quelle": "Datenschutzerklaerung_1.10.md"
     }
    ]
   },
@@ -94,10 +94,10 @@
    "archiv": true,
    "fassungen": [
     {
-     "nummer": "1.3",
-     "datum": "17.11.2026",
-     "datei": "nutzungsbedingungen_1.3.html",
-     "quelle": "Nutzungsbedingungen_1.3.md"
+     "nummer": "1.4",
+     "datum": "28.11.2026",
+     "datei": "nutzungsbedingungen_1.4.html",
+     "quelle": "Nutzungsbedingungen_1.4.md"
     }
    ]
   },
@@ -110,10 +110,10 @@
    "archiv": true,
    "fassungen": [
     {
-     "nummer": "1.9",
-     "datum": "21.11.2026",
-     "datei": "tr_gizlilik_1.9.html",
-     "quelle": "1.9_uebersetzung/datenschutz_tr.md"
+     "nummer": "1.10",
+     "datum": "28.11.2026",
+     "datei": "tr_gizlilik_1.10.html",
+     "quelle": "1.10_uebersetzung/datenschutz_tr.md"
     }
    ]
   },
@@ -126,10 +126,10 @@
    "archiv": true,
    "fassungen": [
     {
-     "nummer": "1.3",
-     "datum": "17.11.2026",
-     "datei": "tr_kullanim-kosullari_1.3.html",
-     "quelle": "1.7_uebersetzung/nutzungsbedingungen_tr.md"
+     "nummer": "1.4",
+     "datum": "28.11.2026",
+     "datei": "tr_kullanim-kosullari_1.4.html",
+     "quelle": "1.4_nb_uebersetzung/nutzungsbedingungen_tr.md"
     }
    ]
   },
@@ -142,10 +142,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.9",
-     "datum": "21.11.2026",
-     "datei": "en_privacy_1.9.html",
-     "quelle": "1.9_uebersetzung/datenschutz_en.md"
+     "nummer": "1.10",
+     "datum": "28.11.2026",
+     "datei": "en_privacy_1.10.html",
+     "quelle": "1.10_uebersetzung/datenschutz_en.md"
     }
    ]
   },
@@ -158,10 +158,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.3",
-     "datum": "17.11.2026",
-     "datei": "en_terms_1.3.html",
-     "quelle": "1.7_uebersetzung/nutzungsbedingungen_en.md"
+     "nummer": "1.4",
+     "datum": "28.11.2026",
+     "datei": "en_terms_1.4.html",
+     "quelle": "1.4_nb_uebersetzung/nutzungsbedingungen_en.md"
     }
    ]
   },
@@ -174,10 +174,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.9",
-     "datum": "21.11.2026",
-     "datei": "es_privacidad_1.9.html",
-     "quelle": "1.9_uebersetzung/datenschutz_es.md"
+     "nummer": "1.10",
+     "datum": "28.11.2026",
+     "datei": "es_privacidad_1.10.html",
+     "quelle": "1.10_uebersetzung/datenschutz_es.md"
     }
    ]
   },
@@ -190,10 +190,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.3",
-     "datum": "17.11.2026",
-     "datei": "es_condiciones-de-uso_1.3.html",
-     "quelle": "1.7_uebersetzung/nutzungsbedingungen_es.md"
+     "nummer": "1.4",
+     "datum": "28.11.2026",
+     "datei": "es_condiciones-de-uso_1.4.html",
+     "quelle": "1.4_nb_uebersetzung/nutzungsbedingungen_es.md"
     }
    ]
   },
@@ -206,10 +206,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.9",
-     "datum": "21.11.2026",
-     "datei": "bs_privatnost_1.9.html",
-     "quelle": "1.9_uebersetzung/datenschutz_bs.md"
+     "nummer": "1.10",
+     "datum": "28.11.2026",
+     "datei": "bs_privatnost_1.10.html",
+     "quelle": "1.10_uebersetzung/datenschutz_bs.md"
     }
    ]
   },
@@ -222,10 +222,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.3",
-     "datum": "17.11.2026",
-     "datei": "bs_uslovi-koristenja_1.3.html",
-     "quelle": "1.7_uebersetzung/nutzungsbedingungen_bs.md"
+     "nummer": "1.4",
+     "datum": "28.11.2026",
+     "datei": "bs_uslovi-koristenja_1.4.html",
+     "quelle": "1.4_nb_uebersetzung/nutzungsbedingungen_bs.md"
     }
    ]
   },
@@ -238,10 +238,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.9",
-     "datum": "21.11.2026",
-     "datei": "hr_privatnost_1.9.html",
-     "quelle": "1.9_uebersetzung/datenschutz_hr.md"
+     "nummer": "1.10",
+     "datum": "28.11.2026",
+     "datei": "hr_privatnost_1.10.html",
+     "quelle": "1.10_uebersetzung/datenschutz_hr.md"
     }
    ]
   },
@@ -254,10 +254,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.3",
-     "datum": "17.11.2026",
-     "datei": "hr_uvjeti-koristenja_1.3.html",
-     "quelle": "1.7_uebersetzung/nutzungsbedingungen_hr.md"
+     "nummer": "1.4",
+     "datum": "28.11.2026",
+     "datei": "hr_uvjeti-koristenja_1.4.html",
+     "quelle": "1.4_nb_uebersetzung/nutzungsbedingungen_hr.md"
     }
    ]
   },
@@ -270,10 +270,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.9",
-     "datum": "21.11.2026",
-     "datei": "sr_privatnost_1.9.html",
-     "quelle": "1.9_uebersetzung/datenschutz_sr.md"
+     "nummer": "1.10",
+     "datum": "28.11.2026",
+     "datei": "sr_privatnost_1.10.html",
+     "quelle": "1.10_uebersetzung/datenschutz_sr.md"
     }
    ]
   },
@@ -286,10 +286,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.3",
-     "datum": "17.11.2026",
-     "datei": "sr_uslovi-koriscenja_1.3.html",
-     "quelle": "1.7_uebersetzung/nutzungsbedingungen_sr.md"
+     "nummer": "1.4",
+     "datum": "28.11.2026",
+     "datei": "sr_uslovi-koriscenja_1.4.html",
+     "quelle": "1.4_nb_uebersetzung/nutzungsbedingungen_sr.md"
     }
    ]
   },
@@ -302,10 +302,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.9",
-     "datum": "21.11.2026",
-     "datei": "ro_confidentialitate_1.9.html",
-     "quelle": "1.9_uebersetzung/datenschutz_ro.md"
+     "nummer": "1.10",
+     "datum": "28.11.2026",
+     "datei": "ro_confidentialitate_1.10.html",
+     "quelle": "1.10_uebersetzung/datenschutz_ro.md"
     }
    ]
   },
@@ -318,10 +318,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.3",
-     "datum": "17.11.2026",
-     "datei": "ro_termeni-de-utilizare_1.3.html",
-     "quelle": "1.7_uebersetzung/nutzungsbedingungen_ro.md"
+     "nummer": "1.4",
+     "datum": "28.11.2026",
+     "datei": "ro_termeni-de-utilizare_1.4.html",
+     "quelle": "1.4_nb_uebersetzung/nutzungsbedingungen_ro.md"
     }
    ]
   },
@@ -334,10 +334,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.9",
-     "datum": "21.11.2026",
-     "datei": "pt_privacidade_1.9.html",
-     "quelle": "1.9_uebersetzung/datenschutz_pt.md"
+     "nummer": "1.10",
+     "datum": "28.11.2026",
+     "datei": "pt_privacidade_1.10.html",
+     "quelle": "1.10_uebersetzung/datenschutz_pt.md"
     }
    ]
   },
@@ -350,10 +350,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.3",
-     "datum": "17.11.2026",
-     "datei": "pt_termos-de-uso_1.3.html",
-     "quelle": "1.7_uebersetzung/nutzungsbedingungen_pt.md"
+     "nummer": "1.4",
+     "datum": "28.11.2026",
+     "datei": "pt_termos-de-uso_1.4.html",
+     "quelle": "1.4_nb_uebersetzung/nutzungsbedingungen_pt.md"
     }
    ]
   },
@@ -366,10 +366,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.9",
-     "datum": "21.11.2026",
-     "datei": "fr_confidentialite_1.9.html",
-     "quelle": "1.9_uebersetzung/datenschutz_fr.md"
+     "nummer": "1.10",
+     "datum": "28.11.2026",
+     "datei": "fr_confidentialite_1.10.html",
+     "quelle": "1.10_uebersetzung/datenschutz_fr.md"
     }
    ]
   },
@@ -382,10 +382,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.3",
-     "datum": "17.11.2026",
-     "datei": "fr_conditions-d-utilisation_1.3.html",
-     "quelle": "1.7_uebersetzung/nutzungsbedingungen_fr.md"
+     "nummer": "1.4",
+     "datum": "28.11.2026",
+     "datei": "fr_conditions-d-utilisation_1.4.html",
+     "quelle": "1.4_nb_uebersetzung/nutzungsbedingungen_fr.md"
     }
    ]
   },
@@ -398,10 +398,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.9",
-     "datum": "21.11.2026",
-     "datei": "id_privasi_1.9.html",
-     "quelle": "1.9_uebersetzung/datenschutz_id.md"
+     "nummer": "1.10",
+     "datum": "28.11.2026",
+     "datei": "id_privasi_1.10.html",
+     "quelle": "1.10_uebersetzung/datenschutz_id.md"
     }
    ]
   },
@@ -414,10 +414,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.3",
-     "datum": "17.11.2026",
-     "datei": "id_ketentuan-penggunaan_1.3.html",
-     "quelle": "1.7_uebersetzung/nutzungsbedingungen_id.md"
+     "nummer": "1.4",
+     "datum": "28.11.2026",
+     "datei": "id_ketentuan-penggunaan_1.4.html",
+     "quelle": "1.4_nb_uebersetzung/nutzungsbedingungen_id.md"
     }
    ]
   },
@@ -430,10 +430,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.9",
-     "datum": "21.11.2026",
-     "datei": "hi_privacy_1.9.html",
-     "quelle": "1.9_uebersetzung/datenschutz_hi.md"
+     "nummer": "1.10",
+     "datum": "28.11.2026",
+     "datei": "hi_privacy_1.10.html",
+     "quelle": "1.10_uebersetzung/datenschutz_hi.md"
     }
    ]
   },
@@ -446,10 +446,10 @@
    "archiv": false,
    "fassungen": [
     {
-     "nummer": "1.3",
-     "datum": "17.11.2026",
-     "datei": "hi_terms_1.3.html",
-     "quelle": "1.7_uebersetzung/nutzungsbedingungen_hi.md"
+     "nummer": "1.4",
+     "datum": "28.11.2026",
+     "datei": "hi_terms_1.4.html",
+     "quelle": "1.4_nb_uebersetzung/nutzungsbedingungen_hi.md"
     }
    ]
   }

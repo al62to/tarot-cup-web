@@ -1,7 +1,7 @@
 {
   "zweck": "Text-Zwillinge (AP-36): Kernaussagen der Datenschutzerklärung und Wendungen, die ihr auf der Website widersprechen. tarot-cup-web/tools/pruefe_bau.mjs (Regel 12) durchsucht damit den sichtbaren Text aller gebauten Seiten außer den Rechtsseiten; jeder Treffer macht den Bau rot. Ändert sich die Datenschutzerklärung, wird diese Datei im selben AP nachgezogen und nach tarot-cup-web/tools/zwillinge.json kopiert (die Prüfung vergleicht beide, wenn deutung-unterlagen daneben liegt).",
-  "fassung_ds": "1.9",
-  "stand": "21.11.2026 (AP-R1: DS 1.9 als Entwurf; die drei geänderten Stellen berühren keine Kernaussage und keine verbotene Wendung); davor 19.11.2026 (AP-38: DS 1.8, Kernaussage willkommen und Zahlenregel woche_willkommen; Kopie in tarot-cup-web/tools/ und Website-Bau folgen in AP-39); davor 19.11.2026 (AP-36, mit den Befunden des dt-pruefer)",
+  "fassung_ds": "1.10",
+  "stand": "27.11.2026 (AP-AS2: DS 1.10, Alterssignal und Altersgrenze 18; Zahlenregel alter auf 18, Kernaussagen einwilligung_app, senden und internet angepasst, neue Kernaussage alterssignal); davor 21.11.2026 (AP-R1: DS 1.9 als Entwurf; die drei geänderten Stellen berühren keine Kernaussage und keine verbotene Wendung); davor 19.11.2026 (AP-38: DS 1.8, Kernaussage willkommen und Zahlenregel woche_willkommen; Kopie in tarot-cup-web/tools/ und Website-Bau folgen in AP-39); davor 19.11.2026 (AP-36, mit den Befunden des dt-pruefer)",
   "regeln": [
     "verboten: reguläre Ausdrücke (JavaScript, Schalter iu), je Sprache. Die Prüfung setzt sie zwischen Wortgrenzen und prüft jeden Satz einzeln; İ wird vorher zu i, deshalb darf keine tr-Wendung „İ“ enthalten (die Prüfung meldet das selbst).",
     "zahlen: findet eine Zahl in Ziffern direkt vor dem Wort der Sprache (Leerzeichen und · dazwischen erlaubt). Steht die Zahl nicht in soll, ist es ein Treffer. Mit anker gilt je Vorkommen des Ankers nur die erste solche Zahl ab dem Anker (bis zum nächsten Anker einer anderen Zahlenregel), sonst die letzte davor. Für die 10 Sprachen außer de und tr nur Zahlen und Wörter, die im Bau selbst neben der richtigen Zahl stehen (Sprachen neben 12, Tage neben 30), und Anthropic als Name.",
@@ -11,8 +11,8 @@
     {
       "id": "internet",
       "thema": "Internet",
-      "aussage": "Fast alles geht ohne Internet. Eine Verbindung brauchen die automatische Deutung, die Geschenke vom Server, das Einladen sowie Hinweis auf neue Versionen und Bewerten über den Play Store. Die App hat die Berechtigung für das Internet.",
-      "beleg": "DS 1.8 Abschnitte 1, 17 und 19",
+      "aussage": "Fast alles geht ohne Internet. Eine Verbindung brauchen die automatische Deutung, die Geschenke vom Server, das Einladen sowie Hinweis auf neue Versionen, Bewerten und das Alterssignal über den Play Store. Ohne Verbindung gilt beim Alterssignal der zuletzt gemerkte Stand. Die App hat die Berechtigung für das Internet.",
+      "beleg": "DS 1.10 Abschnitte 1, 8, 17 und 19",
       "verboten": {
         "de": [
           "kein(?:e|en)?\\s+(?:Erlaubnis|Berechtigung|Zugriff|Zugang|Recht)\\s*,?\\s+(?:ins|für das|fürs|zum|aufs|auf das)\\s+Internet\\p{L}*",
@@ -115,14 +115,16 @@
     {
       "id": "einwilligung_app",
       "thema": "Knöpfe beim ersten Start (Einwilligung)",
-      "aussage": "Beim ersten Start gibt es zwei gleich große Knöpfe: „Alle akzeptieren“ (Nutzungsbedingungen und Statistik) und „Nur Notwendige“ (nur Nutzungsbedingungen). Den Knopf „Annehmen und weiter“ gibt es nicht mehr.",
-      "beleg": "DS 1.8 Abschnitt 9 (Nur mit deiner Zustimmung); AP-25B Nr. 20",
+      "aussage": "Beim ersten Start gibt es zwei gleich große Knöpfe: „Alle akzeptieren“ (Nutzungsbedingungen und Statistik) und „Nur Notwendige“ (nur Nutzungsbedingungen). Nur wer früher bloß „mindestens 16“ bestätigt hat, sieht einmal einen Bildschirm mit „Annehmen und weiter“ (Bestätigung ab 18 und neue Nutzungsbedingungen); die Wahl zur Statistik bleibt dabei unverändert.",
+      "beleg": "DS 1.10 Abschnitte 9 und 18; AP-25B Nr. 20; AP-AS2",
       "verboten": {
         "de": [
-          "„?Annehmen und weiter“?"
+          "(?:ersten\\s+Start|Bevor es losgeht)[^.!?]{0,80}„?Annehmen und weiter“?",
+          "„?Annehmen und weiter“?[^.!?]{0,80}(?:ersten\\s+Start|Bevor es losgeht)"
         ],
         "tr": [
-          "“?Kabul et ve devam et”?"
+          "(?:ilk\\s+açılış\\p{L}*|Başlamadan önce)[^.!?]{0,80}“?Kabul et ve devam et”?",
+          "“?Kabul et ve devam et”?[^.!?]{0,80}(?:ilk\\s+açılış\\p{L}*|Başlamadan önce)"
         ]
       }
     },
@@ -208,8 +210,8 @@
     {
       "id": "senden",
       "thema": "Was die App sendet",
-      "aussage": "Die App sendet etwas, wenn du zugestimmt hast (Statistik, Absturzberichte), wenn du die automatische Deutung nutzt, teilst oder einlädst, dazu Anfragen an den Play Store; Verlauf und Notizen können in die Sicherung deines Google-Kontos gehen. „Nichts verlässt dein Handy“ stimmt deshalb nicht.",
-      "beleg": "DS 1.8 Abschnitte 1, 3, 6, 7, 9, 10 und 19",
+      "aussage": "Die App sendet etwas, wenn du zugestimmt hast (Statistik, Absturzberichte), wenn du die automatische Deutung nutzt, teilst oder einlädst, dazu Anfragen an den Play Store; Verlauf und Notizen können in die Sicherung deines Google-Kontos gehen. „Nichts verlässt dein Handy“ stimmt deshalb nicht. Das Alterssignal fragt die App bei der Play-Store-App auf dem Handy ab; das Ergebnis schickt sie an niemanden.",
+      "beleg": "DS 1.10 Abschnitte 1, 3, 6, 7, 8, 9, 10 und 19",
       "verboten": {
         "de": [
           "(?:sendet|schickt)\\s+(?:die App|sie)\\s+(?:gar\\s+)?nichts(?!\\s+(?:für|mehr|dafür|an Google))",
@@ -278,6 +280,27 @@
           "(?:birden\\s+fazla|iki|üç|her\\s+hafta)\\s+hoş geldin hediyes\\p{L}*",
           "(?:sınırsız|istediğin\\s+kadar)\\s+otomatik\\s+yorum\\p{L}*",
           "(?:tüm|bütün|her)\\s+otomatik\\s+yorum\\p{L}*\\s+(?:ücretsiz|bedava|hediye)"
+        ]
+      }
+    },
+    {
+      "id": "alterssignal",
+      "thema": "Alter und Alterssignal",
+      "aussage": "Die App ist nur für Erwachsene ab 18. Bei jedem Start fragt sie bei Google Play das Alterssignal ab und wertet es nur auf dem Handy aus; meldet Google Play ein Alter unter 18, ist die App gesperrt. Das Ergebnis geht weder an den Server noch an Firebase noch an Anthropic und wird nicht für Werbung, Profile oder Statistik genutzt.",
+      "beleg": "DS 1.10 Abschnitte 4, 7, 8, 13, 15, 17 und 18; NB 1.4 Abschnitt 7",
+      "verboten": {
+        "de": [
+          "kein(?:e|en)?\\s+Alters(?:prüfung|kontrolle|abfrage|check)",
+          "(?:App|Tarot Cup|sie)\\s+(?:prüft|kontrolliert|fragt)\\s+(?:dein\\s+|das\\s+)?Alter\\s+(?:nicht|nie|niemals)",
+          "(?:Alter|Alterssignal|Altersangabe)\\p{L}*[^.!?]{0,40}(?:an|auf)\\s+(?:meinen|meinem|unseren|unserem|den|dem)\\s+Server",
+          "(?:Alter|Alterssignal)\\p{L}*[^.!?]{0,40}(?:an|für)\\s+(?:Firebase|Google Analytics|Anthropic|Werbung)",
+          "(?:auch|schon)\\s+für\\s+(?:Jugendliche|Teenager)"
+        ],
+        "tr": [
+          "yaş\\s+(?:kontrolü|doğrulaması|sorgusu)\\s+(?:yok|yapılmaz|yapmaz)",
+          "(?:uygulama|Tarot Cup)\\p{L}*\\s+yaşını\\s+(?:sormaz|kontrol\\s+etmez|doğrulamaz)",
+          "yaş\\p{L}*[^.!?]{0,40}sunucu\\p{L}*\\s+(?:gönder|ilet)\\p{L}*",
+          "gençler\\s+için\\s+de"
         ]
       }
     }
@@ -433,20 +456,6 @@
       "seite": "/tr/yorum-neyi-yapabilir/",
       "satz": "Tarotta ve kahve falında aklındaki soruyu da sormaz",
       "begruendung": "Steht im Absatz über die normalen Deutungen; der nächste Satz nennt die eigene Frage bei der automatischen Deutung (DS 1.8 Abschnitt 3). Seite Nr. 20 in AP-25D gegen DS 1.8 tr geprüft."
-    },
-    {
-      "id": "einwilligung_app",
-      "seite": "/so-gehts/",
-      "satz": "und dem Knopf „Annehmen und weiter“",
-      "begruendung": "Vorläufig, an die PL gemeldet (AP-36): Bildbeschreibung (alt) des alten App-Fotos 01, das noch den alten Knopf zeigt (AP-25B, offener Punkt 2: neue Fotos in eigenem AP). Der Text der Seite nennt die Knöpfe richtig. Fällt weg, sobald Foto und Bildbeschreibung erneuert sind.",
-      "bis": "neue App-Fotos für So geht's (AP-25B, offener Punkt 2); dann entfernen"
-    },
-    {
-      "id": "einwilligung_app",
-      "seite": "/tr/nasil-kullanilir/",
-      "satz": "ve “Kabul et ve devam et” düğmesi",
-      "begruendung": "Vorläufig, an die PL gemeldet (AP-36): wie bei /so-gehts/, Bildbeschreibung des alten Fotos 01 in tr.",
-      "bis": "neue App-Fotos für So geht's (AP-25B, offener Punkt 2); dann entfernen"
     },
     {
       "id": "frage",
