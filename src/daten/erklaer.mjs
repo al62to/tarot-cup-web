@@ -23,14 +23,14 @@ const MODULE = {
 
 // eltern: Schlüssel der Themenseite für die Brotkrumen (null = direkt unter der Startseite).
 export const ERKLAERSEITEN = [
-  { schluessel: 'kaffeeHerkunft', nr: 1, bereich: 'kaffeesatz', text: 'herkunft', serie: 'woher', figur: 'erzaehlerin', pose: 'schreibt', eltern: 'kaffeesatz', verwandt: ['kaffeeBrauchtum', 'kaffeeZubereitung', 'kaffeesatz'] },
+  { schluessel: 'kaffeeHerkunft', nr: 1, bereich: 'kaffeesatz', text: 'herkunft', serie: 'woher', figur: 'erzaehlerin', pose: 'schreibt', eltern: 'kaffeesatz', verwandt: ['kaffeeBrauchtum', 'kaffeeZubereitung', 'kaffeesatz', 'tarotGeschichte'] },
   { schluessel: 'kaffeeZubereitung', nr: 2, bereich: 'kaffeesatz', text: 'zubereitung', serie: 'sogehts', figur: 'erzaehler', pose: 'schreibt', eltern: 'kaffeesatz', verwandt: ['kaffeesatz', 'kaffeeHerkunft', 'kaffeeZeichen'] },
   { schluessel: 'kaffeeBrauchtum', nr: 5, bereich: 'kaffeesatz', text: 'brauchtum', serie: 'woher', figur: 'erzaehlerin', pose: 'schreibt', eltern: 'kaffeesatz', verwandt: ['kaffeeHerkunft', 'kaffeesatz', 'mondBrauchtum'] },
   { schluessel: 'kaffeeZeichen', nr: 6, bereich: 'kaffeesatz', text: 'zeichen', serie: 'sogehts', figur: 'erzaehler', pose: 'schreibt', eltern: 'kaffeesatz', verwandt: ['kaffeesatz', 'kaffeeZubereitung', 'vergleich'] },
   { schluessel: 'tarotGeschichte', nr: 7, bereich: 'tarot', text: 'geschichte', serie: 'woher', figur: 'erzaehlerin', pose: 'karten', eltern: 'tarot', verwandt: ['tarotSmith', 'tarotArkana', 'tarot'] },
   { schluessel: 'tarotArkana', nr: 8, bereich: 'tarot', text: 'arkana', serie: 'sogehts', figur: 'erzaehler', pose: 'karten', eltern: 'tarot', verwandt: ['tarotFarben', 'tarotGeschichte', 'tarot'] },
   { schluessel: 'tarotFarben', nr: 9, bereich: 'tarot', text: 'farben', serie: 'sogehts', figur: 'erzaehlerin', pose: 'karten', eltern: 'tarot', verwandt: ['tarotArkana', 'tarotUmgekehrt', 'tarot'] },
-  { schluessel: 'tarotUmgekehrt', nr: 11, bereich: 'tarot', text: 'umgekehrt', serie: 'sogehts', figur: 'erzaehler', pose: 'karten', eltern: 'tarot', verwandt: ['tarot', 'tarotArkana', 'frageStellen'] },
+  { schluessel: 'tarotUmgekehrt', nr: 11, bereich: 'tarot', text: 'umgekehrt', serie: 'sogehts', figur: 'erzaehler', pose: 'karten', eltern: 'tarot', verwandt: ['tarot', 'tarotArkana', 'tarotFarben', 'frageStellen'] },
   { schluessel: 'tarotSmith', nr: 12, bereich: 'tarot', text: 'smith', serie: 'woher', figur: 'erzaehlerin', pose: 'karten', eltern: 'tarot', verwandt: ['tarotGeschichte', 'tarotArkana', 'tarot'] },
   { schluessel: 'traumGeschichte', nr: 13, bereich: 'traum', text: 'geschichte', serie: 'woher', figur: 'erzaehler', pose: 'mond', eltern: null, verwandt: ['traumErinnern', 'traumSymbole', 'vergleich'] },
   { schluessel: 'traumErinnern', nr: 14, bereich: 'traum', text: 'erinnern', serie: 'sogehts', figur: 'erzaehlerin', pose: 'mond', eltern: null, verwandt: ['traumSymbole', 'traumGeschichte', 'mondPhasen'] },

@@ -611,3 +611,12 @@ export const erklaerTraum = {
     },
   },
 };
+
+// Englisch, Spanisch (Lateinamerika) und Portugiesisch (Brasilien) seit AP-WS1: übersetzt aus dem Deutschen, eingespielt mit
+// tools/erklaer_einspielen.mjs (nicht von Hand ändern). Leere Dateien heißen: die Seite gibt es in der Sprache nicht.
+import erklaerTraumEn from './uebersetzt/erklaer_traum_en.json' with { type: 'json' };
+import erklaerTraumEs from './uebersetzt/erklaer_traum_es.json' with { type: 'json' };
+import erklaerTraumPt from './uebersetzt/erklaer_traum_pt.json' with { type: 'json' };
+erklaerTraum.en = erklaerTraumEn;
+erklaerTraum.es = erklaerTraumEs;
+erklaerTraum.pt = erklaerTraumPt;

@@ -1,0 +1,106 @@
+{
+  "deutung": {
+    "metaTitel": "Leitura de tarot automática: o que pode dizer | Tarot Cup",
+    "metaBeschreibung": "O que uma leitura pode dizer no Tarot Cup e o que não pode: limites fixos, como surge a leitura automática, seu consentimento e ajuda em emergências.",
+    "titel": "O que uma leitura pode dizer e o que não pode",
+    "brotkrume": "Alcance da leitura",
+    "kurzantwort": [
+      "Uma leitura no Tarot Cup é para entretenimento e um convite para refletir, não uma previsão nem um aconselhamento; ela não prevê se alguém vai ficar doente, engravidar ou morrer, e não dá dicas sobre dinheiro ou jogos de azar. A leitura automática é escrita por um programa, só com seu consentimento e, por enquanto, apenas como presente. Se seu sonho ou sua pergunta soar como uma emergência real, você recebe, em vez de uma leitura, um aviso sobre onde encontrar ajuda."
+    ],
+    "inhaltTitel": "Conteúdo",
+    "abschnitte": [
+      {
+        "kennung": "o-que-e-uma-leitura",
+        "titel": "O que é uma leitura e o que ela não é?",
+        "absaetze": [
+          "Uma leitura conta o que a tradição enxerga em uma carta de tarô, em um símbolo na borra de café ou em uma imagem de sonho, e convida você a comparar isso com sua própria vida. Ela fala em possibilidades, não em certezas.",
+          "O Tarot Cup existe para entretenimento. Uma leitura não é previsão, nem fato, nem aconselhamento.",
+          "Por isso, não tome decisões importantes com base em uma leitura. Para questões de saúde, bem-estar emocional, direito ou dinheiro, ajudam profissionais e pessoas em quem você confia."
+        ]
+      },
+      {
+        "kennung": "limites-fixos",
+        "titel": "Quais limites valem para toda leitura?",
+        "absaetze": [
+          "Os textos do app seguem limites fixos, mesmo a pedido expresso. Uma leitura não prevê se você ou outras pessoas vão ficar doentes, engravidar ou morrer, nem mesmo de forma velada; uma imagem de sonho com doença ou morte é interpretada com cuidado, como imagem interior. Ela não cita valores em dinheiro, números da sorte nem dicas para loteria, apostas e investimentos, e não prevê o desfecho de um processo na Justiça ou em um órgão público.",
+          "Ela também não julga as pessoas: não afirma que alguém é infiel, mente ou tem culpa em uma briga, não alerta sobre maldições, mau-olhado ou invejosos e nunca pede que você termine um relacionamento, peça demissão ou rompa o contato. No máximo, convida a uma conversa tranquila; a decisão fica com você.",
+          "O app também interpreta com cuidado as cartas sombrias. No Tarot Cup, *A Morte* representa mudança e encerramento, e não a morte de fato. Você encontra mais sobre as cartas no [guia de tarô](/pt/tarot/)."
+        ]
+      },
+      {
+        "kennung": "como-nascem-as-leituras",
+        "titel": "Como nascem as leituras no app?",
+        "absaetze": [
+          "As leituras normais de tarô, borra de café e sonhos são montadas pelo app no seu celular, com regras fixas, a partir de textos prontos que seguem os significados transmitidos pela tradição. No tarô e na borra de café, o app também não pede sua pergunta: você apenas pensa nela em silêncio, como manda a tradição.",
+          "Na leitura automática, você escreve seu sonho com suas próprias palavras, ou tira cartas e pode fazer a elas uma pergunta própria. A partir disso, um programa escreve automaticamente uma leitura curta, sem que uma pessoa a leia antes. Ela traz a indicação “criada automaticamente”.",
+          "Os limites descritos acima também constam nas instruções fixas para o programa. O servidor do Tarot Cup verifica cada resposta e pode solicitá-la de novo ou trocá-la por um texto fixo, mas não consegue garantir que toda leitura automática respeite todos os limites. Se você perguntar, por exemplo, se está doente, a leitura automática foi pensada para dizer primeiro, em uma frase, que não pode responder a isso e que o certo é procurar um médico ou uma médica, e depois fazer uma leitura geral.",
+          "Mesmo assim, um texto desses pode ser inadequado, afirmar coisas que não são verdadeiras ou entender mal sua pergunta. Não confie nas afirmações dele sem verificá-las por conta própria e toque em “Reportar”, logo abaixo da leitura, se ela parecer ofensiva, inadequada ou errada."
+        ]
+      },
+      {
+        "kennung": "consentimento-e-dados",
+        "titel": "O que acontece com seu sonho ou sua pergunta?",
+        "absaetze": [
+          "Quando você toca em “Interpretar” pela primeira vez, o app pede seu consentimento expresso, porque um sonho ou uma pergunta pode conter algo muito pessoal, como saúde, crenças ou intimidade. Sem consentimento, o app não envia nada para a leitura automática.",
+          "Com seu consentimento, seu sonho ou suas cartas e, se você fizer uma, sua pergunta vão, só para essa leitura, ao servidor do Tarot Cup na Alemanha e a um prestador de serviços fora da UE, por exemplo nos EUA, onde o programa escreve a leitura. O servidor do Tarot Cup não armazena nem seu texto nem a leitura. Se você reportar uma leitura, ele armazena, sem identificador, apenas o texto dela com tipo, idioma, país e data, por enquanto por 90 dias. O prestador de serviços apaga seus dados, por enquanto, em regra no máximo após 30 dias e não os usa para treinamento.",
+          "Além disso, o app envia, entre outras coisas, o idioma do app e o país do seu celular como sigla de duas letras. O país é necessário para que um texto de ajuda possa indicar serviços adequados; o app não precisa de permissão de localização para isso. Ao servidor do Tarot Cup vão também um identificador aleatório desta instalação e uma comprovação do Google Play; o prestador de serviços não recebe o identificador. Todos os demais detalhes, inclusive as exceções, estão na [Política de Privacidade](/pt/privacidade/).",
+          "Uma leitura automática só entra no seu histórico se você tocar em “Salvar”, e mesmo assim sem seu sonho e sem sua pergunta. É melhor deixar de fora nomes, endereços ou números de telefone de outras pessoas."
+        ]
+      },
+      {
+        "kennung": "ajuda-em-vez-de-leitura",
+        "titel": "O que acontece se seu texto soar como uma emergência?",
+        "absaetze": [
+          "Isso vale só para a leitura automática, pois só nela você escreve algo por conta própria. Antes de seu texto seguir para o prestador de serviços, o servidor do Tarot Cup o verifica com listas de palavras, para ver se ele soa como uma crise ou um perigo na sua vida real, por exemplo pensamentos de autolesão ou violência que você está realmente sofrendo. Se a verificação indicar esse risco, seu texto não segue adiante e você recebe, em vez de uma leitura, um aviso fixo sobre onde encontrar ajuda. Se só o programa reconhecer uma situação assim, o servidor descarta a resposta dele e também envia apenas esse aviso.",
+          "Um sonho com morte ou violência, por si só, ainda não é uma emergência; ele recebe uma leitura normal e cuidadosa. A verificação não reconhece todas as emergências, e o aviso não substitui uma chamada de emergência: se você ou outra pessoa estiver em perigo, entre em contato com o serviço de emergência do seu país."
+        ]
+      },
+      {
+        "kennung": "leitura-automatica-como-presente",
+        "titel": "Como ganhar uma leitura automática?",
+        "absaetze": [
+          "Por enquanto, você recebe uma leitura automática apenas como presente. A primeira é um presente de boas-vindas, se você ainda não tem nem teve nenhum outro presente para uma leitura automática; só existe um presente de boas-vindas por dispositivo. Outras você recebe ao compartilhar e ao convidar. Para o compartilhamento, a regra atual é: se você compartilhar algo do app em três dias diferentes dentro de sete dias e, nesse período, pelo menos um dos seus links for aberto, você recebe uma. Contam apenas links com código, não os que você compartilha “sem código”. Se você convidar alguém e essa pessoa usar o Tarot Cup em tantos dias quanto o app indicar, você e ela recebem uma cada.",
+          "Por enquanto, há no máximo uma leitura automática a cada sete dias por dispositivo, e o presente de boas-vindas também conta para esse limite. Se há uma em aberto, quem decide é o servidor do Tarot Cup; por isso, o app precisa de internet. O app mostra o que vale no momento. Essas regras podem mudar a qualquer momento; você não tem direito a um presente ([Termos de Uso](/pt/termos-de-uso/))."
+        ]
+      }
+    ],
+    "fragenTitel": "Perguntas frequentes",
+    "fragen": [
+      {
+        "frage": "Alguém lê meu sonho ou minha pergunta?",
+        "antwort": [
+          "Normalmente não. Só quando os sistemas de segurança do prestador de serviços marcam uma solicitação é que ele pode verificá-la. Se você reportar uma leitura, o texto dela é lido para corrigir erros; seu sonho e sua pergunta não são enviados junto."
+        ]
+      },
+      {
+        "frage": "Posso retirar meu consentimento?",
+        "antwort": [
+          "Sim, a qualquer momento, em Configurações, em “Leitura automática”; depois disso, o app não envia mais nada para ela até você concordar de novo. “Excluir meus dados do servidor” apaga imediatamente o que o servidor armazenou sobre seu dispositivo; nos backups do servidor, esses dados ainda ficam, por enquanto, por até 14 dias, e os presentes em aberto são perdidos."
+        ]
+      },
+      {
+        "frage": "O app funciona também sem a leitura automática?",
+        "antwort": [
+          "Sim. Tarô, borra de café, interpretação de sonhos com símbolos, Dicionário e Histórico funcionam sem consentimento e sem internet. Precisam de internet a leitura automática, os presentes do servidor e os convites, além do aviso sobre novas versões e da avaliação pelo Google Play."
+        ]
+      }
+    ],
+    "app": {
+      "titel": "No app",
+      "text": [
+        "No Tarot Cup para Android, você lê cartas, borra de café e sonhos sem precisar de conta. Uma leitura automática pode, por enquanto, vir como presente: a primeira como presente de boas-vindas, outras quando você compartilha ou convida alguém."
+      ]
+    },
+    "quellenTitel": "Fontes",
+    "quellen": [
+      {
+        "angabe": "Tarot Cup: Política de Privacidade, versão 1.9, de 21/11/2026, especialmente seções 1, 3, 4, 6, 10, 15 e 17. tarot-cup.com, 2026.",
+        "url": "https://tarot-cup.com/pt/privacidade/"
+      },
+      {
+        "angabe": "Tarot Cup: Termos de Uso, versão 1.3, de 17/11/2026, especialmente seções 3, 5, 6, 11 e 14. tarot-cup.com, 2026.",
+        "url": "https://tarot-cup.com/pt/termos-de-uso/"
+      }
+    ]
+  }
+}

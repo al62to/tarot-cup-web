@@ -1,0 +1,33 @@
+{
+  "wissen": {
+    "kurz": "En pocas palabras",
+    "weiter": "Sigue leyendo",
+    "mehr": "Más sobre el tema",
+    "startTitel": "Aprende *más*",
+    "figurErzaehlerin": "personaje dibujado Aylin",
+    "figurErzaehler": "personaje dibujado Ozan",
+    "bereiche": {
+      "kaffeesatz": "Posos de café",
+      "tarot": "Tarot",
+      "traum": "Sueños",
+      "mond": "Luna",
+      "allgemein": "General"
+    },
+    "nav": "Aprende",
+    "alle": "Todas las páginas",
+    "uebersicht": {
+      "metaTitel": "Tarot, posos de café y sueños: aprende más | Tarot Cup",
+      "metaBeschreibung": "Todas las páginas para aprender de Tarot Cup en un solo lugar: tarot, lectura del café, sueños y temas generales, con respuestas breves y fuentes.",
+      "brotkrume": "Aprende",
+      "titel": "Aprende sobre tarot, posos de café y *sueños*",
+      "vorspann": "Aquí están todas las páginas para aprender en un solo lugar, ordenadas por tema. Cada una empieza con una respuesta breve, luego lo explica con más detalle y menciona sus fuentes."
+    }
+  },
+  "posen": {
+    "titel": "Otras imágenes de Aylin y Ozan",
+    "absaetze": [
+      "En las páginas para aprender sobre posos de café, tarot y lecturas, otras imágenes muestran a Aylin escribiendo y con un regalo, y a Aylin y Ozan con cartas del tarot; en las páginas sobre los sueños aparecen Aylin y Ozan bajo la luna. Las imágenes con cartas del tarot se crearon con el generador de imágenes de Canva; las demás, con el generador de imágenes Seedream 5.5 de ElevenLabs. Todas se editaron para Tarot Cup; para este sitio solo se redujeron de tamaño y se guardaron en AVIF y WebP."
+    ]
+  },
+  "llms": "Aprende: origen, práctica y tradiciones"
+}

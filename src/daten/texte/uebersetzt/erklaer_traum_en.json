@@ -1,0 +1,503 @@
+{
+  "geschichte": {
+    "metaTitel": "History of Dream Interpretation | Tarot Cup",
+    "metaBeschreibung": "From Artemidorus in the 2nd century, via the dream books attributed to Ibn Sirin, to Freud and Jung: how people have interpreted their dreams over time.",
+    "titel": "The history of dream interpretation",
+    "brotkrume": "History of dream interpretation",
+    "tuerkischeBegriffe": [
+      "rüya tabiri",
+      "muabbir",
+      "tabirname"
+    ],
+    "kurzantwort": [
+      "People have interpreted their dreams for thousands of years. The oldest surviving Greek dream book was written by Artemidorus of Daldis in the 2nd century, and in the Islamic world, dream books became famous under the name of the scholar Ibn Sirin, who died in 729. Sigmund Freud’s “The Interpretation of Dreams” appeared at the end of 1899, and with Freud and C. G. Jung, dreams became a subject for psychology."
+    ],
+    "inhaltTitel": "Contents",
+    "abschnitte": [
+      {
+        "kennung": "earliest-traces",
+        "titel": "How long have people been interpreting their dreams?",
+        "absaetze": [
+          "If you wake up in the morning with a puzzling image in your mind, you may wonder what it could mean. It is an age-old question. The Islamic encyclopedia of the Turkish Diyanet Foundation traces dream interpretation back to Mesopotamia and Egypt, and also mentions Greek, Hebrew, pre-Islamic Arabic, and ancient Turkic traditions.",
+          "Over time, what people expected from a dream changed. In antiquity and in the classical dream books, people often looked to dreams for hints about their future, for instance about work, travel, or marriage. The psychology of the 20th century, by contrast, asked what a dream says about the dreamer. This page traces that path through four names: Artemidorus, Ibn Sirin, Freud, and Jung."
+        ]
+      },
+      {
+        "kennung": "artemidorus",
+        "titel": "Who was Artemidorus of Daldis?",
+        "absaetze": [
+          "Artemidorus came from Ephesus, but he named himself after Daldis, his mother’s hometown. The ancient city lay in the region of Lydia, in what is now Manisa Province in Turkey. He lived and wrote in the 2nd century. Exactly when is uncertain; more recent research places his work roughly between 140 and 200.",
+          "His work is called *Oneirokritika*, roughly “The Interpretation of Dreams” in English. It is the oldest surviving Greek book on the subject and has five parts. Artemidorus wrote the first three for a broad readership; they work through dream images in order, from the human body to nature and much else. Books four and five were meant for his son, who also interpreted dreams. The fifth is a collection of almost a hundred sample dreams.",
+          "His approach is remarkable: the same dream can mean quite different things for two people. Anyone who interprets dreams must therefore know who the dreamer is and how that person lives. In the 9th century, the first three books were translated into Arabic, and Sigmund Freud still referred to Artemidorus."
+        ]
+      },
+      {
+        "kennung": "ibn-sirin",
+        "titel": "What does Ibn Sirin have to do with dream books?",
+        "absaetze": [
+          "Muhammad ibn Sirin was born in Basra around 654 and died in 729. Early sources know him mainly as a scholar of religious tradition and Islamic law. In later centuries, he came to be regarded as one of the first great dream interpreters; the historian Ibn Khaldun counted him among the best-known experts in this field.",
+          "The Islamic encyclopedia of the Diyanet Foundation lists ten important dream books attributed to him. That he wrote any of them himself is considered very unlikely; the author of the article, drawing on further scholarly literature, rules it out. The early sources mention no dream book by him, he himself is said to have opposed writing down traditions, and some of the collections name people who lived after his time. His respected name was probably meant to lend the books authority.",
+          "Turkish literature shows how influential these books were all the same. There, the dream book, the *tabirname*, has been a genre of its own since the 14th century; many of these works were translated from Arabic, and the one attributed to Ibn Sirin is among the most frequently translated. The dream book of the Damascene scholar Abd al-Ghani al-Nabulusi (1641–1731) was also translated into Turkish in Ottoman times. In Turkish, the interpretation of a dream is called *rüya tabiri*, and someone skilled at it is a *muabbir*."
+        ]
+      },
+      {
+        "kennung": "freud",
+        "titel": "What changed with Freud’s “The Interpretation of Dreams”?",
+        "absaetze": [
+          "Sigmund Freud’s book “The Interpretation of Dreams” was published on November 4, 1899, by Franz Deuticke in Leipzig and Vienna. The publisher had postdated it to 1900, which is why that year appears on the title page and in many bibliographies. Freud lived to see eight editions and revised the book for most of them.",
+          "For Freud, a dream was closely tied to the dreamer’s life story. In his view, it presents repressed wishes as fulfilled, in disguised form, and so protects sleep. Freud called what we remember in the morning the manifest dream content; behind it, he said, lie the latent dream thoughts, which only analysis brings to light. He described the path between the two as the *dream work*, which condenses and displaces thoughts. He called the interpretation of dreams the royal road to knowledge of the unconscious."
+        ]
+      },
+      {
+        "kennung": "jung",
+        "titel": "How did C. G. Jung see dreams?",
+        "absaetze": [
+          "Carl Gustav Jung was born in 1875 on the Swiss shore of Lake Constance and died in 1961 in Küsnacht on Lake Zurich. As a young psychiatrist, he worked at the Burghölzli clinic in Zurich. In 1907 he visited Freud in Vienna, the two worked closely together for some years, and Jung became the first president of the International Psychoanalytical Association. Later they went their separate ways, partly because Jung did not see libido only as a sexual drive.",
+          "For Jung, dreams drew not only on a person’s own life story but also on a collective unconscious that, in his view, all people share. In it he saw primordial images, the archetypes, which recur in myths, fairy tales, and dreams, such as the Great Mother or the Wise Old Man. He saw a dream as a picture of the dreamer’s inner state, expressed in symbols. When interpreting, he liked to compare dream images with related motifs, and he drew on earlier and later dreams when a single one could not be understood on its own."
+        ]
+      },
+      {
+        "kennung": "what-remains",
+        "titel": "What remains of all this today?",
+        "absaetze": [
+          "Today, the old dream books and psychology exist side by side. Major Turkish news sites have their own sections on *rüya tabiri*, and sleep research studies which themes come up especially often in dreams and nightmares.",
+          "All these paths have one thing in common: a dream image only makes sense in context. For Artemidorus, that context was the dreamer’s life; for Freud and Jung, it was their thoughts and feelings. That is why a reading can offer food for thought, but it passes no judgment on the future. To learn how to hold on to your dreams, see [How to remember your dreams better and write them down](/en/how-to-remember-dreams/); for an overview of the images, see [Common dream symbols](/en/dream-symbols/)."
+        ]
+      }
+    ],
+    "fragenTitel": "Frequently asked questions",
+    "fragen": [
+      {
+        "frage": "How old is dream interpretation?",
+        "antwort": [
+          "Very old: the Islamic encyclopedia of the Diyanet Foundation already mentions Mesopotamia and Egypt. The oldest surviving Greek dream book is the 2nd-century work by Artemidorus."
+        ]
+      },
+      {
+        "frage": "Did Ibn Sirin write the dream books himself?",
+        "antwort": [
+          "Most likely not. Early sources mention no dream book by him; the books under his name were probably compiled later."
+        ]
+      },
+      {
+        "frage": "Was Freud’s “The Interpretation of Dreams” published in 1899 or 1900?",
+        "antwort": [
+          "Both are right in their own way. The book came out on November 4, 1899, but the publisher printed 1900 as the year on the title page."
+        ]
+      },
+      {
+        "frage": "How did Jung’s view of dreams differ from Freud’s?",
+        "antwort": [
+          "Freud saw dreams above all as disguised wishes. Jung understood them more broadly, as a picture of the inner state, and assumed there were primordial images shared by all people."
+        ]
+      },
+      {
+        "frage": "What does “rüya tabiri” mean?",
+        "antwort": [
+          "It is the Turkish term for the interpretation of a dream. Someone who interprets dreams is a *muabbir*, and a dream book is called a *tabirname*."
+        ]
+      }
+    ],
+    "app": {
+      "titel": "Interpret your dream in the app",
+      "text": [
+        "In Tarot Cup, you choose the feeling of your dream, an area of life, and up to five symbols. The reading tells you what the tradition says about each image and leaves you room for your own thoughts."
+      ]
+    },
+    "quellenTitel": "Sources",
+    "quellen": [
+      {
+        "angabe": "Artemidor von Daldis. Wikipedia, Die freie Enzyklopädie (German).",
+        "url": "https://de.wikipedia.org/wiki/Artemidor_von_Daldis"
+      },
+      {
+        "angabe": "Oneirocritica. Wikipedia (English).",
+        "url": "https://en.wikipedia.org/wiki/Oneirocritica"
+      },
+      {
+        "angabe": "Daldis. Wikipedia, Die freie Enzyklopädie (German).",
+        "url": "https://de.wikipedia.org/wiki/Daldis"
+      },
+      {
+        "angabe": "Walde, Christine: Review of J. du Bouchet, C. Chandezon (eds.): Études sur Artémidore et l’interprétation des rêves I. Bryn Mawr Classical Review 2012.12.43.",
+        "url": "https://bmcr.brynmawr.edu/?p=38874"
+      },
+      {
+        "angabe": "Vinagre-Lobo, Miguel A.: Review of G. Weber (ed.): Artemidor von Daldis und die antike Traumdeutung. Exemplaria Classica 22, 2018.",
+        "url": "https://uhu.es/publicaciones/ojs/index.php/exemplaria/article/view/3524"
+      },
+      {
+        "angabe": "Yücel, Ahmet: İbn Sîrîn. In: TDV İslâm Ansiklopedisi, vol. 20. Türkiye Diyanet Vakfı, 1999.",
+        "url": "https://islamansiklopedisi.org.tr/ibn-sirin"
+      },
+      {
+        "angabe": "Çelebi, İlyas; Uludağ, Süleyman: Rüyâ. In: TDV İslâm Ansiklopedisi. Türkiye Diyanet Vakfı, 2008.",
+        "url": "https://islamansiklopedisi.org.tr/ruya"
+      },
+      {
+        "angabe": "Özel, Ahmet: Nablusî, Abdülganî b. İsmâil. In: TDV İslâm Ansiklopedisi, vol. 32. Türkiye Diyanet Vakfı, 2006.",
+        "url": "https://islamansiklopedisi.org.tr/nablusi-abdulgani-b-ismail"
+      },
+      {
+        "angabe": "Özder, Deva: İbn Sîrîn’den Tercüme Edilen Bir Rüya Tabirnamesi: “Hacı Muhammed Mostârî’nin Tabirnamesi.” Akademik Dil ve Edebiyat Dergisi 8 (1), 2024, pp. 76–96. DOI 10.34083/akaded.1444029.",
+        "url": "https://dergipark.org.tr/tr/download/article-file/3759037"
+      },
+      {
+        "angabe": "Tögel, Christfried (ed.): Sigmund-Freud-Gesamtausgabe, vol. 7 (1900). Psychosozial-Verlag, Gießen 2017 (excerpt).",
+        "url": "https://www.psychosozial-verlag.de/pdfs/leseprobe/9783837924077.pdf"
+      },
+      {
+        "angabe": "Die Traumdeutung. Austria-Forum, AustriaWiki.",
+        "url": "https://austria-forum.org/af/AustriaWiki/Die_Traumdeutung"
+      },
+      {
+        "angabe": "Goddemeier, Christof: Carl Gustav Jung. Vom kollektiven Unbewussten und den Archetypen. Deutsches Ärzteblatt PP, issue 7, 2011.",
+        "url": "https://www.aerzteblatt.de/archiv/97655/Carl-Gustav-Jung-Vom-kollektiven-Unbewussten-und-den-Archetypen"
+      },
+      {
+        "angabe": "Diercks, Christine: Internationale Psychoanalytische Vereinigung 1910–2010. Kongresse 1908–1918. psyalpha, 2010.",
+        "url": "https://www.psyalpha.net/sites/default/files/anhang/ipv-kongresse-1908-1918-diercks-2010.pdf"
+      },
+      {
+        "angabe": "Edwards, Lin: Men and women have different nightmares. Medical Xpress, March 24, 2010 (report on Schredl 2010).",
+        "url": "https://medicalxpress.com/news/2010-03-men-women-nightmares.html"
+      },
+      {
+        "angabe": "Hürriyet Mahmure: Rüya Tabirleri.",
+        "url": "https://www.hurriyet.com.tr/mahmure/ruya-tabirleri/"
+      }
+    ],
+    "fremdeBegriffe": [
+      {
+        "text": "1961 in Küsnacht",
+        "lang": "de"
+      },
+      {
+        "text": "Burghölzli",
+        "lang": "de"
+      },
+      {
+        "text": "Artemidor von Daldis. Wikipedia, Die freie Enzyklopädie",
+        "lang": "de"
+      },
+      {
+        "text": "Daldis. Wikipedia, Die freie Enzyklopädie",
+        "lang": "de"
+      },
+      {
+        "text": "Artemidor von Daldis und die antike Traumdeutung. Exemplaria Classica 22, 2018",
+        "lang": "de"
+      },
+      {
+        "text": "Yücel, Ahmet: İbn Sîrîn. In: TDV İslâm Ansiklopedisi",
+        "lang": "tr"
+      },
+      {
+        "text": "20. Türkiye Diyanet Vakfı, 1999",
+        "lang": "tr"
+      },
+      {
+        "text": "Çelebi, İlyas; Uludağ, Süleyman: Rüyâ. In: TDV İslâm Ansiklopedisi. Türkiye Diyanet Vakfı, 2008",
+        "lang": "tr"
+      },
+      {
+        "text": "Özel, Ahmet: Nablusî, Abdülganî b. İsmâil. In: TDV İslâm Ansiklopedisi",
+        "lang": "tr"
+      },
+      {
+        "text": "32. Türkiye Diyanet Vakfı, 2006",
+        "lang": "tr"
+      },
+      {
+        "text": "Özder, Deva: İbn Sîrîn’den Tercüme Edilen Bir Rüya Tabirnamesi: “Hacı Muhammed Mostârî’nin Tabirnamesi.” Akademik Dil ve Edebiyat Dergisi 8 (1), 2024",
+        "lang": "tr"
+      },
+      {
+        "text": "Tögel, Christfried",
+        "lang": "tr"
+      },
+      {
+        "text": "7 (1900). Psychosozial-Verlag, Gießen 2017",
+        "lang": "de"
+      },
+      {
+        "text": "Goddemeier, Christof: Carl Gustav Jung. Vom kollektiven Unbewussten und den Archetypen. Deutsches Ärzteblatt PP",
+        "lang": "de"
+      },
+      {
+        "text": "Hürriyet Mahmure: Rüya Tabirleri",
+        "lang": "tr"
+      }
+    ]
+  },
+  "erinnern": {
+    "metaTitel": "How to Remember Dreams and Write Them Down | Tarot Cup",
+    "metaBeschreibung": "Why we forget most dreams and how a dream journal helps: simple, calm tips on how to remember your dreams better and write them down.",
+    "titel": "How to remember your dreams better and write them down",
+    "brotkrume": "Remembering dreams",
+    "kurzantwort": [
+      "Everyone dreams every night, about two hours in total according to the US research institute NINDS, yet most dreams have already faded by the time we wake up. A simple habit can help: writing the dream down in a notebook or recording it as a voice memo first thing in the morning. In one study, people who at first remembered hardly any dreams remembered them much more often after just under four weeks."
+    ],
+    "inhaltTitel": "Contents",
+    "abschnitte": [
+      {
+        "kennung": "why-we-forget-dreams",
+        "titel": "Why do we forget most dreams?",
+        "absaetze": [
+          "Sleep moves through several stages. The first phase of what is known as REM sleep, named after the rapid eye movements, begins about 90 minutes after you fall asleep; over the course of the night, these phases grow longer. Most dreams, and the most vivid ones, occur in REM sleep, but people also dream in the other stages.",
+          "It is not a given that a dream stays in your memory. According to a widely used model in sleep research, a brief period of wakefulness is needed for the content of a dream to pass from short-term to long-term memory. In a laboratory study from Cape Town, people who often remember their dreams were in fact awake more often and for longer during the night than people who rarely remember them. According to this model, someone who sleeps through the night without longer periods awake has less opportunity to hold on to a dream. Sometimes, though, a dream only comes back later in the day, when something reminds you of it."
+        ]
+      },
+      {
+        "kennung": "dream-journal",
+        "titel": "What is a dream journal, and does it help?",
+        "absaetze": [
+          "A dream journal is simply a place where you record your dreams: a small notebook, a journal by your bed, or a voice recording on your phone. A sleep psychologist at the Cleveland Clinic stresses that there is no right or wrong way to do it; some people prefer drawing to writing.",
+          "A study from Colombia, reported by the British Psychological Society, shows that practice is worthwhile. For 27 days, 55 participants wrote down each morning what they remembered from the night. The third who had remembered dreams least often at the start went from about one dream a month to about one a week on average. That is no promise for everyone, but it is an encouraging sign: paying attention to dreams can pay off."
+        ]
+      },
+      {
+        "kennung": "in-the-morning",
+        "titel": "How do I capture a dream in the morning?",
+        "absaetze": [
+          "Put your notebook and pen, or your phone, within reach so that you don’t have to look for them when you wake up. Start by jotting down keywords just as they come to you: a place, a person, a color, a sentence. Order and meaning don’t matter at this moment. Later, you can calmly turn the keywords into full sentences.",
+          "If you wake up in the middle of the night, you don’t need to reach for a pen right away. According to the Cleveland Clinic sleep psychologist, writing at night can make some people so alert that it disturbs their sleep. It is perfectly fine to write down in the morning whatever is still there."
+        ]
+      },
+      {
+        "kennung": "what-to-write-down",
+        "titel": "What should a dream journal entry include?",
+        "absaetze": [
+          "Helpful things to note are the date, the main images, and above all the feeling: was the dream light, restless, sad, cheerful? You can compare the feelings in a dream with what is on your mind in waking life. Experiences from the previous day often reappear in dreams, so a short note about what happened the day before is worthwhile.",
+          "Over time, you begin to notice patterns: places that return, people who appear more than once, moods that go with certain weeks. The page [Common dream symbols](/en/dream-symbols/) shows which images are common in dreams and how the app groups them."
+        ]
+      },
+      {
+        "kennung": "without-pressure",
+        "titel": "Do I have to write something down every morning?",
+        "absaetze": [
+          "No. A dream journal is meant to be something you enjoy, not a chore. On some days there is simply nothing there, and that is fine. How often people remember dreams varies a great deal; sleep research suggests that interest in dreams and openness to new experiences also play a part.",
+          "For some people, simply intending to pay attention to their dreams in the morning already helps. A few minutes on the edge of the bed with your notebook are enough. If you like, read through the week’s entries on the weekend and see what keeps coming up."
+        ]
+      },
+      {
+        "kennung": "from-journal-to-reading",
+        "titel": "How do I get from the journal to a reading?",
+        "absaetze": [
+          "From your notes, you can pick the images that have stayed with you most strongly, along with the feeling of the dream. This is what the app’s dream reading with symbols works with: there, you choose the feeling, an area of life, and up to five symbols.",
+          "Keep in mind that interpretations are very personal: the same dream can mean different things to two people. Artemidorus saw it this way as early as the 2nd century, as the page [History of dream interpretation](/en/history-of-dream-interpretation/) explains."
+        ]
+      }
+    ],
+    "fragenTitel": "Frequently asked questions",
+    "fragen": [
+      {
+        "frage": "Does everyone really dream?",
+        "antwort": [
+          "Yes. According to the US research institute NINDS, everyone dreams, about two hours in total each night, even if they don’t remember most of their dreams."
+        ]
+      },
+      {
+        "frage": "Why do I remember a lot of my dreams some nights and nothing on others?",
+        "antwort": [
+          "Among other things, it depends on how often you wake up during the night and how long you stay awake. You are also more likely to remember a dream if you have just woken up from a REM phase."
+        ]
+      },
+      {
+        "frage": "Is a voice memo as good as a notebook?",
+        "antwort": [
+          "Yes, both work. When you speak, you often tell more detail; in a notebook, it is easier to see patterns across the weeks."
+        ]
+      },
+      {
+        "frage": "What if my dreams or my sleep are troubling me?",
+        "antwort": [
+          "If dreams or sleep problems weigh on you for a longer time, a doctor is the right person to turn to."
+        ]
+      }
+    ],
+    "app": {
+      "titel": "From your notebook to the app",
+      "text": [
+        "In Tarot Cup, you take the feeling and up to five symbols from your dream journal and choose an area of life. The app then tells you what the tradition says about these images and gives you a piece of advice to take with you."
+      ]
+    },
+    "quellenTitel": "Sources",
+    "quellen": [
+      {
+        "angabe": "National Institute of Neurological Disorders and Stroke (NINDS): Brain Basics: Understanding Sleep. National Institutes of Health, USA, as of February 25, 2025.",
+        "url": "https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-understanding-sleep"
+      },
+      {
+        "angabe": "van Wyk, Mariza; Solms, Mark; Lipinska, Gosia: Increased Awakenings From Non-rapid Eye Movement Sleep Explain Differences in Dream Recall Frequency in Healthy Individuals. Frontiers in Human Neuroscience 13, 370, 2019.",
+        "url": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2019.00370/full"
+      },
+      {
+        "angabe": "Cleveland Clinic: What Can You Learn From Dream Journaling? with Alaina Tiani, PhD. Health Essentials Podcast, May 8, 2024.",
+        "url": "https://my.clevelandclinic.org/podcasts/health-essentials/what-can-you-learn-from-dream-journaling-with-alaina-tiani"
+      },
+      {
+        "angabe": "Fradera, Alex: How keeping a dream diary could boost your creativity. British Psychological Society, Research Digest, August 31, 2017.",
+        "url": "https://bps.org.uk/research-digest/how-keeping-dream-diary-could-boost-your-creativity"
+      },
+      {
+        "angabe": "Sierra-Siegert, Mauricio; Jay, Emma-Louise; Florez, Claudia; Garcia, Ana Esther: Minding the Dreamer Within: An Experimental Study on the Effects of Enhanced Dream Recall on Creative Thinking. The Journal of Creative Behavior 53 (1), 2019, pp. 83–96.",
+        "url": "https://doi.org/10.1002/jocb.168"
+      }
+    ]
+  },
+  "symbole": {
+    "metaTitel": "Common Dream Symbols: The Eight Areas | Tarot Cup",
+    "metaBeschreibung": "Animals, nature, people, places, actions, objects, body, and colors: an overview of the eight areas of common dream symbols in Tarot Cup.",
+    "titel": "Common dream symbols",
+    "brotkrume": "Dream symbols",
+    "tuerkischeBegriffe": [
+      "tabirname",
+      "rüya tabiri"
+    ],
+    "kurzantwort": [
+      "Dream symbols are the images a reading starts from: an animal, a place, an action, a color. Tarot Cup sorts 124 common symbols into eight areas, ranging from animals through nature and weather to colors. The reading in the app tells you what a symbol means in the tradition."
+    ],
+    "inhaltTitel": "Contents",
+    "abschnitte": [
+      {
+        "kennung": "what-is-a-dream-symbol",
+        "titel": "What is a dream symbol?",
+        "absaetze": [
+          "A dream symbol is a single image from a dream that stands out: the cat on the stairs, the bridge in the fog, the shoes that don’t fit. Traditional dream books assign meanings to such images: in Turkish literature, the *tabirname* has done so since the 14th century, and in the West, popular dream books. Psychology tends to ask instead which thoughts and feelings an image reveals.",
+          "What matters is that a symbol does not stand alone. As early as the 2nd century, Artemidorus wrote that an interpreter must know who is dreaming: what work the person does, how old they are, and what circumstances they live in. Today, a psychologist at the Cleveland Clinic likewise calls interpretations very personal, saying the same dream can mean quite different things to two people. That is why, in the dream reading with symbols, the app also asks about the feeling of the dream and the area of life that is on your mind right now."
+        ]
+      },
+      {
+        "kennung": "common-themes",
+        "titel": "What are the most common dreams?",
+        "absaetze": [
+          "A large study from the sleep laboratory of the Central Institute of Mental Health in Mannheim asked more than 2,000 people in Germany about their bad dreams. The most common were falling, being chased, being paralyzed, being late, and losing loved ones; men and women alike reported nightmares about exams, even when they were no longer studying.",
+          "In Turkey, the large *rüya tabiri* section of a news site compiles a list of the “most frequently seen dreams,” without saying how the list is put together. Snake, cat, and gold come first, followed later by mouse, dog, snow, sea, and fish, among others. You will find many of these images in the app as well."
+        ]
+      },
+      {
+        "kennung": "animals-and-nature",
+        "titel": "Animals, nature and weather",
+        "absaetze": [
+          "The largest area, *Animals*, brings together 24 symbols, from the dog and the cat through snake, horse, and bird to bee, turtle, and ant, and in many traditions, animals reflect qualities we also know in people.",
+          "*Nature and weather* has 17 images such as water, sea, river, rain, snow, fire, sun, moon, stars, tree, mountain, and rainbow, which often carry the mood of an entire dream."
+        ]
+      },
+      {
+        "kennung": "people-and-places",
+        "titel": "People and relationships, places and buildings",
+        "absaetze": [
+          "The area *People and relationships* includes 18 symbols, among them partner, ex-partner, mother, father, child, grandparents, friend, wedding, kiss, and argument: the people and encounters that are closest to us in waking life, too.",
+          "*Places and buildings* includes 15 symbols such as house, school, garden, bridge, stairs, elevator, window, path and street, airport and train station, as well as mosque and church: the spaces where a dream takes place, which often tell a story of their own."
+        ]
+      },
+      {
+        "kennung": "actions-and-objects",
+        "titel": "Actions and experiences, objects",
+        "absaetze": [
+          "With 22 symbols, *Actions and experiences* is the second-largest area: falling, flying, being chased, being late, getting lost, swimming, moving home, a journey, dancing, and laughing describe what happens in the dream, not just what appears in it.",
+          "Under *Objects*, you will find 18 things such as key, mirror, ring, shoes, bag, phone, clock, book, bread, candle, and door: everyday things that can suddenly become important in a dream."
+        ]
+      },
+      {
+        "kennung": "body-and-colors",
+        "titel": "Body and colors",
+        "absaetze": [
+          "The *Body* area is small, with seven symbols, but it includes one of the best-known dream images of all, teeth falling out; hair and eyes, for example, belong here too.",
+          "The *Colors* white, black, and red form the smallest area and combine well with other symbols when a color stood out in the dream."
+        ]
+      },
+      {
+        "kennung": "more-about-the-symbols",
+        "titel": "Where can I find more about individual symbols?",
+        "absaetze": [
+          "This website does not yet have separate pages listing all the symbols in an area. You will find the detailed reading, with the tradition behind each image, in the app: in the Dictionary under *Dream symbols*, and in every reading.",
+          "It also helps to record your dreams well so that you can find the symbols again; tips are on the page [How to remember your dreams better and write them down](/en/how-to-remember-dreams/). The [history of dream interpretation](/en/history-of-dream-interpretation/) tells where the tradition of dream books comes from."
+        ]
+      }
+    ],
+    "fragenTitel": "Frequently asked questions",
+    "fragen": [
+      {
+        "frage": "How many dream symbols does the app include?",
+        "antwort": [
+          "Currently 124, divided into eight areas: animals, nature and weather, people and relationships, places and buildings, actions and experiences, objects, body, and colors."
+        ]
+      },
+      {
+        "frage": "Does a dream symbol always mean the same thing?",
+        "antwort": [
+          "No. Traditions differ, and the feeling of the dream and your own situation in life change how an image is read."
+        ]
+      },
+      {
+        "frage": "How many symbols can I choose for one dream?",
+        "antwort": [
+          "Up to five. You also choose the feeling of the dream and an area of life."
+        ]
+      },
+      {
+        "frage": "Why does the reading name a tradition?",
+        "antwort": [
+          "Because Turkish dream books, Western dream books, and psychology often read the same image differently. This way, you know which tradition a meaning comes from."
+        ]
+      }
+    ],
+    "app": {
+      "titel": "Choose your symbols in the app",
+      "text": [
+        "In Tarot Cup, you choose your dream symbols from the eight categories or with the search. The reading brings them together with the feeling of your dream into the whole picture."
+      ]
+    },
+    "quellenTitel": "Sources",
+    "quellen": [
+      {
+        "angabe": "Edwards, Lin: Men and women have different nightmares. Medical Xpress, March 24, 2010 (report on Schredl, M.: Nightmare frequency and nightmare topics in a representative German sample. European Archives of Psychiatry and Clinical Neuroscience, 2010).",
+        "url": "https://medicalxpress.com/news/2010-03-men-women-nightmares.html"
+      },
+      {
+        "angabe": "Schredl, Michael: Nightmare frequency and nightmare topics in a representative German sample. European Archives of Psychiatry and Clinical Neuroscience 260 (8), 2010, pp. 565–570 (abstract on PubMed).",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/20229263/"
+      },
+      {
+        "angabe": "Hürriyet Mahmure: Rüya Tabirleri, section “En Çok Görülen Rüyalar ve Tabirleri.”",
+        "url": "https://www.hurriyet.com.tr/mahmure/ruya-tabirleri/"
+      },
+      {
+        "angabe": "Artemidoros aus Daldis: Symbolik der Träume. Translated by Friedrich S. Krauss. Verlag A. Hartleben, Wien, Pest, Leipzig 1881, Book I, ch. 9 (digitized copy from the Bibliothèque interuniversitaire de santé, Paris).",
+        "url": "https://archive.org/details/BIUSante_55615"
+      },
+      {
+        "angabe": "Rozen, Naama; Soffer-Dudek, Nirit: Dreams of Teeth Falling Out: An Empirical Investigation of Physiological and Psychological Correlates. Frontiers in Psychology 9, 1812, 2018.",
+        "url": "https://www.frontiersin.org/article/10.3389/fpsyg.2018.01812/full"
+      },
+      {
+        "angabe": "Cleveland Clinic: What Can You Learn From Dream Journaling? with Alaina Tiani, PhD. Health Essentials Podcast, May 8, 2024.",
+        "url": "https://my.clevelandclinic.org/podcasts/health-essentials/what-can-you-learn-from-dream-journaling-with-alaina-tiani"
+      },
+      {
+        "angabe": "Özder, Deva: İbn Sîrîn’den Tercüme Edilen Bir Rüya Tabirnamesi: “Hacı Muhammed Mostârî’nin Tabirnamesi.” Akademik Dil ve Edebiyat Dergisi 8 (1), 2024, pp. 76–96. DOI 10.34083/akaded.1444029.",
+        "url": "https://dergipark.org.tr/tr/download/article-file/3759037"
+      }
+    ],
+    "fremdeBegriffe": [
+      {
+        "text": "Hürriyet Mahmure: Rüya Tabirleri",
+        "lang": "tr"
+      },
+      {
+        "text": "En Çok Görülen Rüyalar ve Tabirleri",
+        "lang": "tr"
+      },
+      {
+        "text": "Artemidoros aus Daldis: Symbolik der Träume",
+        "lang": "de"
+      },
+      {
+        "text": "Özder, Deva: İbn Sîrîn’den Tercüme Edilen Bir Rüya Tabirnamesi: “Hacı Muhammed Mostârî’nin Tabirnamesi.” Akademik Dil ve Edebiyat Dergisi 8 (1), 2024",
+        "lang": "tr"
+      }
+    ]
+  }
+}

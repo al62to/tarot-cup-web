@@ -1,0 +1,33 @@
+{
+  "wissen": {
+    "kurz": "In short",
+    "weiter": "Read on",
+    "mehr": "More on this topic",
+    "startTitel": "Learn *more*",
+    "figurErzaehlerin": "drawn character Aylin",
+    "figurErzaehler": "drawn character Ozan",
+    "bereiche": {
+      "kaffeesatz": "Coffee cup reading",
+      "tarot": "Tarot",
+      "traum": "Dreams",
+      "mond": "Moon",
+      "allgemein": "General"
+    },
+    "nav": "Learn",
+    "alle": "All pages",
+    "uebersicht": {
+      "metaTitel": "Tarot, coffee cup reading and dreams explained | Tarot Cup",
+      "metaBeschreibung": "All of Tarot Cup’s background pages in one place: tarot, coffee cup reading, dreams and general topics, each with a short answer and its sources.",
+      "brotkrume": "Learn",
+      "titel": "Learn about tarot, coffee cup reading and *dreams*",
+      "vorspann": "Here you will find all our background pages in one place, sorted by topic. Each one starts with a short answer, then explains in more detail and lists its sources."
+    }
+  },
+  "posen": {
+    "titel": "More pictures of Aylin and Ozan",
+    "absaetze": [
+      "On the background pages about coffee cup reading, tarot and readings, more pictures show Aylin writing and holding a gift, and Aylin and Ozan with tarot cards; on the pages about dreams, Aylin and Ozan appear under the moon. The pictures with tarot cards were made with Canva’s image generator, the others with the Seedream 5.5 image generator at ElevenLabs. All of them were edited for Tarot Cup; for this website they were only scaled down and saved as AVIF and WebP."
+    ]
+  },
+  "llms": "Learn: origins, practice and customs"
+}

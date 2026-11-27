@@ -63,3 +63,11 @@ llmsTexte.pt = llmsTextePt;
 llmsTexte.fr = llmsTexteFr;
 llmsTexte.id = llmsTexteId;
 llmsTexte.hi = llmsTexteHi;
+
+// Überschrift „Wissen“ in llms.txt auf Englisch, Spanisch und Portugiesisch (AP-WS1, aus tools/erklaer_einspielen.mjs).
+import llmsWissenEn from './uebersetzt/wissen_en.json' with { type: 'json' };
+import llmsWissenEs from './uebersetzt/wissen_es.json' with { type: 'json' };
+import llmsWissenPt from './uebersetzt/wissen_pt.json' with { type: 'json' };
+for (const [code, w] of [['en', llmsWissenEn], ['es', llmsWissenEs], ['pt', llmsWissenPt]]) {
+  if (w.llms && llmsTexte[code]) llmsTexte[code].wissen = w.llms;
+}

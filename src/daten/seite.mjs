@@ -62,6 +62,9 @@ const STORE_HL = {
 export function storeLink(ort, sprache) {
   if (!istStoreOrt(ort)) throw new Error(`Unbekannter Ort für den Link zu Google Play: ${ort}`);
   const hl = STORE_HL[sprache] ? `&hl=${STORE_HL[sprache]}` : '';
+  // Erklärseiten (AP-WS1): utm_medium = Ort der Seite (wissen_<nr>), utm_campaign = Sprache, damit die Play Console die
+  // Website je Seite und Sprache als Quelle zeigt. Die übrigen Orte bleiben wie bisher (utm_medium=link, Kampagne = Ort).
+  if (ort.startsWith('wissen_')) return `${store.adresse}${hl}&referrer=utm_source%3Dwebsite%26utm_medium%3D${ort}%26utm_campaign%3D${sprache}`;
   return `${store.adresse}${hl}&referrer=utm_source%3Dwebsite%26utm_medium%3Dlink%26utm_campaign%3D${ort}`;
 }
 

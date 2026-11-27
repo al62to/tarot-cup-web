@@ -114,7 +114,7 @@ export const oberflaeche = {
           'Aylin und Ozan, die beiden Figuren auf dieser Website und in der App, sind mit dem Bildgenerator von Canva gezeichnet und für Tarot Cup bearbeitet.',
         ],
       },
-      // AP-25: die Posen der Figuren auf den Erklärseiten.
+      // AP-25: die Posen der Figuren auf den Erklärseiten. AP-WS1: mit Nr. 8 und 11 auch Ozan mit Tarotkarten.
       // AP-25A: gekürzt auf das, was live ist. AP-25C: dazu Nr. 13 bis 15 (Träume; Ozan und Aylin unter dem Mond).
       // Live: Nr. 1, 7, 20 (Aylin beim Schreiben, mit Karten, mit Geschenk), Nr. 13, 15 (Ozan, Mond), Nr. 14 (Aylin, Mond).
       // Voller Stand für später (mit Nr. 16 und 17 und den übrigen Seiten mit Ozan), Titel 'Weitere Bilder von Aylin und Ozan':
@@ -122,7 +122,7 @@ export const oberflaeche = {
       posen: {
         titel: 'Weitere Bilder von Aylin und Ozan',
         absaetze: [
-          'Auf den Seiten mit Wissen zu Kaffeesatz, Tarot und zur Deutung zeigen weitere Bilder Aylin beim Schreiben, mit Tarotkarten und mit einem Geschenk, auf den Seiten mit Wissen zu Träumen Aylin und Ozan unter dem Mond. Das Bild mit Tarotkarten ist mit dem Bildgenerator von Canva entstanden, die übrigen mit dem Bildgenerator Seedream 5.5 bei ElevenLabs. Alle sind für Tarot Cup bearbeitet; für diese Website sind sie nur verkleinert und als AVIF und WebP gespeichert.',
+          'Auf den Seiten mit Wissen zu Kaffeesatz, Tarot und zur Deutung zeigen weitere Bilder Aylin beim Schreiben und mit einem Geschenk sowie Aylin und Ozan mit Tarotkarten, auf den Seiten mit Wissen zu Träumen Aylin und Ozan unter dem Mond. Die Bilder mit Tarotkarten sind mit dem Bildgenerator von Canva entstanden, die übrigen mit dem Bildgenerator Seedream 5.5 bei ElevenLabs. Alle sind für Tarot Cup bearbeitet; für diese Website sind sie nur verkleinert und als AVIF und WebP gespeichert.',
         ],
       },
       marken: 'Google Play und das Google Play-Logo sind Marken von Google LLC.',
@@ -247,7 +247,7 @@ export const oberflaeche = {
       posen: {
         titel: 'Aylin ve Ozan’ın diğer resimleri',
         absaetze: [
-          'Kahve falı, tarot ve yorumla ilgili bilgi sayfalarında Aylin’i başka resimlerde de görürsün: yazarken, tarot kartlarıyla ve elinde bir hediyeyle. Rüyalarla ilgili bilgi sayfalarında ise Aylin ile Ozan ayın altında. Tarot kartlı resim Canva’nın görsel üreticisiyle, diğerleri ElevenLabs’teki Seedream 5.5 görsel üreticisiyle oluşturuldu. Hepsi Tarot Cup için düzenlendi; bu sitede yalnızca küçültüldü ve AVIF ile WebP biçiminde kaydedildi.',
+          'Kahve falı, tarot ve yorumla ilgili bilgi sayfalarında başka resimler de görürsün: Aylin’i yazarken ve elinde bir hediyeyle, Aylin ile Ozan’ı tarot kartlarıyla. Rüyalarla ilgili bilgi sayfalarında ise Aylin ile Ozan ayın altında. Tarot kartlı resimler Canva’nın görsel üreticisiyle, diğerleri ElevenLabs’teki Seedream 5.5 görsel üreticisiyle oluşturuldu. Hepsi Tarot Cup için düzenlendi; bu sitede yalnızca küçültüldü ve AVIF ile WebP biçiminde kaydedildi.',
         ],
       },
       marken: 'Google Play ve Google Play logosu, Google LLC’nin ticari markalarıdır.',
@@ -329,4 +329,14 @@ for (const [sprache, texte] of Object.entries(BEGLEITER)) {
   ziel.bilder.begleiterErzaehler ??= texte.begleiterErzaehler;
   ziel.app.blase ??= texte.blase;
   ziel.bildnachweis.begleiter ??= texte.bildnachweis;
+}
+
+// Wissensbereich auf Englisch, Spanisch und Portugiesisch (AP-WS1): Texte der Erklärseiten-Oberfläche und der Posen im
+// Bildnachweis; tools/texte_einspielen.mjs lässt diese Teile aus (NUR_DE_TR), sie kommen aus tools/erklaer_einspielen.mjs.
+import wissenEn from './uebersetzt/wissen_en.json' with { type: 'json' };
+import wissenEs from './uebersetzt/wissen_es.json' with { type: 'json' };
+import wissenPt from './uebersetzt/wissen_pt.json' with { type: 'json' };
+for (const [code, w] of [['en', wissenEn], ['es', wissenEs], ['pt', wissenPt]]) {
+  if (w.wissen) oberflaeche[code].wissen = w.wissen;
+  if (w.posen) oberflaeche[code].bildnachweis.posen = w.posen;
 }

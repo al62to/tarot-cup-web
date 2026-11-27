@@ -49,10 +49,17 @@ const tuerkisch = ['de', 'en', 'es', 'bs', 'hr', 'sr', 'ro', 'pt', 'fr', 'id', '
       Object.values(modul[sprache] ?? {}).flatMap((seite) => seite?.tuerkischeBegriffe ?? [])),
   ].map((text) => ({ text, lang: 'tr', nur: [sprache] })));
 
+// Fremdsprachige Teile in den übersetzten Erklärseiten (AP-WS1, Feld fremdeBegriffe aus tools/erklaer_einspielen.mjs):
+// deutsche und türkische Titel und Namen in den Quellen, nur auf Seiten der jeweiligen Sprache.
+const fremd = ['en', 'es', 'pt'].flatMap((sprache) =>
+  [erklaerKaffeesatz, erklaerTarot, erklaerTraum, erklaerMond, erklaerAllgemein].flatMap((modul) =>
+    Object.values(modul[sprache] ?? {}).flatMap((seite) => seite?.fremdeBegriffe ?? []))
+    .map(({ text, lang }) => ({ text, lang, nur: [sprache] })));
+
 // Gleiche Begriffe zusammenfassen (Sprachen der Seiten vereinigt); längere Begriffe zuerst, damit ein ganzer Satz vor
 // einem Teil daraus greift.
 const zusammen = new Map();
-for (const eintrag of [...fest, ...tuerkisch]) {
+for (const eintrag of [...fest, ...tuerkisch, ...fremd]) {
   const schluessel = `${eintrag.text}|${eintrag.lang}`;
   const vorher = zusammen.get(schluessel);
   if (!vorher) zusammen.set(schluessel, { ...eintrag });

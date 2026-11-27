@@ -1,0 +1,106 @@
+{
+  "deutung": {
+    "metaTitel": "What a Reading Can Tell You: Automatic Readings | Tarot Cup",
+    "metaBeschreibung": "What a reading in Tarot Cup can and cannot do: firm limits, how the automatic tarot or dream reading is written, your consent, and help in an emergency.",
+    "titel": "What a reading can tell you, and what it cannot",
+    "brotkrume": "What a reading can do",
+    "kurzantwort": [
+      "A reading in Tarot Cup is meant for entertainment and as food for thought, not as a prediction or advice; it does not predict whether anyone will fall ill, become pregnant, or die, and it gives no tips about money or gambling. The automatic reading is written by a program, only with your consent and currently only as a gift. If your dream or your question sounds like a real emergency, you get a help text telling you where to find help instead of a reading."
+    ],
+    "inhaltTitel": "Contents",
+    "abschnitte": [
+      {
+        "kennung": "what-a-reading-is",
+        "titel": "What is a reading, and what is it not?",
+        "absaetze": [
+          "A reading tells you what the tradition sees in a tarot card, a symbol in the coffee grounds, or a dream image, and invites you to compare this with your own life. It speaks in possibilities, not in certainties.",
+          "Tarot Cup is for entertainment. A reading is not a prediction, not a fact, and not advice.",
+          "So do not base important decisions on a reading. For questions about health, mental well-being, legal matters, or money, professionals and people you trust can help."
+        ]
+      },
+      {
+        "kennung": "firm-limits",
+        "titel": "Which limits apply to every reading?",
+        "absaetze": [
+          "Firm limits apply to the texts in the app, even if you expressly ask for something else. A reading does not predict whether you or others will fall ill, become pregnant, or die, not even by hinting at it; a dream image of illness or death is read gently as an inner image. It gives no amounts of money, lucky numbers, or tips on the lottery, betting, or investments, and it does not predict how court proceedings or a case before an authority will turn out.",
+          "Nor does it pass judgment on people: it does not claim that someone is unfaithful, is lying, or is to blame for an argument; it does not warn about curses, the evil eye, or envious people; and it never urges you to end a relationship, quit your job, or cut off contact. At most, it invites you to have a calm conversation; the decision stays with you.",
+          "The app also reads dark-seeming cards gently. In Tarot Cup, *Death* stands for change and closure, not for dying. You can find more about the cards in the [tarot guide](/en/tarot/)."
+        ]
+      },
+      {
+        "kennung": "how-readings-are-made",
+        "titel": "How are the readings in the app created?",
+        "absaetze": [
+          "For the regular tarot, coffee grounds, and dream readings, the app on your phone puts together ready-made texts according to fixed rules, and these texts follow the traditional meanings. For tarot and coffee grounds, it does not ask for your question either: you think of it silently, as tradition has it.",
+          "For the automatic reading, you write down your dream in your own words, or you draw cards and can ask them a question of your own. From this, a program automatically writes a short reading, without a person reading it first. The reading is marked “created automatically.”",
+          "The limits above are also part of the fixed instructions for the program. The Tarot Cup server checks every response and can request a new one or replace it with a fixed substitute text, but it cannot guarantee that every automatic reading stays within all the limits. If you ask, for example, whether you are ill, the automatic reading is designed to first say in one sentence that it cannot answer this and that a doctor is the right person to ask, and then to give a general reading.",
+          "Even so, such a text can be inappropriate, claim things that are not true, or misunderstand your question. Do not rely on statements in it without checking them yourself, and tap “Report” right below the reading if you find it hurtful, inappropriate, or wrong."
+        ]
+      },
+      {
+        "kennung": "consent-and-data",
+        "titel": "What happens to your dream or your question?",
+        "absaetze": [
+          "The first time you tap “Get a reading,” the app asks for your express consent, because a dream or a question can contain very personal things, for example about health, faith, or intimate matters. Without your consent, the app sends nothing for the automatic reading.",
+          "With your consent, your dream, or your cards and your question if you ask one, are sent for this one reading to the Tarot Cup server in Germany and to a service provider outside the EU, for example in the USA, where the program writes the reading. The Tarot Cup server stores neither your text nor the reading. If you report a reading, the server stores only its text, together with the type, language, country, and date, without an identifier, currently for 90 days. The service provider currently deletes your data, as a rule, after 30 days at the latest and does not use it for training.",
+          "The app also sends, among other things, the language of the app and the country of your phone as a two-letter code. The country is needed so that a help text can name suitable places to turn to; the app does not need a location permission for this. A random identifier of this installation and the verification from Google Play also go to the Tarot Cup server; the service provider does not receive the identifier. Everything else, including the exceptions, is set out in the [Privacy Policy](/en/privacy/).",
+          "An automatic reading goes into your history only if you tap “Save,” and even then without your dream and without your question. It is best to leave out other people’s names, addresses, and phone numbers."
+        ]
+      },
+      {
+        "kennung": "help-instead-of-a-reading",
+        "titel": "What happens if your text sounds like an emergency?",
+        "absaetze": [
+          "This applies only to the automatic reading, because that is the only place where you write something yourself. Before your text goes to the service provider, the Tarot Cup server checks it against lists of words to see whether it sounds like a crisis or like danger in your real life, for example thoughts of self-harm or violence that is really happening to you. If the check is triggered, your text goes no further, and instead of a reading, you get a fixed help text telling you where to find help. If it is only the program that recognizes such a situation, the server discards its response and likewise sends only this help text.",
+          "A dream about death or violence on its own is not an emergency; it gets a normal, gentle reading. The check does not recognize every emergency, and the help text does not replace an emergency call: if you or someone else is in danger, contact your country’s emergency number."
+        ]
+      },
+      {
+        "kennung": "automatic-reading-as-a-gift",
+        "titel": "How do you get an automatic reading?",
+        "absaetze": [
+          "Currently, you get an automatic reading only as a gift. Your first one is a welcome gift if you do not have and have not had any other gift for it; there is one welcome gift per device. You get more through sharing and inviting. For sharing, the following currently applies: if you share something from the app on three different days within seven days and at least one of your links was opened during that time, you get one. Only links with a code count, not those you share “without code.” If you invite someone and that person uses Tarot Cup on as many days as the app states, you both get one.",
+          "Currently, there is at most one automatic reading in seven days per device, and the welcome gift counts toward this. The Tarot Cup server decides whether one is open, so the app needs an internet connection for this. The app shows you what currently applies. These rules can change at any time; you have no claim to a gift ([Terms of Use](/en/terms/))."
+        ]
+      }
+    ],
+    "fragenTitel": "Frequently asked questions",
+    "fragen": [
+      {
+        "frage": "Does a person read my dream or my question?",
+        "antwort": [
+          "Normally, no. Only if the service provider’s safety systems flag a request can the provider review it. If you report a reading, its text is read in order to fix errors; your dream and your question are not sent along with it."
+        ]
+      },
+      {
+        "frage": "Can I withdraw my consent?",
+        "antwort": [
+          "Yes, at any time in Settings under “Automatic reading”; after that, the app sends nothing more for it until you consent again. “Delete my data on the server” immediately deletes what the server has stored about your device; it currently remains in the server’s backups for up to 14 days, and open gifts are lost."
+        ]
+      },
+      {
+        "frage": "Does the app work without the automatic reading?",
+        "antwort": [
+          "Yes. Tarot, coffee grounds, dream interpretation with symbols, the Dictionary, and History work without consent and without internet access. You need internet access for the automatic reading, the gifts from the server, and inviting, as well as for the notice about new versions and for rating the app through Google Play."
+        ]
+      }
+    ],
+    "app": {
+      "titel": "In the app",
+      "text": [
+        "In Tarot Cup for Android, you read cards, coffee grounds, and dreams without an account. On top of that, you can currently get an automatic reading as a gift: the first one as a welcome gift, and more when you share or invite someone."
+      ]
+    },
+    "quellenTitel": "Sources",
+    "quellen": [
+      {
+        "angabe": "Tarot Cup: Privacy Policy, Version 1.9, last updated November 21, 2026, especially Sections 1, 3, 4, 6, 10, 15, and 17. tarot-cup.com, 2026.",
+        "url": "https://tarot-cup.com/en/privacy/"
+      },
+      {
+        "angabe": "Tarot Cup: Terms of Use, Version 1.3, last updated November 17, 2026, especially Sections 3, 5, 6, 11, and 14. tarot-cup.com, 2026.",
+        "url": "https://tarot-cup.com/en/terms/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "wissen": {
+    "kurz": "Em poucas palavras",
+    "weiter": "Continue lendo",
+    "mehr": "Mais sobre o tema",
+    "startTitel": "Aprenda *mais*",
+    "figurErzaehlerin": "personagem desenhada Aylin",
+    "figurErzaehler": "personagem desenhado Ozan",
+    "bereiche": {
+      "kaffeesatz": "Borra de café",
+      "tarot": "Tarô",
+      "traum": "Sonhos",
+      "mond": "Lua",
+      "allgemein": "Geral"
+    },
+    "nav": "Aprenda",
+    "alle": "Todas as páginas",
+    "uebersicht": {
+      "metaTitel": "Tarô, borra de café e sonhos: aprenda mais | Tarot Cup",
+      "metaBeschreibung": "Todas as páginas para aprender do Tarot Cup em um só lugar: tarô, leitura da borra de café, sonhos e temas gerais, com respostas curtas e fontes.",
+      "brotkrume": "Aprenda",
+      "titel": "Aprenda sobre tarô, borra de café e *sonhos*",
+      "vorspann": "Aqui estão todas as páginas para aprender em um só lugar, organizadas por tema. Cada uma começa com uma resposta curta, depois explica com mais detalhes e cita suas fontes."
+    }
+  },
+  "posen": {
+    "titel": "Outras imagens de Aylin e Ozan",
+    "absaetze": [
+      "Nas páginas para aprender sobre borra de café, tarô e leituras, outras imagens mostram Aylin escrevendo e com um presente, e Aylin e Ozan com cartas de tarô; nas páginas sobre sonhos, Aylin e Ozan aparecem sob a lua. As imagens com cartas de tarô foram feitas com o gerador de imagens do Canva; as demais, com o gerador de imagens Seedream 5.5 da ElevenLabs. Todas foram editadas para o Tarot Cup; para este site, elas foram apenas reduzidas e salvas em AVIF e WebP."
+    ]
+  },
+  "llms": "Aprenda: origem, prática e tradições"
+}

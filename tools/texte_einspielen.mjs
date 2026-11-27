@@ -60,9 +60,10 @@ const sterne = (text) => (text.match(/\*/g) ?? []).length;
 
 // Damit die Module laden, auch wenn eine Zieldatei noch fehlt.
 mkdirSync(ZIEL, { recursive: true });
-// Nur Module mit übersetzten Dateien; die Erklärseiten gibt es nur auf Deutsch und Türkisch (AP-40).
+// Nur Module mit übersetzten Dateien; die Erklärseiten (erklaer_*) haben seit AP-WS1 eigene Übersetzungen für en, es und pt
+// (tools/erklaer_einspielen.mjs) und bleiben hier außen vor.
 const dateien = readdirSync(TEXTE)
-  .filter((name) => name.endsWith('.mjs') && readFileSync(join(TEXTE, name), 'utf8').includes(`./uebersetzt/${name.replace(/\.mjs$/, '')}_`))
+  .filter((name) => name.endsWith('.mjs') && !name.startsWith('erklaer_') && readFileSync(join(TEXTE, name), 'utf8').includes(`./uebersetzt/${name.replace(/\.mjs$/, '')}_`))
   .sort();
 for (const name of dateien) {
   for (const code of SPRACHEN) {

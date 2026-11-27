@@ -1,0 +1,503 @@
+{
+  "geschichte": {
+    "metaTitel": "História da interpretação dos sonhos | Tarot Cup",
+    "metaBeschreibung": "De Artemidoro, no século II, aos livros de sonhos atribuídos a Ibn Sirin, até Freud e Jung: como as pessoas interpretaram seus sonhos ao longo do tempo.",
+    "titel": "História da interpretação dos sonhos: de Artemidoro a Jung",
+    "brotkrume": "História da interpretação",
+    "tuerkischeBegriffe": [
+      "rüya tabiri",
+      "muabbir",
+      "tabirname"
+    ],
+    "kurzantwort": [
+      "As pessoas interpretam seus sonhos há milênios. O livro de sonhos grego mais antigo que se conservou foi escrito por Artemidoro de Daldis no século II; no mundo islâmico, livros de sonhos ficaram famosos sob o nome do estudioso Ibn Sirin, que morreu em 729. No fim de 1899 saiu “A Interpretação dos Sonhos”, de Sigmund Freud, e com Freud e C. G. Jung o sonho passou a ser um tema da psicologia."
+    ],
+    "inhaltTitel": "Conteúdo",
+    "abschnitte": [
+      {
+        "kennung": "primeiros-vestigios",
+        "titel": "Desde quando as pessoas interpretam seus sonhos?",
+        "absaetze": [
+          "Quem acorda de manhã com uma imagem enigmática na cabeça costuma se perguntar o que ela poderia significar. Essa pergunta é antiquíssima. A Enciclopédia do Islã da Fundação Diyanet da Turquia remonta a interpretação dos sonhos à Mesopotâmia e ao Egito e menciona também tradições gregas, hebraicas, árabes pré-islâmicas e turcas antigas.",
+          "Com o tempo, mudou o que se esperava de um sonho. Na Antiguidade e nos livros de sonhos clássicos, as pessoas buscavam nos sonhos, muitas vezes, indícios sobre o próprio futuro, como trabalho, viagens ou casamento. A psicologia do século XX, por sua vez, perguntava o que um sonho conta sobre a própria pessoa. Esta página percorre esse caminho por meio de quatro nomes: Artemidoro, Ibn Sirin, Freud e Jung."
+        ]
+      },
+      {
+        "kennung": "artemidoro",
+        "titel": "Quem foi Artemidoro de Daldis?",
+        "absaetze": [
+          "Artemidoro era natural de Éfeso, mas usava o nome de Daldis, cidade natal de sua mãe. A cidade antiga ficava na região da Lídia, no território da atual província de Manisa, na Turquia. Ele viveu e escreveu no século II. Quando exatamente, não se sabe ao certo; pesquisas mais recentes situam sua atividade entre 140 e 200, aproximadamente.",
+          "Sua obra se chama *Oneirokritika*, em português algo como “Interpretação dos Sonhos”. É o livro grego mais antigo que se conservou sobre o tema e tem cinco partes. Artemidoro escreveu as três primeiras para um público amplo; elas percorrem as imagens dos sonhos em ordem, do corpo humano à natureza e a muitas outras coisas. Os livros quatro e cinco eram destinados a seu filho, que também interpretava sonhos. O quinto reúne quase cem exemplos de sonhos.",
+          "Chama a atenção sua postura: o mesmo sonho pode significar coisas bem diferentes para duas pessoas. Por isso, quem interpreta precisa saber quem sonha e como essa pessoa vive. No século IX, os três primeiros livros foram traduzidos para o árabe, e até Sigmund Freud fez referência a Artemidoro."
+        ]
+      },
+      {
+        "kennung": "ibn-sirin",
+        "titel": "O que Ibn Sirin tem a ver com os livros de sonhos?",
+        "absaetze": [
+          "Muhammad ibn Sirin nasceu por volta de 654 em Basra e morreu em 729. As fontes mais antigas o apresentam sobretudo como estudioso da tradição e do direito islâmico. Nos séculos seguintes, passou a ser considerado um dos primeiros grandes intérpretes de sonhos; o historiador Ibn Khaldun o incluía entre os mais conhecidos especialistas nesse campo.",
+          "A Enciclopédia do Islã da Fundação Diyanet cita dez livros de sonhos importantes que lhe são atribuídos. Que ele próprio tenha escrito algum deles é considerado muito improvável; o autor do artigo, com base em outras obras especializadas, descarta essa possibilidade. As fontes antigas não mencionam nenhum livro de sonhos dele, consta que ele próprio era contra registrar tradições por escrito, e algumas das coletâneas citam pessoas que só viveram depois dele. Provavelmente, seu nome respeitado servia para dar peso aos livros.",
+          "A literatura turca mostra a grande influência que esses livros tiveram mesmo assim. Nela, o livro de sonhos, o *tabirname*, é um gênero próprio desde o século XIV; muitas dessas obras foram traduzidas do árabe, e a obra atribuída a Ibn Sirin está entre as mais traduzidas. Também o livro de sonhos do estudioso de Damasco Abd al-Ghani an-Nabulusi (1641 a 1731) foi traduzido para o turco na época otomana. A interpretação de um sonho se chama em turco *rüya tabiri*; quem a domina é um *muabbir*."
+        ]
+      },
+      {
+        "kennung": "freud",
+        "titel": "O que mudou com “A Interpretação dos Sonhos”, de Freud?",
+        "absaetze": [
+          "O livro “A Interpretação dos Sonhos”, de Sigmund Freud, foi publicado em 4 de novembro de 1899 por Franz Deuticke, em Leipzig e Viena. A editora o havia datado antecipadamente de 1900; por isso, esse ano aparece na folha de rosto e em muitas listas bibliográficas. Freud chegou a ver oito edições e revisou o livro para a maioria delas.",
+          "Para Freud, o sonho estava intimamente ligado à história de vida de quem sonha. O sonho representaria desejos reprimidos como realizados, de forma disfarçada, e assim protegeria o sono. O que lembramos de manhã, Freud chamou de conteúdo manifesto do sonho; por trás dele estariam os pensamentos latentes do sonho, que só a análise traz à luz. O caminho entre os dois ele descreveu como *trabalho do sonho*, que condensa e desloca os pensamentos. Ele chamou a interpretação dos sonhos de via régia para o conhecimento do inconsciente."
+        ]
+      },
+      {
+        "kennung": "jung",
+        "titel": "Como C. G. Jung via os sonhos?",
+        "absaetze": [
+          "Carl Gustav Jung nasceu em 1875, na margem suíça do Lago de Constança, e morreu em 1961, em Küsnacht, no Lago de Zurique. Ainda jovem psiquiatra, trabalhou na clínica Burghölzli, em Zurique. Em 1907, visitou Freud em Viena; durante alguns anos, os dois trabalharam em estreita colaboração, e Jung se tornou o primeiro presidente da associação internacional dos psicanalistas. Mais tarde seguiram caminhos separados, entre outros motivos porque Jung não entendia a libido apenas como impulso sexual.",
+          "Para Jung, os sonhos não se alimentavam só da própria história de vida, mas também de um inconsciente coletivo, comum a todos os seres humanos. Nele, Jung via imagens primordiais, os arquétipos, que retornam em mitos, contos de fadas e sonhos, como a grande mãe ou o velho sábio. Entendia um sonho como imagem da situação interior, expressa em símbolos. Ao interpretar, gostava de comparar as imagens do sonho com motivos afins e recorria a sonhos anteriores e posteriores quando um único sonho não podia ser compreendido isoladamente."
+        ]
+      },
+      {
+        "kennung": "o-que-resta",
+        "titel": "O que resta disso hoje?",
+        "absaetze": [
+          "Hoje os antigos livros de sonhos e a psicologia convivem lado a lado. Grandes portais de notícias turcos mantêm seções próprias sobre o *rüya tabiri*, e a pesquisa sobre o sono investiga quais temas aparecem com mais frequência em sonhos e pesadelos.",
+          "Todos os caminhos têm algo em comum: uma imagem de sonho só ganha sentido dentro de um contexto. Em Artemidoro, esse contexto era a vida da pessoa que sonha; em Freud e Jung, seus pensamentos e sentimentos. Por isso, uma leitura pode inspirar, mas não faz nenhum julgamento sobre o futuro. A página [Como lembrar melhor dos sonhos e anotá-los](/pt/como-lembrar-dos-sonhos/) explica como registrar seus sonhos, e [Símbolos dos sonhos mais comuns](/pt/simbolos-dos-sonhos/) traz uma visão geral das imagens."
+        ]
+      }
+    ],
+    "fragenTitel": "Perguntas frequentes",
+    "fragen": [
+      {
+        "frage": "Quão antiga é a interpretação dos sonhos?",
+        "antwort": [
+          "Muito antiga: a Enciclopédia do Islã da Fundação Diyanet já menciona a Mesopotâmia e o Egito. O livro de sonhos grego mais antigo que se conservou é de Artemidoro, do século II."
+        ]
+      },
+      {
+        "frage": "Foi Ibn Sirin quem escreveu os livros de sonhos?",
+        "antwort": [
+          "Muito provavelmente não. As fontes mais antigas não mencionam nenhum livro de sonhos dele; os livros com seu nome foram, ao que parece, reunidos mais tarde."
+        ]
+      },
+      {
+        "frage": "“A Interpretação dos Sonhos”, de Freud, saiu em 1899 ou em 1900?",
+        "antwort": [
+          "As duas respostas estão certas, cada uma a seu modo. O livro foi lançado em 4 de novembro de 1899, mas a editora pôs 1900 como ano na folha de rosto."
+        ]
+      },
+      {
+        "frage": "Qual é a diferença entre Jung e Freud na visão dos sonhos?",
+        "antwort": [
+          "Freud via no sonho sobretudo desejos disfarçados. Jung o entendia de modo mais amplo, como imagem da situação interior, e partia da existência de imagens primordiais comuns a todos os seres humanos."
+        ]
+      },
+      {
+        "frage": "O que significa “rüya tabiri”?",
+        "antwort": [
+          "É assim que se chama em turco a interpretação de um sonho. Quem interpreta sonhos é um *muabbir*, e um livro de sonhos se chama *tabirname*."
+        ]
+      }
+    ],
+    "app": {
+      "titel": "Interprete seu sonho no app",
+      "text": [
+        "No Tarot Cup, você escolhe o sentimento do seu sonho, uma área da vida e até cinco símbolos. A leitura conta o que a tradição diz sobre cada imagem e deixa espaço para seus próprios pensamentos."
+      ]
+    },
+    "quellenTitel": "Fontes",
+    "quellen": [
+      {
+        "angabe": "Artemidor von Daldis. Wikipedia, Die freie Enzyklopädie (alemão).",
+        "url": "https://de.wikipedia.org/wiki/Artemidor_von_Daldis"
+      },
+      {
+        "angabe": "Oneirocritica. Wikipedia (inglês).",
+        "url": "https://en.wikipedia.org/wiki/Oneirocritica"
+      },
+      {
+        "angabe": "Daldis. Wikipedia, Die freie Enzyklopädie (alemão).",
+        "url": "https://de.wikipedia.org/wiki/Daldis"
+      },
+      {
+        "angabe": "Walde, Christine: resenha de J. du Bouchet, C. Chandezon (org.): Études sur Artémidore et l’interprétation des rêves I. Bryn Mawr Classical Review 2012.12.43.",
+        "url": "https://bmcr.brynmawr.edu/?p=38874"
+      },
+      {
+        "angabe": "Vinagre-Lobo, Miguel A.: resenha de G. Weber (org.): Artemidor von Daldis und die antike Traumdeutung. Exemplaria Classica 22, 2018.",
+        "url": "https://uhu.es/publicaciones/ojs/index.php/exemplaria/article/view/3524"
+      },
+      {
+        "angabe": "Yücel, Ahmet: İbn Sîrîn. In: TDV İslâm Ansiklopedisi, v. 20. Türkiye Diyanet Vakfı, 1999.",
+        "url": "https://islamansiklopedisi.org.tr/ibn-sirin"
+      },
+      {
+        "angabe": "Çelebi, İlyas; Uludağ, Süleyman: Rüyâ. In: TDV İslâm Ansiklopedisi. Türkiye Diyanet Vakfı, 2008.",
+        "url": "https://islamansiklopedisi.org.tr/ruya"
+      },
+      {
+        "angabe": "Özel, Ahmet: Nablusî, Abdülganî b. İsmâil. In: TDV İslâm Ansiklopedisi, v. 32. Türkiye Diyanet Vakfı, 2006.",
+        "url": "https://islamansiklopedisi.org.tr/nablusi-abdulgani-b-ismail"
+      },
+      {
+        "angabe": "Özder, Deva: İbn Sîrîn’den Tercüme Edilen Bir Rüya Tabirnamesi: „Hacı Muhammed Mostârî’nin Tabirnamesi“. Akademik Dil ve Edebiyat Dergisi 8 (1), 2024, p. 76–96. DOI 10.34083/akaded.1444029.",
+        "url": "https://dergipark.org.tr/tr/download/article-file/3759037"
+      },
+      {
+        "angabe": "Tögel, Christfried (org.): Sigmund-Freud-Gesamtausgabe, v. 7 (1900). Psychosozial-Verlag, Gießen 2017 (amostra de leitura).",
+        "url": "https://www.psychosozial-verlag.de/pdfs/leseprobe/9783837924077.pdf"
+      },
+      {
+        "angabe": "Die Traumdeutung. Austria-Forum, AustriaWiki.",
+        "url": "https://austria-forum.org/af/AustriaWiki/Die_Traumdeutung"
+      },
+      {
+        "angabe": "Goddemeier, Christof: Carl Gustav Jung. Vom kollektiven Unbewussten und den Archetypen. Deutsches Ärzteblatt PP, edição 7, 2011.",
+        "url": "https://www.aerzteblatt.de/archiv/97655/Carl-Gustav-Jung-Vom-kollektiven-Unbewussten-und-den-Archetypen"
+      },
+      {
+        "angabe": "Diercks, Christine: Internationale Psychoanalytische Vereinigung 1910–2010. Kongresse 1908–1918. psyalpha, 2010.",
+        "url": "https://www.psyalpha.net/sites/default/files/anhang/ipv-kongresse-1908-1918-diercks-2010.pdf"
+      },
+      {
+        "angabe": "Edwards, Lin: Men and women have different nightmares. Medical Xpress, 24/03/2010 (reportagem sobre Schredl 2010).",
+        "url": "https://medicalxpress.com/news/2010-03-men-women-nightmares.html"
+      },
+      {
+        "angabe": "Hürriyet Mahmure: Rüya Tabirleri.",
+        "url": "https://www.hurriyet.com.tr/mahmure/ruya-tabirleri/"
+      }
+    ],
+    "fremdeBegriffe": [
+      {
+        "text": "Küsnacht",
+        "lang": "de"
+      },
+      {
+        "text": "Burghölzli",
+        "lang": "de"
+      },
+      {
+        "text": "Artemidor von Daldis. Wikipedia, Die freie Enzyklopädie",
+        "lang": "de"
+      },
+      {
+        "text": "Daldis. Wikipedia, Die freie Enzyklopädie",
+        "lang": "de"
+      },
+      {
+        "text": "Artemidor von Daldis und die antike Traumdeutung. Exemplaria Classica 22, 2018",
+        "lang": "de"
+      },
+      {
+        "text": "Yücel, Ahmet: İbn Sîrîn. In: TDV İslâm Ansiklopedisi",
+        "lang": "tr"
+      },
+      {
+        "text": "20. Türkiye Diyanet Vakfı, 1999",
+        "lang": "tr"
+      },
+      {
+        "text": "Çelebi, İlyas; Uludağ, Süleyman: Rüyâ. In: TDV İslâm Ansiklopedisi. Türkiye Diyanet Vakfı, 2008",
+        "lang": "tr"
+      },
+      {
+        "text": "Özel, Ahmet: Nablusî, Abdülganî b. İsmâil. In: TDV İslâm Ansiklopedisi",
+        "lang": "tr"
+      },
+      {
+        "text": "32. Türkiye Diyanet Vakfı, 2006",
+        "lang": "tr"
+      },
+      {
+        "text": "Özder, Deva: İbn Sîrîn’den Tercüme Edilen Bir Rüya Tabirnamesi: „Hacı Muhammed Mostârî’nin Tabirnamesi“. Akademik Dil ve Edebiyat Dergisi 8 (1), 2024",
+        "lang": "tr"
+      },
+      {
+        "text": "Tögel, Christfried",
+        "lang": "tr"
+      },
+      {
+        "text": "7 (1900). Psychosozial-Verlag, Gießen 2017",
+        "lang": "de"
+      },
+      {
+        "text": "Goddemeier, Christof: Carl Gustav Jung. Vom kollektiven Unbewussten und den Archetypen. Deutsches Ärzteblatt PP",
+        "lang": "de"
+      },
+      {
+        "text": "Hürriyet Mahmure: Rüya Tabirleri",
+        "lang": "tr"
+      }
+    ]
+  },
+  "erinnern": {
+    "metaTitel": "Como lembrar dos sonhos e anotá-los | Tarot Cup",
+    "metaBeschreibung": "Por que esquecemos a maioria dos sonhos e como um diário de sonhos ajuda: dicas simples e tranquilas para lembrar e anotar seus sonhos.",
+    "titel": "Como lembrar melhor dos sonhos e anotá-los",
+    "brotkrume": "Lembrar dos sonhos",
+    "kurzantwort": [
+      "Todo mundo sonha todas as noites, cerca de duas horas no total, segundo o instituto de pesquisa norte-americano NINDS, mas a maioria dos sonhos já se apagou quando acordamos. Um hábito simples pode ajudar: escrever o sonho em um caderno ou gravá-lo em áudio logo de manhã. Em um estudo, pessoas que no início quase não guardavam sonhos na memória passaram a lembrar deles com bem mais frequência depois de pouco menos de quatro semanas."
+    ],
+    "inhaltTitel": "Conteúdo",
+    "abschnitte": [
+      {
+        "kennung": "por-que-esquecemos",
+        "titel": "Por que esquecemos a maioria dos sonhos?",
+        "absaetze": [
+          "Durante o sono, várias fases se alternam. A primeira fase do chamado sono REM, nome que vem dos movimentos rápidos dos olhos, começa cerca de 90 minutos depois que adormecemos; ao longo da noite, essas fases ficam mais longas. A maioria dos sonhos, e os mais vívidos, surge no sono REM, mas também se sonha nas outras fases.",
+          "Não é óbvio que um sonho fique na memória. Segundo um modelo difundido na pesquisa do sono, é preciso um breve período de vigília para que o conteúdo de um sonho passe da memória de curto prazo para a de longo prazo. Em um estudo de laboratório realizado na Cidade do Cabo, pessoas que costumam lembrar dos sonhos ficavam, de fato, acordadas com mais frequência e por mais tempo durante a noite do que pessoas que raramente lembram. Já quem dorme a noite toda, sem períodos mais longos de vigília, tem, de acordo com esse modelo, menos chance de guardar um sonho. Às vezes, porém, um sonho só volta ao longo do dia, quando algo faz lembrar dele."
+        ]
+      },
+      {
+        "kennung": "diario-de-sonhos",
+        "titel": "O que é um diário de sonhos? Ele ajuda mesmo?",
+        "absaetze": [
+          "Um diário de sonhos nada mais é do que um lugar onde você registra seus sonhos: um caderninho, um bloco de notas ao lado da cama ou uma gravação de voz no celular. Uma psicóloga do sono da Cleveland Clinic ressalta que não existe forma certa ou errada para isso; algumas pessoas preferem desenhar a escrever.",
+          "Um estudo da Colômbia, noticiado pela British Psychological Society, mostra que vale a pena praticar. Durante 27 dias, 55 participantes anotaram toda manhã o que lembravam da noite. O terço que, no início, menos se lembrava dos sonhos passou, em média, de cerca de um sonho por mês para cerca de um por semana. Não é uma promessa que valha para todo mundo, mas é um sinal animador: a atenção aos sonhos pode valer a pena."
+        ]
+      },
+      {
+        "kennung": "de-manha",
+        "titel": "Como registrar um sonho de manhã?",
+        "absaetze": [
+          "Deixe caderno e caneta, ou o celular, ao alcance da mão, para não precisar procurar nada depois de acordar. Anote primeiro palavras-chave, do jeito que vierem: um lugar, uma pessoa, uma cor, uma frase. Ordem e sentido não importam nesse momento. Depois, com calma, você pode transformar as palavras-chave em frases completas.",
+          "Se você acordar no meio da noite, não precisa pegar a caneta na hora. Na avaliação da psicóloga do sono da Cleveland Clinic, escrever à noite pode deixar algumas pessoas tão despertas que atrapalha o sono. Basta anotar de manhã o que ainda estiver na memória."
+        ]
+      },
+      {
+        "kennung": "o-que-anotar",
+        "titel": "O que anotar em cada registro?",
+        "absaetze": [
+          "Vale anotar a data, as imagens principais e, sobretudo, o sentimento: o sonho foi leve, agitado, triste, alegre? Os sentimentos do sonho podem ser comparados com o que ocupa você durante o dia. Muitas vezes, vivências do dia anterior reaparecem no sonho; por isso, vale a pena anotar rapidamente o que aconteceu na véspera.",
+          "Com o tempo, você passa a reconhecer padrões: lugares que voltam, pessoas que aparecem mais vezes, climas que combinam com certas semanas. A página [Símbolos dos sonhos mais comuns](/pt/simbolos-dos-sonhos/) mostra quais imagens são frequentes nos sonhos e como o app as organiza."
+        ]
+      },
+      {
+        "kennung": "sem-pressao",
+        "titel": "Preciso anotar algo toda manhã?",
+        "absaetze": [
+          "Não. Um diário de sonhos deve ser um prazer, e não uma obrigação. Em alguns dias simplesmente não há nada, e tudo bem. A frequência com que as pessoas lembram dos sonhos é muito variada; na avaliação de pesquisadores do sono, também influem o interesse pelos sonhos e a abertura a novas experiências.",
+          "Para algumas pessoas, já ajuda a intenção de prestar atenção aos sonhos de manhã. Alguns minutos à beira da cama com o caderno bastam. Se quiser, releia no fim de semana os registros da semana e veja o que se repete."
+        ]
+      },
+      {
+        "kennung": "para-a-leitura",
+        "titel": "Como passar do diário para a leitura?",
+        "absaetze": [
+          "Em suas anotações, você pode escolher as imagens de que mais se lembra e, junto com elas, o sentimento do sonho. É com isso que trabalha a leitura com símbolos no app: lá você escolhe o sentimento, uma área da vida e até cinco símbolos.",
+          "Lembre-se de que as interpretações são muito pessoais: o mesmo sonho pode significar coisas diferentes para duas pessoas. Já Artemidoro pensava assim no século II, como conta a página [História da interpretação dos sonhos](/pt/historia-da-interpretacao-dos-sonhos/)."
+        ]
+      }
+    ],
+    "fragenTitel": "Perguntas frequentes",
+    "fragen": [
+      {
+        "frage": "Todo mundo realmente sonha?",
+        "antwort": [
+          "Sim. Segundo o instituto de pesquisa norte-americano NINDS, todas as pessoas sonham, cerca de duas horas por noite no total, mesmo que não lembrem da maioria dos sonhos."
+        ]
+      },
+      {
+        "frage": "Por que às vezes lembro de muita coisa e outras vezes de nada?",
+        "antwort": [
+          "Isso depende, entre outras coisas, de quantas vezes você acorda durante a noite e de quanto tempo leva para voltar a dormir. Além disso, quem acaba de despertar de uma fase REM tem mais chance de se lembrar de um sonho."
+        ]
+      },
+      {
+        "frage": "Um áudio é tão bom quanto um caderno?",
+        "antwort": [
+          "Sim, os dois funcionam. Ao falar, muitas vezes se conta com mais detalhes; no caderno, fica mais fácil enxergar padrões ao longo das semanas."
+        ]
+      },
+      {
+        "frage": "O que fazer se os sonhos ou o sono me incomodam?",
+        "antwort": [
+          "Se sonhos ou problemas de sono incomodam você por um período mais longo, o melhor é buscar orientação médica."
+        ]
+      }
+    ],
+    "app": {
+      "titel": "Do caderno para o app",
+      "text": [
+        "Do seu diário de sonhos, você leva para o Tarot Cup o sentimento e até cinco símbolos, e escolhe ainda uma área da vida. O app então conta o que a tradição diz sobre essas imagens e oferece um conselho."
+      ]
+    },
+    "quellenTitel": "Fontes",
+    "quellen": [
+      {
+        "angabe": "National Institute of Neurological Disorders and Stroke (NINDS): Brain Basics: Understanding Sleep. National Institutes of Health, EUA, atualizado em 25/02/2025.",
+        "url": "https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-understanding-sleep"
+      },
+      {
+        "angabe": "van Wyk, Mariza; Solms, Mark; Lipinska, Gosia: Increased Awakenings From Non-rapid Eye Movement Sleep Explain Differences in Dream Recall Frequency in Healthy Individuals. Frontiers in Human Neuroscience 13, 370, 2019.",
+        "url": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2019.00370/full"
+      },
+      {
+        "angabe": "Cleveland Clinic: What Can You Learn From Dream Journaling? with Alaina Tiani, PhD. Health Essentials Podcast, 08/05/2024.",
+        "url": "https://my.clevelandclinic.org/podcasts/health-essentials/what-can-you-learn-from-dream-journaling-with-alaina-tiani"
+      },
+      {
+        "angabe": "Fradera, Alex: How keeping a dream diary could boost your creativity. British Psychological Society, Research Digest, 31/08/2017.",
+        "url": "https://bps.org.uk/research-digest/how-keeping-dream-diary-could-boost-your-creativity"
+      },
+      {
+        "angabe": "Sierra-Siegert, Mauricio; Jay, Emma-Louise; Florez, Claudia; Garcia, Ana Esther: Minding the Dreamer Within: An Experimental Study on the Effects of Enhanced Dream Recall on Creative Thinking. The Journal of Creative Behavior 53 (1), 2019, p. 83–96.",
+        "url": "https://doi.org/10.1002/jocb.168"
+      }
+    ]
+  },
+  "symbole": {
+    "metaTitel": "Símbolos dos sonhos mais comuns: oito áreas | Tarot Cup",
+    "metaBeschreibung": "Animais, natureza, pessoas, lugares, ações, objetos, corpo e cores: uma visão geral das oito áreas dos símbolos dos sonhos no Tarot Cup.",
+    "titel": "Símbolos dos sonhos mais comuns",
+    "brotkrume": "Símbolos dos sonhos",
+    "tuerkischeBegriffe": [
+      "tabirname",
+      "rüya tabiri"
+    ],
+    "kurzantwort": [
+      "Os símbolos dos sonhos são as imagens em que uma leitura se apoia: um animal, um lugar, uma ação, uma cor. O Tarot Cup organiza 124 símbolos comuns em oito áreas, dos animais às cores, passando por natureza e clima. A leitura no app conta para você o que um símbolo significa na tradição."
+    ],
+    "inhaltTitel": "Conteúdo",
+    "abschnitte": [
+      {
+        "kennung": "o-que-e-um-simbolo-dos-sonhos",
+        "titel": "O que é um símbolo dos sonhos?",
+        "absaetze": [
+          "Um símbolo dos sonhos é uma imagem isolada de um sonho que se destaca de modo especial: o gato na escada, a ponte na neblina, os sapatos que não servem. Os livros de sonhos tradicionais atribuem significados a essas imagens: na literatura turca, desde o século XIV, os *tabirname*; no Ocidente, os livros de sonhos populares. A psicologia, por sua vez, pergunta mais quais pensamentos e sentimentos se mostram em uma imagem.",
+          "O importante é que um símbolo não existe sozinho. Já Artemidoro escrevia, no século II, que quem interpreta precisa saber quem sonha: qual é a profissão da pessoa, que idade tem e em que circunstâncias vive. Hoje, uma psicóloga da Cleveland Clinic também descreve as interpretações como muito pessoais: o mesmo sonho pode significar coisas bem diferentes para duas pessoas. Por isso, na leitura com símbolos, o app também pergunta pelo sentimento do sonho e pela área da vida que ocupa você neste momento."
+        ]
+      },
+      {
+        "kennung": "temas-frequentes",
+        "titel": "Quais sonhos são mais comuns?",
+        "absaetze": [
+          "Um grande estudo do laboratório do sono do Instituto Central de Saúde Mental, em Mannheim, perguntou a mais de 2.000 pessoas na Alemanha sobre seus sonhos ruins. Os mais frequentes foram quedas, perseguições, paralisia, atrasos e a perda de pessoas queridas; pesadelos com provas foram relatados por homens e mulheres, mesmo quando já não estudavam.",
+          "Na Turquia, a grande seção sobre *rüya tabiri* de um portal de notícias reúne uma lista dos “sonhos mais vistos”, sem explicar como ela é elaborada. No topo aparecem cobra, gato e ouro; mais adiante, entre outros, rato, cachorro, neve, mar e peixe. Muitas dessas imagens você também encontra no app."
+        ]
+      },
+      {
+        "kennung": "animais-e-natureza",
+        "titel": "Animais, natureza e clima",
+        "absaetze": [
+          "A maior área, *Animais*, reúne 24 símbolos, do cachorro e do gato, passando pela cobra, pelo cavalo e pelo pássaro, até a abelha, a tartaruga e a formiga; em muitas tradições, os animais refletem qualidades que também conhecemos nas pessoas.",
+          "Em *Natureza e clima* estão 17 imagens como água, mar, rio, chuva, neve, fogo, sol, lua, estrelas, árvore, montanha e arco-íris, que muitas vezes dão o tom de um sonho inteiro."
+        ]
+      },
+      {
+        "kennung": "pessoas-e-lugares",
+        "titel": "Pessoas e relacionamentos, lugares e construções",
+        "absaetze": [
+          "A área *Pessoas e relacionamentos* reúne 18 símbolos, entre eles parceira ou parceiro, ex-namorada ou ex-namorado, mãe, pai, criança, avós, amiga ou amigo, casamento, beijo e briga, ou seja, as pessoas e os encontros que também no dia a dia estão mais perto de nós.",
+          "Em *Lugares e construções* há 15 símbolos como casa, escola, jardim, ponte, escada, elevador, janela, caminho e estrada, aeroporto e estação de trem, além de mesquita e igreja, espaços em que um sonho acontece e que muitas vezes contam algo por si mesmos."
+        ]
+      },
+      {
+        "kennung": "acoes-e-objetos",
+        "titel": "Ações e experiências, objetos",
+        "absaetze": [
+          "Com 22 símbolos, *Ações e experiências* é a segunda maior área: queda, voar, perseguição, atraso, perder-se, nadar, mudança, viagem, dançar e rir descrevem o que acontece no sonho, não apenas o que aparece nele.",
+          "Em *Objetos* você encontra 18 itens como chave, espelho, anel, sapatos, bolsa, telefone, relógio, livro, pão, vela e porta, coisas do dia a dia que, no sonho, podem de repente se tornar importantes."
+        ]
+      },
+      {
+        "kennung": "corpo-e-cores",
+        "titel": "Corpo e cores",
+        "absaetze": [
+          "A área *Corpo* é pequena, com sete símbolos, mas inclui uma das imagens de sonho mais conhecidas de todas, os dentes caindo; fazem parte dela também, por exemplo, cabelo e olhos.",
+          "As *Cores* branco, preto e vermelho formam a menor área e combinam bem com outros símbolos quando uma cor chamou especialmente a atenção no sonho."
+        ]
+      },
+      {
+        "kennung": "mais-sobre-os-simbolos",
+        "titel": "Onde encontro mais sobre cada símbolo?",
+        "absaetze": [
+          "Páginas próprias com todos os símbolos de uma área ainda não existem neste site. A leitura detalhada, com a tradição sobre cada imagem, você encontra no app: no Dicionário, em *Símbolos de sonho*, e em cada leitura.",
+          "Também ajuda registrar bem seus sonhos para reencontrar os símbolos; há dicas na página [Como lembrar melhor dos sonhos e anotá-los](/pt/como-lembrar-dos-sonhos/). A [história da interpretação dos sonhos](/pt/historia-da-interpretacao-dos-sonhos/) conta de onde vem a tradição dos livros de sonhos."
+        ]
+      }
+    ],
+    "fragenTitel": "Perguntas frequentes",
+    "fragen": [
+      {
+        "frage": "Quantos símbolos de sonho o app tem?",
+        "antwort": [
+          "Atualmente 124, divididos em oito áreas: animais, natureza e clima, pessoas e relacionamentos, lugares e construções, ações e experiências, objetos, corpo e cores."
+        ]
+      },
+      {
+        "frage": "Um símbolo sempre significa a mesma coisa?",
+        "antwort": [
+          "Não. As tradições variam, e o sentimento do sonho e sua situação de vida mudam o modo como uma imagem é lida."
+        ]
+      },
+      {
+        "frage": "Quantos símbolos posso escolher para um sonho?",
+        "antwort": [
+          "Até cinco. Além deles, você escolhe o sentimento do sonho e uma área da vida."
+        ]
+      },
+      {
+        "frage": "Por que a leitura menciona uma tradição?",
+        "antwort": [
+          "Porque os livros de sonhos turcos, os livros de sonhos ocidentais e a psicologia costumam ler a mesma imagem de maneiras diferentes. Assim você sabe de qual tradição vem um significado."
+        ]
+      }
+    ],
+    "app": {
+      "titel": "Escolha os símbolos no app",
+      "text": [
+        "No Tarot Cup, você escolhe os símbolos do seu sonho pelas oito categorias ou pela busca. A leitura os une ao sentimento do seu sonho em uma visão geral."
+      ]
+    },
+    "quellenTitel": "Fontes",
+    "quellen": [
+      {
+        "angabe": "Edwards, Lin: Men and women have different nightmares. Medical Xpress, 24/03/2010 (reportagem sobre Schredl, M.: Nightmare frequency and nightmare topics in a representative German sample. European Archives of Psychiatry and Clinical Neuroscience, 2010).",
+        "url": "https://medicalxpress.com/news/2010-03-men-women-nightmares.html"
+      },
+      {
+        "angabe": "Schredl, Michael: Nightmare frequency and nightmare topics in a representative German sample. European Archives of Psychiatry and Clinical Neuroscience 260 (8), 2010, p. 565–570 (resumo no PubMed).",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/20229263/"
+      },
+      {
+        "angabe": "Hürriyet Mahmure: Rüya Tabirleri, seção “En Çok Görülen Rüyalar ve Tabirleri”.",
+        "url": "https://www.hurriyet.com.tr/mahmure/ruya-tabirleri/"
+      },
+      {
+        "angabe": "Artemidoros aus Daldis: Symbolik der Träume. Traduzido por Friedrich S. Krauss. Verlag A. Hartleben, Wien, Pest, Leipzig 1881, livro I, cap. 9 (versão digitalizada da Bibliothèque interuniversitaire de santé, Paris).",
+        "url": "https://archive.org/details/BIUSante_55615"
+      },
+      {
+        "angabe": "Rozen, Naama; Soffer-Dudek, Nirit: Dreams of Teeth Falling Out: An Empirical Investigation of Physiological and Psychological Correlates. Frontiers in Psychology 9, 1812, 2018.",
+        "url": "https://www.frontiersin.org/article/10.3389/fpsyg.2018.01812/full"
+      },
+      {
+        "angabe": "Cleveland Clinic: What Can You Learn From Dream Journaling? with Alaina Tiani, PhD. Health Essentials Podcast, 08/05/2024.",
+        "url": "https://my.clevelandclinic.org/podcasts/health-essentials/what-can-you-learn-from-dream-journaling-with-alaina-tiani"
+      },
+      {
+        "angabe": "Özder, Deva: İbn Sîrîn’den Tercüme Edilen Bir Rüya Tabirnamesi: „Hacı Muhammed Mostârî’nin Tabirnamesi“. Akademik Dil ve Edebiyat Dergisi 8 (1), 2024, p. 76–96. DOI 10.34083/akaded.1444029.",
+        "url": "https://dergipark.org.tr/tr/download/article-file/3759037"
+      }
+    ],
+    "fremdeBegriffe": [
+      {
+        "text": "Hürriyet Mahmure: Rüya Tabirleri",
+        "lang": "tr"
+      },
+      {
+        "text": "En Çok Görülen Rüyalar ve Tabirleri",
+        "lang": "tr"
+      },
+      {
+        "text": "Artemidoros aus Daldis: Symbolik der Träume",
+        "lang": "de"
+      },
+      {
+        "text": "Özder, Deva: İbn Sîrîn’den Tercüme Edilen Bir Rüya Tabirnamesi: „Hacı Muhammed Mostârî’nin Tabirnamesi“. Akademik Dil ve Edebiyat Dergisi 8 (1), 2024",
+        "lang": "tr"
+      }
+    ]
+  }
+}

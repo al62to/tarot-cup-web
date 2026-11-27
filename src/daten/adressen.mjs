@@ -60,25 +60,26 @@ export const ADRESSEN = {
   },
   // Übersicht aller Erklärseiten (AP-25E). Gebaut wird sie nur in Sprachen mit mindestens einer Erklärseite, die live
   // ist (src/daten/erklaer.mjs, uebersichtSprachen); eine weitere Sprache bekommt hier ihre Adresse.
-  wissen: { de: '/wissen/', tr: '/tr/bilgi/' },
-  // Erklärseiten (AP-25). Weitere Sprachen trägt die Hauptsitzung nach, sobald die Übersetzung da ist.
-  kaffeeHerkunft: { de: '/kaffeesatz-lesen/herkunft/', tr: '/tr/kahve-fali/tarihi/' },
+  wissen: { de: '/wissen/', tr: '/tr/bilgi/', en: '/en/learn/', es: '/es/aprende/', pt: '/pt/aprenda/' },
+  // Erklärseiten (AP-25). Weitere Sprachen trägt die Hauptsitzung nach, sobald die Übersetzung da ist; en, es und pt seit
+  // AP-WS1 (Suchbegriffe: deutung-unterlagen/arbeit/apws1/suche/).
+  kaffeeHerkunft: { de: '/kaffeesatz-lesen/herkunft/', tr: '/tr/kahve-fali/tarihi/', en: '/en/coffee-cup-reading/origin/', es: '/es/lectura-de-posos-de-cafe/origen/', pt: '/pt/leitura-da-borra-de-cafe/origem/' },
   kaffeeZubereitung: { de: '/kaffeesatz-lesen/tuerkischen-kaffee-zubereiten/', tr: '/tr/kahve-fali/turk-kahvesi-yapimi/' },
   kaffeeBrauchtum: { de: '/kaffeesatz-lesen/brauchtum/', tr: '/tr/kahve-fali/gelenekler/' },
   kaffeeZeichen: { de: '/kaffeesatz-lesen/zeichen/', tr: '/tr/kahve-fali/semboller/' },
-  tarotGeschichte: { de: '/tarot/geschichte/', tr: '/tr/tarot/tarihi/' },
-  tarotArkana: { de: '/tarot/grosse-und-kleine-arkana/', tr: '/tr/tarot/buyuk-ve-kucuk-arkana/' },
-  tarotFarben: { de: '/tarot/vier-farben/', tr: '/tr/tarot/dort-takim/' },
-  tarotUmgekehrt: { de: '/tarot/umgekehrte-karten/', tr: '/tr/tarot/ters-kartlar/' },
-  tarotSmith: { de: '/tarot/pamela-colman-smith/', tr: '/tr/tarot/pamela-colman-smith/' },
-  traumGeschichte: { de: '/traumdeutung-geschichte/', tr: '/tr/ruya-tabirinin-tarihi/' },
-  traumErinnern: { de: '/traeume-erinnern/', tr: '/tr/ruyalari-hatirlamak/' },
-  traumSymbole: { de: '/traumsymbole/', tr: '/tr/ruya-sembolleri/' },
+  tarotGeschichte: { de: '/tarot/geschichte/', tr: '/tr/tarot/tarihi/', en: '/en/tarot/history/', es: '/es/tarot/historia/', pt: '/pt/tarot/historia/' },
+  tarotArkana: { de: '/tarot/grosse-und-kleine-arkana/', tr: '/tr/tarot/buyuk-ve-kucuk-arkana/', en: '/en/tarot/major-and-minor-arcana/', es: '/es/tarot/arcanos-mayores-y-menores/', pt: '/pt/tarot/arcanos-maiores-e-menores/' },
+  tarotFarben: { de: '/tarot/vier-farben/', tr: '/tr/tarot/dort-takim/', en: '/en/tarot/tarot-suits/', es: '/es/tarot/palos-del-tarot/', pt: '/pt/tarot/naipes-do-taro/' },
+  tarotUmgekehrt: { de: '/tarot/umgekehrte-karten/', tr: '/tr/tarot/ters-kartlar/', en: '/en/tarot/reversed-tarot-cards/', es: '/es/tarot/cartas-invertidas/', pt: '/pt/tarot/cartas-invertidas/' },
+  tarotSmith: { de: '/tarot/pamela-colman-smith/', tr: '/tr/tarot/pamela-colman-smith/', en: '/en/tarot/pamela-colman-smith/', es: '/es/tarot/pamela-colman-smith/', pt: '/pt/tarot/pamela-colman-smith/' },
+  traumGeschichte: { de: '/traumdeutung-geschichte/', tr: '/tr/ruya-tabirinin-tarihi/', en: '/en/history-of-dream-interpretation/', es: '/es/historia-de-la-interpretacion-de-los-suenos/', pt: '/pt/historia-da-interpretacao-dos-sonhos/' },
+  traumErinnern: { de: '/traeume-erinnern/', tr: '/tr/ruyalari-hatirlamak/', en: '/en/how-to-remember-dreams/', es: '/es/como-recordar-los-suenos/', pt: '/pt/como-lembrar-dos-sonhos/' },
+  traumSymbole: { de: '/traumsymbole/', tr: '/tr/ruya-sembolleri/', en: '/en/dream-symbols/', es: '/es/simbolos-de-los-suenos/', pt: '/pt/simbolos-dos-sonhos/' },
   mondPhasen: { de: '/mondphasen/', tr: '/tr/ay-evreleri/' },
   mondBrauchtum: { de: '/neumond-und-vollmond/', tr: '/tr/yeni-ay-ve-dolunay/' },
   frageStellen: { de: '/gute-frage-stellen/', tr: '/tr/iyi-bir-soru-sormak/' },
   vergleich: { de: '/kaffeesatz-tarot-traum/', tr: '/tr/kahve-fali-tarot-ve-ruya/' },
-  deutungKann: { de: '/was-eine-deutung-kann/', tr: '/tr/yorum-neyi-yapabilir/' },
+  deutungKann: { de: '/was-eine-deutung-kann/', tr: '/tr/yorum-neyi-yapabilir/', en: '/en/what-a-reading-can-do/', es: '/es/lo-que-puede-una-lectura/', pt: '/pt/o-que-uma-leitura-pode-fazer/' },
   // Nur Deutsch; die anderen Sprachen verlinken darauf mit übersetzter Beschriftung.
   offenlegung: { de: '/offenlegung/' },
   // Kurzlink und 404: je eine Seite für alle Sprachen (Teile je Sprache mit lang).

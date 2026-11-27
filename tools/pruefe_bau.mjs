@@ -515,7 +515,9 @@ export function pruefeBau(ordner, { still = false } = {}) {
       .replace(/&#(\d+);/g, (_, zahl) => String.fromCodePoint(Number(zahl)))
       .replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"');
     // Fremde Wörter aus src/daten/sprachen.mjs (etwa „Türkçe“ in einem Alt-Text) sind kein Rest.
-    const bereinigt = begriffe.filter((eintrag) => !eintrag.nur || eintrag.nur.includes(lang)).reduce((text, { text: wort }) => text.split(wort).join(' '), sichtbar);
+    const bereinigtRoh = begriffe.filter((eintrag) => !eintrag.nur || eintrag.nur.includes(lang)).reduce((text, { text: wort }) => text.split(wort).join(' '), sichtbar);
+    // AP-WS1: Spanisch schreibt ü in güe und güi (antigüedad, lingüístico); das ist kein deutscher Rest.
+    const bereinigt = lang === 'es' ? bereinigtRoh.replace(/([gG])[üÜ](?=[eiéíEIÉÍ])/g, '$1u') : bereinigtRoh;
     // AP-23: echte Wörter der Sprache, die wie deutsche aussehen (bs/hr/sr „Karte“ = Karten, pt „der“ = geben)
     const eigen = { bs: ['Karte'], hr: ['Karte'], sr: ['Karte'], pt: ['der'] }[lang] ?? [];
     for (const fund of [...bereinigt.matchAll(MUSTER.deutsch)].filter((f) => !eigen.includes(f[0]))) melde(datei, '9 deutscher Rest', `„${fund[0]}“ in „${umgebung(bereinigt, fund.index)}“`);

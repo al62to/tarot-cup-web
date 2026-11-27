@@ -321,3 +321,12 @@ export const erklaerKaffeesatz = {
     },
   },
 };
+
+// Englisch, Spanisch (Lateinamerika) und Portugiesisch (Brasilien) seit AP-WS1: übersetzt aus dem Deutschen, eingespielt mit
+// tools/erklaer_einspielen.mjs (nicht von Hand ändern). Leere Dateien heißen: die Seite gibt es in der Sprache nicht.
+import erklaerKaffeesatzEn from './uebersetzt/erklaer_kaffeesatz_en.json' with { type: 'json' };
+import erklaerKaffeesatzEs from './uebersetzt/erklaer_kaffeesatz_es.json' with { type: 'json' };
+import erklaerKaffeesatzPt from './uebersetzt/erklaer_kaffeesatz_pt.json' with { type: 'json' };
+erklaerKaffeesatz.en = erklaerKaffeesatzEn;
+erklaerKaffeesatz.es = erklaerKaffeesatzEs;
+erklaerKaffeesatz.pt = erklaerKaffeesatzPt;

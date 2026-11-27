@@ -188,3 +188,12 @@ export const erklaerAllgemein = {
     },
   },
 };
+
+// Englisch, Spanisch (Lateinamerika) und Portugiesisch (Brasilien) seit AP-WS1: übersetzt aus dem Deutschen, eingespielt mit
+// tools/erklaer_einspielen.mjs (nicht von Hand ändern). Leere Dateien heißen: die Seite gibt es in der Sprache nicht.
+import erklaerAllgemeinEn from './uebersetzt/erklaer_allgemein_en.json' with { type: 'json' };
+import erklaerAllgemeinEs from './uebersetzt/erklaer_allgemein_es.json' with { type: 'json' };
+import erklaerAllgemeinPt from './uebersetzt/erklaer_allgemein_pt.json' with { type: 'json' };
+erklaerAllgemein.en = erklaerAllgemeinEn;
+erklaerAllgemein.es = erklaerAllgemeinEs;
+erklaerAllgemein.pt = erklaerAllgemeinPt;

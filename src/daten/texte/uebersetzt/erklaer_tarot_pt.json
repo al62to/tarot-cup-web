@@ -1,0 +1,704 @@
+{
+  "geschichte": {
+    "metaTitel": "História do tarô: dos tarocchi a 1909 | Tarot Cup",
+    "metaBeschreibung": "A origem do tarô: um jogo de cartas do século XV no norte e no centro da Itália. Como virou instrumento de leitura a partir de 1781, até as cartas de 1909.",
+    "titel": "História do tarô: dos tarocchi às cartas de 1909",
+    "brotkrume": "História",
+    "kurzantwort": [
+      "O tarô começou como jogo de cartas: na década de 1440, surgem no norte e no centro da Itália baralhos com cartas ilustradas adicionais, chamadas *trionfi* e, mais tarde, *tarocchi*. Só a partir de 1781 autores na França passaram a interpretar as imagens como um saber secreto do antigo Egito, uma tese sem comprovação, hoje considerada refutada. Passando pelos ocultistas do século XIX, a história chega até as cartas de 1909."
+    ],
+    "inhaltTitel": "Conteúdo",
+    "abschnitte": [
+      {
+        "kennung": "inicios-no-norte-da-italia",
+        "titel": "Onde e quando surgiu o tarô?",
+        "absaetze": [
+          "Cartas de baralho comuns já eram conhecidas na Europa no século XIV. Algumas décadas depois, no norte da Itália, aos quatro naipes somaram-se cartas ilustradas com figuras e alegorias. Elas se chamavam *trionfi*, ou seja, triunfos, e deram ao jogo seu primeiro nome; a palavra *tarocchi* só se firmou por volta de 1500.",
+          "Os primeiros registros seguros são da década de 1440. Na corte da família Este, em Ferrara, o pintor Iacobo Sagramoro recebeu dinheiro em 1442 para pintar quatro baralhos desse tipo. Um pouco antes, em setembro de 1440, o tabelião Giusto Giusti, de Anghiari, na Toscana, anotou em seu diário que havia presenteado Sigismondo Malatesta com um baralho de cartas de triunfo, mandado fazer especialmente em Florença com o brasão dele.",
+          "Onde exatamente o jogo foi inventado ainda é uma questão em aberto entre os pesquisadores. Alguns situam a origem por volta de 1430, nas cortes principescas de Milão e Ferrara; outros consideram Ferrara o lugar mais provável, e o achado de Florença mostra que as cartas também eram conhecidas ali muito cedo. Como possíveis inspirações, apontam-se os cortejos festivos das cortes e o ciclo de poemas “I Trionfi”, de Petrarca, do século XIV."
+        ]
+      },
+      {
+        "kennung": "cartas-de-luxo-de-milao",
+        "titel": "Quais cartas de tarô antigas foram preservadas?",
+        "absaetze": [
+          "As cartas mais antigas que chegaram até nós foram feitas na década de 1440 para a corte de Milão, para o duque Filippo Maria Visconti e seu genro Francesco Sforza. Junto com baralhos um pouco mais recentes das décadas seguintes, elas são reunidas sob o nome de cartas Visconti-Sforza. São pintadas à mão e ornamentadas com folha de ouro. Costumam ser atribuídas à oficina do pintor Bonifacio Bembo; no caso de um dos baralhos, hoje se cogita também seu irmão mais velho.",
+          "Nenhum desses baralhos chegou completo. As cartas estão espalhadas por várias coleções, entre elas a Biblioteca Beinecke da Universidade de Yale, a Morgan Library em Nova York, a Accademia Carrara em Bérgamo e a Pinacoteca di Brera em Milão. As 67 cartas de Yale talvez possam ser datadas de 1441 ou 1442 pelas marcas-d’água. Originalmente, esse baralho tinha provavelmente ao menos 89 cartas, entre elas Fé, Esperança e Caridade, além de cavaleiros e valetes em forma feminina. Assim, esse baralho se afasta bastante da estrutura posterior de 78 cartas."
+        ]
+      },
+      {
+        "kennung": "um-jogo-com-trunfos",
+        "titel": "Como se jogava com as cartas de tarô?",
+        "absaetze": [
+          "O tarocchi era um jogo de vazas. Quem não podia seguir o naipe jogado precisava jogar uma das cartas ilustradas como trunfo; o tarô está, assim, entre os primeiros jogos com trunfos de que se tem notícia. “O Louco” tinha um papel especial: nas variantes mais antigas, podia ser jogado em qualquer vaza, em vez de seguir o naipe ou jogar um trunfo; mas nunca se ganhava uma vaza com ele.",
+          "Por volta de 1500, o jogo chegou à França, provavelmente por meio da ocupação francesa de Milão naquela época. Ali se firmou um padrão de imagens hoje chamado de Tarô de Marselha: 78 cartas, ou seja, quatro naipes de 14 cartas cada, 21 trunfos numerados e “O Louco”. O nome é mais recente que as cartas e vem provavelmente do fato de muitos fabricantes de cartas de Marselha as produzirem; o padrão, porém, também era impresso em Paris, Avignon e na Suíça."
+        ]
+      },
+      {
+        "kennung": "court-de-gebelin-e-etteilla",
+        "titel": "Desde quando se usa o tarô para leituras?",
+        "absaetze": [
+          "A prática de interpretar cartas já era conhecida no século XVIII, mas para isso se usavam cartas de baralho comuns. Esse costume se consolidou por volta de 1760; o tarô só passou a ser usado para isso cerca de vinte anos depois.",
+          "O impulso veio de Antoine Court de Gébelin, pastor protestante, erudito e maçom. No oitavo volume de sua obra “Le Monde primitif”, publicado em 1781 em Paris, ele declarou que as imagens dos trunfos eram restos de um livro do antigo Egito, que chamou de “Livro de Thoth”. A ideia se apoiava no entusiasmo de sua época pelo Egito, não em provas; os pesquisadores a consideram refutada.",
+          "Dois anos depois, Jean-Baptiste Alliette retomou a ideia. Sob o nome de Etteilla, seu sobrenome lido de trás para frente, publicou entre 1783 e 1786 cerca de dez textos sobre a leitura do tarô. Em 1788, mandou gravar um baralho próprio, “corrigido”, que deveria restaurar as imagens supostamente adulteradas pelos fabricantes de cartas. Com ele começa o tarô como instrumento de leitura."
+        ]
+      },
+      {
+        "kennung": "tarot-oculto-no-seculo-19",
+        "titel": "Como o tarô se tornou uma doutrina secreta?",
+        "absaetze": [
+          "No século XIX, ocultistas na França desenvolveram ainda mais a ideia. Éliphas Lévi, cujo nome civil era Alphonse-Louis Constant, associou o tarô à cabala e a outras doutrinas em 1856, em seu livro sobre a alta magia. Paul Christian é considerado quem pôs em circulação a palavra “arcanos”, isto é, segredos, para designar as cartas; ela permanece até hoje nos nomes [Arcanos Maiores e Menores](/pt/tarot/arcanos-maiores-e-menores/).",
+          "Papus, pseudônimo de Gérard Encausse, publicou em 1889 “Le Tarot des Bohémiens”. No mesmo ano, Oswald Wirth desenhou 22 trunfos tendo como modelo o Tarô de Marselha; eles apareceram no livro de Papus e são considerados a primeira tentativa de um baralho expressamente esotérico.",
+          "Na Inglaterra, quem levou essas ideias adiante foi a Hermetic Order of the Golden Dawn, uma sociedade secreta fundada em Londres, em 1888, por três maçons. Na ordem, o tarô fazia parte dos estudos, entre outros temas, ao lado da cabala, da alquimia e da geomancia."
+        ]
+      },
+      {
+        "kennung": "as-cartas-de-1909",
+        "titel": "O que aconteceu em 1909?",
+        "absaetze": [
+          "Desse mesmo círculo vem também o baralho que até hoje molda a imagem que se tem do tarô. Um antigo membro da Golden Dawn o encomendou em 1909 e escreveu um livro para acompanhá-lo; as 78 cartas foram desenhadas pela artista [Pamela Colman Smith](/pt/tarot/pamela-colman-smith/), que ele conhecera na ordem. O baralho foi publicado em 1909 pela editora Rider, em Londres; algumas fontes apontam também 1910 para a primeira impressão. No mesmo ano saiu em Paris o livro “Le Tarot divinatoire”, de Papus, com 78 cartas recém-desenhadas por Jean-Gabriel Goulinat.",
+          "O que ele tinha de especial era que também as cartas numeradas dos [quatro naipes](/pt/tarot/naipes-do-taro/) mostram pequenas cenas, em vez de apenas enfileirar bastões, cálices, espadas ou moedas. Isso tornou as imagens mais acessíveis, e muitos baralhos posteriores aproveitaram seus motivos.",
+          "Para saber como fazer uma tiragem com essas cartas hoje, veja [Ler tarô](/pt/tarot/#ritual-schritt-fuer-schritt)."
+        ]
+      }
+    ],
+    "fragenTitel": "Perguntas frequentes",
+    "fragen": [
+      {
+        "frage": "O tarô vem do Egito?",
+        "antwort": [
+          "Não. A ideia é de Antoine Court de Gébelin, que a formulou em 1781 sem provas. Todos os registros antigos apontam para o norte e o centro da Itália do século XV, para Milão, Ferrara e Florença; a pesquisa histórica considera refutada a tese da origem egípcia."
+        ]
+      },
+      {
+        "frage": "Qual a idade das cartas de tarô mais antigas que existem?",
+        "antwort": [
+          "As cartas mais antigas que chegaram até nós foram feitas na década de 1440 para a corte de Milão; parte delas está hoje em Yale. Cartas um pouco mais recentes do mesmo grupo estão em Nova York, Bérgamo e Milão."
+        ]
+      },
+      {
+        "frage": "Ainda se joga tarô como jogo de cartas?",
+        "antwort": [
+          "Sim. Em muitos países da Europa, como França, Itália, Áustria e Hungria, ainda existem jogos de tarô com regras próprias."
+        ]
+      },
+      {
+        "frage": "Desde quando as cartas de tarô são interpretadas?",
+        "antwort": [
+          "A leitura com o tarô está bem documentada sobretudo desde a década de 1780, na França. Antes disso, o tarô serviu por cerca de 300 anos principalmente para jogar, e para a cartomancia usavam-se em geral cartas de baralho comuns."
+        ]
+      }
+    ],
+    "app": {
+      "titel": "As imagens de 1909 no app",
+      "text": [
+        "No Tarot Cup, você faz suas tiragens com as cartas de 1909, que são de domínio público, e as lê como a tradição de hoje as entende. Veja quais tiragens existem em [Ler tarô](/pt/tarot/#legungen)."
+      ]
+    },
+    "quellenTitel": "Fontes",
+    "quellen": [
+      {
+        "angabe": "Gherardo Ortalli: The Prince’s Cards (La carta del principe). Ferrara – Voci di una Città, n. 4 (junho de 1996), Fondazione Cassa di Risparmio di Ferrara.",
+        "url": "https://rivista.fondazioneestense.it/en/1996/4/item/407-la-carta-del-principe.html"
+      },
+      {
+        "angabe": "Franco Pratesi: Studies on Giusto Giusti. Trionfi.com, 09/07/2012.",
+        "url": "http://trionfi.com/giusto-giusti"
+      },
+      {
+        "angabe": "Thierry Depaulis: Tarot. Encyclopædia Universalis, online, acessado em 18/11/2026.",
+        "url": "https://www.universalis.fr/encyclopedie/tarot/"
+      },
+      {
+        "angabe": "Thierry Depaulis: Tarot, seção “Le tarot divinatoire et occultiste”. Encyclopædia Universalis, online, acessado em 18/11/2026.",
+        "url": "https://www.universalis.fr/encyclopedie/tarot/3-le-tarot-divinatoire-et-occultiste/"
+      },
+      {
+        "angabe": "Thierry Depaulis: Cartomancie, seção “Les tarots”. Encyclopædia Universalis, online, acessado em 18/11/2026.",
+        "url": "https://www.universalis.fr/encyclopedie/cartomancie/2-les-tarots/"
+      },
+      {
+        "angabe": "Deborah Cannarella: In the cards: Library partners work together to solve mysteries of rare tarot deck. Yale University Library, 04/10/2023.",
+        "url": "https://library.yale.edu/news/cards-library-partners-work-together-solve-mysteries-rare-tarot-deck"
+      },
+      {
+        "angabe": "Edmund Leach: Tarot Triumph (resenha de Michael Dummett, The Game of Tarot, Duckworth 1980). London Review of Books, vol. 2, n. 17, 04/09/1980, com as cartas dos leitores sobre a resenha (resposta de Michael Dummett, vol. 2, n. 21, 06/11/1980).",
+        "url": "https://lrb.co.uk/the-paper/v02/n17/edmund-leach/tarot-triumph"
+      },
+      {
+        "angabe": "International Playing-Card Society: Pattern Sheet 2, Tarot de Marseille, versão de 09/09/2010.",
+        "url": "https://i-p-c-s.org/pattern/ps-2.html"
+      },
+      {
+        "angabe": "John McLeod: Tarot Games. Pagat.com.",
+        "url": "https://www.pagat.com/tarot/"
+      },
+      {
+        "angabe": "Museum of Freemasonry: The Hermetic Order of the Golden Dawn, its members and related bodies (fundo GBR 1991 GD). AIM25.",
+        "url": "https://atom.aim25.com/index.php/the-hermetic-order-of-the-golden-dawn-its-members-and-related-bodies-2"
+      },
+      {
+        "angabe": "Rebecca Billingham, Ruth Hibbard, Josephine Nardecchia: Tarot cards. Victoria and Albert Museum, Londres, atualizado em 2026.",
+        "url": "https://www.vam.ac.uk/articles/tarot-cards"
+      },
+      {
+        "angabe": "Victoria and Albert Museum: carta de tarô “The Chariot”, objeto da coleção O1028236.",
+        "url": "https://collections.vam.ac.uk/item/O1028236"
+      }
+    ]
+  },
+  "arkana": {
+    "metaTitel": "Arcanos Maiores e Menores do tarot explicados | Tarot Cup",
+    "metaBeschreibung": "O tarô tem 78 cartas: 22 Arcanos Maiores e 56 Menores. Veja de onde vêm os nomes, como os trunfos são numerados e como reconhecer os dois grupos.",
+    "titel": "Arcanos Maiores e Menores: como um baralho de tarô é organizado",
+    "brotkrume": "Arcanos Maiores e Menores",
+    "kurzantwort": [
+      "O tarô é formado por 78 cartas em dois grupos: os 22 Arcanos Maiores, ou seja, os trunfos e “O Louco”, cada um com imagem e nome próprios, e os 56 Arcanos Menores, divididos em quatro naipes de dez cartas numeradas e quatro cartas da corte cada. Os nomes Arcanos Maiores e Arcanos Menores surgiram apenas no século XIX, em círculos ocultistas; antes, falava-se simplesmente de trunfos e cartas de naipe. A ordem dos trunfos também não é a mesma em todos os baralhos."
+    ],
+    "inhaltTitel": "Conteúdo",
+    "abschnitte": [
+      {
+        "kennung": "estrutura-com-78-cartas",
+        "titel": "Como é organizado um baralho de tarô?",
+        "absaetze": [
+          "Um baralho de tarô completo tem 78 cartas. Destas, 56 se dividem em quatro naipes, de forma parecida com as cartas de baralho comuns. Cada naipe tem dez cartas numeradas, do Ás ao Dez, e quatro cartas da corte, que mostram, cada uma, uma única figura. A elas se somam 21 trunfos numerados e “O Louco”, uma carta especial que fica fora da sequência. Os trunfos e “O Louco” formam juntos os 22 Arcanos Maiores; as 56 cartas de naipe formam os Arcanos Menores.",
+          "A origem dos quatro naipes e as figuras que pertencem a eles são o assunto da página [Os quatro naipes do tarô](/pt/tarot/naipes-do-taro/).",
+          "Nem em toda parte o baralho ficou com 78 cartas. Na Itália existem até hoje jogos de tarocchi com outro número de cartas: o Tarocco Bolognese tem 62 cartas, o Tarocco Siciliano, 64. A Minchiate florentina, que desapareceu no início do século XX, tinha até 97. Com 78 cartas surgiu também o Tarô de Marselha, impresso em grande número sobretudo no século XVIII, na França e na Suíça. A [história do tarô](/pt/tarot/historia/) conta como isso aconteceu."
+        ]
+      },
+      {
+        "kennung": "de-onde-vem-os-nomes",
+        "titel": "De onde vêm os nomes Arcanos Maiores e Arcanos Menores?",
+        "absaetze": [
+          "Na Itália do século XV, as cartas adicionais com alegorias se chamavam *trionfi*, triunfos. Na linguagem de quem joga cartas, elas continuam sendo, simplesmente, os trunfos.",
+          "Arcanos é o plural de arcano, palavra de origem latina para segredo. Quem a levou para o tarô foi o ocultista francês Paul Christian, que pôs em circulação para as cartas termos como “lames” e “arcanes”. Quem foi o primeiro a distinguir entre Arcanos Maiores e Menores não se sabe ao certo; são citados Paul Christian, Éliphas Lévi e autores posteriores do mesmo círculo. Segundo a maioria das fontes, os nomes surgiram na segunda metade do século XIX entre ocultistas franceses, quando o tarô já era visto ali como instrumento de leitura. Desde então, os trunfos são chamados de Arcanos Maiores e as cartas de naipe, de Arcanos Menores."
+        ]
+      },
+      {
+        "kennung": "numeracao-dos-trunfos",
+        "titel": "Qual é a ordem dos Arcanos Maiores?",
+        "absaetze": [
+          "No Tarô de Marselha, os trunfos costumam trazer algarismos romanos e nomes em francês. A sequência começa com “O Saltimbanco” como I e termina com “O Mundo” como XXI. No meio estão, por exemplo, “A Papisa” como II, “A Justiça” como VIII, “A Força” como XI e “O Julgamento” como XX. Os algarismos costumam ser escritos de forma aditiva, “O Imperador”, por exemplo, como IIII em vez de IV. Nesse baralho, “O Louco” não tem número.",
+          "A sequência nunca foi totalmente uniforme. Michael Dummett descreveu, em seu livro “The Game of Tarot”, de 1980, três antigas tradições italianas: uma em torno de Florença e Bolonha, uma em torno de Ferrara e uma em torno de Milão. Elas diferem na ordem dos trunfos mais altos e no fato de as três virtudes, Justiça, Força e Temperança, ficarem juntas ou não. O Tarô de Marselha remonta à sequência milanesa; nele, as três virtudes aparecem separadas, nas posições VIII, XI e XIV.",
+          "Com “O Louco”, os costumes variam bastante. Em baralhos usados para leitura, ele costuma levar o zero, às vezes fica sem número; também o baralho italiano Tarocco Piemontese o numera com 0. Já nos jogos de tarock da Europa Central, ele vale como o trunfo mais alto, por assim dizer, como 22."
+        ]
+      },
+      {
+        "kennung": "forca-e-justica-numeros",
+        "titel": "Por que “A Força” e “A Justiça” têm números diferentes?",
+        "absaetze": [
+          "Quem põe dois baralhos lado a lado logo encontra uma diferença. No Tarô de Marselha, “A Justiça” é a carta VIII e “A Força”, a XI. Nas cartas de 1909, com as imagens de Pamela Colman Smith, é o contrário: ali “A Força” é a VIII e “A Justiça”, a XI.",
+          "A troca faz parte de uma série de mudanças feitas por círculos ocultistas na Inglaterra. Como as cartas de tarô eram pouco difundidas por lá, eles puderam redesenhar imagens e símbolos com bastante liberdade. Os nomes também mudaram: “O Saltimbanco” virou “O Mago”, “O Papa” virou “O Hierofante” e “A Papisa” virou “A Sacerdotisa”. A nova contagem vem, portanto, desse meio, e não da tradição das antigas cartas de baralho.",
+          "Como muitos baralhos posteriores seguem as imagens de 1909, hoje você encontra as duas contagens; nenhuma delas está errada. Mais sobre a artista por trás dessas imagens você encontra na página sobre [Pamela Colman Smith](/pt/tarot/pamela-colman-smith/)."
+        ]
+      },
+      {
+        "kennung": "distinguir-na-tiragem",
+        "titel": "Como reconhecer os Arcanos Maiores e Menores em uma tiragem?",
+        "absaetze": [
+          "O jeito mais rápido de reconhecer os grupos é pela imagem. Uma carta dos Arcanos Maiores traz um número e um nome próprio, por exemplo VII e “The Chariot”, “O Carro”. Já uma carta numerada mostra o símbolo de seu naipe na quantidade correspondente. Nas cartas de 1909, também as cartas numeradas trazem um algarismo romano, mas na carta “Quatro de Ouros” você vê de fato quatro moedas, ainda que estejam inseridas em uma pequena cena. As cartas da corte mostram uma única figura com o símbolo de seu naipe.",
+          "Na tradição, os dois grupos têm pesos diferentes. Os Arcanos Maiores são vistos como indício de temas maiores e pontos de virada, os Arcanos Menores, mais como o que acontece no dia a dia. Uma breve apresentação dos dois grupos está em [O que é o tarô?](/pt/tarot/#was-ist-tarot).",
+          "Os autores ocultistas olhavam sobretudo para os trunfos. Antoine Court de Gébelin tratou em detalhe, em 1781, dos 22 trunfos, e Oswald Wirth desenhou em 1889 apenas essas 22 cartas. Etteilla, por outro lado, fazia leituras com todas as 78 cartas e mandou gravar, no final da década de 1780, um baralho próprio para isso. Durante muito tempo, as cartas numeradas mostravam em geral apenas os símbolos de seu naipe. Houve exceções antigas, como o tarô Sola-Busca de 1491, mas foram sobretudo as cartas de 1909 que tornaram conhecidas as cenas nas cartas numeradas."
+        ]
+      }
+    ],
+    "fragenTitel": "Perguntas frequentes",
+    "fragen": [
+      {
+        "frage": "Quantos Arcanos Maiores e Menores existem?",
+        "antwort": [
+          "Um baralho de tarô completo tem 22 Arcanos Maiores e 56 Arcanos Menores, somando 78 cartas. Os Arcanos Menores se dividem em quatro naipes de 14 cartas cada."
+        ]
+      },
+      {
+        "frage": "“O Louco” é a carta 0 ou a 22?",
+        "antwort": [
+          "Isso depende do baralho e do uso. No Tarô de Marselha, ele não tem número; em baralhos usados para leitura, costuma levar o zero; e nos jogos de tarock da Europa Central, vale como o trunfo mais alto."
+        ]
+      },
+      {
+        "frage": "Que número tem “A Força”?",
+        "antwort": [
+          "No Tarô de Marselha, o XI; nas cartas de 1909 e em muitos baralhos posteriores, o VIII. “A Justiça” tem, em cada caso, o outro dos dois números."
+        ]
+      },
+      {
+        "frage": "Dá para fazer uma tiragem só com os Arcanos Maiores?",
+        "antwort": [
+          "Sim. Court de Gébelin e muitos autores ocultistas do século XIX se ocupavam sobretudo dos 22 trunfos. Com todas as 78 cartas, porém, uma tiragem ganha mais vozes, porque o dia a dia também aparece nela."
+        ]
+      }
+    ],
+    "app": {
+      "titel": "Conheça as 78 cartas no app",
+      "text": [
+        "No Tarot Cup, você faz tiragens com todas as 78 cartas de 1909, Arcanos Maiores e Menores. Veja quais tiragens existem em [Ler tarô](/pt/tarot/#legungen)."
+      ]
+    },
+    "quellenTitel": "Fontes",
+    "quellen": [
+      {
+        "angabe": "Thierry Depaulis: Tarot de Marseille, Type I. International Playing-Card Society, Pattern Sheet 001, versão de 03/2018.",
+        "url": "https://i-p-c-s.org/pattern/PS001.pdf"
+      },
+      {
+        "angabe": "Thierry Depaulis: Tarot. Encyclopædia Universalis, online, acessado em 27/11/2026.",
+        "url": "https://www.universalis.fr/encyclopedie/tarot/"
+      },
+      {
+        "angabe": "Thierry Depaulis: Tarot, seção “Le tarot divinatoire et occultiste“. Encyclopædia Universalis, online, acessado em 27/11/2026.",
+        "url": "https://www.universalis.fr/encyclopedie/tarot/3-le-tarot-divinatoire-et-occultiste/"
+      },
+      {
+        "angabe": "Rebecca Billingham, Ruth Hibbard, Josephine Nardecchia: Tarot cards. Victoria and Albert Museum, Londres, atualizado em 16/07/2026.",
+        "url": "https://www.vam.ac.uk/articles/tarot-cards"
+      },
+      {
+        "angabe": "Victoria and Albert Museum: carta de tarô “Four of Pentacles“, objeto do acervo E.476-1934.",
+        "url": "https://collections.vam.ac.uk/item/O1028160"
+      },
+      {
+        "angabe": "Victoria and Albert Museum: carta de tarô “The Chariot“, objeto do acervo E.430-1934.",
+        "url": "https://collections.vam.ac.uk/item/O1028236"
+      },
+      {
+        "angabe": "John McLeod: Tarot Games. Pagat.com, versão de 19/10/2025.",
+        "url": "https://www.pagat.com/tarot/"
+      },
+      {
+        "angabe": "John McLeod: Card games in Italy. Pagat.com, versão de 07/01/2024.",
+        "url": "https://www.pagat.com/national/italy.html"
+      },
+      {
+        "angabe": "Morandir Armson: The Transitory Tarot. An Examination of Tarot Cards, the 21st Century New Age and Theosophical Thought. Literature & Aesthetics 21 (1), junho de 2011, p. 196–212.",
+        "url": "https://openjournals.library.sydney.edu.au/LA/article/view/5056/5761"
+      },
+      {
+        "angabe": "Duden online: Arkanum.",
+        "url": "https://www.duden.de/rechtschreibung/Arkanum"
+      },
+      {
+        "angabe": "Gherardo Ortalli: The Prince’s Cards (La carta del principe). Ferrara – Voci di una Città, n. 4 (junho de 1996), Fondazione Cassa di Risparmio di Ferrara.",
+        "url": "https://rivista.fondazioneestense.it/en/1996/4/item/407-la-carta-del-principe.html"
+      },
+      {
+        "angabe": "Piero Latino: Les arcanes majeurs selon Ouspensky, Guaita et le Père Gabriele Amorth. In: Littérature et occulture, Publications numériques du CÉRÉdI, Actes de colloques et journées d’étude n. 29, Université de Rouen Normandie, 2023.",
+        "url": "https://publis-shs.univ-rouen.fr/ceredi/1866-1.pdf"
+      },
+      {
+        "angabe": "Kevin Dann: A Renaissance Riddle: The Sola Busca Tarot Deck (1491). The Public Domain Review, 03/02/2022.",
+        "url": "https://publicdomainreview.org/collection/sola-busca/"
+      },
+      {
+        "angabe": "Kevin Dann: Etteilla’s Livre de Thot Tarot (ca. 1789). The Public Domain Review, 20/10/2022.",
+        "url": "https://www.publicdomainreview.org/collection/etteilla-thot"
+      }
+    ]
+  },
+  "farben": {
+    "metaTitel": "Naipes do tarô: Paus, Copas, Espadas e Ouros | Tarot Cup",
+    "metaBeschreibung": "Os quatro naipes do tarô vêm das cartas de baralho italianas. Veja a origem de Paus, Copas, Espadas e Ouros e como surgiu o significado de cada um.",
+    "titel": "Os quatro naipes do tarô: Paus, Copas, Espadas e Ouros",
+    "brotkrume": "Quatro naipes",
+    "kurzantwort": [
+      "O tarô tem quatro naipes: Paus, Copas, Espadas e Ouros. Eles vêm das cartas de baralho italianas do fim da Idade Média, nas quais se chamam *bastoni*, *coppe*, *spade* e *denari*, e portanto são mais antigos que qualquer interpretação. A associação hoje comum com áreas da vida e elementos só surgiu com autores ocultistas do século XIX e do início do século XX."
+    ],
+    "inhaltTitel": "Conteúdo",
+    "abschnitte": [
+      {
+        "kennung": "origem-dos-naipes",
+        "titel": "De onde vêm os quatro naipes?",
+        "absaetze": [
+          "As cartas de baralho aparecem na Europa por volta do fim do século XIV. As primeiras menções datam da década de 1370, por exemplo em Florença, Paris e Viterbo. Provavelmente as cartas chegaram à Itália e à Espanha vindas do mundo islâmico. Um baralho preservado do Império Mameluco, hoje no Palácio de Topkapı, em Istambul, só foi feito no século XV ou no início do século XVI, mas mostra os mesmos quatro naipes: moedas, cálices, espadas e bastões. Ele é visto como um indício de como podem ter sido os modelos das cartas europeias.",
+          "Na Itália, esses naipes se chamam até hoje *bastoni*, *coppe*, *spade* e *denari*, ou seja, Paus, Copas, Espadas e Ouros. Junto com as cartas espanholas, muito parecidas, eles são reunidos sob o nome de naipes latinos. Os bastões talvez tenham sido, originalmente, tacos de polo. Nas cartas de estilo italiano, como as usadas no nordeste da Itália, os bastões são retos e se cruzam nas cartas numeradas, formando uma grade; as espadas, em geral curvas, também se cruzam. Nas cartas de estilo espanhol, os bastões são porretes nodosos, e tanto os bastões quanto as espadas aparecem lado a lado, sem se cruzar.",
+          "Quando, no século XV, os trunfos foram acrescentados no norte e no centro da Itália, o novo jogo manteve esses quatro naipes. Até as cartas de tarô mais antigas que chegaram até nós, pintadas para a corte de Milão, mostram cálices, espadas, bastões e moedas."
+        ]
+      },
+      {
+        "kennung": "nomes-dos-naipes",
+        "titel": "Por que o naipe de Ouros às vezes se chama Pentáculos?",
+        "absaetze": [
+          "Os nomes dos naipes mudaram com o tempo. Nas cartas de 1909, Paus se chama Wands e Ouros, Pentacles, em português Pentáculos. Outros baralhos falam de discos, em inglês Discs. Os demais naipes também têm nomes alternativos, como Cetros ou Varas no lugar de Paus, e Graal ou Taças no lugar de Copas.",
+          "Apesar dos nomes, trata-se sempre do mesmo naipe. Se você faz uma tiragem com um baralho diferente do que aparece no app, vai se orientar com facilidade se souber que moeda, pentáculo e disco são a mesma coisa.",
+          "Para jogar, aliás, também existem baralhos de tarô com os naipes franceses: copas, ouros, paus e espadas, na forma de coração, losango, trevo e pá. Para fazer tiragens e interpretar, os símbolos italianos continuaram sendo os usuais."
+        ]
+      },
+      {
+        "kennung": "cartas-da-corte",
+        "titel": "Quais cartas da corte pertencem a cada naipe?",
+        "absaetze": [
+          "No tarô, cada naipe tem 14 cartas: dez cartas numeradas, do Ás ao Dez, e quatro cartas da corte. Nas cartas de 1909 são Valete, Cavaleiro, Rainha e Rei; no Tarô de Marselha, Rei, Rainha, Cavaleiro e Valete.",
+          "Assim, o tarô tem uma figura a mais que a maioria dos baralhos comuns. Os baralhos italianos de naipes latinos costumam ter hoje Rei, Cavaleiro e Valete, mas nenhuma Rainha. O baralho francês tem Rei, Dama e Valete, mas nenhum Cavaleiro. No tarô, Cavaleiro e Rainha aparecem lado a lado.",
+          "Antes de 1909, as cartas numeradas costumavam ser simples e mostravam o símbolo do naipe tantas vezes quanto indicava o número. Nas cartas de 1909, cada carta numerada ganhou uma pequena cena própria; mais sobre isso na página sobre [Pamela Colman Smith](/pt/tarot/pamela-colman-smith/)."
+        ]
+      },
+      {
+        "kennung": "areas-da-vida-e-elementos",
+        "titel": "O que os quatro naipes representam na tradição?",
+        "absaetze": [
+          "Na tradição atual, cada naipe tem seu campo e seu elemento. Os Paus estão ligados à ação e ao fogo, as Copas aos sentimentos e à água, as Espadas aos pensamentos e ao ar, os Ouros ao tangível e à terra. Você encontra uma breve introdução em [O que é o tarô?](/pt/tarot/#was-ist-tarot).",
+          "Essa ordem é bem mais recente que as cartas. Quando os naipes chegaram à Itália, eram sinais de um jogo. Só quando ocultistas do século XIX ligaram o tarô à cabala, à numerologia e a outras doutrinas é que os quatro naipes também ganharam um lugar fixo em um sistema de ideias mais amplo. Essa mesma associação aparece, por exemplo, na obra do esoterista russo Piotr Uspenski (também Ouspensky), cujo livro sobre o simbolismo do tarô foi escrito em 1911 e publicado em 1913. Ele equiparou Paus, Copas, Espadas e Ouros a fogo, água, ar e terra e, ao mesmo tempo, às quatro letras do nome hebraico de Deus.",
+          "Até hoje a associação não é uniforme; alguns autores, por exemplo, atribuem o ar aos Paus e o fogo às Espadas. Há ainda uma antiga suposição sobre a origem dos símbolos: eles podem ter representado estamentos da sociedade, as Espadas a nobreza, as Copas o clero, os Ouros os comerciantes e os Paus os camponeses. Já Court de Gébelin, em 1781, relacionou os quatro naipes aos estamentos da sociedade no contexto de sua tese sobre o Egito. Isso não é comprovado; o Victoria and Albert Museum menciona isso apenas como possibilidade."
+        ]
+      },
+      {
+        "kennung": "naipes-na-tiragem",
+        "titel": "Como observar os naipes em uma tiragem?",
+        "absaetze": [
+          "Muitas pessoas que leem tarô olham primeiro, depois de revelar as cartas, quais naipes apareceram. Se várias cartas de Copas aparecem juntas, a tradição lê isso como indício de que os sentimentos têm um papel maior no momento; muitas cartas de Espadas voltam o olhar mais para pensamentos e decisões. Se falta um naipe por completo, isso também pode merecer uma pergunta.",
+          "Os Arcanos Maiores não pertencem a nenhum naipe. A página [Arcanos Maiores e Menores](/pt/tarot/arcanos-maiores-e-menores/) explica como distingui-los das cartas de naipe. Em muitas leituras, a posição da carta, normal ou invertida, acrescenta um segundo nível; mais sobre isso em [Cartas invertidas](/pt/tarot/cartas-invertidas/)."
+        ]
+      }
+    ],
+    "fragenTitel": "Perguntas frequentes",
+    "fragen": [
+      {
+        "frage": "Ouros e Pentáculos são o mesmo naipe?",
+        "antwort": [
+          "Sim. Na Itália o naipe se chama *denari*, ou seja, moedas; nas cartas de 1909 chama-se Pentacles, em outros baralhos, discos. Trata-se sempre do mesmo dos quatro naipes."
+        ]
+      },
+      {
+        "frage": "Por que o tarô não tem os naipes franceses do baralho comum?",
+        "antwort": [
+          "Porque surgiu na Itália, onde se jogava com bastões, cálices, espadas e moedas. Para jogar, no entanto, também existem baralhos de tarô com naipes franceses."
+        ]
+      },
+      {
+        "frage": "Qual elemento pertence a qual naipe?",
+        "antwort": [
+          "Na associação hoje comum, os Paus estão ligados ao fogo, as Copas à água, as Espadas ao ar e os Ouros à terra. Essa ordem vem de autores ocultistas e não é igual em toda parte."
+        ]
+      },
+      {
+        "frage": "Quantas cartas tem um naipe?",
+        "antwort": [
+          "Cada naipe tem 14 cartas: dez cartas numeradas, do Ás ao Dez, e quatro cartas da corte. Juntos, os quatro naipes formam os 56 Arcanos Menores."
+        ]
+      }
+    ],
+    "app": {
+      "titel": "Conheça os quatro naipes no app",
+      "text": [
+        "No Tarot Cup, você encontra Paus, Copas, Espadas e Ouros nas imagens de 1909, cada um com seu significado na tradição. Veja quais tiragens existem em [Ler tarô](/pt/tarot/#legungen)."
+      ]
+    },
+    "quellenTitel": "Fontes",
+    "quellen": [
+      {
+        "angabe": "Paul Bostock: Mamluk Cards and the Making of the European Deck. The World of Playing Cards, 31/12/2025, atualizado em 02/01/2026.",
+        "url": "https://www.wopc.co.uk/egypt/mamluk-cards-and-the-making-of-the-european-deck"
+      },
+      {
+        "angabe": "John McLeod: Latin suited cards. Pagat.com, versão de 22/07/2009.",
+        "url": "https://www.pagat.com/class/latin.html"
+      },
+      {
+        "angabe": "John McLeod: Card games in Italy. Pagat.com, versão de 07/01/2024.",
+        "url": "https://www.pagat.com/national/italy.html"
+      },
+      {
+        "angabe": "John McLeod: Tarot Games. Pagat.com, versão de 19/10/2025.",
+        "url": "https://www.pagat.com/tarot/"
+      },
+      {
+        "angabe": "Thierry Depaulis: Tarot. Encyclopædia Universalis, online, acessado em 27/11/2026.",
+        "url": "https://www.universalis.fr/encyclopedie/tarot/"
+      },
+      {
+        "angabe": "Thierry Depaulis: Tarot de Marseille, Type I. International Playing-Card Society, Pattern Sheet 001, versão de 03/2018.",
+        "url": "https://i-p-c-s.org/pattern/PS001.pdf"
+      },
+      {
+        "angabe": "Rebecca Billingham, Ruth Hibbard, Josephine Nardecchia: Tarot cards. Victoria and Albert Museum, Londres, atualizado em 16/07/2026.",
+        "url": "https://www.vam.ac.uk/articles/tarot-cards"
+      },
+      {
+        "angabe": "Victoria and Albert Museum: carta de tarô “Four of Pentacles”, objeto do acervo E.476-1934.",
+        "url": "https://collections.vam.ac.uk/item/O1028160"
+      },
+      {
+        "angabe": "Piero Latino: Les arcanes majeurs selon Ouspensky, Guaita et le Père Gabriele Amorth. In: Littérature et occulture, Publications numériques du CÉRÉdI, Actes de colloques et journées d’étude n. 29, Université de Rouen Normandie, 2023.",
+        "url": "https://publis-shs.univ-rouen.fr/ceredi/1866-1.pdf"
+      },
+      {
+        "angabe": "Morandir Armson: The Transitory Tarot. An Examination of Tarot Cards, the 21st Century New Age and Theosophical Thought. Literature & Aesthetics 21 (1), junho de 2011, p. 196–212.",
+        "url": "https://openjournals.library.sydney.edu.au/LA/article/view/5056/5761"
+      },
+      {
+        "angabe": "René Alleau: Cartes à jouer. Encyclopædia Universalis, online, acessado em 27/11/2026.",
+        "url": "https://www.universalis.fr/encyclopedie/cartes-a-jouer/"
+      },
+      {
+        "angabe": "Simon Wintle: Monde Primitif Tarot. The World of Playing Cards, 17/05/2024, atualizado em 25/11/2026.",
+        "url": "https://www.wopc.co.uk/tarot/monde-primitif-tarot"
+      }
+    ]
+  },
+  "umgekehrt": {
+    "metaTitel": "Cartas invertidas no tarô: o que podem indicar | Tarot Cup",
+    "metaBeschreibung": "As cartas invertidas do tarô têm uma longa história: desde quando são lidas, quais formas de leitura existem e como surgem inversões ao embaralhar.",
+    "titel": "Cartas invertidas no tarô: origem, formas de leitura e embaralhamento",
+    "brotkrume": "Cartas invertidas",
+    "kurzantwort": [
+      "Uma carta de tarô invertida aparece de cabeça para baixo ao ser revelada: a imagem fica de ponta-cabeça do seu ponto de vista. Já o livro de 1770, considerado o mais antigo manual de cartomancia, atribui às cartas um significado próprio para essa posição; em 1791, no mais tardar, isso valia também para as cartas de tarô, e no século XIX a inversão já era parte estabelecida do tarô. Ler ou não as inversões, e de que modo, continua sendo até hoje uma questão de tradição e de sua própria escolha."
+    ],
+    "inhaltTitel": "Conteúdo",
+    "abschnitte": [
+      {
+        "kennung": "o-que-significa-invertida",
+        "titel": "O que significa “invertida” no tarô?",
+        "absaetze": [
+          "Toda carta de tarô tem uma parte de cima e uma parte de baixo. Se, ao revelar a carta, você vê a figura do lado certo, ela está na posição normal. Se a imagem está de cabeça para baixo, chama-se invertida. O que vale sempre é o ponto de vista de quem lê as cartas.",
+          "O que uma carta invertida costuma significar nas leituras de hoje está resumido no guia em [Normal e invertida](/pt/tarot/#aufrecht-und-umgekehrt). Aqui o assunto é o contexto: de onde vem o costume, que caminhos existem para lidar com ele e como as cartas invertidas surgem ao embaralhar."
+        ]
+      },
+      {
+        "kennung": "etteilla-e-o-primeiro-manual",
+        "titel": "Desde quando se leem cartas invertidas?",
+        "absaetze": [
+          "A pista leva a Paris. Ali foi publicado, em 1770, um livro fino, considerado o mais antigo manual de cartomancia do Ocidente. Seu autor era Jean-Baptiste Alliette, que adotou o nome Etteilla, seu sobrenome lido de trás para frente. Naquela época ele ainda não lia as cartas com o tarô, e sim com as 32 cartas de um baralho de piquet e uma carta adicional, em branco dos dois lados.",
+          "Já nesse livro uma carta tem dois significados, um para a posição normal e outro para a invertida. Etteilla marca o segundo com um R e o descreve como a carta virada de cima para baixo. O rei de ouros, por exemplo, representa para ele, na posição normal, um homem e, invertido, outro homem; o valete de ouros representa, na posição normal, um soldado e, invertido, um criado.",
+          "A partir de 1783, Etteilla escreveu também sobre o tarô. A partir de 1791, saiu também com o nome dele um baralho de 33 cartas, cujas explicações impressas nas cartas podem ser lidas tanto num sentido quanto no outro. A página [História do tarô](/pt/tarot/historia/) conta como o tarô se tornou um instrumento de leitura."
+        ]
+      },
+      {
+        "kennung": "inversoes-no-taro",
+        "titel": "Como as inversões passaram a fazer parte do tarô?",
+        "absaetze": [
+          "No tarô, a inversão está documentada em 1791, no mais tardar. Nesse ano saiu um dicionário sobre o tarô de Etteilla, que ele chamava de “Livro de Thoth”, escrito por um membro da sociedade que Etteilla fundou para interpretar essas cartas. Logo no começo, o texto diz que cada carta admite duas interpretações, uma na posição normal e outra invertida. Cem anos depois, isso era comum nos manuais.",
+          "O ocultista francês Papus escreveu em 1889 que quem seguisse os manuais comuns precisaria decorar os significados das 78 cartas na posição normal e mais uma vez invertidas, além de regras para quando certas cartas aparecem juntas, ao todo cerca de 200 significados. Ele queria poupar seus leitores de boa parte dessa memorização e propôs um sistema mais simples, com poucos conceitos básicos.",
+          "O historiador das cartas de baralho Thierry Depaulis descreve a cartomancia em geral assim: na leitura conta a posição de uma carta, normal ou invertida, tanto quanto a ordem em que ela aparece. Ao mesmo tempo, ele observa que os significados atribuídos às figuras e aos naipes se baseiam em livre escolha. Não existe, portanto, uma regra geral para as inversões, e sim diferentes tradições.",
+          "Um livro mais recente mostra como são variados os caminhos hoje: em 2002, a autora de tarô Mary K. Greer dedicou às cartas invertidas mais de 250 páginas e apresentou nelas doze abordagens diferentes para lê-las."
+        ]
+      },
+      {
+        "kennung": "formas-de-ler",
+        "titel": "Como ler uma carta invertida?",
+        "absaetze": [
+          "Quem hoje faz tiragens com inversões tem vários caminhos à escolha. Muitas vezes a carta invertida é lida como o mesmo tema de forma atenuada: o que soa forte na posição normal fica, invertida, mais suave ou ainda em formação.",
+          "Outras pessoas veem nela algo bloqueado ou adiado, uma força que no momento não consegue fluir livremente. Uma terceira leitura volta a carta para dentro. Ela fala então menos do que acontece à sua volta e mais do que se passa em você. Os manuais mais antigos, por outro lado, davam às cartas invertidas muitas vezes um significado totalmente próprio, como Etteilla com seu valete de ouros.",
+          "E há quem faça tiragens sem nenhuma inversão e leia toda carta na posição normal, mesmo quando ela cai de ponta-cabeça. Nenhum desses caminhos é mais certo do que outro. O que ajuda é apenas escolher uma forma de leitura antes de embaralhar e mantê-la durante toda a tiragem."
+        ]
+      },
+      {
+        "kennung": "inversoes-ao-embaralhar",
+        "titel": "Como surgem cartas invertidas ao embaralhar?",
+        "absaetze": [
+          "Um baralho novo costuma estar na caixa com todas as imagens na mesma direção. Quem embaralha de modo que as cartas mantenham a direção quase não obtém inversões. Para tê-las, é preciso dar uma ajudinha ao embaralhar.",
+          "Um jeito simples: divida o monte em duas metades, vire uma delas de modo que a parte de cima e a de baixo troquem de lugar e intercale as duas de novo. Outras pessoas espalham as cartas viradas para baixo sobre a mesa, misturam com as duas mãos e depois as juntam de novo num monte. E quem, depois de uma tiragem, não volta a endireitar as cartas que caíram invertidas mantém a inversão delas no baralho. Aliás, embaralhar bem e sem olhar já era o conselho de Etteilla em 1770.",
+          "Atenção também à hora de revelar. Se você vira uma carta pela borda de cima, ela fica de cabeça para baixo. Por isso, vire-a sempre do mesmo jeito, de preferência de lado, como descreve o guia em [Ler tarô passo a passo](/pt/tarot/#ritual-schritt-fuer-schritt)."
+        ]
+      }
+    ],
+    "fragenTitel": "Perguntas frequentes",
+    "fragen": [
+      {
+        "frage": "Uma carta de tarô invertida é um mau sinal?",
+        "antwort": [
+          "Não. Em muitas leituras de hoje, ela fala do mesmo tema que na posição normal, só que com outra ênfase. Mais sobre isso em [Normal e invertida](/pt/tarot/#aufrecht-und-umgekehrt)."
+        ]
+      },
+      {
+        "frage": "Preciso ler as cartas invertidas?",
+        "antwort": [
+          "Não. Fazer tiragens com e sem inversões faz parte da tradição, e até pessoas experientes na leitura de cartas muitas vezes as deixam de lado. O importante é só manter sua escolha durante uma tiragem."
+        ]
+      },
+      {
+        "frage": "As inversões já existiam nas primeiras cartas de tarô?",
+        "antwort": [
+          "Não há comprovação disso. Na Itália do século XV, o tarô servia para jogar; o uso das cartas de tarô para leitura só está comprovado a partir do fim do século XVIII."
+        ]
+      },
+      {
+        "frage": "Com que frequência uma carta cai invertida?",
+        "antwort": [
+          "Depende de como você embaralha. Se metade do monte está virada e tudo está bem misturado, mais ou menos uma carta em cada duas fica de cabeça para baixo. Sem virar, as inversões aparecem só raramente."
+        ]
+      }
+    ],
+    "app": {
+      "titel": "Tire uma carta e veja como ela cai",
+      "text": [
+        "No Tarot Cup, cada carta pode cair na posição normal ou invertida, as duas com frequência mais ou menos igual. Veja quais tiragens existem em [Ler tarô](/pt/tarot/#legungen)."
+      ]
+    },
+    "quellenTitel": "Fontes",
+    "quellen": [
+      {
+        "angabe": "Etteilla (Jean-Baptiste Alliette): Etteilla, ou manière de se récréer avec un jeu de cartes. Amsterdã e Paris 1770. Versão digitalizada no Internet Archive.",
+        "url": "https://archive.org/details/1770etteillaoumaniere"
+      },
+      {
+        "angabe": "Thierry Depaulis: Etteilla (Jean-Baptiste Alliette le Jeune, dit, 1738–1791). Encyclopædia Universalis, online, acessado em 27/11/2026.",
+        "url": "https://www.universalis.fr/encyclopedie/etteilla/"
+      },
+      {
+        "angabe": "Thierry Depaulis: Cartomancie. Encyclopædia Universalis, online, acessado em 27/11/2026.",
+        "url": "https://www.universalis.fr/encyclopedie/cartomancie/"
+      },
+      {
+        "angabe": "Thierry Depaulis: Cartomancie, seção “Les tarots”. Encyclopædia Universalis, online, acessado em 27/11/2026.",
+        "url": "https://www.universalis.fr/encyclopedie/cartomancie/2-les-tarots/"
+      },
+      {
+        "angabe": "Thierry Depaulis: Cartomancie, seção “La cartomancie avec cartes spéciales”. Encyclopædia Universalis, online, acessado em 27/11/2026.",
+        "url": "https://www.universalis.fr/encyclopedie/cartomancie/3-la-cartomancie-avec-cartes-speciales/"
+      },
+      {
+        "angabe": "Thierry Depaulis: Tarot. Encyclopædia Universalis, online, acessado em 27/11/2026.",
+        "url": "https://www.universalis.fr/encyclopedie/tarot/"
+      },
+      {
+        "angabe": "Dictionnaire synonimique du Livre de Thot. 1791, anônimo (“par un Membre de la Société des Interprètes de cet Ouvrage”), atribuído a um discípulo de Etteilla segundo a versão digitalizada. Versão digitalizada no Internet Archive.",
+        "url": "https://archive.org/details/1791dictionnairesynonimique"
+      },
+      {
+        "angabe": "Papus (Gérard Encausse): Clef absolue de la science occulte. Le Tarot des Bohémiens. Paris 1889, capítulo XX, primeira lição. Versão digitalizada da University of Toronto no Internet Archive.",
+        "url": "https://archive.org/details/clefabsoluedelas00papuuoft"
+      },
+      {
+        "angabe": "Mary K. Greer: The Complete Book of Tarot Reversals. Llewellyn Publications, 2002, 274 páginas. Registro na Open Library.",
+        "url": "https://openlibrary.org/isbn/9781567182859"
+      },
+      {
+        "angabe": "Barbara Moore: Reading Reversed Cards. Llewellyn Unbound, blog da Llewellyn Publications, 07/06/2011.",
+        "url": "https://www.llewellyn.com/blog/?p=5917"
+      }
+    ]
+  },
+  "smith": {
+    "metaTitel": "Pamela Colman Smith: quem foi e o tarô de 1909 | Tarot Cup",
+    "metaBeschreibung": "Pamela Colman Smith desenhou em 1909 as 78 cartas do baralho de tarô mais conhecido. Sua biografia: de Londres à Cornualha, via Jamaica e Nova York.",
+    "titel": "Pamela Colman Smith e as imagens de tarô de 1909",
+    "brotkrume": "Pamela Colman Smith",
+    "kurzantwort": [
+      "Pamela Colman Smith (1878 a 1951) foi uma artista de Londres que, em 1909, desenhou as 78 imagens de um baralho de tarô que até hoje está entre os mais difundidos. Antes disso, trabalhou para o teatro, ilustrou livros e expôs em Nova York, na galeria de Alfred Stieglitz. Com suas cartas, as cenas das cartas numeradas se tornaram amplamente conhecidas; seu próprio nome, porém, ficou por muito tempo em segundo plano."
+    ],
+    "inhaltTitel": "Conteúdo",
+    "abschnitte": [
+      {
+        "kennung": "londres-jamaica-nova-york",
+        "titel": "De onde veio Pamela Colman Smith?",
+        "absaetze": [
+          "Pamela Colman Smith nasceu em Londres em 1878, filha de pais americanos. Quando tinha cerca de dez anos, o trabalho do pai levou a família por um período a Kingston, na Jamaica. Mais tarde, ela recontou em livros próprios as histórias da tradição das Índias Ocidentais que conheceu lá, como nas “Annancy Stories”, de 1899.",
+          "Em 1893, ela começou a estudar no Pratt Institute, no Brooklyn, que na época existia havia poucos anos. Seu professor foi Arthur Wesley Dow. Em 1897, deixou a escola sem concluir o curso."
+        ]
+      },
+      {
+        "kennung": "teatro-e-livros",
+        "titel": "O que ela fez no teatro?",
+        "absaetze": [
+          "Já na década de 1890, ela tinha uma ligação próxima com a atriz Ellen Terry e com a filha dela, Edith Craig, e assim fazia parte do círculo do Lyceum Theatre, onde também atuava Henry Irving. Em 1899, voltou para Londres. Bram Stoker, gerente do Lyceum e autor de “Drácula”, pediu que ela desenhasse o programa de uma turnê pela América. Ela acompanhou a turnê por sete meses, desenhando pelo caminho e atuando ela mesma em pequenos papéis no palco. Também criou figurinos e cenários para esse círculo.",
+          "Ellen Terry a chamava de “Pixie”, e com esse apelido ela logo ficou conhecida. A partir de 1903, Smith publicou uma pequena revista própria, “The Green Sheaf”, que chegou a treze números."
+        ]
+      },
+      {
+        "kennung": "golden-dawn-e-stieglitz",
+        "titel": "Como ela chegou à Golden Dawn e a Stieglitz?",
+        "absaetze": [
+          "Em 1901, ela entrou na Hermetic Order of the Golden Dawn, uma sociedade secreta ocultista. Quem a introduziu na ordem foi o poeta William Butler Yeats.",
+          "Alfred Stieglitz mostrou os desenhos dela em sua galeria em Nova York, as Little Galleries of the Photo-Secession. Ela foi a primeira pessoa a expor ali algo que não fosse fotografia. Um contemporâneo relatou que a exposição foi prorrogada e que cerca de metade da coleção principal exposta encontrou compradores. Em 1907, o próprio Stieglitz fotografou algumas das obras dela; o Philadelphia Museum of Art possui hoje fotografias desse tipo.",
+          "Também de 1907 são três obras sobre papel que hoje estão na Tate, em Londres. Elas levam os nomes de peças musicais de Grieg, Sinding e Mozart."
+        ]
+      },
+      {
+        "kennung": "as-cartas-de-1909",
+        "titel": "Como surgiram as cartas de 1909?",
+        "absaetze": [
+          "Na Golden Dawn, Smith também conheceu o homem que, em 1909, encomendou um novo baralho de tarô. Ele havia sido membro da ordem, como ela; em 1903, Smith se juntara ao ramo que ele dirigia ali. Mais sobre a encomenda e o livro que a acompanha está na página [História do tarô](/pt/tarot/historia/#as-cartas-de-1909).",
+          "Smith deveria desenhar todas as 78 imagens. Para os Arcanos Maiores, ela recebeu instruções precisas; nos Arcanos Menores, por outro lado, teve ampla liberdade. O baralho foi publicado em 1909 pela Rider, em Londres; para a primeira impressão, algumas fontes indicam também 1910. Segundo ela mesma, recebeu muito pouco por todo esse trabalho. A página [Arcanos Maiores e Menores](/pt/tarot/arcanos-maiores-e-menores/) explica como os dois grupos se diferenciam."
+        ]
+      },
+      {
+        "kennung": "cenas-nas-cartas-numeradas",
+        "titel": "O que há de especial nas imagens dela?",
+        "absaetze": [
+          "Nos baralhos mais antigos, as cartas numeradas dos quatro naipes costumam mostrar apenas seus símbolos, como sete cálices ou três espadas, dispostos de forma organizada. Smith deu a cada uma dessas cartas uma pequena cena própria, com pessoas, paisagens e gestos. Assim, também as cartas numeradas podem ser contempladas como imagens. Smith não inventou essa ideia, mas foram suas cartas que a tornaram amplamente conhecida e que marcaram de forma duradoura os baralhos posteriores. O que caracteriza os quatro naipes está em [Os quatro naipes do tarô](/pt/tarot/naipes-do-taro/).",
+          "Já havia um precedente no século XV: o tarô Sola-Busca, gravado provavelmente em Ferrara em 1491 e considerado o baralho completo de 78 cartas mais antigo que se conservou, mostra figuras e cenas nas cartas numeradas. Fotografias dele foram expostas em 1908 no British Museum, em Londres. Em cerca de uma dúzia de cartas, há inspirações nesse modelo; as opiniões divergem sobre até que ponto Smith o seguiu no conjunto."
+        ]
+      },
+      {
+        "kennung": "anos-finais",
+        "titel": "Como foi o resto da vida dela?",
+        "absaetze": [
+          "A partir de 1911, Smith viveu alguns anos em Nova York e, nesse período, converteu-se à Igreja Católica. Depois da Primeira Guerra Mundial, mudou-se para a Cornualha; no início da década de 1920, graças a uma herança, pôde comprar uma casa na península de Lizard. Com Nora Lake, com quem vivia, passou a manter mais tarde uma casa onde padres católicos podiam se recolher em retiro.",
+          "Pamela Colman Smith morreu em 1951 em Bude, na Cornualha, sem patrimônio e sem grande reputação como artista. Só mais recentemente voltou a ser lembrada: em 2019, o Pratt Institute lhe dedicou uma exposição própria, e de 2022 a 2023 o Whitney Museum, em Nova York, mostrou trabalhos dela em uma exposição sobre o início do modernismo americano."
+        ]
+      }
+    ],
+    "fragenTitel": "Perguntas frequentes",
+    "fragen": [
+      {
+        "frage": "Pamela Colman Smith desenhou todas as 78 cartas?",
+        "antwort": [
+          "Sim, tanto os Arcanos Maiores quanto os Menores. Ela recebeu instruções fixas sobretudo para os Arcanos Maiores; as cenas das cartas numeradas ela criou em grande parte por conta própria."
+        ]
+      },
+      {
+        "frage": "De onde vêm as imagens das cartas no Tarot Cup?",
+        "antwort": [
+          "As imagens das cartas no Tarot Cup foram desenhadas por Pamela Colman Smith. Elas foram publicadas em 1909 e estão em domínio público. A base são digitalizações da impressão original, do Wikimedia Commons; mais sobre isso em [Créditos das imagens e licenças](/pt/creditos-de-imagens-e-licencas/)."
+        ]
+      },
+      {
+        "frage": "Pamela Colman Smith era americana?",
+        "antwort": [
+          "Os pais dela eram americanos, mas ela nasceu em Londres, em 1878. Passou a juventude entre a Inglaterra, a Jamaica e Nova York, onde estudou e mais tarde expôs."
+        ]
+      },
+      {
+        "frage": "Onde estão as obras dela hoje?",
+        "antwort": [
+          "Obras dela pertencem, entre outros, à Tate, em Londres, e ao Whitney Museum, em Nova York, onde há, por exemplo, o desenho “The Wave”, de 1903. Suas imagens de tarô são conhecidas sobretudo por meio das muitas edições do baralho."
+        ]
+      }
+    ],
+    "app": {
+      "titel": "Tire as cartas de 1909 no app",
+      "text": [
+        "No Tarot Cup, você tira as cartas com as imagens de Pamela Colman Smith, da impressão original, recortadas apenas na área da ilustração. Veja quais tiragens existem em [Ler tarô](/pt/tarot/#legungen)."
+      ]
+    },
+    "quellenTitel": "Fontes",
+    "quellen": [
+      {
+        "angabe": "Dennis Denisoff: Pamela Colman Smith (1878–1951). Y90s Biographies, Yellow Nineties 2.0, org. por Lorraine Janzen Kooistra, Ryerson University Centre for Digital Humanities, 2019.",
+        "url": "https://1890s.ca/smith_bio/"
+      },
+      {
+        "angabe": "National Trust: Pamela Coleman Smith at Smallhythe Place. Site do National Trust, acessado em 27/11/2026.",
+        "url": "https://nationaltrust.org.uk/visit/kent/smallhythe-place/pamela-coleman-smith-at-smallhythe-place"
+      },
+      {
+        "angabe": "Pratt Institute: Pamela Colman Smith: Life and Work Exhibition, de 31/01 a 11/04/2019, Pratt Institute Libraries, Brooklyn.",
+        "url": "https://www.pratt.edu/events/pamela-colman-smith-life-and-work-exhibition/"
+      },
+      {
+        "angabe": "Philadelphia Museum of Art: Alfred Stieglitz, Untitled (Drawing by Pamela Colman Smith), 1907, objeto do acervo.",
+        "url": "https://www.philamuseum.org/objects/91082"
+      },
+      {
+        "angabe": "Tate: Pamela Colman Smith 1878–1951, obras no acervo.",
+        "url": "https://www.tate.org.uk/art/artists/pamela-colman-smith-29474"
+      },
+      {
+        "angabe": "Whitney Museum of American Art: Pamela Colman Smith, página da artista.",
+        "url": "https://www.whitney.org/artists/1238"
+      },
+      {
+        "angabe": "Rebecca Billingham, Ruth Hibbard, Josephine Nardecchia: A history of tarot cards. Victoria and Albert Museum, Londres, atualizado em 16/07/2026.",
+        "url": "https://www.vam.ac.uk/articles/tarot-cards"
+      },
+      {
+        "angabe": "Kevin Dann: A Renaissance Riddle: The Sola Busca Tarot Deck (1491). The Public Domain Review, 03/02/2022.",
+        "url": "https://publicdomainreview.org/collection/sola-busca/"
+      },
+      {
+        "angabe": "Simon Wintle: The Sola-Busca Tarot. The World of Playing Cards, atualizado em 24/11/2026.",
+        "url": "https://www.wopc.co.uk/tarot/sola-busca-tarocchi"
+      }
+    ]
+  }
+}
