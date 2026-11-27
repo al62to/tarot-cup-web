@@ -13,7 +13,7 @@ export const sogehts = {
         kennung: 'erster-start',
         titel: 'Was passiert beim ersten Start?',
         absaetze: [
-          'Beim ersten Öffnen erscheint die App in der Sprache deines Handys; nach „Willkommen“ tippst du auf „Weiter“. Im Schritt „Bevor es losgeht“ bestätigst du, dass du mindestens 16 Jahre alt bist, und nimmst die Nutzungsbedingungen mit „Alle akzeptieren“ oder „Nur Notwendige“ an. „Alle akzeptieren“ schaltet auch Nutzungsstatistik und Absturzberichte ein, „Nur Notwendige“ lässt sie aus; ändern kannst du das jederzeit in den Einstellungen. Eine kurze Einführung stellt Tageskarte, Kaffeesatz, Tarot und Lexikon vor, mit „Überspringen“ kannst du sie auslassen. Zum Schluss fragt die App, ob sie dich morgens an deine Tageskarte erinnern soll.',
+          'Beim ersten Öffnen erscheint die App in der Sprache deines Handys; nach „Willkommen“ tippst du auf „Weiter“. Im Schritt „Bevor es losgeht“ bestätigst du, dass du mindestens 18 Jahre alt bist, und nimmst die Nutzungsbedingungen mit „Alle akzeptieren“ oder „Nur Notwendige“ an. „Alle akzeptieren“ schaltet auch Nutzungsstatistik und Absturzberichte ein, „Nur Notwendige“ lässt sie aus; ändern kannst du das jederzeit in den Einstellungen. Eine kurze Einführung stellt Tageskarte, Kaffeesatz, Tarot und Lexikon vor, mit „Überspringen“ kannst du sie auslassen. Zum Schluss fragt die App, ob sie dich morgens an deine Tageskarte erinnern soll.',
         ],
         foto: '01_erster_start',
         alt: 'Der Schritt „Bevor es losgeht“ mit angehaktem Kästchen zum Alter, den Links zu Datenschutzerklärung und Nutzungsbedingungen und dem Knopf „Annehmen und weiter“.',
@@ -109,7 +109,7 @@ export const sogehts = {
         kennung: 'ilk-acilis',
         titel: 'Uygulamayı ilk açtığında neler olur?',
         absaetze: [
-          'İlk açılışta uygulama telefonunun dilinde açılır; “Hoş geldin” ekranında “Devam” dersin. “Başlamadan önce” adımında kutucuğu işaretleyip en az 16 yaşında olduğunu onaylarsın; ardından “Tümünü kabul et” ya da “Yalnızca gerekli olanlar” ile Kullanım Koşulları’nı kabul edersin; iki düğme de ancak onaydan sonra çalışır. “Tümünü kabul et” kullanım istatistiklerini ve çökme raporlarını da açar, “Yalnızca gerekli olanlar” bunları kapalı bırakır; tercihini istediğin zaman ayarlardan değiştirebilirsin. Sonra kısa bir tanıtım günün kartını, kahve falını, tarotu ve sözlüğü gösterir, istersen “Geç” diyebilirsin. En sonda uygulama, günün kartını sana sabahları hatırlatıp hatırlatmayacağını sorar.',
+          'İlk açılışta uygulama telefonunun dilinde açılır; “Hoş geldin” ekranında “Devam” dersin. “Başlamadan önce” adımında kutucuğu işaretleyip en az 18 yaşında olduğunu onaylarsın; ardından “Tümünü kabul et” ya da “Yalnızca gerekli olanlar” ile Kullanım Koşulları’nı kabul edersin; iki düğme de ancak onaydan sonra çalışır. “Tümünü kabul et” kullanım istatistiklerini ve çökme raporlarını da açar, “Yalnızca gerekli olanlar” bunları kapalı bırakır; tercihini istediğin zaman ayarlardan değiştirebilirsin. Sonra kısa bir tanıtım günün kartını, kahve falını, tarotu ve sözlüğü gösterir, istersen “Geç” diyebilirsin. En sonda uygulama, günün kartını sana sabahları hatırlatıp hatırlatmayacağını sorar.',
         ],
         foto: '01_erster_start',
         alt: '“Başlamadan önce” adımı: işaretlenmiş yaş kutucuğu, Gizlilik Politikası ve Kullanım Koşulları bağlantıları ve “Kabul et ve devam et” düğmesi.',

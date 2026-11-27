@@ -9,6 +9,8 @@ import { seite, kodiert } from './seite.mjs';
 
 // Altersfreigabe in Brasilien (ClassInd über IARC bei Google Play). Stand AP-AS2: Vorschau der neuen IARC-Einstufung,
 // noch nicht amtlich. Ändert sich die Einstufung, nur diesen Wert anpassen (Wortlaut aus der Play Console abschreiben).
+// Die Inhaltsbeschreibungen „(Violência, Nudez)“ stehen im Baustein direkt hinter dem Platzhalter (Entwurf 1.10);
+// ändern sie sich, dort anpassen. Die 16 ist die ClassInd-Stufe, nicht die Altersgrenze der App (18).
 export const CLASSIND = 'Não recomendado para menores de 16 anos';
 
 // Tag der letzten Aktualisierung, wie in den pt-Rechtstexten als TT/MM/JJJJ.

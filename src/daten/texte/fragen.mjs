@@ -97,7 +97,7 @@ export const fragen = {
         id: 'alter',
         frage: 'Ab welchem Alter ist Tarot Cup?',
         antwort: [
-          'Ab 16 Jahren. Beim ersten Start bestätigst du, dass du mindestens 16 Jahre alt bist, und nimmst die [Nutzungsbedingungen](/nutzungsbedingungen/) an. Vorher geht es nicht weiter.',
+          'Ab 18 Jahren. Beim ersten Start bestätigst du, dass du mindestens 18 Jahre alt bist, und nimmst die [Nutzungsbedingungen](/nutzungsbedingungen/) an. Vorher geht es nicht weiter.',
         ],
       },
     ],
@@ -196,7 +196,7 @@ export const fragen = {
         id: 'alter',
         frage: 'Tarot Cup kaç yaşından itibaren kullanılabilir?',
         antwort: [
-          '16 yaşından itibaren. İlk açılışta en az 16 yaşında olduğunu onaylar ve [Kullanım Koşulları](/tr/kullanim-kosullari/)’nı kabul edersin. Bu adım olmadan devam edilemez.',
+          '18 yaşından itibaren. İlk açılışta en az 18 yaşında olduğunu onaylar ve [Kullanım Koşulları](/tr/kullanim-kosullari/)’nı kabul edersin. Bu adım olmadan devam edilemez.',
         ],
       },
     ],

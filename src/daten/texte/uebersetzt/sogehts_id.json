@@ -11,7 +11,7 @@
    "kennung": "erster-start",
    "titel": "Apa yang terjadi saat aplikasi pertama kali dibuka?",
    "absaetze": [
-    "Saat pertama kali dibuka, aplikasi tampil dalam bahasa ponselmu; setelah “Selamat datang”, kamu mengetuk “Lanjutkan”. Di langkah “Sebelum mulai”, kamu menyatakan bahwa kamu berusia minimal 16 tahun, lalu menerima Ketentuan Penggunaan dengan “Terima semua” atau “Hanya yang diperlukan”. “Terima semua” juga mengaktifkan statistik penggunaan dan laporan error, sedangkan “Hanya yang diperlukan” membiarkannya nonaktif; kamu bisa mengubahnya kapan saja di Setelan. Pengenalan singkat memperkenalkan kartu hari ini, ampas kopi, tarot, dan kamus; dengan “Lewati” kamu bisa melewatkannya. Terakhir, aplikasi bertanya apakah ia boleh mengingatkanmu pada kartu hari ini setiap pagi."
+    "Saat pertama kali dibuka, aplikasi tampil dalam bahasa ponselmu; setelah “Selamat datang”, kamu mengetuk “Lanjutkan”. Di langkah “Sebelum mulai”, kamu menyatakan bahwa kamu berusia minimal 18 tahun, lalu menerima Ketentuan Penggunaan dengan “Terima semua” atau “Hanya yang diperlukan”. “Terima semua” juga mengaktifkan statistik penggunaan dan laporan error, sedangkan “Hanya yang diperlukan” membiarkannya nonaktif; kamu bisa mengubahnya kapan saja di Setelan. Pengenalan singkat memperkenalkan kartu hari ini, ampas kopi, tarot, dan kamus; dengan “Lewati” kamu bisa melewatkannya. Terakhir, aplikasi bertanya apakah ia boleh mengingatkanmu pada kartu hari ini setiap pagi."
    ],
    "foto": "01_erster_start",
    "alt": "Langkah “Sebelum mulai” dengan kotak usia yang sudah dicentang, tautan ke Kebijakan Privasi dan Ketentuan Penggunaan, serta tombol “Terima dan lanjutkan”."

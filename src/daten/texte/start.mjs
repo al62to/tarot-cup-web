@@ -37,7 +37,7 @@ export const start = {
     },
     wasIst: {
       titel: 'Was ist Tarot Cup?',
-      text: 'Tarot Cup ist eine App für Android, mit der du Tarotkarten legst und den Kaffeesatz in deiner Tasse selbst liest. Es gibt sie in zwölf Sprachen; sie startet in der Sprache deines Handys, und umstellen kannst du in der App. Sie ist für Menschen ab 16 Jahren gedacht und braucht kein Konto; fast alles geht auch ohne Internet. Die Deutungen folgen alten Traditionen und sind zur Unterhaltung gedacht.',
+      text: 'Tarot Cup ist eine App für Android, mit der du Tarotkarten legst und den Kaffeesatz in deiner Tasse selbst liest. Es gibt sie in zwölf Sprachen; sie startet in der Sprache deines Handys, und umstellen kannst du in der App. Sie ist für Menschen ab 18 Jahren gedacht und braucht kein Konto; fast alles geht auch ohne Internet. Die Deutungen folgen alten Traditionen und sind zur Unterhaltung gedacht.',
     },
     tasse: {
       zeile: 'Das Ritual',
@@ -164,7 +164,7 @@ export const start = {
     },
     wasIst: {
       titel: 'Tarot Cup nedir?',
-      text: 'Tarot Cup, tarot kartları açtığın ve fincanındaki kahve telvesini kendin okuduğun bir Android uygulamasıdır. On iki dilde sunulur; telefonunun dilinde açılır ve dili uygulama içinden değiştirebilirsin. 16 yaş ve üzeri kişiler için tasarlanmıştır, üyelik istemez ve neredeyse her şey internet olmadan da çalışır. Yorumlar eski geleneklere dayanır ve eğlence amaçlıdır.',
+      text: 'Tarot Cup, tarot kartları açtığın ve fincanındaki kahve telvesini kendin okuduğun bir Android uygulamasıdır. On iki dilde sunulur; telefonunun dilinde açılır ve dili uygulama içinden değiştirebilirsin. 18 yaş ve üzeri kişiler için tasarlanmıştır, üyelik istemez ve neredeyse her şey internet olmadan da çalışır. Yorumlar eski geleneklere dayanır ve eğlence amaçlıdır.',
     },
     tasse: {
       zeile: 'Ritüel',

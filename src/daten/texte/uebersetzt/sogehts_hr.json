@@ -11,7 +11,7 @@
    "kennung": "erster-start",
    "titel": "Što se događa pri prvom pokretanju?",
    "absaetze": [
-    "Pri prvom otvaranju aplikacija se prikazuje na jeziku svog mobitela; nakon „Dobro došli” dodiruješ „Dalje”. U koraku „Prije nego što počnemo” potvrđuješ da imaš najmanje 16 godina te pomoću „Prihvati sve” ili „Samo nužno” prihvaćaš uvjete korištenja. „Prihvati sve” uključuje i statistiku korištenja i izvješća o padovima, a „Samo nužno” ih ostavlja isključenima; to možeš u bilo kojem trenutku promijeniti u postavkama. Kratko upoznavanje predstavlja Kartu dana, gledanje u šalicu, tarot i Leksikon; pomoću „Preskoči” možeš ga izostaviti. Na kraju aplikacija pita želiš li da te ujutro podsjeti na tvoju Kartu dana."
+    "Pri prvom otvaranju aplikacija se prikazuje na jeziku svog mobitela; nakon „Dobro došli” dodiruješ „Dalje”. U koraku „Prije nego što počnemo” potvrđuješ da imaš najmanje 18 godina te pomoću „Prihvati sve” ili „Samo nužno” prihvaćaš uvjete korištenja. „Prihvati sve” uključuje i statistiku korištenja i izvješća o padovima, a „Samo nužno” ih ostavlja isključenima; to možeš u bilo kojem trenutku promijeniti u postavkama. Kratko upoznavanje predstavlja Kartu dana, gledanje u šalicu, tarot i Leksikon; pomoću „Preskoči” možeš ga izostaviti. Na kraju aplikacija pita želiš li da te ujutro podsjeti na tvoju Kartu dana."
    ],
    "foto": "01_erster_start",
    "alt": "Korak „Prije nego što počnemo” s označenim kvadratićem za dob, poveznicama na Izjavu o privatnosti i Uvjete korištenja te gumbom „Prihvati i nastavi”."
